@@ -38,7 +38,7 @@
       "corpusCount": 229,
       "outletUniverse": 15,
       "selectedCount": 90,
-      "scopeNote": "Daily totals are derived from NewsCord’s fixed 229-item inventory across 15 outlets. These four desks contain 90 listed pieces. The inventory has qualified indexing coverage and counts may be lower bounds. The last date stops at 15:12 BST. Examples are a small selection, not the counting population; original versions may have changed."
+      "scopeNote": "Daily totals are derived from NewsCord’s fixed 229-item inventory across 15 outlets. These four desks contain 90 listed pieces. The inventory has qualified indexing coverage and counts may be lower bounds. The last date stops at 15:12 BST. Examples are a small selection, not the counting population; original versions may have changed. Nine BBC written pieces here must not be mixed with an earlier 13-entry tally of pages/programmes, which included broadcasts and video. Duplicate URLs and unlistened audio cannot be treated as independent verified news stories. Counts measure attention, not hostility."
     },
     "events": [
       {
@@ -124,6 +124,36 @@
         "label": "Columnist’s comparison, August 2026",
         "url": "https://www.theguardian.com/commentisfree/2026/aug/06/jason-arday-dei-race-issues-university-of-cambridge",
         "text": "Columnist Jason Okundaye estimated roughly six press articles about O’Reilly. He supplied no matching window or counting method."
+      },
+      {
+        "id": "first-response",
+        "label": "First report and responses, 1 August",
+        "url": "https://www.bbc.co.uk/news/articles/c78gmp7zylvo",
+        "text": "Current page checked 13 October 2026. Its headline includes his defence. The body presents his response, an allegation originator’s background, conflicting academic views and a warning from Simon Baron-Cohen about the effect of continuing scrutiny. It also uses wording that he did not dispute allegations. This is a tension to examine alongside his later explicit denial, not proof that every version or report omitted his response."
+      },
+      {
+        "id": "institution-analysis",
+        "label": "Institutional analysis, 6 August",
+        "url": "https://www.bbc.co.uk/news/articles/cpvwd30we17o",
+        "text": "Current page checked 13 October 2026. The analysis connects appointment checks with an institutional diversity agenda. It also records Arday’s denial and the university union’s concern about fair process and Black underrepresentation. A policy inference should be tested against the actual evidence, including these counterarguments."
+      },
+      {
+        "id": "later-followup",
+        "label": "Cancelled event and remaining roles, 10 August",
+        "url": "https://www.bbc.co.uk/news/articles/cd7lj3703epo",
+        "text": "Current page checked 13 October 2026. It reports a cancelled appearance and a further association resignation, checks several continuing roles, and repeats Arday’s statement about the toll of scrutiny. The presence of developments does not by itself settle the justification for pursuing every role."
+      },
+      {
+        "id": "version-limit",
+        "label": "Version and inventory limits",
+        "url": "https://newscord.org/editorials/jason-arday-pile-on",
+        "text": "The fixed written inventory and selected current pages do not provide a complete archive of changes, a full broadcast census, a novelty classification or a matched comparator. Missing search results do not prove no coverage; a changed or removed page does not alone establish a cover-up."
+      },
+      {
+        "id": "diversity-opinion",
+        "label": "Opinion defending diversity, 13 August",
+        "url": "https://www.theguardian.com/commentisfree/2026/aug/13/jason-arday-diversity-how-and-why-we-should-defend",
+        "text": "A selected opinion headline argues for defending diversity. This adds a different perspective but remains another publication drawing attention to the same case. It does not establish the tone or value of all eighteen pieces."
       }
     ],
     "reasoningChecks": [
@@ -282,57 +312,69 @@
         "examples": [
           {
             "id": "bbc-2026-08-01",
-            "headline": "Cambridge professor at centre of plagiarism …",
+            "headline": "Cambridge professor at centre of plagiarism row defends his work",
             "url": "https://www.bbc.co.uk/news/articles/c78gmp7zylvo",
             "published": "2026-08-01",
-            "verification": "Six-word inventory excerpt; original publisher page was unavailable to this build."
+            "verification": "Full current headline checked on original BBC page on 13 October 2026; publication date matches inventory. Current text is not a complete historical-version audit."
           },
           {
-            "id": "bbc-2026-08-12",
-            "headline": "I share concerns over Arday appointment, …",
-            "url": "https://www.bbc.co.uk/news/articles/cn4npy3w1p2o",
-            "published": "2026-08-12",
-            "verification": "Six-word inventory excerpt; original publisher page was unavailable to this build."
+            "id": "bbc-2026-08-06",
+            "headline": "Serious questions for Cambridge after professor at centre of plagiarism row resigns",
+            "url": "https://www.bbc.co.uk/news/articles/cpvwd30we17o",
+            "published": "2026-08-06",
+            "verification": "Full current headline checked on original BBC page on 13 October 2026; date matches inventory."
+          },
+          {
+            "id": "bbc-2026-08-10",
+            "headline": "Ex-Cambridge professor Jason Arday cancels live event after plagiarism row",
+            "url": "https://www.bbc.co.uk/news/articles/cd7lj3703epo",
+            "published": "2026-08-10",
+            "verification": "Full current headline checked on original BBC page on 13 October 2026; date matches inventory."
           }
         ],
         "reviewNotes": {
           "publicValue": "Ask how much of this campaign added substantiated information or held institutions accountable. A new investigation can warrant continued attention.",
           "pressure": "The record lists 9 pieces, peaking at 2 in one day. Judge whether that frequency added public value, repeated earlier claims or encouraged humiliation.",
-          "limit": "Written news only; broadcasts and press reviews are excluded. Original example pages could not be retrieved for this build. Counts do not classify every piece as new information or repetition."
+          "limit": "Written news only; broadcasts excluded. Three current BBC pages were checked, but original versions and all nine pieces have not been fully audited. Counts do not classify novelty or repetition."
         },
         "briefing": {
-          "title": "We followed the changing story",
+          "title": "We must defend our widening coverage",
           "paragraphs": [
             {
               "kind": "report",
-              "text": "Our defence is that the story kept changing. Jason Arday was a Cambridge professor facing allegations of plagiarism. On the first of August, our listed coverage carried his defence of his work. He denied plagiarism. On the fifth, he resigned, saying public scrutiny had taken a toll on his family and that stepping down should not be read as accepting the narratives about him.",
+              "text": "We would defend reporting allegations about a prominent university appointment, while preserving the distinction between questions and findings. Our first listed report, on the first of August, put Arday’s defence in its headline. It described the source of the allegations and carried opposing academic views. But its wording about not disputing allegations deserves scrutiny alongside his later explicit denial. We cannot let repeated reporting flatten those distinctions.",
               "evidenceIds": [
-                "inventory",
-                "arday-statement",
+                "first-response",
                 "arday-denial"
               ]
             },
             {
               "kind": "report",
-              "text": "After that, the archive lists our reports about a police chief’s admission of a mistake and reviews by other universities. By the twelfth of August, the appointment inquiry provided another development to explain. Our argument is that these questions concerned institutions as well as one individual: who checked the appointment, and how did organisations respond when questions were raised?",
+              "text": "After his resignation on the fifth, our coverage continued into institutional responses. Our analysis the next day connected appointment checks with diversity policy, while also carrying the union’s counterargument. On the tenth, we reported a cancelled appearance and another association resignation, and checked other roles. By the twelfth, an independent appointment inquiry supplied a further development. These were different developments, but that does not automatically justify every part of the follow-up.",
               "evidenceIds": [
-                "inventory",
+                "institution-analysis",
+                "later-followup",
                 "inquiry"
               ]
             },
             {
               "kind": "analysis",
-              "text": "Nine of our written pieces are listed across the twenty-two days. At the busiest point, we published two listed pieces on each of two consecutive dates. We would justify returning to the story when an institution took a new step or an important claim needed an answer. We would also have to explain what each follow-up added, rather than treating public curiosity as a sufficient reason to publish.",
+              "text": "We owe you an answer about proportion. Nine written pieces are listed, with two on each of our busiest dates. Our first report had already carried a warning about the effect of continuing scrutiny. Arday later described the toll on his family. What public need did tracking the remaining roles serve, and could we have explained institutional responsibility with less personal exposure? Those are fair challenges to our editorial choices.",
               "evidenceIds": [
-                "inventory"
+                "inventory",
+                "first-response",
+                "arday-statement",
+                "later-followup"
               ]
             },
             {
-              "kind": "analysis",
-              "text": "You should challenge us on the complete picture. This archive excludes our broadcasts. It cannot show whether our total attention was proportionate, or whether every report gave adequate space to Arday’s response. A lower written count does not settle those questions.",
+              "kind": "comparison",
+              "text": "The earlier O’Reilly complaint also tests consistency. Its quieter coverage is a columnist’s estimate, not a matched census. And our nine written pieces exclude broadcasts; they cannot be compared directly with a broader pages-and-programmes tally. We would need a complete record of our attention and significant edits to defend the campaign as a whole.",
               "evidenceIds": [
+                "oreilly-report",
+                "oreilly-coverage",
                 "window",
-                "arday-statement"
+                "version-limit"
               ]
             }
           ]
@@ -340,35 +382,105 @@
         "coverageNotes": [
           {
             "kind": "report",
-            "text": "Our defence is that the story kept changing. Jason Arday was a Cambridge professor facing allegations of plagiarism. On the first of August, our listed coverage carried his defence of his work. He denied plagiarism. On the fifth, he resigned, saying public scrutiny had taken a toll on his family and that stepping down should not be read as accepting the narratives about him.",
+            "text": "We would defend reporting allegations about a prominent university appointment, while preserving the distinction between questions and findings. Our first listed report, on the first of August, put Arday’s defence in its headline. It described the source of the allegations and carried opposing academic views. But its wording about not disputing allegations deserves scrutiny alongside his later explicit denial. We cannot let repeated reporting flatten those distinctions.",
             "evidenceIds": [
-              "inventory",
-              "arday-statement",
+              "first-response",
               "arday-denial"
             ]
           },
           {
             "kind": "report",
-            "text": "After that, the archive lists our reports about a police chief’s admission of a mistake and reviews by other universities. By the twelfth of August, the appointment inquiry provided another development to explain. Our argument is that these questions concerned institutions as well as one individual: who checked the appointment, and how did organisations respond when questions were raised?",
+            "text": "After his resignation on the fifth, our coverage continued into institutional responses. Our analysis the next day connected appointment checks with diversity policy, while also carrying the union’s counterargument. On the tenth, we reported a cancelled appearance and another association resignation, and checked other roles. By the twelfth, an independent appointment inquiry supplied a further development. These were different developments, but that does not automatically justify every part of the follow-up.",
             "evidenceIds": [
-              "inventory",
+              "institution-analysis",
+              "later-followup",
               "inquiry"
             ]
           },
           {
             "kind": "analysis",
-            "text": "Nine of our written pieces are listed across the twenty-two days. At the busiest point, we published two listed pieces on each of two consecutive dates. We would justify returning to the story when an institution took a new step or an important claim needed an answer. We would also have to explain what each follow-up added, rather than treating public curiosity as a sufficient reason to publish.",
+            "text": "We owe you an answer about proportion. Nine written pieces are listed, with two on each of our busiest dates. Our first report had already carried a warning about the effect of continuing scrutiny. Arday later described the toll on his family. What public need did tracking the remaining roles serve, and could we have explained institutional responsibility with less personal exposure? Those are fair challenges to our editorial choices.",
             "evidenceIds": [
-              "inventory"
+              "inventory",
+              "first-response",
+              "arday-statement",
+              "later-followup"
             ]
           },
           {
-            "kind": "analysis",
-            "text": "You should challenge us on the complete picture. This archive excludes our broadcasts. It cannot show whether our total attention was proportionate, or whether every report gave adequate space to Arday’s response. A lower written count does not settle those questions.",
+            "kind": "comparison",
+            "text": "The earlier O’Reilly complaint also tests consistency. Its quieter coverage is a columnist’s estimate, not a matched census. And our nine written pieces exclude broadcasts; they cannot be compared directly with a broader pages-and-programmes tally. We would need a complete record of our attention and significant edits to defend the campaign as a whole.",
+            "evidenceIds": [
+              "oreilly-report",
+              "oreilly-coverage",
+              "window",
+              "version-limit"
+            ]
+          }
+        ],
+        "scrutiny": [
+          {
+            "criterionId": "public_value",
+            "observation": "Nine written pieces cover allegations, resignation and institutional developments. The 10 August report also checks remaining roles.",
+            "question": "What public interest justified that widening follow-up, rather than limiting coverage to the academic inquiry?",
+            "evidenceIds": [
+              "inventory",
+              "inquiry",
+              "later-followup"
+            ],
+            "limit": "We have not classified the new information in every piece. Broadcast attention is outside this count."
+          },
+          {
+            "criterionId": "context",
+            "observation": "The first headline includes a defence; the body carries responses and conflicting views. Its wording about not disputing allegations deserves comparison with his later denial.",
+            "question": "How did you keep readers from confusing acknowledged errors, allegations and a finding of plagiarism across repeated reports?",
+            "evidenceIds": [
+              "first-response",
+              "arday-denial",
+              "arday-statement"
+            ],
+            "limit": "Different statements and publication dates must be kept distinct. Current text does not establish all original versions."
+          },
+          {
+            "criterionId": "framing",
+            "observation": "The 6 August analysis raises appointment checks and diversity policy, while also recording the union’s counterargument.",
+            "question": "What evidence justifies making diversity policy part of this case without encouraging racial generalisations?",
+            "evidenceIds": [
+              "institution-analysis"
+            ],
+            "limit": "This question concerns an observable editorial inference. It does not establish racist intent or the effect on readers."
+          },
+          {
+            "criterionId": "care",
+            "observation": "The first report carried an explicit warning about continuing scrutiny. The later role-checking story repeats Arday’s account of the personal toll.",
+            "question": "Why did the remaining-role follow-up warrant this attention after those warnings, and how would you reduce needless humiliation?",
+            "evidenceIds": [
+              "first-response",
+              "later-followup",
+              "arday-statement"
+            ],
+            "limit": "Warnings and continued coverage raise a proportionality question; they do not prove what editors privately considered or caused."
+          },
+          {
+            "criterionId": "consistency",
+            "observation": "An upheld O’Reilly complaint provides a possible comparison, but its claimed quieter coverage has no matched dated inventory.",
+            "question": "Which differences would justify this intensity, and what matched evidence would you need before rejecting unequal treatment?",
+            "evidenceIds": [
+              "oreilly-report",
+              "oreilly-coverage"
+            ],
+            "limit": "No relevant search hit would not mean zero coverage. Do not infer a person’s ethnicity from their name or photograph."
+          },
+          {
+            "criterionId": "transparency",
+            "observation": "The earlier mixed-format tally differs from this nine-item written count. The current 10 August page gives a publication date but is not a full change log.",
+            "question": "Will you account for broadcasts, duplicates, significant edits and your own role in amplifying the story?",
             "evidenceIds": [
               "window",
-              "arday-statement"
-            ]
+              "later-followup",
+              "version-limit"
+            ],
+            "limit": "No complete before-and-after archive is supplied. The record does not establish a post-death scrub or cover-up."
           }
         ]
       },
@@ -503,6 +615,70 @@
               "oreilly-report",
               "oreilly-coverage"
             ]
+          }
+        ],
+        "scrutiny": [
+          {
+            "criterionId": "public_value",
+            "observation": "The campaign includes an investigation and a later appointment inquiry. Eighteen pieces include three days with four publications.",
+            "question": "What distinct public benefit did the additional columns and letters add beyond the investigation and inquiry?",
+            "evidenceIds": [
+              "inventory",
+              "investigation-report",
+              "inquiry"
+            ],
+            "limit": "Article totals cannot distinguish original discoveries from explanation or repetition."
+          },
+          {
+            "criterionId": "context",
+            "observation": "Investigative claims, Arday’s response and opinion defending diversity are all part of the selected record.",
+            "question": "How did you keep disputed biographical claims separate from established findings, and make the response visible across the campaign?",
+            "evidenceIds": [
+              "investigation-report",
+              "arday-denial",
+              "diversity-opinion"
+            ],
+            "limit": "Selected examples do not show the placement and balance of every response in all eighteen pieces."
+          },
+          {
+            "criterionId": "framing",
+            "observation": "The selected investigation foregrounds contested biographical claims; later opinion argues for defending diversity.",
+            "question": "Did the narrative and headline choices turn one person into a spectacle, even when some commentary defended him?",
+            "evidenceIds": [
+              "investigation-report",
+              "diversity-opinion"
+            ],
+            "limit": "Mixed perspectives do not automatically establish fairness or unfairness; reader reactions are unmeasured."
+          },
+          {
+            "criterionId": "care",
+            "observation": "Seventeen listed pieces fall on or after the resignation date. His statement that day described the personal toll.",
+            "question": "Why did the continued volume remain proportionate, including supportive commentary that prolonged the spotlight?",
+            "evidenceIds": [
+              "inventory",
+              "arday-statement"
+            ],
+            "limit": "These are calendar-date splits, not an exact before-and-after timestamp. Continued coverage is not itself proof of harm."
+          },
+          {
+            "criterionId": "consistency",
+            "observation": "A columnist raises the O’Reilly contrast, but the estimated six articles lack an equivalent window or method.",
+            "question": "Would you investigate possible unequal attention using matched cases, rather than rely on a columnist’s rough comparison?",
+            "evidenceIds": [
+              "oreilly-report",
+              "oreilly-coverage"
+            ],
+            "limit": "A concluded complaint and widening unresolved allegations are not automatically equivalent cases."
+          },
+          {
+            "criterionId": "transparency",
+            "observation": "The game uses a bounded outside inventory, with selected current article examples.",
+            "question": "How would you explain corrections, changed claims and your contribution to setting the agenda across the whole campaign?",
+            "evidenceIds": [
+              "inventory",
+              "version-limit"
+            ],
+            "limit": "A missing complete edit history is an evidence gap, not a finding that corrections were concealed."
           }
         ]
       },
@@ -652,6 +828,71 @@
               "oreilly-coverage"
             ]
           }
+        ],
+        "scrutiny": [
+          {
+            "criterionId": "public_value",
+            "observation": "Twenty-one pieces include five on 5 August and five on 10 August. An early commentary questions institutional appointment checks.",
+            "question": "What did those two publication waves add beyond repeating a political argument about Cambridge?",
+            "evidenceIds": [
+              "inventory",
+              "commentary-early"
+            ],
+            "limit": "An opinion piece may offer analysis without new facts, but its value still needs justification."
+          },
+          {
+            "criterionId": "context",
+            "observation": "The early commentary acknowledges unresolved allegations; later pieces broaden into institutional and policy arguments.",
+            "question": "How did you preserve that unresolved status as the campaign intensified and the person resigned?",
+            "evidenceIds": [
+              "commentary-early",
+              "commentary-leader",
+              "arday-denial"
+            ],
+            "limit": "The selected pieces are not a complete audit of qualifications or responses in every article."
+          },
+          {
+            "criterionId": "framing",
+            "observation": "A leading article generalises to progressive politics; another invokes fictional impostors and DEI.",
+            "question": "What evidence supports the wider policy conclusion, and does the impostor comparison invite ridicule of a person or group?",
+            "evidenceIds": [
+              "commentary-leader",
+              "commentary-dei"
+            ],
+            "limit": "Political opinion should be identified as opinion. The analogy does not establish motive or audience effect."
+          },
+          {
+            "criterionId": "care",
+            "observation": "The 10 August five-piece wave followed Arday’s public statement about the toll on his family.",
+            "question": "What justified maintaining that intensity, and how did your policy criticism avoid further personal humiliation?",
+            "evidenceIds": [
+              "inventory",
+              "arday-statement",
+              "commentary-dei"
+            ],
+            "limit": "The record does not establish editors’ private decisions or a causal effect on health or death."
+          },
+          {
+            "criterionId": "consistency",
+            "observation": "The O’Reilly case offers a test of whether institutional failings receive the same intensity across subjects.",
+            "question": "Would your standards argument have generated comparable attention there, and how would you measure it fairly?",
+            "evidenceIds": [
+              "oreilly-report",
+              "oreilly-coverage"
+            ],
+            "limit": "No matched inventory supports a numerical ranking or a claim that no such coverage existed."
+          },
+          {
+            "criterionId": "transparency",
+            "observation": "Opinion and news can both contribute to campaign attention. A fixed inventory records publications, not a complete correction history.",
+            "question": "Will you account for what was evidence, what was opinion and what changed as the claims developed?",
+            "evidenceIds": [
+              "inventory",
+              "commentary-early",
+              "version-limit"
+            ],
+            "limit": "Counting a piece does not imply it was hostile or wrong; absence of an edit log does not establish concealment."
+          }
         ]
       },
       {
@@ -775,6 +1016,67 @@
               "oreilly-coverage"
             ]
           }
+        ],
+        "scrutiny": [
+          {
+            "criterionId": "public_value",
+            "observation": "Forty-two written pieces span eighteen active days, including seven on each of 6 and 7 August.",
+            "question": "Which new findings warranted that pace, and which later publications revisited claims already made?",
+            "evidenceIds": [
+              "inventory"
+            ],
+            "limit": "Headings and dates cannot determine the novelty of every full article."
+          },
+          {
+            "criterionId": "context",
+            "observation": "The campaign moved from plagiarism allegations into biographical, appointment and political themes. Arday denied plagiarism and rejected the narratives in his resignation.",
+            "question": "How prominently did each wave carry his answer and the distinction between allegations and adjudicated findings?",
+            "evidenceIds": [
+              "inventory",
+              "arday-denial",
+              "arday-statement"
+            ],
+            "limit": "Original example pages were unavailable. No blanket omission finding can be made from the inventory."
+          },
+          {
+            "criterionId": "framing",
+            "observation": "The early inventory headline labels him through diversity; the later campaign links the appointment to political associations.",
+            "question": "Why was that framing relevant, and what stops it becoming a shortcut for discrediting minority appointments generally?",
+            "evidenceIds": [
+              "inventory"
+            ],
+            "limit": "Limited headline excerpts are observable evidence of framing, not proof of what every body said or what editors intended."
+          },
+          {
+            "criterionId": "care",
+            "observation": "Thirty pieces are dated from the resignation date onward, including the campaign’s fourteen-piece two-day peak.",
+            "question": "What public need justified that concentration after his account of the personal toll, and what would have made you stop?",
+            "evidenceIds": [
+              "inventory",
+              "arday-statement"
+            ],
+            "limit": "Date-level counts do not locate publication relative to the exact statement time or establish causation."
+          },
+          {
+            "criterionId": "consistency",
+            "observation": "A documented earlier Cambridge plagiarism case offers a possible consistency test, with an unmatched rough coverage estimate.",
+            "question": "What comparable institutional failures would you cover at this intensity, and how would you substantiate that answer?",
+            "evidenceIds": [
+              "oreilly-report",
+              "oreilly-coverage"
+            ],
+            "limit": "We cannot infer demographic differences or unequal motive from a name, a photograph or unmatched counts."
+          },
+          {
+            "criterionId": "transparency",
+            "observation": "The final inventory date ends at 15:12 BST; the selected excerpts are not a complete current or original article archive.",
+            "question": "Can you supply a dated inventory and explain significant corrections, removals and your own agenda-setting role?",
+            "evidenceIds": [
+              "window",
+              "version-limit"
+            ],
+            "limit": "Unavailable pages and indexing gaps must be recorded as unknowns, not proof of a purge or absence of coverage."
+          }
         ]
       }
     ],
@@ -828,6 +1130,696 @@
         "oreilly-coverage"
       ]
     },
-    "narrationNotice": "Role-played editor’s defence for the game. These scripts are not statements made by the actual outlets."
+    "narrationNotice": "Role-played editor’s defence for the game. These scripts are not statements made by the actual outlets.",
+    "countMode": "daily",
+    "splitEventDate": "2026-08-05",
+    "splitLabel": "Before 5 Aug / from 5 Aug (calendar dates)",
+    "scrutinyCriteria": [
+      {
+        "id": "public_value",
+        "label": "Public interest",
+        "question": "What did each wave add that the public needed to know?"
+      },
+      {
+        "id": "context",
+        "label": "Fair context",
+        "question": "Were allegations, responses and unresolved findings represented fairly?"
+      },
+      {
+        "id": "framing",
+        "label": "Framing & power",
+        "question": "Did the campaign invite scrutiny or stereotyping, ridicule and superiority?"
+      },
+      {
+        "id": "care",
+        "label": "Care & persistence",
+        "question": "Was continued attention proportionate after distress became known?"
+      },
+      {
+        "id": "consistency",
+        "label": "Comparable treatment",
+        "question": "Would the outlet apply the same intensity to a genuinely comparable case?"
+      },
+      {
+        "id": "transparency",
+        "label": "Transparency",
+        "question": "Can we account for the inventory, later edits and the outlet’s own role?"
+      }
+    ],
+    "dataCompleteness": "Dated inventory for the selected written pieces; not an all-format census or a full content audit.",
+    "researchProvenance": {
+      "reviewed": "2026-10-13",
+      "scope": "Questions developed from a supplied public research essay and independently checked public sources. Private correspondence and personal material are excluded.",
+      "corrections": "Earlier mixed-format and preliminary tallies are not the fixed 229-item written inventory used here. Current BBC pages were read on 13 October; their current text alone does not establish every original August version.",
+      "interpretation": "The six scrutiny observations identify evidence and gaps to test. They are not findings of guilt, discrimination, motive or causation."
+    }
+  },
+  {
+    "id": "flack-sun-aggregate",
+    "title": "Caroline Flack: six months of press coverage",
+    "subject": "Caroline Flack coverage by The Sun within the Guardian’s six-month print analysis",
+    "mode": "public-interest",
+    "countMode": "aggregate",
+    "start": "2019-08-14",
+    "end": "2020-02-14",
+    "endNote": "The Guardian’s analysis window ends on 14 February 2020; exact inclusion-time convention is not stated.",
+    "days": [
+      "2019-08-14",
+      "2019-08-15",
+      "2019-08-16",
+      "2019-08-17",
+      "2019-08-18",
+      "2019-08-19",
+      "2019-08-20",
+      "2019-08-21",
+      "2019-08-22",
+      "2019-08-23",
+      "2019-08-24",
+      "2019-08-25",
+      "2019-08-26",
+      "2019-08-27",
+      "2019-08-28",
+      "2019-08-29",
+      "2019-08-30",
+      "2019-08-31",
+      "2019-09-01",
+      "2019-09-02",
+      "2019-09-03",
+      "2019-09-04",
+      "2019-09-05",
+      "2019-09-06",
+      "2019-09-07",
+      "2019-09-08",
+      "2019-09-09",
+      "2019-09-10",
+      "2019-09-11",
+      "2019-09-12",
+      "2019-09-13",
+      "2019-09-14",
+      "2019-09-15",
+      "2019-09-16",
+      "2019-09-17",
+      "2019-09-18",
+      "2019-09-19",
+      "2019-09-20",
+      "2019-09-21",
+      "2019-09-22",
+      "2019-09-23",
+      "2019-09-24",
+      "2019-09-25",
+      "2019-09-26",
+      "2019-09-27",
+      "2019-09-28",
+      "2019-09-29",
+      "2019-09-30",
+      "2019-10-01",
+      "2019-10-02",
+      "2019-10-03",
+      "2019-10-04",
+      "2019-10-05",
+      "2019-10-06",
+      "2019-10-07",
+      "2019-10-08",
+      "2019-10-09",
+      "2019-10-10",
+      "2019-10-11",
+      "2019-10-12",
+      "2019-10-13",
+      "2019-10-14",
+      "2019-10-15",
+      "2019-10-16",
+      "2019-10-17",
+      "2019-10-18",
+      "2019-10-19",
+      "2019-10-20",
+      "2019-10-21",
+      "2019-10-22",
+      "2019-10-23",
+      "2019-10-24",
+      "2019-10-25",
+      "2019-10-26",
+      "2019-10-27",
+      "2019-10-28",
+      "2019-10-29",
+      "2019-10-30",
+      "2019-10-31",
+      "2019-11-01",
+      "2019-11-02",
+      "2019-11-03",
+      "2019-11-04",
+      "2019-11-05",
+      "2019-11-06",
+      "2019-11-07",
+      "2019-11-08",
+      "2019-11-09",
+      "2019-11-10",
+      "2019-11-11",
+      "2019-11-12",
+      "2019-11-13",
+      "2019-11-14",
+      "2019-11-15",
+      "2019-11-16",
+      "2019-11-17",
+      "2019-11-18",
+      "2019-11-19",
+      "2019-11-20",
+      "2019-11-21",
+      "2019-11-22",
+      "2019-11-23",
+      "2019-11-24",
+      "2019-11-25",
+      "2019-11-26",
+      "2019-11-27",
+      "2019-11-28",
+      "2019-11-29",
+      "2019-11-30",
+      "2019-12-01",
+      "2019-12-02",
+      "2019-12-03",
+      "2019-12-04",
+      "2019-12-05",
+      "2019-12-06",
+      "2019-12-07",
+      "2019-12-08",
+      "2019-12-09",
+      "2019-12-10",
+      "2019-12-11",
+      "2019-12-12",
+      "2019-12-13",
+      "2019-12-14",
+      "2019-12-15",
+      "2019-12-16",
+      "2019-12-17",
+      "2019-12-18",
+      "2019-12-19",
+      "2019-12-20",
+      "2019-12-21",
+      "2019-12-22",
+      "2019-12-23",
+      "2019-12-24",
+      "2019-12-25",
+      "2019-12-26",
+      "2019-12-27",
+      "2019-12-28",
+      "2019-12-29",
+      "2019-12-30",
+      "2019-12-31",
+      "2020-01-01",
+      "2020-01-02",
+      "2020-01-03",
+      "2020-01-04",
+      "2020-01-05",
+      "2020-01-06",
+      "2020-01-07",
+      "2020-01-08",
+      "2020-01-09",
+      "2020-01-10",
+      "2020-01-11",
+      "2020-01-12",
+      "2020-01-13",
+      "2020-01-14",
+      "2020-01-15",
+      "2020-01-16",
+      "2020-01-17",
+      "2020-01-18",
+      "2020-01-19",
+      "2020-01-20",
+      "2020-01-21",
+      "2020-01-22",
+      "2020-01-23",
+      "2020-01-24",
+      "2020-01-25",
+      "2020-01-26",
+      "2020-01-27",
+      "2020-01-28",
+      "2020-01-29",
+      "2020-01-30",
+      "2020-01-31",
+      "2020-02-01",
+      "2020-02-02",
+      "2020-02-03",
+      "2020-02-04",
+      "2020-02-05",
+      "2020-02-06",
+      "2020-02-07",
+      "2020-02-08",
+      "2020-02-09",
+      "2020-02-10",
+      "2020-02-11",
+      "2020-02-12",
+      "2020-02-13",
+      "2020-02-14"
+    ],
+    "dataCompleteness": "One outlet aggregate from a bounded six-month print-media analysis; no daily series or item-level corpus is available here.",
+    "source": {
+      "name": "The Guardian analysis",
+      "url": "https://www.theguardian.com/tv-and-radio/2020/feb/21/caroline-flack-negative-media-coverage-before-death-revealed",
+      "retrieved": "2026-10-13",
+      "unit": "print stories in which Caroline Flack appeared in the headline or body",
+      "corpusCount": 387,
+      "outletUniverse": null,
+      "scopeNote": "The Guardian reports 387 print stories across UK national newspapers for 14 Aug 2019–14 Feb 2020, including 99 mentioning Flack in The Sun. Inclusion means her name in the headline or body. This is an aggregate only: outlet universe is not itemized here, and no daily counts, active days, peak, before/after split or complete headline corpus is supplied. Three journalists categorized stories by tone; the Guardian calls the analysis non-definitive. The 99 are not all established as negative, and this record does not claim the coverage caused her death. The example is an online Sun story, reported by The Independent, and is not verified as one of the 99 print-corpus items. This method is not comparable to a census of distinct substantive online articles."
+    },
+    "events": [
+      {
+        "date": "2019-12-13",
+        "label": "Charged with assault by beating",
+        "evidenceId": "charge"
+      },
+      {
+        "date": "2019-12-17",
+        "label": "Stepped down from Love Island",
+        "evidenceId": "stepdown"
+      },
+      {
+        "date": "2019-12-23",
+        "label": "Pleaded not guilty",
+        "evidenceId": "plea"
+      },
+      {
+        "date": "2020-02-14",
+        "label": "Sun Valentine-card story published online",
+        "evidenceId": "card-story"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "guardian-analysis",
+        "label": "Guardian aggregate and method",
+        "url": "https://www.theguardian.com/tv-and-radio/2020/feb/21/caroline-flack-negative-media-coverage-before-death-revealed",
+        "text": "The Guardian reports 387 print stories across UK national newspapers and 99 Sun stories mentioning Flack. Inclusion was her name in headline or body during 14 Aug 2019–14 Feb 2020. Three journalists classified tone; the article says the analysis is not definitive. Most stories were neutral overall; December negative headlines rose to 35% versus 18% positive, while February had equal positive and negative counts."
+      },
+      {
+        "id": "charge",
+        "label": "Charge report, 13 December 2019",
+        "url": "https://www.itv.com/news/2019-12-13/love-island-presenter-caroline-flack-charged-with-assault-police-say",
+        "text": "ITV reported that Flack was charged with assault by beating on 13 December after an incident the previous day. The allegation was not a conviction."
+      },
+      {
+        "id": "stepdown",
+        "label": "Flack steps down from Love Island, 17 December 2019",
+        "url": "https://www.itv.com/news/2019-12-17/caroline-flack-stand-down-host-of-upcoming-series-love-island-after-assault-charge",
+        "text": "ITV reported that Flack stood down from the upcoming series after the charge. Her statement said reports about her private life did not reflect events as she understood them; she said she would cooperate with authorities and could not comment further during the legal process. ITV accepted her decision."
+      },
+      {
+        "id": "replacement",
+        "label": "Laura Whitmore named host, 20 December 2019",
+        "url": "https://www.itv.com/news/2019-12-20/laura-whitmore-announced-as-host-of-love-island-after-caroline-flack-stepped-down",
+        "text": "ITV announced Laura Whitmore as the replacement host after Flack stepped down; Whitmore described Flack as a friend and said she wished circumstances were better."
+      },
+      {
+        "id": "plea",
+        "label": "Not-guilty plea reported, 24 December 2019",
+        "url": "https://www.itv.com/news/2019-12-24/love-islands-caroline-flack-announces-social-media-break",
+        "text": "ITV’s 24 December report states Flack pleaded not guilty at Highbury Corner Magistrates’ Court on 23 December. She remained on bail ahead of a trial then scheduled for March. The same report records her statement that scrutiny and speculation were difficult to face alone and that she was taking time away to feel better."
+      },
+      {
+        "id": "card-story",
+        "label": "Reported headline of removed Sun online story",
+        "url": "https://www.independent.co.uk/news/media/tv-radio/caroline-flack-death-sun-valentines-day-card-lewis-burton-assault-charge-a9337756.html",
+        "text": "The Independent reported that The Sun published an online story on 14 February about a Valentine card mocking Flack in relation to the alleged assault; it reproduced the headline excerpt “Brutal Caroline Flack Valentine’s Day card mocks troubled star”. This confirms an online story, not its presence in the Guardian’s print corpus."
+      },
+      {
+        "id": "removal",
+        "label": "Removal reported after the window",
+        "url": "https://www.theguardian.com/media/2020/feb/15/the-sun-takes-down-article-about-caroline-flack-from-website",
+        "text": "By Saturday evening, 15 February, the online story had been replaced with a legal removal notice. The Guardian says the exact removal time was unclear, so the record does not establish whether removal preceded or followed the public announcement. This is outside the print-count window."
+      },
+      {
+        "id": "editorial-response",
+        "label": "Public debate about press coverage",
+        "url": "https://www.theguardian.com/media/2020/feb/16/caroline-flack-death-turns-spotlight-on-tabloids-once-again",
+        "text": "The Guardian reported criticism of tabloid coverage and recorded The Sun executive editor Dan Wootton’s public claim that ITV had failed to stand by Flack. The response and criticism are viewpoints, not evidence that coverage caused her death."
+      }
+    ],
+    "scrutinyCriteria": [
+      {
+        "id": "public_value",
+        "label": "Public interest",
+        "question": "What did each wave add that the public needed to know?"
+      },
+      {
+        "id": "context",
+        "label": "Fair context",
+        "question": "Were allegations, responses and unresolved findings represented fairly?"
+      },
+      {
+        "id": "framing",
+        "label": "Framing & power",
+        "question": "Did the campaign invite scrutiny or stereotyping, ridicule and superiority?"
+      },
+      {
+        "id": "care",
+        "label": "Care & persistence",
+        "question": "Was continued attention proportionate after distress became known?"
+      },
+      {
+        "id": "consistency",
+        "label": "Comparable treatment",
+        "question": "Would the outlet apply the same intensity to a genuinely comparable case?"
+      },
+      {
+        "id": "transparency",
+        "label": "Transparency",
+        "question": "Can we account for the inventory, later edits and the outlet’s own role?"
+      }
+    ],
+    "reasoningChecks": [
+      {
+        "id": "unit",
+        "prompt": "What does 99 count?",
+        "options": [
+          {
+            "value": "heads",
+            "label": "99 headlines"
+          },
+          {
+            "value": "stories",
+            "label": "99 print stories mentioning Flack in headline or body"
+          },
+          {
+            "value": "negative",
+            "label": "99 stories judged negative"
+          }
+        ],
+        "answer": "stories",
+        "explanation": "The Guardian says 99 print stories in The Sun mentioned Flack in the headline or body. The aggregate does not mean every item was a headline or negative.",
+        "evidenceIds": [
+          "guardian-analysis"
+        ]
+      },
+      {
+        "id": "daily",
+        "prompt": "What can this record show about daily peaks?",
+        "options": [
+          {
+            "value": "peak",
+            "label": "The busiest publication day"
+          },
+          {
+            "value": "trend",
+            "label": "The daily trend before and after the charge"
+          },
+          {
+            "value": "none",
+            "label": "No daily series or peak is available"
+          }
+        ],
+        "answer": "none",
+        "explanation": "The published summary gives the six-month aggregate only; daily outlet counts are unavailable here.",
+        "evidenceIds": [
+          "guardian-analysis"
+        ]
+      },
+      {
+        "id": "status",
+        "prompt": "What was established when she stepped down?",
+        "options": [
+          {
+            "value": "convicted",
+            "label": "A conviction for assault"
+          },
+          {
+            "value": "charged",
+            "label": "A charge, which she later denied by pleading not guilty"
+          },
+          {
+            "value": "cleared",
+            "label": "That the allegation had been disproved"
+          }
+        ],
+        "answer": "charged",
+        "explanation": "The report describes a charge, and ITV records a not-guilty plea. Neither is a verdict.",
+        "evidenceIds": [
+          "charge",
+          "stepdown",
+          "plea"
+        ]
+      },
+      {
+        "id": "example",
+        "prompt": "Does the Valentine-card story prove that it was one of the 99 print stories?",
+        "options": [
+          {
+            "value": "yes",
+            "label": "Yes, it is verified in the print corpus"
+          },
+          {
+            "value": "no",
+            "label": "No, it is reported as an online story; print-corpus membership is unverified"
+          },
+          {
+            "value": "negative",
+            "label": "Yes, and it proves all 99 were negative"
+          }
+        ],
+        "answer": "no",
+        "explanation": "The Independent reports a Sun online story dated 14 February, but the Guardian’s aggregate concerns print stories and does not provide item-level linkage.",
+        "evidenceIds": [
+          "card-story",
+          "guardian-analysis"
+        ]
+      },
+      {
+        "id": "causation",
+        "prompt": "What can the coverage total establish about Flack’s death?",
+        "options": [
+          {
+            "value": "cause",
+            "label": "That the coverage caused her death"
+          },
+          {
+            "value": "nothing",
+            "label": "It establishes neither causation nor a complete account of her experience"
+          },
+          {
+            "value": "intent",
+            "label": "That editors intended harm"
+          }
+        ],
+        "answer": "nothing",
+        "explanation": "A publication count cannot establish intent or causal effect. The aggregate supports a question about volume and editorial choices, not a causal conclusion.",
+        "evidenceIds": [
+          "guardian-analysis",
+          "editorial-response"
+        ]
+      }
+    ],
+    "campaigns": [
+      {
+        "id": "sun",
+        "outlet": "The Sun",
+        "listedCount": 99,
+        "dailyCounts": null,
+        "activeDays": null,
+        "peakDaily": null,
+        "beforeResignationCount": null,
+        "afterResignationCount": null,
+        "examples": [
+          {
+            "id": "sun-card-online",
+            "headline": "Brutal Caroline Flack Valentine’s Day card mocks troubled star…",
+            "url": "https://www.independent.co.uk/news/media/tv-radio/caroline-flack-death-sun-valentines-day-card-lewis-burton-assault-charge-a9337756.html",
+            "published": "2020-02-14",
+            "verification": "The Independent reproduced this reported headline of a Sun online story published 14 February. It is not verified as one of the Guardian’s 99 print-corpus entries; this excerpt is an illustration of documented framing, not a representative sample."
+          }
+        ],
+        "reviewNotes": {
+          "publicValue": "A public figure’s criminal charge and departure from a flagship programme were legitimate news developments. Ask what each article added and whether continuing attention remained proportionate.",
+          "pressure": "The Guardian’s aggregate identifies 99 Sun print stories in the six-month window, but supplies no daily series or full headline corpus here. The total alone cannot show repetition, peaks, or the experience of the subject.",
+          "limit": "The count is stories mentioning Flack in headline or body, not 99 negative headlines. Tone was mixed in the Guardian’s all-outlet analysis. No causal claim about her death follows from the count. The example is an online item with unverified membership in the print corpus."
+        },
+        "scrutiny": [
+          {
+            "criterionId": "public_value",
+            "observation": "The campaign window includes a charge and a high-profile presenter’s departure from Love Island; these are developments with public relevance.",
+            "question": "What information did the 99 items add beyond those developments, and how often did later items justify renewed attention?",
+            "limit": "The aggregate count and summary do not list all Sun items or establish what each added.",
+            "evidenceIds": [
+              "guardian-analysis",
+              "charge",
+              "stepdown"
+            ]
+          },
+          {
+            "criterionId": "context",
+            "observation": "Flack was charged on 13 December, stepped down on 17 December, and pleaded not guilty on 23 December.",
+            "question": "Did the outlet consistently present the matter as an allegation and report her response and the court process?",
+            "limit": "This record has no full set of 99 articles with which to assess outlet-wide practice.",
+            "evidenceIds": [
+              "charge",
+              "stepdown",
+              "plea"
+            ]
+          },
+          {
+            "criterionId": "framing",
+            "observation": "A reported 14 February online Sun story publicized a Valentine card mocking the alleged assault; the Guardian later reported that the story was removed.",
+            "question": "Was highlighting the card newsworthy, or did the treatment use an unresolved allegation as ridicule?",
+            "limit": "The example is online, not verified as a print-corpus item, and cannot represent all 99 stories.",
+            "evidenceIds": [
+              "card-story",
+              "removal"
+            ]
+          },
+          {
+            "criterionId": "care",
+            "observation": "On 24 December, Flack publicly described the strain of scrutiny and speculation. The reported mocking card story followed in February.",
+            "question": "What public value justified that later treatment after her account of the strain, and how should sustained attention be reduced?",
+            "limit": "The report does not establish editors’ knowledge or safeguards, the pattern across all 99 print stories, or a causal effect on her death.",
+            "evidenceIds": [
+              "plea",
+              "card-story",
+              "guardian-analysis"
+            ]
+          },
+          {
+            "criterionId": "consistency",
+            "observation": "A single subject-and-outlet aggregate does not provide a matched comparison case or equivalent news timeline.",
+            "question": "Would the outlet publish a similar volume and framing about another presenter facing a charge and stepping down?",
+            "limit": "No matching comparison corpus is included, so consistency cannot be measured here.",
+            "evidenceIds": [
+              "guardian-analysis"
+            ]
+          },
+          {
+            "criterionId": "transparency",
+            "observation": "The outside analysis gives an aggregate and inclusion rule, but no complete outlet inventory. A reported mocking online story was later replaced with a legal notice.",
+            "question": "Will you supply the publication record and explain significant removals or corrections, including what changed and why?",
+            "limit": "The removal was reported by 15 February, outside this counting window; its exact time and rationale are not established. No full change log or complete print inventory is supplied.",
+            "evidenceIds": [
+              "guardian-analysis",
+              "removal"
+            ]
+          }
+        ],
+        "briefing": {
+          "title": "A difficult story, and a harder editorial question",
+          "paragraphs": [
+            {
+              "kind": "report",
+              "text": "We covered a presenter whose private life became public through a criminal charge and her departure from a major television programme. Caroline Flack was charged with assault by beating on 13 December 2019. Four days later she stepped down from Love Island, saying reports about her were inaccurate and she could not comment during the legal process. She pleaded not guilty on 23 December. Neither is a verdict.",
+              "evidenceIds": [
+                "charge",
+                "stepdown",
+                "plea"
+              ]
+            },
+            {
+              "kind": "analysis",
+              "text": "A published press review raises a serious question about scale: 99 print stories mentioning Flack in our paper, within 387 across UK national newspapers from 14 August 2019 to 14 February 2020. The rule covered her name in headline or body. This is not 99 headlines or negative stories. The review found mixed tone overall and supplies no daily values or complete outlet item list.",
+              "evidenceIds": [
+                "guardian-analysis"
+              ]
+            },
+            {
+              "kind": "analysis",
+              "text": "One difficult example is our online story, reported on the fourteenth of February, about a Valentine card joking about the alleged assault. This followed Flack’s public account in December of the strain of scrutiny and speculation. We can identify the story and its later removal, but cannot link it to the 99 print entries. Did highlighting the card inform readers or turn an unresolved allegation into mockery? We owe you a justification for that choice.",
+              "evidenceIds": [
+                "card-story",
+                "removal",
+                "plea"
+              ]
+            },
+            {
+              "kind": "comparison",
+              "text": "We would need to explain whether we treated comparable public figures consistently. This record has no matched case or item-level archive, so we cannot make that comparison or say what each story added. Reporting a charge and programme change had public value; that does not justify every follow-up. The total establishes volume, not that all 99 were hostile, that editors intended harm, or that coverage caused Flack’s death.",
+              "evidenceIds": [
+                "guardian-analysis",
+                "charge",
+                "stepdown",
+                "card-story"
+              ]
+            }
+          ]
+        },
+        "coverageNotes": [
+          {
+            "kind": "report",
+            "text": "We covered a presenter whose private life became public through a criminal charge and her departure from a major television programme. Caroline Flack was charged with assault by beating on 13 December 2019. Four days later she stepped down from Love Island, saying reports about her were inaccurate and she could not comment during the legal process. She pleaded not guilty on 23 December. Neither is a verdict.",
+            "evidenceIds": [
+              "charge",
+              "stepdown",
+              "plea"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "A published press review raises a serious question about scale: 99 print stories mentioning Flack in our paper, within 387 across UK national newspapers from 14 August 2019 to 14 February 2020. The rule covered her name in headline or body. This is not 99 headlines or negative stories. The review found mixed tone overall and supplies no daily values or complete outlet item list.",
+            "evidenceIds": [
+              "guardian-analysis"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "One difficult example is our online story, reported on the fourteenth of February, about a Valentine card joking about the alleged assault. This followed Flack’s public account in December of the strain of scrutiny and speculation. We can identify the story and its later removal, but cannot link it to the 99 print entries. Did highlighting the card inform readers or turn an unresolved allegation into mockery? We owe you a justification for that choice.",
+            "evidenceIds": [
+              "card-story",
+              "removal",
+              "plea"
+            ]
+          },
+          {
+            "kind": "comparison",
+            "text": "We would need to explain whether we treated comparable public figures consistently. This record has no matched case or item-level archive, so we cannot make that comparison or say what each story added. Reporting a charge and programme change had public value; that does not justify every follow-up. The total establishes volume, not that all 99 were hostile, that editors intended harm, or that coverage caused Flack’s death.",
+            "evidenceIds": [
+              "guardian-analysis",
+              "charge",
+              "stepdown",
+              "card-story"
+            ]
+          }
+        ]
+      }
+    ],
+    "context": {
+      "statusAtWindowEnd": "The analysis window ended on 14 February 2020, the date of the reported Sun online Valentine-card story. Flack had pleaded not guilty in December; no trial verdict occurred during this window.",
+      "sequence": [
+        {
+          "date": "2019-12-13",
+          "text": "Flack was charged with assault by beating after an incident the previous day.",
+          "evidenceIds": [
+            "charge"
+          ]
+        },
+        {
+          "date": "2019-12-17",
+          "text": "She stepped down from the upcoming Love Island series and disputed how her private life had been reported.",
+          "evidenceIds": [
+            "stepdown"
+          ]
+        },
+        {
+          "date": "2019-12-23",
+          "text": "She pleaded not guilty at Highbury Corner Magistrates’ Court.",
+          "evidenceIds": [
+            "plea"
+          ]
+        },
+        {
+          "date": "2020-02-14",
+          "text": "The Sun published an online story about the Valentine card; its membership in the print analysis corpus is unverified.",
+          "evidenceIds": [
+            "card-story"
+          ]
+        }
+      ],
+      "allegationResponse": "The 13 December charge was an allegation; ITV reported that Flack pleaded not guilty on 23 December. This record does not include a trial verdict.",
+      "evidenceIds": [
+        "charge",
+        "plea"
+      ]
+    },
+    "comparison": {
+      "title": "No matched comparison supplied",
+      "subject": "Comparable coverage of another public figure facing a criminal charge",
+      "established": "This record contains the Guardian’s aggregate for one outlet and one six-month print analysis window.",
+      "coverageClaim": "No matching outlet-level comparison count is established here.",
+      "limit": "An absence of matched evidence is not proof that comparable cases received less attention. The Guardian and NewsCord counting methods are not interchangeable.",
+      "evidenceIds": [
+        "guardian-analysis"
+      ]
+    },
+    "narrationNotice": "Role-played editorial defence for the game. It is not a statement made by The Sun or its staff."
   }
 ]

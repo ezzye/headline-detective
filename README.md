@@ -1,8 +1,33 @@
 # Headline Detective
 
-A local media-literacy game with two distinct modes: the original article-comparison prototype, and a Jason Arday campaign round. The campaign round examines whole-outlet volume and pacing from 24 July to 14 August 2026; its final date ends at 15:12 BST.
+A local newsreader game about how outlets cover public controversies. It has two campaign cases with different evidence shapes: a dated article inventory for Jason Arday and an aggregate print-coverage analysis for Caroline Flack. An older four-article comparison prototype remains archived separately.
 
 [Setup and sharing](README.html) · [Verification status](verification.html) · [Game](index.html)
+
+## The six-step round
+
+1. **Welcome** — choose a case and learn what its numbers count.
+2. **Timeline** — follow the documented events and the allegation’s status.
+3. **Scrutiny** — consider each outlet through the same six criteria: public value, context, framing, care, consistency, and transparency. Prompts stay tied to the supplied sources and state what the record cannot establish.
+4. **Hear** — listen to or read a reviewed, first-person editorial defence for the game. These scripts are role-play, not statements from the real publishers.
+5. **Judge** — rate the coverage, give a verdict, suggest a proportionate count and answer five factual checks. Those judgments and suggested counts are ungraded.
+6. **Reveal** — see the source identities, preserved judgments and five evidence-check results worth two points each; 8/10 wins. The checks test the record’s unit, scope, limits, and event context.
+
+Volume alone does not establish motive, intent, discrimination, or harm. Questions that ask for unsupported dates, trends, or matching comparisons must stay unanswered by the evidence.
+
+## The two campaign cases
+
+### Jason Arday: dated written-article inventory
+
+The 24 July–14 August 2026 window contains 22 calendar dates and ends at 15:12 BST on 14 August. The fixed NewsCord inventory lists 229 distinct substantive written pieces across 15 outlets. This round selects four outlets: BBC News (9), The Guardian (18), The Spectator (21), and The Telegraph (42), for 90 of those listed pieces. The inventory’s indexing coverage is qualified; totals may be lower bounds. It excludes passing mentions, broadcasts, and video-only items.
+
+There are 11 selected headline examples. Three BBC examples were checked against primary BBC pages on 13 October 2026. Telegraph examples are six-word excerpts from the inventory because original pages were unavailable for this build. Examples illustrate the campaign; they are not the population used for the counts.
+
+### Caroline Flack: aggregate print-coverage analysis
+
+The Guardian reports 99 print stories in The Sun among 387 stories across UK national newspapers during 14 August 2019–14 February 2020, a 185-date window. The count includes stories with “Caroline Flack” in the headline or body. Three Guardian journalists classified tone; the article says its analysis is not definitive. It found mixed tone overall, so the 99 should not be treated as 99 negative stories.
+
+This case has no daily counts, peak day, full outlet roster, or item-level inventory in the game. Its example is a reported Sun online Valentine-card story; whether that story appeared in print or belongs to the 99 is unknown. The Flack aggregate counts print stories under the Guardian’s stated mention rule; the Arday case counts distinct substantive written items from a selected inventory. Their methods are not directly comparable.
 
 ## Run it
 
@@ -16,22 +41,12 @@ Then open <http://127.0.0.1:9027/>. No packages need installing. Without API key
 
 ## Your own provider keys
 
-Live DeepSeek replies and optional ElevenLabs voices require your own provider accounts and keys; each user is responsible for their provider usage and charges. Copy `.env.example` to `.env` and add your private settings, or keep them in a separate file and start with `HEADLINE_DETECTIVE_ENV_FILE=/absolute/path/private.env npm start`. Never share the private file. The example file contains placeholders.
-
-## The Arday campaign round
-
-The four outlets represent BBC News (9 listed pieces), The Guardian (18), The Spectator (21) and The Telegraph (42): 90 listed pieces in total. They are selected from NewsCord’s fixed inventory of 229 items across 15 outlets. The inventory records distinct substantive written pieces; indexing gaps mean counts can be lower bounds. Passing mentions, broadcasts and video-only items are excluded.
-
-Daily totals come from the dated rows in `campaign-records.csv`; that audit contains dates and URLs only. The round includes 10 selected headline examples, not the population used for counting. BBC and Telegraph examples are six-word excerpts because original publisher pages were unavailable to this build. Other example verification notes identify checked publisher pages and possible later headline edits.
-
-Judge the campaign’s amount, pace, timing, and what documented developments could justify further coverage. You may suggest a count for what you consider proportionate. Neither your verdict nor suggested count is automatically graded. Five evidence checks are worth two points each; reach 8/10 to win. The game does not infer motive, intent, or harm from volume alone.
-
-The original comparison prototype is archived separately as [`comparison.html`](comparison.html); it is not the campaign round.
+Live DeepSeek replies and optional ElevenLabs voices require your own provider accounts and keys; each user is responsible for their provider usage and charges. Copy `.env.example` to a private `.env` or keep your settings in a separate file and start with `HEADLINE_DETECTIVE_ENV_FILE=/absolute/path/private.env npm start`. The private config is local and ignored; do not share it. The example file contains placeholders. No provider keys or private configuration are included with the shared game.
 
 ## Sharing and checks
 
 Share the HTML files themselves for private/offline review, or share the public source repository. This project does not publish a playable website. The setup and verification pages have Save HTML and Share file controls; if native file sharing is unavailable, download the HTML and attach it yourself.
 
-Run `npm test` and `npm run check:secrets` before sharing. Tests should use fake providers and make no paid calls. Campaign browser, live-provider, and public-headline verification status is recorded in [verification.html](verification.html).
+The automated checks pass; owner acceptance remains unreviewed. Check [verification.html](verification.html) for the current status before describing the cases as fully verified.
 
-Each outlet now delivers a reviewed first-person newsreader script of roughly 230–265 words: the events, its coverage and its case for continuing. DeepSeek answers your challenges using the same sourced context. The voices represent fictional editors defending real campaigns; these are not statements made by the publishers. A qualified William O’Reilly comparison is included without treating a columnist’s rough coverage estimate as a matched inventory.
+The original comparison prototype is archived separately as [`comparison.html`](comparison.html); it is not one of the campaign cases.

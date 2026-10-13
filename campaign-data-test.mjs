@@ -44,7 +44,7 @@ test('offline desks stay distinct and whole-campaign choices never change eviden
   const normalize = vm.runInNewContext('(' + normalizeSource + ')');
   const desks = item.campaigns.map(normalize);
   assert.equal(new Set(desks.map(d => d.outletId)).size, 4);
-  const source = html.match(/function CampaignReveal\(g,item\)\{[\s\S]*?(?=\nwindow.CampaignReveal)/)[0];
+  const source = html.match(/function CampaignReveal\(g,c\)\{[\s\S]*?(?=window.CampaignReveal)/)[0];
   const reveal = vm.runInNewContext('(' + source + ')');
   const game = { desks, verdicts: Object.fromEntries(desks.map(d => [d.outletId, 'justified'])),
     budgets: Object.fromEntries(desks.map(d => [d.outletId, d.listedCount])),
@@ -68,22 +68,38 @@ test('portable game boots offline and can open the timeline and outlet without m
   const node = id => {
     if (!nodes.has(id)) nodes.set(id, { textContent: id === '#campaign-data' ? JSON.stringify(campaigns) : '',
       innerHTML: '', style: {}, dataset: {}, classList: { toggle() {} }, isConnected: true,
-      pause() {}, load() {}, removeAttribute() {}, setAttribute() {}, querySelector() { return null; } });
+      value: id === '#case-choice' ? item.id : '', addEventListener() {}, pause() {}, load() {}, removeAttribute() {}, setAttribute() {}, querySelector() { return null; } });
     return nodes.get(id);
   };
   const context = vm.createContext({ document: { querySelector: node, querySelectorAll: () => [],
-    documentElement: { outerHTML: html, style: {}, classList: { toggle() {} } } },
+    body: { classList: { remove() {} } }, documentElement: { outerHTML: html, style: {}, classList: { toggle() {} } } },
     window: {}, location: { protocol: 'file:' }, matchMedia: () => ({ matches: false }),
     setTimeout: () => 0, clearTimeout() {}, setInterval: () => 0, clearInterval() {},
     cancelAnimationFrame() {}, URL, AbortController });
   const script = html.match(/<script>([\s\S]*?)<\/script>/)[1];
   vm.runInContext(script, context);
   await vm.runInContext('start()', context);
-  assert.match(node('#app').innerHTML, /Replay the period/);
+  assert.match(node('#app').innerHTML, /Inspect coverage/);
   vm.runInContext('go(2)', context);
-  assert.match(node('#app').innerHTML, /Hear the outlet’s defence/);
-  assert.match(node('#deskview').innerHTML, /Play outlet defence/);
+  assert.match(node('#app').innerHTML, /Challenge this point/);
+  vm.runInContext('go(3)', context);
+  assert.match(node('#app').innerHTML, /Read its account and ask follow-ups/);
+  assert.match(node('#deskview').innerHTML, /Hear this campaign/);
+  await vm.runInContext('hearOverview(desks[0])', context);
+  assert.match(node('#deskview').innerHTML, /Read outlet defence/);
+  assert.match(node('#deskview').innerHTML, /We would defend reporting/);
   assert.equal(node('#qremaining').textContent, 3);
+  vm.runInContext("answers.unit='pieces'; typedQuestionCounts['desk-a']=2; go(0)", context);
+  node('#case-choice').value = campaigns[1].id;
+  await vm.runInContext('start()', context);
+  assert.match(node('#app').innerHTML, /Aggregate window/);
+  assert.doesNotMatch(node('#app').innerHTML, /class="bar"/);
+  assert.equal(vm.runInContext('desks.length',context),1);
+  assert.equal(vm.runInContext('Object.keys(answers).length',context),0);
+  assert.equal(vm.runInContext("typedQuestionCounts['desk-a']",context),0);
+  vm.runInContext('go(2); go(3); go(4)',context);
+  assert.match(node('#app').innerHTML, /Five factual checks/);
+  assert.match(node('#app').innerHTML, /not available/);
 });
 
 test('four outlet defences contain sourced first-person scripts and a qualified comparison', () => {
@@ -105,5 +121,30 @@ test('four outlet defences contain sourced first-person scripts and a qualified 
       assert.ok(p.evidenceIds.length && p.evidenceIds.every(id => approved.has(id)));
     }
   }
-  assert.equal(item.campaigns.reduce((n,c) => n + c.examples.length, 0), 10);
+  assert.equal(item.campaigns.reduce((n,c) => n + c.examples.length, 0), 11);
+});
+
+
+test('all playable campaigns share source-linked criteria while aggregate values remain unknown', () => {
+  assert.equal(campaigns.length, 2);
+  const ids = ['public_value','context','framing','care','consistency','transparency'];
+  for (const c of campaigns) {
+    assert.deepEqual(c.scrutinyCriteria.map(x => x.id), ids);
+    const approved = new Set(c.evidence.map(e => e.id));
+    for (const d of c.campaigns) {
+      assert.deepEqual(d.scrutiny.map(x => x.criterionId), ids);
+      for (const row of d.scrutiny) assert.ok(row.evidenceIds.length && row.evidenceIds.every(id => approved.has(id)) && row.limit.length > 20);
+      const text = d.briefing.paragraphs.map(p => p.text).join(' ');
+      assert.ok(text.length < 4000 && text.split(/\s+/).length >= 180);
+      assert.ok(d.briefing.paragraphs.every(p => p.evidenceIds.every(id => approved.has(id))));
+      assert.ok(!text.includes(d.outlet));
+    }
+  }
+  const f = campaigns.find(c => c.countMode === 'aggregate');
+  assert.equal(f.days.length, 185); assert.equal(f.source.corpusCount, 387); assert.equal(f.source.outletUniverse, null);
+  assert.equal(f.campaigns[0].listedCount, 99);
+  for (const field of ['dailyCounts','activeDays','peakDaily','beforeResignationCount','afterResignationCount']) assert.equal(f.campaigns[0][field], null);
+  assert.match(f.source.scopeNote, /headline or body/); assert.match(f.source.scopeNote, /not all/);
+  assert.match(f.campaigns[0].examples[0].verification, /not verified/);
+  assert.ok(f.events.every(e => e.date >= f.start && e.date <= f.end));
 });

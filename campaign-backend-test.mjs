@@ -206,3 +206,89 @@ test('four long reviewed briefing scripts fit the campaign voice budget and call
   assert.ok(spoken.every(text => text.includes('Reviewed evidence supports')));
   assert.equal((await post(g.base, '/api/speak', { sessionId: s.sessionId, outletId: s.desks[0].outletId, kind: 'reply', replyId: 'forged', text: 'arbitrary' })).status, 403);
 });
+
+test('aggregate-only campaigns preserve unknown counts and accept variable contiguous windows and outlets', async t => {
+  const aggregate = structuredClone(campaign);
+  aggregate.id = 'flacksun-aggregate'; aggregate.countMode = 'aggregate'; aggregate.days = [days[0], days[1], days[2]]; aggregate.start = aggregate.days[0]; aggregate.end = aggregate.days.at(-1);
+  aggregate.splitEventDate = null; aggregate.splitLabel = null; aggregate.events = [];
+  aggregate.source.outletUniverse = null; aggregate.source.corpusCount = 5; aggregate.source.unit = 'selected records';
+  aggregate.scrutinyCriteria = [{ id: 'repeat-claims', label: 'Repeated claims', question: 'What did each later item add?' }];
+  aggregate.campaigns = [campaign.campaigns[0]].map((x, i) => ({ ...x, id: `sample-${i}`, listedCount: 5, dailyCounts: null, activeDays: null, peakDaily: null, beforeResignationCount: null, afterResignationCount: null,
+    examples: [{ ...x.examples[0], id: 'sample-example', published: aggregate.start }],
+    scrutiny: [{ criterionId: 'repeat-claims', observation: 'The archive does not map each item to a distinct new development.', question: 'What did later items add?', evidenceIds: ['ev2'], limit: 'The record does not establish that every item repeated earlier claims.' }],
+    briefing: { title: 'Aggregate-only record', paragraphs: [{ kind: 'report', text: 'We covered documented developments during this selected period.', evidenceIds: ['ev1'] }, { kind: 'analysis', text: 'We accept that this sample cannot show what each later item added.', evidenceIds: ['ev2'] }, { kind: 'comparison', text: 'We cannot infer a daily pace from a period total.', evidenceIds: ['ev2'] }] }
+  }));
+  let providerPacket, providerCalls = 0;
+  const g = await setup({ data: aggregate, env: { DEEPSEEK_API_KEY: 'test-only' }, fetchImpl: async (_url, options) => { providerCalls++; providerPacket = JSON.parse(options.body); throw new Error('mock unavailable'); } }); t.after(g.close);
+  const s = await newSession(g.base, aggregate.id);
+  assert.equal(s.countMode, 'aggregate'); assert.equal(s.desks.length, 1); assert.equal(s.source.outletUniverse, null);
+  assert.equal(s.days.length, 3); assert.deepEqual(s.desks[0].dailyCounts, null); assert.equal(s.desks[0].listedCount, 5);
+  assert.equal(s.desks[0].activeDays, null); assert.equal(s.desks[0].peakDaily, null);
+  assert.equal(s.desks[0].beforeResignationCount, null); assert.equal(s.desks[0].afterResignationCount, null);
+  assert.deepEqual(s.scrutinyCriteria[0], aggregate.scrutinyCriteria[0]); assert.deepEqual(s.desks[0].scrutiny[0].evidenceIds, ['ev2']);
+  const state = g.app.sessions.get(s.sessionId), bound = state.campaignByDesk[s.desks[0].outletId];
+  // Unknown criterion IDs are rejected before any provider call. A valid selected ID takes precedence over unrelated question text.
+  assert.equal((await post(g.base, '/api/campaign/respond', { sessionId: s.sessionId, outletId: s.desks[0].outletId, question: 'How do you defend this?', criterionId: 'unknown' })).status, 400);
+  assert.equal(providerCalls, 0);
+  const reply = await (await post(g.base, '/api/campaign/respond', { sessionId: s.sessionId, outletId: s.desks[0].outletId, question: 'How do you defend this?', criterionId: 'repeat-claims' })).json();
+  const packet = JSON.parse(providerPacket.messages[1].content).trustedCampaign;
+  assert.equal(packet.countMode, 'aggregate'); assert.equal('dailyCounts' in packet, false); assert.equal('datedCounts' in packet, false); assert.equal('peakDates' in packet, false);
+  assert.equal(packet.activeDays, null); assert.equal(packet.peakDaily, null); assert.equal(packet.beforeResignationDateCount, null); assert.equal(packet.onOrAfterResignationDateCount, null);
+  assert.equal(packet.selectedScrutiny.criterionId, 'repeat-claims'); assert.deepEqual(packet.selectedScrutiny.evidenceIds, ['ev2']);
+  assert.match(reply.reply, /archive does not map each item/); assert.match(reply.reply, /does not establish/);
+  assert.deepEqual(reply.evidenceIds, ['ev2']); assert.equal(bound.dailyCounts, null); assert.equal(providerCalls, 1);
+  const bad = structuredClone(aggregate); bad.campaigns[0].scrutiny[0].criterionId = 'unbound';
+  const invalid = await setup({ data: bad }); t.after(invalid.close);
+  assert.equal((await post(invalid.base, '/api/campaign/session', { caseId: bad.id })).status, 503);
+  const missing = structuredClone(aggregate); missing.campaigns[0].afterResignationCount = 0;
+  const invalidMissing = await setup({ data: missing }); t.after(invalidMissing.close);
+  assert.equal((await post(invalidMissing.base, '/api/campaign/session', { caseId: missing.id })).status, 503);
+});
+
+test('scrutiny assessments are exact, ungraded, and frozen with the reveal', async t => {
+  const scrutinized = structuredClone(campaign);
+  scrutinized.scrutinyCriteria = [{ id: 'repeat', label: 'Repetition', question: 'What did later items add?' }];
+  for (const c of scrutinized.campaigns) c.scrutiny = [{ criterionId: 'repeat', observation: 'Some entries may revisit an earlier claim.', question: 'What new information did this add?', evidenceIds: ['ev2'], limit: 'The archive does not classify every entry.' }];
+  const g = await setup({ data: scrutinized }); t.after(g.close);
+  const s = await newSession(g.base), good = revealBody(s);
+  good.scrutinyAssessments = Object.fromEntries(s.desks.map(d => [d.outletId, { repeat: 'unknown' }]));
+  const malformed = structuredClone(good); malformed.scrutinyAssessments['desk-a'].invented = 'concern';
+  assert.equal((await post(g.base, '/api/campaign/reveal', malformed)).status, 400);
+  const result = await (await post(g.base, '/api/campaign/reveal', good)).json();
+  assert.deepEqual(result.scrutinyAssessments, good.scrutinyAssessments);
+  assert.equal(result.reasoningScore, 10);
+  const changed = structuredClone(good); changed.scrutinyAssessments['desk-a'].repeat = 'supported';
+  assert.deepEqual(await (await post(g.base, '/api/campaign/reveal', changed)).json(), result);
+});
+
+test('campaign windows reject gaps and invalid split dates; daily mode does not fabricate missing splits', async t => {
+  const noSplit = structuredClone(campaign); noSplit.events = [];
+  for (const c of noSplit.campaigns) c.beforeResignationCount = c.afterResignationCount = null;
+  const g = await setup({ data: noSplit }); t.after(g.close);
+  const s = await newSession(g.base); assert.equal(s.splitEventDate, null);
+  const gap = structuredClone(noSplit); gap.days[3] = '2026-07-28';
+  const badGap = await setup({ data: gap }); t.after(badGap.close);
+  assert.equal((await post(badGap.base, '/api/campaign/session', { caseId: gap.id })).status, 503);
+  const badSplit = structuredClone(noSplit); badSplit.splitEventDate = '2026-08-20';
+  const badDate = await setup({ data: badSplit }); t.after(badDate.close);
+  assert.equal((await post(badDate.base, '/api/campaign/session', { caseId: badSplit.id })).status, 503);
+});
+
+test('real Flack aggregate binds unknown timing and six ungraded ratings through the reveal', async t => {
+  const all = JSON.parse(await readFile(new URL('./campaigns.json', import.meta.url), 'utf8'));
+  const actual = all.find(x => x.countMode === 'aggregate');
+  const g = await setup({ data: actual }); t.after(g.close);
+  const s = await newSession(g.base, actual.id), d = s.desks[0];
+  assert.equal(s.days.length, 185); assert.equal(d.listedCount, 99); assert.equal(d.dailyCounts, null); assert.equal(d.peakDaily, null);
+  const script = await (await post(g.base, '/api/campaign/briefing', { sessionId: s.sessionId, outletId: d.outletId })).json();
+  assert.equal(script.mode, 'reviewed'); assert.equal(script.paragraphs.length, 4); assert.ok(!script.reply.includes(actual.campaigns[0].outlet));
+  const response = await (await post(g.base, '/api/campaign/respond', { sessionId:s.sessionId,outletId:d.outletId,question:'Please answer the linked question.',criterionId:'care' })).json();
+  assert.deepEqual(response.evidenceIds, actual.campaigns[0].scrutiny.find(x=>x.criterionId==='care').evidenceIds);
+  assert.match(response.reply,/24 December/);
+  const ratings = Object.fromEntries(actual.scrutinyCriteria.map(x=>[x.id,x.id==='framing'?'concern':'unknown']));
+  const body = { sessionId:s.sessionId,campaignVerdicts:{[d.outletId]:'unclear'},recommendedCounts:{[d.outletId]:null},scrutinyAssessments:{[d.outletId]:ratings},reasoningAnswers:Object.fromEntries(actual.reasoningChecks.map(x=>[x.id,x.answer])),justification:'The record gives a six-month total but no daily inventory; I can question the documented framing while leaving the overall volume uncertain.' };
+  const r = await (await post(g.base,'/api/campaign/reveal',body)).json();
+  assert.equal(r.reasoningScore,10); assert.equal(r.roles[0].outletName,'The Sun'); assert.equal(r.roles[0].campaign.peakDaily,null);
+  assert.deepEqual(r.scrutinyAssessments,body.scrutinyAssessments); assert.equal(r.roles[0].recommendedCount,null); assert.equal(r.roles[0].decision,'unclear');
+  assert.deepEqual(await (await post(g.base,'/api/campaign/reveal',{...body,campaignVerdicts:{[d.outletId]:'pile-on'}})).json(),r);
+});

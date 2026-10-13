@@ -2,7 +2,9 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101625"><title>Faithful to the Facts — Campaign Jury</title>
 <style>
 :root{color-scheme:dark;--bg:#101625;--panel:#182337;--ink:#f4f3ec;--muted:#aab5c8;--line:#33435b;--lime:#d4f56b;--coral:#ff8773;--blue:#83d8ff;--gold:#f6c768;--purple:#c6a0ff}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#263753 0,transparent 48%),var(--bg);color:var(--ink);font:16px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}a{color:var(--blue)}.shell{max-width:1180px;margin:auto;padding:18px clamp(14px,3vw,36px) 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding-bottom:12px}.brand{font-weight:900;letter-spacing:.09em;text-transform:uppercase;font-size:.8rem}.brand b{color:var(--lime)}.tools{display:flex;gap:8px;align-items:center}.tools button,.secondary{border:1px solid var(--line);background:#111b2a;border-radius:999px;padding:8px 13px}.tools button:hover,.secondary:hover{border-color:var(--lime)}.stepper{display:flex;gap:8px;overflow:auto;padding:16px 0}.step{border:1px solid var(--line);border-radius:99px;padding:5px 11px;color:var(--muted);white-space:nowrap;font-size:.83rem}.step.on{color:var(--bg);background:var(--lime);border-color:var(--lime);font-weight:800}.screen{display:none;animation:arrive .5s ease both}.screen.active{display:block}@keyframes arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.6rem,8vw,6rem);line-height:.92;letter-spacing:-.065em;max-width:850px;margin-bottom:20px}h1 em{font-style:normal;color:var(--lime)}h2{font-size:clamp(1.6rem,4vw,2.6rem);letter-spacing:-.04em;margin-bottom:8px}.eyebrow{color:var(--lime);font-size:.78rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.lead{font-size:clamp(1.05rem,2.3vw,1.35rem);color:#dae1ed;max-width:680px}.card{border:1px solid var(--line);background:linear-gradient(145deg,#1b2940e8,#141e30e8);border-radius:22px;padding:clamp(17px,3vw,28px);box-shadow:0 22px 60px #060a1280}.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.intro{min-height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:14px}.button{background:var(--lime);color:#111923;border:0;border-radius:999px;padding:13px 22px;font-weight:900;box-shadow:0 8px 30px #d4f56b24}.button:hover{transform:translateY(-2px)}.button:disabled{opacity:.4;cursor:not-allowed;transform:none}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.fact{background:#0f1826;border:1px solid var(--line);border-radius:15px;padding:13px}.fact strong{font-size:1.6rem;display:block;color:var(--lime)}.small{color:var(--muted);font-size:.89rem}.stagehead{display:flex;justify-content:space-between;gap:14px;align-items:end;margin:16px 0}.chartbox{overflow:hidden;position:relative}.charttop{display:flex;justify-content:space-between;align-items:center;gap:12px}.playrow{display:flex;gap:7px}.playrow button{background:#0e1725;border:1px solid var(--line);border-radius:99px;padding:8px 12px}.timeline{width:100%;height:auto;display:block;min-height:280px}.lane{stroke:#34445b;stroke-width:1}.axis{fill:#9eacc1;font-size:11px}.laneLabel{fill:#eff4fc;font-size:13px;font-weight:700}.bar{transform-box:fill-box;transform-origin:bottom;animation:grow .48s cubic-bezier(.2,.7,.2,1) both}.bar:nth-of-type(4n){animation-delay:.06s}@keyframes grow{from{transform:scaleY(.02);opacity:.3}to{transform:scaleY(1);opacity:1}}.cursorline{stroke:var(--lime);stroke-width:2;stroke-dasharray:4 5;filter:drop-shadow(0 0 7px #d4f56b)}.cursorDot{fill:var(--lime);filter:drop-shadow(0 0 8px #d4f56b)}.range{width:100%;accent-color:var(--lime)}.datecontrol{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}.pill{border-radius:99px;background:#0f1826;padding:6px 11px;color:#dde6f5;font-size:.82rem}.avatars{display:flex;gap:8px;flex-wrap:wrap}.avatar{display:flex;align-items:center;gap:8px;background:#111b2a;padding:7px 12px;border:1px solid var(--line);border-radius:99px}.avatar svg{width:30px}.event{position:absolute;top:22%;left:50%;background:#ff8773;color:#171521;border-radius:99px;padding:5px 9px;font-size:.72rem;font-weight:900;animation:pulse 2s infinite}@keyframes pulse{50%{box-shadow:0 0 0 8px #ff87731c}}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.headcard{border-left:3px solid var(--blue);background:#101a29;border-radius:4px 13px 13px 4px;padding:14px}.headcard time{color:var(--lime);font-size:.75rem;font-weight:800}.headcard h3{font-size:1.06rem;margin:7px 0}.deskrow{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;border-bottom:1px solid var(--line);padding:13px 0}.deskrow:last-child{border:0}.verdicts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.choice{border:1px solid var(--line);border-radius:15px;padding:14px;background:#111b2a;text-align:left;min-height:105px}.choice[aria-pressed=true]{border:2px solid var(--lime);background:#2a382c}.choice strong{display:block;margin-bottom:5px}.budget{width:130px;accent-color:var(--lime)}.checks{display:grid;gap:11px}.checks label{display:grid;grid-template-columns:1.3fr 1fr;gap:10px;align-items:center}.checks select,.checks textarea{width:100%;background:#101a29;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:11px}.checks textarea{min-height:110px;grid-column:1/-1}.actions{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}.resultrow{border-bottom:1px solid var(--line);padding:16px 0}.resultrow h3{margin:0 0 4px}.badge{padding:4px 9px;background:#28374c;border-radius:99px;font-size:.75rem}.source details{margin-top:15px}.source summary{cursor:pointer;color:var(--blue)}.notice{padding:12px 14px;background:#252a30;border-left:3px solid var(--gold);border-radius:4px;color:#d9e0eb}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#f4f3ec;color:#111;padding:10px 16px;border-radius:99px;display:none;z-index:9}.loading{color:var(--muted)}.winner{color:var(--lime);font-size:1.3rem;font-weight:900}#audio{display:none}.reduced-motion *, .reduced-motion *::before, .reduced-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.offline{color:var(--gold)}@media(max-width:760px){.grid{grid-template-columns:1fr}.intro{min-height:auto;padding:42px 0}.cards{grid-template-columns:1fr}.verdicts{grid-template-columns:repeat(2,1fr)}.checks label{grid-template-columns:1fr}.deskrow{grid-template-columns:1fr auto}.timeline{min-height:220px}.charttop{align-items:flex-start;flex-direction:column}.top{align-items:flex-start}.tools{flex-wrap:wrap;justify-content:flex-end}.tools button{padding:7px 10px;font-size:.8rem}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}}
-.volume-track{display:grid;gap:4px}.volume-track span{display:block;height:10px;border-radius:9px}.budget{width:105px} .campaign-grid{grid-template-columns:1fr}.campaign-grid aside{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center}.campaign-grid aside .eyebrow,.campaign-grid aside .notice{margin:0}.campaign-grid aside .facts{margin-top:0!important}.timeline{min-height:300px}.bar{transition:opacity .3s ease,filter .3s ease}.laneLabel{font-size:18px}.axis{font-size:14px}#arrivals{min-height:45px;padding:10px 0}#arrivals .pill{display:inline-block;margin:4px;font-size:.95rem;animation:arrive .35s ease}.reduced-motion .bar,.reduced-motion #arrivals .pill{animation:none!important;transition:none!important}@media(max-width:700px){.campaign-grid aside{display:block}.campaign-grid aside>*{margin:10px 0!important}.timeline{min-width:600px}.chartbox{overflow-x:auto}.laneLabel{font-size:15px}} .briefing{border-left:3px solid var(--lime);padding-left:20px;margin:20px 0}.briefparagraph p{font-size:1.04rem;line-height:1.7;margin-bottom:22px}.kind{color:var(--gold);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em}.briefing details{border-top:1px solid var(--line);padding-top:12px} </style></head><body><div class="shell"><header class="top"><div class="brand"><b>●</b> Faithful to the Facts</div><div class="tools"><button id="motion">Motion: on</button><button id="save">Save HTML</button><button id="share">Share file</button></div></header><nav class="stepper" id="stepper" aria-label="Game steps"></nav><main id="app"><div class="loading">Opening the campaign file…</div></main><audio id="audio" controls></audio><div class="toast" id="toast" role="status"></div></div>
+.volume-track{display:grid;gap:4px}.volume-track span{display:block;height:10px;border-radius:9px}.budget{width:105px} .campaign-grid{grid-template-columns:1fr}.campaign-grid aside{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center}.campaign-grid aside .eyebrow,.campaign-grid aside .notice{margin:0}.campaign-grid aside .facts{margin-top:0!important}.timeline{min-height:300px}.bar{transition:opacity .3s ease,filter .3s ease}.laneLabel{font-size:18px}.axis{font-size:14px}#arrivals{min-height:45px;padding:10px 0}#arrivals .pill{display:inline-block;margin:4px;font-size:.95rem;animation:arrive .35s ease}.reduced-motion .bar,.reduced-motion #arrivals .pill{animation:none!important;transition:none!important}@media(max-width:700px){.campaign-grid aside{display:block}.campaign-grid aside>*{margin:10px 0!important}.timeline{min-width:600px}.chartbox{overflow-x:auto}.laneLabel{font-size:15px}} .briefing{border-left:3px solid var(--lime);padding-left:20px;margin:20px 0}.briefparagraph p{font-size:1.04rem;line-height:1.7;margin-bottom:22px}.kind{color:var(--gold);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em}.briefing details{border-top:1px solid var(--line);padding-top:12px}
+.criterion-selectors{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px;margin:18px 0}.criterion-choice{display:grid;justify-items:center;align-content:center;gap:7px;min-height:96px;padding:10px 6px;border:1px solid var(--line);border-radius:14px;background:#101a29;color:var(--ink);font-weight:750;font-size:.82rem}.criterion-choice svg{width:28px;height:28px;color:var(--lime)}.criterion-choice[aria-pressed="true"]{border:2px solid var(--lime);background:#26352d}.criterion-detail{background:#121d2d;box-shadow:none}.criterion-detail .source{margin:12px 0}.criterion-detail .button{margin-top:6px}@media(max-width:760px){.criterion-selectors{grid-template-columns:repeat(3,minmax(0,1fr))}.criterion-choice{min-height:82px}}
+</style></head><body><div class="shell"><header class="top"><div class="brand"><b>●</b> Faithful to the Facts</div><div class="tools"><button id="motion">Motion: on</button><button id="save">Save HTML</button><button id="share">Share file</button></div></header><nav class="stepper" id="stepper" aria-label="Game steps"></nav><main id="app"><div class="loading">Opening the campaign file…</div></main><audio id="audio" controls></audio><div class="toast" id="toast" role="status"></div></div>
 <script id="campaign-data" type="application/json">[
   {
     "id": "arday-2026-campaign",
@@ -43,7 +45,7 @@
       "corpusCount": 229,
       "outletUniverse": 15,
       "selectedCount": 90,
-      "scopeNote": "Daily totals are derived from NewsCord’s fixed 229-item inventory across 15 outlets. These four desks contain 90 listed pieces. The inventory has qualified indexing coverage and counts may be lower bounds. The last date stops at 15:12 BST. Examples are a small selection, not the counting population; original versions may have changed."
+      "scopeNote": "Daily totals are derived from NewsCord’s fixed 229-item inventory across 15 outlets. These four desks contain 90 listed pieces. The inventory has qualified indexing coverage and counts may be lower bounds. The last date stops at 15:12 BST. Examples are a small selection, not the counting population; original versions may have changed. Nine BBC written pieces here must not be mixed with an earlier 13-entry tally of pages/programmes, which included broadcasts and video. Duplicate URLs and unlistened audio cannot be treated as independent verified news stories. Counts measure attention, not hostility."
     },
     "events": [
       {
@@ -129,6 +131,36 @@
         "label": "Columnist’s comparison, August 2026",
         "url": "https://www.theguardian.com/commentisfree/2026/aug/06/jason-arday-dei-race-issues-university-of-cambridge",
         "text": "Columnist Jason Okundaye estimated roughly six press articles about O’Reilly. He supplied no matching window or counting method."
+      },
+      {
+        "id": "first-response",
+        "label": "First report and responses, 1 August",
+        "url": "https://www.bbc.co.uk/news/articles/c78gmp7zylvo",
+        "text": "Current page checked 13 October 2026. Its headline includes his defence. The body presents his response, an allegation originator’s background, conflicting academic views and a warning from Simon Baron-Cohen about the effect of continuing scrutiny. It also uses wording that he did not dispute allegations. This is a tension to examine alongside his later explicit denial, not proof that every version or report omitted his response."
+      },
+      {
+        "id": "institution-analysis",
+        "label": "Institutional analysis, 6 August",
+        "url": "https://www.bbc.co.uk/news/articles/cpvwd30we17o",
+        "text": "Current page checked 13 October 2026. The analysis connects appointment checks with an institutional diversity agenda. It also records Arday’s denial and the university union’s concern about fair process and Black underrepresentation. A policy inference should be tested against the actual evidence, including these counterarguments."
+      },
+      {
+        "id": "later-followup",
+        "label": "Cancelled event and remaining roles, 10 August",
+        "url": "https://www.bbc.co.uk/news/articles/cd7lj3703epo",
+        "text": "Current page checked 13 October 2026. It reports a cancelled appearance and a further association resignation, checks several continuing roles, and repeats Arday’s statement about the toll of scrutiny. The presence of developments does not by itself settle the justification for pursuing every role."
+      },
+      {
+        "id": "version-limit",
+        "label": "Version and inventory limits",
+        "url": "https://newscord.org/editorials/jason-arday-pile-on",
+        "text": "The fixed written inventory and selected current pages do not provide a complete archive of changes, a full broadcast census, a novelty classification or a matched comparator. Missing search results do not prove no coverage; a changed or removed page does not alone establish a cover-up."
+      },
+      {
+        "id": "diversity-opinion",
+        "label": "Opinion defending diversity, 13 August",
+        "url": "https://www.theguardian.com/commentisfree/2026/aug/13/jason-arday-diversity-how-and-why-we-should-defend",
+        "text": "A selected opinion headline argues for defending diversity. This adds a different perspective but remains another publication drawing attention to the same case. It does not establish the tone or value of all eighteen pieces."
       }
     ],
     "reasoningChecks": [
@@ -287,57 +319,69 @@
         "examples": [
           {
             "id": "bbc-2026-08-01",
-            "headline": "Cambridge professor at centre of plagiarism …",
+            "headline": "Cambridge professor at centre of plagiarism row defends his work",
             "url": "https://www.bbc.co.uk/news/articles/c78gmp7zylvo",
             "published": "2026-08-01",
-            "verification": "Six-word inventory excerpt; original publisher page was unavailable to this build."
+            "verification": "Full current headline checked on original BBC page on 13 October 2026; publication date matches inventory. Current text is not a complete historical-version audit."
           },
           {
-            "id": "bbc-2026-08-12",
-            "headline": "I share concerns over Arday appointment, …",
-            "url": "https://www.bbc.co.uk/news/articles/cn4npy3w1p2o",
-            "published": "2026-08-12",
-            "verification": "Six-word inventory excerpt; original publisher page was unavailable to this build."
+            "id": "bbc-2026-08-06",
+            "headline": "Serious questions for Cambridge after professor at centre of plagiarism row resigns",
+            "url": "https://www.bbc.co.uk/news/articles/cpvwd30we17o",
+            "published": "2026-08-06",
+            "verification": "Full current headline checked on original BBC page on 13 October 2026; date matches inventory."
+          },
+          {
+            "id": "bbc-2026-08-10",
+            "headline": "Ex-Cambridge professor Jason Arday cancels live event after plagiarism row",
+            "url": "https://www.bbc.co.uk/news/articles/cd7lj3703epo",
+            "published": "2026-08-10",
+            "verification": "Full current headline checked on original BBC page on 13 October 2026; date matches inventory."
           }
         ],
         "reviewNotes": {
           "publicValue": "Ask how much of this campaign added substantiated information or held institutions accountable. A new investigation can warrant continued attention.",
           "pressure": "The record lists 9 pieces, peaking at 2 in one day. Judge whether that frequency added public value, repeated earlier claims or encouraged humiliation.",
-          "limit": "Written news only; broadcasts and press reviews are excluded. Original example pages could not be retrieved for this build. Counts do not classify every piece as new information or repetition."
+          "limit": "Written news only; broadcasts excluded. Three current BBC pages were checked, but original versions and all nine pieces have not been fully audited. Counts do not classify novelty or repetition."
         },
         "briefing": {
-          "title": "We followed the changing story",
+          "title": "We must defend our widening coverage",
           "paragraphs": [
             {
               "kind": "report",
-              "text": "Our defence is that the story kept changing. Jason Arday was a Cambridge professor facing allegations of plagiarism. On the first of August, our listed coverage carried his defence of his work. He denied plagiarism. On the fifth, he resigned, saying public scrutiny had taken a toll on his family and that stepping down should not be read as accepting the narratives about him.",
+              "text": "We would defend reporting allegations about a prominent university appointment, while preserving the distinction between questions and findings. Our first listed report, on the first of August, put Arday’s defence in its headline. It described the source of the allegations and carried opposing academic views. But its wording about not disputing allegations deserves scrutiny alongside his later explicit denial. We cannot let repeated reporting flatten those distinctions.",
               "evidenceIds": [
-                "inventory",
-                "arday-statement",
+                "first-response",
                 "arday-denial"
               ]
             },
             {
               "kind": "report",
-              "text": "After that, the archive lists our reports about a police chief’s admission of a mistake and reviews by other universities. By the twelfth of August, the appointment inquiry provided another development to explain. Our argument is that these questions concerned institutions as well as one individual: who checked the appointment, and how did organisations respond when questions were raised?",
+              "text": "After his resignation on the fifth, our coverage continued into institutional responses. Our analysis the next day connected appointment checks with diversity policy, while also carrying the union’s counterargument. On the tenth, we reported a cancelled appearance and another association resignation, and checked other roles. By the twelfth, an independent appointment inquiry supplied a further development. These were different developments, but that does not automatically justify every part of the follow-up.",
               "evidenceIds": [
-                "inventory",
+                "institution-analysis",
+                "later-followup",
                 "inquiry"
               ]
             },
             {
               "kind": "analysis",
-              "text": "Nine of our written pieces are listed across the twenty-two days. At the busiest point, we published two listed pieces on each of two consecutive dates. We would justify returning to the story when an institution took a new step or an important claim needed an answer. We would also have to explain what each follow-up added, rather than treating public curiosity as a sufficient reason to publish.",
+              "text": "We owe you an answer about proportion. Nine written pieces are listed, with two on each of our busiest dates. Our first report had already carried a warning about the effect of continuing scrutiny. Arday later described the toll on his family. What public need did tracking the remaining roles serve, and could we have explained institutional responsibility with less personal exposure? Those are fair challenges to our editorial choices.",
               "evidenceIds": [
-                "inventory"
+                "inventory",
+                "first-response",
+                "arday-statement",
+                "later-followup"
               ]
             },
             {
-              "kind": "analysis",
-              "text": "You should challenge us on the complete picture. This archive excludes our broadcasts. It cannot show whether our total attention was proportionate, or whether every report gave adequate space to Arday’s response. A lower written count does not settle those questions.",
+              "kind": "comparison",
+              "text": "The earlier O’Reilly complaint also tests consistency. Its quieter coverage is a columnist’s estimate, not a matched census. And our nine written pieces exclude broadcasts; they cannot be compared directly with a broader pages-and-programmes tally. We would need a complete record of our attention and significant edits to defend the campaign as a whole.",
               "evidenceIds": [
+                "oreilly-report",
+                "oreilly-coverage",
                 "window",
-                "arday-statement"
+                "version-limit"
               ]
             }
           ]
@@ -345,35 +389,105 @@
         "coverageNotes": [
           {
             "kind": "report",
-            "text": "Our defence is that the story kept changing. Jason Arday was a Cambridge professor facing allegations of plagiarism. On the first of August, our listed coverage carried his defence of his work. He denied plagiarism. On the fifth, he resigned, saying public scrutiny had taken a toll on his family and that stepping down should not be read as accepting the narratives about him.",
+            "text": "We would defend reporting allegations about a prominent university appointment, while preserving the distinction between questions and findings. Our first listed report, on the first of August, put Arday’s defence in its headline. It described the source of the allegations and carried opposing academic views. But its wording about not disputing allegations deserves scrutiny alongside his later explicit denial. We cannot let repeated reporting flatten those distinctions.",
             "evidenceIds": [
-              "inventory",
-              "arday-statement",
+              "first-response",
               "arday-denial"
             ]
           },
           {
             "kind": "report",
-            "text": "After that, the archive lists our reports about a police chief’s admission of a mistake and reviews by other universities. By the twelfth of August, the appointment inquiry provided another development to explain. Our argument is that these questions concerned institutions as well as one individual: who checked the appointment, and how did organisations respond when questions were raised?",
+            "text": "After his resignation on the fifth, our coverage continued into institutional responses. Our analysis the next day connected appointment checks with diversity policy, while also carrying the union’s counterargument. On the tenth, we reported a cancelled appearance and another association resignation, and checked other roles. By the twelfth, an independent appointment inquiry supplied a further development. These were different developments, but that does not automatically justify every part of the follow-up.",
             "evidenceIds": [
-              "inventory",
+              "institution-analysis",
+              "later-followup",
               "inquiry"
             ]
           },
           {
             "kind": "analysis",
-            "text": "Nine of our written pieces are listed across the twenty-two days. At the busiest point, we published two listed pieces on each of two consecutive dates. We would justify returning to the story when an institution took a new step or an important claim needed an answer. We would also have to explain what each follow-up added, rather than treating public curiosity as a sufficient reason to publish.",
+            "text": "We owe you an answer about proportion. Nine written pieces are listed, with two on each of our busiest dates. Our first report had already carried a warning about the effect of continuing scrutiny. Arday later described the toll on his family. What public need did tracking the remaining roles serve, and could we have explained institutional responsibility with less personal exposure? Those are fair challenges to our editorial choices.",
             "evidenceIds": [
-              "inventory"
+              "inventory",
+              "first-response",
+              "arday-statement",
+              "later-followup"
             ]
           },
           {
-            "kind": "analysis",
-            "text": "You should challenge us on the complete picture. This archive excludes our broadcasts. It cannot show whether our total attention was proportionate, or whether every report gave adequate space to Arday’s response. A lower written count does not settle those questions.",
+            "kind": "comparison",
+            "text": "The earlier O’Reilly complaint also tests consistency. Its quieter coverage is a columnist’s estimate, not a matched census. And our nine written pieces exclude broadcasts; they cannot be compared directly with a broader pages-and-programmes tally. We would need a complete record of our attention and significant edits to defend the campaign as a whole.",
+            "evidenceIds": [
+              "oreilly-report",
+              "oreilly-coverage",
+              "window",
+              "version-limit"
+            ]
+          }
+        ],
+        "scrutiny": [
+          {
+            "criterionId": "public_value",
+            "observation": "Nine written pieces cover allegations, resignation and institutional developments. The 10 August report also checks remaining roles.",
+            "question": "What public interest justified that widening follow-up, rather than limiting coverage to the academic inquiry?",
+            "evidenceIds": [
+              "inventory",
+              "inquiry",
+              "later-followup"
+            ],
+            "limit": "We have not classified the new information in every piece. Broadcast attention is outside this count."
+          },
+          {
+            "criterionId": "context",
+            "observation": "The first headline includes a defence; the body carries responses and conflicting views. Its wording about not disputing allegations deserves comparison with his later denial.",
+            "question": "How did you keep readers from confusing acknowledged errors, allegations and a finding of plagiarism across repeated reports?",
+            "evidenceIds": [
+              "first-response",
+              "arday-denial",
+              "arday-statement"
+            ],
+            "limit": "Different statements and publication dates must be kept distinct. Current text does not establish all original versions."
+          },
+          {
+            "criterionId": "framing",
+            "observation": "The 6 August analysis raises appointment checks and diversity policy, while also recording the union’s counterargument.",
+            "question": "What evidence justifies making diversity policy part of this case without encouraging racial generalisations?",
+            "evidenceIds": [
+              "institution-analysis"
+            ],
+            "limit": "This question concerns an observable editorial inference. It does not establish racist intent or the effect on readers."
+          },
+          {
+            "criterionId": "care",
+            "observation": "The first report carried an explicit warning about continuing scrutiny. The later role-checking story repeats Arday’s account of the personal toll.",
+            "question": "Why did the remaining-role follow-up warrant this attention after those warnings, and how would you reduce needless humiliation?",
+            "evidenceIds": [
+              "first-response",
+              "later-followup",
+              "arday-statement"
+            ],
+            "limit": "Warnings and continued coverage raise a proportionality question; they do not prove what editors privately considered or caused."
+          },
+          {
+            "criterionId": "consistency",
+            "observation": "An upheld O’Reilly complaint provides a possible comparison, but its claimed quieter coverage has no matched dated inventory.",
+            "question": "Which differences would justify this intensity, and what matched evidence would you need before rejecting unequal treatment?",
+            "evidenceIds": [
+              "oreilly-report",
+              "oreilly-coverage"
+            ],
+            "limit": "No relevant search hit would not mean zero coverage. Do not infer a person’s ethnicity from their name or photograph."
+          },
+          {
+            "criterionId": "transparency",
+            "observation": "The earlier mixed-format tally differs from this nine-item written count. The current 10 August page gives a publication date but is not a full change log.",
+            "question": "Will you account for broadcasts, duplicates, significant edits and your own role in amplifying the story?",
             "evidenceIds": [
               "window",
-              "arday-statement"
-            ]
+              "later-followup",
+              "version-limit"
+            ],
+            "limit": "No complete before-and-after archive is supplied. The record does not establish a post-death scrub or cover-up."
           }
         ]
       },
@@ -508,6 +622,70 @@
               "oreilly-report",
               "oreilly-coverage"
             ]
+          }
+        ],
+        "scrutiny": [
+          {
+            "criterionId": "public_value",
+            "observation": "The campaign includes an investigation and a later appointment inquiry. Eighteen pieces include three days with four publications.",
+            "question": "What distinct public benefit did the additional columns and letters add beyond the investigation and inquiry?",
+            "evidenceIds": [
+              "inventory",
+              "investigation-report",
+              "inquiry"
+            ],
+            "limit": "Article totals cannot distinguish original discoveries from explanation or repetition."
+          },
+          {
+            "criterionId": "context",
+            "observation": "Investigative claims, Arday’s response and opinion defending diversity are all part of the selected record.",
+            "question": "How did you keep disputed biographical claims separate from established findings, and make the response visible across the campaign?",
+            "evidenceIds": [
+              "investigation-report",
+              "arday-denial",
+              "diversity-opinion"
+            ],
+            "limit": "Selected examples do not show the placement and balance of every response in all eighteen pieces."
+          },
+          {
+            "criterionId": "framing",
+            "observation": "The selected investigation foregrounds contested biographical claims; later opinion argues for defending diversity.",
+            "question": "Did the narrative and headline choices turn one person into a spectacle, even when some commentary defended him?",
+            "evidenceIds": [
+              "investigation-report",
+              "diversity-opinion"
+            ],
+            "limit": "Mixed perspectives do not automatically establish fairness or unfairness; reader reactions are unmeasured."
+          },
+          {
+            "criterionId": "care",
+            "observation": "Seventeen listed pieces fall on or after the resignation date. His statement that day described the personal toll.",
+            "question": "Why did the continued volume remain proportionate, including supportive commentary that prolonged the spotlight?",
+            "evidenceIds": [
+              "inventory",
+              "arday-statement"
+            ],
+            "limit": "These are calendar-date splits, not an exact before-and-after timestamp. Continued coverage is not itself proof of harm."
+          },
+          {
+            "criterionId": "consistency",
+            "observation": "A columnist raises the O’Reilly contrast, but the estimated six articles lack an equivalent window or method.",
+            "question": "Would you investigate possible unequal attention using matched cases, rather than rely on a columnist’s rough comparison?",
+            "evidenceIds": [
+              "oreilly-report",
+              "oreilly-coverage"
+            ],
+            "limit": "A concluded complaint and widening unresolved allegations are not automatically equivalent cases."
+          },
+          {
+            "criterionId": "transparency",
+            "observation": "The game uses a bounded outside inventory, with selected current article examples.",
+            "question": "How would you explain corrections, changed claims and your contribution to setting the agenda across the whole campaign?",
+            "evidenceIds": [
+              "inventory",
+              "version-limit"
+            ],
+            "limit": "A missing complete edit history is an evidence gap, not a finding that corrections were concealed."
           }
         ]
       },
@@ -657,6 +835,71 @@
               "oreilly-coverage"
             ]
           }
+        ],
+        "scrutiny": [
+          {
+            "criterionId": "public_value",
+            "observation": "Twenty-one pieces include five on 5 August and five on 10 August. An early commentary questions institutional appointment checks.",
+            "question": "What did those two publication waves add beyond repeating a political argument about Cambridge?",
+            "evidenceIds": [
+              "inventory",
+              "commentary-early"
+            ],
+            "limit": "An opinion piece may offer analysis without new facts, but its value still needs justification."
+          },
+          {
+            "criterionId": "context",
+            "observation": "The early commentary acknowledges unresolved allegations; later pieces broaden into institutional and policy arguments.",
+            "question": "How did you preserve that unresolved status as the campaign intensified and the person resigned?",
+            "evidenceIds": [
+              "commentary-early",
+              "commentary-leader",
+              "arday-denial"
+            ],
+            "limit": "The selected pieces are not a complete audit of qualifications or responses in every article."
+          },
+          {
+            "criterionId": "framing",
+            "observation": "A leading article generalises to progressive politics; another invokes fictional impostors and DEI.",
+            "question": "What evidence supports the wider policy conclusion, and does the impostor comparison invite ridicule of a person or group?",
+            "evidenceIds": [
+              "commentary-leader",
+              "commentary-dei"
+            ],
+            "limit": "Political opinion should be identified as opinion. The analogy does not establish motive or audience effect."
+          },
+          {
+            "criterionId": "care",
+            "observation": "The 10 August five-piece wave followed Arday’s public statement about the toll on his family.",
+            "question": "What justified maintaining that intensity, and how did your policy criticism avoid further personal humiliation?",
+            "evidenceIds": [
+              "inventory",
+              "arday-statement",
+              "commentary-dei"
+            ],
+            "limit": "The record does not establish editors’ private decisions or a causal effect on health or death."
+          },
+          {
+            "criterionId": "consistency",
+            "observation": "The O’Reilly case offers a test of whether institutional failings receive the same intensity across subjects.",
+            "question": "Would your standards argument have generated comparable attention there, and how would you measure it fairly?",
+            "evidenceIds": [
+              "oreilly-report",
+              "oreilly-coverage"
+            ],
+            "limit": "No matched inventory supports a numerical ranking or a claim that no such coverage existed."
+          },
+          {
+            "criterionId": "transparency",
+            "observation": "Opinion and news can both contribute to campaign attention. A fixed inventory records publications, not a complete correction history.",
+            "question": "Will you account for what was evidence, what was opinion and what changed as the claims developed?",
+            "evidenceIds": [
+              "inventory",
+              "commentary-early",
+              "version-limit"
+            ],
+            "limit": "Counting a piece does not imply it was hostile or wrong; absence of an edit log does not establish concealment."
+          }
         ]
       },
       {
@@ -780,6 +1023,67 @@
               "oreilly-coverage"
             ]
           }
+        ],
+        "scrutiny": [
+          {
+            "criterionId": "public_value",
+            "observation": "Forty-two written pieces span eighteen active days, including seven on each of 6 and 7 August.",
+            "question": "Which new findings warranted that pace, and which later publications revisited claims already made?",
+            "evidenceIds": [
+              "inventory"
+            ],
+            "limit": "Headings and dates cannot determine the novelty of every full article."
+          },
+          {
+            "criterionId": "context",
+            "observation": "The campaign moved from plagiarism allegations into biographical, appointment and political themes. Arday denied plagiarism and rejected the narratives in his resignation.",
+            "question": "How prominently did each wave carry his answer and the distinction between allegations and adjudicated findings?",
+            "evidenceIds": [
+              "inventory",
+              "arday-denial",
+              "arday-statement"
+            ],
+            "limit": "Original example pages were unavailable. No blanket omission finding can be made from the inventory."
+          },
+          {
+            "criterionId": "framing",
+            "observation": "The early inventory headline labels him through diversity; the later campaign links the appointment to political associations.",
+            "question": "Why was that framing relevant, and what stops it becoming a shortcut for discrediting minority appointments generally?",
+            "evidenceIds": [
+              "inventory"
+            ],
+            "limit": "Limited headline excerpts are observable evidence of framing, not proof of what every body said or what editors intended."
+          },
+          {
+            "criterionId": "care",
+            "observation": "Thirty pieces are dated from the resignation date onward, including the campaign’s fourteen-piece two-day peak.",
+            "question": "What public need justified that concentration after his account of the personal toll, and what would have made you stop?",
+            "evidenceIds": [
+              "inventory",
+              "arday-statement"
+            ],
+            "limit": "Date-level counts do not locate publication relative to the exact statement time or establish causation."
+          },
+          {
+            "criterionId": "consistency",
+            "observation": "A documented earlier Cambridge plagiarism case offers a possible consistency test, with an unmatched rough coverage estimate.",
+            "question": "What comparable institutional failures would you cover at this intensity, and how would you substantiate that answer?",
+            "evidenceIds": [
+              "oreilly-report",
+              "oreilly-coverage"
+            ],
+            "limit": "We cannot infer demographic differences or unequal motive from a name, a photograph or unmatched counts."
+          },
+          {
+            "criterionId": "transparency",
+            "observation": "The final inventory date ends at 15:12 BST; the selected excerpts are not a complete current or original article archive.",
+            "question": "Can you supply a dated inventory and explain significant corrections, removals and your own agenda-setting role?",
+            "evidenceIds": [
+              "window",
+              "version-limit"
+            ],
+            "limit": "Unavailable pages and indexing gaps must be recorded as unknowns, not proof of a purge or absence of coverage."
+          }
         ]
       }
     ],
@@ -833,45 +1137,742 @@
         "oreilly-coverage"
       ]
     },
-    "narrationNotice": "Role-played editor’s defence for the game. These scripts are not statements made by the actual outlets."
+    "narrationNotice": "Role-played editor’s defence for the game. These scripts are not statements made by the actual outlets.",
+    "countMode": "daily",
+    "splitEventDate": "2026-08-05",
+    "splitLabel": "Before 5 Aug / from 5 Aug (calendar dates)",
+    "scrutinyCriteria": [
+      {
+        "id": "public_value",
+        "label": "Public interest",
+        "question": "What did each wave add that the public needed to know?"
+      },
+      {
+        "id": "context",
+        "label": "Fair context",
+        "question": "Were allegations, responses and unresolved findings represented fairly?"
+      },
+      {
+        "id": "framing",
+        "label": "Framing & power",
+        "question": "Did the campaign invite scrutiny or stereotyping, ridicule and superiority?"
+      },
+      {
+        "id": "care",
+        "label": "Care & persistence",
+        "question": "Was continued attention proportionate after distress became known?"
+      },
+      {
+        "id": "consistency",
+        "label": "Comparable treatment",
+        "question": "Would the outlet apply the same intensity to a genuinely comparable case?"
+      },
+      {
+        "id": "transparency",
+        "label": "Transparency",
+        "question": "Can we account for the inventory, later edits and the outlet’s own role?"
+      }
+    ],
+    "dataCompleteness": "Dated inventory for the selected written pieces; not an all-format census or a full content audit.",
+    "researchProvenance": {
+      "reviewed": "2026-10-13",
+      "scope": "Questions developed from a supplied public research essay and independently checked public sources. Private correspondence and personal material are excluded.",
+      "corrections": "Earlier mixed-format and preliminary tallies are not the fixed 229-item written inventory used here. Current BBC pages were read on 13 October; their current text alone does not establish every original August version.",
+      "interpretation": "The six scrutiny observations identify evidence and gaps to test. They are not findings of guilt, discrimination, motive or causation."
+    }
+  },
+  {
+    "id": "flack-sun-aggregate",
+    "title": "Caroline Flack: six months of press coverage",
+    "subject": "Caroline Flack coverage by The Sun within the Guardian’s six-month print analysis",
+    "mode": "public-interest",
+    "countMode": "aggregate",
+    "start": "2019-08-14",
+    "end": "2020-02-14",
+    "endNote": "The Guardian’s analysis window ends on 14 February 2020; exact inclusion-time convention is not stated.",
+    "days": [
+      "2019-08-14",
+      "2019-08-15",
+      "2019-08-16",
+      "2019-08-17",
+      "2019-08-18",
+      "2019-08-19",
+      "2019-08-20",
+      "2019-08-21",
+      "2019-08-22",
+      "2019-08-23",
+      "2019-08-24",
+      "2019-08-25",
+      "2019-08-26",
+      "2019-08-27",
+      "2019-08-28",
+      "2019-08-29",
+      "2019-08-30",
+      "2019-08-31",
+      "2019-09-01",
+      "2019-09-02",
+      "2019-09-03",
+      "2019-09-04",
+      "2019-09-05",
+      "2019-09-06",
+      "2019-09-07",
+      "2019-09-08",
+      "2019-09-09",
+      "2019-09-10",
+      "2019-09-11",
+      "2019-09-12",
+      "2019-09-13",
+      "2019-09-14",
+      "2019-09-15",
+      "2019-09-16",
+      "2019-09-17",
+      "2019-09-18",
+      "2019-09-19",
+      "2019-09-20",
+      "2019-09-21",
+      "2019-09-22",
+      "2019-09-23",
+      "2019-09-24",
+      "2019-09-25",
+      "2019-09-26",
+      "2019-09-27",
+      "2019-09-28",
+      "2019-09-29",
+      "2019-09-30",
+      "2019-10-01",
+      "2019-10-02",
+      "2019-10-03",
+      "2019-10-04",
+      "2019-10-05",
+      "2019-10-06",
+      "2019-10-07",
+      "2019-10-08",
+      "2019-10-09",
+      "2019-10-10",
+      "2019-10-11",
+      "2019-10-12",
+      "2019-10-13",
+      "2019-10-14",
+      "2019-10-15",
+      "2019-10-16",
+      "2019-10-17",
+      "2019-10-18",
+      "2019-10-19",
+      "2019-10-20",
+      "2019-10-21",
+      "2019-10-22",
+      "2019-10-23",
+      "2019-10-24",
+      "2019-10-25",
+      "2019-10-26",
+      "2019-10-27",
+      "2019-10-28",
+      "2019-10-29",
+      "2019-10-30",
+      "2019-10-31",
+      "2019-11-01",
+      "2019-11-02",
+      "2019-11-03",
+      "2019-11-04",
+      "2019-11-05",
+      "2019-11-06",
+      "2019-11-07",
+      "2019-11-08",
+      "2019-11-09",
+      "2019-11-10",
+      "2019-11-11",
+      "2019-11-12",
+      "2019-11-13",
+      "2019-11-14",
+      "2019-11-15",
+      "2019-11-16",
+      "2019-11-17",
+      "2019-11-18",
+      "2019-11-19",
+      "2019-11-20",
+      "2019-11-21",
+      "2019-11-22",
+      "2019-11-23",
+      "2019-11-24",
+      "2019-11-25",
+      "2019-11-26",
+      "2019-11-27",
+      "2019-11-28",
+      "2019-11-29",
+      "2019-11-30",
+      "2019-12-01",
+      "2019-12-02",
+      "2019-12-03",
+      "2019-12-04",
+      "2019-12-05",
+      "2019-12-06",
+      "2019-12-07",
+      "2019-12-08",
+      "2019-12-09",
+      "2019-12-10",
+      "2019-12-11",
+      "2019-12-12",
+      "2019-12-13",
+      "2019-12-14",
+      "2019-12-15",
+      "2019-12-16",
+      "2019-12-17",
+      "2019-12-18",
+      "2019-12-19",
+      "2019-12-20",
+      "2019-12-21",
+      "2019-12-22",
+      "2019-12-23",
+      "2019-12-24",
+      "2019-12-25",
+      "2019-12-26",
+      "2019-12-27",
+      "2019-12-28",
+      "2019-12-29",
+      "2019-12-30",
+      "2019-12-31",
+      "2020-01-01",
+      "2020-01-02",
+      "2020-01-03",
+      "2020-01-04",
+      "2020-01-05",
+      "2020-01-06",
+      "2020-01-07",
+      "2020-01-08",
+      "2020-01-09",
+      "2020-01-10",
+      "2020-01-11",
+      "2020-01-12",
+      "2020-01-13",
+      "2020-01-14",
+      "2020-01-15",
+      "2020-01-16",
+      "2020-01-17",
+      "2020-01-18",
+      "2020-01-19",
+      "2020-01-20",
+      "2020-01-21",
+      "2020-01-22",
+      "2020-01-23",
+      "2020-01-24",
+      "2020-01-25",
+      "2020-01-26",
+      "2020-01-27",
+      "2020-01-28",
+      "2020-01-29",
+      "2020-01-30",
+      "2020-01-31",
+      "2020-02-01",
+      "2020-02-02",
+      "2020-02-03",
+      "2020-02-04",
+      "2020-02-05",
+      "2020-02-06",
+      "2020-02-07",
+      "2020-02-08",
+      "2020-02-09",
+      "2020-02-10",
+      "2020-02-11",
+      "2020-02-12",
+      "2020-02-13",
+      "2020-02-14"
+    ],
+    "dataCompleteness": "One outlet aggregate from a bounded six-month print-media analysis; no daily series or item-level corpus is available here.",
+    "source": {
+      "name": "The Guardian analysis",
+      "url": "https://www.theguardian.com/tv-and-radio/2020/feb/21/caroline-flack-negative-media-coverage-before-death-revealed",
+      "retrieved": "2026-10-13",
+      "unit": "print stories in which Caroline Flack appeared in the headline or body",
+      "corpusCount": 387,
+      "outletUniverse": null,
+      "scopeNote": "The Guardian reports 387 print stories across UK national newspapers for 14 Aug 2019–14 Feb 2020, including 99 mentioning Flack in The Sun. Inclusion means her name in the headline or body. This is an aggregate only: outlet universe is not itemized here, and no daily counts, active days, peak, before/after split or complete headline corpus is supplied. Three journalists categorized stories by tone; the Guardian calls the analysis non-definitive. The 99 are not all established as negative, and this record does not claim the coverage caused her death. The example is an online Sun story, reported by The Independent, and is not verified as one of the 99 print-corpus items. This method is not comparable to a census of distinct substantive online articles."
+    },
+    "events": [
+      {
+        "date": "2019-12-13",
+        "label": "Charged with assault by beating",
+        "evidenceId": "charge"
+      },
+      {
+        "date": "2019-12-17",
+        "label": "Stepped down from Love Island",
+        "evidenceId": "stepdown"
+      },
+      {
+        "date": "2019-12-23",
+        "label": "Pleaded not guilty",
+        "evidenceId": "plea"
+      },
+      {
+        "date": "2020-02-14",
+        "label": "Sun Valentine-card story published online",
+        "evidenceId": "card-story"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "guardian-analysis",
+        "label": "Guardian aggregate and method",
+        "url": "https://www.theguardian.com/tv-and-radio/2020/feb/21/caroline-flack-negative-media-coverage-before-death-revealed",
+        "text": "The Guardian reports 387 print stories across UK national newspapers and 99 Sun stories mentioning Flack. Inclusion was her name in headline or body during 14 Aug 2019–14 Feb 2020. Three journalists classified tone; the article says the analysis is not definitive. Most stories were neutral overall; December negative headlines rose to 35% versus 18% positive, while February had equal positive and negative counts."
+      },
+      {
+        "id": "charge",
+        "label": "Charge report, 13 December 2019",
+        "url": "https://www.itv.com/news/2019-12-13/love-island-presenter-caroline-flack-charged-with-assault-police-say",
+        "text": "ITV reported that Flack was charged with assault by beating on 13 December after an incident the previous day. The allegation was not a conviction."
+      },
+      {
+        "id": "stepdown",
+        "label": "Flack steps down from Love Island, 17 December 2019",
+        "url": "https://www.itv.com/news/2019-12-17/caroline-flack-stand-down-host-of-upcoming-series-love-island-after-assault-charge",
+        "text": "ITV reported that Flack stood down from the upcoming series after the charge. Her statement said reports about her private life did not reflect events as she understood them; she said she would cooperate with authorities and could not comment further during the legal process. ITV accepted her decision."
+      },
+      {
+        "id": "replacement",
+        "label": "Laura Whitmore named host, 20 December 2019",
+        "url": "https://www.itv.com/news/2019-12-20/laura-whitmore-announced-as-host-of-love-island-after-caroline-flack-stepped-down",
+        "text": "ITV announced Laura Whitmore as the replacement host after Flack stepped down; Whitmore described Flack as a friend and said she wished circumstances were better."
+      },
+      {
+        "id": "plea",
+        "label": "Not-guilty plea reported, 24 December 2019",
+        "url": "https://www.itv.com/news/2019-12-24/love-islands-caroline-flack-announces-social-media-break",
+        "text": "ITV’s 24 December report states Flack pleaded not guilty at Highbury Corner Magistrates’ Court on 23 December. She remained on bail ahead of a trial then scheduled for March. The same report records her statement that scrutiny and speculation were difficult to face alone and that she was taking time away to feel better."
+      },
+      {
+        "id": "card-story",
+        "label": "Reported headline of removed Sun online story",
+        "url": "https://www.independent.co.uk/news/media/tv-radio/caroline-flack-death-sun-valentines-day-card-lewis-burton-assault-charge-a9337756.html",
+        "text": "The Independent reported that The Sun published an online story on 14 February about a Valentine card mocking Flack in relation to the alleged assault; it reproduced the headline excerpt “Brutal Caroline Flack Valentine’s Day card mocks troubled star”. This confirms an online story, not its presence in the Guardian’s print corpus."
+      },
+      {
+        "id": "removal",
+        "label": "Removal reported after the window",
+        "url": "https://www.theguardian.com/media/2020/feb/15/the-sun-takes-down-article-about-caroline-flack-from-website",
+        "text": "By Saturday evening, 15 February, the online story had been replaced with a legal removal notice. The Guardian says the exact removal time was unclear, so the record does not establish whether removal preceded or followed the public announcement. This is outside the print-count window."
+      },
+      {
+        "id": "editorial-response",
+        "label": "Public debate about press coverage",
+        "url": "https://www.theguardian.com/media/2020/feb/16/caroline-flack-death-turns-spotlight-on-tabloids-once-again",
+        "text": "The Guardian reported criticism of tabloid coverage and recorded The Sun executive editor Dan Wootton’s public claim that ITV had failed to stand by Flack. The response and criticism are viewpoints, not evidence that coverage caused her death."
+      }
+    ],
+    "scrutinyCriteria": [
+      {
+        "id": "public_value",
+        "label": "Public interest",
+        "question": "What did each wave add that the public needed to know?"
+      },
+      {
+        "id": "context",
+        "label": "Fair context",
+        "question": "Were allegations, responses and unresolved findings represented fairly?"
+      },
+      {
+        "id": "framing",
+        "label": "Framing & power",
+        "question": "Did the campaign invite scrutiny or stereotyping, ridicule and superiority?"
+      },
+      {
+        "id": "care",
+        "label": "Care & persistence",
+        "question": "Was continued attention proportionate after distress became known?"
+      },
+      {
+        "id": "consistency",
+        "label": "Comparable treatment",
+        "question": "Would the outlet apply the same intensity to a genuinely comparable case?"
+      },
+      {
+        "id": "transparency",
+        "label": "Transparency",
+        "question": "Can we account for the inventory, later edits and the outlet’s own role?"
+      }
+    ],
+    "reasoningChecks": [
+      {
+        "id": "unit",
+        "prompt": "What does 99 count?",
+        "options": [
+          {
+            "value": "heads",
+            "label": "99 headlines"
+          },
+          {
+            "value": "stories",
+            "label": "99 print stories mentioning Flack in headline or body"
+          },
+          {
+            "value": "negative",
+            "label": "99 stories judged negative"
+          }
+        ],
+        "answer": "stories",
+        "explanation": "The Guardian says 99 print stories in The Sun mentioned Flack in the headline or body. The aggregate does not mean every item was a headline or negative.",
+        "evidenceIds": [
+          "guardian-analysis"
+        ]
+      },
+      {
+        "id": "daily",
+        "prompt": "What can this record show about daily peaks?",
+        "options": [
+          {
+            "value": "peak",
+            "label": "The busiest publication day"
+          },
+          {
+            "value": "trend",
+            "label": "The daily trend before and after the charge"
+          },
+          {
+            "value": "none",
+            "label": "No daily series or peak is available"
+          }
+        ],
+        "answer": "none",
+        "explanation": "The published summary gives the six-month aggregate only; daily outlet counts are unavailable here.",
+        "evidenceIds": [
+          "guardian-analysis"
+        ]
+      },
+      {
+        "id": "status",
+        "prompt": "What was established when she stepped down?",
+        "options": [
+          {
+            "value": "convicted",
+            "label": "A conviction for assault"
+          },
+          {
+            "value": "charged",
+            "label": "A charge, which she later denied by pleading not guilty"
+          },
+          {
+            "value": "cleared",
+            "label": "That the allegation had been disproved"
+          }
+        ],
+        "answer": "charged",
+        "explanation": "The report describes a charge, and ITV records a not-guilty plea. Neither is a verdict.",
+        "evidenceIds": [
+          "charge",
+          "stepdown",
+          "plea"
+        ]
+      },
+      {
+        "id": "example",
+        "prompt": "Does the Valentine-card story prove that it was one of the 99 print stories?",
+        "options": [
+          {
+            "value": "yes",
+            "label": "Yes, it is verified in the print corpus"
+          },
+          {
+            "value": "no",
+            "label": "No, it is reported as an online story; print-corpus membership is unverified"
+          },
+          {
+            "value": "negative",
+            "label": "Yes, and it proves all 99 were negative"
+          }
+        ],
+        "answer": "no",
+        "explanation": "The Independent reports a Sun online story dated 14 February, but the Guardian’s aggregate concerns print stories and does not provide item-level linkage.",
+        "evidenceIds": [
+          "card-story",
+          "guardian-analysis"
+        ]
+      },
+      {
+        "id": "causation",
+        "prompt": "What can the coverage total establish about Flack’s death?",
+        "options": [
+          {
+            "value": "cause",
+            "label": "That the coverage caused her death"
+          },
+          {
+            "value": "nothing",
+            "label": "It establishes neither causation nor a complete account of her experience"
+          },
+          {
+            "value": "intent",
+            "label": "That editors intended harm"
+          }
+        ],
+        "answer": "nothing",
+        "explanation": "A publication count cannot establish intent or causal effect. The aggregate supports a question about volume and editorial choices, not a causal conclusion.",
+        "evidenceIds": [
+          "guardian-analysis",
+          "editorial-response"
+        ]
+      }
+    ],
+    "campaigns": [
+      {
+        "id": "sun",
+        "outlet": "The Sun",
+        "listedCount": 99,
+        "dailyCounts": null,
+        "activeDays": null,
+        "peakDaily": null,
+        "beforeResignationCount": null,
+        "afterResignationCount": null,
+        "examples": [
+          {
+            "id": "sun-card-online",
+            "headline": "Brutal Caroline Flack Valentine’s Day card mocks troubled star…",
+            "url": "https://www.independent.co.uk/news/media/tv-radio/caroline-flack-death-sun-valentines-day-card-lewis-burton-assault-charge-a9337756.html",
+            "published": "2020-02-14",
+            "verification": "The Independent reproduced this reported headline of a Sun online story published 14 February. It is not verified as one of the Guardian’s 99 print-corpus entries; this excerpt is an illustration of documented framing, not a representative sample."
+          }
+        ],
+        "reviewNotes": {
+          "publicValue": "A public figure’s criminal charge and departure from a flagship programme were legitimate news developments. Ask what each article added and whether continuing attention remained proportionate.",
+          "pressure": "The Guardian’s aggregate identifies 99 Sun print stories in the six-month window, but supplies no daily series or full headline corpus here. The total alone cannot show repetition, peaks, or the experience of the subject.",
+          "limit": "The count is stories mentioning Flack in headline or body, not 99 negative headlines. Tone was mixed in the Guardian’s all-outlet analysis. No causal claim about her death follows from the count. The example is an online item with unverified membership in the print corpus."
+        },
+        "scrutiny": [
+          {
+            "criterionId": "public_value",
+            "observation": "The campaign window includes a charge and a high-profile presenter’s departure from Love Island; these are developments with public relevance.",
+            "question": "What information did the 99 items add beyond those developments, and how often did later items justify renewed attention?",
+            "limit": "The aggregate count and summary do not list all Sun items or establish what each added.",
+            "evidenceIds": [
+              "guardian-analysis",
+              "charge",
+              "stepdown"
+            ]
+          },
+          {
+            "criterionId": "context",
+            "observation": "Flack was charged on 13 December, stepped down on 17 December, and pleaded not guilty on 23 December.",
+            "question": "Did the outlet consistently present the matter as an allegation and report her response and the court process?",
+            "limit": "This record has no full set of 99 articles with which to assess outlet-wide practice.",
+            "evidenceIds": [
+              "charge",
+              "stepdown",
+              "plea"
+            ]
+          },
+          {
+            "criterionId": "framing",
+            "observation": "A reported 14 February online Sun story publicized a Valentine card mocking the alleged assault; the Guardian later reported that the story was removed.",
+            "question": "Was highlighting the card newsworthy, or did the treatment use an unresolved allegation as ridicule?",
+            "limit": "The example is online, not verified as a print-corpus item, and cannot represent all 99 stories.",
+            "evidenceIds": [
+              "card-story",
+              "removal"
+            ]
+          },
+          {
+            "criterionId": "care",
+            "observation": "On 24 December, Flack publicly described the strain of scrutiny and speculation. The reported mocking card story followed in February.",
+            "question": "What public value justified that later treatment after her account of the strain, and how should sustained attention be reduced?",
+            "limit": "The report does not establish editors’ knowledge or safeguards, the pattern across all 99 print stories, or a causal effect on her death.",
+            "evidenceIds": [
+              "plea",
+              "card-story",
+              "guardian-analysis"
+            ]
+          },
+          {
+            "criterionId": "consistency",
+            "observation": "A single subject-and-outlet aggregate does not provide a matched comparison case or equivalent news timeline.",
+            "question": "Would the outlet publish a similar volume and framing about another presenter facing a charge and stepping down?",
+            "limit": "No matching comparison corpus is included, so consistency cannot be measured here.",
+            "evidenceIds": [
+              "guardian-analysis"
+            ]
+          },
+          {
+            "criterionId": "transparency",
+            "observation": "The outside analysis gives an aggregate and inclusion rule, but no complete outlet inventory. A reported mocking online story was later replaced with a legal notice.",
+            "question": "Will you supply the publication record and explain significant removals or corrections, including what changed and why?",
+            "limit": "The removal was reported by 15 February, outside this counting window; its exact time and rationale are not established. No full change log or complete print inventory is supplied.",
+            "evidenceIds": [
+              "guardian-analysis",
+              "removal"
+            ]
+          }
+        ],
+        "briefing": {
+          "title": "A difficult story, and a harder editorial question",
+          "paragraphs": [
+            {
+              "kind": "report",
+              "text": "We covered a presenter whose private life became public through a criminal charge and her departure from a major television programme. Caroline Flack was charged with assault by beating on 13 December 2019. Four days later she stepped down from Love Island, saying reports about her were inaccurate and she could not comment during the legal process. She pleaded not guilty on 23 December. Neither is a verdict.",
+              "evidenceIds": [
+                "charge",
+                "stepdown",
+                "plea"
+              ]
+            },
+            {
+              "kind": "analysis",
+              "text": "A published press review raises a serious question about scale: 99 print stories mentioning Flack in our paper, within 387 across UK national newspapers from 14 August 2019 to 14 February 2020. The rule covered her name in headline or body. This is not 99 headlines or negative stories. The review found mixed tone overall and supplies no daily values or complete outlet item list.",
+              "evidenceIds": [
+                "guardian-analysis"
+              ]
+            },
+            {
+              "kind": "analysis",
+              "text": "One difficult example is our online story, reported on the fourteenth of February, about a Valentine card joking about the alleged assault. This followed Flack’s public account in December of the strain of scrutiny and speculation. We can identify the story and its later removal, but cannot link it to the 99 print entries. Did highlighting the card inform readers or turn an unresolved allegation into mockery? We owe you a justification for that choice.",
+              "evidenceIds": [
+                "card-story",
+                "removal",
+                "plea"
+              ]
+            },
+            {
+              "kind": "comparison",
+              "text": "We would need to explain whether we treated comparable public figures consistently. This record has no matched case or item-level archive, so we cannot make that comparison or say what each story added. Reporting a charge and programme change had public value; that does not justify every follow-up. The total establishes volume, not that all 99 were hostile, that editors intended harm, or that coverage caused Flack’s death.",
+              "evidenceIds": [
+                "guardian-analysis",
+                "charge",
+                "stepdown",
+                "card-story"
+              ]
+            }
+          ]
+        },
+        "coverageNotes": [
+          {
+            "kind": "report",
+            "text": "We covered a presenter whose private life became public through a criminal charge and her departure from a major television programme. Caroline Flack was charged with assault by beating on 13 December 2019. Four days later she stepped down from Love Island, saying reports about her were inaccurate and she could not comment during the legal process. She pleaded not guilty on 23 December. Neither is a verdict.",
+            "evidenceIds": [
+              "charge",
+              "stepdown",
+              "plea"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "A published press review raises a serious question about scale: 99 print stories mentioning Flack in our paper, within 387 across UK national newspapers from 14 August 2019 to 14 February 2020. The rule covered her name in headline or body. This is not 99 headlines or negative stories. The review found mixed tone overall and supplies no daily values or complete outlet item list.",
+            "evidenceIds": [
+              "guardian-analysis"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "One difficult example is our online story, reported on the fourteenth of February, about a Valentine card joking about the alleged assault. This followed Flack’s public account in December of the strain of scrutiny and speculation. We can identify the story and its later removal, but cannot link it to the 99 print entries. Did highlighting the card inform readers or turn an unresolved allegation into mockery? We owe you a justification for that choice.",
+            "evidenceIds": [
+              "card-story",
+              "removal",
+              "plea"
+            ]
+          },
+          {
+            "kind": "comparison",
+            "text": "We would need to explain whether we treated comparable public figures consistently. This record has no matched case or item-level archive, so we cannot make that comparison or say what each story added. Reporting a charge and programme change had public value; that does not justify every follow-up. The total establishes volume, not that all 99 were hostile, that editors intended harm, or that coverage caused Flack’s death.",
+            "evidenceIds": [
+              "guardian-analysis",
+              "charge",
+              "stepdown",
+              "card-story"
+            ]
+          }
+        ]
+      }
+    ],
+    "context": {
+      "statusAtWindowEnd": "The analysis window ended on 14 February 2020, the date of the reported Sun online Valentine-card story. Flack had pleaded not guilty in December; no trial verdict occurred during this window.",
+      "sequence": [
+        {
+          "date": "2019-12-13",
+          "text": "Flack was charged with assault by beating after an incident the previous day.",
+          "evidenceIds": [
+            "charge"
+          ]
+        },
+        {
+          "date": "2019-12-17",
+          "text": "She stepped down from the upcoming Love Island series and disputed how her private life had been reported.",
+          "evidenceIds": [
+            "stepdown"
+          ]
+        },
+        {
+          "date": "2019-12-23",
+          "text": "She pleaded not guilty at Highbury Corner Magistrates’ Court.",
+          "evidenceIds": [
+            "plea"
+          ]
+        },
+        {
+          "date": "2020-02-14",
+          "text": "The Sun published an online story about the Valentine card; its membership in the print analysis corpus is unverified.",
+          "evidenceIds": [
+            "card-story"
+          ]
+        }
+      ],
+      "allegationResponse": "The 13 December charge was an allegation; ITV reported that Flack pleaded not guilty on 23 December. This record does not include a trial verdict.",
+      "evidenceIds": [
+        "charge",
+        "plea"
+      ]
+    },
+    "comparison": {
+      "title": "No matched comparison supplied",
+      "subject": "Comparable coverage of another public figure facing a criminal charge",
+      "established": "This record contains the Guardian’s aggregate for one outlet and one six-month print analysis window.",
+      "coverageClaim": "No matching outlet-level comparison count is established here.",
+      "limit": "An absence of matched evidence is not proof that comparable cases received less attention. The Guardian and NewsCord counting methods are not interchangeable.",
+      "evidenceIds": [
+        "guardian-analysis"
+      ]
+    },
+    "narrationNotice": "Role-played editorial defence for the game. It is not a statement made by The Sun or its staff."
   }
 ]</script>
 <script>
 'use strict';
 const $=s=>document.querySelector(s), app=$('#app'), audio=$('#audio'), ORIGINAL_HTML=document.documentElement.outerHTML;
-const names=['Welcome','Replay','Hear','Question','Judge','Reveal'];let item=null,session=null,live=false,mode='practice',desks=[],events=[],source={},checks=[],frame=0,timer=0,index=0,playing=false,activeDesk=0,answers={},verdicts={},budgets={},justification='',replies={},voices=true,audioURL=null,audioEpoch=0,typedQuestionCount=0,overviewReplies={};
-const reduced=matchMedia('(prefers-reduced-motion: reduce)'); let reduceMotion=reduced.matches;document.documentElement.classList.toggle('reduced-motion',reduceMotion);
-function safe(v){return String(v??'')} function esc(v){return safe(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function toast(s){const t=$('#toast');t.textContent=s;t.style.display='block';setTimeout(()=>t.style.display='none',2500)}
-function stop(){audioEpoch++;playing=false;cancelAnimationFrame(frame);clearInterval(timer);audio.pause();if(audioURL){URL.revokeObjectURL(audioURL);audioURL=null}audio.removeAttribute('src');audio.load()}
+const names=['Welcome','Timeline','Scrutiny','Hear','Judge','Reveal'];
+let item=null,session=null,live=false,mode='practice',caseList=[],desks=[],events=[],source={},checks=[],criteria=[],countMode='daily',dataCompleteness=null,splitLabel=null,splitEventDate=null;
+let index=0,timer=0,activeDesk=0,activeCriterionId=null,activeReviewCriterionIndex=0,answers={},verdicts={},budgets={},scrutinyAssessments={},justification='',replies={},overviewReplies={},typedQuestionCounts={},audioURL=null,lastReveal=null;
+const reduced=matchMedia('(prefers-reduced-motion: reduce)');let reduceMotion=reduced.matches;document.documentElement.classList.toggle('reduced-motion',reduceMotion);
+function safe(v){return String(v??'')}function esc(v){return safe(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function toast(s){const t=$('#toast');if(!t)return;t.textContent=s;t.style.display='block';setTimeout(()=>t.style.display='none',2500)}
+function stop(){clearInterval(timer);audio.pause();if(audioURL){URL.revokeObjectURL(audioURL);audioURL=null}audio.removeAttribute('src');audio.load();document.body.classList.remove('audio-active')}
 function stepper(n){$('#stepper').innerHTML=names.map((x,i)=>`<span class="step ${i===n?'on':''}">${i===0?'✦':String(i).padStart(2,'0')} ${x}</span>`).join('')}
-function go(n){stop();stepper(n);({0:welcome,1:replay,2:hear,3:question,4:judge,5:()=>window.lastCampaignResult&&renderReveal(window.lastCampaignResult)}[n])()}
+function go(n){stop();stepper(n);({0:welcome,1:replay,2:scrutiny,3:hear,4:judge,5:renderLastReveal}[n])();window.scrollTo?.(0,0)}
 async function post(path,body){const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),20000);try{const r=await fetch(path,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body),signal:controller.signal});const j=await r.json().catch(()=>({}));if(!r.ok)throw Error(j.error||'service unavailable');return j}finally{clearTimeout(timeout)}}
-function avatar(i){const colors=['#d4f56b','#83d8ff','#ff8773','#c6a0ff'];return `<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="${colors[i%4]}"/><rect x="7" y="7" width="18" height="19" rx="2" fill="#172236"/><rect x="10" y="10" width="12" height="5" fill="${colors[i%4]}"/><path d="M10 18h12M10 21h12" stroke="${colors[i%4]}" stroke-width="2"/></svg>`}
+function avatar(i){const colors=['#d4f56b','#83d8ff','#ff8773','#c6a0ff','#f6c768','#95e0bd'];return `<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="${colors[i%colors.length]}"/><rect x="7" y="7" width="18" height="19" rx="2" fill="#172236"/><rect x="10" y="10" width="12" height="5" fill="${colors[i%colors.length]}"/><path d="M10 18h12M10 21h12" stroke="${colors[i%colors.length]}" stroke-width="2"/></svg>`}
 function labelDesk(d,i){return `Outlet ${String.fromCharCode(65+i)}`}
-function welcome(){app.innerHTML=`<section class="intro"><p class="eyebrow">A campaign jury · Public-interest reporting</p><h1>Judge the <em>coverage.</em><br>See the whole arc.</h1><p class="lead">Follow four anonymous media outlets across a defined period. Weigh the amount, pace and public value of their coverage, then decide whether that amount of attention was justified.</p><div class="facts"><div class="fact"><strong>22</strong><span>days in view</span></div><div class="fact"><strong>4</strong><span>campaigns</span></div><div class="fact"><strong>1</strong><span>whole-period call</span></div></div><p class="small">No individual headline gets a moral score. Counts are evidence to consider, never proof by themselves.</p><button id="start" class="button">Enter the jury →</button><p id="status" class="small">Loading the public record…</p></section>`;$('#start').onclick=start;$('#status').textContent='The local game service is checked when you enter. Offline practice is available when the campaign record is embedded.'}
-function normalizeOffline(c,i){return {...c,outletId:`desk-${String.fromCharCode(97+i)}`,label:`Desk ${String.fromCharCode(65+i)}`}}
-async function start(){const b=$('#start');b.disabled=true;b.textContent='Preparing the record…';try{let data=JSON.parse($('#campaign-data').textContent);if(!Array.isArray(data))data=[];item=data[0]||null;if(item){source=item.source||{};events=item.events||[];checks=item.reasoningChecks||[];desks=item.campaigns.map((c,i)=>normalizeOffline(c,i));mode='practice';}try{if(location.protocol==='file:')throw Error('offline');session=await post('/api/campaign/session',{caseId:item?.id||'arday-2026-campaign'});live=true;source=session.source||source;events=session.events||events;checks=session.reasoningChecks||checks;desks=session.desks||[];mode='live';}catch(e){live=false;session=null;}if(!item&&!session){app.innerHTML=`<section class="intro"><p class="eyebrow">Campaign data pending</p><h1>Jury room<br><em>almost ready.</em></h1><p class="lead">The standalone game needs its campaign dataset embedded, or the local server running with campaigns.json.</p><button class="secondary" onclick="location.reload()">Try again</button></section>`;return}item=item||{title:'Campaign coverage',subject:'A public figure and public-interest reporting',start:session.start,end:session.end,endNote:session.endNote,days:session.days,evidence:session.evidence};answers={};desks.forEach(d=>{verdicts[d.outletId]=null;budgets[d.outletId]=null});go(1)}finally{if(b.isConnected)b.disabled=false}}
 function total(d){return d.listedCount??(d.dailyCounts||[]).reduce((a,b)=>a+(Number(b)||0),0)}
-function dateKey(value){if(!value)return '';const m=String(value).match(/\b(2026-\d{2}-\d{2})\b/);if(m)return m[1];const d=new Date(value);return Number.isNaN(d.getTime())?'':d.toISOString().slice(0,10)}
-function replay(){const days=item.days||session?.days||[];const max=Math.max(1,...desks.flatMap(d=>d.dailyCounts||[]));const W=920,H=320,left=136,right=18,top=22,bottom=34,laneH=(H-top-bottom)/4,chartW=W-left-right,step=chartW/Math.max(1,days.length);let svg=`<svg class="timeline" viewBox="0 0 ${W} ${H}" role="img" aria-label="Campaign timeline with four anonymous outlet lanes"><defs><pattern id="paper" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 7.5h8" stroke="#ffffff1a"/></pattern></defs>`;for(let i=0;i<4;i++){let y=top+i*laneH;svg+=`<rect x="${left}" y="${y}" width="${chartW}" height="${laneH}" fill="${i%2?'#111c2c':'#152136'}"/><line class="lane" x1="${left}" y1="${y+laneH}" x2="${W-right}" y2="${y+laneH}"/><text class="laneLabel" id="cumulative-${i}" x="8" y="${y+laneH*.56}">${esc(labelDesk(desks[i],i))} · 0</text>`;let counts=desks[i].dailyCounts||[];counts.forEach((n,j)=>{if(!n)return;let h=Math.max(3,(Number(n)||0)/max*(laneH-17)),x=left+j*step+step*.19,w=Math.max(2,step*.62),yy=y+laneH-5-h;svg+=`<rect class="bar" data-day="${j}" data-desk="${i}" x="${x}" y="${yy}" width="${w}" height="${h}" rx="${Math.min(4,w/2)}" fill="${['#d4f56b','#83d8ff','#ff8773','#c6a0ff'][i]}" opacity=".92"><title>${esc(labelDesk(desks[i],i))}: ${n} listed items on ${esc(days[j])}</title></rect>`;});}for(let j=0;j<days.length;j+=Math.max(1,Math.ceil(days.length/7))){svg+=`<text class="axis" text-anchor="middle" x="${left+j*step+step/2}" y="${H-7}">${esc(days[j]?.slice(5))}</text>`}for(const ev of events){let pos=days.indexOf(ev.date);if(pos>=0){let ex=left+(pos+.5)*step;svg+=`<line x1="${ex}" x2="${ex}" y1="${top}" y2="${H-bottom}" stroke="#f6c768" stroke-width="1" stroke-dasharray="3 5" opacity=".55"/><text x="${ex}" y="${top-6}" text-anchor="middle" fill="#f6c768" font-size="12">${esc(ev.label)}</text>`}}let cx=left+index*step+step/2;svg+=`<line id="cursorline" class="cursorline" x1="${cx}" y1="${top-5}" x2="${cx}" y2="${H-bottom+3}"/><circle id="cursordot" class="cursorDot" cx="${cx}" cy="${top-5}" r="5"/></svg>`;app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">01 · Replay the period</p><h2>${esc(item.title||'Campaign coverage')}</h2><p class="small">${esc(item.start)} — ${esc(item.end)} · ${esc(item.endNote||'')}</p></div><span class="pill">Bar height = pieces that day · same scale for all desks</span></div><div class="grid campaign-grid"><section class="card chartbox"><div class="charttop"><div class="playrow"><button id="play">▶ Play</button><button id="pause">Ⅱ Pause</button><button id="replay">↺ Replay</button></div><span class="pill" id="datepill">${esc(days[index]||'')}</span></div>${svg}<div class="datecontrol"><input class="range" id="scrub" type="range" min="0" max="${Math.max(0,days.length-1)}" value="${index}" aria-label="Scrub timeline date"><button class="secondary" id="whole">Show whole window</button></div><div id="arrivals" class="small" aria-live="polite"></div></section><aside class="card"><p class="eyebrow">Four anonymous outlets</p><div class="avatars">${desks.map((d,i)=>`<span class="avatar">${avatar(i)} ${esc(labelDesk(d,i))}</span>`).join('')}</div><div class="facts" style="margin-top:16px"><div class="fact"><strong>${esc(source.corpusCount??'—')}</strong><span>items in archive</span></div><div class="fact"><strong>${esc(source.outletUniverse??'—')}</strong><span>outlets indexed</span></div><div class="fact"><strong>${esc(desks.reduce((n,d)=>n+total(d),0))}</strong><span>across these desks</span></div></div><p class="notice" style="margin-top:14px">Timeline uses the record’s daily counts. A missing day means no listed item in this dataset, not proof nothing was published.</p><button class="button" id="next">Hear the outlets →</button></aside></div><p class="small source"><details><summary>Source, scope and limits</summary><p>${esc(source.scopeNote||'Source scope has not been supplied.')}</p><p>${esc(source.unit||'Listed pieces')} · retrieved ${esc(source.retrieved||'date not supplied')} · <a href="${esc(source.url||'#')}" target="_blank" rel="noreferrer">Open source record</a></p></details></p>`;$('#play').onclick=play;$('#pause').onclick=stop;$('#replay').onclick=()=>{stop();index=0;syncCursor();play()};$('#whole').onclick=()=>{stop();index=days.length-1;syncCursor()};$('#scrub').oninput=e=>{stop();index=+e.target.value;syncCursor()};$('#next').onclick=()=>go(2);syncCursor()}
-function syncCursor(){const days=item.days||session.days,cx=136+(920-136-18)/Math.max(1,days.length)*(index+.5);$('#cursorline')?.setAttribute('x1',cx);$('#cursorline')?.setAttribute('x2',cx);$('#cursordot')?.setAttribute('cx',cx);const scrub=$('#scrub'),pill=$('#datepill');if(scrub)scrub.value=index;if(pill)pill.textContent=days[index]||'';desks.forEach((d,i)=>{let count=(d.dailyCounts||[]).slice(0,index+1).reduce((a,b)=>a+(+b||0),0),label=$(`#cumulative-${i}`);if(label)label.textContent=`${labelDesk(d,i)} · ${count}`});document.querySelectorAll('.bar').forEach(b=>{let revealed=+b.dataset.day<=index;b.style.opacity=revealed?'0.92':'0.08';b.style.filter=revealed?'none':'grayscale(1)'});let day=days[index],ann=[];for(const ev of events)if(dateKey(ev.date)===day)ann.push(`<span class="pill">◆ ${esc(ev.label)}</span>`);for(let i=0;i<desks.length;i++)for(const a of (desks[i].examples||[]))if(dateKey(a.date||a.published)===day)ann.push(`<a class="pill" href="${esc(a.url||'#')}" target="_blank" rel="noreferrer">▤ ${esc(labelDesk(desks[i],i))}: ${esc(a.headline)}</a>`);const arrival=$('#arrivals');if(arrival)arrival.innerHTML=ann.length?`On this date: ${ann.join(' ')}`:'No selected headline or event marker on this date.'}
-function play(){if(reduceMotion){toast('Motion is reduced. Use the date slider to inspect the timeline.');return}stop();playing=true;timer=setInterval(()=>{if(index>=(item.days||session.days).length-1){stop();return}index++;syncCursor()},650)}
-function hear(){app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">02 · Hear the outlet’s defence</p><h2>Why did you keep publishing?</h2><p class="lead">Each outlet tells the story, defends its coverage and answers your challenges.</p></div><span class="pill">Challenge the whole campaign</span></div><div class="grid"><section class="card"><div id="desk-tabs" class="avatars">${desks.map((d,i)=>`<button class="avatar secondary" data-desk="${i}">${avatar(i)} ${esc(labelDesk(d,i))}</button>`).join('')}</div><div id="deskview"></div></section><aside class="card"><p class="eyebrow">Challenge this outlet</p><p>Ask what justified another wave of coverage, or how they treated a similar case.</p><textarea id="question" maxlength="180" placeholder="Why was this amount of coverage necessary?" style="width:100%;min-height:100px;background:#101a29;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:12px"></textarea><p class="small"><span id="qcount">0</span>/180 · <span id="qremaining">3</span> typed questions left</p><button id="ask" class="button">Ask this outlet</button><div id="reply" class="notice" style="margin-top:16px;display:none"></div><button id="listen" class="secondary" style="margin-top:10px;display:none">▶ Listen to reply</button><p class="small">Editors’ answers are role-played for the game. ${live?'Four distinct outlet voices when configured.':'Offline practice: read each outlet’s recorded defence.'}</p></aside></div><div class="actions"><button class="secondary" id="back">← Timeline</button><button class="button" id="next">Judge the campaigns →</button></div>`;activeDesk=0;drawDesk();$('#qremaining').textContent=3-typedQuestionCount;$('#desk-tabs').onclick=e=>{const b=e.target.closest('[data-desk]');if(b){stop();activeDesk=+b.dataset.desk;drawDesk()}};$('#question').oninput=e=>$('#qcount').textContent=e.target.value.length;$('#ask').onclick=ask;$('#listen').onclick=listen;$('#back').onclick=()=>go(1);$('#next').onclick=()=>go(3)}
-function drawDesk(){if(!$('#deskview'))return;let d=desks[activeDesk],v=$('#deskview'),samples=d.examples||[],brief=overviewReplies[d.outletId];v.innerHTML=`<h3 style="margin-top:22px">${esc(labelDesk(d,activeDesk))}: justify your coverage</h3><div class="facts"><div class="fact"><strong>${total(d)}</strong><span>listed pieces / 22 days</span></div><div class="fact"><strong>${d.peakDaily}</strong><span>peak in one day</span></div><div class="fact"><strong>${d.activeDays}</strong><span>dates with coverage</span></div></div><div class="actions"><button class="button" id="overview">${brief?'Replay outlet defence':'Play outlet defence'}</button><button class="secondary" id="readBriefing">Read the defence</button><button class="secondary" id="pauseVoice" ${!audio.currentSrc?'disabled':''}>Pause voice</button></div><p class="small">Role-played editor’s defence. These are game scripts, not statements from the real outlets.</p>${brief?`<article class="briefing"><p class="eyebrow">${esc(brief.title)}</p>${(brief.paragraphs||[]).map(p=>`<div class="briefparagraph"><span class="kind">${{report:'What we covered',analysis:'Our justification',comparison:'The consistency challenge'}[p.kind]||'Our case'}</span><p>${esc(p.text)}</p></div>`).join('')}<details><summary>Check the sources behind this defence</summary>${(item.evidence||session?.evidence||[]).filter(e=>(brief.evidenceIds||[]).includes(e.id)).map(e=>`<p class="small"><a href="${esc(e.url)}" target="_blank" rel="noreferrer">${esc(e.label)}</a> — ${esc(e.text)}</p>`).join('')}</details></article>`:'<p class="notice">Hear what happened, how the coverage built, and the editor’s case for continuing it.</p>'}<details class="source"><summary>Inspect selected headlines (opening a story reveals its outlet)</summary><div class="cards">${samples.map(a=>`<article class="headcard"><time>${esc(a.published)}</time><h3>${esc(a.headline)}</h3><p class="small">${esc(a.verification)}</p><a href="${esc(a.url)}" target="_blank" rel="noreferrer">Open story ↗</a></article>`).join('')}</div></details>`;$('#overview').onclick=()=>hearOverview(d);$('#readBriefing').onclick=()=>hearOverview(d,false);$('#pauseVoice').onclick=()=>{if(audio.paused)audio.play().catch(()=>toast('Replay the outlet defence to hear it.'));else audio.pause()};}
-async function hearOverview(d,playAudio=true){stop();if(overviewReplies[d.outletId]){if(playAudio)await speak(overviewReplies[d.outletId],d);else drawDesk();return}const b=$('#overview');b.disabled=true;b.textContent='Preparing the outlet defence…';try{let r;if(live)r=await post('/api/campaign/briefing',{sessionId:session.sessionId,outletId:d.outletId});else{let brief=d.briefing;if(!brief?.paragraphs)throw Error('No script');r={...brief,reply:brief.paragraphs.map(p=>p.text).join('\n\n'),evidenceIds:[...new Set(brief.paragraphs.flatMap(p=>p.evidenceIds))],mode:'reviewed',kind:'briefing'}}overviewReplies[d.outletId]={...r,outletId:d.outletId};if(desks[activeDesk]?.outletId===d.outletId&&$('#deskview')){drawDesk();if(live&&playAudio)await speak(overviewReplies[d.outletId],d)}}catch(e){toast('Outlet defence unavailable; try again.')}finally{const x=$('#overview');if(x)x.disabled=false}}
-async function ask(){let q=$('#question').value.trim();if(!q)return toast('Add a question first.');if(typedQuestionCount>=3)return toast('You have used all three typed questions.');$('#ask').disabled=true;$('#ask').textContent='The editor is answering…';let d=desks[activeDesk];try{let r;if(live)r=await post('/api/campaign/respond',{sessionId:session.sessionId,outletId:d.outletId,question:q});else r={reply:`Practice interpretation: this desk listed ${total(d)} pieces over ${item.days.length} days, with activity on ${d.activeDays} days and a peak of ${d.peakDaily} in one day. That pattern may merit scrutiny, but a high count alone does not establish motive; compare timing, public value and the limits of this archive.`,mode:'offline'};typedQuestionCount++;replies[r.replyId||`offline-${typedQuestionCount}`]={...r,outletId:d.outletId};const box=$('#reply');if(!box)return;box.style.display='block';box.textContent=`${r.mode==='deepseek'?'Editor’s reply · role-played':'Recorded defence · live answer unavailable'}: ${r.reply.replace(/^AI interpretation\s*(?:\(Simulated\))?\s*:\s*/i,'')}`;$('#listen').style.display=live&&r.replyId?'inline-block':'none';$('#listen').dataset.replyId=r.replyId||'';$('#qremaining').textContent=3-typedQuestionCount;toast('Reply added to the record.')}catch(e){toast('The editor could not answer. Try again.')}finally{const b=$('#ask');if(b){b.disabled=false;b.textContent='Ask this outlet'}}}
-async function speak(r,d){if(!live||!r?.replyId||!d)return;const epoch=audioEpoch;const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),20000);try{const res=await fetch('/api/speak',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({sessionId:session.sessionId,outletId:d.outletId,kind:'reply',replyId:r.replyId}),signal:controller.signal});if(!res.ok)throw Error();const blob=await res.blob();if(epoch!==audioEpoch)return;if(audioURL)URL.revokeObjectURL(audioURL);audioURL=URL.createObjectURL(blob);audio.src=audioURL;await audio.play()}catch{toast('Voice playback unavailable; the reply text remains available.')}finally{clearTimeout(timeout)}}
+function available(v){return v===null||v===undefined?'not available':String(v)}function shortText(v,n=180){const t=safe(v).trim();return t.length>n?t.slice(0,n-1).trimEnd()+'…':t}
+function evidenceLink(id){const e=(item?.evidence||session?.evidence||[]).find(x=>x.id===id);return e?`<a href="${esc(e.url)}" target="_blank" rel="noreferrer">${esc(e.label||id)} ↗</a>`:`<span>${esc(id)}</span>`}
+function normalizeOffline(c,i){return {...c,outletId:`desk-${String.fromCharCode(97+i)}`,label:`Outlet ${String.fromCharCode(65+i)}`}}
+function welcome(){caseList=JSON.parse($('#campaign-data')?.textContent||'[]');if(!Array.isArray(caseList))caseList=[];const selected=caseList.some(c=>c.id===item?.id)?item.id:(caseList[0]?.id||'');app.innerHTML=`<section class="intro"><p class="eyebrow">A campaign jury · Public-interest reporting</p><h1>Judge the <em>coverage.</em><br>See the whole arc.</h1><p class="lead">Use the same questions for each outlet. Inspect what the record shows, what it leaves open, and whether the amount of attention was justified.</p><label class="small">Choose a case<select id="case-choice" style="display:block;margin-top:7px;min-width:min(90vw,430px);background:#101a29;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:12px">${caseList.map(c=>`<option value="${esc(c.id)}" ${c.id===selected?'selected':''}>${esc(c.title)} · ${esc(c.start)}–${esc(c.end)}</option>`).join('')}</select></label><div class="facts"><div class="fact"><strong>${caseList.length||'—'}</strong><span>cases</span></div><div class="fact"><strong>${criteria.length||6}</strong><span>shared scrutiny criteria</span></div><div class="fact"><strong>1</strong><span>campaign judgment per outlet</span></div></div><p class="small">A scrutiny question is not a finding. Counts are evidence to consider, never proof by themselves.</p><button id="start" class="button" ${caseList.length?'':'disabled'}>Enter the jury →</button><p id="status" class="small">The local game service is checked when you enter. Embedded records support offline practice.</p></section>`;$('#start').onclick=start}
+async function start(){const b=$('#start'),selected=$('#case-choice')?.value;if(!selected)return toast('Choose a case first.');b.disabled=true;b.textContent='Preparing the record…';stop();index=0;item=caseList.find(c=>c.id===selected)||null;session=null;live=false;source=item?.source||{};events=item?.events||[];checks=item?.reasoningChecks||[];criteria=item?.scrutinyCriteria||[];countMode=item?.countMode||'daily';dataCompleteness=item?.dataCompleteness||null;splitLabel=item?.splitLabel||null;splitEventDate=item?.splitEventDate||null;desks=(item?.campaigns||[]).map((c,i)=>normalizeOffline(c,i));mode='practice';try{if(location.protocol==='file:')throw Error('offline');session=await post('/api/campaign/session',{caseId:selected});live=true;source=session.source||source;events=session.events||events;checks=session.reasoningChecks||checks;criteria=session.scrutinyCriteria||criteria;countMode=session.countMode||countMode;dataCompleteness=session.dataCompleteness||dataCompleteness;splitLabel=session.splitLabel||splitLabel;splitEventDate=session.splitEventDate||splitEventDate;desks=session.desks||desks;mode='live'}catch(e){session=null;live=false}if(!item&&!session){app.innerHTML=`<section class="intro"><p class="eyebrow">Campaign data pending</p><h1>Jury room<br><em>almost ready.</em></h1><p class="lead">Choose an embedded case or start the local game server.</p></section>`;return}if(!item)item={id:selected,title:session.title||'Campaign coverage',subject:session.subject||'',start:session.start,end:session.end,endNote:session.endNote,days:session.days,evidence:session.evidence,countMode:session.countMode};answers={};verdicts={};budgets={};scrutinyAssessments={};replies={};overviewReplies={};typedQuestionCounts={};activeCriterionId=null;activeDesk=0;activeReviewCriterionIndex=0;desks.forEach(d=>{verdicts[d.outletId]=null;budgets[d.outletId]=null;scrutinyAssessments[d.outletId]=Object.fromEntries(criteria.map(c=>[c.id,'unknown']));typedQuestionCounts[d.outletId]=0});lastReveal=null;go(1);b.disabled=false;b.textContent='Enter the jury →'}
+function dateKey(value){if(!value)return '';const m=String(value).match(/\b(\d{4}-\d{2}-\d{2})\b/);if(m)return m[1];const d=new Date(value);return Number.isNaN(d.getTime())?'':d.toISOString().slice(0,10)}
+function replay(){const days=item.days||session?.days||[],aggregate=countMode==='aggregate',W=920,H=Math.max(270,300+Math.max(0,desks.length-4)*45),left=126,right=18,top=20,bottom=36,laneH=(H-top-bottom)/Math.max(1,desks.length),chartW=W-left-right,step=chartW/Math.max(1,days.length),max=Math.max(1,...desks.flatMap(d=>d.dailyCounts||[]));let svg=`<svg class="timeline" viewBox="0 0 ${W} ${H}" role="img" aria-label="${aggregate?'Aggregate campaign totals':'Dated campaign counts'} for anonymous outlet lanes">`;
+if(aggregate){svg+=`<text x="${left}" y="72" fill="#d4f56b" font-size="48" font-weight="800">${esc(total(desks[0]||{}))}</text><text x="${left}" y="101" fill="#aab5c8" font-size="17">listed pieces across ${days.length} days</text>`;if(desks.length===1&&Number.isFinite(source.corpusCount)&&source.corpusCount>0){let pct=Math.min(100,total(desks[0])/source.corpusCount*100);svg+=`<rect x="${left}" y="125" width="${chartW}" height="18" rx="9" fill="#2a3850"/><rect x="${left}" y="125" width="${chartW*pct/100}" height="18" rx="9" fill="#d4f56b"/><text x="${left}" y="172" fill="#f4f3ec" font-size="16">${esc(total(desks[0]))} of ${esc(source.corpusCount)} ${esc(source.unit||'listed items')}</text>`}for(let i=0;i<desks.length;i++)svg+=`<text class="laneLabel" x="${left}" y="${205+i*42}">${esc(labelDesk(desks[i],i))} · ${esc(total(desks[i]))} listed in this period</text>`}
+else{for(let i=0;i<desks.length;i++){let y=top+i*laneH;svg+=`<rect x="${left}" y="${y}" width="${chartW}" height="${laneH}" fill="${i%2?'#111c2c':'#152136'}"/><line class="lane" x1="${left}" y1="${y+laneH}" x2="${W-right}" y2="${y+laneH}"/><text class="laneLabel" id="cumulative-${i}" x="8" y="${y+laneH*.56}">${esc(labelDesk(desks[i],i))} · 0</text>`;(desks[i].dailyCounts||[]).forEach((n,j)=>{if(!n)return;let h=Math.max(3,n/max*(laneH-17)),x=left+j*step+step*.19,w=Math.max(2,step*.62),yy=y+laneH-5-h;svg+=`<rect class="bar" data-day="${j}" x="${x}" y="${yy}" width="${w}" height="${h}" rx="${Math.min(4,w/2)}" fill="${['#d4f56b','#83d8ff','#ff8773','#c6a0ff','#f6c768','#95e0bd'][i%6]}" opacity=".92"><title>${esc(labelDesk(desks[i],i))}: ${n} listed pieces on ${esc(days[j])}</title></rect>`})}for(let j=0;j<days.length;j+=Math.max(1,Math.ceil(days.length/7)))svg+=`<text class="axis" text-anchor="middle" x="${left+j*step+step/2}" y="${H-7}">${esc(days[j]?.slice(5))}</text>`;let cx=left+index*step+step/2;svg+=`<line id="cursorline" class="cursorline" x1="${cx}" y1="${top-5}" x2="${cx}" y2="${H-bottom+3}"/><circle id="cursordot" class="cursorDot" cx="${cx}" cy="${top-5}" r="5"/>`}
+svg+='</svg>';const eventNote=events.map(e=>`<span class="pill">◆ ${esc(e.date)} · ${esc(e.label)}</span>`).join(' ');app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">01 · Timeline</p><h2>${esc(item.title||session?.title||'Campaign coverage')}</h2><p class="small">${esc(item.start)} — ${esc(item.end)} · ${esc(item.endNote||'')}</p></div><span class="pill">${aggregate?'Whole-period aggregate':'Dated listed coverage'}</span></div><div class="grid campaign-grid"><section class="card chartbox"><div class="charttop"><div class="playrow"><button id="play" ${aggregate?'disabled':''}>▶ Play</button><button id="pause" ${aggregate?'disabled':''}>Ⅱ Pause</button><button id="replay" ${aggregate?'disabled':''}>↺ Replay</button></div><span class="pill" id="datepill">${aggregate?'Aggregate window':esc(days[index]||'')}</span></div>${svg}<div class="event-strip small" aria-label="Documented events">${eventNote||'No dated events supplied.'}</div>${aggregate?`<p class="notice">${esc(dataCompleteness||'Aggregate totals only. Daily counts, peaks and before/after split are not available.')}</p>`:`<div class="datecontrol"><input class="range" id="scrub" type="range" min="0" max="${Math.max(0,days.length-1)}" value="${index}" aria-label="Scrub timeline date"><button class="secondary" id="whole">Show whole window</button></div><div id="arrivals" class="small" aria-live="polite"></div>`}</section><aside class="card"><p class="eyebrow">${desks.length} anonymous outlet${desks.length===1?'':'s'}</p><div class="avatars">${desks.map((d,i)=>`<span class="avatar">${avatar(i)} ${esc(labelDesk(d,i))}</span>`).join('')}</div><div class="facts" style="margin-top:16px"><div class="fact"><strong>${esc(available(source.corpusCount))}</strong><span>${esc(source.unit||'items in archive')}</span></div><div class="fact"><strong>${esc(available(source.outletUniverse))}</strong><span>outlets indexed</span></div><div class="fact"><strong>${esc(desks.reduce((n,d)=>n+total(d),0))}</strong><span>listed with these outlets</span></div></div>${splitLabel?`<p class="small">${esc(splitLabel)} · ${esc(splitEventDate||'date unavailable')}</p>`:''}<p class="notice" style="margin-top:14px">${aggregate?'A selected-period total cannot establish daily pace or event splits.':`Missing dates mean no item is listed in this dataset, not proof nothing was published. ${esc([source.scopeNote,dataCompleteness].filter(Boolean).join(' '))}`}</p><div class="actions"><button class="secondary" id="caseBack">Choose another case</button><button class="button" id="next">Inspect coverage →</button></div></aside></div><p class="small source"><details><summary>Source, scope, events and limits</summary><p>${esc(source.scopeNote||'Source scope has not been supplied.')}</p><p>${esc(dataCompleteness||'')}</p><p>${esc(source.unit||'Listed pieces')} · retrieved ${esc(source.retrieved||'date not supplied')} · <a href="${esc(source.url||'#')}" target="_blank" rel="noreferrer">Open source record</a></p><p>${eventNote}</p></details></p>`;$('#next').onclick=()=>go(2);$('#caseBack').onclick=()=>go(0);if(!aggregate){$('#play').onclick=play;$('#pause').onclick=()=>{clearInterval(timer);toast('Timeline paused.')};$('#replay').onclick=()=>{clearInterval(timer);index=0;syncCursor();play()};$('#whole').onclick=()=>{clearInterval(timer);index=days.length-1;syncCursor()};$('#scrub').oninput=e=>{clearInterval(timer);index=+e.target.value;syncCursor()};syncCursor()}}
+function syncCursor(){if(countMode==='aggregate')return;const days=item.days||session?.days||[],cx=126+(920-126-18)/Math.max(1,days.length)*(index+.5),line=$('#cursorline'),dot=$('#cursordot');if(line){line.setAttribute('x1',cx);line.setAttribute('x2',cx)}if(dot)dot.setAttribute('cx',cx);const scrub=$('#scrub'),pill=$('#datepill');if(scrub)scrub.value=index;if(pill)pill.textContent=days[index]||'';desks.forEach((d,i)=>{const count=(d.dailyCounts||[]).slice(0,index+1).reduce((a,b)=>a+(+b||0),0),label=$(`#cumulative-${i}`);if(label)label.textContent=`${labelDesk(d,i)} · ${count} through ${days[index]||''}`});document.querySelectorAll('.bar').forEach(b=>{const active=+b.dataset.day<=index;b.style.opacity=active?'.92':'.08';b.style.filter=active?'none':'grayscale(1)'});const day=days[index],ann=[];for(const ev of events)if(dateKey(ev.date)===day)ann.push(`<span class="pill">◆ ${esc(ev.label)}</span>`);for(let i=0;i<desks.length;i++)for(const a of desks[i].examples||[])if(dateKey(a.published||a.date)===day)ann.push(`<a class="pill" href="${esc(a.url||'#')}" target="_blank" rel="noreferrer">▤ ${esc(labelDesk(desks[i],i))}: ${esc(a.headline)}</a>`);const arr=$('#arrivals');if(arr)arr.innerHTML=ann.length?`On ${esc(day)}: ${ann.join(' ')}`:'No selected example or event marker on this date.'}
+function play(){if(countMode==='aggregate')return;if(reduceMotion){toast('Motion is reduced. Use the timeline slider to inspect dates.');return}clearInterval(timer);timer=setInterval(()=>{if(index>=(item.days||session?.days||[]).length-1){clearInterval(timer);return}index++;syncCursor()},650)}
+function criterionIcon(id){const shapes={public_value:'<path d="M16 3v26M4 16h24"/><circle cx="16" cy="16" r="9"/>',context:'<circle cx="16" cy="16" r="11"/><path d="M16 8v9l6 4"/>',framing:'<path d="M5 5h22v22H5zM10 11h12M10 16h8M10 21h10"/>',care:'<path d="M16 27S4 20 4 11a6 6 0 0 1 12-1 6 6 0 0 1 12 1c0 9-12 16-12 16z"/>',consistency:'<path d="M5 8h19l-4-4M27 24H8l4 4"/><path d="M24 8v6M8 18v6"/>',transparency:'<path d="M3 16s5-9 13-9 13 9 13 9-5 9-13 9S3 16 3 16z"/><circle cx="16" cy="16" r="4"/>'};return `<svg viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${shapes[id]||'<circle cx="16" cy="16" r="10"/>'}</svg>`}
+function scrutiny(){if(activeReviewCriterionIndex>=criteria.length)activeReviewCriterionIndex=0;const d=desks[activeDesk]||desks[0],criterion=criteria[activeReviewCriterionIndex],row=(d?.scrutiny||[]).find(x=>x.criterionId===criterion?.id),challengeQuestion=row?.question||criterion?.question||'Review this point against the source record.';app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">02 · Scrutiny</p><h2>Apply the same questions to every outlet.</h2><p class="lead">Select one criterion at a time. An observation is a source-bound prompt, not a finding of guilt or motive.</p></div><span class="pill">${criteria.length} shared criteria</span></div><section class="card"><div id="scrutiny-tabs" class="avatars">${desks.map((x,i)=>`<button class="avatar secondary" data-sdesk="${i}" aria-pressed="${i===activeDesk}">${avatar(i)} ${esc(labelDesk(x,i))}</button>`).join('')}</div><div class="criterion-selectors" role="group" aria-label="Shared scrutiny criteria">${criteria.map((c,i)=>`<button class="criterion-choice" data-criterion-index="${i}" aria-pressed="${i===activeReviewCriterionIndex}">${criterionIcon(c.id)}<span>${esc(c.label)}</span></button>`).join('')}</div>${criterion?`<article class="card criterion-detail"><p class="eyebrow">${esc(criterion.label)} · ${esc(labelDesk(d,activeDesk))}</p><p class="small"><strong>Case observation</strong></p><p>${esc(row?.observation||'No case-specific observation was supplied.')}</p><p class="small"><strong>Review question</strong></p><p>${esc(challengeQuestion)}</p><details class="source"><summary>Evidence and limits</summary><p>${esc(row?.limit||'This record may not settle every relevant fact.')}</p><p>${(row?.evidenceIds||[]).map(evidenceLink).join(' · ')||'No evidence links supplied.'}</p></details><button class="button" id="challenge-selected">Challenge this point ↗</button></article>`:'<p class="small">No scrutiny criteria supplied for this case.</p>'}<p class="notice">${esc(shortText(dataCompleteness||'The source has limits; see its scope note below.',190))}</p><details class="source"><summary>Full source scope and completeness note</summary><p>${esc(source.scopeNote||'No full source scope note supplied.')}</p><p>${esc(dataCompleteness||'')}</p></details></section><div class="actions"><button class="secondary" id="back">← Timeline</button><button class="button" id="next">Hear the outlet →</button></div>`;$('#scrutiny-tabs').onclick=e=>{const b=e.target.closest('[data-sdesk]');if(b){activeDesk=+b.dataset.sdesk;scrutiny()}};$('.criterion-selectors').onclick=e=>{const b=e.target.closest('[data-criterion-index]');if(b){activeReviewCriterionIndex=+b.dataset.criterionIndex;scrutiny()}};$('#challenge-selected')?.addEventListener('click',()=>{activeCriterionId=criterion.id;go(3);const question=`${criterion.id}: ${challengeQuestion}`;$('#question').value=question;$('#qcount').textContent=question.length;$('#challenge-note').textContent=`Source-linked challenge: ${criterion.label}`});$('#back').onclick=()=>go(1);$('#next').onclick=()=>go(3)}
+function hear(){app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">03 · Hear the outlet</p><h2>Read its account and ask follow-ups.</h2><p class="lead">Role-played replies explain a campaign’s possible rationale. They are not statements by the actual publishers.</p></div><span class="pill">Three typed questions per outlet</span></div><div class="grid"><section class="card"><div id="desk-tabs" class="avatars">${desks.map((d,i)=>`<button class="avatar secondary" data-desk="${i}">${avatar(i)} ${esc(labelDesk(d,i))}</button>`).join('')}</div><div id="deskview"></div></section><aside class="card"><p class="eyebrow">Ask this outlet</p><p>Ask about the whole campaign or continue a linked criterion challenge.</p><p class="small" id="challenge-note"></p><textarea id="question" maxlength="400" placeholder="What new public-interest information did this coverage add?" style="width:100%;min-height:100px;background:#101a29;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:12px"></textarea><p class="small"><span id="qcount">0</span>/400 · <span id="qremaining">3</span> typed questions left for this outlet</p><button id="ask" class="button">Ask this outlet</button><div id="reply" class="notice" style="margin-top:16px;display:none"></div><button id="listen" class="secondary" style="margin-top:10px;display:none">▶ Listen</button> <button id="pausevoice" class="secondary" style="margin-top:10px;display:none">Ⅱ Pause voice</button><p class="small">Reply text remains visible for reading. Voices are assigned by anonymous outlet.</p></aside></div><div class="actions"><button class="secondary" id="back">← Scrutiny</button><button class="button" id="next">Judge the campaigns →</button></div>`;activeCriterionId=activeCriterionId||null;drawDesk();$('#desk-tabs').onclick=e=>{const b=e.target.closest('[data-desk]');if(b){stop();activeDesk=+b.dataset.desk;activeCriterionId=null;drawDesk();$('#challenge-note').textContent='';$('#question').value='';$('#qcount').textContent='0';$('#reply').style.display='none';$('#listen').style.display='none';$('#pausevoice').style.display='none';$('#qremaining').textContent=3-(typedQuestionCounts[desks[activeDesk].outletId]||0)}};$('#question').oninput=e=>{if(activeCriterionId){activeCriterionId=null;$('#challenge-note').textContent='Edited challenge text counts as a typed question.'}$('#qcount').textContent=e.target.value.length};$('#ask').onclick=ask;$('#listen').onclick=listen;$('#pausevoice').onclick=()=>{if(audio.paused)audio.play().catch(()=>toast('Voice playback could not resume.'));else audio.pause()};$('#back').onclick=()=>go(2);$('#next').onclick=()=>go(4);$('#qremaining').textContent=3-(typedQuestionCounts[desks[activeDesk].outletId]||0);if(activeCriterionId){const row=(desks[activeDesk].scrutiny||[]).find(x=>x.criterionId===activeCriterionId),c=criteria.find(x=>x.id===activeCriterionId);$('#question').value=`${activeCriterionId}: ${row?.question||c?.question||''}`;$('#qcount').textContent=$('#question').value.length;$('#challenge-note').textContent=`Source-linked challenge: ${c?.label||activeCriterionId}`}}
+function drawDesk(){const d=desks[activeDesk],v=$('#deskview'),samples=d.examples||[],brief=overviewReplies[d.outletId]||null;v.innerHTML=`<h3 style="margin-top:22px">${esc(labelDesk(d,activeDesk))} · ${total(d)} listed pieces</h3><div class="facts"><div class="fact"><strong>${esc(available(d.activeDays??(countMode==='daily'?(d.dailyCounts||[]).filter(Boolean).length:null)))}</strong><span>active days</span></div><div class="fact"><strong>${esc(available(d.peakDaily))}</strong><span>peak day count</span></div><div class="fact"><strong>${esc(available(d.beforeResignationCount))} / ${esc(available(d.afterResignationCount))}</strong><span>${esc(splitLabel||'before / after event')}</span></div></div><button class="secondary" id="overview">${brief?'Replay outlet defence':'Hear this campaign'}</button>${brief?`<article class="headcard briefing" style="margin-top:10px"><span class="kind">Reviewed script · role-play, not a publisher statement</span><h3>${esc(brief.title||d.briefing?.title||'Outlet defence')}</h3><div class="briefing-tools"><button class="secondary" id="play-brief">${live?'▶ Play outlet defence':'Read outlet defence'}</button><button class="secondary" id="pause-brief" style="display:none">Ⅱ Pause voice</button></div><details class="briefing-read"><summary>Read script · ${brief.paragraphs?.length||0} paragraphs</summary><div class="briefparagraph">${(brief.paragraphs||[]).map(p=>`<article class="resultrow"><span class="kind">${esc(p.kind||'Editor’s account')}</span><p>${esc(p.text)}</p><p class="small">Sources: ${(p.evidenceIds||[]).map(evidenceLink).join(' · ')||'No evidence references supplied.'}</p></article>`).join('')}</div></details></article>`:''}<p class="small" style="margin-top:16px">Selected examples only; not a complete catalog.</p><div class="cards">${samples.slice(0,8).map(a=>`<article class="headcard"><time>${esc(a.published||a.date||'Date not listed')}</time><h3>${esc(a.headline)}</h3><p class="small">Verification: ${esc(a.verification||'not supplied')}</p><a href="${esc(a.url||'#')}" target="_blank" rel="noreferrer">Open source item ↗</a></article>`).join('')||'<p class="small">No headline samples supplied.</p>'}</div>`;$('#overview').onclick=()=>hearOverview(d);$('#play-brief')?.addEventListener('click',()=>live?speak(brief,d,true):document.querySelector('.briefing-read')?.setAttribute('open',''));$('#pause-brief')?.addEventListener('click',()=>{if(audio.paused){audio.play().catch(()=>toast('Voice playback could not resume.'))}else audio.pause()})}
+async function hearOverview(d){if(overviewReplies[d.outletId]){if(live)await speak(overviewReplies[d.outletId],d,true);else document.querySelector('.briefing-read')?.setAttribute('open','');return}const b=$('#overview');b.disabled=true;b.textContent='Loading reviewed defence…';try{let r;if(live){r=await post('/api/campaign/briefing',{sessionId:session.sessionId,outletId:d.outletId})}else{const brief=d.briefing;if(!brief||!Array.isArray(brief.paragraphs)||!brief.paragraphs.length)throw Error('No reviewed script supplied');r={title:brief.title,paragraphs:brief.paragraphs.map(p=>({kind:p.kind,text:p.text,evidenceIds:p.evidenceIds||[]})),reply:brief.paragraphs.map(p=>p.text).join('\n\n'),evidenceIds:[...new Set(brief.paragraphs.flatMap(p=>p.evidenceIds||[]))],kind:'briefing',mode:'reviewed'}}overviewReplies[d.outletId]={...r,outletId:d.outletId};if(desks[activeDesk]?.outletId===d.outletId){drawDesk();if(live)await speak(overviewReplies[d.outletId],d,true);else document.querySelector('.briefing-read')?.setAttribute('open','')}}catch(e){toast('Reviewed outlet defence is unavailable.')}finally{const x=$('#overview');if(x)x.disabled=false}}
+async function ask(){const q=$('#question').value.trim();if(!q)return toast('Add a question first.');const d=desks[activeDesk],challenge=Boolean(activeCriterionId),criterionId=activeCriterionId;typedQuestionCounts[d.outletId]??=0;if(!challenge&&typedQuestionCounts[d.outletId]>=3)return toast('You have used all three typed questions for this outlet.');$('#ask').disabled=true;$('#ask').textContent='Preparing reply…';try{let r;if(live)r=await post('/api/campaign/respond',{sessionId:session.sessionId,outletId:d.outletId,question:q,...(challenge?{criterionId}:{})});else if(challenge){const row=(d.scrutiny||[]).find(x=>x.criterionId===criterionId),criterion=criteria.find(x=>x.id===criterionId);if(!row)throw Error('No source-linked challenge row');const ev=(row.evidenceIds||[]).map(id=>(item.evidence||[]).find(e=>e.id===id)).filter(Boolean);r={reply:`Case observation: ${row.observation} Review question: ${row.question||criterion?.question||''} Limit: ${row.limit}`,evidenceIds:row.evidenceIds||[],evidence:ev,mode:'reviewed',kind:'challenge'}}else r={reply:`This practice copy does not generate new outlet statements. Review the campaign’s dated record, examples and source limits to form your own follow-up.`,evidenceIds:[],mode:'offline'};if(!challenge)typedQuestionCounts[d.outletId]++;const key=r.replyId||`offline-${Date.now()}`;replies[key]={...r,outletId:d.outletId};const box=$('#reply');box.style.display='block';box.innerHTML=`<strong>${esc(r.rolePlayLabel|| (challenge?'Source-linked challenge response':'Simulated outlet-editor role-play · not an actual publisher statement'))}</strong><p>${esc(safe(r.reply).replace(/^AI interpretation\s*(?:\(Simulated\))?\s*:\s*/i,''))}</p>${(r.evidenceIds||[]).length?`<p class="small">Evidence: ${(r.evidenceIds||[]).map(evidenceLink).join(' · ')}</p>`:''}`;$('#listen').style.display=live&&r.replyId?'inline-block':'none';$('#pausevoice').style.display=live&&r.replyId?'inline-block':'none';$('#listen').dataset.replyId=r.replyId||'';$('#qremaining').textContent=3-(typedQuestionCounts[d.outletId]||0);activeCriterionId=null;toast('Reply added to the record.')}catch(e){toast('The outlet could not answer. Try again.')}finally{const b=$('#ask');if(b){b.disabled=false;b.textContent='Ask this outlet'}}}
+async function speak(r,d,isBriefing=false){if(!live||!r?.replyId||!d)return;const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),20000);try{const res=await fetch('/api/speak',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({sessionId:session.sessionId,outletId:d.outletId,kind:'reply',replyId:r.replyId}),signal:controller.signal});if(!res.ok)throw Error();if(audioURL)URL.revokeObjectURL(audioURL);audioURL=URL.createObjectURL(await res.blob());audio.src=audioURL;document.body.classList.add('audio-active');if(isBriefing&&$('#pause-brief'))$('#pause-brief').style.display='inline-block';await audio.play()}catch{toast('Voice unavailable; the reviewed script remains available to read.')}finally{clearTimeout(timeout)}}
 async function listen(){const r=replies[$('#listen').dataset.replyId];if(r)await speak(r,desks.find(d=>d.outletId===r.outletId))}
-function question(){app.innerHTML=`<div class="intro"><p class="eyebrow">03 · The question</p><h1>How much coverage<br>was <em>justified?</em></h1><p class="lead">Judge each outlet’s campaign across all 22 dates. Consider the public value, pace and documented developments. The archive may be incomplete, so keep uncertainty in view.</p><div class="card"><p><strong>Use the whole record.</strong> The daily counts show listed pieces across the window. Samples help you inspect actual headlines. An event marker supplies context, not a causal claim.</p><p class="small">Win with 8/10 evidence points. Your campaign verdicts are personal judgments and have no moral answer key.</p></div><button class="button" id="next">Review all four campaigns →</button></div>`;$('#next').onclick=()=>go(4)}
-const kinds=[['justified','Faithful','Volume appears proportionate to public interest.'],['mixed','Mixed','Some coverage seems warranted; the overall balance is uncertain.'],['pile-on','Traitor','Volume or pace appears excessive for the public value shown.'],['unclear','Unclear','The record does not support a confident call.']];
-function judge(){let rows=desks.map((d,i)=>{let n=total(d),v=verdicts[d.outletId];return `<article class="card"><div class="deskrow"><div><div class="avatar">${avatar(i)} ${esc(labelDesk(d,i))}</div><p class="small">${n} listed pieces / 22 days · peak ${d.peakDaily??Math.max(0,...d.dailyCounts)}</p><p class="small">${d.beforeResignationCount??'—'} before 5 Aug · ${d.afterResignationCount??'—'} from 5 Aug (resignation date)</p></div><div><label class="small">Your suggested volume<br><input aria-label="Suggested justifiable count for ${esc(labelDesk(d,i))}" type="number" min="0" max="${n*2}" value="${budgets[d.outletId]??''}" placeholder="unknown" class="budget" data-budget="${esc(d.outletId)}"></label></div></div><div class="verdicts">${kinds.map(([key,title,desc])=>`<button class="choice" data-vote="${key}" data-outlet="${esc(d.outletId)}" aria-pressed="${v===key}"><strong>${title}</strong><span class="small">${desc}</span></button>`).join('')}</div></article>`}).join('');app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">04 · Judge campaigns</p><h2>Make one call per desk</h2><p class="small">Faithful / Mixed / Traitor / Unclear describe your view of the whole coverage campaign. Suggested volume is optional.</p></div></div><div class="grid" style="grid-template-columns:1fr 1fr">${rows}</div><section class="card" style="margin-top:18px"><p class="eyebrow">Five evidence checks · 2 points each</p><div class="checks">${checks.map(c=>`<label><span>${esc(c.prompt)}</span><select data-answer="${esc(c.id)}"><option value="">Choose</option>${c.options.map(o=>`<option value="${esc(o.value)}" ${answers[c.id]===o.value?'selected':''}>${esc(o.label)}</option>`).join('')}</select></label>`).join('')}<label><span>Your case: explain what was justified and where the balance may shift. 40–600 characters.</span><textarea id="justification" maxlength="600" minlength="40" placeholder="Name the evidence and one limit of the record.">${esc(justification)}</textarea></label></div><p class="small">Points test only evidence checks. Your campaign verdicts are not marked right or wrong.</p></section><div class="actions"><button class="secondary" id="back">← Hear the outlets</button><button class="button" id="next">Reveal the record →</button></div>`;app.onclick=e=>{let b=e.target.closest('[data-vote]');if(b){verdicts[b.dataset.outlet]=b.dataset.vote;judge()}};document.querySelectorAll('[data-budget]').forEach(el=>el.oninput=()=>budgets[el.dataset.budget]=el.value===''?null:+el.value);document.querySelectorAll('[data-answer]').forEach(el=>el.onchange=()=>answers[el.dataset.answer]=el.value);$('#justification').oninput=e=>justification=e.target.value;$('#back').onclick=()=>go(2);$('#next').onclick=finish}
-function CampaignReveal(g,item){let results=(item.reasoningChecks||[]).map(c=>({id:c.id,prompt:c.prompt,correct:g.reasoningAnswers[c.id]===c.answer,answer:c.answer,explanation:c.explanation,evidenceIds:c.evidenceIds}));return {mode:'campaign',roles:g.desks.map(d=>({outletId:d.outletId,outletName:d.outlet,campaign:d,decision:g.verdicts[d.outletId],recommendedCount:g.budgets[d.outletId]})),reasoningScore:results.filter(r=>r.correct).length*2,reasoningTotal:10,reasoningResults:results,justification:g.justification.trim(),source:item.source,period:{start:item.start,end:item.end,endNote:item.endNote},label:'Campaign choices and written reasoning are discussion inputs; points reflect only the five evidence checks.'}}
-window.CampaignReveal=CampaignReveal;
-async function finish(){let missing=desks.filter(d=>!verdicts[d.outletId]);if(missing.length||checks.some(c=>!answers[c.id])||justification.trim().length<40){toast('Choose all four campaign calls, answer five checks and write at least 40 characters.');return}if(justification.length>600){toast('Keep your case to 600 characters.');return}if(desks.some(d=>budgets[d.outletId]!==null&&(!Number.isInteger(budgets[d.outletId])||budgets[d.outletId]<0||budgets[d.outletId]>total(d)*2))){toast('Suggested volumes must be whole numbers within the shown range.');return}stop();let result;if(live){try{result=await post('/api/campaign/reveal',{sessionId:session.sessionId,campaignVerdicts:verdicts,recommendedCounts:budgets,reasoningAnswers:answers,justification});}catch(e){toast('Reveal unavailable. Your choices are still on this page.');return}}else{result=CampaignReveal({desks,verdicts,budgets,reasoningAnswers:answers,justification},item)}window.lastCampaignResult=result;renderReveal(result)}
-function renderReveal(r){stop();stepper(5);let roles=r.roles||[];app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">05 · Reveal the record</p><h2>Your campaign verdicts</h2><p class="lead">Your call is visible beside each campaign’s actual counts and the source limits.</p></div><span class="winner">${r.reasoningScore??0} / ${r.reasoningTotal??10} evidence points · ${(r.reasoningScore??0)>=8?'Jury brief ready':'Review the evidence checks'}</span></div><div class="grid" style="grid-template-columns:1fr 1fr">${roles.map((role,i)=>{let c=role.campaign||{},n=total(c);return `<article class="card resultrow"><div class="deskrow"><h3>${esc(role.outletName||labelDesk(desks[i],i))}</h3><span class="badge">${esc(role.decision)}</span></div><div class="facts"><div class="fact"><strong>${n}</strong><span>listed pieces / 22 days</span></div><div class="fact"><strong>${c.peakDaily??'—'}</strong><span>peak day</span></div><div class="fact"><strong>${c.beforeResignationCount??'—'} / ${c.afterResignationCount??'—'}</strong><span>before 5 Aug / from 5 Aug</span></div></div><p class="small">Your suggested count: ${role.recommendedCount??'unknown'} · Active days: ${c.activeDays??'—'}</p><div class="volume-track" aria-label="Recorded versus suggested volume"><span style="width:100%;background:var(--coral)"></span>${role.recommendedCount===null?'':`<span style="width:${Math.min(100,100*role.recommendedCount/n)}%;background:var(--lime)"></span>`}</div><p class="small">Coral: listed volume · Green: your suggested volume (discussion input)</p><h4>What supports scrutiny</h4><p>${esc(c.reviewNotes?.pressure||'No pressure note supplied.')}</p><h4>What complicates the call</h4><p>${esc(c.reviewNotes?.publicValue||'No public value note supplied.')}</p><p class="small">Limit: ${esc(c.reviewNotes?.limit||'No limit supplied.')}</p></article>`}).join('')}</div><section class="card" style="margin-top:18px"><p class="eyebrow">Your reasoning</p><p>${esc(r.justification)}</p>${(r.reasoningResults||[]).map(x=>`<div class="resultrow"><strong>${x.correct?'✓':'○'} ${esc(x.prompt)}</strong><p class="small">Record answer: ${esc(x.answer)} · ${esc(x.explanation)}</p></div>`).join('')}<p class="notice">Counts describe this archive’s selected records. They can establish volume and timing, but do not by themselves prove motive, fairness or harm.</p><details class="source"><summary>Evidence and source limits</summary><p>${esc(r.source?.scopeNote||source.scopeNote||'')}</p><p>${esc(r.source?.corpusCount||source.corpusCount||'')} items indexed across ${esc(r.source?.outletUniverse||source.outletUniverse||'')} outlets. Window: ${esc(r.period?.start||item.start)} to ${esc(r.period?.end||item.end)}, ${esc(r.period?.endNote||item.endNote||'')}.</p>${(item.evidence||session?.evidence||[]).map(e=>`<p><a href="${esc(e.url||'#')}" target="_blank" rel="noreferrer">${esc(e.label||e.id)}</a> — ${esc(e.text)}</p>`).join('')}</details></section><div class="actions"><button class="secondary" id="again">Review the timeline</button><button class="button" id="saveResult">Save this result</button></div>`;$('#again').onclick=()=>{index=0;go(1)};$('#saveResult').onclick=()=>saveResultHTML(r)}
-function saveHTML(){const blob=new Blob(['<!doctype html>\n'+ORIGINAL_HTML],{type:'text/html'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='faithful-to-the-facts.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);toast('Clean game copy downloaded. Attach that file to share it privately.')}
-function saveResultHTML(result){const css=$('style').textContent,summary=`<header><p class="eyebrow">Faithful to the Facts · Saved campaign result</p><h1>${esc(item.title||'Campaign coverage')}</h1><p>${esc(result.period?.start||item.start)} — ${esc(result.period?.end||item.end)} · ${esc(result.period?.endNote||item.endNote||'')}</p><p class="small">A static record of your campaign judgments and evidence-check results. Your answers and personal text are included in this file.</p></header>${app.innerHTML}`;const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Campaign Jury Result</title><style>${css}body{padding:20px}.actions,#again,#saveResult{display:none!important}a{overflow-wrap:anywhere}</style></head><body><main class="shell">${summary}</main></body></html>`;const url=URL.createObjectURL(new Blob([html],{type:'text/html'})),a=document.createElement('a');a.href=url;a.download='faithful-to-the-facts-result.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);toast('Static result file downloaded.')}
-$('#save').onclick=()=>saveHTML(false);$('#share').onclick=async()=>{try{let blob=new Blob(['<!doctype html>\n'+ORIGINAL_HTML],{type:'text/html'}),file=new File([blob],'faithful-to-the-facts.html',{type:'text/html'});if(navigator.canShare?.({files:[file]}))await navigator.share({files:[file],title:'Faithful to the Facts'});else {saveHTML();toast('Attach the downloaded HTML file in your private message.')}}catch{saveHTML();toast('Attach the downloaded HTML file in your private message.')}};$('#motion').onclick=()=>{reduceMotion=!reduceMotion;if(reduceMotion)stop();$('#motion').textContent=`Motion: ${reduceMotion?'reduced':'on'}`;document.documentElement.classList.toggle('reduced-motion',reduceMotion);document.documentElement.style.scrollBehavior=reduceMotion?'auto':''};
-audio.onplay=()=>{const b=$('#pauseVoice');if(b){b.disabled=false;b.textContent='Pause voice'}};audio.onpause=()=>{const b=$('#pauseVoice');if(b&&audio.currentSrc)b.textContent=audio.ended?'Replay voice':'Resume voice'};stepper(0);welcome();
+const kinds=[['justified','Faithful','Volume appears proportionate to public interest.'],['mixed','Mixed','Some coverage seems warranted; overall balance is uncertain.'],['pile-on','Traitor','Coverage volume appears excessive for the public value shown.'],['unclear','Unclear','The available record does not support a confident call.']];
+function judge(){const rows=desks.map((d,i)=>{const n=total(d),v=verdicts[d.outletId],before=available(d.beforeResignationCount),after=available(d.afterResignationCount);return `<article class="card"><div class="deskrow"><div><div class="avatar">${avatar(i)} ${esc(labelDesk(d,i))}</div><p class="small">${n} listed pieces · ${item.days.length} days · peak ${esc(available(d.peakDaily))} · active days ${esc(available(d.activeDays))}</p><p class="small">${esc(splitLabel||'Before / after event')}: ${before} / ${after}</p></div><div><label class="small">Suggested justifiable count<br><input aria-label="Suggested justifiable count for ${esc(labelDesk(d,i))}" type="number" min="0" max="${n*2}" value="${budgets[d.outletId]??''}" placeholder="unknown" class="budget" data-budget="${esc(d.outletId)}"></label></div></div><div class="verdicts">${kinds.map(([key,title,desc])=>`<button class="choice" data-vote="${key}" data-outlet="${esc(d.outletId)}" aria-pressed="${v===key}"><strong>${title}</strong><span class="small">${desc}</span></button>`).join('')}</div><details class="source"><summary>Six scrutiny ratings · ungraded</summary><div class="checks">${criteria.map(c=>`<label><span>${esc(c.label)}</span><select data-assessment-outlet="${esc(d.outletId)}" data-assessment-criterion="${esc(c.id)}"><option value="unknown" ${scrutinyAssessments[d.outletId]?.[c.id]==='unknown'?'selected':''}>Unknown</option><option value="supported" ${scrutinyAssessments[d.outletId]?.[c.id]==='supported'?'selected':''}>Supported by record</option><option value="concern" ${scrutinyAssessments[d.outletId]?.[c.id]==='concern'?'selected':''}>Concern remains</option></select></label>`).join('')}</div></details></article>`}).join('');app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">04 · Judge</p><h2>Use the same matrix for each outlet.</h2><p class="small">Campaign verdicts and six scrutiny ratings are your judgments. They are ungraded; “unknown” is a valid choice.</p></div></div><div class="grid campaign-grid">${rows}</div><section class="card" style="margin-top:18px"><p class="eyebrow">Five factual checks · 2 points each</p><div class="checks">${checks.map(c=>`<label><span>${esc(c.prompt)}</span><select data-answer="${esc(c.id)}"><option value="">Choose</option>${c.options.map(o=>`<option value="${esc(o.value)}" ${answers[c.id]===o.value?'selected':''}>${esc(o.label)}</option>`).join('')}</select></label>`).join('')}<label><span>Your case: what was justified and where may the balance shift? 40–600 characters.</span><textarea id="justification" maxlength="600" minlength="40" placeholder="Name evidence and one limit of the record.">${esc(justification)}</textarea></label></div><p class="small">Points test only the five factual checks; they do not grade your editorial calls.</p></section><div class="actions"><button class="secondary" id="back">← Hear the outlets</button><button class="button" id="next">Reveal the record →</button></div>`;app.onclick=e=>{const b=e.target.closest('[data-vote]');if(b){verdicts[b.dataset.outlet]=b.dataset.vote;judge()}};document.querySelectorAll('[data-budget]').forEach(el=>el.onchange=()=>budgets[el.dataset.budget]=el.value===''?null:+el.value);document.querySelectorAll('[data-assessment-outlet]').forEach(el=>el.onchange=()=>scrutinyAssessments[el.dataset.assessmentOutlet][el.dataset.assessmentCriterion]=el.value);document.querySelectorAll('[data-answer]').forEach(el=>el.onchange=()=>answers[el.dataset.answer]=el.value);$('#justification').oninput=e=>justification=e.target.value;$('#back').onclick=()=>go(3);$('#next').onclick=finish}
+function CampaignReveal(g,c){const results=(c.reasoningChecks||[]).map(x=>({id:x.id,prompt:x.prompt,correct:g.reasoningAnswers[x.id]===x.answer,answer:x.answer,explanation:x.explanation,evidenceIds:x.evidenceIds}));return {mode:'campaign',caseId:c.id,caseTitle:c.title,countMode:c.countMode||'daily',roles:g.desks.map(d=>({outletId:d.outletId,outletName:d.outlet,campaign:d,decision:g.verdicts[d.outletId],recommendedCount:g.budgets[d.outletId]})),scrutinyAssessments:g.scrutinyAssessments,reasoningScore:results.filter(x=>x.correct).length*2,reasoningTotal:10,reasoningResults:results,justification:g.justification.trim(),source:c.source,period:{start:c.start,end:c.end,endNote:c.endNote}}}window.CampaignReveal=CampaignReveal;
+async function finish(){if(desks.some(d=>!verdicts[d.outletId])||checks.some(c=>!answers[c.id])||justification.trim().length<40||justification.length>600){toast('Choose each campaign call, answer the five factual checks and write 40–600 characters.');return}if(desks.some(d=>budgets[d.outletId]!==null&&(!Number.isInteger(budgets[d.outletId])||budgets[d.outletId]<0||budgets[d.outletId]>total(d)*2))){toast('Suggested volumes must be whole numbers within the shown range.');return}stop();let result;if(live){try{result=await post('/api/campaign/reveal',{sessionId:session.sessionId,campaignVerdicts:verdicts,recommendedCounts:budgets,...(criteria.length?{scrutinyAssessments}:{}),reasoningAnswers:answers,justification})}catch(e){toast('Reveal unavailable. Your choices are still on this page.');return}}else result=CampaignReveal({desks,verdicts,budgets,scrutinyAssessments,reasoningAnswers:answers,justification},item);result.caseTitle=item.title;result.countMode=countMode;lastReveal=result;window.lastCampaignResult=result;renderReveal(result)}
+function renderLastReveal(){if(lastReveal)renderReveal(lastReveal);else welcome()}
+function renderReveal(r){stop();stepper(5);const roles=r.roles||[];app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">05 · Reveal</p><h2>${esc(r.caseTitle||item.title)} · campaign judgments</h2><p class="lead">Compare each call with the evidence-bound scrutiny matrix and the actual scope of this case.</p></div><span class="winner">${r.reasoningScore??0} / ${r.reasoningTotal??10} facts · ${(r.reasoningScore??0)>=8?'Jury brief ready':'Review the evidence checks'}</span></div><div class="grid campaign-grid">${roles.map((role,i)=>{const c=role.campaign||{},n=total(c);return `<article class="card resultrow"><div class="deskrow"><h3>${esc(role.outletName||labelDesk(desks[i],i))}</h3><span class="badge">${esc(role.decision)}</span></div><div class="facts"><div class="fact"><strong>${n}</strong><span>listed pieces</span></div><div class="fact"><strong>${esc(available(c.peakDaily))}</strong><span>peak day</span></div><div class="fact"><strong>${esc(available(c.beforeResignationCount))} / ${esc(available(c.afterResignationCount))}</strong><span>${esc(splitLabel||'before / after')}</span></div></div><p class="small">Suggested count: ${role.recommendedCount??'unknown'} · Active days: ${esc(available(c.activeDays))}</p><h4>Shared scrutiny matrix</h4>${criteria.map(cr=>{const row=(c.scrutiny||[]).find(x=>x.criterionId===cr.id),rating=r.scrutinyAssessments?.[role.outletId]?.[cr.id]||'unknown';return `<div class="resultrow"><strong>${esc(cr.label)} · ${esc(rating)}</strong><p class="small"><strong>Case observation</strong></p><p>${esc(row?.observation||'No case-specific observation supplied.')}</p><p class="small">Investigative question: ${esc(row?.question||cr.question)} · Limit: ${esc(row?.limit||'No additional limit supplied.')}</p><p class="small">${(row?.evidenceIds||[]).map(evidenceLink).join(' · ')||'No linked evidence supplied.'}</p></div>`}).join('')}<h4>Coverage context</h4><p>${esc(c.reviewNotes?.publicValue||'No public-value note supplied.')}</p><p class="small">Scrutiny concern: ${esc(c.reviewNotes?.pressure||'No concern summary supplied.')} Limit: ${esc(c.reviewNotes?.limit||'No limit supplied.')}</p></article>`}).join('')}</div><section class="card" style="margin-top:18px"><p class="eyebrow">Your reasoning</p><p>${esc(r.justification)}</p>${(r.reasoningResults||[]).map(x=>`<div class="resultrow"><strong>${x.correct?'✓':'○'} ${esc(x.prompt)}</strong><p class="small">Record answer: ${esc(x.answer)} · ${esc(x.explanation)}</p></div>`).join('')}<p class="notice">${r.countMode==='aggregate'?'Aggregate totals do not reveal daily pace, peak days or event splits.':'Counts describe this case’s selected records.'} Volume alone does not prove motive, fairness or harm.</p><details class="source"><summary>Case identity, source and scope</summary><p>${esc(r.caseTitle||item.title)} · ${esc(item.subject||'')}</p><p>${esc(r.source?.scopeNote||source.scopeNote||dataCompleteness||'')}</p><p>${esc(available(r.source?.corpusCount??source.corpusCount))} ${esc(source.unit||'archive items')} · ${esc(available(r.source?.outletUniverse??source.outletUniverse))} indexed outlets. Window: ${esc(r.period?.start||item.start)} to ${esc(r.period?.end||item.end)}, ${esc(r.period?.endNote||item.endNote||'')}.</p>${(item.evidence||session?.evidence||[]).map(e=>`<p><a href="${esc(e.url||'#')}" target="_blank" rel="noreferrer">${esc(e.label||e.id)}</a> — ${esc(e.text)}</p>`).join('')}</details></section><div class="actions"><button class="secondary" id="again">Review timeline</button><button class="button" id="saveResult">Save this result</button></div>`;$('#again').onclick=()=>{index=0;go(1)};$('#saveResult').onclick=()=>saveResultHTML(r)}
+function saveHTML(){const blob=new Blob(['<!doctype html>\n'+ORIGINAL_HTML],{type:'text/html'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='faithful-to-the-facts.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);toast('Clean game file downloaded. Attach it to share privately.')}
+function saveResultHTML(r){const css=$('style').textContent,markup=`<header><p class="eyebrow">Faithful to the Facts · saved jury result</p><h1>${esc(item.title)}</h1><p>${esc(item.start)} — ${esc(item.end)} · ${esc(item.endNote||'')}</p><p class="small">Static result copy. It includes campaign calls, matrix ratings and written reasoning.</p></header>${app.innerHTML}`,html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(item.title)} — Jury Result</title><style>${css}body{padding:20px}.actions,#again,#saveResult{display:none!important}a{overflow-wrap:anywhere}</style></head><body><main class="shell">${markup}</main></body></html>`,url=URL.createObjectURL(new Blob([html],{type:'text/html'})),a=document.createElement('a');a.href=url;a.download='campaign-jury-result.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);toast('Static result file downloaded.')}
+$('#save').onclick=saveHTML;$('#share').onclick=async()=>{try{const file=new File([ORIGINAL_HTML],'faithful-to-the-facts.html',{type:'text/html'});if(navigator.canShare?.({files:[file]}))await navigator.share({files:[file],title:'Faithful to the Facts'});else saveHTML()}catch{saveHTML()}};$('#motion').onclick=()=>{reduceMotion=!reduceMotion;if(reduceMotion)clearInterval(timer);$('#motion').textContent=`Motion: ${reduceMotion?'reduced':'on'}`;document.documentElement.classList.toggle('reduced-motion',reduceMotion)};$('#motion').textContent=`Motion: ${reduceMotion?'reduced':'on'}`;audio.onplay=()=>{const b=$('#pause-brief');if(b)b.textContent='Ⅱ Pause voice'};audio.onended=()=>{document.body.classList.remove('audio-active');const b=$('#pause-brief');if(b)b.textContent='↺ Replay outlet defence'};audio.onpause=()=>{if(audio.currentSrc){document.body.classList.remove('audio-active');const b=$('#pause-brief');if(b)b.textContent='▶ Resume voice'}};stepper(0);welcome();
 </script></body></html>
