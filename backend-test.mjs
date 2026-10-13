@@ -193,7 +193,7 @@ test('ElevenLabs speech uses desk voice, authentic headline or owned reply, cach
   assert.equal(desk.voiceSpeaker, `Analyst ${desk.label.at(-1)}`); assert.equal(desk.voiceConfigured, true);
   let r = await post(g.base, '/api/speak', { sessionId: s.sessionId, outletId: desk.outletId, kind: 'headline' });
   assert.equal(r.status, 200); assert.equal(r.headers.get('content-type'), 'audio/mpeg'); assert.equal(calls, 1);
-  assert.match(last.url, new RegExp(`/text-to-speech/voice-${desk.label.at(-1)}\\?output_format=mp3_44100_128`));
+  assert.match(last.url, new RegExp(`/text-to-speech/voice-${desk.label.at(-1)}\\?output_format=mp3_44100_64`));
   assert.equal(last.opts.headers['xi-api-key'], 'test-key'); assert.equal(last.body.model_id, 'test-model'); assert.ok(last.body.text.includes(desk.headline));
   await post(g.base, '/api/speak', { sessionId: s.sessionId, outletId: desk.outletId, kind: 'headline' }); assert.equal(calls, 1, 'cached audio does not call provider again');
   const reply = await (await post(g.base, '/api/respond', { sessionId: s.sessionId, caseId: 'case-1', outletId: desk.outletId, question: 'Explain the finding.' })).json();

@@ -6,13 +6,14 @@ import vm from 'node:vm';
 const html = await readFile(new URL('./index.html', import.meta.url), 'utf8');
 const campaigns = JSON.parse(await readFile(new URL('./campaigns.json', import.meta.url), 'utf8'));
 const item = campaigns[0];
+const flack = campaigns.find(c => c.id === 'caroline-flack-recovered-campaign');
 const csv = await readFile(new URL('./campaign-records.csv', import.meta.url), 'utf8');
 const records = csv.trim().split(/\r?\n/).slice(1).map(line => {
   const [outlet, published, url] = line.split(',');
   return { outlet, published, url };
 });
 
-test('portable campaign data matches API data and all 90 dated audit records', () => {
+test('portable campaign data matches API data and Arday dated audit records', () => {
   const embedded = JSON.parse(html.match(/<script id="campaign-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
   assert.deepEqual(embedded, campaigns);
   assert.equal(item.days.length, 22);
@@ -63,7 +64,7 @@ test('offline desks stay distinct and whole-campaign choices never change eviden
   assert.equal(reveal(game, item).reasoningScore, 8);
 });
 
-test('portable game boots offline and can open the timeline and outlet without missing state', async () => {
+test('portable game boots offline and keeps Flack sample separate from aggregate context', async () => {
   const nodes = new Map();
   const node = id => {
     if (!nodes.has(id)) nodes.set(id, { textContent: id === '#campaign-data' ? JSON.stringify(campaigns) : '',
@@ -90,11 +91,14 @@ test('portable game boots offline and can open the timeline and outlet without m
   assert.match(node('#deskview').innerHTML, /We would defend reporting/);
   assert.equal(node('#qremaining').textContent, 3);
   vm.runInContext("answers.unit='pieces'; typedQuestionCounts['desk-a']=2; go(0)", context);
-  node('#case-choice').value = campaigns[1].id;
+  node('#case-choice').value = flack.id;
   await vm.runInContext('start()', context);
-  assert.match(node('#app').innerHTML, /Aggregate window/);
-  assert.doesNotMatch(node('#app').innerHTML, /class="bar"/);
-  assert.equal(vm.runInContext('desks.length',context),1);
+  assert.match(node('#app').innerHTML, /recovered dated headline sample/i);
+  assert.doesNotMatch(node('#app').innerHTML, /Aggregate window/);
+  assert.match(node('#app').innerHTML, /24/);
+  assert.match(node('#app').innerHTML, /19/);
+  assert.match(node('#app').innerHTML, /class="bar"/);
+  assert.equal(vm.runInContext('desks.length',context),4);
   assert.equal(vm.runInContext('Object.keys(answers).length',context),0);
   assert.equal(vm.runInContext("typedQuestionCounts['desk-a']",context),0);
   vm.runInContext('go(2); go(3); go(4)',context);
@@ -102,7 +106,7 @@ test('portable game boots offline and can open the timeline and outlet without m
   assert.match(node('#app').innerHTML, /not available/);
 });
 
-test('four outlet defences contain sourced first-person scripts and a qualified comparison', () => {
+test('Arday outlet defences contain sourced first-person scripts and a qualified comparison', () => {
   const approved = new Set(item.evidence.map(e => e.id));
   const scripts = item.campaigns.map(c => c.briefing.paragraphs.map(p => p.text).join('\n\n'));
   assert.equal(new Set(scripts).size, 4);
@@ -125,10 +129,17 @@ test('four outlet defences contain sourced first-person scripts and a qualified 
 });
 
 
-test('all playable campaigns share source-linked criteria while aggregate values remain unknown', () => {
-  assert.equal(campaigns.length, 2);
+test('six playable cases share source-linked criteria and bounded sample rules', () => {
+  assert.equal(campaigns.length, 6);
+  assert.deepEqual(campaigns.map(c => c.id), [
+    'arday-2026-campaign', 'caroline-flack-recovered-campaign', 'sterling-campaign',
+    'markle-letter-campaign', 'bulley-campaign', 'jefferies-campaign'
+  ]);
   const ids = ['public_value','context','framing','care','consistency','transparency'];
   for (const c of campaigns) {
+    assert.equal(c.days.length, (Date.parse(`${c.end}T00:00:00Z`) - Date.parse(`${c.start}T00:00:00Z`)) / 86400000 + 1, `${c.id} has a complete inclusive day axis`);
+    assert.equal(c.days[0], c.start); assert.equal(c.days.at(-1), c.end);
+    for (let i=1;i<c.days.length;i++) assert.equal(Date.parse(`${c.days[i]}T00:00:00Z`) - Date.parse(`${c.days[i-1]}T00:00:00Z`),86400000,`${c.id} dates are continuous`);
     assert.deepEqual(c.scrutinyCriteria.map(x => x.id), ids);
     const approved = new Set(c.evidence.map(e => e.id));
     for (const d of c.campaigns) {
@@ -138,13 +149,53 @@ test('all playable campaigns share source-linked criteria while aggregate values
       assert.ok(text.length < 4000 && text.split(/\s+/).length >= 180);
       assert.ok(d.briefing.paragraphs.every(p => p.evidenceIds.every(id => approved.has(id))));
       assert.ok(!text.includes(d.outlet));
+      assert.equal(d.dailyCounts.length, c.days.length, `${c.id}/${d.id} daily counts align to its window`);
+      assert.equal(d.dailyCounts.reduce((sum,n)=>sum+n,0),d.listedCount,`${c.id}/${d.id} daily counts equal selected sample total`);
+    }
+    const recoveredRows = c.allHeadlines?.length ? c.allHeadlines : c.campaigns.flatMap(d => d.examples || []);
+    assert.ok(recoveredRows.length > 0, `${c.id} includes its recovered headline sample`);
+    assert.ok(c.source?.corpusCount > 0 && c.source?.selectedCount > 0, `${c.id} declares sample and corpus scope`);
+    assert.ok(c.images?.length >= 2 && c.images.every(image => image.url?.startsWith('data:image/')), `${c.id} includes embedded local case images`);
+    for (const h of recoveredRows) {
+      const headlineId = h.id ?? h.articleId ?? h.headlineId;
+      const headlineOutlet = h.outlet ?? h.outletName ?? c.campaigns.find(d => (d.examples||[]).some(row => row === h))?.outlet;
+      const headlineDate = h.date ?? h.published;
+      assert.ok(headlineId && h.headline && headlineOutlet, `${c.id} headline row has an ID, text and outlet`);
+      if (c.allHeadlines?.length) assert.ok(h.kind || h.nature, `${c.id}/${headlineId} identifies news/comment nature`);
+      assert.ok(c.days.includes(headlineDate), `${c.id}/${headlineId} publication date falls inside its window`);
+      assert.equal(new URL(h.originalURL || h.url || h.verificationSourceURL || h.sourceURL).protocol, 'https:', `${c.id}/${headlineId} retains a source URL`);
     }
   }
-  const f = campaigns.find(c => c.countMode === 'aggregate');
-  assert.equal(f.days.length, 185); assert.equal(f.source.corpusCount, 387); assert.equal(f.source.outletUniverse, null);
-  assert.equal(f.campaigns[0].listedCount, 99);
-  for (const field of ['dailyCounts','activeDays','peakDaily','beforeResignationCount','afterResignationCount']) assert.equal(f.campaigns[0][field], null);
-  assert.match(f.source.scopeNote, /headline or body/); assert.match(f.source.scopeNote, /not all/);
-  assert.match(f.campaigns[0].examples[0].verification, /not verified/);
-  assert.ok(f.events.every(e => e.date >= f.start && e.date <= f.end));
+  const aggregate = flack.aggregateContext;
+  assert.equal(aggregate.outlet,'The Sun'); assert.equal(aggregate.count,99);
+  assert.equal(aggregate.windowStart,'2019-08-14'); assert.equal(aggregate.windowEnd,'2020-02-14');
+  assert.equal(aggregate.isDailySeries,false); assert.equal(aggregate.isThisSample,false);
+  assert.equal(flack.source.corpusCount,24); assert.equal(flack.source.selectedCount,19);
+  assert.equal(flack.allHeadlines.length,24);
+  assert.equal(flack.campaigns.reduce((n,d)=>n+d.listedCount,0),19);
+  assert.ok(!flack.days.some(day => day < aggregate.windowStart), 'sample timeline does not extend the selected plot to the aggregate window');
+  assert.notEqual(flack.source.corpusCount,aggregate.count,'dated sample and reported aggregate remain distinct quantities');
+});
+
+test('headline identities remain masked until reveal and all six image payloads are embedded', async () => {
+  const nodes = new Map();
+  const node = id => {
+    if (!nodes.has(id)) nodes.set(id, { textContent: id === '#campaign-data' ? JSON.stringify(campaigns) : '', innerHTML:'',style:{},dataset:{},classList:{toggle(){}},isConnected:true,value:flack.id,addEventListener(){},pause(){},load(){},removeAttribute(){},setAttribute(){},querySelector(){return null;} });
+    return nodes.get(id);
+  };
+  const context = vm.createContext({ document:{querySelector:node,querySelectorAll:()=>[],body:{classList:{remove(){}}},documentElement:{outerHTML:html,style:{},classList:{toggle(){}}},createElement:()=>({})},window:{},location:{protocol:'file:'},matchMedia:()=>({matches:false}),setTimeout:()=>0,clearTimeout(){},setInterval:()=>0,clearInterval(){},cancelAnimationFrame(){},URL,AbortController });
+  vm.runInContext(html.match(/<script>([\s\S]*?)<\/script>/)[1],context);
+  for (const c of campaigns) {
+    assert.ok(c.images.length && c.images.every(image => /^data:image\/(jpeg|png|webp);base64,/.test(image.url)),`${c.id} image assets are embedded as local data URLs`);
+  }
+  for (const c of campaigns) {
+    node('#case-choice').value=c.id;
+    await vm.runInContext('start()',context);
+    vm.runInContext('lastReveal=false',context);
+    const masked=vm.runInContext('headlineTimeline()',context);
+    for (const h of c.allHeadlines || []) assert.ok(!masked.includes(` · ${h.outlet} · `),`${c.id}/${h.id} outlet identity is masked before reveal`);
+    vm.runInContext('lastReveal=true',context);
+    const revealed=vm.runInContext('headlineTimeline()',context);
+    for (const h of c.allHeadlines || []) assert.ok(revealed.includes(` · ${h.outlet} · `),`${c.id}/${h.id} source identity is available after reveal`);
+  }
 });

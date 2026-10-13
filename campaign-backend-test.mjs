@@ -130,7 +130,9 @@ test('campaign Q&A accepts long full-sentence replies and rejects unapproved evi
   const g = await setup({ env: { DEEPSEEK_API_KEY: 'fake-only' }, fetchImpl: async (_url, opts) => {
     requestCount++; const request = JSON.parse(opts.body); requestPacket = request;
     const user = JSON.parse(request.messages[1].content);
-    assert.equal(request.max_tokens, 450);
+    assert.equal(request.max_tokens, 750);
+    assert.match(request.messages[0].content, /evidenceIds array MUST contain 1 to 4 exact IDs/);
+    assert.match(request.messages[0].content, /Only defend this desk.s own chronologicalRecords/);
     assert.match(request.messages[0].content, /first-person defense/);
     assert.match(request.messages[0].content, /Do not sound like a detached analyst/);
     assert.doesNotMatch(JSON.stringify(user), /Publisher [0-3]|publisher[0-3]\.test|campaign-[0-3]|article-[0-3]/i);
@@ -274,21 +276,31 @@ test('campaign windows reject gaps and invalid split dates; daily mode does not 
   assert.equal((await post(badDate.base, '/api/campaign/session', { caseId: badSplit.id })).status, 503);
 });
 
-test('real Flack aggregate binds unknown timing and six ungraded ratings through the reveal', async t => {
+test('real recovered Flack timeline keeps separate print aggregate context and six ungraded ratings through reveal', async t => {
   const all = JSON.parse(await readFile(new URL('./campaigns.json', import.meta.url), 'utf8'));
-  const actual = all.find(x => x.countMode === 'aggregate');
+  const actual = all.find(x => x.id === 'caroline-flack-recovered-campaign');
+  assert.ok(actual, 'recovered Flack case exists');
+  assert.equal(actual.aggregateContext.count, 99);
+  assert.equal(actual.aggregateContext.isDailySeries, false);
+  assert.equal(actual.aggregateContext.isThisSample, false);
   const g = await setup({ data: actual }); t.after(g.close);
-  const s = await newSession(g.base, actual.id), d = s.desks[0];
-  assert.equal(s.days.length, 185); assert.equal(d.listedCount, 99); assert.equal(d.dailyCounts, null); assert.equal(d.peakDaily, null);
-  const script = await (await post(g.base, '/api/campaign/briefing', { sessionId: s.sessionId, outletId: d.outletId })).json();
-  assert.equal(script.mode, 'reviewed'); assert.equal(script.paragraphs.length, 4); assert.ok(!script.reply.includes(actual.campaigns[0].outlet));
-  const response = await (await post(g.base, '/api/campaign/respond', { sessionId:s.sessionId,outletId:d.outletId,question:'Please answer the linked question.',criterionId:'care' })).json();
-  assert.deepEqual(response.evidenceIds, actual.campaigns[0].scrutiny.find(x=>x.criterionId==='care').evidenceIds);
+  const s = await newSession(g.base, actual.id), state = g.app.sessions.get(s.sessionId);
+  const d = s.desks.find(d => state.campaignByDesk[d.outletId].outlet === 'The Sun');
+  assert.ok(d); assert.equal(s.countMode, 'dated-sample'); assert.equal(s.days.length, 65);
+  assert.equal(d.listedCount, 1); assert.equal(d.peakDaily, 1);
+  assert.equal(d.dailyCounts.reduce((sum,n)=>sum+n,0), d.listedCount);
+  assert.equal(s.source.corpusCount, actual.allHeadlines.length);
+  assert.notEqual(s.desks.reduce((sum,d)=>sum+d.listedCount,0), actual.aggregateContext.count);
+  const bound = state.campaignByDesk[d.outletId];
+  const script = await (await post(g.base, '/api/campaign/briefing', { sessionId:s.sessionId,outletId:d.outletId })).json();
+  assert.equal(script.mode,'reviewed'); assert.equal(script.paragraphs.length,4); assert.ok(!script.reply.includes(bound.outlet));
+  const response = await (await post(g.base,'/api/campaign/respond',{sessionId:s.sessionId,outletId:d.outletId,question:'Please answer the linked question.',criterionId:'care'})).json();
+  assert.deepEqual(response.evidenceIds,bound.scrutiny.find(x=>x.criterionId==='care').evidenceIds);
   assert.match(response.reply,/24 December/);
-  const ratings = Object.fromEntries(actual.scrutinyCriteria.map(x=>[x.id,x.id==='framing'?'concern':'unknown']));
-  const body = { sessionId:s.sessionId,campaignVerdicts:{[d.outletId]:'unclear'},recommendedCounts:{[d.outletId]:null},scrutinyAssessments:{[d.outletId]:ratings},reasoningAnswers:Object.fromEntries(actual.reasoningChecks.map(x=>[x.id,x.answer])),justification:'The record gives a six-month total but no daily inventory; I can question the documented framing while leaving the overall volume uncertain.' };
-  const r = await (await post(g.base,'/api/campaign/reveal',body)).json();
-  assert.equal(r.reasoningScore,10); assert.equal(r.roles[0].outletName,'The Sun'); assert.equal(r.roles[0].campaign.peakDaily,null);
-  assert.deepEqual(r.scrutinyAssessments,body.scrutinyAssessments); assert.equal(r.roles[0].recommendedCount,null); assert.equal(r.roles[0].decision,'unclear');
-  assert.deepEqual(await (await post(g.base,'/api/campaign/reveal',{...body,campaignVerdicts:{[d.outletId]:'pile-on'}})).json(),r);
+  const ratings=Object.fromEntries(actual.scrutinyCriteria.map(x=>[x.id,x.id==='framing'?'concern':'unknown']));
+  const body={sessionId:s.sessionId,campaignVerdicts:Object.fromEntries(s.desks.map(d=>[d.outletId,'unclear'])),recommendedCounts:Object.fromEntries(s.desks.map(d=>[d.outletId,null])),scrutinyAssessments:Object.fromEntries(s.desks.map(d=>[d.outletId,{...ratings}])),reasoningAnswers:Object.fromEntries(actual.reasoningChecks.map(x=>[x.id,x.answer])),justification:'The recovered dated sample supports specific chronology checks. The separate six-month print total cannot stand in for this sample, and I leave overall editorial proportion unresolved.'};
+  const result=await (await post(g.base,'/api/campaign/reveal',body)).json();
+  assert.equal(result.reasoningScore,10);const sun=result.roles.find(r=>r.outletName==='The Sun');assert.equal(sun.campaign.listedCount,1);assert.equal(sun.campaign.peakDaily,1);
+  assert.deepEqual(result.scrutinyAssessments,body.scrutinyAssessments);assert.equal(sun.recommendedCount,null);assert.equal(sun.decision,'unclear');
+  assert.deepEqual(await (await post(g.base,'/api/campaign/reveal',{...body,campaignVerdicts:Object.fromEntries(s.desks.map(d=>[d.outletId,'pile-on']))})).json(),result);
 });

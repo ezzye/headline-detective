@@ -1,0 +1,1338 @@
+{
+  "id": "markle-letter-campaign",
+  "title": "Meghan Markle: private-letter publication and the 2019 media wave",
+  "subject": "Meghan Markle: private-letter publication and the 2019 media wave",
+  "start": "2019-02-06",
+  "end": "2019-02-23",
+  "endNote": "Inclusive bounded research window",
+  "days": [
+    "2019-02-06",
+    "2019-02-07",
+    "2019-02-08",
+    "2019-02-09",
+    "2019-02-10",
+    "2019-02-11",
+    "2019-02-12",
+    "2019-02-13",
+    "2019-02-14",
+    "2019-02-15",
+    "2019-02-16",
+    "2019-02-17",
+    "2019-02-18",
+    "2019-02-19",
+    "2019-02-20",
+    "2019-02-21",
+    "2019-02-22",
+    "2019-02-23"
+  ],
+  "source": {
+    "name": "Recovered headline sample",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-judgment-021221.pdf",
+    "retrieved": "2026-10-13",
+    "unit": "dated recovered headline records",
+    "corpusCount": 9,
+    "outletUniverse": 3,
+    "selectedCount": 9,
+    "scopeNote": "Fixed window 2019-02-06 through 2019-02-23 inclusive. The recovered set contains 9 dated headline records across three desks: four Guardian publisher-page items and five Mail/MailOnline titles transcribed in the 2020 High Court judgment, all dated 10 February. The court-listed titles are evidence of challenged items, not independent publisher page recoveries. This clustered, selected sample is insufficient to judge daily growth or compare overall coverage volume; missing records/dates are unknown, not zero.",
+    "sampleNote": "9 dated records retained: four dated Guardian publisher pages (13, 16, 20, 23 Feb), two Mail on Sunday print titles and three MailOnline titles documented in the later court judgment as published on 10 Feb. Three outlets are represented, but five rows share one date; ranked volume comparison disabled."
+  },
+  "events": [
+    {
+      "date": "2019-02-06",
+      "label": "People published an article quoting friends and referencing a private letter to Thomas Markle.",
+      "evidenceId": "event-1"
+    },
+    {
+      "date": "2019-02-10",
+      "label": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+      "evidenceId": "event-2"
+    },
+    {
+      "date": "2019-02-11",
+      "label": "Reports described potential legal action and Thomas Markle’s response.",
+      "evidenceId": "event-3"
+    },
+    {
+      "date": "2019-02-13",
+      "label": "A Guardian-carried agency report published George Clooney’s criticism of the press pursuit and the publication of a daughter’s letter to her father.",
+      "evidenceId": "event-4"
+    },
+    {
+      "date": "2019-02-16",
+      "label": "Guardian comment discussed press treatment after extracts from the letter had been published.",
+      "evidenceId": "event-5"
+    },
+    {
+      "date": "2019-02-20",
+      "label": "Guardian comment criticized the scrutiny and vilification directed at Meghan.",
+      "evidenceId": "event-6"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "trial-judgment",
+      "label": "Court of Appeal judgment upholding the privacy finding (2021; court file hosted later)",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-judgment-021221.pdf",
+      "text": "The Court of Appeal upheld the finding that the Duchess had a reasonable expectation of privacy in the letter. The judgment concerns five challenged articles; it is not a ruling on all coverage.",
+      "date": "2021-12-02",
+      "retrospective": true
+    },
+    {
+      "id": "appeal-summary",
+      "label": "Judiciary case summary",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+      "text": "The summary identifies the media context: a People article on 6 February 2019, followed by extracts from the private letter published in the Mail on Sunday on 10 February 2019. The court said the later articles were not a proportionate means of correcting inaccuracies."
+    },
+    {
+      "id": "event-1",
+      "date": "2019-02-06",
+      "label": "Public-interest chronology: 2019-02-06",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-judgment-021221.pdf",
+      "text": "People published an article quoting friends and referencing a private letter to Thomas Markle. It formed the stated context for the publisher’s later claim that its own article answered inaccuracies."
+    },
+    {
+      "id": "event-2",
+      "date": "2019-02-10",
+      "label": "Public-interest chronology: 2019-02-10",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "text": "The Mail on Sunday and MailOnline published extracts from the handwritten letter. Publication triggered a privacy dispute; the letter remained personal correspondence."
+    },
+    {
+      "id": "event-3",
+      "date": "2019-02-11",
+      "label": "Public-interest chronology: 2019-02-11",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+      "text": "Reports described potential legal action and Thomas Markle’s response. At this stage litigation was contemplated, not yet adjudicated."
+    },
+    {
+      "id": "initial-judgment",
+      "label": "High Court judgment dated 1 May 2020 (retrospective)",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "date": "2020-05-01",
+      "retrospective": true,
+      "text": "The High Court granted summary judgment on the Duchess’s misuse-of-private-information and copyright claims. Associated Newspapers said it was disappointed and sought to appeal. This is a 2020 decision, not the 2021 Court of Appeal outcome."
+    },
+    {
+      "id": "markle-letter-h11",
+      "label": "Mail on Sunday headline, 2019-02-10 (court-recorded transcription)",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "date": "2019-02-10",
+      "text": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered."
+    },
+    {
+      "id": "markle-letter-h12",
+      "label": "MailOnline headline, 2019-02-10 (court-recorded transcription)",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "date": "2019-02-10",
+      "text": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered."
+    },
+    {
+      "id": "markle-letter-h13",
+      "label": "MailOnline headline, 2019-02-10 (court-recorded transcription)",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "date": "2019-02-10",
+      "text": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered."
+    },
+    {
+      "id": "markle-letter-h14",
+      "label": "MailOnline headline, 2019-02-10 (court-recorded transcription)",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "date": "2019-02-10",
+      "text": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered."
+    },
+    {
+      "id": "markle-letter-h15",
+      "label": "The Guardian headline, 2019-02-13",
+      "url": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
+      "date": "2019-02-13",
+      "text": "Guardian page gives exact headline and first-published time Wed 13 Feb 2019 05:43 EST; agency report quotes Clooney criticizing the pursuit and publication of the letter."
+    },
+    {
+      "id": "markle-letter-h16",
+      "label": "The Guardian headline, 2019-02-16",
+      "url": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
+      "date": "2019-02-16",
+      "text": "Guardian page gives exact headline and date Sat 16 Feb 2019 15:30 EST; Catherine Bennett’s comment explicitly discusses press treatment and the letter released by Meghan’s father."
+    },
+    {
+      "id": "markle-letter-h17",
+      "label": "The Guardian headline, 2019-02-20",
+      "url": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
+      "date": "2019-02-20",
+      "text": "Guardian page gives exact headline and date Wed 20 Feb 2019 12:44 EST; Zoe Williams’s comment addresses the level of scrutiny and vilification."
+    },
+    {
+      "id": "event-4",
+      "date": "2019-02-13",
+      "label": "Public-interest chronology: 2019-02-13",
+      "url": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
+      "text": "On 13 February, a Guardian report published George Clooney’s criticism of the press pursuit and the publication of a daughter’s letter to her father."
+    },
+    {
+      "id": "event-5",
+      "date": "2019-02-16",
+      "label": "Public-interest chronology: 2019-02-16",
+      "url": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
+      "text": "On 16 February, Guardian comment discussed press treatment after extracts from the letter had been published."
+    },
+    {
+      "id": "event-6",
+      "date": "2019-02-20",
+      "label": "Public-interest chronology: 2019-02-20",
+      "url": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
+      "text": "On 20 February, Guardian comment criticized the level of scrutiny and vilification directed at Meghan."
+    },
+    {
+      "id": "markle-letter-h01",
+      "label": "Mail on Sunday headline, 2019-02-10 (court-recorded transcription)",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+      "date": "2019-02-10",
+      "text": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered."
+    },
+    {
+      "id": "markle-letter-h10",
+      "label": "The Guardian headline, 2019-02-23",
+      "url": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
+      "date": "2019-02-23",
+      "text": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit."
+    }
+  ],
+  "reasoningChecks": [
+    {
+      "id": "unit",
+      "prompt": "What does each bar count?",
+      "options": [
+        {
+          "value": "records",
+          "label": "Dated recovered headline records from the selected outlet sample"
+        },
+        {
+          "value": "mentions",
+          "label": "Every mention across all media"
+        },
+        {
+          "value": "harm",
+          "label": "Proven harmful stories"
+        }
+      ],
+      "answer": "records",
+      "explanation": "Bars are computed from the dated records shown in this sample, not all media or proven harmful stories.",
+      "evidenceIds": [
+        "trial-judgment"
+      ]
+    },
+    {
+      "id": "scope",
+      "prompt": "Is this an exhaustive census?",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes, every relevant story"
+        },
+        {
+          "value": "bounded",
+          "label": "No, a bounded recovered sample with selection limits"
+        },
+        {
+          "value": "allformats",
+          "label": "Yes, all formats and outlets"
+        }
+      ],
+      "answer": "bounded",
+      "explanation": "The research pack describes a selected sample; missing records and outlets remain unknown.",
+      "evidenceIds": [
+        "trial-judgment"
+      ]
+    },
+    {
+      "id": "status",
+      "prompt": "How should disputed claims be described?",
+      "options": [
+        {
+          "value": "proven",
+          "label": "As proven facts in every case"
+        },
+        {
+          "value": "status",
+          "label": "With the allegation, response and procedural status kept separate"
+        },
+        {
+          "value": "ignore",
+          "label": "Ignore the response"
+        }
+      ],
+      "answer": "status",
+      "explanation": "Use the status supported by the dated record; an allegation, response, inquiry and judgment are distinct.",
+      "evidenceIds": [
+        "trial-judgment",
+        "initial-judgment"
+      ]
+    },
+    {
+      "id": "limits",
+      "prompt": "What does a headline alone tell us?",
+      "options": [
+        {
+          "value": "whole",
+          "label": "The full article and all editorial choices"
+        },
+        {
+          "value": "wording",
+          "label": "The recovered wording, not full context or effects"
+        },
+        {
+          "value": "nothing",
+          "label": "Nothing at all"
+        }
+      ],
+      "answer": "wording",
+      "explanation": "The headline is evidence of wording; the full article and consequences need separate evidence.",
+      "evidenceIds": [
+        "trial-judgment"
+      ]
+    },
+    {
+      "id": "motive",
+      "prompt": "Can counts or a severe headline prove motive or causation?",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes, by themselves"
+        },
+        {
+          "value": "no",
+          "label": "No; they support questions, not automatic conclusions"
+        },
+        {
+          "value": "intent",
+          "label": "Yes, if coverage is repeated"
+        }
+      ],
+      "answer": "no",
+      "explanation": "Frequency and wording do not independently establish motive, harm or causal effect.",
+      "evidenceIds": [
+        "trial-judgment"
+      ]
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "mail-on-sunday",
+      "outlet": "Mail on Sunday",
+      "dailyCounts": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "listedCount": 2,
+      "activeDays": 1,
+      "peakDaily": 2,
+      "examples": [
+        {
+          "id": "markle-letter-h01",
+          "headline": "Revealed: The letter showing true tragedy of Meghan’s rift with a father she says has “broken her heart into a million pieces”",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+          "published": "2019-02-10",
+          "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
+          "kind": "news",
+          "eventId": "event-2",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+        },
+        {
+          "id": "markle-letter-h11",
+          "headline": "Meghan: Stop painful attacks on Harry; Her dad: I like him…. I’ll always love you",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "published": "2019-02-10",
+          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "kind": "news",
+          "eventId": "event-2",
+          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events."
+        }
+      ],
+      "reviewNotes": {
+        "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
+        "pressure": "The cleaned recovered sample lists 2 dated headline records from this desk over 1 publication dates. Court-listed titles are records of distinct challenged articles, not separate events. This is not a complete archive or proof of intent.",
+        "limit": "These titles and their 10 February publication date are transcribed from the later High Court judgment; the contemporaneous publisher pages and URLs were not recovered. The selected set is too clustered for a volume ranking."
+      },
+      "scrutiny": [
+        {
+          "criterionId": "public_value",
+          "observation": "The sample follows the publication of extracts from a private letter and subsequent legal steps.",
+          "question": "What public interest did each item serve, and what information could be reported without reproducing private correspondence?",
+          "limit": "Nine records form a selected, date-clustered sample, not a census or daily volume series.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "context",
+          "observation": "The publisher argued its article answered inaccuracies; the Court of Appeal later upheld a privacy finding concerning five specific articles.",
+          "question": "Were the parties’ arguments and the later, case-specific legal outcome kept distinct?",
+          "limit": "The court ruling concerns specified articles, not every item or all coverage.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "framing",
+          "observation": "Framing family correspondence as a dramatic rift can turn private pain into spectacle.",
+          "question": "Did headlines provide necessary context without treating intimate correspondence as entertainment?",
+          "limit": "Headline wording cannot by itself establish what the article disclosed.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "care",
+          "observation": "Legal action was contemplated in the sample window; adjudication came later.",
+          "question": "Was persistence proportionate while proceedings were unresolved?",
+          "limit": "Later legal outcomes are retrospective evidence and must be dated separately.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "consistency",
+          "observation": "The sample includes publisher and competing outlet accounts.",
+          "question": "Would similar private correspondence involving another public figure receive similar restraint?",
+          "limit": "The selected outlets do not show the whole media response.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "transparency",
+          "observation": "Four Guardian items are verified publisher pages; five Mail/MailOnline titles and their date are transcribed from the later High Court judgment.",
+          "question": "Can readers identify original publisher items versus legal-record reproductions?",
+          "limit": "Five court-listed titles share 10 February and do not establish five separate events; original page URLs are not recovered.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        }
+      ],
+      "briefing": {
+        "title": "A fictional desk defence of its sampled coverage",
+        "paragraphs": [
+          {
+            "kind": "report",
+            "text": "We would say readers had an interest in a public figure’s family dispute and in the father’s response to an earlier account. The court record lists two print headlines from 10 February. These are transcriptions from a later judgment, not recovered publisher pages or a census of our output.",
+            "evidenceIds": [
+              "markle-letter-h01",
+              "markle-letter-h11",
+              "appeal-summary"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "One headline called the correspondence a “tragedy” and foregrounded a rift; the other paired a plea with the father’s response. We could argue that competing accounts served the public. But status alone does not make private correspondence public, especially when less intrusive reporting could explain the dispute.",
+            "evidenceIds": [
+              "markle-letter-h01",
+              "markle-letter-h11"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "At publication, the publisher argued the letter corrected inaccuracies and readers deserved the father’s reply. Those were contested claims. Later, the High Court and Court of Appeal found the five specified articles unlawful on privacy grounds; most disclosures were not a proportionate correction. A defence must acknowledge that result.",
+            "evidenceIds": [
+              "appeal-summary",
+              "initial-judgment",
+              "trial-judgment"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "Our two titles share one date; they are not two separate events, and their original pages remain unrecovered. They show wording identified by the court, not total output or a daily trend. A responsible account would avoid repeating the letter, state the dispute’s status, and admit where the public-interest case fails.",
+            "evidenceIds": [
+              "markle-letter-h01",
+              "markle-letter-h11",
+              "trial-judgment"
+            ]
+          }
+        ]
+      },
+      "records": [
+        {
+          "id": "markle-letter-h01",
+          "date": "2019-02-10",
+          "outlet": "Mail on Sunday",
+          "headline": "Revealed: The letter showing true tragedy of Meghan’s rift with a father she says has “broken her heart into a million pieces”",
+          "kind": "news",
+          "originalURL": null,
+          "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+          "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+          "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
+          "eventId": "event-2",
+          "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+          "wave": "People published an article quoting friends and referencing a private letter to Thomas Markle. / The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": true,
+          "sampleNote": "Exact print headline reproduced in court summary; direct article URL is a best-effort URL and should be checked before production use.",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+          "auditStatus": "primary_document_headline_match",
+          "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+          "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record. Verification URL differs from original URL; this audit checked the recorded verification URL only."
+        },
+        {
+          "id": "markle-letter-h11",
+          "date": "2019-02-10",
+          "outlet": "Mail on Sunday",
+          "headline": "Meghan: Stop painful attacks on Harry; Her dad: I like him…. I’ll always love you",
+          "kind": "news",
+          "originalURL": null,
+          "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "eventId": "event-2",
+          "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+          "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
+          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
+          "archiveReproduction": true,
+          "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditStatus": "primary_court_transcription_date_title_match",
+          "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+        }
+      ]
+    },
+    {
+      "id": "mail-online",
+      "outlet": "MailOnline",
+      "dailyCounts": [
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "listedCount": 3,
+      "activeDays": 1,
+      "peakDaily": 3,
+      "examples": [
+        {
+          "id": "markle-letter-h12",
+          "headline": "Revealed: The Handwritten letter showing true tragedy of Meghan’s rift with a father she says has ‘broken her heart into a million pieces’",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "published": "2019-02-10",
+          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "kind": "news",
+          "eventId": "event-2",
+          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events."
+        },
+        {
+          "id": "markle-letter-h13",
+          "headline": "Meghan Markle urged her father to stop ‘painful’ attacks on ‘patient, kind and understanding’ Prince Harry in five-page letter – but anguished dad says ‘I like him… and I’ll always love you’",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "published": "2019-02-10",
+          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "kind": "news",
+          "eventId": "event-2",
+          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events."
+        },
+        {
+          "id": "markle-letter-h14",
+          "headline": "Secrets of Meghan’s letter revealed: note to her father saying her heart has been ‘broken into a million pieces’ reveals she is a ‘narcissistic showman whose self-control is wavering",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "published": "2019-02-10",
+          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "kind": "news",
+          "eventId": "event-2",
+          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events."
+        }
+      ],
+      "reviewNotes": {
+        "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
+        "pressure": "The cleaned recovered sample lists 3 dated headline records from this desk over 1 publication dates. Court-listed titles are records of distinct challenged articles, not separate events. This is not a complete archive or proof of intent.",
+        "limit": "These titles and their 10 February publication date are transcribed from the later High Court judgment; the contemporaneous publisher pages and URLs were not recovered. The selected set is too clustered for a volume ranking."
+      },
+      "scrutiny": [
+        {
+          "criterionId": "public_value",
+          "observation": "The sample follows the publication of extracts from a private letter and subsequent legal steps.",
+          "question": "What public interest did each item serve, and what information could be reported without reproducing private correspondence?",
+          "limit": "Nine records form a selected, date-clustered sample, not a census or daily volume series.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "context",
+          "observation": "The publisher argued its article answered inaccuracies; the Court of Appeal later upheld a privacy finding concerning five specific articles.",
+          "question": "Were the parties’ arguments and the later, case-specific legal outcome kept distinct?",
+          "limit": "The court ruling concerns specified articles, not every item or all coverage.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "framing",
+          "observation": "Framing family correspondence as a dramatic rift can turn private pain into spectacle.",
+          "question": "Did headlines provide necessary context without treating intimate correspondence as entertainment?",
+          "limit": "Headline wording cannot by itself establish what the article disclosed.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "care",
+          "observation": "Legal action was contemplated in the sample window; adjudication came later.",
+          "question": "Was persistence proportionate while proceedings were unresolved?",
+          "limit": "Later legal outcomes are retrospective evidence and must be dated separately.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "consistency",
+          "observation": "The sample includes publisher and competing outlet accounts.",
+          "question": "Would similar private correspondence involving another public figure receive similar restraint?",
+          "limit": "The selected outlets do not show the whole media response.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "transparency",
+          "observation": "Four Guardian items are verified publisher pages; five Mail/MailOnline titles and their date are transcribed from the later High Court judgment.",
+          "question": "Can readers identify original publisher items versus legal-record reproductions?",
+          "limit": "Five court-listed titles share 10 February and do not establish five separate events; original page URLs are not recovered.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        }
+      ],
+      "briefing": {
+        "title": "A fictional desk defence of its sampled coverage",
+        "paragraphs": [
+          {
+            "kind": "report",
+            "text": "We would defend telling readers about the letter dispute and the father’s response, with the earlier People account as context. The court record lists three online headlines from 10 February. We have not recovered those original pages: these exact titles come from a later judgment and do not represent all our output.",
+            "evidenceIds": [
+              "markle-letter-h12",
+              "markle-letter-h13",
+              "markle-letter-h14",
+              "appeal-summary"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "Two titles repeat a broken-heart phrase; one uses a handwriting-based character label. We could argue that readers wanted the father’s reply and context. Yet a public figure’s status does not make private family correspondence public property. The character label risks judging personality instead of clarifying the dispute.",
+            "evidenceIds": [
+              "markle-letter-h12",
+              "markle-letter-h13",
+              "markle-letter-h14"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "The publisher argued at the time that reporting corrected inaccuracies and gave the father a response. These were contested claims, not findings. The later High Court and Court of Appeal found the five challenged pieces unlawful on privacy grounds and the disclosures mostly disproportionate. That result weakens a correction-only defence.",
+            "evidenceIds": [
+              "appeal-summary",
+              "initial-judgment",
+              "trial-judgment"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "Our three titles share one date and are listed in the court record; they do not establish daily growth, total site coverage, or separate underlying events. A responsible defence would explain purpose without reproducing the letter, distinguish claims from rulings, and admit the difficulty of defending the most personal framing.",
+            "evidenceIds": [
+              "markle-letter-h12",
+              "markle-letter-h13",
+              "markle-letter-h14",
+              "trial-judgment"
+            ]
+          }
+        ]
+      },
+      "records": [
+        {
+          "id": "markle-letter-h12",
+          "date": "2019-02-10",
+          "outlet": "MailOnline",
+          "headline": "Revealed: The Handwritten letter showing true tragedy of Meghan’s rift with a father she says has ‘broken her heart into a million pieces’",
+          "kind": "news",
+          "originalURL": null,
+          "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "eventId": "event-2",
+          "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+          "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
+          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
+          "archiveReproduction": true,
+          "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditStatus": "primary_court_transcription_date_title_match",
+          "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+        },
+        {
+          "id": "markle-letter-h13",
+          "date": "2019-02-10",
+          "outlet": "MailOnline",
+          "headline": "Meghan Markle urged her father to stop ‘painful’ attacks on ‘patient, kind and understanding’ Prince Harry in five-page letter – but anguished dad says ‘I like him… and I’ll always love you’",
+          "kind": "news",
+          "originalURL": null,
+          "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "eventId": "event-2",
+          "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+          "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
+          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
+          "archiveReproduction": true,
+          "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditStatus": "primary_court_transcription_date_title_match",
+          "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+        },
+        {
+          "id": "markle-letter-h14",
+          "date": "2019-02-10",
+          "outlet": "MailOnline",
+          "headline": "Secrets of Meghan’s letter revealed: note to her father saying her heart has been ‘broken into a million pieces’ reveals she is a ‘narcissistic showman whose self-control is wavering",
+          "kind": "news",
+          "originalURL": null,
+          "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "eventId": "event-2",
+          "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+          "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
+          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
+          "archiveReproduction": true,
+          "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditStatus": "primary_court_transcription_date_title_match",
+          "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+        }
+      ]
+    },
+    {
+      "id": "the-guardian",
+      "outlet": "The Guardian",
+      "dailyCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "listedCount": 4,
+      "activeDays": 4,
+      "peakDaily": 1,
+      "examples": [
+        {
+          "id": "markle-letter-h15",
+          "headline": "Meghan 'vilified and chased' by press like Diana, says George Clooney",
+          "url": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
+          "published": "2019-02-13",
+          "verification": "Guardian page gives exact headline and first-published time Wed 13 Feb 2019 05:43 EST; agency report quotes Clooney criticizing the pursuit and publication of the letter.",
+          "kind": "news",
+          "eventId": "event-4",
+          "noveltyClaim": "Reports a public response about press conduct; it is not a separate event in the family dispute."
+        },
+        {
+          "id": "markle-letter-h16",
+          "headline": "Tormenting Meghan Markle has become a national sport that shames us",
+          "url": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
+          "published": "2019-02-16",
+          "verification": "Guardian page gives exact headline and date Sat 16 Feb 2019 15:30 EST; Catherine Bennett’s comment explicitly discusses press treatment and the letter released by Meghan’s father.",
+          "kind": "comment",
+          "eventId": "event-5",
+          "noveltyClaim": "Opinion about accumulated press treatment; it is not a separate event in the family dispute."
+        },
+        {
+          "id": "markle-letter-h17",
+          "headline": "Whatever Meghan does, she’s damned. Let’s not repeat history",
+          "url": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
+          "published": "2019-02-20",
+          "verification": "Guardian page gives exact headline and date Wed 20 Feb 2019 12:44 EST; Zoe Williams’s comment addresses the level of scrutiny and vilification.",
+          "kind": "comment",
+          "eventId": "event-6",
+          "noveltyClaim": "Opinion about the broader pattern of scrutiny; it is not a separate event in the family dispute."
+        },
+        {
+          "id": "markle-letter-h10",
+          "headline": "Meghan, Duchess of Sussex, threatens to sue Mail on Sunday",
+          "url": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
+          "published": "2019-02-23",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "kind": "news",
+          "eventId": "event-3",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+        }
+      ],
+      "reviewNotes": {
+        "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
+        "pressure": "The cleaned recovered sample lists 4 dated headline records from this desk over 4 publication dates. Five Mail/MailOnline rows are court-listed titles all dated 10 February; they are not five separate events. This is not a complete archive or proof of intent.",
+        "limit": "The Guardian rows are verified publisher pages; the five Mail/MailOnline titles are transcribed from a later court judgment, and their original pages were not recovered. The set is too clustered and incomplete for a volume ranking."
+      },
+      "scrutiny": [
+        {
+          "criterionId": "public_value",
+          "observation": "The sample follows the publication of extracts from a private letter and subsequent legal steps.",
+          "question": "What public interest did each item serve, and what information could be reported without reproducing private correspondence?",
+          "limit": "Nine records form a selected, date-clustered sample, not a census or daily volume series.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "context",
+          "observation": "The publisher argued its article answered inaccuracies; the Court of Appeal later upheld a privacy finding concerning five specific articles.",
+          "question": "Were the parties’ arguments and the later, case-specific legal outcome kept distinct?",
+          "limit": "The court ruling concerns specified articles, not every item or all coverage.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "framing",
+          "observation": "Framing family correspondence as a dramatic rift can turn private pain into spectacle.",
+          "question": "Did headlines provide necessary context without treating intimate correspondence as entertainment?",
+          "limit": "Headline wording cannot by itself establish what the article disclosed.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "care",
+          "observation": "Legal action was contemplated in the sample window; adjudication came later.",
+          "question": "Was persistence proportionate while proceedings were unresolved?",
+          "limit": "Later legal outcomes are retrospective evidence and must be dated separately.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "consistency",
+          "observation": "The sample includes publisher and competing outlet accounts.",
+          "question": "Would similar private correspondence involving another public figure receive similar restraint?",
+          "limit": "The selected outlets do not show the whole media response.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        },
+        {
+          "criterionId": "transparency",
+          "observation": "Four Guardian items are verified publisher pages; five Mail/MailOnline titles and their date are transcribed from the later High Court judgment.",
+          "question": "Can readers identify original publisher items versus legal-record reproductions?",
+          "limit": "Five court-listed titles share 10 February and do not establish five separate events; original page URLs are not recovered.",
+          "evidenceIds": [
+            "trial-judgment"
+          ]
+        }
+      ],
+      "briefing": {
+        "title": "A fictional desk defence of its sampled coverage",
+        "paragraphs": [
+          {
+            "kind": "report",
+            "text": "We would defend the 23 February report as coverage of a legal threat, not a court ruling. On 13 February, we also reported George Clooney’s criticism of press pursuit and publication of a daughter’s letter. Both items addressed public debate about reporting and legal rights, not the family dispute itself.",
+            "evidenceIds": [
+              "markle-letter-h10",
+              "markle-letter-h15"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "Our 16 February comment criticized the release of letter extracts; the 20 February column examined how both ordinary and grand gestures drew judgment. We would say scrutiny of that pattern served readers. Commentary still needs evidence and care: a person should not become a symbol or an invitation to judge her character.",
+            "evidenceIds": [
+              "markle-letter-h16",
+              "markle-letter-h17"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "Four recovered items span three dates, but this selection cannot show how often we covered Meghan. We would distinguish news from opinion and avoid counting each item as a separate event. The five challenged titles documented by the court belong to another publisher and are not a complete media count.",
+            "evidenceIds": [
+              "markle-letter-h15",
+              "markle-letter-h16",
+              "markle-letter-h17"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "Later courts found five specific articles unlawful on privacy grounds; that does not decide every report or column. Our defence is that scrutiny of press conduct and a legal threat mattered publicly. It weakens wherever our wording amplified distress or invited judgment of the woman instead of the reporting.",
+            "evidenceIds": [
+              "initial-judgment",
+              "trial-judgment"
+            ]
+          }
+        ]
+      },
+      "records": [
+        {
+          "id": "markle-letter-h15",
+          "date": "2019-02-13",
+          "outlet": "The Guardian",
+          "headline": "Meghan 'vilified and chased' by press like Diana, says George Clooney",
+          "kind": "news",
+          "originalURL": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
+          "verificationSourceURL": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
+          "sourceURL": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
+          "verification": "Guardian page gives exact headline and first-published time Wed 13 Feb 2019 05:43 EST; agency report quotes Clooney criticizing the pursuit and publication of the letter.",
+          "eventId": "event-4",
+          "event": "On 13 February, a Guardian report published George Clooney’s criticism of the press pursuit and the publication of a daughter’s letter to her father.",
+          "wave": "After the 10 February letter stories, a public criticism of press pursuit was reported on 13 February, followed by Guardian comment on 16 and 20 February and legal-threat reporting on 23 February.",
+          "noveltyClaim": "Reports a public response about press conduct; it is not a separate event in the family dispute.",
+          "archiveReproduction": false,
+          "sampleNote": "Publisher page verified; article is an Agence France-Presse report carried by the Guardian.",
+          "url": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
+          "auditNote": "Web publisher page confirms first publication date and headline."
+        },
+        {
+          "id": "markle-letter-h16",
+          "date": "2019-02-16",
+          "outlet": "The Guardian",
+          "headline": "Tormenting Meghan Markle has become a national sport that shames us",
+          "kind": "comment",
+          "originalURL": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
+          "verificationSourceURL": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
+          "sourceURL": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
+          "verification": "Guardian page gives exact headline and date Sat 16 Feb 2019 15:30 EST; Catherine Bennett’s comment explicitly discusses press treatment and the letter released by Meghan’s father.",
+          "eventId": "event-5",
+          "event": "On 16 February, Guardian comment discussed press treatment after extracts from the letter had been published.",
+          "wave": "After the 10 February letter stories, a public criticism of press pursuit was reported on 13 February, followed by Guardian comment on 16 and 20 February and legal-threat reporting on 23 February.",
+          "noveltyClaim": "Opinion about accumulated press treatment; it is not a separate event in the family dispute.",
+          "archiveReproduction": false,
+          "sampleNote": "Publisher comment page verified; categorized as opinion, not news.",
+          "url": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
+          "auditNote": "Web publisher page confirms headline and original date; later modified date is excluded."
+        },
+        {
+          "id": "markle-letter-h17",
+          "date": "2019-02-20",
+          "outlet": "The Guardian",
+          "headline": "Whatever Meghan does, she’s damned. Let’s not repeat history",
+          "kind": "comment",
+          "originalURL": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
+          "verificationSourceURL": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
+          "sourceURL": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
+          "verification": "Guardian page gives exact headline and date Wed 20 Feb 2019 12:44 EST; Zoe Williams’s comment addresses the level of scrutiny and vilification.",
+          "eventId": "event-6",
+          "event": "On 20 February, Guardian comment criticized the level of scrutiny and vilification directed at Meghan.",
+          "wave": "After the 10 February letter stories, a public criticism of press pursuit was reported on 13 February, followed by Guardian comment on 16 and 20 February and legal-threat reporting on 23 February.",
+          "noveltyClaim": "Opinion about the broader pattern of scrutiny; it is not a separate event in the family dispute.",
+          "archiveReproduction": false,
+          "sampleNote": "Publisher comment page verified; categorized as opinion, not news.",
+          "url": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
+          "auditNote": "Web publisher page confirms headline and original date; later modified date is excluded."
+        },
+        {
+          "id": "markle-letter-h10",
+          "date": "2019-02-23",
+          "outlet": "The Guardian",
+          "headline": "Meghan, Duchess of Sussex, threatens to sue Mail on Sunday",
+          "kind": "news",
+          "originalURL": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
+          "verificationSourceURL": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
+          "sourceURL": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "eventId": "event-3",
+          "event": "Reports described potential legal action and Thomas Markle’s response.",
+          "wave": "People published an article quoting friends and referencing a private letter to Thomas Markle. / The Mail on Sunday and MailOnline published extracts from the handwritten letter. / Reports described potential legal action and Thomas Markle’s response.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
+          "auditNote": null
+        }
+      ]
+    }
+  ],
+  "context": {
+    "statusAtWindowEnd": "Do not reproduce the letter or sensitive family correspondence. The courts ruled on privacy/copyright for five specific articles; the publisher disputed the judgment and argued a public-interest correction. This sample is not an exhaustive account of Meghan coverage and does not support blanket judgments about all outlets. The February 10 MailOnline row is a court-recorded title whose original page URL is uncertain; treat it as a separate online rendition only if the linked original can be confirmed.",
+    "sequence": [
+      {
+        "date": "2019-02-06",
+        "text": "People published an article quoting friends and referencing a private letter to Thomas Markle.",
+        "evidenceIds": [
+          "event-1"
+        ]
+      },
+      {
+        "date": "2019-02-10",
+        "text": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+        "evidenceIds": [
+          "event-2"
+        ]
+      },
+      {
+        "date": "2019-02-11",
+        "text": "Reports described potential legal action and Thomas Markle’s response.",
+        "evidenceIds": [
+          "event-3"
+        ]
+      }
+    ],
+    "retrospectiveEvidence": [
+      {
+        "date": "2020-05-01",
+        "text": "High Court granted summary judgment on the privacy/copyright claims. This is outside the 2019 sample window.",
+        "evidenceIds": [
+          "initial-judgment"
+        ],
+        "status": "retrospective, distinct from the later appeal"
+      },
+      {
+        "date": "2021-12-02",
+        "text": "Court of Appeal upheld the privacy finding concerning five challenged articles. This is outside the 2019 sample window.",
+        "evidenceIds": [
+          "trial-judgment"
+        ],
+        "status": "retrospective, not a 2019 event marker"
+      }
+    ]
+  },
+  "comparison": {},
+  "narrationNotice": "Fictional editor role-play; not an actual outlet statement.",
+  "countMode": "dated-sample",
+  "scrutinyCriteria": [
+    {
+      "id": "public_value",
+      "label": "Public interest",
+      "question": "What did each wave add that the public needed to know?"
+    },
+    {
+      "id": "context",
+      "label": "Fair context",
+      "question": "Were allegations, responses and unresolved findings represented fairly?"
+    },
+    {
+      "id": "framing",
+      "label": "Framing & power",
+      "question": "Did the coverage invite scrutiny or stereotyping, ridicule and superiority?"
+    },
+    {
+      "id": "care",
+      "label": "Care & persistence",
+      "question": "Was continued attention proportionate after distress or vulnerability became known?"
+    },
+    {
+      "id": "consistency",
+      "label": "Comparable treatment",
+      "question": "Would the outlet apply the same intensity to a genuinely comparable case?"
+    },
+    {
+      "id": "transparency",
+      "label": "Transparency",
+      "question": "Can we account for the sample, its limits, later edits and the outlet’s role?"
+    }
+  ],
+  "dataCompleteness": "This is a bounded, event-led recovered sample, not a census or daily volume series. Four Guardian publisher pages are verified for 13, 16, 20 and 23 February. Five exact Mail/MailOnline titles and their 10 February publication date are reproduced in the 1 May 2020 High Court judgment; contemporaneous publisher URLs were not recovered. Five titles on one date do not establish five separate events or an overall volume trend. Missing dates do not mean no coverage.",
+  "researchProvenance": {
+    "file": "case-markle-letter-research.json",
+    "retrievedOn": "2026-10-13"
+  },
+  "allHeadlines": [
+    {
+      "id": "markle-letter-h01",
+      "date": "2019-02-10",
+      "outlet": "Mail on Sunday",
+      "headline": "Revealed: The letter showing true tragedy of Meghan’s rift with a father she says has “broken her heart into a million pieces”",
+      "kind": "news",
+      "originalURL": null,
+      "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+      "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+      "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
+      "eventId": "event-2",
+      "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+      "wave": "People published an article quoting friends and referencing a private letter to Thomas Markle. / The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "archiveReproduction": true,
+      "sampleNote": "Exact print headline reproduced in court summary; direct article URL is a best-effort URL and should be checked before production use.",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+      "auditStatus": "primary_document_headline_match",
+      "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+      "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record. Verification URL differs from original URL; this audit checked the recorded verification URL only."
+    },
+    {
+      "id": "markle-letter-h11",
+      "date": "2019-02-10",
+      "outlet": "Mail on Sunday",
+      "headline": "Meghan: Stop painful attacks on Harry; Her dad: I like him…. I’ll always love you",
+      "kind": "news",
+      "originalURL": null,
+      "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+      "eventId": "event-2",
+      "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+      "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
+      "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
+      "archiveReproduction": true,
+      "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "auditStatus": "primary_court_transcription_date_title_match",
+      "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+    },
+    {
+      "id": "markle-letter-h12",
+      "date": "2019-02-10",
+      "outlet": "MailOnline",
+      "headline": "Revealed: The Handwritten letter showing true tragedy of Meghan’s rift with a father she says has ‘broken her heart into a million pieces’",
+      "kind": "news",
+      "originalURL": null,
+      "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+      "eventId": "event-2",
+      "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+      "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
+      "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
+      "archiveReproduction": true,
+      "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "auditStatus": "primary_court_transcription_date_title_match",
+      "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+    },
+    {
+      "id": "markle-letter-h13",
+      "date": "2019-02-10",
+      "outlet": "MailOnline",
+      "headline": "Meghan Markle urged her father to stop ‘painful’ attacks on ‘patient, kind and understanding’ Prince Harry in five-page letter – but anguished dad says ‘I like him… and I’ll always love you’",
+      "kind": "news",
+      "originalURL": null,
+      "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+      "eventId": "event-2",
+      "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+      "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
+      "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
+      "archiveReproduction": true,
+      "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "auditStatus": "primary_court_transcription_date_title_match",
+      "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+    },
+    {
+      "id": "markle-letter-h14",
+      "date": "2019-02-10",
+      "outlet": "MailOnline",
+      "headline": "Secrets of Meghan’s letter revealed: note to her father saying her heart has been ‘broken into a million pieces’ reveals she is a ‘narcissistic showman whose self-control is wavering",
+      "kind": "news",
+      "originalURL": null,
+      "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+      "eventId": "event-2",
+      "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+      "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
+      "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
+      "archiveReproduction": true,
+      "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "auditStatus": "primary_court_transcription_date_title_match",
+      "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+    },
+    {
+      "id": "markle-letter-h15",
+      "date": "2019-02-13",
+      "outlet": "The Guardian",
+      "headline": "Meghan 'vilified and chased' by press like Diana, says George Clooney",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
+      "verificationSourceURL": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
+      "sourceURL": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
+      "verification": "Guardian page gives exact headline and first-published time Wed 13 Feb 2019 05:43 EST; agency report quotes Clooney criticizing the pursuit and publication of the letter.",
+      "eventId": "event-4",
+      "event": "On 13 February, a Guardian report published George Clooney’s criticism of the press pursuit and the publication of a daughter’s letter to her father.",
+      "wave": "After the 10 February letter stories, a public criticism of press pursuit was reported on 13 February, followed by Guardian comment on 16 and 20 February and legal-threat reporting on 23 February.",
+      "noveltyClaim": "Reports a public response about press conduct; it is not a separate event in the family dispute.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page verified; article is an Agence France-Presse report carried by the Guardian.",
+      "url": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
+      "auditNote": "Web publisher page confirms first publication date and headline."
+    },
+    {
+      "id": "markle-letter-h16",
+      "date": "2019-02-16",
+      "outlet": "The Guardian",
+      "headline": "Tormenting Meghan Markle has become a national sport that shames us",
+      "kind": "comment",
+      "originalURL": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
+      "verificationSourceURL": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
+      "sourceURL": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
+      "verification": "Guardian page gives exact headline and date Sat 16 Feb 2019 15:30 EST; Catherine Bennett’s comment explicitly discusses press treatment and the letter released by Meghan’s father.",
+      "eventId": "event-5",
+      "event": "On 16 February, Guardian comment discussed press treatment after extracts from the letter had been published.",
+      "wave": "After the 10 February letter stories, a public criticism of press pursuit was reported on 13 February, followed by Guardian comment on 16 and 20 February and legal-threat reporting on 23 February.",
+      "noveltyClaim": "Opinion about accumulated press treatment; it is not a separate event in the family dispute.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher comment page verified; categorized as opinion, not news.",
+      "url": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
+      "auditNote": "Web publisher page confirms headline and original date; later modified date is excluded."
+    },
+    {
+      "id": "markle-letter-h17",
+      "date": "2019-02-20",
+      "outlet": "The Guardian",
+      "headline": "Whatever Meghan does, she’s damned. Let’s not repeat history",
+      "kind": "comment",
+      "originalURL": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
+      "verificationSourceURL": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
+      "sourceURL": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
+      "verification": "Guardian page gives exact headline and date Wed 20 Feb 2019 12:44 EST; Zoe Williams’s comment addresses the level of scrutiny and vilification.",
+      "eventId": "event-6",
+      "event": "On 20 February, Guardian comment criticized the level of scrutiny and vilification directed at Meghan.",
+      "wave": "After the 10 February letter stories, a public criticism of press pursuit was reported on 13 February, followed by Guardian comment on 16 and 20 February and legal-threat reporting on 23 February.",
+      "noveltyClaim": "Opinion about the broader pattern of scrutiny; it is not a separate event in the family dispute.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher comment page verified; categorized as opinion, not news.",
+      "url": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
+      "auditNote": "Web publisher page confirms headline and original date; later modified date is excluded."
+    },
+    {
+      "id": "markle-letter-h10",
+      "date": "2019-02-23",
+      "outlet": "The Guardian",
+      "headline": "Meghan, Duchess of Sussex, threatens to sue Mail on Sunday",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
+      "verificationSourceURL": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
+      "sourceURL": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "event-3",
+      "event": "Reports described potential legal action and Thomas Markle’s response.",
+      "wave": "People published an article quoting friends and referencing a private letter to Thomas Markle. / The Mail on Sunday and MailOnline published extracts from the handwritten letter. / Reports described potential legal action and Thomas Markle’s response.",
+      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
+      "auditNote": null
+    }
+  ],
+  "rankedComparisonEligible": false,
+  "rankedComparisonNote": "Disabled: five court-listed titles improve the recovered record set, but all five are one day of challenged articles and only four Guardian publisher pages are recovered in-window. This is not a representative daily series or census.",
+  "publicContext": {
+    "intro": "Coverage in February 2019 centred on Meghan, Duchess of Sussex, her relationship with her father and publication of a private letter. Public curiosity and public interest are different questions. Later court findings about privacy and copyright provide context, while remaining separate from what editors knew at publication.",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-judgment-021221.pdf",
+    "allegationResponse": "No private letter is reproduced here. A small recovered sample cannot establish the full scale of coverage or a matched comparison.",
+    "sequence": [
+      {
+        "date": "2019-02-06",
+        "text": "People published an article quoting friends and referencing a private letter to Thomas Markle.",
+        "evidenceIds": [
+          "event-1"
+        ]
+      },
+      {
+        "date": "2019-02-10",
+        "text": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
+        "evidenceIds": [
+          "event-2"
+        ]
+      },
+      {
+        "date": "2019-02-11",
+        "text": "Reports described potential legal action and Thomas Markle’s response.",
+        "evidenceIds": [
+          "event-3"
+        ]
+      },
+      {
+        "date": "2019-02-13",
+        "text": "A Guardian-carried agency report published George Clooney’s criticism of the press pursuit and the publication of a daughter’s letter to her father.",
+        "evidenceIds": [
+          "event-4"
+        ]
+      },
+      {
+        "date": "2019-02-16",
+        "text": "Guardian comment discussed press treatment after extracts from the letter had been published.",
+        "evidenceIds": [
+          "event-5"
+        ]
+      },
+      {
+        "date": "2019-02-20",
+        "text": "Guardian comment criticized the scrutiny and vilification directed at Meghan.",
+        "evidenceIds": [
+          "event-6"
+        ]
+      }
+    ]
+  },
+  "imageCredits": [
+    {
+      "caption": "Meghan Markle during a Northern Ireland visit on 23 March 2018, before the defined letter-coverage sample.",
+      "author": "Northern Ireland Office",
+      "license": "CC BY 2.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Meghan_Markle_-_2018_(cropped).jpg",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/"
+    },
+    {
+      "caption": "Buckingham Palace photographed in 2005. Generic location context; not evidence about Meghan Markle or the coverage sample.",
+      "author": "Christian Horcel",
+      "license": "CC BY 2.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace.jpg",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/"
+    }
+  ]
+}

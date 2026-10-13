@@ -1,0 +1,933 @@
+{
+  "title": "Caroline Flack: recovered headline sample",
+  "retrieved": "2026-10-13",
+  "researchScope": {
+    "start": "2019-12-12",
+    "end": "2020-02-14",
+    "endInclusive": true,
+    "sampleSize": 24,
+    "method": "Fixed dated sample from publisher, court and inquiry sources. The public GET audit corrected accessible title/date metadata, dropped unrelated redirects and unsupported 404/PDF rows, and labelled previously recovered records with current 403/request errors. Reproductions and updated pages are clearly distinguished. This is not a census.",
+    "limitations": [
+      "The sample is event-led and uneven: accessible records cluster around the charge, court appearance, host replacement, and late-January social-media dispute. It cannot establish daily or weekly volume growth.",
+      "The Guardian's separate analysis reported 387 UK national-newspaper print stories mentioning Flack between 2019-08-14 and 2020-02-14, including 99 in The Sun. Those are aggregate counts, not this sample; the Guardian does not provide a daily series or itemized corpus in the article, and the 99 must not be treated as daily volume, 99 negative stories, or a recoverable list of 99 unique Sun headlines.",
+      "The Sun Valentine-card story was reported as published online on 2020-02-14 and later removed/replaced. The exact original article URL was not recovered, so originalURL is null and the headline is attributed only as a reproduced quotation."
+    ],
+    "aggregateContext": {
+      "outlet": "The Sun",
+      "count": 99,
+      "unit": "print stories in which Caroline Flack appeared in headline or body, as reported by The Guardian",
+      "windowStart": "2019-08-14",
+      "windowEnd": "2020-02-14",
+      "sourceURL": "https://www.theguardian.com/tv-and-radio/2020/feb/21/caroline-flack-negative-media-coverage-before-death-revealed",
+      "isDailySeries": false,
+      "isThisSample": false
+    },
+    "auditMethod": {
+      "unit": "One distinct publisher URL / one item, not one mention or story event.",
+      "deduplication": "Canonicalize URLs and remove exact URL duplicates; flag cross-outlet reprints/syndications for review.",
+      "dateRule": "Use first publication/edition date from the publisher or dated archive. Do not substitute last-modified time, event date, or retrospective publication date.",
+      "headlineRule": "Quote exact publisher headline where accessible. Label archive reproductions. Exclude captions/summary wording from exact headline count.",
+      "window": "2019-12-12 through 2020-02-14 inclusive."
+    },
+    "verifiedDatedSampleSize": 24,
+    "exactHeadlinesVerifiedCount": 23,
+    "windowCaveat": "Fixed window 2019-12-12 through 2020-02-14 inclusive; 24 dated rows remain after audit. Two Reddit-only rows and items without adequate support are excluded. A reproduced Sun online headline is retained with its updated secondary-page metadata mismatch stated. The separate 99 Sun print-story aggregate has no daily series.",
+    "outletCounts": {
+      "The Guardian": 3,
+      "ITV News": 6,
+      "The Independent": 9,
+      "LBC": 2,
+      "Sky News": 1,
+      "London Evening Standard": 2,
+      "The Sun": 1
+    },
+    "auditSummary": {
+      "eligibleRows": 24,
+      "uniqueSourceURLs": 24,
+      "excludedAfterAudit": 16,
+      "currentUnavailableRows": 7,
+      "aggregateIsNotSample": true
+    }
+  },
+  "events": [
+    {
+      "id": "incident",
+      "date": "2018-12-08",
+      "label": "Alleged racist incident at Stamford Bridge, reported as an allegation.",
+      "evidenceId": "alleged-abuse"
+    },
+    {
+      "id": "sterling-post",
+      "date": "2018-12-09",
+      "label": "Sterling posts about media portrayals after the alleged incident.",
+      "evidenceId": "representation-comparison"
+    },
+    {
+      "id": "charge",
+      "date": "2019-12-13",
+      "label": "Charged with assault by beating",
+      "status": "A charge/allegation; not a finding of guilt. Flack later pleaded not guilty. No trial verdict is represented here."
+    },
+    {
+      "id": "stepdown",
+      "date": "2019-12-17",
+      "label": "Stepped down from Love Island hosting"
+    },
+    {
+      "id": "replacement",
+      "date": "2019-12-20",
+      "label": "Laura Whitmore confirmed as replacement host"
+    },
+    {
+      "id": "court-eve-distress",
+      "date": "2019-12-22",
+      "label": "Posted that this was the worst time of her life on eve of court appearance",
+      "status": "Her own social post as reported by ITV; avoid treating it as clinical diagnosis."
+    },
+    {
+      "id": "plea",
+      "date": "2019-12-23",
+      "label": "Pleaded not guilty; bail conditions remained; trial set for March 2020",
+      "status": "The alleged assault remained unresolved in this sample."
+    },
+    {
+      "id": "public-strain",
+      "date": "2019-12-24",
+      "label": "Christmas message: said she was taking a social-media break and was not going to be silenced",
+      "status": "ITV News published its report at 22:26 on 24 December. A separate Independent report about her earlier post was published 25 December."
+    },
+    {
+      "id": "bedroom-photo",
+      "date": "2020-01-01",
+      "label": "The Sun published a front-page bedroom photograph/headline",
+      "status": "New Year’s Day edition per later Independent/Guardian reporting; some archives describe the front page as available on New Year’s Eve. Date here is edition date, not necessarily the previous-evening posting time. Guardian later reported the photo showed the result of self-harm; this sensitive context is recorded only to prevent misattributing it to the alleged incident."
+    },
+    {
+      "id": "relationship-rumour",
+      "date": "2020-01-30",
+      "label": "Relationship-breakup reports were challenged; Flack objected to her family's life being treated as entertainment or gossip"
+    },
+    {
+      "id": "valentine-card",
+      "date": "2020-02-14",
+      "label": "The Sun published an online Valentine-card story later removed/replaced",
+      "status": "Headline and date reproduced by later reporting; original page unavailable. No death-causation claim is made."
+    },
+    {
+      "id": "high-court-judgment",
+      "date": "2020-05-01",
+      "label": "High Court grants summary judgment on privacy/copyright claims (outside sample window; retrospective).",
+      "evidenceId": "initial-judgment",
+      "retrospective": true
+    },
+    {
+      "id": "high-court-judgment",
+      "date": "2020-05-01",
+      "label": "High Court grants summary judgment on privacy/copyright claims (outside sample window; retrospective).",
+      "evidenceId": "initial-judgment",
+      "retrospective": true
+    },
+    {
+      "id": "appeal-judgment",
+      "date": "2021-12-02",
+      "label": "Court of Appeal upholds privacy finding for five challenged articles (outside sample window; retrospective).",
+      "evidenceId": "trial-judgment",
+      "retrospective": true
+    },
+    {
+      "id": "appeal-judgment",
+      "date": "2021-12-02",
+      "label": "Court of Appeal upholds privacy finding for five challenged articles (outside sample window; retrospective).",
+      "evidenceId": "trial-judgment",
+      "retrospective": true
+    }
+  ],
+  "headlines": [
+    {
+      "id": "h01",
+      "date": "2019-12-13",
+      "outlet": "The Guardian",
+      "headline": "TV presenter Caroline Flack arrested and charged with assault",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/uk-news/2019/dec/13/caroline-flack-arrested-charged-with-assault-x-factor",
+      "verificationSourceURL": "https://www.theguardian.com/uk-news/2019/dec/13/caroline-flack-arrested-charged-with-assault-x-factor",
+      "sourceURL": "https://www.theguardian.com/uk-news/2019/dec/13/caroline-flack-arrested-charged-with-assault-x-factor",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "charge",
+      "noveltyClaim": "Initial report of the charge in this sample.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page; exact title and date shown.",
+      "url": "https://www.theguardian.com/uk-news/2019/dec/13/caroline-flack-arrested-charged-with-assault-x-factor",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/uk-news/2019/dec/13/caroline-flack-arrested-charged-with-assault-x-factor",
+      "auditNote": null
+    },
+    {
+      "id": "h02",
+      "date": "2019-12-13",
+      "outlet": "ITV News",
+      "headline": "Love Island presenter Caroline Flack charged with assault, police say",
+      "kind": "news",
+      "originalURL": "https://www.itv.com/news/2019-12-13/love-island-presenter-caroline-flack-charged-with-assault-police-say",
+      "verificationSourceURL": "https://www.itv.com/news/2019-12-13/love-island-presenter-caroline-flack-charged-with-assault-police-say",
+      "sourceURL": "https://www.itv.com/news/2019-12-13/love-island-presenter-caroline-flack-charged-with-assault-police-say",
+      "verification": "Previously recovered publisher headline/date retained: Publisher page; exact title and timestamp shown. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "eventId": "charge",
+      "noveltyClaim": "Independent outlet report of the same charge; repeated event, not a second event.",
+      "archiveReproduction": false,
+      "sampleNote": "Previously recovered publisher headline/date retained: Publisher page; exact title and timestamp shown. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "url": "https://www.itv.com/news/2019-12-13/love-island-presenter-caroline-flack-charged-with-assault-police-say",
+      "auditStatus": "unavailable_request_error",
+      "auditedURL": "https://www.itv.com/news/2019-12-13/love-island-presenter-caroline-flack-charged-with-assault-police-say",
+      "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+    },
+    {
+      "id": "h06",
+      "date": "2019-12-16",
+      "outlet": "The Independent",
+      "headline": "Caroline Flack’s boyfriend defends Love Island star amid assault charge",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-arrest-lewis-burton-assault-boyfriend-police-love-island-a9248771.html",
+      "verificationSourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-arrest-lewis-burton-assault-boyfriend-police-love-island-a9248771.html",
+      "sourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-arrest-lewis-burton-assault-boyfriend-police-love-island-a9248771.html",
+      "verification": "Audited publisher metadata gives this headline: “Caroline Flack’s boyfriend defends Love Island star amid assault charge” and publication date 2019-12-16; previous wording/date replaced where different.",
+      "eventId": "charge",
+      "noveltyClaim": "Adds Burton's public response; the charge itself is repeated.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page; title/date and Burton's reported public statement shown.",
+      "url": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-arrest-lewis-burton-assault-boyfriend-police-love-island-a9248771.html",
+      "auditStatus": "publisher_page_title_mismatch",
+      "auditedURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-arrest-lewis-burton-assault-boyfriend-police-love-island-a9248771.html",
+      "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+    },
+    {
+      "id": "h07",
+      "date": "2019-12-17",
+      "outlet": "The Independent",
+      "headline": "Love Island host Caroline Flack arrested after fight with man believed to be boyfriend",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-arrested-fight-boyfriend-love-island-lewis-burton-domestic-abuse-a9245736.html",
+      "verificationSourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-arrested-fight-boyfriend-love-island-lewis-burton-domestic-abuse-a9245736.html",
+      "sourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-arrested-fight-boyfriend-love-island-lewis-burton-domestic-abuse-a9245736.html",
+      "verification": "Audited publisher metadata gives this headline: “Love Island host Caroline Flack arrested after fight with man believed to be boyfriend” and publication date 2019-12-17; previous wording/date replaced where different.",
+      "eventId": "charge",
+      "noveltyClaim": "A later arrest/relationship-framed report repeats the charge; not a new charge event.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page dated 17 December; reports charge already announced on 13 December.",
+      "url": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-arrested-fight-boyfriend-love-island-lewis-burton-domestic-abuse-a9245736.html",
+      "auditStatus": "publisher_page_title_mismatch",
+      "auditedURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-arrested-fight-boyfriend-love-island-lewis-burton-domestic-abuse-a9245736.html",
+      "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+    },
+    {
+      "id": "h08",
+      "date": "2019-12-17",
+      "outlet": "ITV News",
+      "headline": "Love Island host Caroline Flack standing down as host of upcoming series after assault charge",
+      "kind": "news",
+      "originalURL": "https://www.itv.com/news/2019-12-17/caroline-flack-stand-down-host-of-upcoming-series-love-island-after-assault-charge",
+      "verificationSourceURL": "https://www.itv.com/news/2019-12-17/caroline-flack-stand-down-host-of-upcoming-series-love-island-after-assault-charge",
+      "sourceURL": "https://www.itv.com/news/2019-12-17/caroline-flack-stand-down-host-of-upcoming-series-love-island-after-assault-charge",
+      "verification": "Previously recovered publisher headline/date retained: Publisher page; exact title/date and Flack/ITV statements shown. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "eventId": "stepdown",
+      "noveltyClaim": "Reports the distinct employment consequence announced on 17 December.",
+      "archiveReproduction": false,
+      "sampleNote": "Previously recovered publisher headline/date retained: Publisher page; exact title/date and Flack/ITV statements shown. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "url": "https://www.itv.com/news/2019-12-17/caroline-flack-stand-down-host-of-upcoming-series-love-island-after-assault-charge",
+      "auditStatus": "unavailable_request_error",
+      "auditedURL": "https://www.itv.com/news/2019-12-17/caroline-flack-stand-down-host-of-upcoming-series-love-island-after-assault-charge",
+      "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+    },
+    {
+      "id": "h09",
+      "date": "2019-12-17",
+      "outlet": "The Independent",
+      "headline": "Caroline Flack quits as Love Island host after assault charge",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-arrest-assault-charge-replacement-itv2-a9249771.html",
+      "verificationSourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-arrest-assault-charge-replacement-itv2-a9249771.html",
+      "sourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-arrest-assault-charge-replacement-itv2-a9249771.html",
+      "verification": "Audited publisher metadata gives this headline: “Caroline Flack quits as Love Island host after assault charge” and publication date 2019-12-17; previous wording/date replaced where different.",
+      "eventId": "stepdown",
+      "noveltyClaim": "Independent report of the same stepdown event.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page; exact title/date and her statement shown.",
+      "url": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-arrest-assault-charge-replacement-itv2-a9249771.html",
+      "auditStatus": "publisher_page_title_mismatch",
+      "auditedURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-arrest-assault-charge-replacement-itv2-a9249771.html",
+      "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+    },
+    {
+      "id": "h10",
+      "date": "2019-12-17",
+      "outlet": "LBC",
+      "headline": "Caroline Flack quits as Love Island host after assault charge",
+      "kind": "news",
+      "originalURL": "https://www.lbc.co.uk/article/caroline-flack-quits-love-island-host-DWydjr_2/",
+      "verificationSourceURL": "https://www.lbc.co.uk/article/caroline-flack-quits-love-island-host-DWydjr_2/",
+      "sourceURL": "https://www.lbc.co.uk/article/caroline-flack-quits-love-island-host-DWydjr_2/",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "stepdown",
+      "noveltyClaim": "Third outlet report of the same stepdown event.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page; headline/date and reported statement shown.",
+      "url": "https://www.lbc.co.uk/article/caroline-flack-quits-love-island-host-DWydjr_2/",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.lbc.co.uk/article/caroline-flack-quits-love-island-host-DWydjr_2/",
+      "auditNote": null
+    },
+    {
+      "id": "h11",
+      "date": "2019-12-20",
+      "outlet": "The Guardian",
+      "headline": "Laura Whitmore replaces Caroline Flack as Love Island host",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/tv-and-radio/2019/dec/20/laura-whitmore-replaces-caroline-flack-love-island-host",
+      "verificationSourceURL": "https://www.theguardian.com/tv-and-radio/2019/dec/20/laura-whitmore-replaces-caroline-flack-love-island-host",
+      "sourceURL": "https://www.theguardian.com/tv-and-radio/2019/dec/20/laura-whitmore-replaces-caroline-flack-love-island-host",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "replacement",
+      "noveltyClaim": "Reports the distinct replacement-host decision.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page; exact title/date and ITV confirmation reported.",
+      "url": "https://www.theguardian.com/tv-and-radio/2019/dec/20/laura-whitmore-replaces-caroline-flack-love-island-host",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/tv-and-radio/2019/dec/20/laura-whitmore-replaces-caroline-flack-love-island-host",
+      "auditNote": null
+    },
+    {
+      "id": "h12",
+      "date": "2019-12-20",
+      "outlet": "The Independent",
+      "headline": "Laura Whitmore announced as new Love Island presenter after Caroline Flack quits",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/arts-entertainment/tv/news/laura-whitmore-love-island-winter-host-presenter-caroline-flack-itv2-start-date-a9254656.html",
+      "verificationSourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/laura-whitmore-love-island-winter-host-presenter-caroline-flack-itv2-start-date-a9254656.html",
+      "sourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/laura-whitmore-love-island-winter-host-presenter-caroline-flack-itv2-start-date-a9254656.html",
+      "verification": "Audited publisher metadata gives this headline: “Laura Whitmore announced as new Love Island presenter after Caroline Flack quits” and publication date 2019-12-20; previous wording/date replaced where different.",
+      "eventId": "replacement",
+      "noveltyClaim": "Independent report of replacement-host decision.",
+      "archiveReproduction": false,
+      "sampleNote": "Independent publisher page and archive; exact headline and first publication timestamp (20 December 2019, 10:42 GMT) shown. Replaces prior archive-only record.",
+      "url": "https://www.independent.co.uk/arts-entertainment/tv/news/laura-whitmore-love-island-winter-host-presenter-caroline-flack-itv2-start-date-a9254656.html",
+      "auditStatus": "publisher_page_title_mismatch",
+      "auditedURL": "https://www.independent.co.uk/arts-entertainment/tv/news/laura-whitmore-love-island-winter-host-presenter-caroline-flack-itv2-start-date-a9254656.html",
+      "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+    },
+    {
+      "id": "h13",
+      "date": "2019-12-23",
+      "outlet": "ITV News",
+      "headline": "Caroline Flack due in court to face assault charge",
+      "kind": "news",
+      "originalURL": "https://www.itv.com/news/2019-12-23/caroline-flack-due-in-court-to-face-assault-charge",
+      "verificationSourceURL": "https://www.itv.com/news/2019-12-23/caroline-flack-due-in-court-to-face-assault-charge",
+      "sourceURL": "https://www.itv.com/news/2019-12-23/caroline-flack-due-in-court-to-face-assault-charge",
+      "verification": "Previously recovered publisher headline/date retained: Publisher page; exact headline/date and court appearance preview shown. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "eventId": "plea",
+      "noveltyClaim": "Advance coverage of scheduled hearing, before the plea was entered.",
+      "archiveReproduction": false,
+      "sampleNote": "Previously recovered publisher headline/date retained: Publisher page; exact headline/date and court appearance preview shown. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "url": "https://www.itv.com/news/2019-12-23/caroline-flack-due-in-court-to-face-assault-charge",
+      "auditStatus": "unavailable_request_error",
+      "auditedURL": "https://www.itv.com/news/2019-12-23/caroline-flack-due-in-court-to-face-assault-charge",
+      "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+    },
+    {
+      "id": "h14",
+      "date": "2019-12-23",
+      "outlet": "The Independent",
+      "headline": "Former Love Island presenter Caroline Flack pleads not guilty to assaulting her boyfriend",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/news/uk/crime/caroline-flack-court-assault-charge-not-guilty-lewis-burton-boyfriend-a9257746.html",
+      "verificationSourceURL": "https://www.independent.co.uk/news/uk/crime/caroline-flack-court-assault-charge-not-guilty-lewis-burton-boyfriend-a9257746.html",
+      "sourceURL": "https://www.independent.co.uk/news/uk/crime/caroline-flack-court-assault-charge-not-guilty-lewis-burton-boyfriend-a9257746.html",
+      "verification": "Audited publisher metadata gives this headline: “Former Love Island presenter Caroline Flack pleads not guilty to assaulting her boyfriend” and publication date 2019-12-23; previous wording/date replaced where different.",
+      "eventId": "plea",
+      "noveltyClaim": "Reports plea and bail outcome; distinguishes allegation from plea.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page; exact title/date and not-guilty plea shown. Alleged details remain allegations/prosecution account.",
+      "url": "https://www.independent.co.uk/news/uk/crime/caroline-flack-court-assault-charge-not-guilty-lewis-burton-boyfriend-a9257746.html",
+      "auditStatus": "publisher_page_title_mismatch",
+      "auditedURL": "https://www.independent.co.uk/news/uk/crime/caroline-flack-court-assault-charge-not-guilty-lewis-burton-boyfriend-a9257746.html",
+      "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+    },
+    {
+      "id": "h15",
+      "date": "2019-12-23",
+      "outlet": "Sky News",
+      "headline": "Caroline Flack denies attacking boyfriend with lamp",
+      "kind": "news",
+      "originalURL": "https://news.sky.com/story/caroline-flack-pleads-not-guilty-to-assault-charge-11893941",
+      "verificationSourceURL": "https://news.sky.com/story/caroline-flack-pleads-not-guilty-to-assault-charge-11893941",
+      "sourceURL": "https://news.sky.com/story/caroline-flack-pleads-not-guilty-to-assault-charge-11893941",
+      "verification": "Previously recovered publisher headline/date retained: Publisher page; exact headline/date and not-guilty plea shown. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "eventId": "plea",
+      "noveltyClaim": "Another report of the plea; headline foregrounds the alleged instrument.",
+      "archiveReproduction": false,
+      "sampleNote": "Previously recovered publisher headline/date retained: Publisher page; exact headline/date and not-guilty plea shown. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "url": "https://news.sky.com/story/caroline-flack-pleads-not-guilty-to-assault-charge-11893941",
+      "auditStatus": "unavailable_http",
+      "auditedURL": "https://news.sky.com/story/caroline-flack-pleads-not-guilty-to-assault-charge-11893941",
+      "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+    },
+    {
+      "id": "h17",
+      "date": "2019-12-25",
+      "outlet": "The Independent",
+      "headline": "Caroline Flack says she 'has a story to tell' after pleading not guilty to assault",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-assault-boyfriend-not-guilty-lewis-burton-love-island-latest-a9259891.html",
+      "verificationSourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-assault-boyfriend-not-guilty-lewis-burton-love-island-latest-a9259891.html",
+      "sourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-assault-boyfriend-not-guilty-lewis-burton-love-island-latest-a9259891.html",
+      "verification": "Audited publisher metadata gives this headline: “Caroline Flack says she 'has a story to tell' after pleading not guilty to assault” and publication date 2019-12-25; previous wording/date replaced where different.",
+      "eventId": "public-strain",
+      "noveltyClaim": "Reports her public response and stated distress after the hearing.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page; exact title/date and Instagram statement shown. The post itself was published on 24 December; this article is dated 25 December.",
+      "url": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-assault-boyfriend-not-guilty-lewis-burton-love-island-latest-a9259891.html",
+      "auditStatus": "publisher_page_title_mismatch",
+      "auditedURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-assault-boyfriend-not-guilty-lewis-burton-love-island-latest-a9259891.html",
+      "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+    },
+    {
+      "id": "h19",
+      "date": "2020-01-30",
+      "outlet": "The Independent",
+      "headline": "Caroline Flack breaks social media silence to say her life is ‘no longer up for gossip’",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-relationship-assault-gossip-a9309481.html",
+      "verificationSourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-relationship-assault-gossip-a9309481.html",
+      "sourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-relationship-assault-gossip-a9309481.html",
+      "verification": "Audited publisher metadata gives this headline: “Caroline Flack breaks social media silence to say her life is ‘no longer up for gossip’” and publication date 2020-01-30; previous wording/date replaced where different.",
+      "eventId": "relationship-rumour",
+      "noveltyClaim": "Reports Flack's objection to gossip coverage amid breakup reports.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page; exact headline/date and post reproduced.",
+      "url": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-relationship-assault-gossip-a9309481.html",
+      "auditStatus": "publisher_page_title_mismatch",
+      "auditedURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-relationship-assault-gossip-a9309481.html",
+      "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+    },
+    {
+      "id": "h20",
+      "date": "2020-01-30",
+      "outlet": "London Evening Standard",
+      "headline": "Caroline Flack and Lewis Burton hit back at split reports",
+      "kind": "news",
+      "originalURL": "https://www.standard.co.uk/showbiz/celebrity-news/caroline-flack-lewis-burton-split-denial-a4348661.html",
+      "verificationSourceURL": "https://www.standard.co.uk/showbiz/celebrity-news/caroline-flack-lewis-burton-split-denial-a4348661.html",
+      "sourceURL": "https://www.standard.co.uk/showbiz/celebrity-news/caroline-flack-lewis-burton-split-denial-a4348661.html",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "relationship-rumour",
+      "noveltyClaim": "Corrective report of a rumour and denial; not evidence a breakup occurred.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page; exact title/date and Burton's denial are reported.",
+      "url": "https://www.standard.co.uk/showbiz/celebrity-news/caroline-flack-lewis-burton-split-denial-a4348661.html",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.standard.co.uk/showbiz/celebrity-news/caroline-flack-lewis-burton-split-denial-a4348661.html",
+      "auditNote": null
+    },
+    {
+      "id": "h21",
+      "date": "2020-02-14",
+      "outlet": "The Sun",
+      "headline": "The Sun removes article about Valentine's Day card mocking Caroline Flack",
+      "kind": "news",
+      "originalURL": null,
+      "verificationSourceURL": "https://www.independent.co.uk/news/media/tv-radio/caroline-flack-death-sun-valentines-day-card-lewis-burton-assault-charge-a9337756.html",
+      "sourceURL": "https://www.independent.co.uk/news/media/tv-radio/caroline-flack-death-sun-valentines-day-card-lewis-burton-assault-charge-a9337756.html",
+      "verification": "Previously recovered report text quotes this Sun online headline and dates the original online item to 14 February. The public GET audit now sees the secondary article updated to a 16 February removal headline; original Sun URL was not recovered. This is reproduced wording, not current publisher-page headline metadata.",
+      "eventId": "valentine-card",
+      "noveltyClaim": "A new mocking-card item on 14 February; distinct from the 2019 alleged incident, though it echoes the lamp allegation.",
+      "archiveReproduction": true,
+      "sampleNote": "Previously recovered report text quotes this Sun online headline and dates the original online item to 14 February. The public GET audit now sees the secondary article updated to a 16 February removal headline; original Sun URL was not recovered. This is reproduced wording, not current publisher-page headline metadata.",
+      "url": "https://www.independent.co.uk/news/media/tv-radio/caroline-flack-death-sun-valentines-day-card-lewis-burton-assault-charge-a9337756.html",
+      "auditStatus": "publisher_page_title_mismatch",
+      "auditedURL": "https://www.independent.co.uk/news/media/tv-radio/caroline-flack-death-sun-valentines-day-card-lewis-burton-assault-charge-a9337756.html",
+      "auditNote": "Current audit page title is “The Sun removes article about Valentine’s Day card mocking Caroline Flack” and its page metadata date is 16 February. Previously recovered body text quotes the original online headline and dates the item 14 February; original Sun URL is unavailable. Treat this as reproduced historical wording, not current publisher-page headline metadata."
+    },
+    {
+      "id": "h22",
+      "date": "2019-12-21",
+      "outlet": "The Independent",
+      "headline": "Caroline Flack breaks silence after being replaced as host of Love Island",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-2020-winter-laura-whitmore-presenter-assault-lewis-burton-a9256096.html",
+      "verificationSourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-2020-winter-laura-whitmore-presenter-assault-lewis-burton-a9256096.html",
+      "sourceURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-2020-winter-laura-whitmore-presenter-assault-lewis-burton-a9256096.html",
+      "verification": "Audited publisher metadata gives this headline: “Caroline Flack breaks silence after being replaced as host of Love Island” and publication date 2019-12-21; previous wording/date replaced where different.",
+      "eventId": "replacement",
+      "noveltyClaim": "Adds Flack’s response after the replacement decision; the appointment itself is not new.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page; exact title and first publication timestamp (21 December 2019, 12:31 GMT) shown. Reports her statement after replacement.",
+      "url": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-2020-winter-laura-whitmore-presenter-assault-lewis-burton-a9256096.html",
+      "auditStatus": "publisher_page_title_mismatch",
+      "auditedURL": "https://www.independent.co.uk/arts-entertainment/tv/news/caroline-flack-love-island-2020-winter-laura-whitmore-presenter-assault-lewis-burton-a9256096.html",
+      "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+    },
+    {
+      "id": "h23",
+      "date": "2019-12-22",
+      "outlet": "ITV News",
+      "headline": "Caroline Flack writes emotional Instagram post on eve of court appearance",
+      "kind": "news",
+      "originalURL": "https://www.itv.com/news/2019-12-22/caroline-flack-writes-emotional-instagram-post-on-eve-of-court-appearance",
+      "verificationSourceURL": "https://www.itv.com/news/2019-12-22/caroline-flack-writes-emotional-instagram-post-on-eve-of-court-appearance",
+      "sourceURL": "https://www.itv.com/news/2019-12-22/caroline-flack-writes-emotional-instagram-post-on-eve-of-court-appearance",
+      "verification": "Previously recovered publisher headline/date retained: ITV publisher page; exact title and date shown. Reports her post that this was the worst time of her life and that she did not know where to go or who to trust. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "eventId": "court-eve-distress",
+      "noveltyClaim": "Reports a distinct pre-hearing statement, one day before the plea hearing.",
+      "archiveReproduction": false,
+      "sampleNote": "Previously recovered publisher headline/date retained: ITV publisher page; exact title and date shown. Reports her post that this was the worst time of her life and that she did not know where to go or who to trust. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "url": "https://www.itv.com/news/2019-12-22/caroline-flack-writes-emotional-instagram-post-on-eve-of-court-appearance",
+      "auditStatus": "unavailable_request_error",
+      "auditedURL": "https://www.itv.com/news/2019-12-22/caroline-flack-writes-emotional-instagram-post-on-eve-of-court-appearance",
+      "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+    },
+    {
+      "id": "h24",
+      "date": "2019-12-23",
+      "outlet": "ITV News",
+      "headline": "Love Island presenter Caroline Flack pleads not guilty to assault",
+      "kind": "news",
+      "originalURL": "https://www.itv.com/news/2019-12-23/caroline-flack-pleads-not-guilty-to-assault",
+      "verificationSourceURL": "https://www.itv.com/news/2019-12-23/caroline-flack-pleads-not-guilty-to-assault",
+      "sourceURL": "https://www.itv.com/news/2019-12-23/caroline-flack-pleads-not-guilty-to-assault",
+      "verification": "Previously recovered publisher headline/date retained: ITV publisher page; exact title and timestamp (11:17am) shown. Reports the plea and separately attributes the prosecution account and Burton’s position to the court. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "eventId": "plea",
+      "noveltyClaim": "ITV court-day report of the plea, distinct from its advance court listing.",
+      "archiveReproduction": false,
+      "sampleNote": "Previously recovered publisher headline/date retained: ITV publisher page; exact title and timestamp (11:17am) shown. Reports the plea and separately attributes the prosecution account and Burton’s position to the court. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "url": "https://www.itv.com/news/2019-12-23/caroline-flack-pleads-not-guilty-to-assault",
+      "auditStatus": "unavailable_request_error",
+      "auditedURL": "https://www.itv.com/news/2019-12-23/caroline-flack-pleads-not-guilty-to-assault",
+      "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+    },
+    {
+      "id": "h25",
+      "date": "2019-12-23",
+      "outlet": "The Guardian",
+      "headline": "TV presenter Caroline Flack pleads not guilty to assaulting boyfriend",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/uk-news/2019/dec/23/love-island-presenter-caroline-flack-pleads-not-guilty-to-assaulting-boyfriend",
+      "verificationSourceURL": "https://www.theguardian.com/uk-news/2019/dec/23/love-island-presenter-caroline-flack-pleads-not-guilty-to-assaulting-boyfriend",
+      "sourceURL": "https://www.theguardian.com/uk-news/2019/dec/23/love-island-presenter-caroline-flack-pleads-not-guilty-to-assaulting-boyfriend",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "plea",
+      "noveltyClaim": "Guardian court-day report of the plea; event repetition, not new event.",
+      "archiveReproduction": false,
+      "sampleNote": "Guardian publisher page; first published 06:26 GMT on 23 December (later updated 12:32 GMT). The not-guilty plea and contested prosecution assertions are distinguished in the body.",
+      "url": "https://www.theguardian.com/uk-news/2019/dec/23/love-island-presenter-caroline-flack-pleads-not-guilty-to-assaulting-boyfriend",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/uk-news/2019/dec/23/love-island-presenter-caroline-flack-pleads-not-guilty-to-assaulting-boyfriend",
+      "auditNote": null
+    },
+    {
+      "id": "h26",
+      "date": "2019-12-24",
+      "outlet": "ITV News",
+      "headline": "Caroline Flack says ‘I’m not going to be silenced’ as she goes on social media break after not guilty plea",
+      "kind": "news",
+      "originalURL": "https://www.itv.com/news/2019-12-24/love-islands-caroline-flack-announces-social-media-break",
+      "verificationSourceURL": "https://www.itv.com/news/2019-12-24/love-islands-caroline-flack-announces-social-media-break",
+      "sourceURL": "https://www.itv.com/news/2019-12-24/love-islands-caroline-flack-announces-social-media-break",
+      "verification": "Previously recovered publisher headline/date retained: ITV publisher page; exact headline and timestamp (22:26, 24 December) shown. Covers the Christmas post, her stated scrutiny/speculation, and the not-guilty plea. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "eventId": "public-strain",
+      "noveltyClaim": "Primary dated coverage of the Christmas post and her stated social-media break.",
+      "archiveReproduction": false,
+      "sampleNote": "Previously recovered publisher headline/date retained: ITV publisher page; exact headline and timestamp (22:26, 24 December) shown. Covers the Christmas post, her stated scrutiny/speculation, and the not-guilty plea. Current source audit: Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed. No alternate URL or access restriction was bypassed.",
+      "url": "https://www.itv.com/news/2019-12-24/love-islands-caroline-flack-announces-social-media-break",
+      "auditStatus": "unavailable_request_error",
+      "auditedURL": "https://www.itv.com/news/2019-12-24/love-islands-caroline-flack-announces-social-media-break",
+      "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+    },
+    {
+      "id": "h27",
+      "date": "2019-12-25",
+      "outlet": "London Evening Standard",
+      "headline": "Flack boyfriend 'gutted' he couldn't share Christmas with star",
+      "kind": "news",
+      "originalURL": "https://www.standard.co.uk/showbiz/celebrity-news/caroline-flack-lewis-burton-christmas-a4321371.html",
+      "verificationSourceURL": "https://www.standard.co.uk/showbiz/celebrity-news/caroline-flack-lewis-burton-christmas-a4321371.html",
+      "sourceURL": "https://www.standard.co.uk/showbiz/celebrity-news/caroline-flack-lewis-burton-christmas-a4321371.html",
+      "verification": "Audited publisher metadata gives this headline: “Flack boyfriend 'gutted' he couldn't share Christmas with star” and publication date 2019-12-25; previous wording/date replaced where different.",
+      "eventId": "plea",
+      "noveltyClaim": "A relationship-focused Christmas update following the court’s bail decision.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page; headline/date and Burton’s reported comments shown. Article date is 25 December; court bail restrictions are described as restrictions, not a finding on guilt.",
+      "url": "https://www.standard.co.uk/showbiz/celebrity-news/caroline-flack-lewis-burton-christmas-a4321371.html",
+      "auditStatus": "publisher_page_title_mismatch",
+      "auditedURL": "https://www.standard.co.uk/showbiz/celebrity-news/caroline-flack-lewis-burton-christmas-a4321371.html",
+      "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+    },
+    {
+      "id": "h28",
+      "date": "2020-01-01",
+      "outlet": "LBC",
+      "headline": "Caroline Flack’s boyfriend denies “blood” on stained bed is his",
+      "kind": "news",
+      "originalURL": "https://www.lbc.co.uk/article/caroline-flacks-boyfriend-denies-blood-on-stained-DWydZb_2/",
+      "verificationSourceURL": "https://www.lbc.co.uk/article/caroline-flacks-boyfriend-denies-blood-on-stained-DWydZb_2/",
+      "sourceURL": "https://www.lbc.co.uk/article/caroline-flacks-boyfriend-denies-blood-on-stained-DWydZb_2/",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "bedroom-photo",
+      "noveltyClaim": "Follow-up response to the circulated bedroom photographs; distinct LBC reporting, not a second Sun headline.",
+      "archiveReproduction": false,
+      "sampleNote": "LBC publisher page; exact title/date shown. Story refers to photographs published by The Sun and attributes Burton’s response.",
+      "url": "https://www.lbc.co.uk/article/caroline-flacks-boyfriend-denies-blood-on-stained-DWydZb_2/",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.lbc.co.uk/article/caroline-flacks-boyfriend-denies-blood-on-stained-DWydZb_2/",
+      "auditNote": null
+    },
+    {
+      "id": "h29",
+      "date": "2020-01-30",
+      "outlet": "The Independent",
+      "headline": "Caroline Flack's boyfriend speaks out over split claims",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/life-style/love-sex/caroline-flack-lewis-burton-together-split-assault-charge-a9309121.html",
+      "verificationSourceURL": "https://www.independent.co.uk/life-style/love-sex/caroline-flack-lewis-burton-together-split-assault-charge-a9309121.html",
+      "sourceURL": "https://www.independent.co.uk/life-style/love-sex/caroline-flack-lewis-burton-together-split-assault-charge-a9309121.html",
+      "verification": "Audited publisher metadata gives this headline: “Caroline Flack's boyfriend speaks out over split claims” and publication date 2020-01-30; previous wording/date replaced where different.",
+      "eventId": "relationship-rumour",
+      "noveltyClaim": "A separate Independent report of the same-day denial; overlaps with h20 and h19, so retain only if outlet-specific URL units are counted.",
+      "archiveReproduction": false,
+      "sampleNote": "Publisher page; exact title and timestamp (08:18 GMT, 30 January) shown; reports Burton’s Instagram denial of split reports.",
+      "url": "https://www.independent.co.uk/life-style/love-sex/caroline-flack-lewis-burton-together-split-assault-charge-a9309121.html",
+      "auditStatus": "publisher_page_title_mismatch",
+      "auditedURL": "https://www.independent.co.uk/life-style/love-sex/caroline-flack-lewis-burton-together-split-assault-charge-a9309121.html",
+      "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+    }
+  ],
+  "waveAssessment": {
+    "finding": "This recovered sample can show event-linked clusters in the retrievable headlines, especially 13–23 December, then isolated January coverage and the 14 February card story. It cannot calculate when total volume grew, quantify the growth, or prove a wave from the aggregate 99 count.",
+    "candidateWaves": [
+      {
+        "dates": "2019-12-13 to 2019-12-17",
+        "events": [
+          "charge",
+          "stepdown"
+        ],
+        "sampleObservation": "Charge reports appear on 13 and again on 16–17 December; by 17 December several outlets report Flack stepping down. This is clear event-linked repetition in the sample, but not a daily volume curve."
+      },
+      {
+        "dates": "2019-12-20 to 2019-12-25",
+        "events": [
+          "replacement",
+          "plea",
+          "public-strain"
+        ],
+        "sampleObservation": "Replacement coverage on 20–21 December is followed by court-day reports on 23 December and the Christmas social-media reports on 24–25 December. This recovered sample shows event-linked repetition, not whether total output peaked then."
+      },
+      {
+        "dates": "2020-01-01",
+        "events": [
+          "bedroom-photo"
+        ],
+        "sampleObservation": "The reproduced Sun New Year’s Day edition headline/photo and LBC follow-up form a discrete attention-spike candidate after the first hearing. New Year’s Eve references may describe advance availability, not the 1 January edition date; there is no day-by-day denominator."
+      },
+      {
+        "dates": "2020-01-30",
+        "events": [
+          "relationship-rumour"
+        ],
+        "sampleObservation": "Multiple reports revisit the relationship and split rumours on one day; the Independent documents Flack's objection to gossip. This suggests recurrence, not a sustained volume trend."
+      },
+      {
+        "dates": "2020-02-14",
+        "events": [
+          "valentine-card"
+        ],
+        "sampleObservation": "A separate Sun online card story was published on the final day of the Guardian print-analysis window. The online publication is not confirmed as one of the 99 Sun print stories."
+      }
+    ]
+  },
+  "editorialReview": {
+    "criteria": {
+      "public_value": "Did the item explain a matter of legitimate public interest (the charge, court process, employment decision, or institutional response), or mainly exploit celebrity attention?",
+      "context": "Did it distinguish arrest, charge, allegation, plea, evidence and verdict; include the denial/not-guilty status; and avoid presenting contested prosecution claims as established facts?",
+      "framing": "Did its headline and imagery add relevant information, or sensationalize, ridicule, sexualize, or imply guilt beyond what was established?",
+      "care": "Did it account for privacy, vulnerability, distress and foreseeable impact, especially around highly personal or graphic material?",
+      "consistency": "Did it use the same evidential standards and fairness given to comparable people/cases, including when the subject was a famous woman and when the story later became criticism of the press?",
+      "transparency": "Did it name sources, separate fact from allegation, seek or clearly report a response, and explain corrections, removal or changed context?"
+    },
+    "observations": [
+      {
+        "criterion": "public_value",
+        "observation": "The charge, stepdown, replacement and plea had public relevance because they changed a national television programme and involved court proceedings. Repeated celebrity/relationship updates and a mocking card offered weaker public-interest justification in the sampled headlines."
+      },
+      {
+        "criterion": "context",
+        "observation": "ITV's 17 December report included Flack's statement that matters were not as reported; several court reports explicitly recorded the not-guilty plea and Burton's position. Headlines using 'lamp' or vivid court imagery could nevertheless make a disputed account feel settled. No verdict is in this corpus."
+      },
+      {
+        "criterion": "framing",
+        "observation": "Neutral procedural formulations coexist with wordplay ('Caroline whack!'), 'lover' language, 'denies ... with lamp', and 'bedroom bloodbath'. These choices shift attention from the limited procedural fact to culpability, intimacy or spectacle."
+      },
+      {
+        "criterion": "care",
+        "observation": "The 25 December headline repeats Flack's own statement of strain, while 30 January records her objection to gossip. The reproduced Sun bedroom image/headline and Valentine-card headline raise sharper privacy and dignity concerns. This review makes no claim that any individual item caused her death."
+      },
+      {
+        "criterion": "consistency",
+        "observation": "This small, single-subject sample cannot support a matched-case comparison. The Guardian's aggregate finds 99 Sun print mentions and reports tone categories, but that method does not establish a daily curve or whether every sampled online item belonged to the print corpus."
+      },
+      {
+        "criterion": "transparency",
+        "observation": "Publisher pages provide strong traceability for mainstream reports. The removed Sun card story and recovered Sun front-page wording rely on later reproductions, so the original article text, URL, corrections and full contemporaneous context remain unavailable here."
+      }
+    ],
+    "rolePlayedOutletDefences": [
+      {
+        "outlet": "The Sun (role-play, not an actual statement)",
+        "basis": "Reproduced Sun headlines in later reporting and the Guardian's aggregate analysis.",
+        "text": "We reported on an arrest and a court case involving a presenter at the centre of a major television programme. The charge, the court hearing and her departure from Love Island were matters readers were already following. We would say that the New Year photograph was part of reporting what the court had heard, and that the Valentine card was a newsworthy example of the public conversation around the case. We should still answer whether the image and joke added necessary information, whether their presentation implied guilt, and whether we gave Flack a fair chance to respond."
+      },
+      {
+        "outlet": "The Independent (role-play, not an actual statement)",
+        "basis": "Sampled Independent reports include Burton's response, the stepdown, plea, Christmas post and January objection to gossip.",
+        "text": "We covered the legal process and the consequences for Love Island, and we reported both the not-guilty plea and Burton's public support. We also covered Flack's own words when she said she had a story to tell and later objected to her family's life becoming entertainment. We would defend those as relevant updates, while reviewing whether reporting repeatedly on relationship rumours enlarged the very gossip she was asking the press to stop."
+      },
+      {
+        "outlet": "ITV News (role-play, not an actual statement)",
+        "basis": "Sampled ITV items report the charge, stepdown and scheduled court appearance.",
+        "text": "We reported on a presenter who worked on our programme, the change in the winter series, and a public court appearance. Our 17 December report included Flack's statement that matters were not as reported and quoted ITV's decision to remain in contact. We would say the audience needed clear information about who would host the show. We should also acknowledge the institutional relationship and take care that programme news does not crowd out her stated position or turn a legal allegation into a programme promotion."
+      },
+      {
+        "outlet": "The Guardian (role-play, not an actual statement)",
+        "basis": "Sampled Guardian reports cover the charge, host replacement and subsequent aggregate analysis of print coverage.",
+        "text": "We reported the charge as a charge, then the decision to replace the host, and later examined the scale and tone of newspaper coverage. Our later analysis stated its limits: the sample was not definitive, and neutral stories formed the majority. We would defend scrutiny of both the legal story and press treatment as public-interest reporting. We should keep the 99 Sun print mentions separate from online items and avoid suggesting that a count or tone classification proves causation."
+      }
+    ]
+  },
+  "imageShortlist": [
+    {
+      "title": "Caroline Flack at a 2012 Edinburgh event",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Caroline_Flack.jpg",
+      "exactImageURL": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Caroline_Flack.jpg",
+      "author": "Scottish Beauty Blog",
+      "date": "2012-06-15",
+      "description": "Event portrait; file page records the image as a cropped Flickr upload.",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+      "dimensions": "418 × 564",
+      "metadataSource": "https://commons.wikimedia.org/wiki/File:Caroline_Flack.jpg",
+      "metadataVerified": "Commons file page lists author, date, source, dimensions and CC BY 2.0; original image direct URL was obtained from its file-history link, though browser fetch was cache-blocked.",
+      "useNote": "Attribution required; note any crop or edit. Verify image suitability in normal browser before use."
+    },
+    {
+      "title": "Caroline Flack at the 2013 BAFTA Awards",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Caroline_Flack_at_the_2013_BAFTA_awards.jpg",
+      "exactImageURL": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Caroline_Flack_at_the_2013_BAFTA_awards.jpg",
+      "author": "Sean Reynolds",
+      "date": "2013-02-10",
+      "description": "Portrait at the 2013 BAFTA Awards.",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+      "dimensions": "683 × 1,024",
+      "metadataSource": "https://commons.wikimedia.org/wiki/File:Caroline_Flack_at_the_2013_BAFTA_awards.jpg",
+      "metadataVerified": "Commons page lists Sean Reynolds, capture date, Flickr source, dimensions and CC BY 2.0; direct-file URL verified from the file-page link (fetch returned cache miss).",
+      "useNote": "Attribution required; identify the event/date accurately. Verify the direct image URL before production use."
+    },
+    {
+      "title": "Caroline Flack at the 2013 BAFTAs (alternate portrait)",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Caroline_Flack_(8464847622).jpg",
+      "exactImageURL": "https://upload.wikimedia.org/wikipedia/commons/7/79/Caroline_Flack_%288464847622%29.jpg",
+      "author": "Sean Reynolds (Flickr account: Little Miss Iz)",
+      "date": "2013-02-10",
+      "description": "Portrait of Caroline Flack; Commons categorizes the image under the 2013 BAFTA Awards.",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+      "dimensions": "683 × 1,024",
+      "metadataSource": "https://commons.wikimedia.org/wiki/File:Caroline_Flack_(8464847622).jpg",
+      "metadataVerified": "Commons page lists author, capture date, Flickr source, dimensions and a 2020 license review. Direct original-file link was present on the file page; browser fetch was cache-blocked.",
+      "useNote": "Attribution required. Prefer one of the two distinct BAFTA images according to layout; verify no duplicate use."
+    }
+  ],
+  "sourceGaps": [
+    "No complete headline archive or itemized Guardian dataset was located; exact 99-item reconstruction is out of scope and unsupported.",
+    "Coverage after 14 February is intentionally excluded from the headline sample, including the death announcement and post-death commentary.",
+    "Commons direct-image fetches returned cache misses. File-page metadata and the page's direct-file links were inspected; no images were downloaded.",
+    "The Independent documentary quotes “Caroline held for beating up lover” (Daily Star) and “Caroline whack!” (The Sun) while describing the 13 December charge, but it does not establish those print items’ publication/edition date. They are preserved separately as undated reproductions and excluded from the dated timeline.",
+    "The BBC mirror records were removed because BBC primary pages were inaccessible in this retrieval pass and the mirror was not a sufficiently authoritative verification source.",
+    "The Sun’s New Year’s Day headline is reproduced by later reporting; 31 December references appear to describe the paper being available/covered on New Year’s Eve, while the Independent/Guardian retrospective identifies the edition as 1 January. Exact original Sun page not recovered.",
+    "The 24 December ITV front-page roundup corroborates that Sun and Daily Star covered Flack’s court appearance, but its headline is about the Queen’s Christmas message; it is not counted as a Flack headline.",
+    "The 18 December Sun front-page item is retained only as a dated archive caption, not an exact transcription of its printed headline; excluded from exact-headline count.",
+    "The Guardian removal report is dated 15 February and falls outside the fixed window; used only to corroborate the Sun online story’s 14 February publication and subsequent removal."
+  ],
+  "excludedRows": [
+    {
+      "case": "flack",
+      "id": "h18",
+      "date": "2020-01-01",
+      "outlet": "The Sun",
+      "headline": "Flack’s bedroom bloodbath",
+      "reason": "Citation resolved to retrospective page metadata from 2021, not an independently recovered original Sun headline; excluded from the dated headline sample.",
+      "auditStatus": "publisher_page_title_mismatch",
+      "url": "https://www.theguardian.com/tv-and-radio/2021/mar/12/caroline-flack-film-explores-medias-role-in-tv-stars-death"
+    },
+    {
+      "case": "flack",
+      "id": "h31",
+      "date": "2019-12-14",
+      "outlet": "Daily Star",
+      "headline": "Caroline Smack",
+      "reason": "No matching publisher/court-source audit record; excluded as unsupported or Reddit-only.",
+      "auditStatus": null,
+      "url": null
+    },
+    {
+      "case": "sterling",
+      "id": "sterling-h03",
+      "date": "2018-05-30",
+      "outlet": "The Independent",
+      "headline": "Raheem Sterling gun tattoo: Football Association stands with ‘honest and heartfelt’ England forward over furore",
+      "reason": "Recorded page returned 404 and no previously verified archive/primary headline record supports this row; excluded.",
+      "auditStatus": "unavailable_http",
+      "url": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-gun-tattoo-football-association-fa-honest-heartfelt-england-forward-a8375101.html"
+    },
+    {
+      "case": "markle-letter",
+      "id": "markle-letter-h02",
+      "date": "2019-02-10",
+      "outlet": "MailOnline",
+      "headline": "Meghan Markle urged her father to stop “painful” attacks on Prince Harry in five-page letter",
+      "reason": "Court PDF was reachable but the exact headline was not found; excluded.",
+      "auditStatus": "pdf_reachable_headline_not_found",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-judgment-021221.pdf"
+    },
+    {
+      "case": "markle-letter",
+      "id": "markle-letter-h03",
+      "date": "2019-02-11",
+      "outlet": "The Guardian",
+      "headline": "Meghan considers legal action over publication of letter to her father",
+      "reason": "Recorded verification URL pointed to a generic or unrelated court-summary page rather than this headline; excluded pending source-specific verification.",
+      "auditStatus": "publisher_page_title_mismatch",
+      "url": "https://www.theguardian.com/uk-news/2019/oct/02/why-is-meghan-suing-the-mail-on-sunday"
+    },
+    {
+      "case": "markle-letter",
+      "id": "markle-letter-h04",
+      "date": "2019-02-11",
+      "outlet": "The Independent",
+      "headline": "Meghan Markle’s father shares letter she sent him before royal wedding",
+      "reason": "Recorded verification URL pointed to a generic or unrelated court-summary page rather than this headline; excluded pending source-specific verification.",
+      "auditStatus": "pdf_reachable_headline_not_found",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf"
+    },
+    {
+      "case": "markle-letter",
+      "id": "markle-letter-h05",
+      "date": "2019-02-12",
+      "outlet": "The Guardian",
+      "headline": "Meghan’s father says he hopes to see his daughter again after letter published",
+      "reason": "Recorded verification URL pointed to a generic or unrelated court-summary page rather than this headline; excluded pending source-specific verification.",
+      "auditStatus": "publisher_page_title_mismatch",
+      "url": "https://www.theguardian.com/uk-news/2019/oct/02/why-is-meghan-suing-the-mail-on-sunday"
+    },
+    {
+      "case": "markle-letter",
+      "id": "markle-letter-h06",
+      "date": "2019-02-13",
+      "outlet": "The Independent",
+      "headline": "Meghan Markle is considering legal action over letter published by Mail on Sunday",
+      "reason": "Recorded verification URL pointed to a generic or unrelated court-summary page rather than this headline; excluded pending source-specific verification.",
+      "auditStatus": "publisher_page_title_mismatch",
+      "url": "https://www.theguardian.com/uk-news/2019/oct/02/why-is-meghan-suing-the-mail-on-sunday"
+    },
+    {
+      "case": "markle-letter",
+      "id": "markle-letter-h07",
+      "date": "2019-02-14",
+      "outlet": "The Guardian",
+      "headline": "Meghan Markle’s father says letter shows she “broke his heart”",
+      "reason": "Recorded page returned 404 and no previously verified archive/primary headline record supports this row; excluded.",
+      "auditStatus": "unavailable_http",
+      "url": "https://www.theguardian.com/uk-news/2019/feb/14/thomas-markle-meghan-letter-mail-on-sunday"
+    },
+    {
+      "case": "markle-letter",
+      "id": "markle-letter-h08",
+      "date": "2019-02-15",
+      "outlet": "The Independent",
+      "headline": "Meghan Markle’s father says she “broke my heart” in response to letter",
+      "reason": "Recorded page returned 404 and no previously verified archive/primary headline record supports this row; excluded.",
+      "auditStatus": "unavailable_http",
+      "url": "https://www.independent.co.uk/news/uk/home-news/meghan-markle-father-letter-thomas-markle-mail-on-sunday-a8777981.html"
+    },
+    {
+      "case": "markle-letter",
+      "id": "markle-letter-h09",
+      "date": "2019-02-16",
+      "outlet": "The Guardian",
+      "headline": "Meghan’s father says she never returned his calls after wedding",
+      "reason": "Recorded page returned 404 and no previously verified archive/primary headline record supports this row; excluded.",
+      "auditStatus": "unavailable_http",
+      "url": "https://www.theguardian.com/uk-news/2019/feb/16/thomas-markle-meghan-phone-calls-wedding"
+    },
+    {
+      "case": "jefferies",
+      "id": "jefferies-h08",
+      "date": "2011-07-29",
+      "outlet": "The Guardian",
+      "headline": "Eight newspapers pay libel damages to Christopher Jefferies",
+      "reason": "Recorded page returned 404 and no previously verified archive/primary headline record supports this row; excluded.",
+      "auditStatus": "unavailable_http",
+      "url": "https://www.theguardian.com/media/2011/jul/29/eight-newspapers-libel-damages-christopher-jefferies"
+    },
+    {
+      "case": "jefferies",
+      "id": "jefferies-h10",
+      "date": "2011-11-28",
+      "outlet": "The Independent",
+      "headline": "Chris Jefferies faced ‘witch-hunt’",
+      "reason": "Recorded page returned 404 and no previously verified archive/primary headline record supports this row; excluded.",
+      "auditStatus": "unavailable_http",
+      "url": "https://www.independent.co.uk/news/media/press/chris-jefferies-faced-witchhunt-626905.html"
+    },
+    {
+      "id": "h32",
+      "date": "2019-12-18",
+      "outlet": "The Sun",
+      "headline": "ITV stars are furious that Caroline Flack was forced to quit Love Island after she was charged with assaulting her boyfriend",
+      "reason": "Reddit archive caption does not verify exact printed headline; excluded.",
+      "verificationSourceURL": "https://www.reddit.com/r/GBPolitics/comments/ec6o8d"
+    },
+    {
+      "id": "h04",
+      "date": null,
+      "outlet": "Daily Star",
+      "headline": "Caroline held for beating up lover",
+      "reason": "Later Independent documentary reproduces the wording while describing the 13 December charge; it does not establish the newspaper publication or edition date. Excluded from dated timeline.",
+      "verificationSourceURL": "https://www.independent.co.uk/arts-entertainment/tv/features/caroline-flack-documentary-tv-tonight-life-and-death-b1818314.html"
+    },
+    {
+      "id": "h05",
+      "date": null,
+      "outlet": "The Sun",
+      "headline": "Caroline whack!",
+      "reason": "Later Independent documentary reproduces the wording while describing the 13 December charge; it does not establish the newspaper publication or edition date. Excluded from dated timeline.",
+      "verificationSourceURL": "https://www.independent.co.uk/arts-entertainment/tv/features/caroline-flack-documentary-tv-tonight-life-and-death-b1818314.html"
+    },
+    {
+      "id": "h30",
+      "date": "2020-02-15",
+      "outlet": "The Guardian",
+      "headline": "The Sun takes down article about Caroline Flack from website",
+      "reason": "First published 15 February, outside the fixed 14 February cutoff; corroboration only.",
+      "verificationSourceURL": "https://www.theguardian.com/media/2020/feb/15/the-sun-takes-down-article-about-caroline-flack-from-website"
+    }
+  ],
+  "aggregationContext": {
+    "outlet": "The Sun",
+    "count": 99,
+    "unit": "print stories in which Caroline Flack appeared in headline or body, as reported by The Guardian",
+    "windowStart": "2019-08-14",
+    "windowEnd": "2020-02-14",
+    "sourceURL": "https://www.theguardian.com/tv-and-radio/2020/feb/21/caroline-flack-negative-media-coverage-before-death-revealed",
+    "isDailySeries": false,
+    "isThisSample": false
+  }
+}

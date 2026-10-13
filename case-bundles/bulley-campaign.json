@@ -1,0 +1,1346 @@
+{
+  "id": "bulley-campaign",
+  "title": "Nicola Bulley: missing-person reporting, speculation and disclosure",
+  "subject": "Nicola Bulley: missing-person reporting, speculation and disclosure",
+  "start": "2023-02-08",
+  "end": "2023-02-22",
+  "endNote": "Inclusive bounded research window",
+  "days": [
+    "2023-02-08",
+    "2023-02-09",
+    "2023-02-10",
+    "2023-02-11",
+    "2023-02-12",
+    "2023-02-13",
+    "2023-02-14",
+    "2023-02-15",
+    "2023-02-16",
+    "2023-02-17",
+    "2023-02-18",
+    "2023-02-19",
+    "2023-02-20",
+    "2023-02-21",
+    "2023-02-22"
+  ],
+  "source": {
+    "name": "Recovered headline sample",
+    "url": "https://www.lancashire.police.uk/news/2023/february/nicola-bulley-investigation-update/",
+    "retrieved": "2026-10-13",
+    "unit": "dated recovered headline records",
+    "corpusCount": 11,
+    "outletUniverse": 3,
+    "selectedCount": 11,
+    "scopeNote": "Fixed window 2023-02-08 through 2023-02-22 inclusive. Counts derive only from 11 dated recovered headlines after the source audit, across 3 outlets. The chart selects 3 desks. Missing records/dates are not proof that nothing was published; this is not a census and counts do not establish motive, harm or causation.",
+    "sampleNote": "11 dated records retained after page-level audit across 3 outlets; chart selects 3 desks. Inaccessible pages with previously recovered metadata are explicitly labelled; unsupported and mismatched records are excluded. This is a bounded incomplete sample, not a census."
+  },
+  "events": [
+    {
+      "date": "2023-02-08",
+      "label": "A private search specialist said his team had not located Bulley in a specified section of river.",
+      "evidenceId": "event-1"
+    },
+    {
+      "date": "2023-02-14",
+      "label": "Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention.",
+      "evidenceId": "event-2"
+    },
+    {
+      "date": "2023-02-15",
+      "label": "Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+      "evidenceId": "event-3"
+    },
+    {
+      "date": "2023-02-19",
+      "label": "A body was found; later identification confirmed it was Nicola Bulley, and family requested privacy.",
+      "evidenceId": "event-4"
+    },
+    {
+      "date": "2023-02-22",
+      "label": "The College of Policing review and IOPC inquiry were announced.",
+      "evidenceId": "event-5"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "police-statement",
+      "label": "police primary source",
+      "url": "https://www.lancashire.police.uk/news/2023/february/nicola-bulley-investigation-update/",
+      "text": "Lancashire Constabulary communicated its working hypothesis and disclosed personal information during the investigation. Keep police statements distinct from independent findings and from online speculation."
+    },
+    {
+      "id": "college-review",
+      "label": "College of Policing review published 21 November 2023 (retrospective to the selected February window)",
+      "url": "https://www.college.police.uk/article/review-nicola-bulley-investigation-published",
+      "text": "Published 21 November 2023, outside the selected February 2023 window. The College said the investigation/search was very well conducted, while communication and later disclosure had adverse effects and needed improvement. This later review does not change what was known during the sample window.",
+      "date": "2023-11-21",
+      "retrospective": true
+    },
+    {
+      "id": "family-statement",
+      "label": "family statement carried by police",
+      "url": "https://www.lancashire.police.uk/news/2023/february/family-statement-following-identification-of-nicola-bulley/",
+      "text": "The family asked that privacy be respected and criticized press approaches after death identification. Use this to inform care, not as a reason to reproduce personal details."
+    },
+    {
+      "id": "ofcom-concerns",
+      "label": "broadcast regulator response",
+      "url": "https://www.ofcom.org.uk/news-centre/2023/ofcom-concerned-by-family-complaints-about-nicola-bulley-coverage",
+      "text": "Ofcom publicly said it was concerned by complaints to ITV and Sky from the family; a concern or request for response is not a breach finding."
+    },
+    {
+      "id": "event-1",
+      "date": "2023-02-08",
+      "label": "Public-interest chronology: 2023-02-08",
+      "url": "https://www.lancashire.police.uk/news/2023/february/nicola-bulley-investigation-update/",
+      "text": "A private search specialist said his team had not located Bulley in a specified section of river. Expert observations need attribution and must not be presented as police findings."
+    },
+    {
+      "id": "event-2",
+      "date": "2023-02-14",
+      "label": "Public-interest chronology: 2023-02-14",
+      "url": "https://www.college.police.uk/article/review-nicola-bulley-investigation-published",
+      "text": "Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. The public-interest focus included misinformation and interference risks."
+    },
+    {
+      "id": "event-3",
+      "date": "2023-02-15",
+      "label": "Public-interest chronology: 2023-02-15",
+      "url": "https://www.lancashire.police.uk/news/2023/february/family-statement-following-identification-of-nicola-bulley/",
+      "text": "Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation. This materially shifted the story to necessity, privacy and proportionality of disclosure."
+    },
+    {
+      "id": "event-4",
+      "date": "2023-02-19",
+      "label": "Public-interest chronology: 2023-02-19",
+      "url": "https://www.ofcom.org.uk/news-centre/2023/ofcom-concerned-by-family-complaints-about-nicola-bulley-coverage",
+      "text": "A body was found; later identification confirmed it was Nicola Bulley, and family requested privacy. The search appeal ended; reporting should move to confirmation and respectful family coverage."
+    },
+    {
+      "id": "event-5",
+      "date": "2023-02-22",
+      "label": "Public-interest chronology: 2023-02-22",
+      "url": "https://www.ofcom.org.uk/news-centre/2023/ofcom-concerned-by-family-complaints-about-nicola-bulley-coverage",
+      "text": "The College of Policing review and IOPC inquiry were announced. Formal oversight provided a new public-interest development, while neither was a final finding at that time."
+    }
+  ],
+  "reasoningChecks": [
+    {
+      "id": "unit",
+      "prompt": "What does each bar count?",
+      "options": [
+        {
+          "value": "records",
+          "label": "Dated recovered headline records from the selected outlet sample"
+        },
+        {
+          "value": "mentions",
+          "label": "Every mention across all media"
+        },
+        {
+          "value": "harm",
+          "label": "Proven harmful stories"
+        }
+      ],
+      "answer": "records",
+      "explanation": "Bars are computed from the dated records shown in this sample, not all media or proven harmful stories.",
+      "evidenceIds": [
+        "police-statement"
+      ]
+    },
+    {
+      "id": "scope",
+      "prompt": "Is this an exhaustive census?",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes, every relevant story"
+        },
+        {
+          "value": "bounded",
+          "label": "No, a bounded recovered sample with selection limits"
+        },
+        {
+          "value": "allformats",
+          "label": "Yes, all formats and outlets"
+        }
+      ],
+      "answer": "bounded",
+      "explanation": "The research pack describes a selected sample; missing records and outlets remain unknown.",
+      "evidenceIds": [
+        "police-statement"
+      ]
+    },
+    {
+      "id": "status",
+      "prompt": "How should disputed claims be described?",
+      "options": [
+        {
+          "value": "proven",
+          "label": "As proven facts in every case"
+        },
+        {
+          "value": "status",
+          "label": "With the allegation, response and procedural status kept separate"
+        },
+        {
+          "value": "ignore",
+          "label": "Ignore the response"
+        }
+      ],
+      "answer": "status",
+      "explanation": "Use the status supported by the dated record; an allegation, response, inquiry and judgment are distinct.",
+      "evidenceIds": [
+        "police-statement",
+        "college-review"
+      ]
+    },
+    {
+      "id": "limits",
+      "prompt": "What does a headline alone tell us?",
+      "options": [
+        {
+          "value": "whole",
+          "label": "The full article and all editorial choices"
+        },
+        {
+          "value": "wording",
+          "label": "The recovered wording, not full context or effects"
+        },
+        {
+          "value": "nothing",
+          "label": "Nothing at all"
+        }
+      ],
+      "answer": "wording",
+      "explanation": "The headline is evidence of wording; the full article and consequences need separate evidence.",
+      "evidenceIds": [
+        "police-statement"
+      ]
+    },
+    {
+      "id": "motive",
+      "prompt": "Can counts or a severe headline prove motive or causation?",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes, by themselves"
+        },
+        {
+          "value": "no",
+          "label": "No; they support questions, not automatic conclusions"
+        },
+        {
+          "value": "intent",
+          "label": "Yes, if coverage is repeated"
+        }
+      ],
+      "answer": "no",
+      "explanation": "Frequency and wording do not independently establish motive, harm or causal effect.",
+      "evidenceIds": [
+        "police-statement"
+      ]
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "sky-news",
+      "outlet": "Sky News",
+      "dailyCounts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "listedCount": 4,
+      "activeDays": 4,
+      "peakDaily": 1,
+      "examples": [
+        {
+          "id": "bulley-h01",
+          "headline": "Nicola Bulley: Specialist team pulls out of search as expert says she’s “categorically not” in section of river",
+          "url": "https://news.sky.com/story/nicola-bulley-specialist-team-pulls-out-of-search-as-expert-says-shes-categorically-not-in-section-of-river-12806058",
+          "published": "2023-02-08",
+          "verification": "Previously recovered headline metadata retained: Publisher page; date and headline verified.. Current GET status: HTTP 403; no alternate URL or restriction bypassed.",
+          "kind": "news",
+          "eventId": "event-1",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+        },
+        {
+          "id": "bulley-h03",
+          "headline": "How “intricacies” of local knowledge could help find Nicola Bulley, as police struggle with “toxic” public interest",
+          "url": "https://news.sky.com/story/how-intricacies-of-local-knowledge-could-help-find-nicola-bulley-as-police-struggle-with-toxic-public-interest-12810006",
+          "published": "2023-02-13",
+          "verification": "Previously recovered headline metadata retained: Publisher page; date and headline verified.. Current GET status: HTTP 403; no alternate URL or restriction bypassed.",
+          "kind": "news",
+          "eventId": "event-1",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+        },
+        {
+          "id": "bulley-h04",
+          "headline": "Nicola Bulley: Police told to adjust messaging in search for missing mum to stop people “taking things into own hands”",
+          "url": "https://news.sky.com/story/nicola-bulley-police-told-to-adjust-messaging-in-search-for-missing-mum-to-stop-people-taking-things-into-own-hands-12810624",
+          "published": "2023-02-14",
+          "verification": "Previously recovered headline metadata retained: Publisher page; date and headline verified.. Current GET status: HTTP 403; no alternate URL or restriction bypassed.",
+          "kind": "news",
+          "eventId": "event-2",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+        },
+        {
+          "id": "bulley-h05",
+          "headline": "Nicola Bulley: The “myths” and “false information” dispelled by police investigating her disappearance",
+          "url": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+          "published": "2023-02-15",
+          "verification": "Previously recovered headline metadata retained: Publisher page; date and headline verified.. Current GET status: HTTP 403; no alternate URL or restriction bypassed.",
+          "kind": "news",
+          "eventId": "event-3",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+        }
+      ],
+      "reviewNotes": {
+        "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
+        "pressure": "The cleaned recovered sample lists 4 headline records from this desk over 4 publication dates. This is not a complete archive or proof of intent.",
+        "limit": "Headline and date are recovered from the cited publisher or named archive. Repeated records are not automatically independent reporting or evidence of harm."
+      },
+      "scrutiny": [
+        {
+          "criterionId": "public_value",
+          "observation": "The sample spans a missing-person search, the handling of public speculation, sensitive disclosure and later oversight.",
+          "question": "What information helped the public or search, and what served only curiosity?",
+          "limit": "Eleven headlines from three outlets do not represent the full search coverage.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "context",
+          "observation": "A private search specialist’s view is not a police finding; police statements and later reviews have different evidential status.",
+          "question": "Did headlines attribute claims and distinguish allegations, working hypotheses and confirmed facts?",
+          "limit": "The selected headlines are not a substitute for the underlying statements.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "framing",
+          "observation": "Repeated speculation about a missing person can intensify rumor and intrusion.",
+          "question": "Did framing resist unverified theories and avoid turning private details into spectacle?",
+          "limit": "This sample does not establish every outlet’s conduct or motive.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "care",
+          "observation": "Police disclosed sensitive personal information; after recovery, the family requested privacy.",
+          "question": "Did continued reporting use only the detail needed to explain accountability?",
+          "limit": "The headlines cannot show all choices in article text or contact practices.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "consistency",
+          "observation": "The sample follows a high-profile search where authorities and broadcasters had distinct roles.",
+          "question": "Would comparable missing-person cases receive equivalent care and prominence?",
+          "limit": "Three selected outlets are not the full media universe.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "transparency",
+          "observation": "Public statements, a broadcaster regulator’s concerns, and later reviews are different records.",
+          "question": "Can a reader trace each claim to the correct source and status?",
+          "limit": "An inquiry announcement is not a final finding.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        }
+      ],
+      "briefing": {
+        "title": "A fictional desk defence of its sampled coverage",
+        "paragraphs": [
+          {
+            "kind": "report",
+            "text": "We would defend the sample’s focus on search developments because an accurate appeal and clear explanation of confirmed information can serve a missing-person investigation. We report what a search specialist said as his account, not as a police conclusion.",
+            "evidenceIds": [
+              "event-1",
+              "police-statement"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "As the search continued, rumor and unofficial activity became part of the public-interest story. We would attribute claims, state what police confirmed, and avoid presenting online speculation as fact.",
+            "evidenceIds": [
+              "police-statement",
+              "event-5"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "When police disclosed sensitive information, scrutiny of necessity and proportionality became legitimate. We would explain the stated reason for disclosure without repeating private details beyond what readers need.",
+            "evidenceIds": [
+              "event-3",
+              "ofcom-concerns"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "This sample has four Sky headlines and is not a census. We would link the primary statements and distinguish the later review announcement from a final finding. We would also avoid language suggesting that a specialist’s view settled the search or that public curiosity justified disclosing private information. Our account should make clear who said what, when it was said, and what authorities had confirmed at that point. Those distinctions let readers assess urgency without treating speculation as fact. We would not treat prominence as proof of accuracy.",
+            "evidenceIds": [
+              "college-review",
+              "event-5"
+            ]
+          }
+        ]
+      },
+      "records": [
+        {
+          "id": "bulley-h01",
+          "date": "2023-02-08",
+          "outlet": "Sky News",
+          "headline": "Nicola Bulley: Specialist team pulls out of search as expert says she’s “categorically not” in section of river",
+          "kind": "news",
+          "originalURL": "https://news.sky.com/story/nicola-bulley-specialist-team-pulls-out-of-search-as-expert-says-shes-categorically-not-in-section-of-river-12806058",
+          "verificationSourceURL": "https://news.sky.com/story/nicola-bulley-specialist-team-pulls-out-of-search-as-expert-says-shes-categorically-not-in-section-of-river-12806058",
+          "sourceURL": "https://news.sky.com/story/nicola-bulley-specialist-team-pulls-out-of-search-as-expert-says-shes-categorically-not-in-section-of-river-12806058",
+          "verification": "Previously recovered headline metadata retained: Publisher page; date and headline verified.. Current GET status: HTTP 403; no alternate URL or restriction bypassed.",
+          "eventId": "event-1",
+          "event": "A private search specialist said his team had not located Bulley in a specified section of river.",
+          "wave": "A private search specialist said his team had not located Bulley in a specified section of river.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://news.sky.com/story/nicola-bulley-specialist-team-pulls-out-of-search-as-expert-says-shes-categorically-not-in-section-of-river-12806058",
+          "auditStatus": "unavailable_http",
+          "auditedURL": "https://news.sky.com/story/nicola-bulley-specialist-team-pulls-out-of-search-as-expert-says-shes-categorically-not-in-section-of-river-12806058",
+          "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+        },
+        {
+          "id": "bulley-h03",
+          "date": "2023-02-13",
+          "outlet": "Sky News",
+          "headline": "How “intricacies” of local knowledge could help find Nicola Bulley, as police struggle with “toxic” public interest",
+          "kind": "news",
+          "originalURL": "https://news.sky.com/story/how-intricacies-of-local-knowledge-could-help-find-nicola-bulley-as-police-struggle-with-toxic-public-interest-12810006",
+          "verificationSourceURL": "https://news.sky.com/story/how-intricacies-of-local-knowledge-could-help-find-nicola-bulley-as-police-struggle-with-toxic-public-interest-12810006",
+          "sourceURL": "https://news.sky.com/story/how-intricacies-of-local-knowledge-could-help-find-nicola-bulley-as-police-struggle-with-toxic-public-interest-12810006",
+          "verification": "Previously recovered headline metadata retained: Publisher page; date and headline verified.. Current GET status: HTTP 403; no alternate URL or restriction bypassed.",
+          "eventId": "event-1",
+          "event": "A private search specialist said his team had not located Bulley in a specified section of river.",
+          "wave": "A private search specialist said his team had not located Bulley in a specified section of river.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://news.sky.com/story/how-intricacies-of-local-knowledge-could-help-find-nicola-bulley-as-police-struggle-with-toxic-public-interest-12810006",
+          "auditStatus": "unavailable_http",
+          "auditedURL": "https://news.sky.com/story/how-intricacies-of-local-knowledge-could-help-find-nicola-bulley-as-police-struggle-with-toxic-public-interest-12810006",
+          "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+        },
+        {
+          "id": "bulley-h04",
+          "date": "2023-02-14",
+          "outlet": "Sky News",
+          "headline": "Nicola Bulley: Police told to adjust messaging in search for missing mum to stop people “taking things into own hands”",
+          "kind": "news",
+          "originalURL": "https://news.sky.com/story/nicola-bulley-police-told-to-adjust-messaging-in-search-for-missing-mum-to-stop-people-taking-things-into-own-hands-12810624",
+          "verificationSourceURL": "https://news.sky.com/story/nicola-bulley-police-told-to-adjust-messaging-in-search-for-missing-mum-to-stop-people-taking-things-into-own-hands-12810624",
+          "sourceURL": "https://news.sky.com/story/nicola-bulley-police-told-to-adjust-messaging-in-search-for-missing-mum-to-stop-people-taking-things-into-own-hands-12810624",
+          "verification": "Previously recovered headline metadata retained: Publisher page; date and headline verified.. Current GET status: HTTP 403; no alternate URL or restriction bypassed.",
+          "eventId": "event-2",
+          "event": "Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention.",
+          "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://news.sky.com/story/nicola-bulley-police-told-to-adjust-messaging-in-search-for-missing-mum-to-stop-people-taking-things-into-own-hands-12810624",
+          "auditStatus": "unavailable_http",
+          "auditedURL": "https://news.sky.com/story/nicola-bulley-police-told-to-adjust-messaging-in-search-for-missing-mum-to-stop-people-taking-things-into-own-hands-12810624",
+          "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+        },
+        {
+          "id": "bulley-h05",
+          "date": "2023-02-15",
+          "outlet": "Sky News",
+          "headline": "Nicola Bulley: The “myths” and “false information” dispelled by police investigating her disappearance",
+          "kind": "news",
+          "originalURL": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+          "verificationSourceURL": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+          "sourceURL": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+          "verification": "Previously recovered headline metadata retained: Publisher page; date and headline verified.. Current GET status: HTTP 403; no alternate URL or restriction bypassed.",
+          "eventId": "event-3",
+          "event": "Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+          "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+          "auditStatus": "unavailable_http",
+          "auditedURL": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+          "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+        }
+      ]
+    },
+    {
+      "id": "the-guardian",
+      "outlet": "The Guardian",
+      "dailyCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "listedCount": 4,
+      "activeDays": 4,
+      "peakDaily": 1,
+      "examples": [
+        {
+          "id": "bulley-h06",
+          "headline": "“Car crash” police communications on Nicola Bulley case fuelled speculation",
+          "url": "https://www.theguardian.com/uk-news/2023/feb/16/car-crash-police-communications-on-nicola-bulley-case-fuelled-speculation",
+          "published": "2023-02-16",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "kind": "news",
+          "eventId": "event-3",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+        },
+        {
+          "id": "bulley-h08",
+          "headline": "Police release of Nicola Bulley’s personal details “as sexist as it comes”",
+          "url": "https://www.theguardian.com/uk-news/2023/feb/17/police-release-of-nicola-bulleys-personal-details-as-sexist-as-it-comes",
+          "published": "2023-02-17",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "kind": "news",
+          "eventId": "event-3",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+        },
+        {
+          "id": "bulley-h09",
+          "headline": "Police’s poor communication on Nicola Bulley case is a lesson for other forces",
+          "url": "https://www.theguardian.com/uk-news/2023/feb/19/polices-poor-communications-on-nicola-bulley-case-are-a-lesson-for-other-forces",
+          "published": "2023-02-19",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "kind": "news",
+          "eventId": "event-4",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+        },
+        {
+          "id": "bulley-h11",
+          "headline": "Police behind Nicola Bulley search face two investigations",
+          "url": "https://www.theguardian.com/uk-news/2023/feb/22/nicola-bulley-visit-police-watchdog-iopc-welfare-concern",
+          "published": "2023-02-22",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "kind": "news",
+          "eventId": "event-5",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+        }
+      ],
+      "reviewNotes": {
+        "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
+        "pressure": "The cleaned recovered sample lists 4 headline records from this desk over 4 publication dates. This is not a complete archive or proof of intent.",
+        "limit": "Headline and date are recovered from the cited publisher or named archive. Repeated records are not automatically independent reporting or evidence of harm."
+      },
+      "scrutiny": [
+        {
+          "criterionId": "public_value",
+          "observation": "The sample spans a missing-person search, the handling of public speculation, sensitive disclosure and later oversight.",
+          "question": "What information helped the public or search, and what served only curiosity?",
+          "limit": "Eleven headlines from three outlets do not represent the full search coverage.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "context",
+          "observation": "A private search specialist’s view is not a police finding; police statements and later reviews have different evidential status.",
+          "question": "Did headlines attribute claims and distinguish allegations, working hypotheses and confirmed facts?",
+          "limit": "The selected headlines are not a substitute for the underlying statements.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "framing",
+          "observation": "Repeated speculation about a missing person can intensify rumor and intrusion.",
+          "question": "Did framing resist unverified theories and avoid turning private details into spectacle?",
+          "limit": "This sample does not establish every outlet’s conduct or motive.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "care",
+          "observation": "Police disclosed sensitive personal information; after recovery, the family requested privacy.",
+          "question": "Did continued reporting use only the detail needed to explain accountability?",
+          "limit": "The headlines cannot show all choices in article text or contact practices.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "consistency",
+          "observation": "The sample follows a high-profile search where authorities and broadcasters had distinct roles.",
+          "question": "Would comparable missing-person cases receive equivalent care and prominence?",
+          "limit": "Three selected outlets are not the full media universe.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "transparency",
+          "observation": "Public statements, a broadcaster regulator’s concerns, and later reviews are different records.",
+          "question": "Can a reader trace each claim to the correct source and status?",
+          "limit": "An inquiry announcement is not a final finding.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        }
+      ],
+      "briefing": {
+        "title": "A fictional desk defence of its sampled coverage",
+        "paragraphs": [
+          {
+            "kind": "report",
+            "text": "We would defend reporting the search, the public handling of information and later oversight because each raised questions of public importance. Our sample includes dated headlines from a short, intense period, not all coverage.",
+            "evidenceIds": [
+              "event-1",
+              "police-statement"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "We would distinguish a specialist’s account, police statements and independently established facts. A working hypothesis is not proof, and online speculation should not be elevated into evidence.",
+            "evidenceIds": [
+              "police-statement",
+              "event-5"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "After police disclosed sensitive personal information, the story required scrutiny of necessity, privacy and proportionality. Once the family asked for privacy after recovery, care should govern what detail remains relevant.",
+            "evidenceIds": [
+              "event-3",
+              "ofcom-concerns"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "The sample contains four a publisher rows and is incomplete. We would link official records, avoid implying that an announced inquiry is a finding, and state clearly what the headlines do not tell us. We would also explain that the family’s request for privacy changes what a proportionate follow-up looks like. New oversight can justify reporting, but an announced review is not a final answer. Our defence is strongest when readers can see the uncertainty and the limits of each source. We would distinguish the question that was asked from the conclusion any later review reached.",
+            "evidenceIds": [
+              "college-review",
+              "event-5"
+            ]
+          }
+        ]
+      },
+      "records": [
+        {
+          "id": "bulley-h06",
+          "date": "2023-02-16",
+          "outlet": "The Guardian",
+          "headline": "“Car crash” police communications on Nicola Bulley case fuelled speculation",
+          "kind": "news",
+          "originalURL": "https://www.theguardian.com/uk-news/2023/feb/16/car-crash-police-communications-on-nicola-bulley-case-fuelled-speculation",
+          "verificationSourceURL": "https://www.theguardian.com/uk-news/2023/feb/16/car-crash-police-communications-on-nicola-bulley-case-fuelled-speculation",
+          "sourceURL": "https://www.theguardian.com/uk-news/2023/feb/16/car-crash-police-communications-on-nicola-bulley-case-fuelled-speculation",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "eventId": "event-3",
+          "event": "Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+          "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.theguardian.com/uk-news/2023/feb/16/car-crash-police-communications-on-nicola-bulley-case-fuelled-speculation",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/uk-news/2023/feb/16/car-crash-police-communications-on-nicola-bulley-case-fuelled-speculation",
+          "auditNote": null
+        },
+        {
+          "id": "bulley-h08",
+          "date": "2023-02-17",
+          "outlet": "The Guardian",
+          "headline": "Police release of Nicola Bulley’s personal details “as sexist as it comes”",
+          "kind": "news",
+          "originalURL": "https://www.theguardian.com/uk-news/2023/feb/17/police-release-of-nicola-bulleys-personal-details-as-sexist-as-it-comes",
+          "verificationSourceURL": "https://www.theguardian.com/uk-news/2023/feb/17/police-release-of-nicola-bulleys-personal-details-as-sexist-as-it-comes",
+          "sourceURL": "https://www.theguardian.com/uk-news/2023/feb/17/police-release-of-nicola-bulleys-personal-details-as-sexist-as-it-comes",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "eventId": "event-3",
+          "event": "Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+          "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.theguardian.com/uk-news/2023/feb/17/police-release-of-nicola-bulleys-personal-details-as-sexist-as-it-comes",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/uk-news/2023/feb/17/police-release-of-nicola-bulleys-personal-details-as-sexist-as-it-comes",
+          "auditNote": null
+        },
+        {
+          "id": "bulley-h09",
+          "date": "2023-02-19",
+          "outlet": "The Guardian",
+          "headline": "Police’s poor communication on Nicola Bulley case is a lesson for other forces",
+          "kind": "news",
+          "originalURL": "https://www.theguardian.com/uk-news/2023/feb/19/polices-poor-communications-on-nicola-bulley-case-are-a-lesson-for-other-forces",
+          "verificationSourceURL": "https://www.theguardian.com/uk-news/2023/feb/19/polices-poor-communications-on-nicola-bulley-case-are-a-lesson-for-other-forces",
+          "sourceURL": "https://www.theguardian.com/uk-news/2023/feb/19/polices-poor-communications-on-nicola-bulley-case-are-a-lesson-for-other-forces",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "eventId": "event-4",
+          "event": "A body was found; later identification confirmed it was Nicola Bulley, and family requested privacy.",
+          "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation. / A body was found; later identification confirmed it was Nicola Bulley, and family requested privacy.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.theguardian.com/uk-news/2023/feb/19/polices-poor-communications-on-nicola-bulley-case-are-a-lesson-for-other-forces",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/uk-news/2023/feb/19/polices-poor-communications-on-nicola-bulley-case-are-a-lesson-for-other-forces",
+          "auditNote": null
+        },
+        {
+          "id": "bulley-h11",
+          "date": "2023-02-22",
+          "outlet": "The Guardian",
+          "headline": "Police behind Nicola Bulley search face two investigations",
+          "kind": "news",
+          "originalURL": "https://www.theguardian.com/uk-news/2023/feb/22/nicola-bulley-visit-police-watchdog-iopc-welfare-concern",
+          "verificationSourceURL": "https://www.theguardian.com/uk-news/2023/feb/22/nicola-bulley-visit-police-watchdog-iopc-welfare-concern",
+          "sourceURL": "https://www.theguardian.com/uk-news/2023/feb/22/nicola-bulley-visit-police-watchdog-iopc-welfare-concern",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "eventId": "event-5",
+          "event": "The College of Policing review and IOPC inquiry were announced.",
+          "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation. / A body was found; later identification confirmed it was Nicola Bulley, and family requested privacy. / The College of Policing review and IOPC inquiry were announced.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.theguardian.com/uk-news/2023/feb/22/nicola-bulley-visit-police-watchdog-iopc-welfare-concern",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/uk-news/2023/feb/22/nicola-bulley-visit-police-watchdog-iopc-welfare-concern",
+          "auditNote": null
+        }
+      ]
+    },
+    {
+      "id": "the-independent",
+      "outlet": "The Independent",
+      "dailyCounts": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "listedCount": 3,
+      "activeDays": 3,
+      "peakDaily": 1,
+      "examples": [
+        {
+          "id": "bulley-h02",
+          "headline": "Nicola Bulley search moves to sea as police stop vigilantes hunting derelict home",
+          "url": "https://www.independent.co.uk/news/uk/crime/nicola-bulley-update-search-disappearance-b2279048.html",
+          "published": "2023-02-09",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "kind": "news",
+          "eventId": "event-1",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+        },
+        {
+          "id": "bulley-h07",
+          "headline": "Police decision to reveal Nicola Bulley details slammed as “deeply troubling”",
+          "url": "https://www.independent.co.uk/news/uk/nicola-bulley-lancashire-police-police-big-brother-watch-conservative-b2283394.html",
+          "published": "2023-02-16",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "kind": "news",
+          "eventId": "event-3",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+        },
+        {
+          "id": "bulley-h10",
+          "headline": "Nicola Bulley: What investigations have been launched and why?",
+          "url": "https://www.independent.co.uk/news/uk/nicola-bulley-iopc-college-of-policing-itv-ofcom-b2287515.html",
+          "published": "2023-02-22",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "kind": "news",
+          "eventId": "event-5",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+        }
+      ],
+      "reviewNotes": {
+        "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
+        "pressure": "The cleaned recovered sample lists 3 headline records from this desk over 3 publication dates. This is not a complete archive or proof of intent.",
+        "limit": "Headline and date are recovered from the cited publisher or named archive. Repeated records are not automatically independent reporting or evidence of harm."
+      },
+      "scrutiny": [
+        {
+          "criterionId": "public_value",
+          "observation": "The sample spans a missing-person search, the handling of public speculation, sensitive disclosure and later oversight.",
+          "question": "What information helped the public or search, and what served only curiosity?",
+          "limit": "Eleven headlines from three outlets do not represent the full search coverage.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "context",
+          "observation": "A private search specialist’s view is not a police finding; police statements and later reviews have different evidential status.",
+          "question": "Did headlines attribute claims and distinguish allegations, working hypotheses and confirmed facts?",
+          "limit": "The selected headlines are not a substitute for the underlying statements.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "framing",
+          "observation": "Repeated speculation about a missing person can intensify rumor and intrusion.",
+          "question": "Did framing resist unverified theories and avoid turning private details into spectacle?",
+          "limit": "This sample does not establish every outlet’s conduct or motive.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "care",
+          "observation": "Police disclosed sensitive personal information; after recovery, the family requested privacy.",
+          "question": "Did continued reporting use only the detail needed to explain accountability?",
+          "limit": "The headlines cannot show all choices in article text or contact practices.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "consistency",
+          "observation": "The sample follows a high-profile search where authorities and broadcasters had distinct roles.",
+          "question": "Would comparable missing-person cases receive equivalent care and prominence?",
+          "limit": "Three selected outlets are not the full media universe.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        },
+        {
+          "criterionId": "transparency",
+          "observation": "Public statements, a broadcaster regulator’s concerns, and later reviews are different records.",
+          "question": "Can a reader trace each claim to the correct source and status?",
+          "limit": "An inquiry announcement is not a final finding.",
+          "evidenceIds": [
+            "police-statement"
+          ]
+        }
+      ],
+      "briefing": {
+        "title": "A fictional desk defence of its sampled coverage",
+        "paragraphs": [
+          {
+            "kind": "report",
+            "text": "We would defend reporting the search and its accountability questions, including the difference between official information and claims by private searchers. Our three headlines are selected examples, not a complete record.",
+            "evidenceIds": [
+              "event-1",
+              "police-statement"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "We would attribute allegations and explain when police confirm or correct information. A private specialist’s view should not be described as a police finding; later reviews must be dated and their status stated.",
+            "evidenceIds": [
+              "police-statement",
+              "event-5"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "Coverage can inform the public while also increasing intrusion. Sensitive personal details should be reported only when necessary to explain a decision or accountability question, with the family’s privacy respected.",
+            "evidenceIds": [
+              "event-3",
+              "ofcom-concerns"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "The sample is event-led and limited to three a publisher headlines. We would link statements and judgments, and avoid asserting that a review announcement itself resolved the questions it was set up to examine. We would also avoid repeating sensitive information merely because it is available. Public accountability can be served by explaining why a disclosure occurred and what oversight followed, without turning private circumstances into a recurring headline hook. Our short sample cannot tell readers whether every article met that standard. We would also make clear that none of the selected headlines represents the family’s full experience.",
+            "evidenceIds": [
+              "college-review",
+              "event-5"
+            ]
+          }
+        ]
+      },
+      "records": [
+        {
+          "id": "bulley-h02",
+          "date": "2023-02-09",
+          "outlet": "The Independent",
+          "headline": "Nicola Bulley search moves to sea as police stop vigilantes hunting derelict home",
+          "kind": "news",
+          "originalURL": "https://www.independent.co.uk/news/uk/crime/nicola-bulley-update-search-disappearance-b2279048.html",
+          "verificationSourceURL": "https://www.independent.co.uk/news/uk/crime/nicola-bulley-update-search-disappearance-b2279048.html",
+          "sourceURL": "https://www.independent.co.uk/news/uk/crime/nicola-bulley-update-search-disappearance-b2279048.html",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "eventId": "event-1",
+          "event": "A private search specialist said his team had not located Bulley in a specified section of river.",
+          "wave": "A private search specialist said his team had not located Bulley in a specified section of river.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.independent.co.uk/news/uk/crime/nicola-bulley-update-search-disappearance-b2279048.html",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.independent.co.uk/news/uk/crime/nicola-bulley-update-search-disappearance-b2279048.html",
+          "auditNote": null
+        },
+        {
+          "id": "bulley-h07",
+          "date": "2023-02-16",
+          "outlet": "The Independent",
+          "headline": "Police decision to reveal Nicola Bulley details slammed as “deeply troubling”",
+          "kind": "news",
+          "originalURL": "https://www.independent.co.uk/news/uk/nicola-bulley-lancashire-police-police-big-brother-watch-conservative-b2283394.html",
+          "verificationSourceURL": "https://www.independent.co.uk/news/uk/nicola-bulley-lancashire-police-police-big-brother-watch-conservative-b2283394.html",
+          "sourceURL": "https://www.independent.co.uk/news/uk/nicola-bulley-lancashire-police-police-big-brother-watch-conservative-b2283394.html",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "eventId": "event-3",
+          "event": "Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+          "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.independent.co.uk/news/uk/nicola-bulley-lancashire-police-police-big-brother-watch-conservative-b2283394.html",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.independent.co.uk/news/uk/nicola-bulley-lancashire-police-police-big-brother-watch-conservative-b2283394.html",
+          "auditNote": null
+        },
+        {
+          "id": "bulley-h10",
+          "date": "2023-02-22",
+          "outlet": "The Independent",
+          "headline": "Nicola Bulley: What investigations have been launched and why?",
+          "kind": "news",
+          "originalURL": "https://www.independent.co.uk/news/uk/nicola-bulley-iopc-college-of-policing-itv-ofcom-b2287515.html",
+          "verificationSourceURL": "https://www.independent.co.uk/news/uk/nicola-bulley-iopc-college-of-policing-itv-ofcom-b2287515.html",
+          "sourceURL": "https://www.independent.co.uk/news/uk/nicola-bulley-iopc-college-of-policing-itv-ofcom-b2287515.html",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "eventId": "event-5",
+          "event": "The College of Policing review and IOPC inquiry were announced.",
+          "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation. / A body was found; later identification confirmed it was Nicola Bulley, and family requested privacy. / The College of Policing review and IOPC inquiry were announced.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.independent.co.uk/news/uk/nicola-bulley-iopc-college-of-policing-itv-ofcom-b2287515.html",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.independent.co.uk/news/uk/nicola-bulley-iopc-college-of-policing-itv-ofcom-b2287515.html",
+          "auditNote": null
+        }
+      ]
+    }
+  ],
+  "context": {
+    "statusAtWindowEnd": "Use Nicola Bulley’s name and the minimum verified public facts; no unnecessary health, family or rumor details. Police theories are attributed; online speculation is unverified. Ofcom concern is not a breach finding. The College review is an independent retrospective review, not a finding of media causation.",
+    "sequence": [
+      {
+        "date": "2023-02-08",
+        "text": "A private search specialist said his team had not located Bulley in a specified section of river.",
+        "evidenceIds": [
+          "event-1"
+        ]
+      },
+      {
+        "date": "2023-02-14",
+        "text": "Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention.",
+        "evidenceIds": [
+          "event-2"
+        ]
+      },
+      {
+        "date": "2023-02-15",
+        "text": "Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+        "evidenceIds": [
+          "event-3"
+        ]
+      },
+      {
+        "date": "2023-02-19",
+        "text": "A body was found; later identification confirmed it was Nicola Bulley, and family requested privacy.",
+        "evidenceIds": [
+          "event-4"
+        ]
+      },
+      {
+        "date": "2023-02-22",
+        "text": "The College of Policing review and IOPC inquiry were announced.",
+        "evidenceIds": [
+          "event-5"
+        ]
+      }
+    ],
+    "retrospectiveEvidence": [
+      {
+        "date": "2023-11-21",
+        "text": "Later College of Policing review, outside this sample window: it said the investigation/search was very well conducted while communication and disclosure required improvement.",
+        "evidenceIds": [
+          "college-review"
+        ],
+        "status": "retrospective, not a February 2023 event marker"
+      }
+    ]
+  },
+  "comparison": {},
+  "narrationNotice": "Fictional editor role-play; not an actual outlet statement.",
+  "countMode": "dated-sample",
+  "scrutinyCriteria": [
+    {
+      "id": "public_value",
+      "label": "Public interest",
+      "question": "What did each wave add that the public needed to know?"
+    },
+    {
+      "id": "context",
+      "label": "Fair context",
+      "question": "Were allegations, responses and unresolved findings represented fairly?"
+    },
+    {
+      "id": "framing",
+      "label": "Framing & power",
+      "question": "Did the coverage invite scrutiny or stereotyping, ridicule and superiority?"
+    },
+    {
+      "id": "care",
+      "label": "Care & persistence",
+      "question": "Was continued attention proportionate after distress or vulnerability became known?"
+    },
+    {
+      "id": "consistency",
+      "label": "Comparable treatment",
+      "question": "Would the outlet apply the same intensity to a genuinely comparable case?"
+    },
+    {
+      "id": "transparency",
+      "label": "Transparency",
+      "question": "Can we account for the sample, its limits, later edits and the outlet’s role?"
+    }
+  ],
+  "dataCompleteness": "This is an audited recovered sample only. It does not estimate daily volume, peak intensity, or all coverage; absence from this file means no claim about whether an outlet covered the case. News, comment and live-blog formats are labeled where identified.",
+  "researchProvenance": {
+    "file": "case-bulley-research.json",
+    "retrievedOn": "2026-10-13"
+  },
+  "allHeadlines": [
+    {
+      "id": "bulley-h01",
+      "date": "2023-02-08",
+      "outlet": "Sky News",
+      "headline": "Nicola Bulley: Specialist team pulls out of search as expert says she’s “categorically not” in section of river",
+      "kind": "news",
+      "originalURL": "https://news.sky.com/story/nicola-bulley-specialist-team-pulls-out-of-search-as-expert-says-shes-categorically-not-in-section-of-river-12806058",
+      "verificationSourceURL": "https://news.sky.com/story/nicola-bulley-specialist-team-pulls-out-of-search-as-expert-says-shes-categorically-not-in-section-of-river-12806058",
+      "sourceURL": "https://news.sky.com/story/nicola-bulley-specialist-team-pulls-out-of-search-as-expert-says-shes-categorically-not-in-section-of-river-12806058",
+      "verification": "Previously recovered headline metadata retained: Publisher page; date and headline verified.. Current GET status: HTTP 403; no alternate URL or restriction bypassed.",
+      "eventId": "event-1",
+      "event": "A private search specialist said his team had not located Bulley in a specified section of river.",
+      "wave": "A private search specialist said his team had not located Bulley in a specified section of river.",
+      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://news.sky.com/story/nicola-bulley-specialist-team-pulls-out-of-search-as-expert-says-shes-categorically-not-in-section-of-river-12806058",
+      "auditStatus": "unavailable_http",
+      "auditedURL": "https://news.sky.com/story/nicola-bulley-specialist-team-pulls-out-of-search-as-expert-says-shes-categorically-not-in-section-of-river-12806058",
+      "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+    },
+    {
+      "id": "bulley-h02",
+      "date": "2023-02-09",
+      "outlet": "The Independent",
+      "headline": "Nicola Bulley search moves to sea as police stop vigilantes hunting derelict home",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/news/uk/crime/nicola-bulley-update-search-disappearance-b2279048.html",
+      "verificationSourceURL": "https://www.independent.co.uk/news/uk/crime/nicola-bulley-update-search-disappearance-b2279048.html",
+      "sourceURL": "https://www.independent.co.uk/news/uk/crime/nicola-bulley-update-search-disappearance-b2279048.html",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "event-1",
+      "event": "A private search specialist said his team had not located Bulley in a specified section of river.",
+      "wave": "A private search specialist said his team had not located Bulley in a specified section of river.",
+      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.independent.co.uk/news/uk/crime/nicola-bulley-update-search-disappearance-b2279048.html",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.independent.co.uk/news/uk/crime/nicola-bulley-update-search-disappearance-b2279048.html",
+      "auditNote": null
+    },
+    {
+      "id": "bulley-h03",
+      "date": "2023-02-13",
+      "outlet": "Sky News",
+      "headline": "How “intricacies” of local knowledge could help find Nicola Bulley, as police struggle with “toxic” public interest",
+      "kind": "news",
+      "originalURL": "https://news.sky.com/story/how-intricacies-of-local-knowledge-could-help-find-nicola-bulley-as-police-struggle-with-toxic-public-interest-12810006",
+      "verificationSourceURL": "https://news.sky.com/story/how-intricacies-of-local-knowledge-could-help-find-nicola-bulley-as-police-struggle-with-toxic-public-interest-12810006",
+      "sourceURL": "https://news.sky.com/story/how-intricacies-of-local-knowledge-could-help-find-nicola-bulley-as-police-struggle-with-toxic-public-interest-12810006",
+      "verification": "Previously recovered headline metadata retained: Publisher page; date and headline verified.. Current GET status: HTTP 403; no alternate URL or restriction bypassed.",
+      "eventId": "event-1",
+      "event": "A private search specialist said his team had not located Bulley in a specified section of river.",
+      "wave": "A private search specialist said his team had not located Bulley in a specified section of river.",
+      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://news.sky.com/story/how-intricacies-of-local-knowledge-could-help-find-nicola-bulley-as-police-struggle-with-toxic-public-interest-12810006",
+      "auditStatus": "unavailable_http",
+      "auditedURL": "https://news.sky.com/story/how-intricacies-of-local-knowledge-could-help-find-nicola-bulley-as-police-struggle-with-toxic-public-interest-12810006",
+      "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+    },
+    {
+      "id": "bulley-h04",
+      "date": "2023-02-14",
+      "outlet": "Sky News",
+      "headline": "Nicola Bulley: Police told to adjust messaging in search for missing mum to stop people “taking things into own hands”",
+      "kind": "news",
+      "originalURL": "https://news.sky.com/story/nicola-bulley-police-told-to-adjust-messaging-in-search-for-missing-mum-to-stop-people-taking-things-into-own-hands-12810624",
+      "verificationSourceURL": "https://news.sky.com/story/nicola-bulley-police-told-to-adjust-messaging-in-search-for-missing-mum-to-stop-people-taking-things-into-own-hands-12810624",
+      "sourceURL": "https://news.sky.com/story/nicola-bulley-police-told-to-adjust-messaging-in-search-for-missing-mum-to-stop-people-taking-things-into-own-hands-12810624",
+      "verification": "Previously recovered headline metadata retained: Publisher page; date and headline verified.. Current GET status: HTTP 403; no alternate URL or restriction bypassed.",
+      "eventId": "event-2",
+      "event": "Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention.",
+      "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention.",
+      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://news.sky.com/story/nicola-bulley-police-told-to-adjust-messaging-in-search-for-missing-mum-to-stop-people-taking-things-into-own-hands-12810624",
+      "auditStatus": "unavailable_http",
+      "auditedURL": "https://news.sky.com/story/nicola-bulley-police-told-to-adjust-messaging-in-search-for-missing-mum-to-stop-people-taking-things-into-own-hands-12810624",
+      "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+    },
+    {
+      "id": "bulley-h05",
+      "date": "2023-02-15",
+      "outlet": "Sky News",
+      "headline": "Nicola Bulley: The “myths” and “false information” dispelled by police investigating her disappearance",
+      "kind": "news",
+      "originalURL": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+      "verificationSourceURL": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+      "sourceURL": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+      "verification": "Previously recovered headline metadata retained: Publisher page; date and headline verified.. Current GET status: HTTP 403; no alternate URL or restriction bypassed.",
+      "eventId": "event-3",
+      "event": "Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+      "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+      "auditStatus": "unavailable_http",
+      "auditedURL": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+      "auditNote": "Public GET unavailable; no alternate URL, paywall or robot restriction was bypassed."
+    },
+    {
+      "id": "bulley-h06",
+      "date": "2023-02-16",
+      "outlet": "The Guardian",
+      "headline": "“Car crash” police communications on Nicola Bulley case fuelled speculation",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/uk-news/2023/feb/16/car-crash-police-communications-on-nicola-bulley-case-fuelled-speculation",
+      "verificationSourceURL": "https://www.theguardian.com/uk-news/2023/feb/16/car-crash-police-communications-on-nicola-bulley-case-fuelled-speculation",
+      "sourceURL": "https://www.theguardian.com/uk-news/2023/feb/16/car-crash-police-communications-on-nicola-bulley-case-fuelled-speculation",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "event-3",
+      "event": "Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+      "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.theguardian.com/uk-news/2023/feb/16/car-crash-police-communications-on-nicola-bulley-case-fuelled-speculation",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/uk-news/2023/feb/16/car-crash-police-communications-on-nicola-bulley-case-fuelled-speculation",
+      "auditNote": null
+    },
+    {
+      "id": "bulley-h07",
+      "date": "2023-02-16",
+      "outlet": "The Independent",
+      "headline": "Police decision to reveal Nicola Bulley details slammed as “deeply troubling”",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/news/uk/nicola-bulley-lancashire-police-police-big-brother-watch-conservative-b2283394.html",
+      "verificationSourceURL": "https://www.independent.co.uk/news/uk/nicola-bulley-lancashire-police-police-big-brother-watch-conservative-b2283394.html",
+      "sourceURL": "https://www.independent.co.uk/news/uk/nicola-bulley-lancashire-police-police-big-brother-watch-conservative-b2283394.html",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "event-3",
+      "event": "Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+      "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.independent.co.uk/news/uk/nicola-bulley-lancashire-police-police-big-brother-watch-conservative-b2283394.html",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.independent.co.uk/news/uk/nicola-bulley-lancashire-police-police-big-brother-watch-conservative-b2283394.html",
+      "auditNote": null
+    },
+    {
+      "id": "bulley-h08",
+      "date": "2023-02-17",
+      "outlet": "The Guardian",
+      "headline": "Police release of Nicola Bulley’s personal details “as sexist as it comes”",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/uk-news/2023/feb/17/police-release-of-nicola-bulleys-personal-details-as-sexist-as-it-comes",
+      "verificationSourceURL": "https://www.theguardian.com/uk-news/2023/feb/17/police-release-of-nicola-bulleys-personal-details-as-sexist-as-it-comes",
+      "sourceURL": "https://www.theguardian.com/uk-news/2023/feb/17/police-release-of-nicola-bulleys-personal-details-as-sexist-as-it-comes",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "event-3",
+      "event": "Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+      "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.theguardian.com/uk-news/2023/feb/17/police-release-of-nicola-bulleys-personal-details-as-sexist-as-it-comes",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/uk-news/2023/feb/17/police-release-of-nicola-bulleys-personal-details-as-sexist-as-it-comes",
+      "auditNote": null
+    },
+    {
+      "id": "bulley-h09",
+      "date": "2023-02-19",
+      "outlet": "The Guardian",
+      "headline": "Police’s poor communication on Nicola Bulley case is a lesson for other forces",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/uk-news/2023/feb/19/polices-poor-communications-on-nicola-bulley-case-are-a-lesson-for-other-forces",
+      "verificationSourceURL": "https://www.theguardian.com/uk-news/2023/feb/19/polices-poor-communications-on-nicola-bulley-case-are-a-lesson-for-other-forces",
+      "sourceURL": "https://www.theguardian.com/uk-news/2023/feb/19/polices-poor-communications-on-nicola-bulley-case-are-a-lesson-for-other-forces",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "event-4",
+      "event": "A body was found; later identification confirmed it was Nicola Bulley, and family requested privacy.",
+      "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation. / A body was found; later identification confirmed it was Nicola Bulley, and family requested privacy.",
+      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.theguardian.com/uk-news/2023/feb/19/polices-poor-communications-on-nicola-bulley-case-are-a-lesson-for-other-forces",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/uk-news/2023/feb/19/polices-poor-communications-on-nicola-bulley-case-are-a-lesson-for-other-forces",
+      "auditNote": null
+    },
+    {
+      "id": "bulley-h10",
+      "date": "2023-02-22",
+      "outlet": "The Independent",
+      "headline": "Nicola Bulley: What investigations have been launched and why?",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/news/uk/nicola-bulley-iopc-college-of-policing-itv-ofcom-b2287515.html",
+      "verificationSourceURL": "https://www.independent.co.uk/news/uk/nicola-bulley-iopc-college-of-policing-itv-ofcom-b2287515.html",
+      "sourceURL": "https://www.independent.co.uk/news/uk/nicola-bulley-iopc-college-of-policing-itv-ofcom-b2287515.html",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "event-5",
+      "event": "The College of Policing review and IOPC inquiry were announced.",
+      "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation. / A body was found; later identification confirmed it was Nicola Bulley, and family requested privacy. / The College of Policing review and IOPC inquiry were announced.",
+      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.independent.co.uk/news/uk/nicola-bulley-iopc-college-of-policing-itv-ofcom-b2287515.html",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.independent.co.uk/news/uk/nicola-bulley-iopc-college-of-policing-itv-ofcom-b2287515.html",
+      "auditNote": null
+    },
+    {
+      "id": "bulley-h11",
+      "date": "2023-02-22",
+      "outlet": "The Guardian",
+      "headline": "Police behind Nicola Bulley search face two investigations",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/uk-news/2023/feb/22/nicola-bulley-visit-police-watchdog-iopc-welfare-concern",
+      "verificationSourceURL": "https://www.theguardian.com/uk-news/2023/feb/22/nicola-bulley-visit-police-watchdog-iopc-welfare-concern",
+      "sourceURL": "https://www.theguardian.com/uk-news/2023/feb/22/nicola-bulley-visit-police-watchdog-iopc-welfare-concern",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "eventId": "event-5",
+      "event": "The College of Policing review and IOPC inquiry were announced.",
+      "wave": "A private search specialist said his team had not located Bulley in a specified section of river. / Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention. / Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation. / A body was found; later identification confirmed it was Nicola Bulley, and family requested privacy. / The College of Policing review and IOPC inquiry were announced.",
+      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.theguardian.com/uk-news/2023/feb/22/nicola-bulley-visit-police-watchdog-iopc-welfare-concern",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/uk-news/2023/feb/22/nicola-bulley-visit-police-watchdog-iopc-welfare-concern",
+      "auditNote": null
+    }
+  ],
+  "publicContext": {
+    "intro": "Nicola Bulley disappeared in Lancashire in January 2023. A search, public speculation, police disclosures and criticism of intrusive coverage unfolded over the following weeks. She was found dead on 19 February. Ask when useful search information gave way to speculation or intrusion, and whose decisions warranted scrutiny.",
+    "url": "https://www.lancashire.police.uk/news/2023/february/nicola-bulley-investigation-update/",
+    "allegationResponse": "Her family’s requests for privacy matter to the assessment. Later official reviews are identified as retrospective; this game does not attribute her death to reporting.",
+    "sequence": [
+      {
+        "date": "2023-02-08",
+        "text": "A private search specialist said his team had not located Bulley in a specified section of river.",
+        "evidenceIds": [
+          "event-1"
+        ]
+      },
+      {
+        "date": "2023-02-14",
+        "text": "Police said two people had been arrested on suspicion of malicious communications as rumors and in-person searching drew attention.",
+        "evidenceIds": [
+          "event-2"
+        ]
+      },
+      {
+        "date": "2023-02-15",
+        "text": "Police disclosed a high-risk classification and sensitive personal information at a press conference, saying they were addressing speculation.",
+        "evidenceIds": [
+          "event-3"
+        ]
+      },
+      {
+        "date": "2023-02-19",
+        "text": "A body was found; later identification confirmed it was Nicola Bulley, and family requested privacy.",
+        "evidenceIds": [
+          "event-4"
+        ]
+      },
+      {
+        "date": "2023-02-22",
+        "text": "The College of Policing review and IOPC inquiry were announced.",
+        "evidenceIds": [
+          "event-5"
+        ]
+      }
+    ]
+  },
+  "imageCredits": [
+    {
+      "caption": "River Wyre near St Michael’s on Wyre, photographed in 2005. Landscape only; it does not depict Nicola Bulley or the 2023 search.",
+      "author": "David Medcalf",
+      "license": "CC BY-SA 2.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:River_Wyre,_near_St_Michael%27s_on_Wyre.jpg",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/"
+    },
+    {
+      "caption": "River Wyre at St Michael’s on Wyre, photographed in 2011. Landscape only; it does not depict Nicola Bulley or the 2023 search.",
+      "author": "David Dixon",
+      "license": "CC BY-SA 2.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:River_Wyre,_St_Michael%27s_on_Wyre_-_geograph.org.uk_-_2528147.jpg",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/"
+    }
+  ]
+}
