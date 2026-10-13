@@ -30,6 +30,7 @@ export function createLambdaHandler({loadConfig,loadSnapshot,saveSnapshot,fetchI
       }});
       const isHttp=Boolean(event?.requestContext || event?.rawPath || event?.httpMethod || event?.headers);
       if(!isHttp&&event?.action==='update-owner-balance')return await gateway.updateOwnerBalance(event.report || {}); // IAM Invoke only.
+      if(!isHttp&&event?.action==='prepare-reviewed-voice')return await gateway.prepareReviewedVoiceBatch(event.request || {}); // IAM Invoke only; fixed reviewed scripts only.
       if(!isHttp)return fail();
       const method=event.requestContext?.http?.method || event.httpMethod;
       const rawBody=event.body || '';

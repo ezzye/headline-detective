@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {Readable} from 'node:stream';
 import {createGameServer} from './server.mjs';
+import {VOICE_CHARACTERS} from './voice-direction.mjs';
 
 // Exercise the actual HTTP handler without binding a port in the sandbox.
 function post(app,url,body) {
@@ -49,7 +50,8 @@ test('speech cache separates performance, configured model wins over browser inp
   const s=await start(app),desk=s.desks[0].outletId,out=(await answer(app,s,desk,'Why should we care?','care')).json();
   const speak=performance=>post(app,'/api/speak',{sessionId:s.sessionId,outletId:desk,kind:'reply',replyId:out.replyId,performance,model_id:'evil-model',text:'attacker text'});
   assert.equal((await speak('calm')).status,200);assert.equal((await speak('theatrical')).status,200);assert.equal((await speak('theatrical')).status,200);assert.equal(calls.length,2);
-  assert.equal(calls[0].model_id,'eleven_v3');assert.doesNotMatch(calls[0].text,/attacker text/);assert.match(calls[1].text,/^\[thoughtful\]/);assert.doesNotMatch(calls[1].text,/<break/);
+  const deskIndex=app.sessions.get(s.sessionId).desks.findIndex(d=>d.outletId===desk),voiceIndex=app.sessions.get(s.sessionId).voiceIndexByDesk?.[desk] ?? deskIndex;
+  assert.equal(calls[0].model_id,'eleven_v3');assert.doesNotMatch(calls[0].text,/attacker text/);assert.ok(calls[1].text.startsWith(VOICE_CHARACTERS[voiceIndex].tag));assert.doesNotMatch(calls[1].text,/<break/);
   assert.equal((await speak('unlimited')).status,400);
   assert.equal((await post(app,'/api/speak',{sessionId:s.sessionId,outletId:s.desks[1].outletId,kind:'reply',replyId:out.replyId,performance:'theatrical'})).status,403);
 });

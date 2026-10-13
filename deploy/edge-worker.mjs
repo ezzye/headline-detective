@@ -4,6 +4,7 @@ const SECURITY={'x-content-type-options':'nosniff','referrer-policy':'same-origi
 const json=(status,error)=>new Response(JSON.stringify({error}),{status,headers:{...SECURITY,'content-type':'application/json','cache-control':'no-store'}});
 async function visitorHash(ip,secret){const key=await crypto.subtle.importKey('raw',new TextEncoder().encode(secret),{name:'HMAC',hash:'SHA-256'},false,['sign']);return [...new Uint8Array(await crypto.subtle.sign('HMAC',key,new TextEncoder().encode(ip)))].map(x=>x.toString(16).padStart(2,'0')).join('')}
 export default {async fetch(request,env){
+ env={...env,CFJ_GATEWAY_URL:env.CFJ_GATEWAY_URL||((typeof process!=='undefined')?process.env?.CFJ_GATEWAY_URL:null),CFJ_GATEWAY_TOKEN:env.CFJ_GATEWAY_TOKEN||((typeof process!=='undefined')?process.env?.CFJ_GATEWAY_TOKEN:null)};
  const url=new URL(request.url);if(url.pathname.startsWith('/api/')){
   if(!ROUTES.has(url.pathname)||!['GET','POST'].includes(request.method))return json(404,'not_found');
   const origin=request.headers.get('origin');if(request.method==='POST'&&origin!==ORIGIN)return json(403,'origin_rejected');
@@ -13,11 +14,13 @@ export default {async fetch(request,env){
   const ip=request.headers.get('cf-connecting-ip');if(!ip)return json(503,'edge_identity_unavailable');
   let body='';if(request.method==='POST'){if(!/^application\/json(?:;|$)/i.test(request.headers.get('content-type')||''))return json(415,'application_json_required');if(Number(request.headers.get('content-length')||0)>16384)return json(413,'body_too_large');body=await request.text();if(new TextEncoder().encode(body).length>16384)return json(413,'body_too_large');}
   const id=request.headers.get('x-request-id');if(id&&!/^[A-Za-z0-9_-]{1,120}$/.test(id))return json(400,'invalid_request_id');
-  try{const response=await fetch(new URL(url.pathname,gateway),{method:request.method,headers:{'x-gateway-token':env.CFJ_GATEWAY_TOKEN,origin:ORIGIN,'x-visitor-hash':await visitorHash(ip,env.CFJ_GATEWAY_TOKEN),'content-type':'application/json',...(id?{'x-request-id':id}:{})},...(request.method==='POST'?{body}:{}),redirect:'error',signal:AbortSignal.timeout(88000)});const headers={...SECURITY,'content-type':response.headers.get('content-type')||'application/json','cache-control':'no-store'};return new Response(response.body,{status:response.status,headers});}catch{return json(503,'ai_temporarily_unavailable');}
+  const controller=new AbortController(),deadline=setTimeout(()=>controller.abort(),88000);try{const response=await fetch(new URL(url.pathname,gateway).href,{method:request.method,headers:{'x-gateway-token':env.CFJ_GATEWAY_TOKEN,origin:ORIGIN,'x-visitor-hash':await visitorHash(ip,env.CFJ_GATEWAY_TOKEN),'content-type':'application/json',...(id?{'x-request-id':id}:{})},...(request.method==='POST'?{body}:{}),redirect:'manual',signal:controller.signal});if(response.status>=300&&response.status<400)return json(503,'gateway_redirect_rejected');const headers={...SECURITY,'content-type':response.headers.get('content-type')||'application/json','cache-control':'no-store'};return new Response(response.body,{status:response.status,headers});}catch{return json(503,'ai_temporarily_unavailable');}finally{clearTimeout(deadline);}
  }
  if(!['GET','HEAD'].includes(request.method))return json(405,'method_not_allowed');
  if(url.pathname==='/robots.txt')return new Response('User-agent: *\nDisallow: /\n',{headers:{...SECURITY,'content-type':'text/plain'}});
  const name=url.pathname==='/'?'index.html':url.pathname.slice(1),file=FILES[name];if(!file)return json(404,'not_found');
+ const staticHeaders={...SECURITY,'content-type':file.type,'cache-control':name.startsWith('assets/')?'public, max-age=86400':'no-cache',...(file.etag?{etag:file.etag}:{})};
+ if(file.etag&&request.headers.get('if-none-match')===file.etag)return new Response(null,{status:304,headers:staticHeaders});
  const bytes=file.encoding==='base64'?Uint8Array.from(atob(file.content),c=>c.charCodeAt(0)):file.content;
- return new Response(request.method==='HEAD'?null:bytes,{headers:{...SECURITY,'content-type':file.type,'cache-control':'no-cache'}});
+ return new Response(request.method==='HEAD'?null:bytes,{headers:staticHeaders});
 }};

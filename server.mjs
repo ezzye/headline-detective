@@ -1,3 +1,4 @@
+import {onlinePage} from './online-page.mjs';
 import http from 'node:http';
 import { voiceDirection, VOICE_CHARACTERS } from './voice-direction.mjs';
 import { readFile } from 'node:fs/promises';
@@ -54,7 +55,7 @@ function fixture(caseItem, question = '', article = null, deskIndex = 0) {
   if (/^\s*In one short sentence\b/i.test(question)) return { reply: `${text.slice(0, 148).replace(/[.!?\s]+$/, '')}. Simulated.`.slice(0, 180), evidenceIds, mode: 'offline' };
   return { reply: `${text} Simulated AI interpretation; source headline unchanged.`, evidenceIds, mode: 'offline' };
 }
-function speechText(reply) {
+export function speechText(reply) {
   return reply.replace(/^AI interpretation(?:\s*\(Simulated\))?\s*:\s*/i, '')
     .replace(/\s*(?:\(\s*Simulated(?:; source headline unchanged\.)?\s*\)|Simulated\.)\s*$/i, '').trim();
 }
@@ -198,9 +199,9 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
         const bytes=await readFile(path.join(HERE,asset.file));if(bytes.length>4*1024*1024)return json(res,503,{error:'asset_unavailable'});
         const type=pathname.endsWith('.png')?'image/png':pathname.endsWith('.webp')?'image/webp':'image/jpeg';res.writeHead(200,{'content-type':type,'cache-control':'public, max-age=3600','x-content-type-options':'nosniff'});return res.end(bytes);
       }
-      const publicPages = { '/': 'index.html','/donate.html':'donate.html','/justice.html':'justice.html','/credits.html':'credits.html','/privacy.html':'privacy.html', '/README.html': 'README.html', '/verification.html': 'verification.html', '/comparison.html': 'comparison.html' };
+      const publicPages = { '/': 'index.html','/offline.html':'index.html','/donate.html':'donate.html','/justice.html':'justice.html','/credits.html':'credits.html','/privacy.html':'privacy.html', '/README.html': 'README.html', '/verification.html': 'verification.html', '/comparison.html': 'comparison.html' };
       if (req.method === 'GET' && Object.hasOwn(publicPages, pathname)) {
-        const html = await readFile(path.join(HERE, publicPages[pathname]));
+        let html = await readFile(path.join(HERE, publicPages[pathname]));if(pathname==='/'){const manifest=await (imageManifestPromise ||= readFile(path.join(HERE,'assets/media-credits.json'),'utf8').then(JSON.parse));html=onlinePage(html.toString('utf8'),manifest)}
         res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' }); return res.end(html);
       }
       if (req.method === 'POST' && pathname.startsWith('/api/')) {
@@ -214,12 +215,13 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
           if (sessions.size >= 256) return json(res, 503, { error: 'session_capacity_reached' });
           const desks = DESKS.slice(0, item.campaigns.length).map((label, i) => ({ outletId: `desk-${String.fromCharCode(97 + i)}`, label }));
           const orderedCampaigns = shuffled(item.campaigns, random);
+          const voiceIndexByDesk = Object.fromEntries(desks.map((d,i) => [d.outletId,item.campaigns.indexOf(orderedCampaigns[i])]));
           const campaignByDesk = Object.fromEntries(desks.map((d, i) => [d.outletId, orderedCampaigns[i]]));
           const articleByDesk = Object.fromEntries(desks.map(d => [d.outletId, campaignByDesk[d.outletId].examples[0]]));
           const id = randomUUID();
-          sessions.set(id, { mode: 'campaign', conversationByDesk: {}, createdAt: clock(), caseId: item.id, desks, campaignByDesk, articleByDesk, calls: 0, inFlight: 0, controllers: new Set(), revealed: false, replies: new Map(), briefingReplies: new Map(), voiceCalls: 0, voiceChars: 0, voiceInFlight: 0 });
+          sessions.set(id, { mode: 'campaign', conversationByDesk: {}, createdAt: clock(), caseId: item.id, desks, campaignByDesk, articleByDesk, voiceIndexByDesk, calls: 0, inFlight: 0, controllers: new Set(), revealed: false, replies: new Map(), briefingReplies: new Map(), voiceCalls: 0, voiceChars: 0, voiceInFlight: 0 });
           const { name: _sourceName, ...anonymousSource } = item.source;
-          return json(res, 201, { sessionId: id, caseId: item.id, countMode: item.countMode || 'daily', title: item.title, subject: item.subject, splitLabel: item.splitLabel || null, splitEventDate: item.splitEventDate || item.events.find(e => /resign/i.test(e.label))?.date || null, dataCompleteness: item.dataCompleteness || null, scrutinyCriteria: item.scrutinyCriteria || [], desks: desks.map((d, i) => ({ ...d, dailyCounts: campaignByDesk[d.outletId].dailyCounts, listedCount: campaignByDesk[d.outletId].listedCount, activeDays: campaignByDesk[d.outletId].activeDays, peakDaily: campaignByDesk[d.outletId].peakDaily, afterResignationCount: campaignByDesk[d.outletId].afterResignationCount, beforeResignationCount: campaignByDesk[d.outletId].beforeResignationCount, scrutiny: campaignByDesk[d.outletId].scrutiny || [], examples: campaignByDesk[d.outletId].examples.map(({ id: _id, headline, url, published, verification }) => ({ headline, url, published, verification })), reviewNotes: campaignByDesk[d.outletId].reviewNotes, briefing: anonymousProviderValue(campaignByDesk[d.outletId].briefing, item.campaigns, new Set(item.evidence.map(e=>e.id))), voiceSpeaker: `Outlet ${String.fromCharCode(65 + i)}`, voiceCharacter:VOICE_CHARACTERS[i].label, voiceConfigured })), days: item.days, start: item.start, end: item.end, endNote: item.endNote, source: anonymousSource, evidence: item.evidence, events: item.events, reasoningChecks: item.reasoningChecks.map(({ id, prompt, options }) => ({ id, prompt, options })), label: 'Outlet campaign aggregates and article samples are source records; simulated outlet-editor replies are interpretation.' });
+          return json(res, 201, { sessionId: id, caseId: item.id, countMode: item.countMode || 'daily', title: item.title, subject: item.subject, splitLabel: item.splitLabel || null, splitEventDate: item.splitEventDate || item.events.find(e => /resign/i.test(e.label))?.date || null, dataCompleteness: item.dataCompleteness || null, scrutinyCriteria: item.scrutinyCriteria || [], speechProfile:{model:env.ELEVENLABS_MODEL || 'eleven_flash_v2_5',directionVersion:'voice-direction-v1',cacheVersion:'cfj-speech-v2',format:'mp3_44100_64'}, desks: desks.map((d, i) => ({ ...d, dailyCounts: campaignByDesk[d.outletId].dailyCounts, listedCount: campaignByDesk[d.outletId].listedCount, activeDays: campaignByDesk[d.outletId].activeDays, peakDaily: campaignByDesk[d.outletId].peakDaily, afterResignationCount: campaignByDesk[d.outletId].afterResignationCount, beforeResignationCount: campaignByDesk[d.outletId].beforeResignationCount, scrutiny: campaignByDesk[d.outletId].scrutiny || [], examples: campaignByDesk[d.outletId].examples.map(({ id: _id, headline, url, published, verification }) => ({ headline, url, published, verification })), reviewNotes: campaignByDesk[d.outletId].reviewNotes, briefing: anonymousProviderValue(campaignByDesk[d.outletId].briefing, item.campaigns, new Set(item.evidence.map(e=>e.id))), voiceSpeaker: `Outlet ${String.fromCharCode(65 + i)}`, voiceCharacter:VOICE_CHARACTERS[voiceIndexByDesk[d.outletId]].label, voiceConfigured })), days: item.days, start: item.start, end: item.end, endNote: item.endNote, source: anonymousSource, evidence: item.evidence, events: item.events, reasoningChecks: item.reasoningChecks.map(({ id, prompt, options }) => ({ id, prompt, options })), label: 'Outlet campaign aggregates and article samples are source records; simulated outlet-editor replies are interpretation.' });
         }
         const cases = await loadCases();
         if (pathname === '/api/session') {
@@ -370,6 +372,7 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
           if (!voiceConfigured) return json(res, 503, { error: 'voice_not_configured' });
           const article = session.articleByDesk[body.outletId];
           const deskIndex = session.desks.findIndex(d => d.outletId === body.outletId);
+          const voiceIndex = session.voiceIndexByDesk?.[body.outletId] ?? deskIndex;
           if (!article || deskIndex < 0) return json(res, 400, { error: 'unknown_outlet' });
           let text, savedReply = null;
           if (body.kind === 'headline') text = `Desk ${String.fromCharCode(65 + deskIndex)}. Headline: ${article.headline}`;
@@ -381,8 +384,8 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
           } else return json(res, 400, { error: 'invalid_speech_kind' });
           const maxSpeechChars = session.mode === 'campaign' ? (savedReply?.kind === 'briefing' ? 4000 : 2000) : 1200;
           if (!text.trim() || text.length > maxSpeechChars) return json(res, 400, { error: 'invalid_speech_text' });
-          const speaker = String.fromCharCode(65 + deskIndex), id = env[`ELEVENLABS_VOICE_${speaker}`];
-          const directed=voiceDirection({text,deskIndex,model:env.ELEVENLABS_MODEL || 'eleven_flash_v2_5',performance:body.performance || 'calm'});
+          const speaker = String.fromCharCode(65 + voiceIndex), id = env[`ELEVENLABS_VOICE_${speaker}`];
+          const directed=voiceDirection({text,deskIndex:voiceIndex,model:env.ELEVENLABS_MODEL || 'eleven_flash_v2_5',performance:body.performance || 'calm'});
           const hash = createHash('sha256').update(`${id}\0${directed.model_id}\0${directed.performance}\0${directed.text}\0${JSON.stringify(directed.voice_settings)}`).digest('hex');
           const sendAudio = bytes => { res.writeHead(200, { 'content-type': 'audio/mpeg', 'content-length': bytes.length, 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' }); res.end(bytes); };
           if (voiceCache.has(hash)) { const cached = voiceCache.get(hash); voiceCache.delete(hash); voiceCache.set(hash, cached); return sendAudio(cached); }
@@ -503,6 +506,7 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
           return json(res, 200, session.revealResult);
         }
       }
+      if(req.method==='GET' && pathname==='/favicon.svg'){res.writeHead(200,{'content-type':'image/svg+xml','cache-control':'public, max-age=86400'});return res.end(await readFile(path.join(HERE,'favicon.svg')));}
       if (req.method === 'GET' && pathname === '/favicon.ico') { res.writeHead(204); return res.end(); }
       return json(res, 404, { error: 'not_found' });
     } catch (err) {

@@ -65,15 +65,68 @@ test('health and donation options expose nonsecret readiness and compatible mode
 
 test('durable audio cache enforces per-item and total stored size, safe headers, and fixed TTL',async t=> {
  const {AUDIO_CACHE_LIMITS}=await import('./public-gateway.mjs');let time=Date.now();const audio=Buffer.alloc(900000,65),entries={};
- for(let i=0;i<10;i++)entries['old-'+i]={createdAt:time-1000-i,lastUsedAt:time-1000-i,dataBytes:audio.length,result:{body:audio.toString('base64'),headers:{'set-cookie':'malicious-cookie','location':'https://evil.invalid'}}};
+ for(let i=0;i<30;i++)entries['old-'+i]={createdAt:time-1000-i,lastUsedAt:time-1000-i,dataBytes:audio.length,result:{body:audio.toString('base64'),headers:{'set-cookie':'malicious-cookie','location':'https://evil.invalid'}}};
  const tooLarge=Buffer.alloc(AUDIO_CACHE_LIMITS.maxItemBytes+1,66);entries.tooLarge={createdAt:time,dataBytes:tooLarge.length,result:{body:tooLarge.toString('base64')}};
  entries.expired={createdAt:time-AUDIO_CACHE_LIMITS.ttlMs,dataBytes:1,result:{body:'QQ=='}};
  entries.invalid={createdAt:time,dataBytes:100,result:{body:'QQ=='}};
  const {gateway}=await setup(t,{clock:()=>time,state:{audioCache:entries}});
  assert.equal(gateway.state.audioCache.tooLarge,undefined);assert.equal(gateway.state.audioCache.expired,undefined);assert.equal(gateway.state.audioCache.invalid,undefined);
- assert(gateway.state.audioCacheBytes<=AUDIO_CACHE_LIMITS.maxStoredBytes);assert(Object.keys(gateway.state.audioCache).length<10);
- assert.equal(gateway.state.audioCache['old-0'].result.headers['set-cookie'],undefined);assert.equal(gateway.state.audioCache['old-0'].result.headers.location,undefined);assert.equal(gateway.state.audioCache['old-0'].result.headers['content-type'],'audio/mpeg');
+ assert(gateway.state.audioCacheBytes<=AUDIO_CACHE_LIMITS.maxStoredBytes);assert(Object.keys(gateway.state.audioCache).length<30);
+ assert.equal(gateway.state.audioCache['old-29'],undefined);assert.equal(gateway.state.audioCache['old-0'].result.headers['set-cookie'],undefined);assert.equal(gateway.state.audioCache['old-0'].result.headers.location,undefined);assert.equal(gateway.state.audioCache['old-0'].result.headers['content-type'],'audio/mpeg');
  time+=AUDIO_CACHE_LIMITS.ttlMs;await gateway.save();assert.equal(Object.keys(gateway.state.audioCache).length,0);assert.equal(gateway.state.audioCacheBytes,0);
+});
+
+test('approved briefing audio is content-addressed across visitors and survives a cold gateway start',async t=> {
+ const c=config();c.env.ELEVENLABS_API_KEY='owner-voice-synthetic';let paid=0,time=Date.now();
+ const audio=Buffer.from('approved-briefing-audio');
+ const fetchImpl=async(url)=>{if(url.endsWith('/user/subscription'))return {ok:true,json:async()=>({character_limit:100000,character_count:0})};paid++;return {ok:true,headers:{get:()=> 'audio/mpeg'},arrayBuffer:async()=>audio.buffer.slice(audio.byteOffset,audio.byteOffset+audio.byteLength)};};
+ let randomCalls=0;const deterministicRandom=()=>{const value=randomCalls<3?0.5:0.99;randomCalls++;return value;};
+ const first=await setup(t,{config:c,clock:()=>time,fetchImpl,random:deterministicRandom});
+ const original=await session(first.call);assert.deepEqual(original.speechProfile,{model:'eleven_v3',directionVersion:'voice-direction-v1',cacheVersion:'cfj-speech-v2',format:'mp3_44100_64'});const script=parsed(await first.call('/api/campaign/briefing',{sessionId:original.sessionId,outletId:original.desks[0].outletId}));
+ const speak=(call,s,reply,visitor,cacheOnly=false,outletId=s.desks[0].outletId)=>call('/api/speak',{sessionId:s.sessionId,outletId,kind:'reply',replyId:reply.replyId,performance:'calm',...(cacheOnly?{cacheOnly:true}:{})},'POST',visitor?{'x-visitor-hash':visitor}:{});
+ assert.equal((await speak(first.call,original,script,undefined,true)).status,404);assert.equal(paid,0,'cache-only misses never dispatch paid calls');
+ assert.equal((await speak(first.call,original,script)).status,200);assert.equal(paid,1);
+ const visitorB='b'.repeat(64),other=await session((route,body)=>first.call(route,body,'POST',{'x-visitor-hash':visitorB}));
+ let otherScript,otherOutlet;
+ for(const desk of other.desks){const candidate=parsed(await first.call('/api/campaign/briefing',{sessionId:other.sessionId,outletId:desk.outletId},'POST',{'x-visitor-hash':visitorB}));if(candidate.reply===script.reply){otherScript=candidate;otherOutlet=desk.outletId;break;}}
+ assert(otherScript,'second session keeps the same reviewed briefing under its shuffled desk assignment');assert.equal((await speak(first.call,other,otherScript,visitorB,false,otherOutlet)).body,audio.toString('base64'));assert.equal(paid,1);
+ assert.equal((await speak(first.call,original,script,visitorB)).status,403,'a cache hit still requires session ownership');
+ const restartDir=await mkdtemp(path.join(await realpath(tmpdir()),'gateway-restart-'));
+ const restored=createPublicGateway({config:c,storagePath:path.join(restartDir,'vault.sqlite'),masterKey:randomBytes(32),state:structuredClone(first.gateway.state),persist:async()=>{},clock:()=>time,fetchImpl,random:deterministicRandom});
+ t.after(async()=>{restored.close();await rm(restartDir,{recursive:true,force:true});});
+ const visitorC='c'.repeat(64),callC=(route,body,method='POST')=>restored.handle({method,path:route,headers:{...headers(c),'x-visitor-hash':visitorC},body:body===undefined?'':JSON.stringify(body)});
+ time+=31*24*60*60*1000;
+ const third=await session(callC);let thirdScript,thirdOutlet;
+ for(const desk of third.desks){const candidate=parsed(await callC('/api/campaign/briefing',{sessionId:third.sessionId,outletId:desk.outletId}));if(candidate.reply===script.reply){thirdScript=candidate;thirdOutlet=desk.outletId;break;}}
+ assert(thirdScript,'cold session keeps the same reviewed briefing under its shuffled desk assignment');
+ assert.equal((await speak(callC,third,thirdScript,undefined,true,thirdOutlet)).body,audio.toString('base64'));assert.equal(paid,1,'fixed script survives cold restart and age beyond a month without a provider call');
+});
+
+test('cache pressure evicts dynamic audio before fixed reviewed recordings',async t=> {
+ const now=Date.now(),audio=Buffer.alloc(1024*1024,65),entries={};
+ for(let i=0;i<5;i++)entries['fixed-'+i]={cacheClass:'fixed',createdAt:now-1000-i,lastUsedAt:now-1000-i,dataBytes:audio.length,result:{body:audio.toString('base64')}};
+ for(let i=0;i<20;i++)entries['dynamic-'+i]={cacheClass:'dynamic',createdAt:now-1000-i,lastUsedAt:now-1000-i,dataBytes:audio.length,result:{body:audio.toString('base64')}};
+ const {gateway}=await setup(t,{state:{audioCache:entries}});
+ for(let i=0;i<5;i++)assert(gateway.state.audioCache['fixed-'+i]);assert(Object.keys(gateway.state.audioCache).length<25);
+});
+
+test('speech cache identity changes with text, voice, model, performance, settings, or dynamic ownership',async()=> {
+ const {speechCacheKey}=await import('./public-gateway.mjs');
+ const base={text:'A server-saved script.',voiceId:'voice-a',model:'eleven_v3',performance:'calm',voiceSettings:{stability:0.9,similarity_boost:0.75,use_speaker_boost:false},cacheClass:'fixed'};
+ const key=value=>speechCacheKey({...base,...value});const original=key({});
+ for(const change of [{text:'A changed script.'},{voiceId:'voice-b'},{model:'eleven_flash_v2_5'},{performance:'theatrical'},{voiceSettings:{...base.voiceSettings,stability:0.5}}])assert.notEqual(key(change),original);
+ assert.equal(key({visitor:'a'.repeat(64),sessionId:'one',replyId:'first'}),key({visitor:'b'.repeat(64),sessionId:'two',replyId:'second'}),'fixed content is shared independently of session identity');
+ const dynamic=value=>speechCacheKey({...base,cacheClass:'dynamic',visitor:'a'.repeat(64),sessionId:'one',outletId:'desk-a',replyId:'reply-1',...value});
+ assert.notEqual(dynamic({visitor:'b'.repeat(64)}),dynamic({}));assert.notEqual(dynamic({sessionId:'two'}),dynamic({}));
+});
+
+test('failed speech dispatch never creates a durable audio cache entry',async t=> {
+ const c=config();c.env.ELEVENLABS_API_KEY='owner-voice-synthetic';let paid=0;
+ const {call,gateway}=await setup(t,{config:c,fetchImpl:async url=>{if(url.endsWith('/user/subscription'))return {ok:true,json:async()=>({character_limit:100000,character_count:0})};paid++;return {ok:false,status:503};}});
+ const s=await session(call),briefing=parsed(await call('/api/campaign/briefing',{sessionId:s.sessionId,outletId:s.desks[0].outletId}));
+ const body={sessionId:s.sessionId,outletId:s.desks[0].outletId,kind:'reply',replyId:briefing.replyId,performance:'calm'};
+ assert.equal((await call('/api/speak',body)).status,502);assert.equal(paid,1);assert.equal(Object.keys(gateway.state.audioCache).length,0);
+ assert.equal((await call('/api/speak',body)).status,502);assert.equal(paid,1,'failed result replays without cached audio or another paid call');
 });
 
 test('completed legacy speech marker from before durable cache rollout still prevents charging the same retry',async t=> {

@@ -33,6 +33,26 @@ test('explicit IAM maintenance updates reports; missing serialized deployment fl
  const bad=memory({...c,singleConcurrency:false});assert.equal((await bad.handler(event(c,'/api/donations/options',undefined,'GET'))).statusCode,503);
 });
 
+test('IAM voice preparation uses only reviewed briefings, stays capped and is idempotent',async()=> {
+ const c=config();c.env.ELEVENLABS_API_KEY='owner-voice-synthetic';let paid=0;const audio=Buffer.from('reviewed-audio');
+ const m=memory(c,async url=>{if(url.endsWith('/user/subscription'))return {ok:true,json:async()=>({character_limit:100000,character_count:0})};paid++;return {ok:true,headers:{get:()=> 'audio/mpeg'},arrayBuffer:async()=>audio.buffer.slice(audio.byteOffset,audio.byteOffset+audio.byteLength)};});
+ const request={batchId:'warm-reviewed-2026-10',performance:'theatrical',items:[{caseId:'arday-2026-campaign',campaignIndex:0},{caseId:'arday-2026-campaign',campaignIndex:1}]};
+ const first=await m.handler({action:'prepare-reviewed-voice',request});assert.equal(first.status,'running');assert.equal(first.nextIndex,1);assert.equal(first.calls,1);assert(first.characters>0&&first.characters<28000);assert.equal(first.items[0].status,'cached');assert.equal(paid,1);
+ const second=await m.handler({action:'prepare-reviewed-voice',request});assert.equal(second.status,'complete');assert.equal(second.calls,2);assert.equal(second.items[1].status,'cached');assert.equal(paid,2,'at most one paid synthesis runs in each Lambda invocation');
+ const again=await m.handler({action:'prepare-reviewed-voice',request});assert.deepEqual(again,second);assert.equal(paid,2,'a repeated IAM batch cannot dispatch a second paid call');
+ const spoof=event(c,'/api/donations/options',undefined,'GET');spoof.action='prepare-reviewed-voice';spoof.request={...request,batchId:'spoofed-warmup-2026'};assert.equal((await m.handler(spoof)).statusCode,200);assert.equal(paid,2,'HTTP action fields cannot invoke maintenance');
+ const oversized=await m.handler({action:'prepare-reviewed-voice',request:{batchId:'too-many-briefings',items:Array.from({length:21},(_,i)=>({caseId:'arday-2026-campaign',campaignIndex:i%4}))}});assert.equal(oversized.statusCode,503);assert.equal(paid,2,'oversized input fails before provider dispatch');
+ assert.equal(m.saves.at(-1).state.voiceWarmup.calls,2);assert.equal(m.saves.at(-1).state.voiceWarmup.characters,second.characters);
+});
+
+test('uncertain IAM voice reservation pauses for review without an automatic second paid call',async()=> {
+ const c=config();c.env.ELEVENLABS_API_KEY='owner-voice-synthetic';let paid=0;
+ const m=memory(c,async url=>{if(url.endsWith('/user/subscription'))return {ok:true,json:async()=>({character_limit:100000,character_count:0})};paid++;throw new Error('provider timeout');});
+ const request={batchId:'warm-review-timeout',performance:'theatrical',items:[{caseId:'arday-2026-campaign',campaignIndex:0}]};
+ const first=await m.handler({action:'prepare-reviewed-voice',request});assert.equal(first.status,'needs_review');assert.equal(first.calls,1);assert.equal(paid,1);
+ const again=await m.handler({action:'prepare-reviewed-voice',request});assert.equal(again.status,'needs_review');assert.equal(again.items[0].status,'needs_review');assert.equal(paid,1);
+});
+
 test('completed speech survives cold restart and fresh request ID replays encrypted audio without another paid call',async()=> {
  const c=config();c.env.ELEVENLABS_API_KEY='owner-voice-synthetic';let paid=0;
  const audio=Buffer.from('synthetic-audio-cold-replay');const m=memory(c,async url=>{if(url.endsWith('/user/subscription'))return {ok:true,json:async()=>({character_limit:100000,character_count:0})};paid++;return {ok:true,headers:{get:()=> 'audio/mpeg'},arrayBuffer:async()=>audio.buffer.slice(audio.byteOffset,audio.byteOffset+audio.byteLength)};});

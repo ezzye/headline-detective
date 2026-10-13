@@ -193,9 +193,19 @@ test('headline identities remain masked until reveal and all six image payloads 
     await vm.runInContext('start()',context);
     vm.runInContext('lastReveal=false',context);
     const masked=vm.runInContext('headlineTimeline()',context);
-    for (const h of c.allHeadlines || []) assert.ok(!masked.includes(` · ${h.outlet} · `),`${c.id}/${h.id} outlet identity is masked before reveal`);
+    assert.match(masked,/<details data-headline-records>/,`${c.id} headline identities wait behind the disclosure`);
+    const renderOpenedList = () => {
+      const list={innerHTML:''};
+      context.headlineDisclosure={open:true,dataset:{},querySelector:selector=>selector==='.headline-list'?list:null};
+      vm.runInContext('if(headlineDisclosure.open)renderHeadlineRecords(headlineDisclosure)',context);
+      return list.innerHTML;
+    };
+    const maskedRows=renderOpenedList();
+    for (const h of c.allHeadlines || []) assert.ok(!maskedRows.includes(` · ${h.outlet} · `),`${c.id}/${h.id} outlet identity is masked before reveal`);
     vm.runInContext('lastReveal=true',context);
     const revealed=vm.runInContext('headlineTimeline()',context);
-    for (const h of c.allHeadlines || []) assert.ok(revealed.includes(` · ${h.outlet} · `),`${c.id}/${h.id} source identity is available after reveal`);
+    assert.match(revealed,/<details data-headline-records>/,`${c.id} revealed headline list is still disclosed on demand`);
+    const revealedRows=renderOpenedList();
+    for (const h of c.allHeadlines || []) assert.ok(revealedRows.includes(` · ${h.outlet} · `),`${c.id}/${h.id} source identity is available after reveal`);
   }
 });
