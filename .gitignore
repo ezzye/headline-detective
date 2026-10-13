@@ -1,0 +1,15 @@
+# Private provider settings
+.env
+.env.*
+!.env.example
+private/
+work/
+*.pem
+*.key
+# Generated local files
+node_modules/
+coverage/
+audio-cache/
+.cache/
+.DS_Store
+*.log

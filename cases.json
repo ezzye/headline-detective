@@ -1,0 +1,221 @@
+[
+  {
+    "id": "ahmed-2020",
+    "title": "Equal pay: Samira Ahmed",
+    "date": "10 January 2020",
+    "summary": "A tribunal upheld Ahmed’s equal-pay claim against the BBC.",
+    "evidence": [
+      {
+        "id": "ahmed-judgment",
+        "text": "The tribunal found like work with Jeremy Vine and rejected the BBC’s non-discriminatory explanation for the pay difference.",
+        "url": "https://assets.publishing.service.gov.uk/media/5e27051940f0b62c46060d97/Ms_S_Ahmed_-v-_BBC_-_Case_Number_2206858_2018_-_full.pdf",
+        "label": "Employment tribunal judgment, page 1"
+      }
+    ],
+    "supportedFinding": "A sex-equality ruling in a specific pay case.",
+    "limits": "This case does not establish every BBC employee’s intent or all pay outcomes.",
+    "finding": "sex-equality",
+    "feedback": "Keep the adverse ruling and its scope together.",
+    "intent": "not-established",
+    "articles": [
+      {
+        "id": "ahmed-bbc",
+        "headline": "Samira Ahmed wins BBC equal pay tribunal",
+        "outlet": "BBC News",
+        "url": "https://www.bbc.com/news/entertainment-arts-50599080",
+        "published": "10 January 2020",
+        "summary": "Reports the sex-equality ruling and BBC response.",
+        "verification": "publisher-page",
+        "note": "",
+        "verdict": "supported",
+        "verdictReason": "Central claim matches the tribunal record."
+      },
+      {
+        "id": "ahmed-itv",
+        "headline": "Samira Ahmed wins sex discrimination equal pay claim against BBC",
+        "outlet": "ITV News",
+        "url": "https://www.itv.com/news/2020-01-10/samira-ahmed-wins-sex-discrimination-equal-pay-claim-against-bbc",
+        "published": "10 January 2020",
+        "summary": "Reports the tribunal result, the pay comparison and the BBC’s response.",
+        "verification": "publisher-page",
+        "note": "",
+        "verdict": "supported",
+        "verdictReason": "Key claim agrees with the case evidence; this is not a full fairness audit."
+      },
+      {
+        "id": "ahmed-sky",
+        "headline": "Samira Ahmed: TV host who claimed BBC underpaid her by £700k wins her case",
+        "outlet": "Sky News",
+        "url": "https://news.sky.com/story/samira-ahmed-tv-presenter-wins-sex-discrimination-equal-pay-claim-against-the-bbc-11905304",
+        "published": "10 January 2020",
+        "summary": "Covers the equal-pay ruling and the BBC’s explanation.",
+        "verification": "publisher-page",
+        "note": "",
+        "verdict": "supported",
+        "verdictReason": "Key claim agrees with the case evidence; this is not a full fairness audit."
+      },
+      {
+        "id": "ahmed-guardian",
+        "headline": "BBC facing huge bill for equal pay cases after Samira Ahmed verdict",
+        "outlet": "The Guardian",
+        "url": "https://www.theguardian.com/media/2020/jan/10/samira-ahmed-wins-equal-pay-claim-against-bbc",
+        "published": "10 January 2020",
+        "summary": "",
+        "verification": "publisher-page",
+        "note": "",
+        "verdict": "supported",
+        "verdictReason": "The central reported ruling agrees with the tribunal record."
+      }
+    ],
+    "verificationDate": "13 October 2026",
+    "coverageNote": "Supported means the central claim agrees with this case pack, not an endorsement of the whole article or outlet."
+  },
+  {
+    "id": "oxford-2022",
+    "title": "Coverage of an antisemitic attack",
+    "date": "7 November 2022",
+    "summary": "Ofcom distinguished online failings from the related BBC broadcast.",
+    "evidence": [
+      {
+        "id": "ofcom-findings",
+        "text": "Ofcom found online accuracy and impartiality failings; the broadcast did not breach its Code. Disputed audio was not promptly acknowledged.",
+        "url": "https://www.ofcom.org.uk/tv-radio-and-on-demand/broadcast-standards/ofcom-concludes-investigation-into-the-bbcs-coverage-of-antisemitic-attack",
+        "label": "Ofcom’s published conclusions"
+      },
+      {
+        "id": "ofcom-archive",
+        "text": "The regulator preserves earlier BBC article versions and their amendments. Assess that historical version, not an assumed unchanged current page.",
+        "url": "https://www.ofcom.org.uk/siteassets/resources/documents/about-ofcom/bulletins/broadcast-bulletins/2022/issue-461/bbc-news-online-and-bbc-london-news-2-december-2021.pdf?v=328721",
+        "label": "Ofcom archive of the BBC article and amendments"
+      }
+    ],
+    "supportedFinding": "Online accuracy and impartiality failings.",
+    "limits": "Neither a broadcast Code breach nor deliberate racist intent was established here.",
+    "finding": "accuracy-impartiality",
+    "feedback": "A finding about one format cannot erase the finding about another.",
+    "intent": "not-established",
+    "articles": [
+      {
+        "id": "oxford-bbc",
+        "headline": "Oxford Street: Men filmed spitting at Jewish people on bus",
+        "outlet": "BBC News",
+        "url": "https://www.bbc.co.uk/news/uk-england-london-59495842",
+        "published": "2 December 2021 · initial version",
+        "summary": "The original report included an audio claim later disputed.",
+        "verification": "regulator-archive",
+        "note": "Historical version and headline reproduced in Ofcom’s report (pages 3 and 27). Later versions amended the headline and text.",
+        "verdict": "concern",
+        "verdictReason": "Ofcom criticised delayed acknowledgement of the audio dispute in this historical online article."
+      },
+      {
+        "id": "oxford-guardian",
+        "headline": "Ofcom criticises BBC reporting of antisemitic attack on party bus",
+        "outlet": "The Guardian",
+        "url": "https://www.theguardian.com/media/2022/nov/07/ofcom-critical-of-bbc-reporting-of-antisemitic-attack-on-party-bus",
+        "published": "7 November 2022",
+        "summary": "",
+        "verification": "publisher-page",
+        "note": "",
+        "verdict": "supported",
+        "verdictReason": "Reports the later regulatory criticism; compare its date with the original report."
+      },
+      {
+        "id": "oxford-euronews",
+        "headline": "BBC made misjudgement in coverage of anti-Semitic incident, regulator says",
+        "outlet": "Euronews / Reuters",
+        "url": "https://www.euronews.com/2022/11/07/britain-bbc-ofcom",
+        "published": "7 November 2022",
+        "summary": "Reports editorial failings and the finding that the broadcast did not breach the Code.",
+        "verification": "publisher-page",
+        "note": "",
+        "verdict": "supported",
+        "verdictReason": "Key claim agrees with the case evidence; this is not a full fairness audit."
+      },
+      {
+        "id": "oxford-independent",
+        "headline": "BBC made ‘significant editorial failings’ in report into antisemitic bus attack",
+        "outlet": "The Independent / PA",
+        "url": "https://www.the-independent.com/news/uk/bbc-ofcom-jewish-board-of-deputies-of-british-jews-ecu-b2219393.html",
+        "published": "7 November 2022",
+        "summary": "Reports Ofcom’s findings and the complaints history.",
+        "verification": "publisher-page",
+        "note": "",
+        "verdict": "supported",
+        "verdictReason": "Key claim agrees with the case evidence; this is not a full fairness audit."
+      }
+    ],
+    "verificationDate": "13 October 2026",
+    "coverageNote": "Supported means the central claim agrees with this case pack, not an endorsement of the whole article or outlet. The original story and later regulatory coverage were published at different stages; do not treat them as same-day equivalents."
+  },
+  {
+    "id": "slur-2020",
+    "title": "Racial slur in a news broadcast",
+    "date": "9 August 2020",
+    "summary": "Tony Hall apologised for broadcasting a racial slur.",
+    "evidence": [
+      {
+        "id": "hall-statement",
+        "text": "ITV reported Hall’s acknowledgement of a broadcast mistake and distress, alongside his stated intention to report an alleged racist attack.",
+        "url": "https://www.itv.com/news/2020-08-09/bbc-apologises-for-use-of-racist-term-in-news-report",
+        "label": "ITV reporting the BBC director-general’s statement"
+      }
+    ],
+    "supportedFinding": "Acknowledged harmful editorial decision involving racist language.",
+    "limits": "Harm and claimed intention are separate; this source is not a discrimination judgment.",
+    "finding": "racial-harm",
+    "feedback": "A claimed good intention does not erase harm or the admitted mistake.",
+    "intent": "not-established",
+    "articles": [
+      {
+        "id": "slur-bbc",
+        "headline": "BBC apologises over racial slur used in news report",
+        "outlet": "BBC News",
+        "url": "https://www.bbc.com/news/uk-53715814",
+        "published": "9 August 2020",
+        "summary": "Reports apology, prior defence, criticism and acknowledged distress.",
+        "verification": "publisher-page",
+        "note": "",
+        "verdict": "supported",
+        "verdictReason": "Apology report; no finding here."
+      },
+      {
+        "id": "slur-itv",
+        "headline": "BBC apologises for use of racist term in news report",
+        "outlet": "ITV News",
+        "url": "https://www.itv.com/news/2020-08-09/bbc-apologises-for-use-of-racist-term-in-news-report",
+        "published": "9 August 2020",
+        "summary": "Covers Hall’s apology and the stated intention to report an alleged racist attack.",
+        "verification": "publisher-page",
+        "note": "",
+        "verdict": "supported",
+        "verdictReason": "Key claim agrees with the case evidence; this is not a full fairness audit."
+      },
+      {
+        "id": "slur-sky",
+        "headline": "BBC 'very sorry' over use of racist term in news report",
+        "outlet": "Sky News",
+        "url": "https://news.sky.com/story/bbc-very-sorry-over-use-of-racist-term-in-news-report-12045959",
+        "published": "10 August 2020",
+        "summary": "Reports the apology and the preceding controversy.",
+        "verification": "publisher-page",
+        "note": "",
+        "verdict": "supported",
+        "verdictReason": "Key claim agrees with the case evidence; this is not a full fairness audit."
+      },
+      {
+        "id": "slur-wapo",
+        "headline": "BBC says sorry for using racist term in news report",
+        "outlet": "The Washington Post / AP",
+        "url": "https://www.washingtonpost.com/world/europe/bbc-says-sorry-for-using-racist-term-in-news-report/2020/08/09/c2c74a54-da56-11ea-b4f1-25b762cdbbf4_story.html",
+        "published": "9 August 2020",
+        "summary": "AP report of the apology and controversy.",
+        "verification": "publisher-page",
+        "note": "",
+        "verdict": "supported",
+        "verdictReason": "Apology report; no adverse finding supplied."
+      }
+    ],
+    "verificationDate": "13 October 2026",
+    "coverageNote": "Supported means the central claim agrees with this case pack, not an endorsement of the whole article or outlet."
+  }
+]
