@@ -7,6 +7,15 @@ const html=await readFile(new URL('./index.html',import.meta.url),'utf8');
 const context=vm.createContext({Date,Map,Error,Blob});
 vm.runInContext(html.split('// SPEECH_MEMORY_CACHE_START')[1].split('// SPEECH_MEMORY_CACHE_END')[0],context);
 const create=context.createSpeechMemoryCache;
+test('speaker controls replay each owned reply and never mark offline or another outlet reply as playable',()=>{
+  const box={style:{}};let played=null,stopped=0;
+  const state=vm.createContext({live:true,activeDesk:0,desks:[{outletId:'desk-a'}],conversationThreads:{'desk-a':[{question:'Why?',reply:'A sourced response',replyId:'reply-a'},{question:'Other?',reply:'Another outlet',replyId:'reply-b'}]},replies:{'reply-a':{outletId:'desk-a',replyId:'reply-a'},'reply-b':{outletId:'desk-b',replyId:'reply-b'}},$:()=>box,personaName:()=> 'Editor',safe:String,esc:x=>String(x).replace(/</g,'&lt;'),speakerIcon:()=>'<svg aria-hidden="true"></svg>',evidenceLink:()=>'',stop:()=>stopped++,speak:(...args)=>played=args});
+  vm.runInContext(html.slice(html.indexOf('function renderThread()'),html.indexOf('\nfunction drawDesk()')),state);
+  state.renderThread();assert.match(box.innerHTML,/voice-action/);assert.match(box.innerHTML,/Listen to reply 1/);assert(!box.innerHTML.includes('data-speak-reply="reply-b"'));
+  const button={dataset:{speakReply:'reply-a'}};box.onclick({target:{closest:()=>button}});assert.equal(stopped,1);assert.equal(played[0].replyId,'reply-a');assert.equal(played[3],button);
+  played=null;box.onclick({target:{closest:()=>({dataset:{speakReply:'reply-b'}})}});assert.equal(played,null);
+  state.live=false;state.renderThread();assert(!box.innerHTML.includes('data-speak-reply'));
+});
 test('replaying a loaded briefing keeps its server reply and avoids another registration request',async()=>{
   let posted=0,played=0;const saved={replyId:'approved-reply',paragraphs:[{text:'Reviewed script'}]};
   const replay=vm.createContext({live:true,overviewReplies:{desk:saved},$:()=>null,voiceStatus:()=>{},toast:()=>{},post:async()=>{posted++;throw Error('must reuse')},speak:async r=>{assert.equal(r.replyId,saved.replyId);assert.deepEqual(r.paragraphs,saved.paragraphs);played++}});
