@@ -7,7 +7,9 @@ import http from 'node:http';
 import { createGameServer } from './server.mjs';
 
 const testArticles = ['BBC', 'ITV News', 'Sky News', 'The Guardian'].map((outlet, i) => ({ id: `a${i}`, headline: `Authentic headline ${i}`, outlet, url: `https://example.test/${i}`, published: `2020-08-0${i + 1}`, summary: `Published summary ${i}`, verification: 'Verified from article page', note: 'Reported context', verdict: i === 0 ? 'supported' : 'concern', verdictReason: 'Compared with the case evidence.' }));
-const fixture = [{ id: 'case-1', title: 'Example', summary: 'Supported summary.', evidence: [{ id: 'e1', text: 'Evidence one.', url: 'https://example.test/1', label: 'Source one' }, { id: 'e2', text: 'Evidence two.', url: 'https://example.test/2', label: 'Source two' }], supportedFinding: 'Finding', limits: 'Limits', articles: testArticles }];
+const reasoningChecks = Array.from({ length: 5 }, (_, i) => ({ id: `check-${i + 1}`, prompt: `Which statement is supported ${i + 1}?`, options: [{ value: 'grounded', label: 'Grounded in the record' }, { value: 'unsupported', label: 'Not established' }], answer: 'grounded', explanation: `Evidence check ${i + 1} is supported.`, evidenceIds: ['e1'] }));
+const publicInterestCase = { id: 'case-public', mode: 'public-interest', title: 'Public interest example', summary: 'An example for evidence checks.', caseComparisonNote: 'Compare scrutiny and unnecessary harm.', evidence: [{ id: 'e1', text: 'Evidence one.', url: 'https://example.test/1', label: 'Source one' }, { id: 'e2', text: 'Evidence two.', url: 'https://example.test/2', label: 'Source two' }], reasoningChecks, articles: testArticles.map((a, i) => ({ ...a, id: `pi-${i}`, verdict: 'unresolved', verdictReason: 'No fixed moral key applies.', reviewNotes: { publicValue: `Public value note ${i}.`, pressure: `Pressure note ${i}.`, limit: `Limit note ${i}.` } })) };
+const fixture = [{ id: 'case-1', title: 'Example', summary: 'Supported summary.', evidence: [{ id: 'e1', text: 'Evidence one.', url: 'https://example.test/1', label: 'Source one' }, { id: 'e2', text: 'Evidence two.', url: 'https://example.test/2', label: 'Source two' }], supportedFinding: 'Finding', limits: 'Limits', articles: testArticles }, publicInterestCase];
 async function setup({ env = {}, fetchImpl, random, casesPath: providedCasesPath } = {}) {
   const dir = await mkdtemp(path.join(os.tmpdir(), 'faithful-facts-'));
   const casesPath = providedCasesPath || path.join(dir, 'cases.json');
@@ -100,6 +102,64 @@ test('12-call budget and coverage verdict reveal are immutable; responses stop a
   assert.deepEqual(again, reveal);
 });
 
+test('public-interest offline analysis is article-specific and never assigns an editorial verdict', async t => {
+  const g = await setup(); t.after(g.close);
+  const s = await newSession(g.base, 'case-public'), state = g.app.sessions.get(s.sessionId);
+  for (const [i, desk] of s.desks.entries()) {
+    const article = state.articleByDesk[desk.outletId];
+    assert.equal(article.verdict, 'unresolved');
+    const d = await (await post(g.base, '/api/respond', { sessionId: s.sessionId, caseId: 'case-public', outletId: desk.outletId, question: 'What should I consider?' })).json();
+    const focus = ['publicValue', 'pressure', 'limit'][i % 3];
+    assert.ok(d.reply.includes(article.reviewNotes[focus]));
+    assert.doesNotMatch(d.reply, /traitor|verdict/i);
+  }
+});
+
+test('public-interest reveal scores evidence checks only, accepts differing editorial judgments, and freezes', async t => {
+  const g = await setup(); t.after(g.close);
+  const makeBody = (s, choice, answers = {}) => {
+    const ids = s.desks.map(d => d.outletId);
+    return { sessionId: s.sessionId, articleVerdicts: Object.fromEntries(ids.map(id => [id, choice])), assessments: Object.fromEntries(ids.map(id => [id, { publicValue: choice === 'justified' ? 'strong' : 'weak', pressure: choice === 'justified' ? 'low' : 'high' }])), reasoningAnswers: Object.fromEntries(reasoningChecks.map(c => [c.id, answers[c.id] ?? 'grounded'])), justification: 'This written rationale weighs public value, pressure, and the limits of the evidence.' };
+  };
+  const a = await newSession(g.base, 'case-public');
+  assert.equal((await post(g.base, '/api/reveal', { ...makeBody(a, 'justified'), articleVerdicts: { ...makeBody(a, 'justified').articleVerdicts, [a.desks[0].outletId]: 'invalid' } })).status, 400);
+  const invalidAssessment = makeBody(a, 'justified'); invalidAssessment.assessments[a.desks[0].outletId].pressure = 'extreme';
+  assert.equal((await post(g.base, '/api/reveal', invalidAssessment)).status, 400);
+  const missingAnswer = makeBody(a, 'justified'); delete missingAnswer.reasoningAnswers['check-5'];
+  assert.equal((await post(g.base, '/api/reveal', missingAnswer)).status, 400);
+  const missingJustification = makeBody(a, 'justified'); delete missingJustification.justification;
+  assert.equal((await post(g.base, '/api/reveal', missingJustification)).status, 400);
+  const first = await (await post(g.base, '/api/reveal', makeBody(a, 'justified'))).json();
+  assert.equal(first.mode, 'public-interest'); assert.equal(first.reasoningScore, 10); assert.equal(first.reasoningTotal, 10);
+  assert.match(first.justification, /weighs public value/);
+  assert.equal(first.roles.every(r => r.role === 'editorial-judgment' && r.article.outlet && r.decision === 'justified'), true);
+  assert.equal('coverageCorrect' in first, false); assert.equal('traitorId' in first, false);
+  const b = await newSession(g.base, 'case-public');
+  const second = await (await post(g.base, '/api/reveal', makeBody(b, 'pile-on'))).json();
+  assert.equal(second.reasoningScore, 10); assert.ok(second.roles.every(r => r.decision === 'pile-on'));
+  const wrong = makeBody(b, 'mixed', { 'check-1': 'unsupported' });
+  const c = await newSession(g.base, 'case-public');
+  const third = await (await post(g.base, '/api/reveal', { ...wrong, sessionId: c.sessionId })).json();
+  assert.equal(third.reasoningScore, 8); assert.equal(third.reasoningResults.find(x => x.id === 'check-1').correct, false);
+  const repeated = await (await post(g.base, '/api/reveal', { ...makeBody(c, 'unclear'), reasoningAnswers: {} })).json();
+  assert.deepEqual(repeated, third);
+});
+
+test('public-interest provider receives balanced editorial and case-comparison guidance', async t => {
+  let expectedReviewNotes;
+  const g = await setup({ env: { DEEPSEEK_API_KEY: 'test-only' }, fetchImpl: async (_url, opts) => {
+    const request = JSON.parse(opts.body), system = request.messages[0].content, user = JSON.parse(request.messages[1].content);
+    assert.match(system, /public value and proportionality/); assert.match(system, /allow a mixed assessment/); assert.match(system, /Do not claim motives/); assert.match(system, /public-interest editor|evidence checker|impact reader|audience analyst/);
+    assert.deepEqual(user.article.reviewNotes, expectedReviewNotes);
+    assert.equal(user.factPacket.caseComparisonNote, publicInterestCase.caseComparisonNote);
+    return { ok: true, json: async () => ({ choices: [{ message: { content: JSON.stringify({ reply: 'AI interpretation (Simulated): The record supports scrutiny, while its pressure and limits remain relevant.', evidenceIds: ['e1'] }) } }] }) };
+  } }); t.after(g.close);
+  const s = await newSession(g.base, 'case-public'), desk = s.desks[0];
+  expectedReviewNotes = g.app.sessions.get(s.sessionId).articleByDesk[desk.outletId].reviewNotes;
+  const result = await (await post(g.base, '/api/respond', { sessionId: s.sessionId, caseId: 'case-public', outletId: desk.outletId, question: 'What should I weigh?' })).json();
+  assert.equal(result.mode, 'deepseek');
+});
+
 test('typed questions are bounded and replies are stored for controlled speech', async t => {
   const g = await setup(); t.after(g.close); const s = await newSession(g.base);
   assert.equal((await post(g.base, '/api/respond', { sessionId: s.sessionId, caseId: 'case-1', outletId: s.desks[0].outletId, question: 'x'.repeat(401) })).status, 400);
@@ -163,13 +223,43 @@ test('speech is unavailable without four distinct configured voices and rejects 
 });
 
 
+test('public-interest real cases preserve chronology metadata and article binding with non-scored judgments', async t => {
+  const casesPath = path.join(path.dirname(new URL(import.meta.url).pathname), 'cases.json');
+  const cases = JSON.parse(await (await import('node:fs/promises')).readFile(casesPath, 'utf8'));
+  const casesToCheck = cases.filter(item => item.mode === 'public-interest');
+  assert.equal(casesToCheck.length, 3);
+  const g = await setup({ casesPath }); t.after(g.close);
+  for (const [caseIndex, item] of casesToCheck.entries()) {
+    const session = await newSession(g.base, item.id), state = g.app.sessions.get(session.sessionId);
+    for (const [deskIndex, desk] of session.desks.entries()) {
+      const article = state.articleByDesk[desk.outletId];
+      assert.equal(desk.headline, article.headline); assert.equal(desk.coverageStage, article.coverageStage); assert.equal(desk.headlineType, article.headlineType);
+      const source = await (await post(g.base, '/api/story', { sessionId: session.sessionId, outletId: desk.outletId })).json();
+      assert.equal(source.headline, article.headline); assert.equal(source.outlet, article.outlet); assert.equal(source.url, article.url);
+    }
+    const decision = caseIndex % 2 ? 'justified' : 'pile-on';
+    const body = {
+      sessionId: session.sessionId,
+      articleVerdicts: Object.fromEntries(session.desks.map(d => [d.outletId, decision])),
+      assessments: Object.fromEntries(session.desks.map(d => [d.outletId, { publicValue: caseIndex % 2 ? 'strong' : 'weak', pressure: caseIndex % 2 ? 'low' : 'high' }])),
+      reasoningAnswers: Object.fromEntries(item.reasoningChecks.map(c => [c.id, c.answer])),
+      justification: 'I weighed the public interest against pressure, repetition, timing, and the limits of the article record.'
+    };
+    const revealed = await (await post(g.base, '/api/reveal', body)).json();
+    assert.equal(revealed.reasoningScore, 10); assert.equal(revealed.reasoningTotal, 10);
+    assert.equal(revealed.roles.length, 4); assert.ok(revealed.roles.every(r => r.role === 'editorial-judgment' && r.decision === decision));
+    for (const role of revealed.roles) assert.equal(role.article.url, state.articleByDesk[role.outletId].url);
+    assert.equal('coverageCorrect' in revealed, false);
+  }
+});
+
 test('all real articles are fixed and analysis remains helpful and evidence-grounded with case-scoped coverage scoring', async t => {
   const casesPath = path.join(path.dirname(new URL(import.meta.url).pathname), 'cases.json');
   const cases = JSON.parse(await (await import('node:fs/promises')).readFile(casesPath, 'utf8'));
   assert.ok(cases.length >= 1);
   assert.ok(cases.every(item => item.articles?.length === 4));
   const g = await setup({ casesPath }); t.after(g.close);
-  for (const item of cases) {
+  for (const item of cases.filter(x => x.mode !== 'public-interest')) {
     const session = await newSession(g.base, item.id);
     assert.equal(session.caseId, item.id);
     for (const desk of session.desks) {

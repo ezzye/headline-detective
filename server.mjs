@@ -8,6 +8,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const OUTLETS = [{ id: 'bbc', name: 'BBC' }, { id: 'guardian', name: 'The Guardian' }, { id: 'daily-mail', name: 'Daily Mail' }, { id: 'reuters', name: 'Reuters' }];
 const DESKS = ['Desk A', 'Desk B', 'Desk C', 'Desk D'];
 const DESK_FOCUS = ['precision: distinguish claim from evidence', 'context: explain what the article adds and omits', 'impact: describe documented effects without speculation', 'challenge: test what the evidence does and does not support'];
+const PUBLIC_INTEREST_FOCUS = ['public-interest editor: weigh the public value of scrutiny and proportionality', 'evidence checker: separate established facts from allegations, inference, and omissions', 'impact reader: examine documented pressure, humiliation, and power without assuming outcomes', 'audience analyst: identify observable invitations to outrage or superiority without claiming actual reader feelings'];
 const SESSION_TTL = 30 * 60 * 1000;
 const MAX_BODY = 4096;
 const MAX_CALLS = 12;
@@ -41,8 +42,13 @@ function shuffled(items, random = Math.random) {
   for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
   return a;
 }
-function fixture(caseItem, question = '') {
-  const text = `AI interpretation: ${caseItem.supportedFinding || caseItem.summary}. ${caseItem.limits || ''}`.trim().slice(0, 380);
+function fixture(caseItem, question = '', article = null, deskIndex = 0) {
+  let text;
+  if (caseItem.mode === 'public-interest' && article?.reviewNotes) {
+    const fields = ['publicValue', 'pressure', 'limit'];
+    const note = article.reviewNotes[fields[deskIndex % fields.length]] || article.reviewNotes.limit || caseItem.caseComparisonNote || caseItem.limits;
+    text = `AI interpretation: ${note}. ${caseItem.caseComparisonNote || ''}`.trim().slice(0, 380);
+  } else text = `AI interpretation: ${caseItem.supportedFinding || caseItem.summary}. ${caseItem.limits || ''}`.trim().slice(0, 380);
   const evidenceIds = (caseItem.evidence || []).slice(0, 2).map(e => e.id).filter(id => typeof id === 'string' && id.trim());
   if (/^\s*In one short sentence\b/i.test(question)) return { reply: `${text.slice(0, 148).replace(/[.!?\s]+$/, '')}. Simulated.`.slice(0, 180), evidenceIds, mode: 'offline' };
   return { reply: `${text} Simulated AI interpretation; source headline unchanged.`, evidenceIds, mode: 'offline' };
@@ -102,14 +108,15 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
         if (pathname === '/api/session') {
           if (typeof body.caseId !== 'string' || !cases.some(c => c.id === body.caseId)) return json(res, 404, { error: 'unknown_case' });
           const item = cases.find(c => c.id === body.caseId);
-          if (!Array.isArray(item.articles) || item.articles.length !== 4 || item.articles.some(a => !a.id || !a.headline || !a.outlet || !a.url || !a.published || !a.verification || !['supported', 'concern', 'unresolved'].includes(a.verdict) || !a.verdictReason)) return json(res, 503, { error: 'case_articles_unavailable' });
+          if (!Array.isArray(item.articles) || item.articles.length !== 4 || item.articles.some(a => !a.id || !a.headline || !a.outlet || !a.url || !a.published || !a.verification || !(item.mode === 'public-interest' ? a.verdict === 'unresolved' && ['publicValue', 'pressure', 'limit'].every(k => typeof a.reviewNotes?.[k] === 'string' && a.reviewNotes[k].trim()) : ['supported', 'concern', 'unresolved'].includes(a.verdict)) || !a.verdictReason)) return json(res, 503, { error: 'case_articles_unavailable' });
+          if (item.mode === 'public-interest' && (typeof item.caseComparisonNote !== 'string' || !item.caseComparisonNote.trim() || !Array.isArray(item.reasoningChecks) || item.reasoningChecks.length !== 5 || new Set(item.reasoningChecks.filter(c => c && c.id).map(c => c.id)).size !== 5 || item.reasoningChecks.some(c => !c || typeof c.id !== 'string' || !c.id || !c.prompt || !Array.isArray(c.options) || !c.options.length || c.options.some(o => !o || typeof o.value !== 'string' || typeof o.label !== 'string') || !c.options.some(o => o.value === c.answer) || !c.explanation || !Array.isArray(c.evidenceIds) || c.evidenceIds.some(id => !(item.evidence || []).some(e => e.id === id))))) return json(res, 503, { error: 'case_reasoning_checks_unavailable' });
           const deskRows = DESKS.map((label, i) => ({ outletId: `desk-${String.fromCharCode(97 + i)}`, label }));
           const articles = shuffled(item.articles, random);
           const articleByDesk = Object.fromEntries(deskRows.map((desk, i) => [desk.outletId, articles[i]]));
           if (sessions.size >= 256) return json(res, 503, { error: 'session_capacity_reached' });
           const id = randomUUID();
           sessions.set(id, { createdAt: clock(), caseId: body.caseId, desks: deskRows, articleByDesk, calls: 0, inFlight: 0, controllers: new Set(), revealed: false, storyRevealed: {}, replies: new Map(), voiceCalls: 0, voiceChars: 0, voiceInFlight: 0 });
-          return json(res, 201, { sessionId: id, caseId: body.caseId, desks: deskRows.map((d, i) => { const a = articleByDesk[d.outletId]; return { ...d, headline: a.headline, published: a.published, summary: a.summary ?? '', verification: a.verification, note: a.note ?? '', voiceSpeaker: `Analyst ${String.fromCharCode(65 + i)}`, voiceConfigured }; }), label: 'Headlines and summaries are published article records; analyst replies are simulated AI interpretations.' });
+          return json(res, 201, { sessionId: id, caseId: body.caseId, desks: deskRows.map((d, i) => { const a = articleByDesk[d.outletId]; return { ...d, headline: a.headline, published: a.published, summary: a.summary ?? '', verification: a.verification, note: a.note ?? '', voiceSpeaker: `Analyst ${String.fromCharCode(65 + i)}`, voiceConfigured, ...(item.mode === 'public-interest' ? { ...(typeof a.coverageStage === 'string' ? { coverageStage: a.coverageStage } : {}), ...(typeof a.headlineType === 'string' ? { headlineType: a.headlineType } : {}) } : {}) }; }), label: 'Headlines and summaries are published article records; analyst replies are simulated AI interpretations.' });
         }
         const session = sessions.get(body.sessionId);
         if (!session) return json(res, 404, { error: 'invalid_or_expired_session' });
@@ -176,7 +183,7 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
           const desk = session.desks.find(d => d.outletId === body.outletId);
           const article = session.articleByDesk[body.outletId];
           const key = env.DEEPSEEK_API_KEY;
-          if (!key) { session.inFlight--; const fallback = fixture(item, body.question), replyId = randomUUID(); session.replies.set(replyId, { outletId: desk.outletId, text: fallback.reply }); return json(res, 200, { outletId: desk.outletId, label: desk.label, ...fallback, replyId, reason: 'no_key', simulated: true, remainingCalls: MAX_CALLS - session.calls }); }
+          if (!key) { session.inFlight--; const fallback = fixture(item, body.question, article, DESKS.indexOf(desk.label)), replyId = randomUUID(); session.replies.set(replyId, { outletId: desk.outletId, text: fallback.reply }); return json(res, 200, { outletId: desk.outletId, label: desk.label, ...fallback, replyId, reason: 'no_key', simulated: true, remainingCalls: MAX_CALLS - session.calls }); }
           if (activeProviderCalls >= 16) { session.inFlight--; return json(res, 429, { error: 'server_concurrency_limit' }); }
           activeProviderCalls++;
           let mode = 'deepseek', reason;
@@ -189,8 +196,8 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
               response = await fetchImpl(PROVIDER_URL, { method: 'POST', signal: controller.signal, headers: { authorization: `Bearer ${key}`, 'content-type': 'application/json' }, body: JSON.stringify({
                 model: env.DEEPSEEK_MODEL || 'deepseek-flash', response_format: { type: 'json_object' }, thinking: { type: 'disabled' }, max_tokens: 320, temperature: 0.4,
                 messages: [
-                  { role: 'system', content: `You are a helpful, evidence-grounded simulated AI analyst commenting on an authentic fixed article. Never create, rewrite, or paraphrase its headline. The article headline and summary are immutable source material; any response must be clearly labelled AI interpretation. Use concise plain language, explain what is supported, and preserve the case scope and limits. Distinguish evidence about the underlying issue from evidence about this article's framing. Do not invent facts, infer intent, assign blame, reveal publisher identity, or give a final coverage verdict. Desk ${String.fromCharCode(65 + DESKS.indexOf(desk.label))} editorial emphasis: ${DESK_FOCUS[DESKS.indexOf(desk.label)]}. For a one-sentence introductory question, answer concisely in one sentence, ideally <=180 characters including the required wrapper. Otherwise keep reply <=450 characters. Include “AI interpretation” and “Simulated”. Return JSON shaped exactly like {"reply":"...","evidenceIds":["id"]}; use only approved evidence IDs.` },
-                  { role: 'user', content: JSON.stringify({ article: { headline: article.headline, published: article.published, summary: article.summary ?? '', verification: article.verification, note: article.note ?? '' }, factPacket: { title: item.title, supportedSummary: item.summary, supportedFinding: item.supportedFinding, limits: item.limits, evidence: item.evidence }, question: body.question }) }
+                  { role: 'system', content: `You are a helpful, evidence-grounded simulated AI analyst commenting on an authentic fixed article. Never create, rewrite, or paraphrase its headline. The article headline and summary are immutable source material; any response must be clearly labelled AI interpretation. Use concise plain language, explain what is supported, and preserve the case scope and limits. Distinguish evidence about the underlying issue from evidence about this article's framing. Do not invent facts, infer intent, assign blame, reveal publisher identity, or give a final coverage verdict. Desk ${String.fromCharCode(65 + DESKS.indexOf(desk.label))} editorial emphasis: ${item.mode === 'public-interest' ? PUBLIC_INTEREST_FOCUS[DESKS.indexOf(desk.label)] : DESK_FOCUS[DESKS.indexOf(desk.label)]}.${item.mode === 'public-interest' ? ' Weigh public value and proportionality, including repetition, humiliation, power, and stereotypes. Separate legitimate scrutiny from potential harms; allow a mixed assessment. Discuss observable invitations to outrage or superiority, never assert actual reader feelings. Do not claim motives or causal consequences not established by evidence.' : ''} For a one-sentence introductory question, answer concisely in one sentence, ideally <=180 characters including the required wrapper. Otherwise keep reply <=450 characters. Include “AI interpretation” and “Simulated”. Return JSON shaped exactly like {"reply":"...","evidenceIds":["id"]}; use only approved evidence IDs.` },
+                  { role: 'user', content: JSON.stringify({ article: { headline: article.headline, published: article.published, summary: article.summary ?? '', verification: article.verification, note: article.note ?? '', ...(item.mode === 'public-interest' ? { reviewNotes: article.reviewNotes } : {}) }, factPacket: { title: item.title, supportedSummary: item.summary, supportedFinding: item.supportedFinding, limits: item.limits, ...(item.mode === 'public-interest' ? { caseComparisonNote: item.caseComparisonNote } : {}), evidence: item.evidence }, question: body.question }) }
                 ]
               }) });
             } finally { clearTimeout(timer); session.controllers.delete(controller); }
@@ -212,11 +219,32 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
             mode = 'offline'; reason = err?.name === 'AbortError' ? 'timeout' : (['provider_invalid_json', 'provider_invalid_schema', 'provider_identity_leak'].includes(err?.message) ? err.message : 'provider_unavailable');
             session.inFlight--; activeProviderCalls--;
             if (session.revealed) return json(res, 409, { error: 'session_already_revealed' });
-            const fallback = fixture(item, body.question), replyId = randomUUID(); session.replies.set(replyId, { outletId: desk.outletId, text: fallback.reply });
+            const fallback = fixture(item, body.question, article, DESKS.indexOf(desk.label)), replyId = randomUUID(); session.replies.set(replyId, { outletId: desk.outletId, text: fallback.reply });
             return json(res, 200, { outletId: desk.outletId, label: desk.label, ...fallback, replyId, reason, simulated: true, remainingCalls: MAX_CALLS - session.calls });
           }
         }
         if (pathname === '/api/reveal') {
+          const currentCase = cases.find(c => c.id === session.caseId);
+          if (currentCase?.mode === 'public-interest') {
+            const decisions = body.articleVerdicts, assessments = body.assessments, answers = body.reasoningAnswers;
+            const ids = session.desks.map(d => d.outletId), checks = currentCase.reasoningChecks;
+            const exactKeys = (value, expected) => value && typeof value === 'object' && !Array.isArray(value) && Object.keys(value).length === expected.length && expected.every(k => Object.hasOwn(value, k));
+            if (!exactKeys(decisions, ids) || ids.some(id => !['justified', 'mixed', 'pile-on', 'unclear'].includes(decisions[id]))) return json(res, 400, { error: 'invalid_editorial_judgments' });
+            if (!exactKeys(assessments, ids) || ids.some(id => !exactKeys(assessments[id], ['publicValue', 'pressure']) || !['weak', 'some', 'strong', 'unclear'].includes(assessments[id].publicValue) || !['low', 'some', 'high', 'unclear'].includes(assessments[id].pressure))) return json(res, 400, { error: 'invalid_editorial_assessments' });
+            const checkIds = checks.map(c => c.id);
+            if (!exactKeys(answers, checkIds) || checks.some(c => !c.options.some(o => o.value === answers[c.id]))) return json(res, 400, { error: 'invalid_reasoning_answers' });
+            if (typeof body.justification !== 'string' || body.justification.trim().length < 40 || body.justification.length > 600) return json(res, 400, { error: 'invalid_editorial_justification' });
+            const reasoningResults = checks.map(c => ({ id: c.id, prompt: c.prompt, correct: answers[c.id] === c.answer, answer: c.answer, explanation: c.explanation, evidenceIds: c.evidenceIds }));
+            const reasoningScore = reasoningResults.reduce((sum, r) => sum + (r.correct ? 2 : 0), 0);
+            const roles = session.desks.map(d => {
+              const article = session.articleByDesk[d.outletId];
+              return { outletId: d.outletId, label: d.label, outletName: article.outlet, article: { ...article }, role: 'editorial-judgment', decision: decisions[d.outletId], assessment: { ...assessments[d.outletId] } };
+            });
+            session.revealed = true;
+            for (const controller of session.controllers) controller.abort();
+            session.revealResult = { mode: 'public-interest', caseId: session.caseId, roles, justification: body.justification.trim(), reasoningScore, reasoningTotal: 10, reasoningResults, caseComparisonNote: currentCase.caseComparisonNote || '', label: 'Editorial judgments and written reasoning are for discussion; points reflect only the five evidence reasoning checks.' };
+            return json(res, 200, session.revealResult);
+          }
           const submitted = body.articleVerdicts ?? {};
           if (!submitted || typeof submitted !== 'object' || Array.isArray(submitted) || Object.keys(submitted).length !== 4 || session.desks.some(d => !['supported', 'concern', 'unresolved'].includes(submitted[d.outletId])) || Object.keys(submitted).some(id => !session.articleByDesk[id])) return json(res, 400, { error: 'invalid_article_verdicts' });
           session.revealed = true;

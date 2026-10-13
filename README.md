@@ -12,4 +12,6 @@ Provider keys stay in an ignored local `.env` or an external file selected with 
 
 Run `npm test` and `npm run check:secrets` before sharing. Tests use fake providers and make no paid calls.
 
-The cases are a research prototype with explicit sources and provisional curator verdicts. AI players are simulated analysts, not statements from the named publishers.
+The new pile-on rounds cover Caroline Flack, Jason Arday and Raheem Sterling. Rate public value and pressure separately, make a Faithful/Mixed/Traitor/Unclear call and explain your reasoning. Win with 8/10 across five evidence checks; editorial judgments are open to discussion and are not automatically graded. The original fact-check cases remain available.
+
+The case pack is a research prototype: six cases and 24 sourced pieces, with two clearly labelled headline reproductions and chronology/context limits. AI players are simulated analysts, not statements from the named publishers.

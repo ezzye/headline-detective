@@ -1,5 +1,681 @@
 [
   {
+    "id": "sterling-pileon",
+    "mode": "public-interest",
+    "title": "Raheem Sterling · who gets judged?",
+    "date": "2018",
+    "summary": "Compare the criticised property framing with reports about Sterling’s challenge.",
+    "supportedFinding": "Ask whether an outlet originates, amplifies, challenges or contextualises a hostile frame. Racially unequal framing can be examined without guessing private motives.",
+    "limits": "Two historical headline reproductions and two reaction reports are a limited sample. They do not prove that every article, journalist or reader shared the same motive.",
+    "caseComparisonNote": "Two stories are earlier headline reproductions; two report the later public criticism. Different people, dates and genres prevent a perfectly controlled comparison. Both reproduced property headlines come from one outlet.",
+    "evidence": [
+      {
+        "id": "sterling-statement",
+        "text": "Sterling publicly contrasted coverage of Tosin Adarabioyo and Phil Foden buying homes. He argued that the framing of young Black players contributed to racism. This is his attributed criticism, not a regulator’s finding.",
+        "url": "https://www.bbc.co.uk/sport/football/46498849",
+        "label": "Contemporaneous report and reproduced Instagram images"
+      },
+      {
+        "id": "sterling-context",
+        "text": "The cited comparison concerns property-purchase framing. The two examples concern different people and were published at different times; full original article context and live original pages are missing from this packet.",
+        "url": "https://www.skysports.com/football/news/11679/11576064/raheem-sterling-criticises-newspapers-for-fuelling-racism-and-calls-for-equality",
+        "label": "Contemporaneous statement transcript and context"
+      },
+      {
+        "id": "editorial-balance",
+        "text": "The current Editors’ Code recognises public-interest reporting while requiring proportionality, accuracy, privacy and care around discrimination. It is a learning framework here, not a finding that a particular outlet breached a rule. Historical articles must be judged against their own context and applicable rules.",
+        "url": "https://www.ipso.co.uk/editors-code-of-practice/",
+        "label": "IPSO Editors’ Code: public interest and proportionality"
+      }
+    ],
+    "reasoningChecks": [
+      {
+        "id": "comparison",
+        "prompt": "What is the direct comparison here?",
+        "options": [
+          {
+            "value": "framing",
+            "label": "Two home-purchase headlines with contrasting emphasis"
+          },
+          {
+            "value": "identical",
+            "label": "Two identical articles apart from race"
+          },
+          {
+            "value": "ruling",
+            "label": "An upheld regulator finding against every outlet"
+          }
+        ],
+        "answer": "framing",
+        "explanation": "The difference in wording is observable. It is a reason to investigate unequal treatment; it does not prove all surrounding circumstances identical.",
+        "evidenceIds": [
+          "sterling-statement"
+        ]
+      },
+      {
+        "id": "contribution",
+        "prompt": "Are the reaction reports the original criticised stories?",
+        "options": [
+          {
+            "value": "reaction",
+            "label": "No: reporting the complaint is a different contribution"
+          },
+          {
+            "value": "original",
+            "label": "Yes: all four published the original property stories"
+          },
+          {
+            "value": "neutral",
+            "label": "Reaction coverage can never amplify harm"
+          }
+        ],
+        "answer": "reaction",
+        "explanation": "Separate originating a frame, repeating it without context and reporting criticism of it. Each can affect a campaign differently.",
+        "evidenceIds": [
+          "sterling-statement",
+          "sterling-context"
+        ]
+      },
+      {
+        "id": "sample",
+        "prompt": "What comparison limit matters?",
+        "options": [
+          {
+            "value": "limited",
+            "label": "Different people/dates, reproduced headlines, incomplete original context"
+          },
+          {
+            "value": "complete",
+            "label": "This is a complete census of all coverage"
+          },
+          {
+            "value": "irrelevant",
+            "label": "The difference in wording cannot matter"
+          }
+        ],
+        "answer": "limited",
+        "explanation": "An incomplete sample can raise a substantive concern without establishing the prevalence or intention of an outlet’s whole output.",
+        "evidenceIds": [
+          "sterling-context"
+        ]
+      },
+      {
+        "id": "public-interest",
+        "prompt": "Which is a public-interest argument?",
+        "options": [
+          {
+            "value": "accountability",
+            "label": "Testing evidence about conduct or institutions"
+          },
+          {
+            "value": "attention",
+            "label": "Lots of people want to click"
+          },
+          {
+            "value": "celebrity",
+            "label": "A famous person has no privacy"
+          }
+        ],
+        "answer": "accountability",
+        "explanation": "Popularity alone does not justify intrusion. Ask what the reporting helps the public understand and whether its treatment is proportionate.",
+        "evidenceIds": [
+          "editorial-balance"
+        ]
+      },
+      {
+        "id": "intent",
+        "prompt": "What can this packet establish about private motives?",
+        "options": [
+          {
+            "value": "unknown",
+            "label": "Framing can be assessed; private motives remain unproved"
+          },
+          {
+            "value": "proved",
+            "label": "Every journalist intended to bully"
+          },
+          {
+            "value": "innocent",
+            "label": "All motives were harmless"
+          }
+        ],
+        "answer": "unknown",
+        "explanation": "Observable stereotyping, repetition or ridicule can be criticised without claiming to know every journalist’s intention or every reader’s feelings.",
+        "evidenceIds": [
+          "editorial-balance"
+        ]
+      }
+    ],
+    "articles": [
+      {
+        "id": "sterling-tosin",
+        "headline": "splashes out on mansion … despite having never started a Premier League match",
+        "outlet": "MailOnline · reproduced historical headline",
+        "url": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
+        "published": "2018 · reproduced by 11 December",
+        "coverageStage": "Historical headline excerpt",
+        "summary": "A young player’s home purchase is framed through spending and sporting status.",
+        "verification": "Published headline checked on 13 October 2026",
+        "note": "Historical headline excerpt",
+        "verdict": "unresolved",
+        "verdictReason": "Your editorial assessment is open to argument; no preset Faithful or Traitor verdict.",
+        "reviewNotes": {
+          "publicValue": "Consider whether pay, housing or sporting achievement has a specific public relevance here.",
+          "pressure": "The framing invites scrutiny of whether the player deserves this spending; compare the other home-purchase story.",
+          "limit": "Exact excerpt from a later reproduction; omitted text is marked. The original live article was not independently retrieved."
+        },
+        "headlineType": "excerpt",
+        "sourceLabel": "Read the historical reproduction"
+      },
+      {
+        "id": "sterling-foden",
+        "headline": "Foden buys new £2m home for his mum",
+        "outlet": "MailOnline · reproduced historical headline",
+        "url": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
+        "published": "2018 · reproduced by 11 December",
+        "coverageStage": "Historical headline reproduction",
+        "summary": "The comparison headline emphasises a home bought for a parent.",
+        "verification": "Published headline checked on 13 October 2026",
+        "note": "Historical headline reproduction",
+        "verdict": "unresolved",
+        "verdictReason": "Your editorial assessment is open to argument; no preset Faithful or Traitor verdict.",
+        "reviewNotes": {
+          "publicValue": "Consider whether this purchase provides comparable public-interest information.",
+          "pressure": "Family generosity is foregrounded rather than deservingness; test the contrast without assuming identical circumstances.",
+          "limit": "Reproduction wording; print and online variants exist. Original publication date and complete article context were not independently verified."
+        },
+        "headlineType": "reproduction",
+        "sourceLabel": "Read the historical reproduction"
+      },
+      {
+        "id": "sterling-bbc",
+        "headline": "Raheem Sterling: Manchester City forward says newspapers 'fuel racism' in football",
+        "outlet": "BBC Sport",
+        "url": "https://www.bbc.co.uk/sport/football/46498849",
+        "published": "9 December 2018",
+        "coverageStage": "Reaction report",
+        "summary": "Sterling publicly criticised contrasting treatment of young footballers.",
+        "verification": "Published headline checked on 13 October 2026",
+        "note": "Reaction report",
+        "verdict": "unresolved",
+        "verdictReason": "Your editorial assessment is open to argument; no preset Faithful or Traitor verdict.",
+        "reviewNotes": {
+          "publicValue": "Reporting a public complaint about discriminatory framing can scrutinise media practice.",
+          "pressure": "Repeating hostile coverage can amplify it unless the contrast and attribution are made clear.",
+          "limit": "This is reporting the criticism, not one of the original criticised property stories."
+        }
+      },
+      {
+        "id": "sterling-sky",
+        "headline": "Raheem Sterling criticises newspapers for fuelling racism and calls for equality",
+        "outlet": "Sky Sports",
+        "url": "https://www.skysports.com/football/news/11679/11576064/raheem-sterling-criticises-newspapers-for-fuelling-racism-and-calls-for-equality",
+        "published": "9 December 2018",
+        "coverageStage": "Reaction report",
+        "summary": "His comparison was presented as a call for fairer treatment.",
+        "verification": "Published headline checked on 13 October 2026",
+        "note": "Reaction report",
+        "verdict": "unresolved",
+        "verdictReason": "Your editorial assessment is open to argument; no preset Faithful or Traitor verdict.",
+        "reviewNotes": {
+          "publicValue": "The reader can examine the player’s evidence and the wider issue of racial framing.",
+          "pressure": "Repetition alone is not a pile-on: assess what explanation and evidence this report adds.",
+          "limit": "Sterling’s criticism is attributed; a pair of headlines does not prove every private editorial motive."
+        }
+      }
+    ]
+  },
+  {
+    "id": "flack-pileon",
+    "mode": "public-interest",
+    "title": "Caroline Flack · scrutiny or spectacle?",
+    "date": "December 2019–February 2020",
+    "summary": "Weigh reporting of proceedings against a wider pattern of scrutiny.",
+    "supportedFinding": "A legitimate reason to report an allegation does not settle the proportionality of the coverage surrounding it.",
+    "limits": "This sample cannot establish an outlet’s whole campaign, private motives or a causal explanation for a death. Judge publication choices regardless of later consequences.",
+    "caseComparisonNote": "These pieces span charge reporting, court reporting and later media review. They are not simultaneous or a complete record of any outlet’s output.",
+    "evidence": [
+      {
+        "id": "flack-proceedings",
+        "text": "The CPS’s later account records a not-guilty plea and a planned trial. The proceedings did not deliver a trial verdict. The CPS maintains that bringing the prosecution was appropriate; that is its institutional position, not a finding that every news treatment was justified.",
+        "url": "https://www.cps.gov.uk/cps/news/cps-statement-relation-case-against-caroline-flack",
+        "label": "CPS case statement, 10 November 2025"
+      },
+      {
+        "id": "flack-coverage",
+        "text": "Researchers categorised 387 newspaper reports; the analysis does not establish causation.",
+        "url": "https://www.theguardian.com/tv-and-radio/2020/feb/21/caroline-flack-negative-media-coverage-before-death-revealed",
+        "label": "Published coverage-count analysis"
+      },
+      {
+        "id": "editorial-balance",
+        "text": "The current Editors’ Code recognises public-interest reporting while requiring proportionality, accuracy, privacy and care around discrimination. It is a learning framework here, not a finding that a particular outlet breached a rule. Historical articles must be judged against their own context and applicable rules.",
+        "url": "https://www.ipso.co.uk/editors-code-of-practice/",
+        "label": "IPSO Editors’ Code: public interest and proportionality"
+      }
+    ],
+    "reasoningChecks": [
+      {
+        "id": "charge",
+        "prompt": "What did the proceedings establish?",
+        "options": [
+          {
+            "value": "allegation",
+            "label": "A charge and a not-guilty plea, not a trial conviction"
+          },
+          {
+            "value": "guilt",
+            "label": "A trial proved guilt"
+          },
+          {
+            "value": "no-interest",
+            "label": "No charge could ever be newsworthy"
+          }
+        ],
+        "answer": "allegation",
+        "explanation": "Accountability reporting must retain the difference between an allegation and a verdict. A later statement must not be treated as information every editor had in 2019.",
+        "evidenceIds": [
+          "flack-proceedings"
+        ]
+      },
+      {
+        "id": "campaign",
+        "prompt": "What does the coverage count support?",
+        "options": [
+          {
+            "value": "pattern",
+            "label": "A described pattern in a sampled set of reports"
+          },
+          {
+            "value": "cause",
+            "label": "Proof that one headline caused her death"
+          },
+          {
+            "value": "every",
+            "label": "Proof that every story was hostile"
+          }
+        ],
+        "answer": "pattern",
+        "explanation": "Counts help investigate repetition and tone. They do not settle the propriety of every article or establish a sole cause.",
+        "evidenceIds": [
+          "flack-coverage"
+        ]
+      },
+      {
+        "id": "timing",
+        "prompt": "How should you compare these four pieces?",
+        "options": [
+          {
+            "value": "timeline",
+            "label": "Separate charge, court and later campaign-review stages"
+          },
+          {
+            "value": "same",
+            "label": "Treat them as simultaneous reports"
+          },
+          {
+            "value": "outcome",
+            "label": "Let the later outcome decide all earlier judgments"
+          }
+        ],
+        "answer": "timeline",
+        "explanation": "Judge what each piece added and what was known at publication. The sample spans different dates and genres.",
+        "evidenceIds": [
+          "flack-proceedings",
+          "flack-coverage"
+        ]
+      },
+      {
+        "id": "public-interest",
+        "prompt": "Which is a public-interest argument?",
+        "options": [
+          {
+            "value": "accountability",
+            "label": "Testing evidence about conduct or institutions"
+          },
+          {
+            "value": "attention",
+            "label": "Lots of people want to click"
+          },
+          {
+            "value": "celebrity",
+            "label": "A famous person has no privacy"
+          }
+        ],
+        "answer": "accountability",
+        "explanation": "Popularity alone does not justify intrusion. Ask what the reporting helps the public understand and whether its treatment is proportionate.",
+        "evidenceIds": [
+          "editorial-balance"
+        ]
+      },
+      {
+        "id": "intent",
+        "prompt": "What can this packet establish about private motives?",
+        "options": [
+          {
+            "value": "unknown",
+            "label": "Framing can be assessed; private motives remain unproved"
+          },
+          {
+            "value": "proved",
+            "label": "Every journalist intended to bully"
+          },
+          {
+            "value": "innocent",
+            "label": "All motives were harmless"
+          }
+        ],
+        "answer": "unknown",
+        "explanation": "Observable stereotyping, repetition or ridicule can be criticised without claiming to know every journalist’s intention or every reader’s feelings.",
+        "evidenceIds": [
+          "editorial-balance"
+        ]
+      }
+    ],
+    "articles": [
+      {
+        "id": "flack-charge",
+        "headline": "Caroline Flack: Love Island host charged with assault by beating",
+        "outlet": "BBC News",
+        "url": "https://www.bbc.com/news/uk-england-london-50785152",
+        "published": "13 December 2019",
+        "coverageStage": "Charge report",
+        "summary": "A criminal charge was reported, not a conviction.",
+        "verification": "Published headline checked on 13 October 2026",
+        "note": "Charge report",
+        "verdict": "unresolved",
+        "verdictReason": "Your editorial assessment is open to argument; no preset Faithful or Traitor verdict.",
+        "reviewNotes": {
+          "publicValue": "Accurate reporting of criminal proceedings can serve public accountability.",
+          "pressure": "A celebrity charge can also invite invasive speculation; distinguish the charge from proven guilt.",
+          "limit": "This is one dated report, not evidence of the outlet’s entire campaign."
+        }
+      },
+      {
+        "id": "flack-court",
+        "headline": "Caroline Flack denies attacking boyfriend with lamp",
+        "outlet": "Sky News",
+        "url": "https://news.sky.com/story/caroline-flack-pleads-not-guilty-to-assault-charge-11893941",
+        "published": "23 December 2019",
+        "coverageStage": "Court report",
+        "summary": "The article records a not-guilty plea.",
+        "verification": "Published headline checked on 13 October 2026",
+        "note": "Court report",
+        "verdict": "unresolved",
+        "verdictReason": "Your editorial assessment is open to argument; no preset Faithful or Traitor verdict.",
+        "reviewNotes": {
+          "publicValue": "Court reporting informs the public about proceedings and the response to allegations.",
+          "pressure": "Consider whether emphasising a graphic allegation adds useful information or extends humiliation.",
+          "limit": "An allegation in a court report is not a finding of guilt."
+        }
+      },
+      {
+        "id": "flack-count",
+        "headline": "Caroline Flack: scale of negative media coverage before death revealed",
+        "outlet": "The Guardian",
+        "url": "https://www.theguardian.com/tv-and-radio/2020/feb/21/caroline-flack-negative-media-coverage-before-death-revealed",
+        "published": "21 February 2020",
+        "coverageStage": "Campaign analysis",
+        "summary": "Coverage-count analysis.",
+        "verification": "Headline and publisher page checked 13 October 2026; current page updated 24 November 2023.",
+        "note": "Campaign analysis · page updated 24 November 2023",
+        "verdict": "unresolved",
+        "verdictReason": "Your editorial assessment is open to argument; no preset Faithful or Traitor verdict.",
+        "reviewNotes": {
+          "publicValue": "Examining patterns across coverage can hold the media accountable.",
+          "pressure": "Ask whether revisiting a person’s treatment explains a pattern or repeats the spectacle.",
+          "limit": "A retrospective count is not a controlled causal study; it cannot prove a particular article caused an outcome."
+        }
+      },
+      {
+        "id": "flack-complaints",
+        "headline": "Caroline Flack: Press coverage of death prompts complaints to watchdog",
+        "outlet": "The Independent",
+        "url": "https://www.independent.co.uk/news/media/caroline-flack-death-media-daily-mail-ipso-press-regulator-samaritans-a9345071.html",
+        "published": "20 February 2020",
+        "coverageStage": "Media-accountability report",
+        "summary": "Reported complaints; no established Code breach.",
+        "verification": "Published headline checked on 13 October 2026",
+        "note": "Media-accountability report",
+        "verdict": "unresolved",
+        "verdictReason": "Your editorial assessment is open to argument; no preset Faithful or Traitor verdict.",
+        "reviewNotes": {
+          "publicValue": "Reporting complaints can expose editorial choices for scrutiny.",
+          "pressure": "Coverage of grief warrants care; this game omits private death details.",
+          "limit": "A complaint, a guideline concern and an upheld regulatory breach are different things."
+        }
+      }
+    ]
+  },
+  {
+    "id": "arday-pileon",
+    "mode": "public-interest",
+    "title": "Jason Arday · accountability or humiliation?",
+    "date": "July–August 2026",
+    "summary": "Examine investigation, ridicule, racial spillover and later media reflection.",
+    "supportedFinding": "Legitimate academic scrutiny and harmful racialised amplification can coexist. Judge what an outlet contributes, how it frames the person and whether it turns one case into a stereotype.",
+    "limits": "This packet supplies institutional statements and four pieces, not a completed independent finding on every allegation or a causal explanation for his death.",
+    "caseComparisonNote": "Opinion, a resignation report, an explainer and later debate appear at different stages. Evaluate added facts, repetition and tone at each publication date; this is not a complete campaign census.",
+    "evidence": [
+      {
+        "id": "arday-institution",
+        "text": "On 12 August Cambridge announced an investigation into the circumstances of the appointment and his time at the university. Institutional accountability is a real issue; announcing an investigation does not itself establish its findings.",
+        "url": "https://www.cam.ac.uk/notices/news/statement-from-the-vice-chancellor-12-august-2026",
+        "label": "Cambridge Vice-Chancellor statement, 12 August 2026"
+      },
+      {
+        "id": "arday-spillover",
+        "text": "On 21 August Cambridge condemned racist and hateful messages being received by Black students and staff and members of its education faculty. That documents wider harm, not that every report caused it or every journalist intended it.",
+        "url": "https://www.cam.ac.uk/notices/news/university-statement-21-august-2026",
+        "label": "Cambridge community statement, 21 August 2026"
+      },
+      {
+        "id": "arday-framing",
+        "text": "The opinion headline presents an ongoing controversy as entertainment. Decide whether its tone is proportionate to the accountability issue; a headline alone is a limited sample of the writer’s argument.",
+        "url": "https://spectator.com/article/professor-arday-is-the-gift-that-keeps-on-giving/",
+        "label": "Original commentary, dated 31 July 2026"
+      },
+      {
+        "id": "editorial-balance",
+        "text": "The current Editors’ Code recognises public-interest reporting while requiring proportionality, accuracy, privacy and care around discrimination. It is a learning framework here, not a finding that a particular outlet breached a rule. Historical articles must be judged against their own context and applicable rules.",
+        "url": "https://www.ipso.co.uk/editors-code-of-practice/",
+        "label": "IPSO Editors’ Code: public interest and proportionality"
+      }
+    ],
+    "reasoningChecks": [
+      {
+        "id": "accountability",
+        "prompt": "What is a legitimate scrutiny question?",
+        "options": [
+          {
+            "value": "institution",
+            "label": "How an institution appointed and reviewed a researcher"
+          },
+          {
+            "value": "minority",
+            "label": "Whether one case proves a minority unfit for academia"
+          },
+          {
+            "value": "none",
+            "label": "Any scrutiny of a vulnerable person is forbidden"
+          }
+        ],
+        "answer": "institution",
+        "explanation": "Institutional due diligence and research integrity can warrant investigation. That does not justify humiliation or generalising about an ethnic group.",
+        "evidenceIds": [
+          "arday-institution"
+        ]
+      },
+      {
+        "id": "harm",
+        "prompt": "What wider harm is documented here?",
+        "options": [
+          {
+            "value": "abuse",
+            "label": "Racist and hateful messages reported by the university"
+          },
+          {
+            "value": "motive",
+            "label": "Proof of every journalist’s private racial motive"
+          },
+          {
+            "value": "guilt",
+            "label": "A final finding about all allegations"
+          }
+        ],
+        "answer": "abuse",
+        "explanation": "The university’s statement documents hostile messages to a wider community. Attribution and causal limits still matter.",
+        "evidenceIds": [
+          "arday-spillover"
+        ]
+      },
+      {
+        "id": "chronology",
+        "prompt": "What should guide your assessment of earlier coverage?",
+        "options": [
+          {
+            "value": "then",
+            "label": "What was known then, added value and proportionate treatment"
+          },
+          {
+            "value": "death",
+            "label": "The later death decides every earlier verdict"
+          },
+          {
+            "value": "counts",
+            "label": "Any repeated story automatically proves harassment"
+          }
+        ],
+        "answer": "then",
+        "explanation": "Consequences matter to reflection, but they do not replace judging each editorial contribution, chronology and what is supported.",
+        "evidenceIds": [
+          "arday-institution",
+          "arday-framing"
+        ]
+      },
+      {
+        "id": "public-interest",
+        "prompt": "Which is a public-interest argument?",
+        "options": [
+          {
+            "value": "accountability",
+            "label": "Testing evidence about conduct or institutions"
+          },
+          {
+            "value": "attention",
+            "label": "Lots of people want to click"
+          },
+          {
+            "value": "celebrity",
+            "label": "A famous person has no privacy"
+          }
+        ],
+        "answer": "accountability",
+        "explanation": "Popularity alone does not justify intrusion. Ask what the reporting helps the public understand and whether its treatment is proportionate.",
+        "evidenceIds": [
+          "editorial-balance"
+        ]
+      },
+      {
+        "id": "intent",
+        "prompt": "What can this packet establish about private motives?",
+        "options": [
+          {
+            "value": "unknown",
+            "label": "Framing can be assessed; private motives remain unproved"
+          },
+          {
+            "value": "proved",
+            "label": "Every journalist intended to bully"
+          },
+          {
+            "value": "innocent",
+            "label": "All motives were harmless"
+          }
+        ],
+        "answer": "unknown",
+        "explanation": "Observable stereotyping, repetition or ridicule can be criticised without claiming to know every journalist’s intention or every reader’s feelings.",
+        "evidenceIds": [
+          "editorial-balance"
+        ]
+      }
+    ],
+    "articles": [
+      {
+        "id": "arday-spectator",
+        "headline": "Professor Arday is the gift that keeps on giving",
+        "outlet": "The Spectator",
+        "url": "https://spectator.com/article/professor-arday-is-the-gift-that-keeps-on-giving/",
+        "published": "31 July 2026",
+        "coverageStage": "Opinion / commentary",
+        "summary": "A commentary addresses the controversy using an entertainment metaphor.",
+        "verification": "Published headline checked on 13 October 2026",
+        "note": "Opinion / commentary",
+        "verdict": "unresolved",
+        "verdictReason": "Your editorial assessment is open to argument; no preset Faithful or Traitor verdict.",
+        "reviewNotes": {
+          "publicValue": "Scrutiny of research claims, appointments and institutional responses can serve accountability.",
+          "pressure": "Consider whether treating the subject as a continuing source of amusement adds accountability or humiliation.",
+          "limit": "Opinion is not a final institutional finding; the same page also reports a university defence of him."
+        }
+      },
+      {
+        "id": "arday-guardian",
+        "headline": "Cambridge professor Jason Arday resigns amid accusations of plagiarism",
+        "outlet": "The Guardian",
+        "url": "https://www.theguardian.com/education/2026/aug/05/cambridge-professor-jason-arday-resigns-amid-accusations-of-plagiarism",
+        "published": "5 August 2026",
+        "coverageStage": "Resignation report",
+        "summary": "Accusations and resignation, not a final finding.",
+        "verification": "Published headline checked on 13 October 2026",
+        "note": "Resignation report",
+        "verdict": "unresolved",
+        "verdictReason": "Your editorial assessment is open to argument; no preset Faithful or Traitor verdict.",
+        "reviewNotes": {
+          "publicValue": "A resignation and the institution’s handling of an appointment are newsworthy developments.",
+          "pressure": "Repeated allegations need attribution, response and a distinction from established findings.",
+          "limit": "This dated development does not, by itself, describe the whole campaign; the page was amended on 10 August."
+        }
+      },
+      {
+        "id": "arday-euronews",
+        "headline": "The Jason Arday controversy: Explaining the University of Cambridge scandal rocking British academia",
+        "outlet": "Euronews",
+        "url": "https://www.euronews.com/2026/08/10/the-jason-arday-controversy-explaining-the-university-of-cambridge-scandal-rocking-british",
+        "published": "10 August 2026",
+        "coverageStage": "Explainer",
+        "summary": "The controversy is placed in an institutional and political context.",
+        "verification": "Published headline checked on 13 October 2026",
+        "note": "Explainer",
+        "verdict": "unresolved",
+        "verdictReason": "Your editorial assessment is open to argument; no preset Faithful or Traitor verdict.",
+        "reviewNotes": {
+          "publicValue": "An explainer can distinguish institutional accountability from an individual’s conduct.",
+          "pressure": "Escalating language and generalisations about a minority need testing against actual evidence.",
+          "limit": "Separate an investigation, competing accounts and commentary about a wider culture war."
+        }
+      },
+      {
+        "id": "arday-ap",
+        "headline": "Jason Arday’s death sparks UK debate over academic rigor, racism after media ‘frenzy’",
+        "outlet": "Associated Press",
+        "url": "https://apnews.com/article/jason-arday-cambridge-black-professor-ec1d14a8e40a74e16ab5a0363f7dc623",
+        "published": "19 August 2026",
+        "coverageStage": "Later debate report",
+        "summary": "Reports competing accounts of academic scrutiny and racialised coverage.",
+        "verification": "Published headline checked on 13 October 2026",
+        "note": "Later debate report",
+        "verdict": "unresolved",
+        "verdictReason": "Your editorial assessment is open to argument; no preset Faithful or Traitor verdict.",
+        "reviewNotes": {
+          "publicValue": "Reporting the dispute can scrutinise both institutions and media conduct.",
+          "pressure": "A later debate can also prolong attention; assess its added explanation and humanity.",
+          "limit": "Later consequences do not retrospectively establish the justification or motive of each earlier report."
+        }
+      }
+    ]
+  },
+  {
     "id": "ahmed-2020",
     "title": "Equal pay: Samira Ahmed",
     "date": "10 January 2020",

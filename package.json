@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node scripts/start.mjs",
-    "test": "node --test backend-test.mjs scripts/check-secrets.test.mjs",
+    "test": "node --test backend-test.mjs game-test.mjs scripts/check-secrets.test.mjs",
     "check:secrets": "node scripts/check-secrets.mjs --history",
     "setup:hooks": "git config --local core.hooksPath .githooks"
   }
