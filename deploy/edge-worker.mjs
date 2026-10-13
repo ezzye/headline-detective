@@ -9,6 +9,9 @@ export default {async fetch(request,env){
   if(!ROUTES.has(url.pathname)||!['GET','POST'].includes(request.method))return json(404,'not_found');
   const origin=request.headers.get('origin');if(request.method==='POST'&&origin!==ORIGIN)return json(403,'origin_rejected');
   if(request.method==='GET'&&origin&&origin!==ORIGIN)return json(403,'origin_rejected');
+  // These are the public gateway's fixed contract, not account balances or
+  // credentials. Loading a contribution form needs no private ledger read.
+  if(request.method==='GET'&&url.pathname==='/api/donations/options')return new Response(JSON.stringify({enabled:Boolean(env.CFJ_GATEWAY_URL&&env.CFJ_GATEWAY_TOKEN),models:{deepseek:'deepseek-flash',elevenlabs:'eleven_v3'},providers:[{provider:'deepseek',model:'deepseek-flash',unit:'tokens'},{provider:'elevenlabs',model:'eleven_v3',unit:'characters'}],modes:['prepaid_remaining'],consentVersion:'public-provider-pool-v1',withdrawal:'Stops new calls; already dispatched calls may finish. Donations do not buy editorial control.'}),{headers:{...SECURITY,'content-type':'application/json; charset=utf-8','cache-control':'no-store'}});
   if(!env.CFJ_GATEWAY_URL||!env.CFJ_GATEWAY_TOKEN)return json(503,'ai_temporarily_unavailable');
   const gateway=new URL(env.CFJ_GATEWAY_URL);if(gateway.protocol!=='https:'||!gateway.hostname.endsWith('.lambda-url.eu-west-1.on.aws'))return json(503,'gateway_unavailable');
   const ip=request.headers.get('cf-connecting-ip');if(!ip)return json(503,'edge_identity_unavailable');

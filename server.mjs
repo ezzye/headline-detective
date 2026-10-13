@@ -199,7 +199,7 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
         const bytes=await readFile(path.join(HERE,asset.file));if(bytes.length>4*1024*1024)return json(res,503,{error:'asset_unavailable'});
         const type=pathname.endsWith('.png')?'image/png':pathname.endsWith('.webp')?'image/webp':'image/jpeg';res.writeHead(200,{'content-type':type,'cache-control':'public, max-age=3600','x-content-type-options':'nosniff'});return res.end(bytes);
       }
-      const publicPages = { '/': 'index.html','/offline.html':'index.html','/donate.html':'donate.html','/justice.html':'justice.html','/credits.html':'credits.html','/privacy.html':'privacy.html', '/README.html': 'README.html', '/verification.html': 'verification.html', '/comparison.html': 'comparison.html' };
+      const publicPages = { '/': 'index.html','/offline.html':'index.html','/donate.html':'donate.html','/donate-guide.html':'donate-guide.html','/justice.html':'justice.html','/credits.html':'credits.html','/privacy.html':'privacy.html', '/README.html': 'README.html', '/verification.html': 'verification.html', '/comparison.html': 'comparison.html' };
       if (req.method === 'GET' && Object.hasOwn(publicPages, pathname)) {
         let html = await readFile(path.join(HERE, publicPages[pathname]));if(pathname==='/'){const manifest=await (imageManifestPromise ||= readFile(path.join(HERE,'assets/media-credits.json'),'utf8').then(JSON.parse));html=onlinePage(html.toString('utf8'),manifest)}
         res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' }); return res.end(html);

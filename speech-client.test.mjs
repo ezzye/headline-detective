@@ -7,6 +7,14 @@ const html=await readFile(new URL('./index.html',import.meta.url),'utf8');
 const context=vm.createContext({Date,Map,Error,Blob});
 vm.runInContext(html.split('// SPEECH_MEMORY_CACHE_START')[1].split('// SPEECH_MEMORY_CACHE_END')[0],context);
 const create=context.createSpeechMemoryCache;
+test('replaying a loaded briefing keeps its server reply and avoids another registration request',async()=>{
+  let posted=0,played=0;const saved={replyId:'approved-reply',paragraphs:[{text:'Reviewed script'}]};
+  const replay=vm.createContext({live:true,overviewReplies:{desk:saved},$:()=>null,voiceStatus:()=>{},toast:()=>{},post:async()=>{posted++;throw Error('must reuse')},speak:async r=>{assert.equal(r.replyId,saved.replyId);assert.deepEqual(r.paragraphs,saved.paragraphs);played++}});
+  vm.runInContext(html.slice(html.indexOf('async function playBriefing('),html.indexOf('\nasync function ask(')),replay);
+  await replay.playBriefing({paragraphs:saved.paragraphs},{outletId:'desk'});
+  await replay.playBriefing({paragraphs:saved.paragraphs},{outletId:'desk'});
+  assert.equal(posted,0);assert.equal(played,2);
+});
 test('replay and simultaneous clicks reuse one audio request; text/voice/style identities separate buffers',async()=>{
   const cache=create();let requests=0;
   const load=async()=>{requests++;await Promise.resolve();return new Blob(['sound'],{type:'audio/mpeg'})};

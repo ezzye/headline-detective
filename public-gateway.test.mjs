@@ -65,14 +65,14 @@ test('health and donation options expose nonsecret readiness and compatible mode
 
 test('durable audio cache enforces per-item and total stored size, safe headers, and fixed TTL',async t=> {
  const {AUDIO_CACHE_LIMITS}=await import('./public-gateway.mjs');let time=Date.now();const audio=Buffer.alloc(900000,65),entries={};
- for(let i=0;i<30;i++)entries['old-'+i]={createdAt:time-1000-i,lastUsedAt:time-1000-i,dataBytes:audio.length,result:{body:audio.toString('base64'),headers:{'set-cookie':'malicious-cookie','location':'https://evil.invalid'}}};
- const tooLarge=Buffer.alloc(AUDIO_CACHE_LIMITS.maxItemBytes+1,66);entries.tooLarge={createdAt:time,dataBytes:tooLarge.length,result:{body:tooLarge.toString('base64')}};
- entries.expired={createdAt:time-AUDIO_CACHE_LIMITS.ttlMs,dataBytes:1,result:{body:'QQ=='}};
- entries.invalid={createdAt:time,dataBytes:100,result:{body:'QQ=='}};
+ for(let i=0;i<30;i++)entries[i.toString(16).padStart(64,'0')]={cacheClass:'dynamic',createdAt:time-1000-i,lastUsedAt:time-1000-i,dataBytes:audio.length,result:{body:audio.toString('base64'),headers:{'set-cookie':'malicious-cookie','location':'https://evil.invalid'}}};
+ const tooLarge=Buffer.alloc(AUDIO_CACHE_LIMITS.maxItemBytes+1,66);entries['a'.repeat(64)]={cacheClass:'dynamic',createdAt:time,dataBytes:tooLarge.length,result:{body:tooLarge.toString('base64')}};
+ entries['b'.repeat(64)]={cacheClass:'dynamic',createdAt:time-AUDIO_CACHE_LIMITS.ttlMs,dataBytes:1,result:{body:'QQ=='}};
+ entries['c'.repeat(64)]={cacheClass:'dynamic',createdAt:time,dataBytes:100,result:{body:'QQ=='}};
  const {gateway}=await setup(t,{clock:()=>time,state:{audioCache:entries}});
- assert.equal(gateway.state.audioCache.tooLarge,undefined);assert.equal(gateway.state.audioCache.expired,undefined);assert.equal(gateway.state.audioCache.invalid,undefined);
+ assert.equal(gateway.state.audioCache['a'.repeat(64)],undefined);assert.equal(gateway.state.audioCache['b'.repeat(64)],undefined);assert.equal(gateway.state.audioCache['c'.repeat(64)],undefined);
  assert(gateway.state.audioCacheBytes<=AUDIO_CACHE_LIMITS.maxStoredBytes);assert(Object.keys(gateway.state.audioCache).length<30);
- assert.equal(gateway.state.audioCache['old-29'],undefined);assert.equal(gateway.state.audioCache['old-0'].result.headers['set-cookie'],undefined);assert.equal(gateway.state.audioCache['old-0'].result.headers.location,undefined);assert.equal(gateway.state.audioCache['old-0'].result.headers['content-type'],'audio/mpeg');
+ assert.equal(gateway.state.audioCache[(29).toString(16).padStart(64,'0')],undefined);assert.equal(gateway.state.audioCache[(0).toString(16).padStart(64,'0')].result.headers['set-cookie'],undefined);assert.equal(gateway.state.audioCache[(0).toString(16).padStart(64,'0')].result.headers.location,undefined);assert.equal(gateway.state.audioCache[(0).toString(16).padStart(64,'0')].result.headers['content-type'],'audio/mpeg');
  time+=AUDIO_CACHE_LIMITS.ttlMs;await gateway.save();assert.equal(Object.keys(gateway.state.audioCache).length,0);assert.equal(gateway.state.audioCacheBytes,0);
 });
 
@@ -104,10 +104,10 @@ test('approved briefing audio is content-addressed across visitors and survives 
 
 test('cache pressure evicts dynamic audio before fixed reviewed recordings',async t=> {
  const now=Date.now(),audio=Buffer.alloc(1024*1024,65),entries={};
- for(let i=0;i<5;i++)entries['fixed-'+i]={cacheClass:'fixed',createdAt:now-1000-i,lastUsedAt:now-1000-i,dataBytes:audio.length,result:{body:audio.toString('base64')}};
- for(let i=0;i<20;i++)entries['dynamic-'+i]={cacheClass:'dynamic',createdAt:now-1000-i,lastUsedAt:now-1000-i,dataBytes:audio.length,result:{body:audio.toString('base64')}};
+ for(let i=0;i<5;i++)entries[(100+i).toString(16).padStart(64,'0')]={cacheClass:'fixed',createdAt:now-1000-i,lastUsedAt:now-1000-i,dataBytes:audio.length,result:{body:audio.toString('base64')}};
+ for(let i=0;i<20;i++)entries[(200+i).toString(16).padStart(64,'0')]={cacheClass:'dynamic',createdAt:now-1000-i,lastUsedAt:now-1000-i,dataBytes:audio.length,result:{body:audio.toString('base64')}};
  const {gateway}=await setup(t,{state:{audioCache:entries}});
- for(let i=0;i<5;i++)assert(gateway.state.audioCache['fixed-'+i]);assert(Object.keys(gateway.state.audioCache).length<25);
+ for(let i=0;i<5;i++)assert(gateway.state.audioCache[(100+i).toString(16).padStart(64,'0')]);assert(Object.keys(gateway.state.audioCache).length<25);
 });
 
 test('speech cache identity changes with text, voice, model, performance, settings, or dynamic ownership',async()=> {
