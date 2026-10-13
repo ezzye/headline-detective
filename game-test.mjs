@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
 
 const cases = JSON.parse(await readFile(new URL('./cases.json', import.meta.url), 'utf8'));
-const html = await readFile(new URL('./index.html', import.meta.url), 'utf8');
+const html = await readFile(new URL('./comparison.html', import.meta.url), 'utf8');
 
 test('portable game and server use the same reviewed case pack', () => {
   const embedded = JSON.parse(html.match(/<script id="case-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);

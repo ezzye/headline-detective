@@ -1,0 +1,441 @@
+[
+  {
+    "id": "arday-2026-campaign",
+    "title": "Jason Arday: 22 days of coverage",
+    "subject": "Coverage of Professor Jason Arday and institutional accountability",
+    "start": "2026-07-24",
+    "end": "2026-08-14",
+    "endNote": "15:12 BST cutoff on the final date",
+    "days": [
+      "2026-07-24",
+      "2026-07-25",
+      "2026-07-26",
+      "2026-07-27",
+      "2026-07-28",
+      "2026-07-29",
+      "2026-07-30",
+      "2026-07-31",
+      "2026-08-01",
+      "2026-08-02",
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-07",
+      "2026-08-08",
+      "2026-08-09",
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-14"
+    ],
+    "source": {
+      "name": "NewsCord",
+      "url": "https://newscord.org/editorials/jason-arday-pile-on",
+      "retrieved": "2026-10-13",
+      "unit": "distinct substantive written pieces",
+      "corpusCount": 229,
+      "outletUniverse": 15,
+      "selectedCount": 90,
+      "scopeNote": "Daily totals are derived from NewsCord’s fixed 229-item inventory across 15 outlets. These four desks contain 90 listed pieces. The inventory has qualified indexing coverage and counts may be lower bounds. The last date stops at 15:12 BST. Examples are a small selection, not the counting population; original versions may have changed."
+    },
+    "events": [
+      {
+        "date": "2026-08-05",
+        "label": "Resignation",
+        "evidenceId": "resignation"
+      },
+      {
+        "date": "2026-08-12",
+        "label": "Independent inquiry agreed",
+        "evidenceId": "inquiry"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "inventory",
+        "label": "NewsCord article inventory and method",
+        "url": "https://newscord.org/editorials/jason-arday-pile-on",
+        "text": "The fixed inventory lists 229 substantive written pieces from 15 outlets. This game selects four outlets and derives their daily counts from its dated rows."
+      },
+      {
+        "id": "window",
+        "label": "Counting window and exclusions",
+        "url": "https://newscord.org/editorials/jason-arday-pile-on",
+        "text": "24 July to 14 August 2026, ending at 15:12 BST. Passing mentions, broadcasts and video-only items are excluded. Coverage of indexing gaps is qualified."
+      },
+      {
+        "id": "resignation",
+        "label": "Resignation report, 5 August",
+        "url": "https://www.theguardian.com/education/2026/aug/05/cambridge-professor-jason-arday-resigns-amid-accusations-of-plagiarism",
+        "text": "Arday resigned from his Cambridge role on 5 August."
+      },
+      {
+        "id": "inquiry",
+        "label": "Independent inquiry report, 12 August",
+        "url": "https://www.theguardian.com/education/2026/aug/12/cambridge-independent-inquiry-jason-arday-appointment",
+        "text": "Cambridge agreed to an independent inquiry into his appointment on 12 August."
+      }
+    ],
+    "reasoningChecks": [
+      {
+        "id": "unit",
+        "prompt": "What do the bars count?",
+        "options": [
+          {
+            "value": "mentions",
+            "label": "Every mention, including broadcasts"
+          },
+          {
+            "value": "pieces",
+            "label": "Distinct substantive written pieces"
+          },
+          {
+            "value": "attacks",
+            "label": "Proven attacks on the subject"
+          }
+        ],
+        "answer": "pieces",
+        "explanation": "One unit is a substantive written item in the inventory, including news, comment or a letters page. It is not a count of proven attacks.",
+        "evidenceIds": [
+          "inventory",
+          "window"
+        ]
+      },
+      {
+        "id": "scope",
+        "prompt": "Do these four desks represent all UK coverage?",
+        "options": [
+          {
+            "value": "all",
+            "label": "Yes, all UK outlets and formats"
+          },
+          {
+            "value": "sample",
+            "label": "No, four outlets selected from a bounded inventory"
+          },
+          {
+            "value": "all15",
+            "label": "Yes, all 15 inventoried outlets"
+          }
+        ],
+        "answer": "sample",
+        "explanation": "These desks account for 90 listed pieces. The full fixed inventory lists 229 across 15 outlets; it has declared indexing gaps.",
+        "evidenceIds": [
+          "inventory",
+          "window"
+        ]
+      },
+      {
+        "id": "event",
+        "prompt": "Does resignation automatically end the public interest?",
+        "options": [
+          {
+            "value": "always",
+            "label": "Yes, every later item is excessive"
+          },
+          {
+            "value": "never",
+            "label": "No, any later volume is justified"
+          },
+          {
+            "value": "developments",
+            "label": "No; later developments can justify further scrutiny"
+          }
+        ],
+        "answer": "developments",
+        "explanation": "The subsequent inquiry is a documented development. Whether it warrants the actual amount of later coverage remains your campaign judgment.",
+        "evidenceIds": [
+          "resignation",
+          "inquiry"
+        ]
+      },
+      {
+        "id": "motive",
+        "prompt": "What can a high daily peak establish by itself?",
+        "options": [
+          {
+            "value": "volume",
+            "label": "Concentrated publication volume"
+          },
+          {
+            "value": "intent",
+            "label": "Deliberate bullying or racist intent"
+          },
+          {
+            "value": "harm",
+            "label": "That coverage caused harm"
+          }
+        ],
+        "answer": "volume",
+        "explanation": "Daily totals show concentration. Intent, discrimination and consequences need additional evidence.",
+        "evidenceIds": [
+          "inventory"
+        ]
+      },
+      {
+        "id": "zero",
+        "prompt": "What does a zero in this archive mean?",
+        "options": [
+          {
+            "value": "none",
+            "label": "The outlet definitely published nothing"
+          },
+          {
+            "value": "unlisted",
+            "label": "No qualifying item is listed for that date"
+          },
+          {
+            "value": "fair",
+            "label": "The outlet was unquestionably fair"
+          }
+        ],
+        "answer": "unlisted",
+        "explanation": "A zero describes the retrieved inventory. Indexing gaps and excluded formats prevent an absolute claim about all publication.",
+        "evidenceIds": [
+          "window"
+        ]
+      }
+    ],
+    "campaigns": [
+      {
+        "id": "bbc",
+        "outlet": "BBC News",
+        "dailyCounts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          2,
+          2,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "listedCount": 9,
+        "activeDays": 7,
+        "peakDaily": 2,
+        "beforeResignationCount": 1,
+        "afterResignationCount": 8,
+        "examples": [
+          {
+            "id": "bbc-2026-08-01",
+            "headline": "Cambridge professor at centre of plagiarism …",
+            "url": "https://www.bbc.co.uk/news/articles/c78gmp7zylvo",
+            "published": "2026-08-01",
+            "verification": "Six-word inventory excerpt; original publisher page was unavailable to this build."
+          },
+          {
+            "id": "bbc-2026-08-12",
+            "headline": "I share concerns over Arday appointment, …",
+            "url": "https://www.bbc.co.uk/news/articles/cn4npy3w1p2o",
+            "published": "2026-08-12",
+            "verification": "Six-word inventory excerpt; original publisher page was unavailable to this build."
+          }
+        ],
+        "reviewNotes": {
+          "publicValue": "Ask how much of this campaign added substantiated information or held institutions accountable. A new investigation can warrant continued attention.",
+          "pressure": "The record lists 9 pieces, peaking at 2 in one day. Judge whether that frequency added public value, repeated earlier claims or encouraged humiliation.",
+          "limit": "Written news only; broadcasts and press reviews are excluded. Original example pages could not be retrieved for this build. Counts do not classify every piece as new information or repetition."
+        }
+      },
+      {
+        "id": "guardian",
+        "outlet": "The Guardian",
+        "dailyCounts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          4,
+          4,
+          1,
+          0,
+          0,
+          0,
+          4,
+          2,
+          0
+        ],
+        "listedCount": 18,
+        "activeDays": 7,
+        "peakDaily": 4,
+        "beforeResignationCount": 1,
+        "afterResignationCount": 17,
+        "examples": [
+          {
+            "id": "guardian-2026-08-01",
+            "headline": "Playbooks, plagiarism and a pig’s head: new claims surrounding a star Cambridge professor",
+            "url": "https://www.theguardian.com/education/ng-interactive/2026/aug/01/playbooks-plagiarism-pigs-head-new-claims-surrounding-cambridge-professor-jason-arday",
+            "published": "2026-08-01",
+            "verification": "Headline checked on original publisher page; date also matched to inventory."
+          },
+          {
+            "id": "guardian-2026-08-06",
+            "headline": "The takedown of Jason Arday has overjoyed the right, and must be a wake-up call for the left",
+            "url": "https://www.theguardian.com/commentisfree/2026/aug/06/jason-arday-dei-race-issues-university-of-cambridge",
+            "published": "2026-08-06",
+            "verification": "Headline checked on original publisher page; date also matched to inventory."
+          },
+          {
+            "id": "guardian-2026-08-12",
+            "headline": "Cambridge agrees to hold independent inquiry into Jason Arday appointment",
+            "url": "https://www.theguardian.com/education/2026/aug/12/cambridge-independent-inquiry-jason-arday-appointment",
+            "published": "2026-08-12",
+            "verification": "Headline checked on original publisher page; date also matched to inventory."
+          },
+          {
+            "id": "guardian-2026-08-13",
+            "headline": "The Jason Arday affair must not spell the end for diversity. Here’s how – and why – we should defend it",
+            "url": "https://www.theguardian.com/commentisfree/2026/aug/13/jason-arday-diversity-how-and-why-we-should-defend",
+            "published": "2026-08-13",
+            "verification": "Headline checked on original publisher page; date also matched to inventory."
+          }
+        ],
+        "reviewNotes": {
+          "publicValue": "Ask how much of this campaign added substantiated information or held institutions accountable. A new investigation can warrant continued attention.",
+          "pressure": "The record lists 18 pieces, peaking at 4 in one day. Judge whether that frequency added public value, repeated earlier claims or encouraged humiliation.",
+          "limit": "The inventory excludes passing live-blog mentions. Retrieved headline versions may reflect later edits. Counts do not classify every piece as new information or repetition."
+        }
+      },
+      {
+        "id": "spectator",
+        "outlet": "The Spectator",
+        "dailyCounts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          5,
+          2,
+          1,
+          0,
+          0,
+          5,
+          2,
+          2,
+          1,
+          0
+        ],
+        "listedCount": 21,
+        "activeDays": 10,
+        "peakDaily": 5,
+        "beforeResignationCount": 3,
+        "afterResignationCount": 18,
+        "examples": [
+          {
+            "id": "spectator-2026-07-30",
+            "headline": "Cambridge is coming out very badly from the Jason Arday affair",
+            "url": "https://spectator.com/article/cambridge-is-coming-out-very-badly-from-the-jason-arday-affair/",
+            "published": "2026-07-30",
+            "verification": "Headline checked on original publisher page; date also matched to inventory."
+          },
+          {
+            "id": "spectator-2026-08-05",
+            "headline": "Cambridge has fallen",
+            "url": "https://spectator.com/article/cambridge-has-fallen/",
+            "published": "2026-08-05",
+            "verification": "Headline checked on original publisher page; date also matched to inventory."
+          },
+          {
+            "id": "spectator-2026-08-10",
+            "headline": "Jason Arday and the Dukes and Dauphins of DEI",
+            "url": "https://spectator.com/article/jason-arday-and-the-dukes-and-dauphins-of-dei/",
+            "published": "2026-08-10",
+            "verification": "Headline checked on original publisher page; date also matched to inventory."
+          }
+        ],
+        "reviewNotes": {
+          "publicValue": "Ask how much of this campaign added substantiated information or held institutions accountable. A new investigation can warrant continued attention.",
+          "pressure": "The record lists 21 pieces, peaking at 5 in one day. Judge whether that frequency added public value, repeated earlier claims or encouraged humiliation.",
+          "limit": "Roundups and video-only coverage are excluded; some indexing gaps may remain. Counts do not classify every piece as new information or repetition."
+        }
+      },
+      {
+        "id": "telegraph",
+        "outlet": "The Telegraph",
+        "dailyCounts": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          7,
+          7,
+          3,
+          1,
+          4,
+          1,
+          1,
+          1,
+          2
+        ],
+        "listedCount": 42,
+        "activeDays": 18,
+        "peakDaily": 7,
+        "beforeResignationCount": 12,
+        "afterResignationCount": 30,
+        "examples": [
+          {
+            "id": "telegraph-2026-07-24",
+            "headline": "Cambridge's diversity poster boy in plagiarism …",
+            "url": "https://www.telegraph.co.uk/news/2026/07/24/cambridges-diversity-poster-boy-in-plagiarism-row/",
+            "published": "2026-07-24",
+            "verification": "Six-word inventory excerpt; original publisher page was unavailable to this build."
+          },
+          {
+            "id": "telegraph-2026-08-14",
+            "headline": "Cambridge took advice from pro-BLM group …",
+            "url": "https://www.telegraph.co.uk/news/2026/08/14/cambridge-took-advice-pro-blm-group-before-hiring-arday/",
+            "published": "2026-08-14",
+            "verification": "Six-word inventory excerpt; original publisher page was unavailable to this build."
+          }
+        ],
+        "reviewNotes": {
+          "publicValue": "Ask how much of this campaign added substantiated information or held institutions accountable. A new investigation can warrant continued attention.",
+          "pressure": "The record lists 42 pieces, peaking at 7 in one day. Judge whether that frequency added public value, repeated earlier claims or encouraged humiliation.",
+          "limit": "The inventory reports possible missing articles behind indexing restrictions. Original example pages could not be retrieved for this build. Counts do not classify every piece as new information or repetition."
+        }
+      }
+    ]
+  }
+]

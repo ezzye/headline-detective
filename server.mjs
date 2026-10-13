@@ -74,7 +74,7 @@ function validProviderObject(value, approvedIds) {
   return true;
 }
 
-export function createGameServer({ port = Number(process.env.PORT || 9027), host = '127.0.0.1', casesPath = path.join(HERE, 'cases.json'), fetchImpl = globalThis.fetch, env = process.env, clock = () => Date.now(), random = Math.random } = {}) {
+export function createGameServer({ port = Number(process.env.PORT || 9027), host = '127.0.0.1', casesPath = path.join(HERE, 'cases.json'), campaignsPath = path.join(HERE, 'campaigns.json'), fetchImpl = globalThis.fetch, env = process.env, clock = () => Date.now(), random = Math.random } = {}) {
   const sessions = new Map();
   const voiceCache = new Map();
   const pendingVoices = new Map();
@@ -84,11 +84,29 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
   const distinctVoicesAvailable = new Set(voiceIds).size;
   const voiceConfigured = Boolean(voiceKey) && voiceIds.length === 4 && distinctVoicesAvailable === 4;
   let activeProviderCalls = 0;
-  let casesPromise;
+  let casesPromise, campaignsPromise;
   const loadCases = () => casesPromise ??= readFile(casesPath, 'utf8').then(JSON.parse).then(v => {
     if (!Array.isArray(v)) throw new Error('cases.json must be an array');
     return v;
   });
+  const loadCampaigns = () => campaignsPromise ??= readFile(campaignsPath, 'utf8').then(JSON.parse).then(v => {
+    if (!Array.isArray(v)) throw new Error('campaigns.json must be an array');
+    return v;
+  });
+  const validCampaign = c => {
+    const iso = x => typeof x === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(x) && !Number.isNaN(Date.parse(`${x}T00:00:00Z`)) && new Date(`${x}T00:00:00Z`).toISOString().slice(0, 10) === x;
+    const dates = Array.isArray(c.days) && c.days.length === 22 && c.days.every(iso) && new Set(c.days).size === 22 && c.days.every((date, i) => i === 0 || Date.parse(`${date}T00:00:00Z`) - Date.parse(`${c.days[i - 1]}T00:00:00Z`) === 86_400_000);
+    const checks = Array.isArray(c.reasoningChecks) && c.reasoningChecks.length === 5 && new Set(c.reasoningChecks.map(x => x?.id)).size === 5 && c.reasoningChecks.every(x => typeof x.id === 'string' && x.id && typeof x.prompt === 'string' && Array.isArray(x.options) && x.options.length > 0 && x.options.every(o => typeof o.value === 'string' && typeof o.label === 'string') && x.options.some(o => o.value === x.answer) && typeof x.explanation === 'string' && Array.isArray(x.evidenceIds) && x.evidenceIds.every(id => (c.evidence || []).some(e => e.id === id)));
+    const evidence = Array.isArray(c.evidence) && c.evidence.length > 0 && c.evidence.every(e => typeof e.id === 'string' && typeof e.text === 'string' && typeof e.url === 'string' && typeof e.label === 'string');
+    const resignation = Array.isArray(c.events) ? c.events.find(e => /resign/i.test(e?.label || '')) : null;
+    const resignationIndex = resignation && Array.isArray(c.days) ? c.days.indexOf(resignation.date) : -1;
+    const exampleUrls = Array.isArray(c.campaigns) ? c.campaigns.flatMap(x => (x?.examples || []).map(e => e?.url)) : [];
+    const campaigns = Array.isArray(c.campaigns) && c.campaigns.length === 4 && new Set(c.campaigns.map(x => x?.id)).size === 4 && c.campaigns.every(x => {
+      if (!x || typeof x.id !== 'string' || typeof x.outlet !== 'string' || !Array.isArray(x.dailyCounts) || x.dailyCounts.length !== 22 || x.dailyCounts.some(n => !Number.isInteger(n) || n < 0) || x.listedCount !== x.dailyCounts.reduce((a,b) => a+b,0) || !Number.isInteger(x.activeDays) || x.activeDays !== x.dailyCounts.filter(n => n > 0).length || !Number.isInteger(x.peakDaily) || x.peakDaily !== Math.max(...x.dailyCounts) || !Number.isInteger(x.afterResignationCount) || !Number.isInteger(x.beforeResignationCount) || x.afterResignationCount + x.beforeResignationCount !== x.listedCount || !Array.isArray(x.examples) || !x.examples.length || x.examples.some(e => !e.id || !e.headline || !e.url || !iso(e.published) || e.published < c.start || e.published > c.end || typeof e.verification !== 'string') || new Set(x.examples.map(e => e.published)).size !== x.examples.length || !x.reviewNotes || ['publicValue','pressure','limit'].some(k => typeof x.reviewNotes[k] !== 'string')) return false;
+      return resignationIndex >= 0 && x.beforeResignationCount === x.dailyCounts.slice(0, resignationIndex).reduce((a,b) => a+b,0) && x.afterResignationCount === x.dailyCounts.slice(resignationIndex).reduce((a,b) => a+b,0);
+    });
+    return typeof c?.id === 'string' && typeof c.title === 'string' && typeof c.subject === 'string' && iso(c.start) && iso(c.end) && c.start <= c.end && typeof c.endNote === 'string' && dates && c.days[0] === c.start && c.days.at(-1) === c.end && c.source && typeof c.source.name === 'string' && typeof c.source.url === 'string' && typeof c.source.retrieved === 'string' && typeof c.source.unit === 'string' && Number.isInteger(c.source.corpusCount) && c.source.corpusCount >= (Array.isArray(c.campaigns) ? c.campaigns.reduce((sum, x) => sum + (Number.isInteger(x?.listedCount) ? x.listedCount : Infinity), 0) : Infinity) && Number.isInteger(c.source.outletUniverse) && typeof c.source.scopeNote === 'string' && Array.isArray(c.events) && c.events.every(e => e && iso(e.date) && e.date >= c.start && e.date <= c.end && c.days.includes(e.date) && typeof e.label === 'string' && (c.evidence || []).some(x => x.id === e.evidenceId)) && new Set(exampleUrls).size === exampleUrls.length && evidence && checks && campaigns;
+  };
   const cleanup = () => { const now = clock(); for (const [id, s] of sessions) if (now - s.createdAt >= SESSION_TTL) sessions.delete(id); };
   const server = http.createServer(async (req, res) => {
     const hostHeader = req.headers.host || '';
@@ -97,7 +115,12 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
     try {
       cleanup();
       if (req.method === 'GET' && pathname === '/health') return json(res, 200, { ok: true, configured: Boolean(env.DEEPSEEK_API_KEY), voiceConfigured, distinctVoicesAvailable });
-      const publicPages = { '/': 'index.html', '/README.html': 'README.html', '/verification.html': 'verification.html' };
+      if (req.method === 'GET' && pathname === '/campaign-records.csv') {
+        const csv = await readFile(path.join(HERE, 'campaign-records.csv'));
+        res.writeHead(200, { 'content-type': 'text/csv; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' });
+        return res.end(csv);
+      }
+      const publicPages = { '/': 'index.html', '/README.html': 'README.html', '/verification.html': 'verification.html', '/comparison.html': 'comparison.html' };
       if (req.method === 'GET' && Object.hasOwn(publicPages, pathname)) {
         const html = await readFile(path.join(HERE, publicPages[pathname]));
         res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' }); return res.end(html);
@@ -105,6 +128,21 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
       if (req.method === 'POST' && pathname.startsWith('/api/')) {
         if (!/^application\/json(?:\s*;|$)/i.test(req.headers['content-type'] || '')) return json(res, 415, { error: 'application_json_required' });
         const body = await readBody(req);
+        if (pathname === '/api/campaign/session') {
+          const all = await loadCampaigns();
+          const item = all.find(c => c.id === body.caseId);
+          if (!item) return json(res, 404, { error: 'unknown_campaign' });
+          if (!validCampaign(item)) return json(res, 503, { error: 'campaign_data_unavailable' });
+          if (sessions.size >= 256) return json(res, 503, { error: 'session_capacity_reached' });
+          const desks = DESKS.map((label, i) => ({ outletId: `desk-${String.fromCharCode(97 + i)}`, label }));
+          const orderedCampaigns = shuffled(item.campaigns, random);
+          const campaignByDesk = Object.fromEntries(desks.map((d, i) => [d.outletId, orderedCampaigns[i]]));
+          const articleByDesk = Object.fromEntries(desks.map(d => [d.outletId, campaignByDesk[d.outletId].examples[0]]));
+          const id = randomUUID();
+          sessions.set(id, { mode: 'campaign', createdAt: clock(), caseId: item.id, desks, campaignByDesk, articleByDesk, calls: 0, inFlight: 0, controllers: new Set(), revealed: false, replies: new Map(), voiceCalls: 0, voiceChars: 0, voiceInFlight: 0 });
+          const { name: _sourceName, ...anonymousSource } = item.source;
+          return json(res, 201, { sessionId: id, caseId: item.id, desks: desks.map((d, i) => ({ ...d, dailyCounts: campaignByDesk[d.outletId].dailyCounts, listedCount: campaignByDesk[d.outletId].listedCount, activeDays: campaignByDesk[d.outletId].activeDays, peakDaily: campaignByDesk[d.outletId].peakDaily, afterResignationCount: campaignByDesk[d.outletId].afterResignationCount, beforeResignationCount: campaignByDesk[d.outletId].beforeResignationCount, examples: campaignByDesk[d.outletId].examples.map(({ id: _id, headline, url, published, verification }) => ({ headline, url, published, verification })), reviewNotes: campaignByDesk[d.outletId].reviewNotes, voiceSpeaker: `Analyst ${String.fromCharCode(65 + i)}`, voiceConfigured })), days: item.days, start: item.start, end: item.end, endNote: item.endNote, source: anonymousSource, evidence: item.evidence, events: item.events, reasoningChecks: item.reasoningChecks.map(({ id, prompt, options }) => ({ id, prompt, options })), label: 'Outlet campaign aggregates and article samples are source records; analyst replies are simulated AI interpretations.' });
+        }
         const cases = await loadCases();
         if (pathname === '/api/session') {
           if (typeof body.caseId !== 'string' || !cases.some(c => c.id === body.caseId)) return json(res, 404, { error: 'unknown_case' });
@@ -121,8 +159,68 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
         }
         const session = sessions.get(body.sessionId);
         if (!session) return json(res, 404, { error: 'invalid_or_expired_session' });
-        if (session.revealed && pathname === '/api/reveal') return json(res, 200, session.revealResult);
+        if (session.revealed && (pathname === '/api/reveal' || pathname === '/api/campaign/reveal')) return json(res, 200, session.revealResult);
         if (session.revealed) return json(res, 409, { error: 'session_already_revealed' });
+        if (session.mode === 'campaign') {
+          const campaigns = await loadCampaigns(), item = campaigns.find(c => c.id === session.caseId);
+          if (pathname === '/api/story') return json(res, 409, { error: 'campaign_has_no_individual_story_flow' });
+          if (pathname === '/api/respond' || pathname === '/api/reveal') return json(res, 409, { error: 'campaign_route_required' });
+          if (pathname === '/api/speak') {
+            if (body.kind !== 'reply') return json(res, 400, { error: 'campaign_reply_speech_only' });
+            if (!voiceConfigured) return json(res, 503, { error: 'voice_not_configured' });
+            const saved = session.replies.get(body.replyId);
+            if (!saved || saved.outletId !== body.outletId) return json(res, 403, { error: 'reply_not_owned_by_desk' });
+            // Continue through the existing speech handler using this campaign desk's genuine example as the compatibility record.
+          }
+          if (pathname === '/api/campaign/respond') {
+            if (typeof body.question !== 'string' || !body.question.trim() || body.question.length > 400) return json(res, 400, { error: 'invalid_question' });
+            const campaign = session.campaignByDesk[body.outletId];
+            if (!campaign) return json(res, 400, { error: 'unknown_outlet' });
+            if (session.calls >= MAX_CALLS) return json(res, 429, { error: 'session_call_limit' });
+            if (session.inFlight >= 4) return json(res, 429, { error: 'session_concurrency_limit' });
+            session.calls++; session.inFlight++;
+            const desk = session.desks.find(d => d.outletId === body.outletId);
+            const packet = { period: `${item.start} to ${item.end}; ${item.endNote}`, dailyCounts: campaign.dailyCounts, datedCounts: item.days.map((date, i) => ({ date, count: campaign.dailyCounts[i] })), peakDates: item.days.filter((date,i) => campaign.dailyCounts[i] === campaign.peakDaily), listedCount: campaign.listedCount, activeDays: campaign.activeDays, peakDaily: campaign.peakDaily, beforeResignationDateCount: campaign.beforeResignationCount, onOrAfterResignationDateCount: campaign.afterResignationCount, events: item.events, reviewNotes: campaign.reviewNotes, examples: campaign.examples.map(({ headline, published, verification }) => ({ headline, published, verification })), source: item.source.scopeNote };
+            const fallback = () => ({ reply: `AI interpretation (Simulated): The ${item.days.length}-day record shows ${campaign.listedCount} items across ${campaign.activeDays} active days, with ${campaign.afterResignationCount} on or after the resignation date. Consider pace, comparable periods, and what new developments could justify volume.`, evidenceIds: item.evidence.slice(0,2).map(e => e.id), mode: 'offline' });
+            const key = env.DEEPSEEK_API_KEY;
+            if (!key) { session.inFlight--; const out = fallback(), replyId = randomUUID(); session.replies.set(replyId, { outletId: desk.outletId, text: out.reply }); return json(res, 200, { outletId: desk.outletId, label: desk.label, ...out, replyId, reason: 'no_key', simulated: true, remainingCalls: MAX_CALLS - session.calls }); }
+            if (activeProviderCalls >= 16) { session.inFlight--; return json(res, 429, { error: 'server_concurrency_limit' }); }
+            activeProviderCalls++;
+            try {
+              const controller = new AbortController(); session.controllers.add(controller); const timer = setTimeout(() => controller.abort(), 20_000);
+              let response;
+              try { response = await fetchImpl(PROVIDER_URL, { method: 'POST', signal: controller.signal, headers: { authorization: `Bearer ${key}`, 'content-type': 'application/json' }, body: JSON.stringify({ model: env.DEEPSEEK_MODEL || 'deepseek-flash', response_format: { type: 'json_object' }, thinking: { type: 'disabled' }, max_tokens: 320, temperature: 0.4, messages: [{ role: 'system', content: `You are a helpful simulated analyst interpreting whole-outlet campaign counts over a fixed period. Discuss total volume, pacing, timing, documented developments, comparison with like periods, and what new developments could justify volume. Do not give any article-level verdict. The before/from resignation split uses calendar dates, not exact publication times. Do not presume a high count is bad; do not infer motive or causality between coverage and a person's death. Do not identify or guess the publisher identity. Use only trusted packet facts and approved evidence IDs. Do not assert a rise or fall around an event; describe explicitly computed peak dates instead. Do not invent similar-case or comparison-period statistics. Reply in <=450 characters, include “AI interpretation” and “Simulated”, and return JSON exactly shaped as {"reply":"...","evidenceIds":["id"]}.` }, { role: 'user', content: JSON.stringify({ question: body.question, trustedCampaign: packet, evidence: item.evidence }) }] }) }); } finally { clearTimeout(timer); session.controllers.delete(controller); }
+              if (!response.ok) throw new Error('provider_unavailable');
+              const raw = (await response.json())?.choices?.[0]?.message?.content;
+              const parsed = typeof raw === 'string' ? JSON.parse(raw) : null;
+              const allowed = new Set(item.evidence.map(e => e.id));
+              if (!validProviderObject(parsed, allowed) || leaksIdentityOrRole(parsed.reply)) throw new Error('provider_invalid_schema');
+              session.inFlight--; activeProviderCalls--;
+              if (session.revealed) return json(res, 409, { error: 'session_already_revealed' });
+              const replyId = randomUUID(); session.replies.set(replyId, { outletId: desk.outletId, text: parsed.reply });
+              return json(res, 200, { outletId: desk.outletId, label: desk.label, reply: parsed.reply, replyId, evidenceIds: parsed.evidenceIds, mode: 'deepseek', simulated: true, remainingCalls: MAX_CALLS - session.calls });
+            } catch (err) {
+              session.inFlight--; activeProviderCalls--;
+              if (session.revealed) return json(res, 409, { error: 'session_already_revealed' });
+              const out = fallback(), replyId = randomUUID(); session.replies.set(replyId, { outletId: desk.outletId, text: out.reply });
+              return json(res, 200, { outletId: desk.outletId, label: desk.label, ...out, replyId, reason: err?.message === 'provider_invalid_schema' ? err.message : 'provider_unavailable', simulated: true, remainingCalls: MAX_CALLS - session.calls });
+            }
+          }
+          if (pathname === '/api/campaign/reveal') {
+            const ids = session.desks.map(d => d.outletId), checks = item.reasoningChecks;
+            const exactKeys = (value, expected) => value && typeof value === 'object' && !Array.isArray(value) && Object.keys(value).length === expected.length && expected.every(k => Object.hasOwn(value, k));
+            const verdicts = body.campaignVerdicts, counts = body.recommendedCounts, answers = body.reasoningAnswers;
+            if (!exactKeys(verdicts, ids) || ids.some(id => !['justified','mixed','pile-on','unclear'].includes(verdicts[id]))) return json(res, 400, { error: 'invalid_campaign_verdicts' });
+            if (!exactKeys(counts, ids) || ids.some(id => counts[id] !== null && (!Number.isInteger(counts[id]) || counts[id] < 0 || counts[id] > session.campaignByDesk[id].listedCount * 2))) return json(res, 400, { error: 'invalid_recommended_counts' });
+            const checkIds = checks.map(c => c.id);
+            if (!exactKeys(answers, checkIds) || checks.some(c => !c.options.some(o => o.value === answers[c.id]))) return json(res, 400, { error: 'invalid_reasoning_answers' });
+            if (typeof body.justification !== 'string' || body.justification.trim().length < 40 || body.justification.length > 600) return json(res, 400, { error: 'invalid_campaign_justification' });
+            const results = checks.map(c => ({ id: c.id, prompt: c.prompt, correct: answers[c.id] === c.answer, answer: c.answer, explanation: c.explanation, evidenceIds: c.evidenceIds }));
+            session.revealed = true; for (const controller of session.controllers) controller.abort();
+            session.revealResult = { mode: 'campaign', roles: session.desks.map(d => ({ outletId: d.outletId, outletName: session.campaignByDesk[d.outletId].outlet, campaign: { ...session.campaignByDesk[d.outletId] }, decision: verdicts[d.outletId], recommendedCount: counts[d.outletId] })), reasoningScore: results.reduce((n,r) => n + (r.correct ? 2 : 0), 0), reasoningTotal: 10, reasoningResults: results, justification: body.justification.trim(), source: item.source, period: { start: item.start, end: item.end, endNote: item.endNote }, label: 'Campaign choices, count recommendations, and written reasoning are discussion inputs; points reflect only the five evidence checks.' };
+            return json(res, 200, session.revealResult);
+          }
+        }
         if (pathname === '/api/speak') {
           if (!voiceConfigured) return json(res, 503, { error: 'voice_not_configured' });
           const article = session.articleByDesk[body.outletId];

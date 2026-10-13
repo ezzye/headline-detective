@@ -290,12 +290,15 @@ test('all real articles are fixed and analysis remains helpful and evidence-grou
 
 test('local static serving allows only public HTML pages and never repository or private settings', async t => {
   const g = await setup(); t.after(g.close);
-  for (const route of ['/', '/README.html', '/verification.html']) {
+  for (const route of ['/', '/README.html', '/verification.html', '/comparison.html']) {
     const r = await fetch(g.base + route);
     assert.equal(r.status, 200);
     assert.match(r.headers.get('content-type'), /text\/html/);
   }
-  for (const route of ['/.env', '/.env.example', '/.git/config', '/server.mjs', '/cases.json', '/package.json']) {
+  const records = await fetch(g.base + '/campaign-records.csv');
+  assert.equal(records.status, 200);
+  assert.match(records.headers.get('content-type'), /text\/csv/);
+  for (const route of ['/.env', '/.env.example', '/.git/config', '/server.mjs', '/cases.json', '/campaigns.json', '/package.json']) {
     assert.equal((await fetch(g.base + route)).status, 404);
   }
 });

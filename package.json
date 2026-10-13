@@ -1,6 +1,6 @@
 {
   "name": "headline-detective",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "A local guided media-literacy game with DeepSeek and ElevenLabs",
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node scripts/start.mjs",
-    "test": "node --test backend-test.mjs game-test.mjs scripts/check-secrets.test.mjs",
+    "test": "node --test backend-test.mjs campaign-backend-test.mjs campaign-data-test.mjs game-test.mjs scripts/check-secrets.test.mjs",
     "check:secrets": "node scripts/check-secrets.mjs --history",
     "setup:hooks": "git config --local core.hooksPath .githooks"
   }
