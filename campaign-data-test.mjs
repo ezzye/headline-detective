@@ -63,7 +63,7 @@ test('offline desks stay distinct and whole-campaign choices never change eviden
   assert.equal(reveal(game, item).reasoningScore, 8);
 });
 
-test('portable game boots offline and can open the timeline and analyst without missing state', async () => {
+test('portable game boots offline and can open the timeline and outlet without missing state', async () => {
   const nodes = new Map();
   const node = id => {
     if (!nodes.has(id)) nodes.set(id, { textContent: id === '#campaign-data' ? JSON.stringify(campaigns) : '',
@@ -81,7 +81,29 @@ test('portable game boots offline and can open the timeline and analyst without 
   await vm.runInContext('start()', context);
   assert.match(node('#app').innerHTML, /Replay the period/);
   vm.runInContext('go(2)', context);
-  assert.match(node('#app').innerHTML, /Hear the campaign read/);
-  assert.match(node('#deskview').innerHTML, /Hear this campaign/);
+  assert.match(node('#app').innerHTML, /Hear the outlet’s defence/);
+  assert.match(node('#deskview').innerHTML, /Play outlet defence/);
   assert.equal(node('#qremaining').textContent, 3);
+});
+
+test('four outlet defences contain sourced first-person scripts and a qualified comparison', () => {
+  const approved = new Set(item.evidence.map(e => e.id));
+  const scripts = item.campaigns.map(c => c.briefing.paragraphs.map(p => p.text).join('\n\n'));
+  assert.equal(new Set(scripts).size, 4);
+  assert.match(item.narrationNotice, /not statements/);
+  assert.match(item.comparison.limit, /no matched dated inventory/);
+  assert.match(item.comparison.coverageClaim, /estimated/);
+  for (const c of item.campaigns) {
+    const script = c.briefing.paragraphs.map(p => p.text).join('\n\n');
+    assert.ok(script.split(/\s+/).length >= 180 && script.length < 4000);
+    assert.match(script, /\bwe\b/i);
+    assert.doesNotMatch(script, /AI interpretation|active days|Public value:/);
+    assert.ok(c.briefing.paragraphs.some(p => p.kind === 'report'));
+    assert.ok(c.briefing.paragraphs.some(p => p.kind === 'analysis'));
+    for (const p of c.briefing.paragraphs) {
+      assert.match(p.text, /[.!?]$/);
+      assert.ok(p.evidenceIds.length && p.evidenceIds.every(id => approved.has(id)));
+    }
+  }
+  assert.equal(item.campaigns.reduce((n,c) => n + c.examples.length, 0), 10);
 });

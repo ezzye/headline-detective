@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101625"><title>Faithful to the Facts — Campaign Jury</title>
 <style>
 :root{color-scheme:dark;--bg:#101625;--panel:#182337;--ink:#f4f3ec;--muted:#aab5c8;--line:#33435b;--lime:#d4f56b;--coral:#ff8773;--blue:#83d8ff;--gold:#f6c768;--purple:#c6a0ff}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#263753 0,transparent 48%),var(--bg);color:var(--ink);font:16px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}a{color:var(--blue)}.shell{max-width:1180px;margin:auto;padding:18px clamp(14px,3vw,36px) 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding-bottom:12px}.brand{font-weight:900;letter-spacing:.09em;text-transform:uppercase;font-size:.8rem}.brand b{color:var(--lime)}.tools{display:flex;gap:8px;align-items:center}.tools button,.secondary{border:1px solid var(--line);background:#111b2a;border-radius:999px;padding:8px 13px}.tools button:hover,.secondary:hover{border-color:var(--lime)}.stepper{display:flex;gap:8px;overflow:auto;padding:16px 0}.step{border:1px solid var(--line);border-radius:99px;padding:5px 11px;color:var(--muted);white-space:nowrap;font-size:.83rem}.step.on{color:var(--bg);background:var(--lime);border-color:var(--lime);font-weight:800}.screen{display:none;animation:arrive .5s ease both}.screen.active{display:block}@keyframes arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.6rem,8vw,6rem);line-height:.92;letter-spacing:-.065em;max-width:850px;margin-bottom:20px}h1 em{font-style:normal;color:var(--lime)}h2{font-size:clamp(1.6rem,4vw,2.6rem);letter-spacing:-.04em;margin-bottom:8px}.eyebrow{color:var(--lime);font-size:.78rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.lead{font-size:clamp(1.05rem,2.3vw,1.35rem);color:#dae1ed;max-width:680px}.card{border:1px solid var(--line);background:linear-gradient(145deg,#1b2940e8,#141e30e8);border-radius:22px;padding:clamp(17px,3vw,28px);box-shadow:0 22px 60px #060a1280}.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.intro{min-height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:14px}.button{background:var(--lime);color:#111923;border:0;border-radius:999px;padding:13px 22px;font-weight:900;box-shadow:0 8px 30px #d4f56b24}.button:hover{transform:translateY(-2px)}.button:disabled{opacity:.4;cursor:not-allowed;transform:none}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.fact{background:#0f1826;border:1px solid var(--line);border-radius:15px;padding:13px}.fact strong{font-size:1.6rem;display:block;color:var(--lime)}.small{color:var(--muted);font-size:.89rem}.stagehead{display:flex;justify-content:space-between;gap:14px;align-items:end;margin:16px 0}.chartbox{overflow:hidden;position:relative}.charttop{display:flex;justify-content:space-between;align-items:center;gap:12px}.playrow{display:flex;gap:7px}.playrow button{background:#0e1725;border:1px solid var(--line);border-radius:99px;padding:8px 12px}.timeline{width:100%;height:auto;display:block;min-height:280px}.lane{stroke:#34445b;stroke-width:1}.axis{fill:#9eacc1;font-size:11px}.laneLabel{fill:#eff4fc;font-size:13px;font-weight:700}.bar{transform-box:fill-box;transform-origin:bottom;animation:grow .48s cubic-bezier(.2,.7,.2,1) both}.bar:nth-of-type(4n){animation-delay:.06s}@keyframes grow{from{transform:scaleY(.02);opacity:.3}to{transform:scaleY(1);opacity:1}}.cursorline{stroke:var(--lime);stroke-width:2;stroke-dasharray:4 5;filter:drop-shadow(0 0 7px #d4f56b)}.cursorDot{fill:var(--lime);filter:drop-shadow(0 0 8px #d4f56b)}.range{width:100%;accent-color:var(--lime)}.datecontrol{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}.pill{border-radius:99px;background:#0f1826;padding:6px 11px;color:#dde6f5;font-size:.82rem}.avatars{display:flex;gap:8px;flex-wrap:wrap}.avatar{display:flex;align-items:center;gap:8px;background:#111b2a;padding:7px 12px;border:1px solid var(--line);border-radius:99px}.avatar svg{width:30px}.event{position:absolute;top:22%;left:50%;background:#ff8773;color:#171521;border-radius:99px;padding:5px 9px;font-size:.72rem;font-weight:900;animation:pulse 2s infinite}@keyframes pulse{50%{box-shadow:0 0 0 8px #ff87731c}}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.headcard{border-left:3px solid var(--blue);background:#101a29;border-radius:4px 13px 13px 4px;padding:14px}.headcard time{color:var(--lime);font-size:.75rem;font-weight:800}.headcard h3{font-size:1.06rem;margin:7px 0}.deskrow{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;border-bottom:1px solid var(--line);padding:13px 0}.deskrow:last-child{border:0}.verdicts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.choice{border:1px solid var(--line);border-radius:15px;padding:14px;background:#111b2a;text-align:left;min-height:105px}.choice[aria-pressed=true]{border:2px solid var(--lime);background:#2a382c}.choice strong{display:block;margin-bottom:5px}.budget{width:130px;accent-color:var(--lime)}.checks{display:grid;gap:11px}.checks label{display:grid;grid-template-columns:1.3fr 1fr;gap:10px;align-items:center}.checks select,.checks textarea{width:100%;background:#101a29;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:11px}.checks textarea{min-height:110px;grid-column:1/-1}.actions{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}.resultrow{border-bottom:1px solid var(--line);padding:16px 0}.resultrow h3{margin:0 0 4px}.badge{padding:4px 9px;background:#28374c;border-radius:99px;font-size:.75rem}.source details{margin-top:15px}.source summary{cursor:pointer;color:var(--blue)}.notice{padding:12px 14px;background:#252a30;border-left:3px solid var(--gold);border-radius:4px;color:#d9e0eb}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#f4f3ec;color:#111;padding:10px 16px;border-radius:99px;display:none;z-index:9}.loading{color:var(--muted)}.winner{color:var(--lime);font-size:1.3rem;font-weight:900}#audio{display:none}.reduced-motion *, .reduced-motion *::before, .reduced-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.offline{color:var(--gold)}@media(max-width:760px){.grid{grid-template-columns:1fr}.intro{min-height:auto;padding:42px 0}.cards{grid-template-columns:1fr}.verdicts{grid-template-columns:repeat(2,1fr)}.checks label{grid-template-columns:1fr}.deskrow{grid-template-columns:1fr auto}.timeline{min-height:220px}.charttop{align-items:flex-start;flex-direction:column}.top{align-items:flex-start}.tools{flex-wrap:wrap;justify-content:flex-end}.tools button{padding:7px 10px;font-size:.8rem}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}}
-.volume-track{display:grid;gap:4px}.volume-track span{display:block;height:10px;border-radius:9px}.budget{width:105px} .campaign-grid{grid-template-columns:1fr}.campaign-grid aside{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center}.campaign-grid aside .eyebrow,.campaign-grid aside .notice{margin:0}.campaign-grid aside .facts{margin-top:0!important}.timeline{min-height:300px}.bar{transition:opacity .3s ease,filter .3s ease}.laneLabel{font-size:18px}.axis{font-size:14px}#arrivals{min-height:45px;padding:10px 0}#arrivals .pill{display:inline-block;margin:4px;font-size:.95rem;animation:arrive .35s ease}.reduced-motion .bar,.reduced-motion #arrivals .pill{animation:none!important;transition:none!important}@media(max-width:700px){.campaign-grid aside{display:block}.campaign-grid aside>*{margin:10px 0!important}.timeline{min-width:600px}.chartbox{overflow-x:auto}.laneLabel{font-size:15px}} </style></head><body><div class="shell"><header class="top"><div class="brand"><b>●</b> Faithful to the Facts</div><div class="tools"><button id="motion">Motion: on</button><button id="save">Save HTML</button><button id="share">Share file</button></div></header><nav class="stepper" id="stepper" aria-label="Game steps"></nav><main id="app"><div class="loading">Opening the campaign file…</div></main><audio id="audio" controls></audio><div class="toast" id="toast" role="status"></div></div>
+.volume-track{display:grid;gap:4px}.volume-track span{display:block;height:10px;border-radius:9px}.budget{width:105px} .campaign-grid{grid-template-columns:1fr}.campaign-grid aside{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center}.campaign-grid aside .eyebrow,.campaign-grid aside .notice{margin:0}.campaign-grid aside .facts{margin-top:0!important}.timeline{min-height:300px}.bar{transition:opacity .3s ease,filter .3s ease}.laneLabel{font-size:18px}.axis{font-size:14px}#arrivals{min-height:45px;padding:10px 0}#arrivals .pill{display:inline-block;margin:4px;font-size:.95rem;animation:arrive .35s ease}.reduced-motion .bar,.reduced-motion #arrivals .pill{animation:none!important;transition:none!important}@media(max-width:700px){.campaign-grid aside{display:block}.campaign-grid aside>*{margin:10px 0!important}.timeline{min-width:600px}.chartbox{overflow-x:auto}.laneLabel{font-size:15px}} .briefing{border-left:3px solid var(--lime);padding-left:20px;margin:20px 0}.briefparagraph p{font-size:1.04rem;line-height:1.7;margin-bottom:22px}.kind{color:var(--gold);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em}.briefing details{border-top:1px solid var(--line);padding-top:12px} </style></head><body><div class="shell"><header class="top"><div class="brand"><b>●</b> Faithful to the Facts</div><div class="tools"><button id="motion">Motion: on</button><button id="save">Save HTML</button><button id="share">Share file</button></div></header><nav class="stepper" id="stepper" aria-label="Game steps"></nav><main id="app"><div class="loading">Opening the campaign file…</div></main><audio id="audio" controls></audio><div class="toast" id="toast" role="status"></div></div>
 <script id="campaign-data" type="application/json">[
   {
     "id": "arday-2026-campaign",
@@ -81,6 +81,54 @@
         "label": "Independent inquiry report, 12 August",
         "url": "https://www.theguardian.com/education/2026/aug/12/cambridge-independent-inquiry-jason-arday-appointment",
         "text": "Cambridge agreed to an independent inquiry into his appointment on 12 August."
+      },
+      {
+        "id": "arday-statement",
+        "label": "Arday’s resignation statement, 5 August",
+        "url": "https://goodlawproject.org/an-update-from-jason-arday/",
+        "text": "Arday said public scrutiny had taken a toll on his family. He said resigning should not be read as acceptance of the narratives about him."
+      },
+      {
+        "id": "arday-denial",
+        "label": "Denial reported with resignation",
+        "url": "https://www.theguardian.com/education/2026/aug/05/cambridge-professor-jason-arday-resigns-amid-accusations-of-plagiarism",
+        "text": "Arday denied plagiarism."
+      },
+      {
+        "id": "commentary-early",
+        "label": "Early commentary, 30 July",
+        "url": "https://spectator.com/article/cambridge-is-coming-out-very-badly-from-the-jason-arday-affair/",
+        "text": "An early commentator acknowledged that the plagiarism question remained unresolved and focused criticism on Cambridge’s appointment checks."
+      },
+      {
+        "id": "commentary-leader",
+        "label": "Leading article in the 8 August issue",
+        "url": "https://spectator.com/article/cambridge-has-fallen/",
+        "text": "A leading article used the Arday affair to argue that Cambridge and universities had sacrificed academic standards to progressive politics."
+      },
+      {
+        "id": "commentary-dei",
+        "label": "Commentary published 10 August",
+        "url": "https://spectator.com/article/jason-arday-and-the-dukes-and-dauphins-of-dei/",
+        "text": "A later commentary invoked fictional impostors and connected Arday’s case to a broader attack on diversity, equity and inclusion."
+      },
+      {
+        "id": "investigation-report",
+        "label": "Investigation published 1 August",
+        "url": "https://www.theguardian.com/education/ng-interactive/2026/aug/01/playbooks-plagiarism-pigs-head-new-claims-surrounding-cambridge-professor-jason-arday",
+        "text": "Reporting questioned accounts of alleged racist threats."
+      },
+      {
+        "id": "oreilly-report",
+        "label": "Varsity’s firsthand reporting, September 2023",
+        "url": "https://www.varsity.co.uk/news/26105",
+        "text": "Varsity reported an upheld complaint concerning student essays copied into William O’Reilly’s journal article. It reported a negligence finding, a withdrawn article and his return to work. Cambridge’s full tribunal reasons were not published."
+      },
+      {
+        "id": "oreilly-coverage",
+        "label": "Columnist’s comparison, August 2026",
+        "url": "https://www.theguardian.com/commentisfree/2026/aug/06/jason-arday-dei-race-issues-university-of-cambridge",
+        "text": "Columnist Jason Okundaye estimated roughly six press articles about O’Reilly. He supplied no matching window or counting method."
       }
     ],
     "reasoningChecks": [
@@ -256,7 +304,78 @@
           "publicValue": "Ask how much of this campaign added substantiated information or held institutions accountable. A new investigation can warrant continued attention.",
           "pressure": "The record lists 9 pieces, peaking at 2 in one day. Judge whether that frequency added public value, repeated earlier claims or encouraged humiliation.",
           "limit": "Written news only; broadcasts and press reviews are excluded. Original example pages could not be retrieved for this build. Counts do not classify every piece as new information or repetition."
-        }
+        },
+        "briefing": {
+          "title": "We followed the changing story",
+          "paragraphs": [
+            {
+              "kind": "report",
+              "text": "Our defence is that the story kept changing. Jason Arday was a Cambridge professor facing allegations of plagiarism. On the first of August, our listed coverage carried his defence of his work. He denied plagiarism. On the fifth, he resigned, saying public scrutiny had taken a toll on his family and that stepping down should not be read as accepting the narratives about him.",
+              "evidenceIds": [
+                "inventory",
+                "arday-statement",
+                "arday-denial"
+              ]
+            },
+            {
+              "kind": "report",
+              "text": "After that, the archive lists our reports about a police chief’s admission of a mistake and reviews by other universities. By the twelfth of August, the appointment inquiry provided another development to explain. Our argument is that these questions concerned institutions as well as one individual: who checked the appointment, and how did organisations respond when questions were raised?",
+              "evidenceIds": [
+                "inventory",
+                "inquiry"
+              ]
+            },
+            {
+              "kind": "analysis",
+              "text": "Nine of our written pieces are listed across the twenty-two days. At the busiest point, we published two listed pieces on each of two consecutive dates. We would justify returning to the story when an institution took a new step or an important claim needed an answer. We would also have to explain what each follow-up added, rather than treating public curiosity as a sufficient reason to publish.",
+              "evidenceIds": [
+                "inventory"
+              ]
+            },
+            {
+              "kind": "analysis",
+              "text": "You should challenge us on the complete picture. This archive excludes our broadcasts. It cannot show whether our total attention was proportionate, or whether every report gave adequate space to Arday’s response. A lower written count does not settle those questions.",
+              "evidenceIds": [
+                "window",
+                "arday-statement"
+              ]
+            }
+          ]
+        },
+        "coverageNotes": [
+          {
+            "kind": "report",
+            "text": "Our defence is that the story kept changing. Jason Arday was a Cambridge professor facing allegations of plagiarism. On the first of August, our listed coverage carried his defence of his work. He denied plagiarism. On the fifth, he resigned, saying public scrutiny had taken a toll on his family and that stepping down should not be read as accepting the narratives about him.",
+            "evidenceIds": [
+              "inventory",
+              "arday-statement",
+              "arday-denial"
+            ]
+          },
+          {
+            "kind": "report",
+            "text": "After that, the archive lists our reports about a police chief’s admission of a mistake and reviews by other universities. By the twelfth of August, the appointment inquiry provided another development to explain. Our argument is that these questions concerned institutions as well as one individual: who checked the appointment, and how did organisations respond when questions were raised?",
+            "evidenceIds": [
+              "inventory",
+              "inquiry"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "Nine of our written pieces are listed across the twenty-two days. At the busiest point, we published two listed pieces on each of two consecutive dates. We would justify returning to the story when an institution took a new step or an important claim needed an answer. We would also have to explain what each follow-up added, rather than treating public curiosity as a sufficient reason to publish.",
+            "evidenceIds": [
+              "inventory"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "You should challenge us on the complete picture. This archive excludes our broadcasts. It cannot show whether our total attention was proportionate, or whether every report gave adequate space to Arday’s response. A lower written count does not settle those questions.",
+            "evidenceIds": [
+              "window",
+              "arday-statement"
+            ]
+          }
+        ]
       },
       {
         "id": "guardian",
@@ -299,13 +418,6 @@
             "verification": "Headline checked on original publisher page; date also matched to inventory."
           },
           {
-            "id": "guardian-2026-08-06",
-            "headline": "The takedown of Jason Arday has overjoyed the right, and must be a wake-up call for the left",
-            "url": "https://www.theguardian.com/commentisfree/2026/aug/06/jason-arday-dei-race-issues-university-of-cambridge",
-            "published": "2026-08-06",
-            "verification": "Headline checked on original publisher page; date also matched to inventory."
-          },
-          {
             "id": "guardian-2026-08-12",
             "headline": "Cambridge agrees to hold independent inquiry into Jason Arday appointment",
             "url": "https://www.theguardian.com/education/2026/aug/12/cambridge-independent-inquiry-jason-arday-appointment",
@@ -324,7 +436,80 @@
           "publicValue": "Ask how much of this campaign added substantiated information or held institutions accountable. A new investigation can warrant continued attention.",
           "pressure": "The record lists 18 pieces, peaking at 4 in one day. Judge whether that frequency added public value, repeated earlier claims or encouraged humiliation.",
           "limit": "The inventory excludes passing live-blog mentions. Retrieved headline versions may reflect later edits. Counts do not classify every piece as new information or repetition."
-        }
+        },
+        "briefing": {
+          "title": "We investigated claims and challenged the wider backlash",
+          "paragraphs": [
+            {
+              "kind": "report",
+              "text": "We would defend this campaign as both investigation and a debate about its wider consequences. On the first of August, reporting questioned accounts of alleged racist threats. Four days later, Arday resigned from Cambridge. He denied plagiarism and said stepping down was not acceptance of the narratives about him. Those responses matter alongside the allegations.",
+              "evidenceIds": [
+                "investigation-report",
+                "arday-statement",
+                "arday-denial"
+              ]
+            },
+            {
+              "kind": "report",
+              "text": "Eighteen of our pieces are listed. There were four on the sixth of August, four the following day and another four on the twelfth, when the appointment inquiry was announced. Selected opinion headlines defended diversity. Our case is that readers needed both scrutiny of the university and a challenge to arguments treating one contested case as a verdict on racial equality.",
+              "evidenceIds": [
+                "inventory",
+                "inquiry"
+              ]
+            },
+            {
+              "kind": "analysis",
+              "text": "But that does not make every additional piece necessary. Investigations, opinion columns and letters all add to the attention focused on the same person. Even supportive commentary can prolong that spotlight. We must defend the amount of new understanding our campaign offered, as well as the merits of any one article.",
+              "evidenceIds": [
+                "inventory",
+                "arday-statement"
+              ]
+            },
+            {
+              "kind": "comparison",
+              "text": "A quieter Cambridge case gives you a question to put to us. Varsity reported that a plagiarism complaint against historian William O’Reilly was upheld, with a negligence finding, and that he returned to work. A columnist estimated much less press coverage. We cannot dismiss the consistency question. But we also cannot turn that rough estimate into a proven comparison: there is no matching inventory, and the cases were at different stages. Ask us why those differences would justify the scale of attention here.",
+              "evidenceIds": [
+                "oreilly-report",
+                "oreilly-coverage"
+              ]
+            }
+          ]
+        },
+        "coverageNotes": [
+          {
+            "kind": "report",
+            "text": "We would defend this campaign as both investigation and a debate about its wider consequences. On the first of August, reporting questioned accounts of alleged racist threats. Four days later, Arday resigned from Cambridge. He denied plagiarism and said stepping down was not acceptance of the narratives about him. Those responses matter alongside the allegations.",
+            "evidenceIds": [
+              "investigation-report",
+              "arday-statement",
+              "arday-denial"
+            ]
+          },
+          {
+            "kind": "report",
+            "text": "Eighteen of our pieces are listed. There were four on the sixth of August, four the following day and another four on the twelfth, when the appointment inquiry was announced. Selected opinion headlines defended diversity. Our case is that readers needed both scrutiny of the university and a challenge to arguments treating one contested case as a verdict on racial equality.",
+            "evidenceIds": [
+              "inventory",
+              "inquiry"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "But that does not make every additional piece necessary. Investigations, opinion columns and letters all add to the attention focused on the same person. Even supportive commentary can prolong that spotlight. We must defend the amount of new understanding our campaign offered, as well as the merits of any one article.",
+            "evidenceIds": [
+              "inventory",
+              "arday-statement"
+            ]
+          },
+          {
+            "kind": "comparison",
+            "text": "A quieter Cambridge case gives you a question to put to us. Varsity reported that a plagiarism complaint against historian William O’Reilly was upheld, with a negligence finding, and that he returned to work. A columnist estimated much less press coverage. We cannot dismiss the consistency question. But we also cannot turn that rough estimate into a proven comparison: there is no matching inventory, and the cases were at different stages. Ask us why those differences would justify the scale of attention here.",
+            "evidenceIds": [
+              "oreilly-report",
+              "oreilly-coverage"
+            ]
+          }
+        ]
       },
       {
         "id": "spectator",
@@ -385,7 +570,94 @@
           "publicValue": "Ask how much of this campaign added substantiated information or held institutions accountable. A new investigation can warrant continued attention.",
           "pressure": "The record lists 21 pieces, peaking at 5 in one day. Judge whether that frequency added public value, repeated earlier claims or encouraged humiliation.",
           "limit": "Roundups and video-only coverage are excluded; some indexing gaps may remain. Counts do not classify every piece as new information or repetition."
-        }
+        },
+        "briefing": {
+          "title": "We treated this as an argument about institutional standards",
+          "paragraphs": [
+            {
+              "kind": "report",
+              "text": "Our defence starts with Cambridge, rather than a final finding against Arday. An early commentary on the thirtieth of July acknowledged that the plagiarism question remained unresolved. It challenged the university’s appointment checks. We would argue that an institution’s decisions deserve scrutiny while allegations against an individual are still being examined.",
+              "evidenceIds": [
+                "commentary-early"
+              ]
+            },
+            {
+              "kind": "report",
+              "text": "Then the campaign broadened. Five of our pieces are listed on the fifth of August, the date Arday resigned. Our leading article argued that the affair exposed wider problems with academic standards and progressive politics. Five more pieces are listed on the tenth. One commentary used fictional impostors to make an argument against diversity, equity and inclusion. That was political opinion; it was not a new tribunal finding.",
+              "evidenceIds": [
+                "inventory",
+                "commentary-leader",
+                "commentary-dei"
+              ]
+            },
+            {
+              "kind": "analysis",
+              "text": "Twenty-one pieces are listed altogether, with ten concentrated on those two dates. We would defend commentary that explains why a university controversy matters beyond one appointment. But we owe you evidence for that wider argument. One contested case cannot establish the merit of whole groups, and repeating a political judgment does not make it better supported.",
+              "evidenceIds": [
+                "inventory",
+                "commentary-leader",
+                "commentary-dei"
+              ]
+            },
+            {
+              "kind": "analysis",
+              "text": "Arday denied plagiarism and said scrutiny had taken a toll on his family. Your challenge to us is whether this intensity kept adding something the public needed, or whether our commentary became a succession of opportunities to rehearse the same argument at his expense.",
+              "evidenceIds": [
+                "arday-statement",
+                "arday-denial"
+              ]
+            },
+            {
+              "kind": "comparison",
+              "text": "The O’Reilly comparison can test consistency, but its quieter coverage is a columnist’s estimate, not an equivalent article count. It should prompt a question to us, rather than decide the answer for you.",
+              "evidenceIds": [
+                "oreilly-coverage"
+              ]
+            }
+          ]
+        },
+        "coverageNotes": [
+          {
+            "kind": "report",
+            "text": "Our defence starts with Cambridge, rather than a final finding against Arday. An early commentary on the thirtieth of July acknowledged that the plagiarism question remained unresolved. It challenged the university’s appointment checks. We would argue that an institution’s decisions deserve scrutiny while allegations against an individual are still being examined.",
+            "evidenceIds": [
+              "commentary-early"
+            ]
+          },
+          {
+            "kind": "report",
+            "text": "Then the campaign broadened. Five of our pieces are listed on the fifth of August, the date Arday resigned. Our leading article argued that the affair exposed wider problems with academic standards and progressive politics. Five more pieces are listed on the tenth. One commentary used fictional impostors to make an argument against diversity, equity and inclusion. That was political opinion; it was not a new tribunal finding.",
+            "evidenceIds": [
+              "inventory",
+              "commentary-leader",
+              "commentary-dei"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "Twenty-one pieces are listed altogether, with ten concentrated on those two dates. We would defend commentary that explains why a university controversy matters beyond one appointment. But we owe you evidence for that wider argument. One contested case cannot establish the merit of whole groups, and repeating a political judgment does not make it better supported.",
+            "evidenceIds": [
+              "inventory",
+              "commentary-leader",
+              "commentary-dei"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "Arday denied plagiarism and said scrutiny had taken a toll on his family. Your challenge to us is whether this intensity kept adding something the public needed, or whether our commentary became a succession of opportunities to rehearse the same argument at his expense.",
+            "evidenceIds": [
+              "arday-statement",
+              "arday-denial"
+            ]
+          },
+          {
+            "kind": "comparison",
+            "text": "The O’Reilly comparison can test consistency, but its quieter coverage is a columnist’s estimate, not an equivalent article count. It should prompt a question to us, rather than decide the answer for you.",
+            "evidenceIds": [
+              "oreilly-coverage"
+            ]
+          }
+        ]
       },
       {
         "id": "telegraph",
@@ -439,9 +711,129 @@
           "publicValue": "Ask how much of this campaign added substantiated information or held institutions accountable. A new investigation can warrant continued attention.",
           "pressure": "The record lists 42 pieces, peaking at 7 in one day. Judge whether that frequency added public value, repeated earlier claims or encouraged humiliation.",
           "limit": "The inventory reports possible missing articles behind indexing restrictions. Original example pages could not be retrieved for this build. Counts do not classify every piece as new information or repetition."
-        }
+        },
+        "briefing": {
+          "title": "We kept asking questions after the resignation",
+          "paragraphs": [
+            {
+              "kind": "report",
+              "text": "We would defend sustained attention because resignation did not answer the questions about Cambridge’s appointment or the accuracy of public claims. Our first listed report appeared on the twenty-fourth of July, framing a plagiarism row around a much-publicised appointment. Later headings moved into Arday’s memoir, the university’s hiring decisions and wider political criticism. That widening agenda is central to the case you should put to us.",
+              "evidenceIds": [
+                "inventory"
+              ]
+            },
+            {
+              "kind": "report",
+              "text": "Arday resigned on the fifth of August. He denied plagiarism and said scrutiny had taken a toll on his family. The next two dates were our busiest: seven listed pieces on the sixth and seven on the seventh. Thirty pieces fall on or after the resignation date. The archive lists forty-two altogether, making this the most sustained campaign among the four outlets in this round.",
+              "evidenceIds": [
+                "inventory",
+                "arday-statement",
+                "arday-denial"
+              ]
+            },
+            {
+              "kind": "analysis",
+              "text": "Our argument is that public claims and institutional responsibility can remain news after a person leaves their job. But that is a reason to investigate further, not a blank cheque for the volume we published. You should ask which later pieces uncovered something important, which explained developments, and which mainly repeated an established criticism. The listed headings suggest different themes, but cannot prove that every article added fresh evidence.",
+              "evidenceIds": [
+                "inventory"
+              ]
+            },
+            {
+              "kind": "comparison",
+              "text": "A comparison with William O’Reilly raises the question of consistency. Varsity documented an upheld complaint, a negligence finding and a withdrawn article. A columnist described much quieter attention, without a matching count or period. We would have to explain why the differences between the cases warranted our intensity here. We cannot simply say that a serious allegation makes any amount of coverage proportionate.",
+              "evidenceIds": [
+                "oreilly-report",
+                "oreilly-coverage"
+              ]
+            }
+          ]
+        },
+        "coverageNotes": [
+          {
+            "kind": "report",
+            "text": "We would defend sustained attention because resignation did not answer the questions about Cambridge’s appointment or the accuracy of public claims. Our first listed report appeared on the twenty-fourth of July, framing a plagiarism row around a much-publicised appointment. Later headings moved into Arday’s memoir, the university’s hiring decisions and wider political criticism. That widening agenda is central to the case you should put to us.",
+            "evidenceIds": [
+              "inventory"
+            ]
+          },
+          {
+            "kind": "report",
+            "text": "Arday resigned on the fifth of August. He denied plagiarism and said scrutiny had taken a toll on his family. The next two dates were our busiest: seven listed pieces on the sixth and seven on the seventh. Thirty pieces fall on or after the resignation date. The archive lists forty-two altogether, making this the most sustained campaign among the four outlets in this round.",
+            "evidenceIds": [
+              "inventory",
+              "arday-statement",
+              "arday-denial"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "Our argument is that public claims and institutional responsibility can remain news after a person leaves their job. But that is a reason to investigate further, not a blank cheque for the volume we published. You should ask which later pieces uncovered something important, which explained developments, and which mainly repeated an established criticism. The listed headings suggest different themes, but cannot prove that every article added fresh evidence.",
+            "evidenceIds": [
+              "inventory"
+            ]
+          },
+          {
+            "kind": "comparison",
+            "text": "A comparison with William O’Reilly raises the question of consistency. Varsity documented an upheld complaint, a negligence finding and a withdrawn article. A columnist described much quieter attention, without a matching count or period. We would have to explain why the differences between the cases warranted our intensity here. We cannot simply say that a serious allegation makes any amount of coverage proportionate.",
+            "evidenceIds": [
+              "oreilly-report",
+              "oreilly-coverage"
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "context": {
+      "statusAtWindowEnd": "Allegations and institutional appointment inquiries remained under scrutiny. Resignation is not an adjudication of the allegations.",
+      "sequence": [
+        {
+          "date": "2026-07-24",
+          "text": "The selected inventory begins with reporting on a plagiarism row.",
+          "evidenceIds": [
+            "inventory"
+          ]
+        },
+        {
+          "date": "2026-08-01",
+          "text": "Investigative coverage questioned accounts of alleged racist threats; other written coverage carried his defence.",
+          "evidenceIds": [
+            "investigation-report",
+            "inventory"
+          ]
+        },
+        {
+          "date": "2026-08-05",
+          "text": "Arday resigned and described the personal toll, while rejecting acceptance of the narratives.",
+          "evidenceIds": [
+            "arday-statement"
+          ]
+        },
+        {
+          "date": "2026-08-12",
+          "text": "An independent inquiry into his appointment was agreed.",
+          "evidenceIds": [
+            "inquiry"
+          ]
+        }
+      ],
+      "allegationResponse": "Arday denied plagiarism. His resignation should not be treated as a finding of guilt.",
+      "evidenceIds": [
+        "arday-denial",
+        "arday-statement"
+      ]
+    },
+    "comparison": {
+      "title": "A quieter comparison? William O’Reilly",
+      "subject": "William O’Reilly",
+      "established": "In 2023, Varsity reported an upheld plagiarism complaint, a negligence finding, a withdrawn paper and O’Reilly’s return to work.",
+      "coverageClaim": "Columnist Jason Okundaye estimated roughly six press articles about O’Reilly. He supplied no matching window or counting method.",
+      "limit": "We have no matched dated inventory for O’Reilly. His tribunal had concluded; the Arday story involved a widening set of allegations and inquiries. The comparison cannot prove that he faced no pile-on or establish its cause.",
+      "evidenceIds": [
+        "oreilly-report",
+        "oreilly-coverage"
+      ]
+    },
+    "narrationNotice": "Role-played editor’s defence for the game. These scripts are not statements made by the actual outlets."
   }
 ]</script>
 <script>
@@ -455,25 +847,25 @@ function stop(){audioEpoch++;playing=false;cancelAnimationFrame(frame);clearInte
 function stepper(n){$('#stepper').innerHTML=names.map((x,i)=>`<span class="step ${i===n?'on':''}">${i===0?'✦':String(i).padStart(2,'0')} ${x}</span>`).join('')}
 function go(n){stop();stepper(n);({0:welcome,1:replay,2:hear,3:question,4:judge,5:()=>window.lastCampaignResult&&renderReveal(window.lastCampaignResult)}[n])()}
 async function post(path,body){const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),20000);try{const r=await fetch(path,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body),signal:controller.signal});const j=await r.json().catch(()=>({}));if(!r.ok)throw Error(j.error||'service unavailable');return j}finally{clearTimeout(timeout)}}
-function avatar(i){let colors=['#d4f56b','#83d8ff','#ff8773','#c6a0ff'],hair=['M5 16Q8 3 17 9Q23 4 27 16','M5 14Q8 4 18 7Q25 6 27 16','M5 15Q5 4 17 6Q27 6 27 17','M5 15Q8 4 18 7Q24 7 27 15'];return `<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="${colors[i%4]}"/><path d="${hair[i%4]}" fill="#22283a"/><circle cx="12" cy="16" r="1.2" fill="#171b27"/><circle cx="20" cy="16" r="1.2" fill="#171b27"/><path d="M12 21q4 3 8 0" fill="none" stroke="#171b27" stroke-width="1.5" stroke-linecap="round"/></svg>`}
-function labelDesk(d,i){return d.label||`Desk ${String.fromCharCode(65+i)}`}
-function welcome(){app.innerHTML=`<section class="intro"><p class="eyebrow">A campaign jury · Public-interest reporting</p><h1>Judge the <em>coverage.</em><br>See the whole arc.</h1><p class="lead">Follow four anonymous news desks across a defined period. Weigh the amount, pace and public value of their coverage, then decide whether that amount of attention was justified.</p><div class="facts"><div class="fact"><strong>22</strong><span>days in view</span></div><div class="fact"><strong>4</strong><span>campaigns</span></div><div class="fact"><strong>1</strong><span>whole-period call</span></div></div><p class="small">No individual headline gets a moral score. Counts are evidence to consider, never proof by themselves.</p><button id="start" class="button">Enter the jury →</button><p id="status" class="small">Loading the public record…</p></section>`;$('#start').onclick=start;$('#status').textContent='The local game service is checked when you enter. Offline practice is available when the campaign record is embedded.'}
+function avatar(i){const colors=['#d4f56b','#83d8ff','#ff8773','#c6a0ff'];return `<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="${colors[i%4]}"/><rect x="7" y="7" width="18" height="19" rx="2" fill="#172236"/><rect x="10" y="10" width="12" height="5" fill="${colors[i%4]}"/><path d="M10 18h12M10 21h12" stroke="${colors[i%4]}" stroke-width="2"/></svg>`}
+function labelDesk(d,i){return `Outlet ${String.fromCharCode(65+i)}`}
+function welcome(){app.innerHTML=`<section class="intro"><p class="eyebrow">A campaign jury · Public-interest reporting</p><h1>Judge the <em>coverage.</em><br>See the whole arc.</h1><p class="lead">Follow four anonymous media outlets across a defined period. Weigh the amount, pace and public value of their coverage, then decide whether that amount of attention was justified.</p><div class="facts"><div class="fact"><strong>22</strong><span>days in view</span></div><div class="fact"><strong>4</strong><span>campaigns</span></div><div class="fact"><strong>1</strong><span>whole-period call</span></div></div><p class="small">No individual headline gets a moral score. Counts are evidence to consider, never proof by themselves.</p><button id="start" class="button">Enter the jury →</button><p id="status" class="small">Loading the public record…</p></section>`;$('#start').onclick=start;$('#status').textContent='The local game service is checked when you enter. Offline practice is available when the campaign record is embedded.'}
 function normalizeOffline(c,i){return {...c,outletId:`desk-${String.fromCharCode(97+i)}`,label:`Desk ${String.fromCharCode(65+i)}`}}
 async function start(){const b=$('#start');b.disabled=true;b.textContent='Preparing the record…';try{let data=JSON.parse($('#campaign-data').textContent);if(!Array.isArray(data))data=[];item=data[0]||null;if(item){source=item.source||{};events=item.events||[];checks=item.reasoningChecks||[];desks=item.campaigns.map((c,i)=>normalizeOffline(c,i));mode='practice';}try{if(location.protocol==='file:')throw Error('offline');session=await post('/api/campaign/session',{caseId:item?.id||'arday-2026-campaign'});live=true;source=session.source||source;events=session.events||events;checks=session.reasoningChecks||checks;desks=session.desks||[];mode='live';}catch(e){live=false;session=null;}if(!item&&!session){app.innerHTML=`<section class="intro"><p class="eyebrow">Campaign data pending</p><h1>Jury room<br><em>almost ready.</em></h1><p class="lead">The standalone game needs its campaign dataset embedded, or the local server running with campaigns.json.</p><button class="secondary" onclick="location.reload()">Try again</button></section>`;return}item=item||{title:'Campaign coverage',subject:'A public figure and public-interest reporting',start:session.start,end:session.end,endNote:session.endNote,days:session.days,evidence:session.evidence};answers={};desks.forEach(d=>{verdicts[d.outletId]=null;budgets[d.outletId]=null});go(1)}finally{if(b.isConnected)b.disabled=false}}
 function total(d){return d.listedCount??(d.dailyCounts||[]).reduce((a,b)=>a+(Number(b)||0),0)}
 function dateKey(value){if(!value)return '';const m=String(value).match(/\b(2026-\d{2}-\d{2})\b/);if(m)return m[1];const d=new Date(value);return Number.isNaN(d.getTime())?'':d.toISOString().slice(0,10)}
-function replay(){const days=item.days||session?.days||[];const max=Math.max(1,...desks.flatMap(d=>d.dailyCounts||[]));const W=920,H=320,left=108,right=18,top=22,bottom=34,laneH=(H-top-bottom)/4,chartW=W-left-right,step=chartW/Math.max(1,days.length);let svg=`<svg class="timeline" viewBox="0 0 ${W} ${H}" role="img" aria-label="Campaign timeline with four anonymous outlet lanes"><defs><pattern id="paper" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 7.5h8" stroke="#ffffff1a"/></pattern></defs>`;for(let i=0;i<4;i++){let y=top+i*laneH;svg+=`<rect x="${left}" y="${y}" width="${chartW}" height="${laneH}" fill="${i%2?'#111c2c':'#152136'}"/><line class="lane" x1="${left}" y1="${y+laneH}" x2="${W-right}" y2="${y+laneH}"/><text class="laneLabel" id="cumulative-${i}" x="8" y="${y+laneH*.56}">${esc(labelDesk(desks[i],i))} · 0</text>`;let counts=desks[i].dailyCounts||[];counts.forEach((n,j)=>{if(!n)return;let h=Math.max(3,(Number(n)||0)/max*(laneH-17)),x=left+j*step+step*.19,w=Math.max(2,step*.62),yy=y+laneH-5-h;svg+=`<rect class="bar" data-day="${j}" data-desk="${i}" x="${x}" y="${yy}" width="${w}" height="${h}" rx="${Math.min(4,w/2)}" fill="${['#d4f56b','#83d8ff','#ff8773','#c6a0ff'][i]}" opacity=".92"><title>${esc(labelDesk(desks[i],i))}: ${n} listed items on ${esc(days[j])}</title></rect>`;});}for(let j=0;j<days.length;j+=Math.max(1,Math.ceil(days.length/7))){svg+=`<text class="axis" text-anchor="middle" x="${left+j*step+step/2}" y="${H-7}">${esc(days[j]?.slice(5))}</text>`}for(const ev of events){let pos=days.indexOf(ev.date);if(pos>=0){let ex=left+(pos+.5)*step;svg+=`<line x1="${ex}" x2="${ex}" y1="${top}" y2="${H-bottom}" stroke="#f6c768" stroke-width="1" stroke-dasharray="3 5" opacity=".55"/><text x="${ex}" y="${top-6}" text-anchor="middle" fill="#f6c768" font-size="12">${esc(ev.label)}</text>`}}let cx=left+index*step+step/2;svg+=`<line id="cursorline" class="cursorline" x1="${cx}" y1="${top-5}" x2="${cx}" y2="${H-bottom+3}"/><circle id="cursordot" class="cursorDot" cx="${cx}" cy="${top-5}" r="5"/></svg>`;app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">01 · Replay the period</p><h2>${esc(item.title||'Campaign coverage')}</h2><p class="small">${esc(item.start)} — ${esc(item.end)} · ${esc(item.endNote||'')}</p></div><span class="pill">Bar height = pieces that day · same scale for all desks</span></div><div class="grid campaign-grid"><section class="card chartbox"><div class="charttop"><div class="playrow"><button id="play">▶ Play</button><button id="pause">Ⅱ Pause</button><button id="replay">↺ Replay</button></div><span class="pill" id="datepill">${esc(days[index]||'')}</span></div>${svg}<div class="datecontrol"><input class="range" id="scrub" type="range" min="0" max="${Math.max(0,days.length-1)}" value="${index}" aria-label="Scrub timeline date"><button class="secondary" id="whole">Show whole window</button></div><div id="arrivals" class="small" aria-live="polite"></div></section><aside class="card"><p class="eyebrow">Four anonymous desks</p><div class="avatars">${desks.map((d,i)=>`<span class="avatar">${avatar(i)} ${esc(labelDesk(d,i))}</span>`).join('')}</div><div class="facts" style="margin-top:16px"><div class="fact"><strong>${esc(source.corpusCount??'—')}</strong><span>items in archive</span></div><div class="fact"><strong>${esc(source.outletUniverse??'—')}</strong><span>outlets indexed</span></div><div class="fact"><strong>${esc(desks.reduce((n,d)=>n+total(d),0))}</strong><span>across these desks</span></div></div><p class="notice" style="margin-top:14px">Timeline uses the record’s daily counts. A missing day means no listed item in this dataset, not proof nothing was published.</p><button class="button" id="next">Hear the desks →</button></aside></div><p class="small source"><details><summary>Source, scope and limits</summary><p>${esc(source.scopeNote||'Source scope has not been supplied.')}</p><p>${esc(source.unit||'Listed pieces')} · retrieved ${esc(source.retrieved||'date not supplied')} · <a href="${esc(source.url||'#')}" target="_blank" rel="noreferrer">Open source record</a></p></details></p>`;$('#play').onclick=play;$('#pause').onclick=stop;$('#replay').onclick=()=>{stop();index=0;syncCursor();play()};$('#whole').onclick=()=>{stop();index=days.length-1;syncCursor()};$('#scrub').oninput=e=>{stop();index=+e.target.value;syncCursor()};$('#next').onclick=()=>go(2);syncCursor()}
-function syncCursor(){const days=item.days||session.days,cx=108+(920-108-18)/Math.max(1,days.length)*(index+.5);$('#cursorline')?.setAttribute('x1',cx);$('#cursorline')?.setAttribute('x2',cx);$('#cursordot')?.setAttribute('cx',cx);const scrub=$('#scrub'),pill=$('#datepill');if(scrub)scrub.value=index;if(pill)pill.textContent=days[index]||'';desks.forEach((d,i)=>{let count=(d.dailyCounts||[]).slice(0,index+1).reduce((a,b)=>a+(+b||0),0),label=$(`#cumulative-${i}`);if(label)label.textContent=`${labelDesk(d,i)} · ${count}`});document.querySelectorAll('.bar').forEach(b=>{let revealed=+b.dataset.day<=index;b.style.opacity=revealed?'0.92':'0.08';b.style.filter=revealed?'none':'grayscale(1)'});let day=days[index],ann=[];for(const ev of events)if(dateKey(ev.date)===day)ann.push(`<span class="pill">◆ ${esc(ev.label)}</span>`);for(let i=0;i<desks.length;i++)for(const a of (desks[i].examples||[]))if(dateKey(a.date||a.published)===day)ann.push(`<a class="pill" href="${esc(a.url||'#')}" target="_blank" rel="noreferrer">▤ ${esc(labelDesk(desks[i],i))}: ${esc(a.headline)}</a>`);const arrival=$('#arrivals');if(arrival)arrival.innerHTML=ann.length?`On this date: ${ann.join(' ')}`:'No selected headline or event marker on this date.'}
+function replay(){const days=item.days||session?.days||[];const max=Math.max(1,...desks.flatMap(d=>d.dailyCounts||[]));const W=920,H=320,left=136,right=18,top=22,bottom=34,laneH=(H-top-bottom)/4,chartW=W-left-right,step=chartW/Math.max(1,days.length);let svg=`<svg class="timeline" viewBox="0 0 ${W} ${H}" role="img" aria-label="Campaign timeline with four anonymous outlet lanes"><defs><pattern id="paper" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 7.5h8" stroke="#ffffff1a"/></pattern></defs>`;for(let i=0;i<4;i++){let y=top+i*laneH;svg+=`<rect x="${left}" y="${y}" width="${chartW}" height="${laneH}" fill="${i%2?'#111c2c':'#152136'}"/><line class="lane" x1="${left}" y1="${y+laneH}" x2="${W-right}" y2="${y+laneH}"/><text class="laneLabel" id="cumulative-${i}" x="8" y="${y+laneH*.56}">${esc(labelDesk(desks[i],i))} · 0</text>`;let counts=desks[i].dailyCounts||[];counts.forEach((n,j)=>{if(!n)return;let h=Math.max(3,(Number(n)||0)/max*(laneH-17)),x=left+j*step+step*.19,w=Math.max(2,step*.62),yy=y+laneH-5-h;svg+=`<rect class="bar" data-day="${j}" data-desk="${i}" x="${x}" y="${yy}" width="${w}" height="${h}" rx="${Math.min(4,w/2)}" fill="${['#d4f56b','#83d8ff','#ff8773','#c6a0ff'][i]}" opacity=".92"><title>${esc(labelDesk(desks[i],i))}: ${n} listed items on ${esc(days[j])}</title></rect>`;});}for(let j=0;j<days.length;j+=Math.max(1,Math.ceil(days.length/7))){svg+=`<text class="axis" text-anchor="middle" x="${left+j*step+step/2}" y="${H-7}">${esc(days[j]?.slice(5))}</text>`}for(const ev of events){let pos=days.indexOf(ev.date);if(pos>=0){let ex=left+(pos+.5)*step;svg+=`<line x1="${ex}" x2="${ex}" y1="${top}" y2="${H-bottom}" stroke="#f6c768" stroke-width="1" stroke-dasharray="3 5" opacity=".55"/><text x="${ex}" y="${top-6}" text-anchor="middle" fill="#f6c768" font-size="12">${esc(ev.label)}</text>`}}let cx=left+index*step+step/2;svg+=`<line id="cursorline" class="cursorline" x1="${cx}" y1="${top-5}" x2="${cx}" y2="${H-bottom+3}"/><circle id="cursordot" class="cursorDot" cx="${cx}" cy="${top-5}" r="5"/></svg>`;app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">01 · Replay the period</p><h2>${esc(item.title||'Campaign coverage')}</h2><p class="small">${esc(item.start)} — ${esc(item.end)} · ${esc(item.endNote||'')}</p></div><span class="pill">Bar height = pieces that day · same scale for all desks</span></div><div class="grid campaign-grid"><section class="card chartbox"><div class="charttop"><div class="playrow"><button id="play">▶ Play</button><button id="pause">Ⅱ Pause</button><button id="replay">↺ Replay</button></div><span class="pill" id="datepill">${esc(days[index]||'')}</span></div>${svg}<div class="datecontrol"><input class="range" id="scrub" type="range" min="0" max="${Math.max(0,days.length-1)}" value="${index}" aria-label="Scrub timeline date"><button class="secondary" id="whole">Show whole window</button></div><div id="arrivals" class="small" aria-live="polite"></div></section><aside class="card"><p class="eyebrow">Four anonymous outlets</p><div class="avatars">${desks.map((d,i)=>`<span class="avatar">${avatar(i)} ${esc(labelDesk(d,i))}</span>`).join('')}</div><div class="facts" style="margin-top:16px"><div class="fact"><strong>${esc(source.corpusCount??'—')}</strong><span>items in archive</span></div><div class="fact"><strong>${esc(source.outletUniverse??'—')}</strong><span>outlets indexed</span></div><div class="fact"><strong>${esc(desks.reduce((n,d)=>n+total(d),0))}</strong><span>across these desks</span></div></div><p class="notice" style="margin-top:14px">Timeline uses the record’s daily counts. A missing day means no listed item in this dataset, not proof nothing was published.</p><button class="button" id="next">Hear the outlets →</button></aside></div><p class="small source"><details><summary>Source, scope and limits</summary><p>${esc(source.scopeNote||'Source scope has not been supplied.')}</p><p>${esc(source.unit||'Listed pieces')} · retrieved ${esc(source.retrieved||'date not supplied')} · <a href="${esc(source.url||'#')}" target="_blank" rel="noreferrer">Open source record</a></p></details></p>`;$('#play').onclick=play;$('#pause').onclick=stop;$('#replay').onclick=()=>{stop();index=0;syncCursor();play()};$('#whole').onclick=()=>{stop();index=days.length-1;syncCursor()};$('#scrub').oninput=e=>{stop();index=+e.target.value;syncCursor()};$('#next').onclick=()=>go(2);syncCursor()}
+function syncCursor(){const days=item.days||session.days,cx=136+(920-136-18)/Math.max(1,days.length)*(index+.5);$('#cursorline')?.setAttribute('x1',cx);$('#cursorline')?.setAttribute('x2',cx);$('#cursordot')?.setAttribute('cx',cx);const scrub=$('#scrub'),pill=$('#datepill');if(scrub)scrub.value=index;if(pill)pill.textContent=days[index]||'';desks.forEach((d,i)=>{let count=(d.dailyCounts||[]).slice(0,index+1).reduce((a,b)=>a+(+b||0),0),label=$(`#cumulative-${i}`);if(label)label.textContent=`${labelDesk(d,i)} · ${count}`});document.querySelectorAll('.bar').forEach(b=>{let revealed=+b.dataset.day<=index;b.style.opacity=revealed?'0.92':'0.08';b.style.filter=revealed?'none':'grayscale(1)'});let day=days[index],ann=[];for(const ev of events)if(dateKey(ev.date)===day)ann.push(`<span class="pill">◆ ${esc(ev.label)}</span>`);for(let i=0;i<desks.length;i++)for(const a of (desks[i].examples||[]))if(dateKey(a.date||a.published)===day)ann.push(`<a class="pill" href="${esc(a.url||'#')}" target="_blank" rel="noreferrer">▤ ${esc(labelDesk(desks[i],i))}: ${esc(a.headline)}</a>`);const arrival=$('#arrivals');if(arrival)arrival.innerHTML=ann.length?`On this date: ${ann.join(' ')}`:'No selected headline or event marker on this date.'}
 function play(){if(reduceMotion){toast('Motion is reduced. Use the date slider to inspect the timeline.');return}stop();playing=true;timer=setInterval(()=>{if(index>=(item.days||session.days).length-1){stop();return}index++;syncCursor()},650)}
-function hear(){app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">02 · Hear the campaign read</p><h2>What do the numbers suggest?</h2><p class="lead">Each analyst looks at the outlet’s full period: amount, pace, timing and possible public value.</p></div><span class="pill">No headline-by-headline verdicts</span></div><div class="grid"><section class="card"><div id="desk-tabs" class="avatars">${desks.map((d,i)=>`<button class="avatar secondary" data-desk="${i}">${avatar(i)} ${esc(labelDesk(d,i))}</button>`).join('')}</div><div id="deskview"></div></section><aside class="card"><p class="eyebrow">Ask the analyst</p><p>One question about this whole campaign. Keep it specific.</p><textarea id="question" maxlength="180" placeholder="What could justify this pace of coverage?" style="width:100%;min-height:100px;background:#101a29;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:12px"></textarea><p class="small"><span id="qcount">0</span>/180 · <span id="qremaining">3</span> typed questions left</p><button id="ask" class="button">Ask this analyst</button><div id="reply" class="notice" style="margin-top:16px;display:none"></div><button id="listen" class="secondary" style="margin-top:10px;display:none">▶ Listen to reply</button><p class="small">Analyst voices are interpretations, not source records. ${live?'Four distinct analyst voices when configured.':'Offline practice: read the text replies.'}</p></aside></div><div class="actions"><button class="secondary" id="back">← Timeline</button><button class="button" id="next">Judge the campaigns →</button></div>`;activeDesk=0;drawDesk();$('#qremaining').textContent=3-typedQuestionCount;$('#desk-tabs').onclick=e=>{const b=e.target.closest('[data-desk]');if(b){activeDesk=+b.dataset.desk;drawDesk()}};$('#question').oninput=e=>$('#qcount').textContent=e.target.value.length;$('#ask').onclick=ask;$('#listen').onclick=listen;$('#back').onclick=()=>go(1);$('#next').onclick=()=>go(3)}
-function drawDesk(){if(!$('#deskview'))return;let d=desks[activeDesk],v=$('#deskview'),samples=d.examples||[],overview=overviewReplies[d.outletId];v.innerHTML=`<h3 style="margin-top:22px">${esc(labelDesk(d,activeDesk))} · ${total(d)} listed pieces</h3><div class="facts"><div class="fact"><strong>${d.activeDays??d.dailyCounts.filter(Boolean).length}</strong><span>active days / 22</span></div><div class="fact"><strong>${d.peakDaily??Math.max(0,...d.dailyCounts)}</strong><span>peak in one day</span></div><div class="fact"><strong>${d.beforeResignationCount??'—'} / ${d.afterResignationCount??'—'}</strong><span>before 5 Aug / from 5 Aug</span></div></div><button class="secondary" id="overview">${overview?'Replay overview':'Hear this campaign'}</button><div class="cards">${overview?`<article class="headcard" style="grid-column:1/-1"><strong>Whole-window analyst overview</strong><p>${esc(overview.reply)}</p><button class="secondary" data-listen-overview>▶ Listen</button></article>`:''}</div><p class="small" style="margin-top:16px">Selected examples from this campaign; the complete catalog is not shown.</p><div class="cards">${samples.slice(0,5).map(a=>`<article class="headcard"><time>${esc(a.published||a.date||'Date not listed')}</time><h3>${esc(a.headline)}</h3><p class="small">${esc(a.verification||'Verification label not supplied')}</p><a href="${esc(a.url||'#')}" target="_blank" rel="noreferrer">Open story (reveals outlet) ↗</a></article>`).join('')||'<p class="small">No headline samples supplied.</p>'}</div>`;$('#overview').onclick=()=>hearOverview(d);v.querySelector('[data-listen-overview]')?.addEventListener('click',()=>speak(overview,d));}
-async function hearOverview(d){if(overviewReplies[d.outletId]){await speak(overviewReplies[d.outletId],d);return}const b=$('#overview');b.disabled=true;b.textContent='Preparing campaign overview…';try{let r;if(live)r=await post('/api/campaign/respond',{sessionId:session.sessionId,outletId:d.outletId,question:'Give a brief whole-window overview of this outlet campaign: total volume, pace, documented timing, possible public value and the limits of this record.'});else r={reply:`Practice overview: ${total(d)} listed pieces over ${item.days.length} days, across ${d.activeDays} active days; peak ${d.peakDaily} in one day. Consider the volume alongside timing and public value. A high count alone does not prove motive.`,mode:'offline'};overviewReplies[d.outletId]={...r,outletId:d.outletId};drawDesk();if(live)await speak(overviewReplies[d.outletId],d)}catch(e){toast('Campaign overview unavailable; try again.')}finally{const x=$('#overview');if(x)x.disabled=false}}
-async function ask(){let q=$('#question').value.trim();if(!q)return toast('Add a question first.');if(typedQuestionCount>=3)return toast('You have used all three typed questions.');$('#ask').disabled=true;$('#ask').textContent='Analyst is thinking…';let d=desks[activeDesk];try{let r;if(live)r=await post('/api/campaign/respond',{sessionId:session.sessionId,outletId:d.outletId,question:q});else r={reply:`Practice interpretation: this desk listed ${total(d)} pieces over ${item.days.length} days, with activity on ${d.activeDays} days and a peak of ${d.peakDaily} in one day. That pattern may merit scrutiny, but a high count alone does not establish motive; compare timing, public value and the limits of this archive.`,mode:'offline'};typedQuestionCount++;replies[r.replyId||`offline-${typedQuestionCount}`]={...r,outletId:d.outletId};const box=$('#reply');if(!box)return;box.style.display='block';box.textContent=`${live?'AI interpretation · simulated':'Practice interpretation'}: ${r.reply}`;$('#listen').style.display=live&&r.replyId?'inline-block':'none';$('#listen').dataset.replyId=r.replyId||'';$('#qremaining').textContent=3-typedQuestionCount;toast('Reply added to the record.')}catch(e){toast('Analyst unavailable. Your question was not saved.')}finally{const b=$('#ask');if(b){b.disabled=false;b.textContent='Ask this analyst'}}}
+function hear(){app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">02 · Hear the outlet’s defence</p><h2>Why did you keep publishing?</h2><p class="lead">Each outlet tells the story, defends its coverage and answers your challenges.</p></div><span class="pill">Challenge the whole campaign</span></div><div class="grid"><section class="card"><div id="desk-tabs" class="avatars">${desks.map((d,i)=>`<button class="avatar secondary" data-desk="${i}">${avatar(i)} ${esc(labelDesk(d,i))}</button>`).join('')}</div><div id="deskview"></div></section><aside class="card"><p class="eyebrow">Challenge this outlet</p><p>Ask what justified another wave of coverage, or how they treated a similar case.</p><textarea id="question" maxlength="180" placeholder="Why was this amount of coverage necessary?" style="width:100%;min-height:100px;background:#101a29;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:12px"></textarea><p class="small"><span id="qcount">0</span>/180 · <span id="qremaining">3</span> typed questions left</p><button id="ask" class="button">Ask this outlet</button><div id="reply" class="notice" style="margin-top:16px;display:none"></div><button id="listen" class="secondary" style="margin-top:10px;display:none">▶ Listen to reply</button><p class="small">Editors’ answers are role-played for the game. ${live?'Four distinct outlet voices when configured.':'Offline practice: read each outlet’s recorded defence.'}</p></aside></div><div class="actions"><button class="secondary" id="back">← Timeline</button><button class="button" id="next">Judge the campaigns →</button></div>`;activeDesk=0;drawDesk();$('#qremaining').textContent=3-typedQuestionCount;$('#desk-tabs').onclick=e=>{const b=e.target.closest('[data-desk]');if(b){stop();activeDesk=+b.dataset.desk;drawDesk()}};$('#question').oninput=e=>$('#qcount').textContent=e.target.value.length;$('#ask').onclick=ask;$('#listen').onclick=listen;$('#back').onclick=()=>go(1);$('#next').onclick=()=>go(3)}
+function drawDesk(){if(!$('#deskview'))return;let d=desks[activeDesk],v=$('#deskview'),samples=d.examples||[],brief=overviewReplies[d.outletId];v.innerHTML=`<h3 style="margin-top:22px">${esc(labelDesk(d,activeDesk))}: justify your coverage</h3><div class="facts"><div class="fact"><strong>${total(d)}</strong><span>listed pieces / 22 days</span></div><div class="fact"><strong>${d.peakDaily}</strong><span>peak in one day</span></div><div class="fact"><strong>${d.activeDays}</strong><span>dates with coverage</span></div></div><div class="actions"><button class="button" id="overview">${brief?'Replay outlet defence':'Play outlet defence'}</button><button class="secondary" id="readBriefing">Read the defence</button><button class="secondary" id="pauseVoice" ${!audio.currentSrc?'disabled':''}>Pause voice</button></div><p class="small">Role-played editor’s defence. These are game scripts, not statements from the real outlets.</p>${brief?`<article class="briefing"><p class="eyebrow">${esc(brief.title)}</p>${(brief.paragraphs||[]).map(p=>`<div class="briefparagraph"><span class="kind">${{report:'What we covered',analysis:'Our justification',comparison:'The consistency challenge'}[p.kind]||'Our case'}</span><p>${esc(p.text)}</p></div>`).join('')}<details><summary>Check the sources behind this defence</summary>${(item.evidence||session?.evidence||[]).filter(e=>(brief.evidenceIds||[]).includes(e.id)).map(e=>`<p class="small"><a href="${esc(e.url)}" target="_blank" rel="noreferrer">${esc(e.label)}</a> — ${esc(e.text)}</p>`).join('')}</details></article>`:'<p class="notice">Hear what happened, how the coverage built, and the editor’s case for continuing it.</p>'}<details class="source"><summary>Inspect selected headlines (opening a story reveals its outlet)</summary><div class="cards">${samples.map(a=>`<article class="headcard"><time>${esc(a.published)}</time><h3>${esc(a.headline)}</h3><p class="small">${esc(a.verification)}</p><a href="${esc(a.url)}" target="_blank" rel="noreferrer">Open story ↗</a></article>`).join('')}</div></details>`;$('#overview').onclick=()=>hearOverview(d);$('#readBriefing').onclick=()=>hearOverview(d,false);$('#pauseVoice').onclick=()=>{if(audio.paused)audio.play().catch(()=>toast('Replay the outlet defence to hear it.'));else audio.pause()};}
+async function hearOverview(d,playAudio=true){stop();if(overviewReplies[d.outletId]){if(playAudio)await speak(overviewReplies[d.outletId],d);else drawDesk();return}const b=$('#overview');b.disabled=true;b.textContent='Preparing the outlet defence…';try{let r;if(live)r=await post('/api/campaign/briefing',{sessionId:session.sessionId,outletId:d.outletId});else{let brief=d.briefing;if(!brief?.paragraphs)throw Error('No script');r={...brief,reply:brief.paragraphs.map(p=>p.text).join('\n\n'),evidenceIds:[...new Set(brief.paragraphs.flatMap(p=>p.evidenceIds))],mode:'reviewed',kind:'briefing'}}overviewReplies[d.outletId]={...r,outletId:d.outletId};if(desks[activeDesk]?.outletId===d.outletId&&$('#deskview')){drawDesk();if(live&&playAudio)await speak(overviewReplies[d.outletId],d)}}catch(e){toast('Outlet defence unavailable; try again.')}finally{const x=$('#overview');if(x)x.disabled=false}}
+async function ask(){let q=$('#question').value.trim();if(!q)return toast('Add a question first.');if(typedQuestionCount>=3)return toast('You have used all three typed questions.');$('#ask').disabled=true;$('#ask').textContent='The editor is answering…';let d=desks[activeDesk];try{let r;if(live)r=await post('/api/campaign/respond',{sessionId:session.sessionId,outletId:d.outletId,question:q});else r={reply:`Practice interpretation: this desk listed ${total(d)} pieces over ${item.days.length} days, with activity on ${d.activeDays} days and a peak of ${d.peakDaily} in one day. That pattern may merit scrutiny, but a high count alone does not establish motive; compare timing, public value and the limits of this archive.`,mode:'offline'};typedQuestionCount++;replies[r.replyId||`offline-${typedQuestionCount}`]={...r,outletId:d.outletId};const box=$('#reply');if(!box)return;box.style.display='block';box.textContent=`${r.mode==='deepseek'?'Editor’s reply · role-played':'Recorded defence · live answer unavailable'}: ${r.reply.replace(/^AI interpretation\s*(?:\(Simulated\))?\s*:\s*/i,'')}`;$('#listen').style.display=live&&r.replyId?'inline-block':'none';$('#listen').dataset.replyId=r.replyId||'';$('#qremaining').textContent=3-typedQuestionCount;toast('Reply added to the record.')}catch(e){toast('The editor could not answer. Try again.')}finally{const b=$('#ask');if(b){b.disabled=false;b.textContent='Ask this outlet'}}}
 async function speak(r,d){if(!live||!r?.replyId||!d)return;const epoch=audioEpoch;const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),20000);try{const res=await fetch('/api/speak',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({sessionId:session.sessionId,outletId:d.outletId,kind:'reply',replyId:r.replyId}),signal:controller.signal});if(!res.ok)throw Error();const blob=await res.blob();if(epoch!==audioEpoch)return;if(audioURL)URL.revokeObjectURL(audioURL);audioURL=URL.createObjectURL(blob);audio.src=audioURL;await audio.play()}catch{toast('Voice playback unavailable; the reply text remains available.')}finally{clearTimeout(timeout)}}
 async function listen(){const r=replies[$('#listen').dataset.replyId];if(r)await speak(r,desks.find(d=>d.outletId===r.outletId))}
 function question(){app.innerHTML=`<div class="intro"><p class="eyebrow">03 · The question</p><h1>How much coverage<br>was <em>justified?</em></h1><p class="lead">Judge each outlet’s campaign across all 22 dates. Consider the public value, pace and documented developments. The archive may be incomplete, so keep uncertainty in view.</p><div class="card"><p><strong>Use the whole record.</strong> The daily counts show listed pieces across the window. Samples help you inspect actual headlines. An event marker supplies context, not a causal claim.</p><p class="small">Win with 8/10 evidence points. Your campaign verdicts are personal judgments and have no moral answer key.</p></div><button class="button" id="next">Review all four campaigns →</button></div>`;$('#next').onclick=()=>go(4)}
 const kinds=[['justified','Faithful','Volume appears proportionate to public interest.'],['mixed','Mixed','Some coverage seems warranted; the overall balance is uncertain.'],['pile-on','Traitor','Volume or pace appears excessive for the public value shown.'],['unclear','Unclear','The record does not support a confident call.']];
-function judge(){let rows=desks.map((d,i)=>{let n=total(d),v=verdicts[d.outletId];return `<article class="card"><div class="deskrow"><div><div class="avatar">${avatar(i)} ${esc(labelDesk(d,i))}</div><p class="small">${n} listed pieces / 22 days · peak ${d.peakDaily??Math.max(0,...d.dailyCounts)}</p><p class="small">${d.beforeResignationCount??'—'} before 5 Aug · ${d.afterResignationCount??'—'} from 5 Aug (resignation date)</p></div><div><label class="small">Your suggested volume<br><input aria-label="Suggested justifiable count for ${esc(labelDesk(d,i))}" type="number" min="0" max="${n*2}" value="${budgets[d.outletId]??''}" placeholder="unknown" class="budget" data-budget="${esc(d.outletId)}"></label></div></div><div class="verdicts">${kinds.map(([key,title,desc])=>`<button class="choice" data-vote="${key}" data-outlet="${esc(d.outletId)}" aria-pressed="${v===key}"><strong>${title}</strong><span class="small">${desc}</span></button>`).join('')}</div></article>`}).join('');app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">04 · Judge campaigns</p><h2>Make one call per desk</h2><p class="small">Faithful / Mixed / Traitor / Unclear describe your view of the whole coverage campaign. Suggested volume is optional.</p></div></div><div class="grid" style="grid-template-columns:1fr 1fr">${rows}</div><section class="card" style="margin-top:18px"><p class="eyebrow">Five evidence checks · 2 points each</p><div class="checks">${checks.map(c=>`<label><span>${esc(c.prompt)}</span><select data-answer="${esc(c.id)}"><option value="">Choose</option>${c.options.map(o=>`<option value="${esc(o.value)}" ${answers[c.id]===o.value?'selected':''}>${esc(o.label)}</option>`).join('')}</select></label>`).join('')}<label><span>Your case: explain what was justified and where the balance may shift. 40–600 characters.</span><textarea id="justification" maxlength="600" minlength="40" placeholder="Name the evidence and one limit of the record.">${esc(justification)}</textarea></label></div><p class="small">Points test only evidence checks. Your campaign verdicts are not marked right or wrong.</p></section><div class="actions"><button class="secondary" id="back">← Hear the desks</button><button class="button" id="next">Reveal the record →</button></div>`;app.onclick=e=>{let b=e.target.closest('[data-vote]');if(b){verdicts[b.dataset.outlet]=b.dataset.vote;judge()}};document.querySelectorAll('[data-budget]').forEach(el=>el.oninput=()=>budgets[el.dataset.budget]=el.value===''?null:+el.value);document.querySelectorAll('[data-answer]').forEach(el=>el.onchange=()=>answers[el.dataset.answer]=el.value);$('#justification').oninput=e=>justification=e.target.value;$('#back').onclick=()=>go(2);$('#next').onclick=finish}
+function judge(){let rows=desks.map((d,i)=>{let n=total(d),v=verdicts[d.outletId];return `<article class="card"><div class="deskrow"><div><div class="avatar">${avatar(i)} ${esc(labelDesk(d,i))}</div><p class="small">${n} listed pieces / 22 days · peak ${d.peakDaily??Math.max(0,...d.dailyCounts)}</p><p class="small">${d.beforeResignationCount??'—'} before 5 Aug · ${d.afterResignationCount??'—'} from 5 Aug (resignation date)</p></div><div><label class="small">Your suggested volume<br><input aria-label="Suggested justifiable count for ${esc(labelDesk(d,i))}" type="number" min="0" max="${n*2}" value="${budgets[d.outletId]??''}" placeholder="unknown" class="budget" data-budget="${esc(d.outletId)}"></label></div></div><div class="verdicts">${kinds.map(([key,title,desc])=>`<button class="choice" data-vote="${key}" data-outlet="${esc(d.outletId)}" aria-pressed="${v===key}"><strong>${title}</strong><span class="small">${desc}</span></button>`).join('')}</div></article>`}).join('');app.innerHTML=`<div class="stagehead"><div><p class="eyebrow">04 · Judge campaigns</p><h2>Make one call per desk</h2><p class="small">Faithful / Mixed / Traitor / Unclear describe your view of the whole coverage campaign. Suggested volume is optional.</p></div></div><div class="grid" style="grid-template-columns:1fr 1fr">${rows}</div><section class="card" style="margin-top:18px"><p class="eyebrow">Five evidence checks · 2 points each</p><div class="checks">${checks.map(c=>`<label><span>${esc(c.prompt)}</span><select data-answer="${esc(c.id)}"><option value="">Choose</option>${c.options.map(o=>`<option value="${esc(o.value)}" ${answers[c.id]===o.value?'selected':''}>${esc(o.label)}</option>`).join('')}</select></label>`).join('')}<label><span>Your case: explain what was justified and where the balance may shift. 40–600 characters.</span><textarea id="justification" maxlength="600" minlength="40" placeholder="Name the evidence and one limit of the record.">${esc(justification)}</textarea></label></div><p class="small">Points test only evidence checks. Your campaign verdicts are not marked right or wrong.</p></section><div class="actions"><button class="secondary" id="back">← Hear the outlets</button><button class="button" id="next">Reveal the record →</button></div>`;app.onclick=e=>{let b=e.target.closest('[data-vote]');if(b){verdicts[b.dataset.outlet]=b.dataset.vote;judge()}};document.querySelectorAll('[data-budget]').forEach(el=>el.oninput=()=>budgets[el.dataset.budget]=el.value===''?null:+el.value);document.querySelectorAll('[data-answer]').forEach(el=>el.onchange=()=>answers[el.dataset.answer]=el.value);$('#justification').oninput=e=>justification=e.target.value;$('#back').onclick=()=>go(2);$('#next').onclick=finish}
 function CampaignReveal(g,item){let results=(item.reasoningChecks||[]).map(c=>({id:c.id,prompt:c.prompt,correct:g.reasoningAnswers[c.id]===c.answer,answer:c.answer,explanation:c.explanation,evidenceIds:c.evidenceIds}));return {mode:'campaign',roles:g.desks.map(d=>({outletId:d.outletId,outletName:d.outlet,campaign:d,decision:g.verdicts[d.outletId],recommendedCount:g.budgets[d.outletId]})),reasoningScore:results.filter(r=>r.correct).length*2,reasoningTotal:10,reasoningResults:results,justification:g.justification.trim(),source:item.source,period:{start:item.start,end:item.end,endNote:item.endNote},label:'Campaign choices and written reasoning are discussion inputs; points reflect only the five evidence checks.'}}
 window.CampaignReveal=CampaignReveal;
 async function finish(){let missing=desks.filter(d=>!verdicts[d.outletId]);if(missing.length||checks.some(c=>!answers[c.id])||justification.trim().length<40){toast('Choose all four campaign calls, answer five checks and write at least 40 characters.');return}if(justification.length>600){toast('Keep your case to 600 characters.');return}if(desks.some(d=>budgets[d.outletId]!==null&&(!Number.isInteger(budgets[d.outletId])||budgets[d.outletId]<0||budgets[d.outletId]>total(d)*2))){toast('Suggested volumes must be whole numbers within the shown range.');return}stop();let result;if(live){try{result=await post('/api/campaign/reveal',{sessionId:session.sessionId,campaignVerdicts:verdicts,recommendedCounts:budgets,reasoningAnswers:answers,justification});}catch(e){toast('Reveal unavailable. Your choices are still on this page.');return}}else{result=CampaignReveal({desks,verdicts,budgets,reasoningAnswers:answers,justification},item)}window.lastCampaignResult=result;renderReveal(result)}
@@ -481,5 +873,5 @@ function renderReveal(r){stop();stepper(5);let roles=r.roles||[];app.innerHTML=`
 function saveHTML(){const blob=new Blob(['<!doctype html>\n'+ORIGINAL_HTML],{type:'text/html'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='faithful-to-the-facts.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);toast('Clean game copy downloaded. Attach that file to share it privately.')}
 function saveResultHTML(result){const css=$('style').textContent,summary=`<header><p class="eyebrow">Faithful to the Facts · Saved campaign result</p><h1>${esc(item.title||'Campaign coverage')}</h1><p>${esc(result.period?.start||item.start)} — ${esc(result.period?.end||item.end)} · ${esc(result.period?.endNote||item.endNote||'')}</p><p class="small">A static record of your campaign judgments and evidence-check results. Your answers and personal text are included in this file.</p></header>${app.innerHTML}`;const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Campaign Jury Result</title><style>${css}body{padding:20px}.actions,#again,#saveResult{display:none!important}a{overflow-wrap:anywhere}</style></head><body><main class="shell">${summary}</main></body></html>`;const url=URL.createObjectURL(new Blob([html],{type:'text/html'})),a=document.createElement('a');a.href=url;a.download='faithful-to-the-facts-result.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);toast('Static result file downloaded.')}
 $('#save').onclick=()=>saveHTML(false);$('#share').onclick=async()=>{try{let blob=new Blob(['<!doctype html>\n'+ORIGINAL_HTML],{type:'text/html'}),file=new File([blob],'faithful-to-the-facts.html',{type:'text/html'});if(navigator.canShare?.({files:[file]}))await navigator.share({files:[file],title:'Faithful to the Facts'});else {saveHTML();toast('Attach the downloaded HTML file in your private message.')}}catch{saveHTML();toast('Attach the downloaded HTML file in your private message.')}};$('#motion').onclick=()=>{reduceMotion=!reduceMotion;if(reduceMotion)stop();$('#motion').textContent=`Motion: ${reduceMotion?'reduced':'on'}`;document.documentElement.classList.toggle('reduced-motion',reduceMotion);document.documentElement.style.scrollBehavior=reduceMotion?'auto':''};
-stepper(0);welcome();
+audio.onplay=()=>{const b=$('#pauseVoice');if(b){b.disabled=false;b.textContent='Pause voice'}};audio.onpause=()=>{const b=$('#pauseVoice');if(b&&audio.currentSrc)b.textContent=audio.ended?'Replay voice':'Resume voice'};stepper(0);welcome();
 </script></body></html>
