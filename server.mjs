@@ -97,8 +97,9 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
     try {
       cleanup();
       if (req.method === 'GET' && pathname === '/health') return json(res, 200, { ok: true, configured: Boolean(env.DEEPSEEK_API_KEY), voiceConfigured, distinctVoicesAvailable });
-      if (req.method === 'GET' && pathname === '/') {
-        const html = await readFile(path.join(HERE, 'index.html'));
+      const publicPages = { '/': 'index.html', '/README.html': 'README.html', '/verification.html': 'verification.html' };
+      if (req.method === 'GET' && Object.hasOwn(publicPages, pathname)) {
+        const html = await readFile(path.join(HERE, publicPages[pathname]));
         res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' }); return res.end(html);
       }
       if (req.method === 'POST' && pathname.startsWith('/api/')) {

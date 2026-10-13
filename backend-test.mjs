@@ -286,3 +286,16 @@ test('all real articles are fixed and analysis remains helpful and evidence-grou
     assert.equal(revealed.roles.filter(r => r.role === 'traitor').length, item.articles.filter(a => a.verdict === 'concern').length);
   }
 });
+
+
+test('local static serving allows only public HTML pages and never repository or private settings', async t => {
+  const g = await setup(); t.after(g.close);
+  for (const route of ['/', '/README.html', '/verification.html']) {
+    const r = await fetch(g.base + route);
+    assert.equal(r.status, 200);
+    assert.match(r.headers.get('content-type'), /text\/html/);
+  }
+  for (const route of ['/.env', '/.env.example', '/.git/config', '/server.mjs', '/cases.json', '/package.json']) {
+    assert.equal((await fetch(g.base + route)).status, 404);
+  }
+});
