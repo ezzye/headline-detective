@@ -360,6 +360,14 @@
       "date": "2020-08-06",
       "retrospective": true,
       "text": "ITV’s inquest report attributes to the coroner a conclusion of suicide and an account of distress about the impending criminal trial and publicity. It also records the family’s criticism and the police officer’s denial of bias. This is an inquest report, not the original Record of Inquest. Family accusations and witness evidence must be distinguished from the coroner’s conclusions. It does not allocate responsibility to individual outlets or establish a single cause."
+    },
+    {
+      "id": "leveson-case-scope",
+      "label": "Leveson: later ethical comparison",
+      "text": "This selected campaign postdates Leveson’s 2012 report. The report made no findings about it; its discussion can inform a comparison of evidence, dignity, privacy and editorial judgment.",
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+      "date": "2012-11-29",
+      "retrospective": false
     }
   ],
   "reasoningChecks": [
@@ -3355,5 +3363,20 @@
     "checkedAt": "2026-10-14",
     "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
     "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
+  },
+  "levesonContext": {
+    "reportDate": "2012-11-29",
+    "relationship": "ethical_comparison",
+    "summary": "This selected campaign postdates Leveson’s 2012 report. The report made no findings about it; its discussion can inform a comparison of evidence, dignity, privacy and editorial judgment.",
+    "questions": [
+      "Did coverage preserve the distinction between a charge and guilt?",
+      "What public interest justified repeated personal or relationship exposure?"
+    ],
+    "sourceURL": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+    "sourceLocator": "Volume 2, PartF, chapter 5: Jefferies§4; McCanns§3; Milly Dowler§2.",
+    "evidenceIds": [
+      "leveson-case-scope"
+    ],
+    "limit": "A report finding, a later court decision and an ethical comparison have different scopes. The inquiry does not supply a universal article limit or a verdict about all future coverage."
   }
 }

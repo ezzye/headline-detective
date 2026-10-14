@@ -490,8 +490,8 @@
       "id": "jefferies-20110101-guardian-bail",
       "label": "Guardian custody release report",
       "url": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
-      "date": "2011-01-01",
-      "text": "Guardian page reports release from custody on police bail and says investigation continued."
+      "date": "2011-01-02",
+      "text": "Publisher UK timestamp:2 January 2011, 00:39 GMT. The report follows the 1 January evening release on police bail; the reporting date is distinct from the event date."
     },
     {
       "id": "jefferies-20110308-independent-bail-lifted",
@@ -572,6 +572,54 @@
       "date": "2012-11-29",
       "retrospective": true,
       "text": "Leveson identifies the damaging three-day character coverage and records settlements by eight titles over 40 articles. Mirror editor Richard Wallace claimed off-record police briefings; Chief Constable Colin Port disputed this. The inquiry could not resolve that conflict. Sections 4.12–4.21 criticise appearance and temperament judgments and reckless publication, while finding no evidence of Mirror malice. The briefing dispute does not establish undisclosed incriminating facts. This is a later inquiry assessment, not a complete social-media census."
+    },
+    {
+      "id": "jeff3d-exhibit-list",
+      "label": "Jefferies witness statement · p.5, paragraph 25",
+      "text": "The statement lists eight selected print articles across six newspaper titles: five dated 31 December 2010, two 1 January 2011 and one 2 January 2011. This is his selected worst-offending set, not a complete publication census. The separate libel claims covered 40 articles across eight titles.",
+      "url": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+      "date": "2011-11-28",
+      "retrospective": false
+    },
+    {
+      "id": "jeff3d-public-chronology",
+      "label": "Public chronology and warning · Leveson 4.2–4.3, 4.9",
+      "text": "Jefferies was arrested on 30 December; a public warning followed the first wave on 31 December. Greg Reardon criticised character attacks in his 1 January statement. Jefferies was released on police bail during the evening of 1 January. Precise individual print deadlines and receipt of the warning are not established.",
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+      "date": "2012-11-29",
+      "retrospective": true
+    },
+    {
+      "id": "jeff3d-sun-editor",
+      "label": "The Sun’s later editorial account · Leveson 4.14–4.16",
+      "text": "Duty editor Stephen Waring said earlier adverse comments about character wrongly coloured his judgment. Dominic Mohan was away; Waring said Mohan subsequently wanted greater balance. This later account does not establish that Mohan approved the material before it appeared.",
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+      "date": "2012-11-29",
+      "retrospective": true
+    },
+    {
+      "id": "jeff3d-mirror-editor",
+      "label": "Daily Mirror’s disputed account · Leveson 4.17–4.19",
+      "text": "Richard Wallace accepted a serious editorial misjudgment and claimed off-record police briefings. Colin Port denied the briefings; Leveson could not resolve the conflict. No specific undisclosed incriminating fact is established. The report did not find evidence of Mirror malice.",
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+      "date": "2012-11-29",
+      "retrospective": true
+    },
+    {
+      "id": "jeff3d-countervoice",
+      "label": "Greg Reardon’s statement and edited coverage · witnesspp.10–11, paras 29–30; Leveson 4.9–4.10",
+      "text": "Jefferies said papers omitted or changed Reardon’s criticism of character assassination. His examples included the Sunday Mirror, Mail on Sunday and Sunday Express. These are his attributed examples; do not transfer them automatically to the daily editions.",
+      "url": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+      "date": "2011-11-28",
+      "retrospective": false
+    },
+    {
+      "id": "leveson-case-scope",
+      "label": "Leveson: direct case evidence",
+      "text": "Leveson directly examined the Jefferies coverage in 2012.",
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+      "date": "2012-11-29",
+      "retrospective": true
     }
   ],
   "reasoningChecks": [
@@ -699,8 +747,8 @@
       "dailyCounts": [
         0,
         1,
-        1,
         0,
+        1,
         0,
         0,
         0,
@@ -1052,8 +1100,8 @@
           "id": "jefferies-20110101-guardian-bail",
           "headline": "Chris Jefferies released on bail",
           "url": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
-          "published": "2011-01-01",
-          "verification": "Guardian page metadata and article text identify publication on 1 January and say the investigation was ongoing after release.",
+          "published": "2011-01-02",
+          "verification": "Publisher UK page shows 2 January 2011, 00:39 GMT. The report concerns the previous evening’s release; event and report dates differ.",
           "kind": "news",
           "eventId": "event-2",
           "noveltyClaim": "A new early-window follow-up and a material status update, but release on bail did not mean the investigation ended or that he had been cleared.",
@@ -1158,7 +1206,7 @@
         "paragraphs": [
           {
             "kind": "report",
-            "text": "The selected reports can be defended as coverage of separate steps, not one continuing allegation presented as fact. On 1 January, the report said Jefferies had been released from custody on police bail while the investigation continued. In May, the Attorney General announced planned contempt proceedings; in June, a hearing preview recorded that the publishers denied liability. On 29 July, the High Court made a finding about specified articles, and a separate page reproduced the judgment. A November report then covered Jefferies’s evidence to the Leveson Inquiry. These are distinct procedural events. The two July pages are distinct pieces of journalism, but they describe one court decision, not two independent findings.",
+            "text": "The selected reports can be defended as coverage of separate steps, not one continuing allegation presented as fact. On 2 January, the report said Jefferies had been released from custody on police bail while the investigation continued. In May, the Attorney General announced planned contempt proceedings; in June, a hearing preview recorded that the publishers denied liability. On 29 July, the High Court made a finding about specified articles, and a separate page reproduced the judgment. A November report then covered Jefferies’s evidence to the Leveson Inquiry. These are distinct procedural events. The two July pages are distinct pieces of journalism, but they describe one court decision, not two independent findings.",
             "evidenceIds": [
               "event-2",
               "contempt-proceedings",
@@ -1212,14 +1260,14 @@
         },
         {
           "id": "jefferies-20110101-guardian-bail",
-          "date": "2011-01-01",
+          "date": "2011-01-02",
           "outlet": "The Guardian",
           "headline": "Chris Jefferies released on bail",
           "kind": "news",
           "originalURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
           "verificationSourceURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
           "sourceURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
-          "verification": "Guardian page metadata and article text identify publication on 1 January and say the investigation was ongoing after release.",
+          "verification": "Publisher UK page shows 2 January 2011, 00:39 GMT. The report concerns the previous evening’s release; event and report dates differ.",
           "eventId": "event-2",
           "event": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
           "wave": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
@@ -1233,7 +1281,11 @@
           "accessDate": "2026-10-14",
           "evidenceIds": [
             "jefferies-20110101-guardian-bail"
-          ]
+          ],
+          "publishedAtUTC": "2011-01-02T00:39:00Z",
+          "publicationDisplay": "Sun2Jan2011 00.39GMT",
+          "publicationTimezone": "Europe/London",
+          "dateQualification": "UK publication date verified from the publisher display; URL path and US EST display retain1January."
         },
         {
           "id": "jefferies-20110511-guardian-ag-action",
@@ -1801,9 +1853,11 @@
         "paragraphs": [
           {
             "kind": "report",
-            "text": "Evidence for this desk is narrow: two dated print headlines reproduced in Christopher Jefferies’s Leveson witness-statement exhibits. They show the words readers could see and when those editions appeared, which makes them relevant to a discussion of reporting during an active murder investigation. They are not recovered web pages, and they do not provide the full articles, surrounding page, editorial process or any response that may have appeared elsewhere. A fair defence can explain the public interest in timely reporting and the importance of recording what was published, while being candid that these exhibits alone cannot supply the complete reporting context.",
+            "text": "We had a newsworthy arrest to report, but we did not have a conviction. The selected record shows our print coverage on 31 December and 1 January moving from personal allegations to a suggestion about a killer waiting in the flat. Those editions appeared before the evening release on bail. Later, our editor accepted a serious misjudgment and said he had relied on police briefings. The chief constable disputed that account, and Leveson could not settle the conflict. That leaves us unable to use an assumed secret fact as a defence. We must explain the specific evidence behind the framing and face the court’s finding on the identified publications.",
             "evidenceIds": [
-              "leveson-print-exhibit"
+              "jeff3d-exhibit-list",
+              "jeff3d-mirror-editor",
+              "ag-official-result"
             ]
           },
           {
@@ -1834,9 +1888,9 @@
           "headline": "Jo Suspect is Peeping Tom",
           "kind": "news",
           "originalURL": null,
-          "verificationSourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-          "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-          "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
+          "verificationSourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+          "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+          "verification": "Title and edition date visually checked against the witness statement list, p.5, paragraph 25. This is a later transcription and selected extracts, not a recovered original webpage or full edition.",
           "eventId": "event-1",
           "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
           "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
@@ -1851,7 +1905,9 @@
           "evidenceIds": [
             "leveson-print-exhibit"
           ],
-          "accessDate": "2026-10-14"
+          "accessDate": "2026-10-14",
+          "publicationFormat": "print",
+          "sourceLocator": "Witness statement p.5, paragraph 25; selected print article title/date; extracts pp.6–10."
         },
         {
           "id": "jefferies-h04",
@@ -1860,13 +1916,13 @@
           "headline": "Was Killer Waiting in Jo’s flat?",
           "kind": "news",
           "originalURL": null,
-          "verificationSourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-          "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-          "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
-          "eventId": "event-2",
-          "event": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
-          "wave": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "verificationSourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+          "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+          "verification": "Title and edition date visually checked against the witness statement list, p.5, paragraph 25. This is a later transcription and selected extracts, not a recovered original webpage or full edition.",
+          "eventId": "event-1",
+          "event": "A dated print edition following the arrest; the evening 1 January release cannot be treated as a fact known to the morning edition.",
+          "wave": "A dated print edition following the arrest; the evening 1 January release cannot be treated as a fact known to the morning edition.",
+          "noveltyClaim": "The preserved personal allegations and character framing are not a newly established forensic finding. Exact newsroom knowledge and deadlines are not recovered.",
           "archiveReproduction": true,
           "sampleNote": "Print headline reproduced in Jefferies’s Leveson witness statement; original publisher URL not recovered.",
           "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
@@ -1877,7 +1933,9 @@
           "evidenceIds": [
             "leveson-print-exhibit"
           ],
-          "accessDate": "2026-10-14"
+          "accessDate": "2026-10-14",
+          "publicationFormat": "print",
+          "sourceLocator": "Witness statement p.5, paragraph 25; selected print article title/date; extracts pp.6–10."
         }
       ]
     },
@@ -2920,9 +2978,11 @@
         "paragraphs": [
           {
             "kind": "report",
-            "text": "The two available records for this desk are print headlines dated 31 December and 1 January, reproduced in the Leveson evidence. They document contemporaneous wording during an active murder investigation and are relevant to understanding what readers encountered. They are not original online pages, and the exhibits do not reproduce full articles or all surrounding context. A limited defence can point to the public interest in reporting an urgent investigation and to the value of preserving exact print evidence. It cannot claim that headlines alone tell us what the newsroom knew, what qualifications appeared in the articles, or how the stories were handled across all editions.",
+            "text": "We could report the arrest and the investigation. That did not make appearance, mannerisms or recollections about someone’s character evidence that he had committed murder. Our selected print pieces appeared on 31 December and 1 January. The release on bail came later on 1 January, so it cannot justify wording already in that morning’s edition. In his later account, the duty editor said earlier adverse character material had wrongly influenced his judgment. That is a documented explanation to examine, rather than an excuse. The court’s finding concerned the specified 1 January material; it does not decide every story. Our defence has to address that publication and the evidence available when it was prepared.",
             "evidenceIds": [
-              "leveson-print-exhibit"
+              "jeff3d-exhibit-list",
+              "jeff3d-sun-editor",
+              "ag-official-result"
             ]
           },
           {
@@ -2953,9 +3013,9 @@
           "headline": "The Strange Mr Jefferies",
           "kind": "news",
           "originalURL": null,
-          "verificationSourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-          "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-          "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
+          "verificationSourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+          "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+          "verification": "Title and edition date visually checked against the witness statement list, p.5, paragraph 25. This is a later transcription and selected extracts, not a recovered original webpage or full edition.",
           "eventId": "event-1",
           "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
           "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
@@ -2970,7 +3030,9 @@
           "evidenceIds": [
             "leveson-print-exhibit"
           ],
-          "accessDate": "2026-10-14"
+          "accessDate": "2026-10-14",
+          "publicationFormat": "print",
+          "sourceLocator": "Witness statement p.5, paragraph 25; selected print article title/date; extracts pp.6–10."
         },
         {
           "id": "jefferies-h05",
@@ -2979,13 +3041,13 @@
           "headline": "Jo Suspect, “scared kids” – Obsessed by death",
           "kind": "news",
           "originalURL": null,
-          "verificationSourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-          "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-          "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
-          "eventId": "event-2",
-          "event": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
-          "wave": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "verificationSourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+          "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+          "verification": "Title and edition date visually checked against the witness statement list, p.5, paragraph 25. This is a later transcription and selected extracts, not a recovered original webpage or full edition.",
+          "eventId": "event-1",
+          "event": "A dated print edition following the arrest; the evening 1 January release cannot be treated as a fact known to the morning edition.",
+          "wave": "A dated print edition following the arrest; the evening 1 January release cannot be treated as a fact known to the morning edition.",
+          "noveltyClaim": "The preserved personal allegations and character framing are not a newly established forensic finding. Exact newsroom knowledge and deadlines are not recovered.",
           "archiveReproduction": true,
           "sampleNote": "Print headline reproduced in Jefferies’s Leveson witness statement; original publisher URL not recovered.",
           "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
@@ -2996,7 +3058,9 @@
           "evidenceIds": [
             "leveson-print-exhibit"
           ],
-          "accessDate": "2026-10-14"
+          "accessDate": "2026-10-14",
+          "publicationFormat": "print",
+          "sourceLocator": "Witness statement p.5, paragraph 25; selected print article title/date; extracts pp.6–10."
         }
       ]
     }
@@ -3112,9 +3176,9 @@
       "headline": "Jo Suspect is Peeping Tom",
       "kind": "news",
       "originalURL": null,
-      "verificationSourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-      "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-      "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
+      "verificationSourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+      "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+      "verification": "Title and edition date visually checked against the witness statement list, p.5, paragraph 25. This is a later transcription and selected extracts, not a recovered original webpage or full edition.",
       "eventId": "event-1",
       "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
       "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
@@ -3129,7 +3193,9 @@
       "evidenceIds": [
         "leveson-print-exhibit"
       ],
-      "accessDate": "2026-10-14"
+      "accessDate": "2026-10-14",
+      "publicationFormat": "print",
+      "sourceLocator": "Witness statement p.5, paragraph 25; selected print article title/date; extracts pp.6–10."
     },
     {
       "id": "jefferies-h02",
@@ -3160,9 +3226,9 @@
       "headline": "The Strange Mr Jefferies",
       "kind": "news",
       "originalURL": null,
-      "verificationSourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-      "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-      "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
+      "verificationSourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+      "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+      "verification": "Title and edition date visually checked against the witness statement list, p.5, paragraph 25. This is a later transcription and selected extracts, not a recovered original webpage or full edition.",
       "eventId": "event-1",
       "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
       "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
@@ -3177,7 +3243,9 @@
       "evidenceIds": [
         "leveson-print-exhibit"
       ],
-      "accessDate": "2026-10-14"
+      "accessDate": "2026-10-14",
+      "publicationFormat": "print",
+      "sourceLocator": "Witness statement p.5, paragraph 25; selected print article title/date; extracts pp.6–10."
     },
     {
       "id": "jefferies-h04",
@@ -3186,13 +3254,13 @@
       "headline": "Was Killer Waiting in Jo’s flat?",
       "kind": "news",
       "originalURL": null,
-      "verificationSourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-      "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-      "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
-      "eventId": "event-2",
-      "event": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
-      "wave": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
-      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "verificationSourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+      "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+      "verification": "Title and edition date visually checked against the witness statement list, p.5, paragraph 25. This is a later transcription and selected extracts, not a recovered original webpage or full edition.",
+      "eventId": "event-1",
+      "event": "A dated print edition following the arrest; the evening 1 January release cannot be treated as a fact known to the morning edition.",
+      "wave": "A dated print edition following the arrest; the evening 1 January release cannot be treated as a fact known to the morning edition.",
+      "noveltyClaim": "The preserved personal allegations and character framing are not a newly established forensic finding. Exact newsroom knowledge and deadlines are not recovered.",
       "archiveReproduction": true,
       "sampleNote": "Print headline reproduced in Jefferies’s Leveson witness statement; original publisher URL not recovered.",
       "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
@@ -3203,7 +3271,9 @@
       "evidenceIds": [
         "leveson-print-exhibit"
       ],
-      "accessDate": "2026-10-14"
+      "accessDate": "2026-10-14",
+      "publicationFormat": "print",
+      "sourceLocator": "Witness statement p.5, paragraph 25; selected print article title/date; extracts pp.6–10."
     },
     {
       "id": "jefferies-h05",
@@ -3212,13 +3282,13 @@
       "headline": "Jo Suspect, “scared kids” – Obsessed by death",
       "kind": "news",
       "originalURL": null,
-      "verificationSourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-      "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-      "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
-      "eventId": "event-2",
-      "event": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
-      "wave": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
-      "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+      "verificationSourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+      "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+      "verification": "Title and edition date visually checked against the witness statement list, p.5, paragraph 25. This is a later transcription and selected extracts, not a recovered original webpage or full edition.",
+      "eventId": "event-1",
+      "event": "A dated print edition following the arrest; the evening 1 January release cannot be treated as a fact known to the morning edition.",
+      "wave": "A dated print edition following the arrest; the evening 1 January release cannot be treated as a fact known to the morning edition.",
+      "noveltyClaim": "The preserved personal allegations and character framing are not a newly established forensic finding. Exact newsroom knowledge and deadlines are not recovered.",
       "archiveReproduction": true,
       "sampleNote": "Print headline reproduced in Jefferies’s Leveson witness statement; original publisher URL not recovered.",
       "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
@@ -3229,7 +3299,9 @@
       "evidenceIds": [
         "leveson-print-exhibit"
       ],
-      "accessDate": "2026-10-14"
+      "accessDate": "2026-10-14",
+      "publicationFormat": "print",
+      "sourceLocator": "Witness statement p.5, paragraph 25; selected print article title/date; extracts pp.6–10."
     },
     {
       "id": "jefferies-h06",
@@ -3303,14 +3375,14 @@
     },
     {
       "id": "jefferies-20110101-guardian-bail",
-      "date": "2011-01-01",
+      "date": "2011-01-02",
       "outlet": "The Guardian",
       "headline": "Chris Jefferies released on bail",
       "kind": "news",
       "originalURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
       "verificationSourceURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
       "sourceURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
-      "verification": "Guardian page metadata and article text identify publication on 1 January and say the investigation was ongoing after release.",
+      "verification": "Publisher UK page shows 2 January 2011, 00:39 GMT. The report concerns the previous evening’s release; event and report dates differ.",
       "eventId": "event-2",
       "event": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
       "wave": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
@@ -3324,7 +3396,11 @@
       "accessDate": "2026-10-14",
       "evidenceIds": [
         "jefferies-20110101-guardian-bail"
-      ]
+      ],
+      "publishedAtUTC": "2011-01-02T00:39:00Z",
+      "publicationDisplay": "Sun2Jan2011 00.39GMT",
+      "publicationTimezone": "Europe/London",
+      "dateQualification": "UK publication date verified from the publisher display; URL path and US EST display retain1January."
     },
     {
       "id": "jefferies-20110308-independent-bail-lifted",
@@ -3722,5 +3798,238 @@
       "summary": "Michell describes Jefferies’s requested script changes and the use of police interview transcripts. He also identifies an invented scene.",
       "limit": "The director’s account helps identify leads and dramatic liberties; the original transcript or inquiry record is needed to substantiate a scene."
     }
-  ]
+  ],
+  "episode": {
+    "id": "episode-jefferies-three-days",
+    "title": "Three days that built an impression",
+    "start": "2010-12-31",
+    "end": "2011-01-02",
+    "scopeNote": "Eight print articles selected by Jefferies in his witness statement, across six newspaper titles. Four reuse the original case records; four supplement them here. This is a selected set, not a complete count of each outlet’s coverage. The separate 40-article libel settlement is not added to these counts.",
+    "recordIds": [
+      "jefferies-h03",
+      "jeff3d-mail-20101231",
+      "jeff3d-record-20101231",
+      "jefferies-h01",
+      "jeff3d-express-20101231",
+      "jefferies-h05",
+      "jefferies-h04",
+      "jeff3d-sunday-mirror-20110102"
+    ],
+    "additionalRecords": [
+      {
+        "id": "jeff3d-mail-20101231",
+        "date": "2010-12-31",
+        "outlet": "Daily Mail",
+        "headline": "Murder Police Quiz ‘Nutty Professor’ with a Blue Rinse, Was Jo’s Body Hidden Next to Her Flat?",
+        "sourceLocator": "Witness statement p.5, paragraph 25, item 2; selected extracts p.9.",
+        "format": "print",
+        "provenance": "witness_statement_list",
+        "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+        "evidenceIds": [
+          "jeff3d-exhibit-list"
+        ],
+        "verification": "Selected print title and edition date visually checked on p.5; not a complete original article or publisher webpage."
+      },
+      {
+        "id": "jeff3d-record-20101231",
+        "date": "2010-12-31",
+        "outlet": "Daily Record",
+        "headline": "The Strange Mr Jefferies, Creepy",
+        "sourceLocator": "Witness statement p.5, paragraph 25, item 3; selected extracts p.8.",
+        "format": "print",
+        "provenance": "witness_statement_list",
+        "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+        "evidenceIds": [
+          "jeff3d-exhibit-list"
+        ],
+        "verification": "Selected print title and edition date visually checked on p.5; not a complete original article or publisher webpage."
+      },
+      {
+        "id": "jeff3d-express-20101231",
+        "date": "2010-12-31",
+        "outlet": "Daily Express",
+        "headline": "Joanna suspect Ex-teacher known as Mr Chips",
+        "sourceLocator": "Witness statement p.5, paragraph 25, item 5; selected extracts p.9.",
+        "format": "print",
+        "provenance": "witness_statement_list",
+        "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+        "evidenceIds": [
+          "jeff3d-exhibit-list"
+        ],
+        "verification": "Selected print title and edition date visually checked on p.5; not a complete original article or publisher webpage."
+      },
+      {
+        "id": "jeff3d-sunday-mirror-20110102",
+        "date": "2011-01-02",
+        "outlet": "Sunday Mirror",
+        "headline": "A Beautiful Woman in Mind, Body and Soul...I will Always Love Her...Boyfriend’s Tribute to Jo as Landlord is Bailed",
+        "sourceLocator": "Witness statement p.5, paragraph 25, item 8; selected extracts p.10; countervoice criticism pp.10–11.",
+        "format": "print",
+        "provenance": "witness_statement_list",
+        "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+        "evidenceIds": [
+          "jeff3d-exhibit-list"
+        ],
+        "verification": "Selected print title and edition date visually checked on p.5; not a complete original article or publisher webpage."
+      }
+    ],
+    "contextRecordIds": [
+      "jefferies-h02",
+      "jefferies-20110101-guardian-bail"
+    ],
+    "knownEvents": [
+      {
+        "id": "episode-arrest",
+        "date": "2010-12-30",
+        "label": "Arrest on suspicion",
+        "summary": "Jefferies was arrested. He had not been charged or found guilty.",
+        "limit": "The public fact of arrest did not verify allegations about character.",
+        "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+        "evidenceIds": [
+          "jeff3d-public-chronology"
+        ],
+        "knowledgeStatus": "public_at_time",
+        "timeDisplay": "About 7 am"
+      },
+      {
+        "id": "episode-warning",
+        "date": "2010-12-31",
+        "label": "A public warning after the first wave",
+        "summary": "The Attorney General warned about prejudicing a future trial.",
+        "limit": "The warning followed the first wave. Individual receipt before a print deadline is not established.",
+        "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+        "evidenceIds": [
+          "jeff3d-public-chronology"
+        ],
+        "knowledgeStatus": "public_at_time"
+      },
+      {
+        "id": "episode-tribute",
+        "date": "2011-01-01",
+        "label": "A public voice objects to character attacks",
+        "summary": "Greg Reardon’s tribute criticised media character assassination.",
+        "limit": "Exact timing relative to each edition’s deadline is not established; the later statement and inquiry assess how papers represented it.",
+        "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+        "evidenceIds": [
+          "jeff3d-public-chronology"
+        ],
+        "knowledgeStatus": "public_at_time"
+      },
+      {
+        "id": "episode-bail",
+        "date": "2011-01-01",
+        "label": "Released on police bail in the evening",
+        "summary": "Jefferies left custody on police bail; the investigation continued.",
+        "limit": "This evening event cannot be assumed to inform the 1 January morning newspapers. Bail conditions ended later, not at custody release.",
+        "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+        "evidenceIds": [
+          "jeff3d-public-chronology"
+        ],
+        "knowledgeStatus": "public_at_time",
+        "timeDisplay": "Evening"
+      }
+    ],
+    "outletKnowledge": [
+      {
+        "outlet": "The Sun",
+        "scope": "Waring’s later account says earlier adverse character material coloured his judgment. Mohan was away and later urged more balance.",
+        "limit": "A retrospective editorial account. It does not establish a new forensic finding or pre-publication approval by Mohan.",
+        "sourceURL": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+        "evidenceIds": [
+          "jeff3d-sun-editor"
+        ],
+        "knowledgeStatus": "later_testimony",
+        "dateClaimed": "2012-11-29",
+        "publicationPattern": "Personal appearance and former-pupil or acquaintance claims dominate the selected extracts."
+      },
+      {
+        "outlet": "Daily Mirror",
+        "scope": "Wallace later claimed police briefings. Port denied them. Leveson left the conflict unresolved while recording serious misjudgment.",
+        "limit": "Do not present the briefings, their contents or secret incriminating information as established facts.",
+        "sourceURL": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+        "evidenceIds": [
+          "jeff3d-mirror-editor"
+        ],
+        "knowledgeStatus": "contested_later_testimony",
+        "dateClaimed": "2012-11-29",
+        "publicationPattern": "The two selected editions move from tenants’ personal allegations to an insinuation about access to the victim’s flat."
+      },
+      {
+        "outlet": "Daily Mail",
+        "scope": "No contemporaneous newsroom record or editor-specific account was recovered for this outlet.",
+        "limit": "The selected publication documents wording, not everything the newsroom possessed, checked or believed. The Mirror’s disputed account cannot be transferred to this title.",
+        "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+        "evidenceIds": [
+          "jeff3d-exhibit-list"
+        ],
+        "knowledgeStatus": "not_recovered",
+        "publicationPattern": "The selected title emphasises physical appearance; the witness’s extracts also describe literary tastes and an older-murder association."
+      },
+      {
+        "outlet": "Daily Record",
+        "scope": "No contemporaneous newsroom record or editor-specific account was recovered for this outlet.",
+        "limit": "The selected publication documents wording, not everything the newsroom possessed, checked or believed. The Mirror’s disputed account cannot be transferred to this title.",
+        "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+        "evidenceIds": [
+          "jeff3d-exhibit-list"
+        ],
+        "knowledgeStatus": "not_recovered",
+        "publicationPattern": "The preserved extracts foreground adverse former-pupil and tenant recollections. Their publication is not verification of their truth."
+      },
+      {
+        "outlet": "Daily Express",
+        "scope": "No contemporaneous newsroom record or editor-specific account was recovered for this outlet.",
+        "limit": "The selected publication documents wording, not everything the newsroom possessed, checked or believed. The Mirror’s disputed account cannot be transferred to this title.",
+        "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+        "evidenceIds": [
+          "jeff3d-exhibit-list"
+        ],
+        "knowledgeStatus": "not_recovered",
+        "publicationPattern": "The witness’s extracts focus on personal style and attributed pupil recollections rather than a demonstrated forensic link."
+      },
+      {
+        "outlet": "Sunday Mirror",
+        "scope": "No contemporaneous newsroom record or editor-specific account was recovered for this outlet.",
+        "limit": "The selected publication documents wording, not everything the newsroom possessed, checked or believed. The Mirror’s disputed account cannot be transferred to this title.",
+        "sourceURL": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+        "evidenceIds": [
+          "jeff3d-exhibit-list",
+          "jeff3d-countervoice"
+        ],
+        "knowledgeStatus": "not_recovered",
+        "publicationPattern": "The 2 January title reflects bail and a public tribute. Jefferies later criticised its treatment of the tribute’s warning about character attacks."
+      }
+    ],
+    "dayNotes": [
+      {
+        "date": "2010-12-31",
+        "summary": "Five selected titles follow the arrest. A public warning comes after the first wave; later legal findings are not yet available."
+      },
+      {
+        "date": "2011-01-01",
+        "summary": "Two further selected print pieces continue personal scrutiny. The tribute and evening bail release have their own timing; neither supplies a retroactive defence for a morning edition."
+      },
+      {
+        "date": "2011-01-02",
+        "summary": "The Sunday Mirror’s selected title now reflects bail and the tribute. Ask whether new legal status was accompanied by restraint or by renewed personal framing."
+      }
+    ],
+    "timingRule": "Edition dates are not exact publication or newsroom-deadline timestamps. Events later in a date must not be treated as knowledge available to that morning’s editor.",
+    "dramaRule": "The 2014 drama and creator interviews supply research leads and an interpretation of the experience. Invented or compressed scenes are excluded from these article counts and knowledge findings."
+  },
+  "levesonContext": {
+    "reportDate": "2012-11-29",
+    "relationship": "direct_case_findings",
+    "summary": "Leveson directly examined the Jefferies coverage in 2012.",
+    "questions": [
+      "What evidence justified moving from arrest reporting to character allegations?",
+      "What did later editor testimony and the narrow contempt ruling actually establish?"
+    ],
+    "sourceURL": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+    "sourceLocator": "Volume 2, PartF, chapter 5: Jefferies§4; McCanns§3; Milly Dowler§2.",
+    "evidenceIds": [
+      "leveson-case-scope"
+    ],
+    "limit": "A report finding, a later court decision and an ethical comparison have different scopes. The inquiry does not supply a universal article limit or a verdict about all future coverage."
+  }
 }

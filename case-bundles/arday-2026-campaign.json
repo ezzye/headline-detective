@@ -286,6 +286,14 @@
       "date": "2026-09-14",
       "retrospective": true,
       "text": "Part One will examine the University’s support, decisions and communications, judged against what was known at each stage. The terms distinguish welfare questions from scrutiny of Arday’s academic record. These are terms of reference, not completed findings. Third-party media conduct and legal liability are outside this review’s remit; it cannot determine why he died."
+    },
+    {
+      "id": "leveson-case-scope",
+      "label": "Leveson: later ethical comparison",
+      "text": "This selected campaign postdates Leveson’s 2012 report. The report made no findings about it; its discussion can inform a comparison of evidence, dignity, privacy and editorial judgment.",
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+      "date": "2012-11-29",
+      "retrospective": false
     }
   ],
   "reasoningChecks": [
@@ -4544,5 +4552,20 @@
     "checkedAt": "2026-10-14",
     "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
     "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
+  },
+  "levesonContext": {
+    "reportDate": "2012-11-29",
+    "relationship": "ethical_comparison",
+    "summary": "This selected campaign postdates Leveson’s 2012 report. The report made no findings about it; its discussion can inform a comparison of evidence, dignity, privacy and editorial judgment.",
+    "questions": [
+      "Did repeated allegations remain qualified and accompanied by a response?",
+      "Did race or diversity framing exceed the evidence about an individual?"
+    ],
+    "sourceURL": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+    "sourceLocator": "Volume 2, PartF, chapter 5: Jefferies§4; McCanns§3; Milly Dowler§2.",
+    "evidenceIds": [
+      "leveson-case-scope"
+    ],
+    "limit": "A report finding, a later court decision and an ethical comparison have different scopes. The inquiry does not supply a universal article limit or a verdict about all future coverage."
   }
 }

@@ -2,7 +2,7 @@
 
 An evidence-led game about whether sustained media attention serves the public interest or becomes disproportionate pressure. Six case bundles let players compare dated coverage, hear fictional outlet defences, ask questions and make their own judgments.
 
-[Live game](https://codingforjustice.org.uk/) · [Setup and sharing](README.html) · [Verification status](verification.html) · [Attention guide](attention.html) · [Archive research](research.html)
+[Live game](https://codingforjustice.org.uk/) · [Setup and sharing](README.html) · [Verification status](verification.html) · [Attention guide](attention.html) · [Jefferies three-day guide](jefferies.html) · [Archive research](research.html)
 
 ## The six-step round
 
@@ -43,6 +43,10 @@ Original X timestamps, where available, support precise ordering. Present engage
 See `attention.html`, `media-records.csv`, `spread-links.csv` and `editorial-records.csv` for sources and limits. `x-editorial.html` retains the earlier audit with an update notice. `crossmedia.html` describes the earlier broadcast pilot. Programme uploads are not automatically original airtimes; embedded formats and repeat broadcasts stay explicit. Public media players are links, with no autoplay or copying.
 
 No qualifying contributing X post was recovered for Jefferies in this pass. Deleted originals, period-specific engagement sequences, complete repost networks and complete broadcast inventories remain gaps. The AI distinguishes a desk's own publications from external commentators and counter-speech; owner intent is not inferred from an editorial's existence.
+
+## Jefferies three-day guide
+
+[Open the standalone selected-print guide](jefferies.html). It follows eight selected articles across three dates, identifies four supplemental print records separately from the original sample, and distinguishes public event timing from later inquiry findings.
 
 ## Accountability after the coverage
 

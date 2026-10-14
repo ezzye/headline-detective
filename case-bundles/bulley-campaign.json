@@ -285,6 +285,14 @@
       "date": "2024-02-13",
       "retrospective": true,
       "text": "The Deputy Chief Constable reported that all but two actions from the review were complete. Media-engagement training and a peer review remained outstanding. These are recorded progress claims by the organisations involved, not an independent implementation audit or proof that wider media practices changed."
+    },
+    {
+      "id": "leveson-case-scope",
+      "label": "Leveson: later ethical comparison",
+      "text": "This selected campaign postdates Leveson’s 2012 report. The report made no findings about it; its discussion can inform a comparison of evidence, dignity, privacy and editorial judgment.",
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+      "date": "2012-11-29",
+      "retrospective": false
     }
   ],
   "reasoningChecks": [
@@ -2387,5 +2395,20 @@
     "checkedAt": "2026-10-14",
     "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
     "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
+  },
+  "levesonContext": {
+    "reportDate": "2012-11-29",
+    "relationship": "ethical_comparison",
+    "summary": "This selected campaign postdates Leveson’s 2012 report. The report made no findings about it; its discussion can inform a comparison of evidence, dignity, privacy and editorial judgment.",
+    "questions": [
+      "Did speculation and personal disclosure add verified public value?",
+      "How did journalists and police handle pressure without unnecessary intrusion?"
+    ],
+    "sourceURL": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+    "sourceLocator": "Volume 2, PartF, chapter 5: Jefferies§4; McCanns§3; Milly Dowler§2.",
+    "evidenceIds": [
+      "leveson-case-scope"
+    ],
+    "limit": "A report finding, a later court decision and an ethical comparison have different scopes. The inquiry does not supply a universal article limit or a verdict about all future coverage."
   }
 }
