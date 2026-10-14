@@ -243,6 +243,14 @@
         "label": "Media source · LBC · 2026-08-13",
         "url": "https://www.lbc.co.uk/videos/2JsSf7HeNf8/",
         "text": "The original page advertises a discussion of the Cambridge inquiry with Lord Finkelstein and Nick Ferrari. The clip itself was not transcribed in this pass. Date basis: hosting_page_publication. This is video-page metadata and a programme-associated title. The page does not establish linear radio airtime, clip duration, audience, or the full argument made."
+      },
+      {
+        "id": "editorial-arday-1",
+        "label": "Cambridge and diversity · Editorial",
+        "url": "https://www.theguardian.com/commentisfree/2026/aug/07/the-guardian-view-on-jason-arday-diversity-advocates-must-stand-firm",
+        "date": "2026-08-07",
+        "retrospective": false,
+        "text": "Calls for university scrutiny while defending diversity and recommending a pause to the memoir. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. Allegations were still under scrutiny; the editorial is not an adjudication."
       }
     ],
     "reasoningChecks": [
@@ -4134,7 +4142,7 @@
       "gaps": [
         {
           "channel": "social",
-          "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+          "note": "No complete X repost chain, historical engagement curve, or Facebook/Instagram/TikTok sample recovered. Any selected X records are listed separately with their verification limits."
         },
         {
           "channel": "tv",
@@ -4145,7 +4153,36 @@
           "outlet": "GB News",
           "note": "No original GB News clip in this window was verified. A GB News employee’s appearance on Spiked is attributed to Spiked, not GB News."
         }
-      ]
+      ],
+      "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+    },
+    "editorialRecords": [
+      {
+        "id": "editorial-arday-1",
+        "caseId": "arday-2026-campaign",
+        "outlet": "The Guardian",
+        "title": "Cambridge and diversity",
+        "date": "2026-08-07",
+        "phase": "in_window",
+        "editorialType": "institutional_editorial",
+        "byline": null,
+        "label": "Editorial",
+        "url": "https://www.theguardian.com/commentisfree/2026/aug/07/the-guardian-view-on-jason-arday-diversity-advocates-must-stand-firm",
+        "summary": "Calls for university scrutiny while defending diversity and recommending a pause to the memoir.",
+        "sourceBasis": "Publisher page: institutional label and dated text checked.",
+        "contentBasis": "publisher_page",
+        "limit": "Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. Allegations were still under scrutiny; the editorial is not an adjudication.",
+        "verifiedAt": "2026-10-14",
+        "linkedWrittenRecordId": "arday-the-guardian-8",
+        "evidenceIds": [
+          "editorial-arday-1"
+        ]
+      }
+    ],
+    "editorialScope": {
+      "recordCount": 1,
+      "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
+      "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
     }
   },
   {
@@ -4472,6 +4509,14 @@
         "label": "Media source · ITV News · 2019-12-23",
         "url": "https://www.itv.com/news/2019-12-23/caroline-flack-pleads-not-guilty-to-assault",
         "text": "The report covered Flack's first court hearing, where she pleaded not guilty; it also relayed arguments made by the prosecution and defence at the hearing. Date basis: hosting_page_publication. Courtroom claims are reported allegations, not findings. The online publication time does not prove when the clip aired on television; do not treat web page plus embedded clip as two items."
+      },
+      {
+        "id": "editorial-caroline-5",
+        "label": "Restraint after a death · Editorial",
+        "url": "https://www.the-independent.com/independentpremium/caroline-flack-death-media-samaritans-suicide-method-a9345146.html",
+        "date": "2020-02-20",
+        "retrospective": true,
+        "text": "Urges restraint in reporting after Flack’s death, arguing that public interest does not justify sensational detail or disregard for relatives and vulnerable readers. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. This is aftermath after the 14 February cutoff, not evidence of pre-death coverage or a cause of death."
       }
     ],
     "reasoningChecks": [
@@ -7296,13 +7341,42 @@
       "gaps": [
         {
           "channel": "social",
-          "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+          "note": "No complete X repost chain, historical engagement curve, or Facebook/Instagram/TikTok sample recovered. Any selected X records are listed separately with their verification limits."
         },
         {
           "channel": "tv",
           "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
         }
-      ]
+      ],
+      "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+    },
+    "editorialRecords": [
+      {
+        "id": "editorial-caroline-5",
+        "caseId": "caroline-flack-recovered-campaign",
+        "outlet": "The Independent",
+        "title": "Restraint after a death",
+        "date": "2020-02-20",
+        "phase": "aftermath",
+        "editorialType": "institutional_editorial",
+        "byline": null,
+        "label": "Editorial",
+        "url": "https://www.the-independent.com/independentpremium/caroline-flack-death-media-samaritans-suicide-method-a9345146.html",
+        "summary": "Urges restraint in reporting after Flack’s death, arguing that public interest does not justify sensational detail or disregard for relatives and vulnerable readers.",
+        "sourceBasis": "Original publisher page: Editorial label, 20 February 2020 date and accessible argument checked in the browser.",
+        "contentBasis": "publisher_page",
+        "limit": "Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. This is aftermath after the 14 February cutoff, not evidence of pre-death coverage or a cause of death.",
+        "verifiedAt": "2026-10-14",
+        "linkedWrittenRecordId": null,
+        "evidenceIds": [
+          "editorial-caroline-5"
+        ]
+      }
+    ],
+    "editorialScope": {
+      "recordCount": 1,
+      "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
+      "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
     }
   },
   {
@@ -7654,6 +7728,36 @@
         "label": "Media source · BBC Sport · 2018-12-09",
         "url": "https://www.bbc.co.uk/sport/football/46498849",
         "text": "BBC Sport published a page reporting Sterling's criticism of newspaper portrayals of young Black footballers and embedded a clip in which Ian Wright comments on criticism of Sterling. Date basis: hosting_page_publication. This verifies BBC's online publication and embedded clip caption, not a separate broadcast airing or the original upload date of the video. BBC reports Sterling's social post; the article is not itself Sterling's original post."
+      },
+      {
+        "id": "editorial-sterling-leader",
+        "label": "A reported leader response · Leader column, attributed by contemporaneous reporting",
+        "url": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
+        "date": "2018-12-11",
+        "retrospective": false,
+        "text": "Denied racial bias. This link is the report, not the original leader. Its exact original title and publication metadata remain unverified. It evidences an attributed institutional defence, not proof of motive, truth or owner direction."
+      },
+      {
+        "id": "editorial-sterling-kidd",
+        "label": "A sports writer reconsiders the coverage · Comment · Dave Kidd",
+        "url": "https://www.thesun.co.uk/sport/football/7947922/defiant-raheem-sterling-racism-media/",
+        "date": "2018-12-10",
+        "retrospective": false,
+        "text": "Kidd welcomed Sterling’s challenge and acknowledged unfair reporting. He defended the tattoo as a legitimate topic while saying he would not have made it the front-page lead. He called for greater diversity and dialogue in sports journalism. This is the named writer’s argument, not an unsigned leader or a statement by the owner. Its online date precedes the next day’s reported leader; disagreement is documented, but private editorial discussions are not reconstructed here."
+      },
+      {
+        "id": "media-sterling-lineker",
+        "label": "Lineker challenges the coverage",
+        "url": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
+        "date": "2018-05-29",
+        "text": "Praises Sterling’s work ethic and condemns his treatment, linking Keyworth’s thread. Displayed timezone is not stated. Likes and reposts observed years later cannot establish the audience or pace of circulation during the 2018 window."
+      },
+      {
+        "id": "media-sterling-keyworth",
+        "label": "A headline-comparison thread",
+        "url": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
+        "date": "2018-05-29",
+        "text": "JOE reports a thread collecting negative coverage and describes it as widely shared that morning. The date plotted is the report’s date, not a verified thread publication date. The full thread and screenshots were not recovered; no article list or reach number is inferred."
       }
     ],
     "reasoningChecks": [
@@ -10272,17 +10376,118 @@
           "media-sterling-1"
         ],
         "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-sterling-lineker",
+        "caseId": "sterling-campaign",
+        "outlet": "Gary Lineker (@GaryLineker)",
+        "channel": "social",
+        "format": "social_post",
+        "platform": "Twitter / X",
+        "title": "Lineker challenges the coverage",
+        "date": "2018-05-29",
+        "dateBasis": "platform_post_date",
+        "publicationDisplay": "X displays 12:31 AM · 29 May 2018; timezone not established.",
+        "programme": null,
+        "url": "https://x.com/GaryLineker/status/1001244624323686400",
+        "contentBasis": "original_post",
+        "sourceBasis": "Original X page: author, displayed 29 May 2018 date, text and link to Keyworth’s thread checked. Contemporary JOE report independently describes the sharing.",
+        "summary": "Praises Sterling’s work ethic and condemns his treatment, linking Keyworth’s thread.",
+        "limit": "Displayed timezone is not stated. Likes and reposts observed years later cannot establish the audience or pace of circulation during the 2018 window.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "publicationRelationship": "counter_speech",
+        "relationshipNote": "A response to coverage can spread the subject’s name while challenging the framing. It is not automatically an attack on the subject or another independent news report.",
+        "distributionEvents": [
+          {
+            "kind": "linked_post",
+            "date": "2018-05-29",
+            "url": "https://x.com/adamkeyworth/status/1001218545588502530",
+            "note": "Lineker’s original post links this thread; not represented as a native repost."
+          }
+        ],
+        "observedMetrics": [
+          {
+            "name": "shares",
+            "value": 4645,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/GaryLineker/status/1001244624323686400",
+            "scope": "Current cumulative platform counter observed on 14 October 2026; not 2018 reach, unique people, original-period engagement, or proof of harm."
+          },
+          {
+            "name": "likes",
+            "value": 20547,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/GaryLineker/status/1001244624323686400",
+            "scope": "Current cumulative platform counter observed on 14 October 2026; not 2018 reach, unique people, original-period engagement, or proof of harm."
+          }
+        ],
+        "evidenceIds": [
+          "media-sterling-lineker"
+        ],
+        "verifiedAt": "2026-10-14",
+        "actorType": "football pundit, speaking personally",
+        "reportURL": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
+        "reportDate": "2018-05-29"
+      },
+      {
+        "id": "media-sterling-keyworth",
+        "caseId": "sterling-campaign",
+        "outlet": "Adam Keyworth (@adamkeyworth)",
+        "channel": "social",
+        "format": "social_post",
+        "platform": "Twitter / X",
+        "title": "A headline-comparison thread",
+        "date": "2018-05-29",
+        "dateBasis": "contemporaneous_report_date",
+        "publicationDisplay": "Documented by JOE at 09:57 BST on 29 May 2018. Original post date not recovered.",
+        "programme": null,
+        "url": "https://x.com/adamkeyworth/status/1001218545588502530",
+        "contentBasis": "contemporaneous_report",
+        "sourceBasis": "JOE’s 29 May 2018 report links the exact thread and describes Lineker sharing it. The original thread currently returns a page-unavailable message.",
+        "summary": "JOE reports a thread collecting negative coverage and describes it as widely shared that morning.",
+        "limit": "The date plotted is the report’s date, not a verified thread publication date. The full thread and screenshots were not recovered; no article list or reach number is inferred.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "publicationRelationship": "counter_speech",
+        "relationshipNote": "A response to coverage can spread the subject’s name while challenging the framing. It is not automatically an attack on the subject or another independent news report.",
+        "distributionEvents": [],
+        "observedMetrics": [],
+        "evidenceIds": [
+          "media-sterling-keyworth"
+        ],
+        "verifiedAt": "2026-10-14",
+        "actorType": "individual commentator",
+        "reportURL": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
+        "reportDate": "2018-05-29",
+        "postPublicationDate": null,
+        "viralityEvidence": {
+          "status": "contemporaneous_description_only",
+          "description": "JOE called the thread “widely shared” on 29 May; no numeric reach or growth rate is established.",
+          "sourceURL": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
+          "date": "2018-05-29"
+        }
       }
     ],
     "mediaScope": {
       "verifiedAt": "2026-10-14",
-      "recordCount": 1,
+      "recordCount": 3,
       "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
       "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
       "gaps": [
         {
           "channel": "social",
-          "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+          "note": "No complete X repost chain, historical engagement curve, or Facebook/Instagram/TikTok sample recovered. Any selected X records are listed separately with their verification limits."
         },
         {
           "channel": "tv",
@@ -10292,7 +10497,57 @@
           "channel": "radio",
           "note": "The located BBC Radio5Live programme lead is linked from a May2019 article, outside the selected2018window; it is not counted."
         }
-      ]
+      ],
+      "socialPostRecovery": "2 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+    },
+    "editorialRecords": [
+      {
+        "id": "editorial-sterling-leader",
+        "caseId": "sterling-campaign",
+        "outlet": "The Sun",
+        "title": "A reported leader response",
+        "date": "2018-12-11",
+        "phase": "in_window",
+        "editorialType": "institutional_editorial",
+        "byline": null,
+        "label": "Leader column, attributed by contemporaneous reporting",
+        "url": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
+        "summary": "Denied racial bias.",
+        "sourceBasis": "Contemporaneous publisher report identifies a Sun leader. Original leader page not recovered.",
+        "contentBasis": "contemporaneous_report",
+        "limit": "This link is the report, not the original leader. Its exact original title and publication metadata remain unverified. It evidences an attributed institutional defence, not proof of motive, truth or owner direction.",
+        "verifiedAt": "2026-10-14",
+        "linkedWrittenRecordId": null,
+        "evidenceIds": [
+          "editorial-sterling-leader"
+        ]
+      },
+      {
+        "id": "editorial-sterling-kidd",
+        "caseId": "sterling-campaign",
+        "outlet": "The Sun",
+        "title": "A sports writer reconsiders the coverage",
+        "date": "2018-12-10",
+        "phase": "in_window",
+        "editorialType": "bylined_opinion",
+        "byline": "Dave Kidd",
+        "label": "Comment",
+        "url": "https://www.thesun.co.uk/sport/football/7947922/defiant-raheem-sterling-racism-media/",
+        "summary": "Kidd welcomed Sterling’s challenge and acknowledged unfair reporting. He defended the tattoo as a legitimate topic while saying he would not have made it the front-page lead. He called for greater diversity and dialogue in sports journalism.",
+        "sourceBasis": "Original publisher page identifies Dave Kidd, Comment and publication at 22:30 on 10 December 2018.",
+        "contentBasis": "publisher_page",
+        "limit": "This is the named writer’s argument, not an unsigned leader or a statement by the owner. Its online date precedes the next day’s reported leader; disagreement is documented, but private editorial discussions are not reconstructed here.",
+        "verifiedAt": "2026-10-14",
+        "linkedWrittenRecordId": null,
+        "evidenceIds": [
+          "editorial-sterling-kidd"
+        ]
+      }
+    ],
+    "editorialScope": {
+      "recordCount": 2,
+      "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
+      "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
     }
   },
   {
@@ -11849,7 +12104,7 @@
       "gaps": [
         {
           "channel": "social",
-          "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+          "note": "No complete X repost chain, historical engagement curve, or Facebook/Instagram/TikTok sample recovered. Any selected X records are listed separately with their verification limits."
         },
         {
           "channel": "tv",
@@ -11859,7 +12114,14 @@
           "channel": "all",
           "note": "No recovered media records in this first pass. This does not mean there was no broadcast or social coverage."
         }
-      ]
+      ],
+      "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+    },
+    "editorialRecords": [],
+    "editorialScope": {
+      "recordCount": 0,
+      "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
+      "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
     }
   },
   {
@@ -12103,6 +12365,29 @@
         "label": "Media source · BBC Radio 4 · 2023-02-22",
         "url": "https://www.bbc.co.uk/programmes/m001jc8s",
         "text": "The programme asks what media should learn from the family’s criticism of coverage. The same episode also discusses war reporting; its full duration is not time devoted solely to Bulley. Date basis: broadcast_schedule. Programme description and schedule were checked; the audio was not transcribed or timed by topic. The two slots establish a first listed broadcast and repeat of one episode, not two independent reports. No listening figures are supplied."
+      },
+      {
+        "id": "editorial-bulley-2",
+        "label": "Policing and privacy · Editorial",
+        "url": "https://www.the-independent.com/voices/editorials/nicola-bulley-lancashire-police-disappearance-crime-b2283691.html",
+        "date": "2023-02-16",
+        "retrospective": false,
+        "text": "Criticises police disclosure and calls for a more sensitive investigation, placing the case in a wider argument about policing and women’s safety. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication."
+      },
+      {
+        "id": "editorial-bulley-3",
+        "label": "Privacy and online speculation · Observer editorial",
+        "url": "https://www.theguardian.com/commentisfree/2023/feb/19/the-observer-view-on-the-mistakes-made-in-the-investigation-into-nicola-bulleys-disappearance",
+        "date": "2023-02-19",
+        "retrospective": false,
+        "text": "Calls for police review; criticises intrusive disclosure and disruptive online speculation. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. Published at 06:30 GMT on 19 February, before the body discovery announced later that day; it cannot respond to that later event."
+      },
+      {
+        "id": "media-bulley-creasy",
+        "label": "Questions about disclosure",
+        "url": "https://www.theguardian.com/uk-news/2023/feb/16/nicola-bulley-personal-details-police",
+        "date": "2023-02-15",
+        "text": "Questions how disclosure helps the search. This is counter-speech about police conduct, not an attack on Bulley. Original page verification is separately labelled; no historical reach or distribution curve is available."
       }
     ],
     "reasoningChecks": [
@@ -13996,23 +14281,109 @@
           "media-bulley-5"
         ],
         "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-bulley-creasy",
+        "caseId": "bulley-campaign",
+        "outlet": "Stella Creasy (@stellacreasy)",
+        "channel": "social",
+        "format": "social_post",
+        "platform": "Twitter / X",
+        "title": "Questions about disclosure",
+        "date": "2023-02-15",
+        "dateBasis": "attributed_post_date",
+        "publicationDisplay": "Date attributed in contemporary reporting.",
+        "programme": null,
+        "url": "https://x.com/stellacreasy/status/1625919564797050885",
+        "contentBasis": "contemporaneous_report",
+        "sourceBasis": "Contemporary publisher embed links and dates the post.",
+        "summary": "Questions how disclosure helps the search.",
+        "limit": "This is counter-speech about police conduct, not an attack on Bulley. Original page verification is separately labelled; no historical reach or distribution curve is available.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "publicationRelationship": "counter_speech",
+        "relationshipNote": "A response to coverage can spread the subject’s name while challenging the framing. It is not automatically an attack on the subject or another independent news report.",
+        "distributionEvents": [],
+        "observedMetrics": [],
+        "evidenceIds": [
+          "media-bulley-creasy"
+        ],
+        "verifiedAt": "2026-10-14",
+        "actorType": "MP, speaking on police disclosure",
+        "reportURL": "https://www.theguardian.com/uk-news/2023/feb/16/nicola-bulley-personal-details-police",
+        "reportDate": "2023-02-16"
       }
     ],
     "mediaScope": {
       "verifiedAt": "2026-10-14",
-      "recordCount": 5,
+      "recordCount": 6,
       "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
       "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
       "gaps": [
         {
           "channel": "social",
-          "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+          "note": "No complete X repost chain, historical engagement curve, or Facebook/Instagram/TikTok sample recovered. Any selected X records are listed separately with their verification limits."
         },
         {
           "channel": "tv",
           "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
         }
-      ]
+      ],
+      "socialPostRecovery": "1 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+    },
+    "editorialRecords": [
+      {
+        "id": "editorial-bulley-2",
+        "caseId": "bulley-campaign",
+        "outlet": "The Independent",
+        "title": "Policing and privacy",
+        "date": "2023-02-16",
+        "phase": "in_window",
+        "editorialType": "institutional_editorial",
+        "byline": null,
+        "label": "Editorial",
+        "url": "https://www.the-independent.com/voices/editorials/nicola-bulley-lancashire-police-disappearance-crime-b2283691.html",
+        "summary": "Criticises police disclosure and calls for a more sensitive investigation, placing the case in a wider argument about policing and women’s safety.",
+        "sourceBasis": "Publisher page: institutional label and dated text checked.",
+        "contentBasis": "publisher_page",
+        "limit": "Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication.",
+        "verifiedAt": "2026-10-14",
+        "linkedWrittenRecordId": null,
+        "evidenceIds": [
+          "editorial-bulley-2"
+        ]
+      },
+      {
+        "id": "editorial-bulley-3",
+        "caseId": "bulley-campaign",
+        "outlet": "The Observer",
+        "title": "Privacy and online speculation",
+        "date": "2023-02-19",
+        "phase": "in_window",
+        "editorialType": "institutional_editorial",
+        "byline": null,
+        "label": "Observer editorial",
+        "url": "https://www.theguardian.com/commentisfree/2023/feb/19/the-observer-view-on-the-mistakes-made-in-the-investigation-into-nicola-bulleys-disappearance",
+        "summary": "Calls for police review; criticises intrusive disclosure and disruptive online speculation.",
+        "sourceBasis": "Publisher page: institutional label and dated text checked.",
+        "contentBasis": "publisher_page",
+        "limit": "Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. Published at 06:30 GMT on 19 February, before the body discovery announced later that day; it cannot respond to that later event.",
+        "verifiedAt": "2026-10-14",
+        "linkedWrittenRecordId": null,
+        "evidenceIds": [
+          "editorial-bulley-3"
+        ]
+      }
+    ],
+    "editorialScope": {
+      "recordCount": 2,
+      "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
+      "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
     }
   },
   {
@@ -14573,6 +14944,14 @@
         "url": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
         "date": "2011-11",
         "text": "Witness statement and cited exhibit bundle reproduce print headlines; they are not recovered original publisher webpages."
+      },
+      {
+        "id": "editorial-jefferies-4",
+        "label": "Restraint before charge · Leading article",
+        "url": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
+        "date": "2011-02-01",
+        "retrospective": false,
+        "text": "Condemns prejudicial coverage of an uncharged suspect and calls for stronger restraint. It considers both suspect anonymity and the difficulty of regulating online publication. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. The publisher displays 31 January 19:00 EST, equivalent to 1 February 00:00 GMT; the bundle uses the UK date."
       }
     ],
     "reasoningChecks": [
@@ -17617,7 +17996,7 @@
       "gaps": [
         {
           "channel": "social",
-          "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+          "note": "No complete X repost chain, historical engagement curve, or Facebook/Instagram/TikTok sample recovered. Any selected X records are listed separately with their verification limits."
         },
         {
           "channel": "tv",
@@ -17631,7 +18010,36 @@
           "channel": "radio",
           "note": "A Hacked Off transcript links to a BBC Today interview, but the original was not verified here. It remains an uncounted lead."
         }
-      ]
+      ],
+      "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+    },
+    "editorialRecords": [
+      {
+        "id": "editorial-jefferies-4",
+        "caseId": "jefferies-campaign",
+        "outlet": "The Independent",
+        "title": "Restraint before charge",
+        "date": "2011-02-01",
+        "phase": "in_window",
+        "editorialType": "institutional_editorial",
+        "byline": null,
+        "label": "Leading article",
+        "url": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
+        "summary": "Condemns prejudicial coverage of an uncharged suspect and calls for stronger restraint. It considers both suspect anonymity and the difficulty of regulating online publication.",
+        "sourceBasis": "Publisher page: institutional label and dated text checked.",
+        "contentBasis": "publisher_page",
+        "limit": "Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. The publisher displays 31 January 19:00 EST, equivalent to 1 February 00:00 GMT; the bundle uses the UK date.",
+        "verifiedAt": "2026-10-14",
+        "linkedWrittenRecordId": "jefferies-h06",
+        "evidenceIds": [
+          "editorial-jefferies-4"
+        ]
+      }
+    ],
+    "editorialScope": {
+      "recordCount": 1,
+      "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
+      "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
     }
   }
 ]

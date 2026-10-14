@@ -1532,7 +1532,7 @@
     "gaps": [
       {
         "channel": "social",
-        "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+        "note": "No complete X repost chain, historical engagement curve, or Facebook/Instagram/TikTok sample recovered. Any selected X records are listed separately with their verification limits."
       },
       {
         "channel": "tv",
@@ -1542,6 +1542,13 @@
         "channel": "all",
         "note": "No recovered media records in this first pass. This does not mean there was no broadcast or social coverage."
       }
-    ]
+    ],
+    "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+  },
+  "editorialRecords": [],
+  "editorialScope": {
+    "recordCount": 0,
+    "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
+    "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
   }
 }

@@ -242,6 +242,14 @@
       "label": "Media source · LBC · 2026-08-13",
       "url": "https://www.lbc.co.uk/videos/2JsSf7HeNf8/",
       "text": "The original page advertises a discussion of the Cambridge inquiry with Lord Finkelstein and Nick Ferrari. The clip itself was not transcribed in this pass. Date basis: hosting_page_publication. This is video-page metadata and a programme-associated title. The page does not establish linear radio airtime, clip duration, audience, or the full argument made."
+    },
+    {
+      "id": "editorial-arday-1",
+      "label": "Cambridge and diversity · Editorial",
+      "url": "https://www.theguardian.com/commentisfree/2026/aug/07/the-guardian-view-on-jason-arday-diversity-advocates-must-stand-firm",
+      "date": "2026-08-07",
+      "retrospective": false,
+      "text": "Calls for university scrutiny while defending diversity and recommending a pause to the memoir. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. Allegations were still under scrutiny; the editorial is not an adjudication."
     }
   ],
   "reasoningChecks": [
@@ -4113,7 +4121,7 @@
     "gaps": [
       {
         "channel": "social",
-        "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+        "note": "No complete X repost chain, historical engagement curve, or Facebook/Instagram/TikTok sample recovered. Any selected X records are listed separately with their verification limits."
       },
       {
         "channel": "tv",
@@ -4124,6 +4132,35 @@
         "outlet": "GB News",
         "note": "No original GB News clip in this window was verified. A GB News employee’s appearance on Spiked is attributed to Spiked, not GB News."
       }
-    ]
+    ],
+    "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+  },
+  "editorialRecords": [
+    {
+      "id": "editorial-arday-1",
+      "caseId": "arday-2026-campaign",
+      "outlet": "The Guardian",
+      "title": "Cambridge and diversity",
+      "date": "2026-08-07",
+      "phase": "in_window",
+      "editorialType": "institutional_editorial",
+      "byline": null,
+      "label": "Editorial",
+      "url": "https://www.theguardian.com/commentisfree/2026/aug/07/the-guardian-view-on-jason-arday-diversity-advocates-must-stand-firm",
+      "summary": "Calls for university scrutiny while defending diversity and recommending a pause to the memoir.",
+      "sourceBasis": "Publisher page: institutional label and dated text checked.",
+      "contentBasis": "publisher_page",
+      "limit": "Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. Allegations were still under scrutiny; the editorial is not an adjudication.",
+      "verifiedAt": "2026-10-14",
+      "linkedWrittenRecordId": "arday-the-guardian-8",
+      "evidenceIds": [
+        "editorial-arday-1"
+      ]
+    }
+  ],
+  "editorialScope": {
+    "recordCount": 1,
+    "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
+    "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
   }
 }

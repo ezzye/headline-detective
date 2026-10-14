@@ -3,15 +3,15 @@ import {summarizeMedia,validMediaRecord} from './media-evidence.mjs';import {cre
 const cases=JSON.parse(await readFile(new URL('./campaigns.json',import.meta.url),'utf8'));
 const post=(app,url,body)=>new Promise(resolve=>{const req=Readable.from([Buffer.from(JSON.stringify(body))]);Object.assign(req,{method:'POST',url,headers:{host:'127.0.0.1','content-type':'application/json'}});let status;app.server.emit('request',req,{writeHead(s){status=s},end(bytes){resolve({status,json:JSON.parse(bytes)})}})});
 test('cross-media sample preserves written census boundaries and accounts for linked formats',async()=>{
- assert.equal(cases.reduce((n,c)=>n+c.allHeadlines.length,0),179);const media=cases.flatMap(c=>c.mediaRecords);assert.equal(media.length,10);assert.equal(new Set(media.map(r=>r.id)).size,10);assert.equal(summarizeMedia(media).linkedWrittenFormats,3);
- assert.deepEqual(summarizeMedia(media).categories.map(c=>c.count),[6,2,2]);
+ assert.equal(cases.reduce((n,c)=>n+c.allHeadlines.length,0),179);const media=cases.flatMap(c=>c.mediaRecords);assert.equal(media.length,13);assert.equal(new Set(media.map(r=>r.id)).size,13);assert.equal(summarizeMedia(media).linkedWrittenFormats,3);
+ assert.deepEqual(summarizeMedia(media).categories.map(c=>c.count),[6,2,5]);
  for(const c of cases){assert.equal(c.mediaScope.recordCount,c.mediaRecords.length);assert(c.mediaRecords.every(r=>validMediaRecord(r,c)));const bundle=JSON.parse(await readFile(new URL(`./case-bundles/${c.id}.json`,import.meta.url),'utf8'));assert.deepEqual(bundle.mediaRecords,c.mediaRecords);assert.deepEqual(bundle.mediaScope,c.mediaScope);}
  assert(!media.some(r=>r.date>'2018-12-16'&&r.caseId==='sterling-campaign'));assert(!media.some(r=>r.outlet==='GB News'&&r.caseId==='arday-2026-campaign'));
  const guest=media.find(r=>r.programme==='Last Orders - a spiked podcast');assert.equal(guest.outlet,'Spiked');assert.equal(guest.channel,'podcast');
 });
 test('a repeated programme remains one source, full duration is not topic time, and current counters retain observation date',()=>{
  const r=cases.flatMap(c=>c.mediaRecords).find(r=>r.outlet==='BBC Radio 4');const summary=summarizeMedia([r,r]);assert.equal(summary.recordCount,1);assert.equal(summary.knownBroadcastSlots,2);assert.deepEqual(r.distributionEvents.map(e=>e.time),['16:30','21:30']);assert.equal(r.duration.totalSeconds,1680);assert.equal(r.duration.topicSeconds,null);assert.match(r.summary,/war reporting/);
- const v=cases.flatMap(c=>c.mediaRecords).find(r=>r.observedMetrics.length);assert.equal(v.date,'2023-02-15');assert.equal(v.dateBasis,'platform_upload_date');assert.equal(v.observedMetrics[0].value,56500);assert.match(v.observedMetrics[0].observedAt,/^2026-10-14/);assert.match(v.observedMetrics[0].scope,/not unique people, campaign-period views/);
+ const v=cases.flatMap(c=>c.mediaRecords).find(r=>r.id==="media-bulley-3");assert.equal(v.date,'2023-02-15');assert.equal(v.dateBasis,'platform_upload_date');assert.equal(v.observedMetrics[0].value,56500);assert.match(v.observedMetrics[0].observedAt,/^2026-10-14/);assert.match(v.observedMetrics[0].scope,/not unique people, campaign-period views/);
 });
 test('invalid media dates, evidence and invented topic durations fail closed at session creation',async t=>{
  const c=structuredClone(cases.find(c=>c.id==='bulley-campaign')),dir=await mkdtemp(path.join(tmpdir(),'media-guard-'));t.after(()=>rm(dir,{recursive:true,force:true}));const file=path.join(dir,'campaigns.json');
@@ -24,4 +24,16 @@ test('media Q&A attributes only selected publisher records and distinguishes gap
  const reply=(await post(app,'/api/campaign/respond',{sessionId:s.sessionId,outletId:itv.outletId,question:'What did the video add beyond the written report?'})).json;
  let packet=JSON.parse(captured.messages[1].content).trustedCampaign;assert.equal(packet.mediaContext.ownRecords.length,2);assert.match(captured.messages[0].content,/Only defend this desk's own chronologicalRecords, selectedDeskRecordDates and mediaContext.ownRecords/);assert(packet.mediaContext.ownRecords.every(r=>r.linkedWrittenRecordId));assert.match(reply.reply,/second format/);assert.doesNotMatch(reply.reply,/ITV/);assert(reply.evidenceIds.every(id=>id.startsWith('media-')));
  const question='Was a foreign state paying for this social media campaign?';const out=(await post(app,'/api/campaign/respond',{sessionId:s.sessionId,outletId:other.outletId,question})).json;packet=JSON.parse(captured.messages[1].content).trustedCampaign;assert.equal(packet.mediaContext.ownRecords.length,0);assert.equal(packet.mediaContext.otherOutletRecordCount,2);assert.match(out.reply,/collection gap, not proof/);assert.match(out.reply,/do not establish who paid/);assert.match(captured.messages[0].content,/Never infer financing, direction or foreign coordination/);assert(!packet.evidence.some(e=>e.id.startsWith('media-')));
+});
+
+test('X evidence distinguishes original posts, attributed dates and dated cumulative counters',()=>{
+ const c=cases.find(c=>c.id==='sterling-campaign'),posts=c.mediaRecords.filter(r=>r.format==='social_post'),lineker=posts.find(r=>r.id==='media-sterling-lineker'),thread=posts.find(r=>r.id==='media-sterling-keyworth');
+ assert.equal(lineker.contentBasis,'original_post');assert.equal(lineker.dateBasis,'platform_post_date');assert.equal(lineker.observedMetrics.find(m=>m.name==='shares').value,4645);assert(lineker.observedMetrics.every(m=>m.observedAt==='2026-10-14'&&/not 2018 reach/.test(m.scope)));assert.equal(lineker.distributionEvents[0].kind,'linked_post');assert.equal(thread.date,thread.reportDate);assert.equal(thread.postPublicationDate,null);assert.equal(thread.viralityEvidence.status,'contemporaneous_description_only');assert.equal(thread.observedMetrics.length,0);
+ for(const mutate of [r=>r.reportURL='javascript:x',r=>r.reportDate='bad',r=>r.postPublicationDate='2018-05-28',r=>r.dateBasis='platform_upload_date']){const changed=structuredClone(thread);mutate(changed);assert.equal(validMediaRecord(changed,c),false);}
+});
+
+test('external social criticism is available as context without becoming the selected desk’s publication',async()=>{
+ let captured;const app=createGameServer({env:{DEEPSEEK_API_KEY:'synthetic'},random:()=>0,fetchImpl:async(_url,opts)=>{captured=JSON.parse(opts.body);throw Error('synthetic');}}),c=cases.find(c=>c.id==='sterling-campaign'),s=(await post(app,'/api/campaign/session',{caseId:c.id})).json,state=app.sessions.get(s.sessionId),desk=s.desks.find(d=>state.campaignByDesk[d.outletId].outlet==='The Sun');
+ const out=(await post(app,'/api/campaign/respond',{sessionId:s.sessionId,outletId:desk.outletId,question:'What do the social posts show about amplification and pushback?'})).json,packet=JSON.parse(captured.messages[1].content).trustedCampaign;
+ assert.equal(packet.counterSpeechContext.contextRecords.length,2);assert.equal(packet.mediaContext.ownRecords.length,0);assert(packet.evidence.some(e=>e.id==='media-sterling-lineker'));assert.match(out.reply,/outside our desk/);assert.match(out.reply,/not automatically an attack/);assert.doesNotMatch(out.reply,/The Sun/);
 });

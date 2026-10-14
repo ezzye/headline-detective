@@ -239,6 +239,29 @@
       "label": "Media source · BBC Radio 4 · 2023-02-22",
       "url": "https://www.bbc.co.uk/programmes/m001jc8s",
       "text": "The programme asks what media should learn from the family’s criticism of coverage. The same episode also discusses war reporting; its full duration is not time devoted solely to Bulley. Date basis: broadcast_schedule. Programme description and schedule were checked; the audio was not transcribed or timed by topic. The two slots establish a first listed broadcast and repeat of one episode, not two independent reports. No listening figures are supplied."
+    },
+    {
+      "id": "editorial-bulley-2",
+      "label": "Policing and privacy · Editorial",
+      "url": "https://www.the-independent.com/voices/editorials/nicola-bulley-lancashire-police-disappearance-crime-b2283691.html",
+      "date": "2023-02-16",
+      "retrospective": false,
+      "text": "Criticises police disclosure and calls for a more sensitive investigation, placing the case in a wider argument about policing and women’s safety. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication."
+    },
+    {
+      "id": "editorial-bulley-3",
+      "label": "Privacy and online speculation · Observer editorial",
+      "url": "https://www.theguardian.com/commentisfree/2023/feb/19/the-observer-view-on-the-mistakes-made-in-the-investigation-into-nicola-bulleys-disappearance",
+      "date": "2023-02-19",
+      "retrospective": false,
+      "text": "Calls for police review; criticises intrusive disclosure and disruptive online speculation. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. Published at 06:30 GMT on 19 February, before the body discovery announced later that day; it cannot respond to that later event."
+    },
+    {
+      "id": "media-bulley-creasy",
+      "label": "Questions about disclosure",
+      "url": "https://www.theguardian.com/uk-news/2023/feb/16/nicola-bulley-personal-details-police",
+      "date": "2023-02-15",
+      "text": "Questions how disclosure helps the search. This is counter-speech about police conduct, not an attack on Bulley. Original page verification is separately labelled; no historical reach or distribution curve is available."
     }
   ],
   "reasoningChecks": [
@@ -2112,22 +2135,108 @@
         "media-bulley-5"
       ],
       "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-bulley-creasy",
+      "caseId": "bulley-campaign",
+      "outlet": "Stella Creasy (@stellacreasy)",
+      "channel": "social",
+      "format": "social_post",
+      "platform": "Twitter / X",
+      "title": "Questions about disclosure",
+      "date": "2023-02-15",
+      "dateBasis": "attributed_post_date",
+      "publicationDisplay": "Date attributed in contemporary reporting.",
+      "programme": null,
+      "url": "https://x.com/stellacreasy/status/1625919564797050885",
+      "contentBasis": "contemporaneous_report",
+      "sourceBasis": "Contemporary publisher embed links and dates the post.",
+      "summary": "Questions how disclosure helps the search.",
+      "limit": "This is counter-speech about police conduct, not an attack on Bulley. Original page verification is separately labelled; no historical reach or distribution curve is available.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "publicationRelationship": "counter_speech",
+      "relationshipNote": "A response to coverage can spread the subject’s name while challenging the framing. It is not automatically an attack on the subject or another independent news report.",
+      "distributionEvents": [],
+      "observedMetrics": [],
+      "evidenceIds": [
+        "media-bulley-creasy"
+      ],
+      "verifiedAt": "2026-10-14",
+      "actorType": "MP, speaking on police disclosure",
+      "reportURL": "https://www.theguardian.com/uk-news/2023/feb/16/nicola-bulley-personal-details-police",
+      "reportDate": "2023-02-16"
     }
   ],
   "mediaScope": {
     "verifiedAt": "2026-10-14",
-    "recordCount": 5,
+    "recordCount": 6,
     "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
     "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
     "gaps": [
       {
         "channel": "social",
-        "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+        "note": "No complete X repost chain, historical engagement curve, or Facebook/Instagram/TikTok sample recovered. Any selected X records are listed separately with their verification limits."
       },
       {
         "channel": "tv",
         "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
       }
-    ]
+    ],
+    "socialPostRecovery": "1 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+  },
+  "editorialRecords": [
+    {
+      "id": "editorial-bulley-2",
+      "caseId": "bulley-campaign",
+      "outlet": "The Independent",
+      "title": "Policing and privacy",
+      "date": "2023-02-16",
+      "phase": "in_window",
+      "editorialType": "institutional_editorial",
+      "byline": null,
+      "label": "Editorial",
+      "url": "https://www.the-independent.com/voices/editorials/nicola-bulley-lancashire-police-disappearance-crime-b2283691.html",
+      "summary": "Criticises police disclosure and calls for a more sensitive investigation, placing the case in a wider argument about policing and women’s safety.",
+      "sourceBasis": "Publisher page: institutional label and dated text checked.",
+      "contentBasis": "publisher_page",
+      "limit": "Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication.",
+      "verifiedAt": "2026-10-14",
+      "linkedWrittenRecordId": null,
+      "evidenceIds": [
+        "editorial-bulley-2"
+      ]
+    },
+    {
+      "id": "editorial-bulley-3",
+      "caseId": "bulley-campaign",
+      "outlet": "The Observer",
+      "title": "Privacy and online speculation",
+      "date": "2023-02-19",
+      "phase": "in_window",
+      "editorialType": "institutional_editorial",
+      "byline": null,
+      "label": "Observer editorial",
+      "url": "https://www.theguardian.com/commentisfree/2023/feb/19/the-observer-view-on-the-mistakes-made-in-the-investigation-into-nicola-bulleys-disappearance",
+      "summary": "Calls for police review; criticises intrusive disclosure and disruptive online speculation.",
+      "sourceBasis": "Publisher page: institutional label and dated text checked.",
+      "contentBasis": "publisher_page",
+      "limit": "Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. Published at 06:30 GMT on 19 February, before the body discovery announced later that day; it cannot respond to that later event.",
+      "verifiedAt": "2026-10-14",
+      "linkedWrittenRecordId": null,
+      "evidenceIds": [
+        "editorial-bulley-3"
+      ]
+    }
+  ],
+  "editorialScope": {
+    "recordCount": 2,
+    "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
+    "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
   }
 }

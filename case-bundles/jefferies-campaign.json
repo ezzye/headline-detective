@@ -556,6 +556,14 @@
       "url": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
       "date": "2011-11",
       "text": "Witness statement and cited exhibit bundle reproduce print headlines; they are not recovered original publisher webpages."
+    },
+    {
+      "id": "editorial-jefferies-4",
+      "label": "Restraint before charge · Leading article",
+      "url": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
+      "date": "2011-02-01",
+      "retrospective": false,
+      "text": "Condemns prejudicial coverage of an uncharged suspect and calls for stronger restraint. It considers both suspect anonymity and the difficulty of regulating online publication. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. The publisher displays 31 January 19:00 EST, equivalent to 1 February 00:00 GMT; the bundle uses the UK date."
     }
   ],
   "reasoningChecks": [
@@ -3580,7 +3588,7 @@
     "gaps": [
       {
         "channel": "social",
-        "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+        "note": "No complete X repost chain, historical engagement curve, or Facebook/Instagram/TikTok sample recovered. Any selected X records are listed separately with their verification limits."
       },
       {
         "channel": "tv",
@@ -3594,6 +3602,35 @@
         "channel": "radio",
         "note": "A Hacked Off transcript links to a BBC Today interview, but the original was not verified here. It remains an uncounted lead."
       }
-    ]
+    ],
+    "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+  },
+  "editorialRecords": [
+    {
+      "id": "editorial-jefferies-4",
+      "caseId": "jefferies-campaign",
+      "outlet": "The Independent",
+      "title": "Restraint before charge",
+      "date": "2011-02-01",
+      "phase": "in_window",
+      "editorialType": "institutional_editorial",
+      "byline": null,
+      "label": "Leading article",
+      "url": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
+      "summary": "Condemns prejudicial coverage of an uncharged suspect and calls for stronger restraint. It considers both suspect anonymity and the difficulty of regulating online publication.",
+      "sourceBasis": "Publisher page: institutional label and dated text checked.",
+      "contentBasis": "publisher_page",
+      "limit": "Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. The publisher displays 31 January 19:00 EST, equivalent to 1 February 00:00 GMT; the bundle uses the UK date.",
+      "verifiedAt": "2026-10-14",
+      "linkedWrittenRecordId": "jefferies-h06",
+      "evidenceIds": [
+        "editorial-jefferies-4"
+      ]
+    }
+  ],
+  "editorialScope": {
+    "recordCount": 1,
+    "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
+    "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
   }
 }

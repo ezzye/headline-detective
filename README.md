@@ -58,3 +58,7 @@ Six case bundles contain 179 retained dated records and 22 playable outlet desks
 ## Cross-media pilot · 14 October 2026
 
 `mediaRecords` adds ten observed audiovisual/social source records across four cases without changing179written records. Linked embedded formats, programme repeats, metadata-only verification, whole-programme duration and timestamped current counters are explicit. Original X/Facebook/Instagram/TikTok chains, complete linear-TV inventories and financing/coordination remain gaps. See `crossmedia.html` and `media-records.csv`. Public media players are links, with no autoplay or copying.
+
+### Social posts and editorial positions
+
+The timeline now includes a separate editorial audit and dated X/Twitter evidence. `editorialRecords` distinguishes unsigned institutional leaders, bylined opinion and public owner statements. `phase: aftermath` stays outside the selected window, while `linkedWrittenRecordId` prevents treating an already-counted article as another publication. Three social records document counter-speech, including one original post, its linked thread and a contemporary attributed response. Current counters retain observation dates and are not historical audience estimates. `x-editorial.html`, `editorial-records.csv` and `media-records.csv` carry source links and limits. AI packets keep selected-desk editorials separate from external criticism; no owner intent or coordination is inferred.

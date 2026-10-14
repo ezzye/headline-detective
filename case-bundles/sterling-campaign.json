@@ -347,6 +347,36 @@
       "label": "Media source · BBC Sport · 2018-12-09",
       "url": "https://www.bbc.co.uk/sport/football/46498849",
       "text": "BBC Sport published a page reporting Sterling's criticism of newspaper portrayals of young Black footballers and embedded a clip in which Ian Wright comments on criticism of Sterling. Date basis: hosting_page_publication. This verifies BBC's online publication and embedded clip caption, not a separate broadcast airing or the original upload date of the video. BBC reports Sterling's social post; the article is not itself Sterling's original post."
+    },
+    {
+      "id": "editorial-sterling-leader",
+      "label": "A reported leader response · Leader column, attributed by contemporaneous reporting",
+      "url": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
+      "date": "2018-12-11",
+      "retrospective": false,
+      "text": "Denied racial bias. This link is the report, not the original leader. Its exact original title and publication metadata remain unverified. It evidences an attributed institutional defence, not proof of motive, truth or owner direction."
+    },
+    {
+      "id": "editorial-sterling-kidd",
+      "label": "A sports writer reconsiders the coverage · Comment · Dave Kidd",
+      "url": "https://www.thesun.co.uk/sport/football/7947922/defiant-raheem-sterling-racism-media/",
+      "date": "2018-12-10",
+      "retrospective": false,
+      "text": "Kidd welcomed Sterling’s challenge and acknowledged unfair reporting. He defended the tattoo as a legitimate topic while saying he would not have made it the front-page lead. He called for greater diversity and dialogue in sports journalism. This is the named writer’s argument, not an unsigned leader or a statement by the owner. Its online date precedes the next day’s reported leader; disagreement is documented, but private editorial discussions are not reconstructed here."
+    },
+    {
+      "id": "media-sterling-lineker",
+      "label": "Lineker challenges the coverage",
+      "url": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
+      "date": "2018-05-29",
+      "text": "Praises Sterling’s work ethic and condemns his treatment, linking Keyworth’s thread. Displayed timezone is not stated. Likes and reposts observed years later cannot establish the audience or pace of circulation during the 2018 window."
+    },
+    {
+      "id": "media-sterling-keyworth",
+      "label": "A headline-comparison thread",
+      "url": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
+      "date": "2018-05-29",
+      "text": "JOE reports a thread collecting negative coverage and describes it as widely shared that morning. The date plotted is the report’s date, not a verified thread publication date. The full thread and screenshots were not recovered; no article list or reach number is inferred."
     }
   ],
   "reasoningChecks": [
@@ -2945,17 +2975,118 @@
         "media-sterling-1"
       ],
       "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-sterling-lineker",
+      "caseId": "sterling-campaign",
+      "outlet": "Gary Lineker (@GaryLineker)",
+      "channel": "social",
+      "format": "social_post",
+      "platform": "Twitter / X",
+      "title": "Lineker challenges the coverage",
+      "date": "2018-05-29",
+      "dateBasis": "platform_post_date",
+      "publicationDisplay": "X displays 12:31 AM · 29 May 2018; timezone not established.",
+      "programme": null,
+      "url": "https://x.com/GaryLineker/status/1001244624323686400",
+      "contentBasis": "original_post",
+      "sourceBasis": "Original X page: author, displayed 29 May 2018 date, text and link to Keyworth’s thread checked. Contemporary JOE report independently describes the sharing.",
+      "summary": "Praises Sterling’s work ethic and condemns his treatment, linking Keyworth’s thread.",
+      "limit": "Displayed timezone is not stated. Likes and reposts observed years later cannot establish the audience or pace of circulation during the 2018 window.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "publicationRelationship": "counter_speech",
+      "relationshipNote": "A response to coverage can spread the subject’s name while challenging the framing. It is not automatically an attack on the subject or another independent news report.",
+      "distributionEvents": [
+        {
+          "kind": "linked_post",
+          "date": "2018-05-29",
+          "url": "https://x.com/adamkeyworth/status/1001218545588502530",
+          "note": "Lineker’s original post links this thread; not represented as a native repost."
+        }
+      ],
+      "observedMetrics": [
+        {
+          "name": "shares",
+          "value": 4645,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/GaryLineker/status/1001244624323686400",
+          "scope": "Current cumulative platform counter observed on 14 October 2026; not 2018 reach, unique people, original-period engagement, or proof of harm."
+        },
+        {
+          "name": "likes",
+          "value": 20547,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/GaryLineker/status/1001244624323686400",
+          "scope": "Current cumulative platform counter observed on 14 October 2026; not 2018 reach, unique people, original-period engagement, or proof of harm."
+        }
+      ],
+      "evidenceIds": [
+        "media-sterling-lineker"
+      ],
+      "verifiedAt": "2026-10-14",
+      "actorType": "football pundit, speaking personally",
+      "reportURL": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
+      "reportDate": "2018-05-29"
+    },
+    {
+      "id": "media-sterling-keyworth",
+      "caseId": "sterling-campaign",
+      "outlet": "Adam Keyworth (@adamkeyworth)",
+      "channel": "social",
+      "format": "social_post",
+      "platform": "Twitter / X",
+      "title": "A headline-comparison thread",
+      "date": "2018-05-29",
+      "dateBasis": "contemporaneous_report_date",
+      "publicationDisplay": "Documented by JOE at 09:57 BST on 29 May 2018. Original post date not recovered.",
+      "programme": null,
+      "url": "https://x.com/adamkeyworth/status/1001218545588502530",
+      "contentBasis": "contemporaneous_report",
+      "sourceBasis": "JOE’s 29 May 2018 report links the exact thread and describes Lineker sharing it. The original thread currently returns a page-unavailable message.",
+      "summary": "JOE reports a thread collecting negative coverage and describes it as widely shared that morning.",
+      "limit": "The date plotted is the report’s date, not a verified thread publication date. The full thread and screenshots were not recovered; no article list or reach number is inferred.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "publicationRelationship": "counter_speech",
+      "relationshipNote": "A response to coverage can spread the subject’s name while challenging the framing. It is not automatically an attack on the subject or another independent news report.",
+      "distributionEvents": [],
+      "observedMetrics": [],
+      "evidenceIds": [
+        "media-sterling-keyworth"
+      ],
+      "verifiedAt": "2026-10-14",
+      "actorType": "individual commentator",
+      "reportURL": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
+      "reportDate": "2018-05-29",
+      "postPublicationDate": null,
+      "viralityEvidence": {
+        "status": "contemporaneous_description_only",
+        "description": "JOE called the thread “widely shared” on 29 May; no numeric reach or growth rate is established.",
+        "sourceURL": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
+        "date": "2018-05-29"
+      }
     }
   ],
   "mediaScope": {
     "verifiedAt": "2026-10-14",
-    "recordCount": 1,
+    "recordCount": 3,
     "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
     "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
     "gaps": [
       {
         "channel": "social",
-        "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+        "note": "No complete X repost chain, historical engagement curve, or Facebook/Instagram/TikTok sample recovered. Any selected X records are listed separately with their verification limits."
       },
       {
         "channel": "tv",
@@ -2965,6 +3096,56 @@
         "channel": "radio",
         "note": "The located BBC Radio5Live programme lead is linked from a May2019 article, outside the selected2018window; it is not counted."
       }
-    ]
+    ],
+    "socialPostRecovery": "2 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+  },
+  "editorialRecords": [
+    {
+      "id": "editorial-sterling-leader",
+      "caseId": "sterling-campaign",
+      "outlet": "The Sun",
+      "title": "A reported leader response",
+      "date": "2018-12-11",
+      "phase": "in_window",
+      "editorialType": "institutional_editorial",
+      "byline": null,
+      "label": "Leader column, attributed by contemporaneous reporting",
+      "url": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
+      "summary": "Denied racial bias.",
+      "sourceBasis": "Contemporaneous publisher report identifies a Sun leader. Original leader page not recovered.",
+      "contentBasis": "contemporaneous_report",
+      "limit": "This link is the report, not the original leader. Its exact original title and publication metadata remain unverified. It evidences an attributed institutional defence, not proof of motive, truth or owner direction.",
+      "verifiedAt": "2026-10-14",
+      "linkedWrittenRecordId": null,
+      "evidenceIds": [
+        "editorial-sterling-leader"
+      ]
+    },
+    {
+      "id": "editorial-sterling-kidd",
+      "caseId": "sterling-campaign",
+      "outlet": "The Sun",
+      "title": "A sports writer reconsiders the coverage",
+      "date": "2018-12-10",
+      "phase": "in_window",
+      "editorialType": "bylined_opinion",
+      "byline": "Dave Kidd",
+      "label": "Comment",
+      "url": "https://www.thesun.co.uk/sport/football/7947922/defiant-raheem-sterling-racism-media/",
+      "summary": "Kidd welcomed Sterling’s challenge and acknowledged unfair reporting. He defended the tattoo as a legitimate topic while saying he would not have made it the front-page lead. He called for greater diversity and dialogue in sports journalism.",
+      "sourceBasis": "Original publisher page identifies Dave Kidd, Comment and publication at 22:30 on 10 December 2018.",
+      "contentBasis": "publisher_page",
+      "limit": "This is the named writer’s argument, not an unsigned leader or a statement by the owner. Its online date precedes the next day’s reported leader; disagreement is documented, but private editorial discussions are not reconstructed here.",
+      "verifiedAt": "2026-10-14",
+      "linkedWrittenRecordId": null,
+      "evidenceIds": [
+        "editorial-sterling-kidd"
+      ]
+    }
+  ],
+  "editorialScope": {
+    "recordCount": 2,
+    "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
+    "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
   }
 }

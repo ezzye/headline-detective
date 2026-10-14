@@ -322,6 +322,14 @@
       "label": "Media source · ITV News · 2019-12-23",
       "url": "https://www.itv.com/news/2019-12-23/caroline-flack-pleads-not-guilty-to-assault",
       "text": "The report covered Flack's first court hearing, where she pleaded not guilty; it also relayed arguments made by the prosecution and defence at the hearing. Date basis: hosting_page_publication. Courtroom claims are reported allegations, not findings. The online publication time does not prove when the clip aired on television; do not treat web page plus embedded clip as two items."
+    },
+    {
+      "id": "editorial-caroline-5",
+      "label": "Restraint after a death · Editorial",
+      "url": "https://www.the-independent.com/independentpremium/caroline-flack-death-media-samaritans-suicide-method-a9345146.html",
+      "date": "2020-02-20",
+      "retrospective": true,
+      "text": "Urges restraint in reporting after Flack’s death, arguing that public interest does not justify sensational detail or disregard for relatives and vulnerable readers. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. This is aftermath after the 14 February cutoff, not evidence of pre-death coverage or a cause of death."
     }
   ],
   "reasoningChecks": [
@@ -3126,12 +3134,41 @@
     "gaps": [
       {
         "channel": "social",
-        "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+        "note": "No complete X repost chain, historical engagement curve, or Facebook/Instagram/TikTok sample recovered. Any selected X records are listed separately with their verification limits."
       },
       {
         "channel": "tv",
         "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
       }
-    ]
+    ],
+    "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+  },
+  "editorialRecords": [
+    {
+      "id": "editorial-caroline-5",
+      "caseId": "caroline-flack-recovered-campaign",
+      "outlet": "The Independent",
+      "title": "Restraint after a death",
+      "date": "2020-02-20",
+      "phase": "aftermath",
+      "editorialType": "institutional_editorial",
+      "byline": null,
+      "label": "Editorial",
+      "url": "https://www.the-independent.com/independentpremium/caroline-flack-death-media-samaritans-suicide-method-a9345146.html",
+      "summary": "Urges restraint in reporting after Flack’s death, arguing that public interest does not justify sensational detail or disregard for relatives and vulnerable readers.",
+      "sourceBasis": "Original publisher page: Editorial label, 20 February 2020 date and accessible argument checked in the browser.",
+      "contentBasis": "publisher_page",
+      "limit": "Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. This is aftermath after the 14 February cutoff, not evidence of pre-death coverage or a cause of death.",
+      "verifiedAt": "2026-10-14",
+      "linkedWrittenRecordId": null,
+      "evidenceIds": [
+        "editorial-caroline-5"
+      ]
+    }
+  ],
+  "editorialScope": {
+    "recordCount": 1,
+    "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
+    "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
   }
 }
