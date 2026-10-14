@@ -3,7 +3,7 @@ import {summarizeMedia,validMediaRecord} from './media-evidence.mjs';import {cre
 const cases=JSON.parse(await readFile(new URL('./campaigns.json',import.meta.url),'utf8'));
 const post=(app,url,body)=>new Promise(resolve=>{const req=Readable.from([Buffer.from(JSON.stringify(body))]);Object.assign(req,{method:'POST',url,headers:{host:'127.0.0.1','content-type':'application/json'}});let status;app.server.emit('request',req,{writeHead(s){status=s},end(bytes){resolve({status,json:JSON.parse(bytes)})}})});
 test('cross-media sample preserves written census boundaries and accounts for linked formats',async()=>{
- assert.equal(cases.reduce((n,c)=>n+c.allHeadlines.length,0),194);const media=cases.flatMap(c=>c.mediaRecords);assert.equal(media.length,23);assert.equal(new Set(media.map(r=>r.id)).size,23);assert.equal(summarizeMedia(media).linkedWrittenFormats,3);
+ assert.equal(cases.reduce((n,c)=>n+c.allHeadlines.length,0),209);const media=cases.flatMap(c=>c.mediaRecords);assert.equal(media.length,23);assert.equal(new Set(media.map(r=>r.id)).size,23);assert.equal(summarizeMedia(media).linkedWrittenFormats,3);
  assert.deepEqual(summarizeMedia(media).categories.map(c=>c.count),[6,2,15]);
  for(const c of cases){assert.equal(c.mediaScope.recordCount,c.mediaRecords.length);assert(c.mediaRecords.every(r=>validMediaRecord(r,c)));const bundle=JSON.parse(await readFile(new URL(`./case-bundles/${c.id}.json`,import.meta.url),'utf8'));assert.deepEqual(bundle.mediaRecords,c.mediaRecords);assert.deepEqual(bundle.mediaScope,c.mediaScope);}
  assert(!media.some(r=>r.date>'2018-12-16'&&r.caseId==='sterling-campaign'));assert(!media.some(r=>r.outlet==='GB News'&&r.caseId==='arday-2026-campaign'));

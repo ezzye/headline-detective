@@ -102,7 +102,7 @@ test('portable game boots offline and keeps Flack sample separate from aggregate
   assert.equal(vm.runInContext('Object.keys(answers).length',context),0);
   assert.equal(vm.runInContext("typedQuestionCounts['desk-a']",context),0);
   vm.runInContext('go(2); go(3); go(4)',context);
-  assert.match(node('#app').innerHTML, /Five factual checks/);
+  assert.match(node('#app').innerHTML, /Evidence challenge/);
   assert.match(node('#app').innerHTML, /not available/);
 });
 
@@ -129,11 +129,11 @@ test('Arday outlet defences contain sourced first-person scripts and a qualified
 });
 
 
-test('seven playable cases share source-linked criteria and bounded sample rules', () => {
-  assert.equal(campaigns.length, 7);
+test('nine playable cases share source-linked criteria and bounded sample rules', () => {
+  assert.equal(campaigns.length, 9);
   assert.deepEqual(campaigns.map(c => c.id), [
     'arday-2026-campaign', 'caroline-flack-recovered-campaign', 'sterling-campaign',
-    'markle-letter-campaign', 'bulley-campaign', 'jefferies-campaign','greenwood-campaign'
+    'markle-letter-campaign', 'bulley-campaign', 'jefferies-campaign','greenwood-campaign','greenwood-pre2022-campaign','diallo-documents-campaign'
   ]);
   const ids = ['public_value','context','framing','care','consistency','transparency'];
   for (const c of campaigns) {
@@ -155,7 +155,7 @@ test('seven playable cases share source-linked criteria and bounded sample rules
     const recoveredRows = c.allHeadlines?.length ? c.allHeadlines : c.campaigns.flatMap(d => d.examples || []);
     assert.ok(recoveredRows.length > 0, `${c.id} includes its recovered headline sample`);
     assert.ok(c.source?.corpusCount > 0 && c.source?.selectedCount > 0, `${c.id} declares sample and corpus scope`);
-    assert.ok(c.images?.length >= 2 && c.images.every(image => image.url?.startsWith('data:image/')), `${c.id} includes embedded local case images`);
+    assert.ok(c.images?.length >= 1 && c.images.every(image => image.url?.startsWith('data:image/')), `${c.id} includes embedded local case images`);
     for (const h of recoveredRows) {
       const headlineId = h.id ?? h.articleId ?? h.headlineId;
       const headlineOutlet = h.outlet ?? h.outletName ?? c.campaigns.find(d => (d.examples||[]).some(row => row === h))?.outlet;

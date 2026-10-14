@@ -123,14 +123,15 @@ test('real three-day set preserves six titles, eight selected articles and later
   assert.deepEqual(trail.dates.map(day => day.outlets.reduce((sum, row) => sum + row.count, 0)), [5, 2, 1]);
   assert.deepEqual(trail.dates.map(day => day.outlets.reduce((sum, row) => sum + row.cumulativeCount, 0)), [5, 7, 8]);
   assert.equal(c.episode.additionalRecords.length, 4);
-  assert.equal(cases.reduce((sum, item) => sum + item.allHeadlines.length, 0), 194);
+  assert.equal(cases.reduce((sum, item) => sum + item.allHeadlines.length, 0), 209);
   const bail = c.allHeadlines.find(row => row.id === 'jefferies-20110101-guardian-bail');
   assert.equal(bail.date, '2011-01-02');
   assert.equal(bail.publishedAtUTC, '2011-01-02T00:39:00Z');
   assert.equal(c.episode.knownEvents.find(row => row.id === 'episode-bail').date, '2011-01-01');
   assert.equal(validEpisode({...c.episode, knownEvents: [...c.episode.knownEvents, {...c.episode.knownEvents[0], date: '2011-01-03'}]}, c), false);
   assert.equal(c.episode.outletKnowledge.filter(row => row.knowledgeStatus === 'not_recovered').length, 4);
-  for (const item of cases) {
+  assert.equal(cases.filter(item=>item.levesonContext).length,7,'The original Leveson comparison scope is preserved');
+  for (const item of cases.filter(item=>item.levesonContext)) {
     assert.equal(validLevesonContext(item.levesonContext, item), true);
     assert.equal(item.levesonContext.relationship, item.id === c.id ? 'direct_case_findings' : 'ethical_comparison');
   }

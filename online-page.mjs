@@ -6,6 +6,10 @@ export function onlinePage(html, manifest) {
   const records=JSON.parse(match[1]);
   const files=new Map((manifest.images||[]).map(image=>[image.filePage,image.file]));
   for(const campaign of records) {
+    // Football source rows are already embedded once in the shared comparison corpus.
+    campaign.evidence=(campaign.evidence||[]).filter(e=>!e.id.startsWith('football-'));
+    // Search logs remain in public case JSON and the complete offline file.
+    for(const field of ['researchLeads','archiveChecks','researchLimits'])delete campaign[field];
     // The detailed recovery/search log remains in the standalone audit. Keep
     // only the fields rendered by the game in the visitor's initial payload.
     if(campaign.recoveryDossier) {

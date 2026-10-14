@@ -69,7 +69,7 @@ test('all seven final cases open cold, return source-approved briefings, and fre
   const {readFile}=await import('node:fs/promises');
   const {exportSessions,restoreSessions}=await import('./public-gateway.mjs');
   const all=JSON.parse(await readFile(new URL('./campaigns.json',import.meta.url),'utf8'));
-  assert.equal(all.length,7);let providerCalls=0;
+  assert.equal(all.length,9);let providerCalls=0;
   const fresh=()=>createGameServer({env:{DEEPSEEK_API_KEY:'synthetic-no-live-provider'},random:()=>0,fetchImpl:async()=>{providerCalls++;throw new Error('reviewed briefings must never need a provider');}});
   for(const item of all) {
     const warm=fresh(),created=await post(warm,'/api/campaign/session',{caseId:item.id});

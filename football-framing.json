@@ -1,0 +1,1823 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-14",
+  "scopeNote": "Selected dated publisher records and explicitly unverified leads. Official documents, opinions, foreign-language reports and known shared copy stay labelled; no census, absence or motive is inferred.",
+  "records": [
+    {
+      "id": "football-sterling-standard-house-20160630",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "London Evening Standard / The Standard",
+      "headline": "England flop Raheem Sterling ‘flaunts wealth online’ hours after humiliating defeat to Iceland",
+      "date": "2016-06-30",
+      "format": "article",
+      "url": "https://www.standard.co.uk/news/uk/england-flop-raheem-sterling-flaunts-wealth-online-hours-after-humiliating-defeat-to-iceland-a3284466.html",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-house-reports",
+      "framingNote": "The page describes a friend-posted video of cars, a cinema room and a crystal-encrusted sink, placing it hours after the Iceland defeat.",
+      "limits": "Separate Standard article identity from Sun and Mail coverage of the same underlying video; article wording is not proof the video was posted by Sterling.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "30 June 2016",
+      "dateBasis": "Publisher-displayed date.",
+      "verification": "Publisher page title, date, article body, and event framing were accessible through search/open result.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "sterling-standard-house-20160630"
+    },
+    {
+      "id": "football-sterling-mail-house-20160630",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "MailOnline / Daily Mail",
+      "headline": "£180,000-a-week England flop Raheem shows off blinging house he bought for his mum - complete with jewel-encrusted bathroom - hours after flying…",
+      "date": "2016-06-30",
+      "format": "article",
+      "url": "https://www.dailymail.co.uk/sport/football/article-3667855/",
+      "sourceStatus": "reported_date_only",
+      "eventId": "football-event-house-reports",
+      "framingNote": "Mail headline foregrounded wages, England’s result, the house and an unusually described bathroom fixture.",
+      "limits": "Headline attributed by later reporting; original body and publication date not directly verified. Excluded from verified counts.",
+      "language": "en",
+      "headlineIsExcerpt": true,
+      "publishedDisplay": "30 June 2016 (date corroborated in later contemporaneous comparison)",
+      "dateBasis": "Contemporaneous 2017 article quotes the Mail headline and places it in the 2016 Euro exit episode; exact day is corroborated by same-day coverage.",
+      "verification": "Exact headline and date are reproduced in Irish Independent’s 30 October 2017 article; the original Mail article ID resolves to a Mail article path, but direct body retrieval was unavailable in this pass.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "sterling-mail-house-20160630"
+    },
+    {
+      "id": "football-sterling-sky-house-20160630",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "Sky Sports",
+      "headline": "Raheem Sterling shows off luxury mansion hours after England exit from Euro 2016",
+      "date": "2016-06-30",
+      "format": "article",
+      "url": "https://www.skysports.com/football/news/12016/10328946/raheem-sterling-shows-off-luxury-mansion-hours-after-england-exit-from-euro-2016",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-house-reports",
+      "framingNote": "Sky reported on the clip while explicitly attributing the video and some details to The Sun.",
+      "limits": "A distinct Sky article, but its account is partly derivative of The Sun; do not count it as independent confirmation of the video’s origin.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Thursday 30 June 2016 08:26 UK",
+      "dateBasis": "Publisher-displayed timestamp; time is UK local time.",
+      "verification": "Publisher page exposed headline, byline, displayed date/time, article body and attribution to The Sun for the video.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "sterling-sky-house-20160630"
+    },
+    {
+      "id": "football-sterling-sun-mum-house-20160630",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Sun",
+      "headline": "Luxury pad Raheem Sterling flaunted in video hours after Euros return ‘was bought for his mum’",
+      "date": "2016-06-30",
+      "format": "article",
+      "url": "https://www.thesun.co.uk/news/1368946/luxury-pad-raheem-sterling-flaunted-in-video-hours-after-euros-return-was-bought-for-his-mum/",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-house-reports",
+      "framingNote": "A Snapchat house-tour story was framed against England’s Euro 2016 exit; the later headline wording notes the home was bought for his mother.",
+      "limits": "The friend posted the video; contemporary reporting says the home was for his mother. This row is one web article identity, not the next-day Sun print item.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "30 June 2016",
+      "dateBasis": "Publisher page date / contemporaneous same-day coverage; distinguish from 1 July print follow-up.",
+      "verification": "Original Sun URL supplied in the task and independently cross-checked against contemporaneous reporting that identifies the front-page splash as ‘OBSCENE RAHEEM’; the Sun’s exact web headline is preserved as the supplied original-page title.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "sterling-sun-mum-house-20160630"
+    },
+    {
+      "id": "football-sterling-mail-poundworld-20170105",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "MailOnline / Daily Mail",
+      "headline": "He’s happy to splash his cash on £500,000 Bentleys but when it comes to value only Poundworld will do: £180,000-a-week Premier League…",
+      "date": "2017-01-05",
+      "format": "article",
+      "url": "https://www.dailymail.co.uk/news/article-4090602/He-s-happy-splash-cash-500-000-Bentleys-comes-value-Poundworld-180-000-week-Premier-League-star-Raheem-Sterling-shows-eye-bargain-just-like-rest-us.html",
+      "sourceStatus": "reported_date_only",
+      "eventId": null,
+      "framingNote": "Headline contrasts the value shop with a high-priced car and weekly wages; the article says the photo was originally taken in August 2014, before those later earnings and assets.",
+      "limits": "The photo’s capture date and story date differ materially. Do not describe the shopping photograph as a January 2017 event.",
+      "language": "en",
+      "headlineIsExcerpt": true,
+      "publishedDisplay": "Mail+ social promotion dated 5 January 2017",
+      "dateBasis": "Contemporaneous Mail+ post date; the original page’s current body and timestamps were inaccessible.",
+      "verification": "Football365 reproduced the full headline and four bullets, and quoted Mail+ promotion dated 5 January. Direct page fetch returned a cache miss in this research pass.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "sterling-mail-poundworld-20170105"
+    },
+    {
+      "id": "football-sterling-guardian-interview-20170331",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Guardian",
+      "headline": "Raheem Sterling: ‘I’ve got that face people don’t like but I’m not a brat’",
+      "date": "2017-03-31",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2017/mar/31/raheem-sterling-manchester-city-im-not-a-brat",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-sterling-response",
+      "framingNote": "Compare this wording with the dated development and response.",
+      "limits": "Contextual interview, not another tabloid lifestyle headline. EDT/EST are as displayed by the page and should not be silently converted into UK time.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Fri 31 Mar 2017 15.07 EDT; later modified 27 Nov 2017 00.22 EST",
+      "dateBasis": "Guardian displayed publication timestamp; separately preserve the later modification timestamp.",
+      "verification": "Publisher page exposes headline, publication and modification timestamps, and Sterling’s first-person response to recurring coverage.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "sterling-guardian-interview-20170331"
+    },
+    {
+      "id": "football-sterling-irish-indy-comment-20171030",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "Irish Independent",
+      "headline": "Buying his mother a present - who does Raheem Sterling think he is?",
+      "date": "2017-10-30",
+      "format": "opinion",
+      "url": "https://www.independent.ie/sport/soccer/premier-league/buying-his-mother-a-present-who-does-raheem-sterling-think-he-is/36272275.html",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "A critical opinion column revisits a year of lifestyle stories and quotes the 2016 Mail headline about the house bought for Sterling’s mother.",
+      "limits": "Commentary is not a new original tabloid report about the house; it is useful for chronology and contemporaneous interpretation only.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Mon 30 Oct 2017 at 03:30",
+      "dateBasis": "Publisher-displayed timestamp; the page is a later opinion piece recalling 2016 events.",
+      "verification": "Publisher page exposes headline, byline, displayed date/time, format cues, and reproduces the Mail house headline while referencing Poundworld, Greggs and the EasyJet story.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "sterling-irish-indy-comment-20171030"
+    },
+    {
+      "id": "football-retained-sterling-sterling-sun-original-tattoo-web-20180528",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Sun",
+      "headline": "England ace Raheem Sterling sparks fury by unveiling M16 assault rifle tattoo on his leg",
+      "date": "2018-05-28",
+      "format": "article",
+      "url": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-retained-2018-05-28",
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Direct original Sun article opened in ordinary browser UI; page H1 and published time visible, with body describing initial publication of the tattoo story. This is The Sun's web article dated 28 May, separate from the 29 May print front-page item already documented.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-sun-original-tattoo-web-20180528"
+      }
+    },
+    {
+      "id": "football-retained-sterling-sterling-bbc-sport-tattoo-20180529",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "BBC Sport",
+      "headline": "Raheem Sterling: FA shows support after gun tattoo row",
+      "date": "2018-05-29",
+      "format": "article",
+      "url": "https://www.bbc.co.uk/sport/football/44289119",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Direct BBC Sport article opened in ordinary browser UI; displayed H1 and Published date visible. The body reports FA support, Sterling's explanation, and references The Sun's front-page story. This is an additional publisher's own contemporaneous web report, not a print item.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-bbc-sport-tattoo-20180529"
+      }
+    },
+    {
+      "id": "football-retained-sterling-sterling-guardian-tabloid-snobbery-comment-20180529",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Guardian",
+      "headline": "Raheem Sterling is a victim of vicious tabloid snobbery",
+      "date": "2018-05-29",
+      "format": "opinion",
+      "url": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Publisher page shows exact headline and first-publication time (29 May 2018, 17:23 CEST). This is a comment/analysis item, not straight news; it quotes the reproduced Sun headline and reviews earlier coverage. Keep genre explicit.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-guardian-tabloid-snobbery-comment-20180529"
+      }
+    },
+    {
+      "id": "football-retained-sterling-sterling-guardian-tattoo-response-20180529",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Guardian",
+      "headline": "FA backs Raheem Sterling after criticism over gun tattoo",
+      "date": "2018-05-29",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Publisher page shows the exact headline and first-publication timestamp (29 May 2018, 11:10 CEST). It reports the FA response, Sterling's explanation, and The Sun front page. It is a distinct story missing from the current Guardian records.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-guardian-tattoo-response-20180529"
+      }
+    },
+    {
+      "id": "football-retained-sterling-sterling-h01",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Independent",
+      "headline": "Raheem Sterling tattoo: England star hits back at criticism of gun body art",
+      "date": "2018-05-29",
+      "format": "article",
+      "url": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Publisher H1 and date verified directly; published 29 May 2018 at 13:05 BST. Preserve this page H1, not its SEO title/slug or the reproduced Sun print headline.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-h01"
+      }
+    },
+    {
+      "id": "football-retained-sterling-sterling-h02",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Guardian",
+      "headline": "Clarke Carlisle criticises ‘unfair’ treatment of Raheem Sterling",
+      "date": "2018-05-30",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2018/may/30/clarke-carlisle-raheem-sterling-tattoo-england",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-h02"
+      }
+    },
+    {
+      "id": "football-retained-sterling-sterling-h05",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Guardian",
+      "headline": "Raheem Sterling sorry after arriving 12 hours late for England training",
+      "date": "2018-06-01",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2018/jun/01/raheem-sterling-support-gareth-southgate-tattoo-england",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-h05"
+      }
+    },
+    {
+      "id": "football-retained-sterling-sterling-h04",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Independent",
+      "headline": "Gareth Southgate supports Raheem Sterling over gun tattoo controversy",
+      "date": "2018-06-01",
+      "format": "article",
+      "url": "https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-england-football-team-raheem-sterling-tattoo-sun-front-page-gareth-southgate-a8379251.html",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-retained-2018-06-01",
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-h04"
+      }
+    },
+    {
+      "id": "football-retained-sterling-sterling-h06",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Guardian",
+      "headline": "Raheem Sterling: I understand the criticism but it does not affect me",
+      "date": "2018-06-05",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-retained-2018-05-29",
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-h06"
+      }
+    },
+    {
+      "id": "football-retained-sterling-sterling-h07",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Independent",
+      "headline": "England World Cup squad: Raheem Sterling should not have been forced to explain gun tattoo, insists Kyle Walker",
+      "date": "2018-06-12",
+      "format": "article",
+      "url": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Publisher H1 and date verified directly; published 12 June 2018 at 22:30 BST. Preserve the page H1, distinct from any alternate metadata title.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-h07"
+      }
+    },
+    {
+      "id": "football-foden-mail-home-20181004",
+      "subjectIds": [
+        "foden"
+      ],
+      "outlet": "MailOnline / Daily Mail",
+      "headline": "Manchester City starlet Phil Foden buys new £2m home for his mum",
+      "date": "2018-10-04",
+      "format": "article",
+      "url": "https://www.dailymail.co.uk/sport/football/article-6241313/Manchester-City-starlet-Phil-Foden-buys-new-2m-home-mum.html",
+      "sourceStatus": "reported_date_only",
+      "eventId": null,
+      "framingNote": "Mail framed the £2m home purchase around Foden’s family, age, modest Stockport upbringing, close family ties and a mortgage.",
+      "limits": "Original page not recovered. The candidate’s captured timestamps appear to match the Sun page; no Mail publication day is established here. Candidate date4October is reported only.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "4 October 2018 (bibliographic record); article text identified as Ian Herbert / Sportsmail",
+      "dateBasis": "Conflict preserved: bibliographic publication date is 4 Oct; a Mail-page capture displays 5 Oct 08:46 and update 20:49. Use the original capture/page metadata before choosing a canonical date.",
+      "verification": "The original Mail URL and headline are identified in a scholarly bibliography; an independent captured Mail page shows the original displayed publication time as 5 Oct 2018 08:46 and an update at 20:49, while other contemporary sources date the story 4 Oct. Direct browser view of Mail returned no article text.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "foden-mail-home-20181004"
+    },
+    {
+      "id": "football-foden-sun-home-20181005",
+      "subjectIds": [
+        "foden"
+      ],
+      "outlet": "The Sun",
+      "headline": "Manchester City starlet Phil Foden buys mum new £2m home aged just 18 after being brought up in modest Stockport suburb",
+      "date": "2018-10-05",
+      "format": "article",
+      "url": "https://www.thesun.co.uk/sport/football/7422846/manchester-city-starlet-phil-foden-buys-mum-new-2m-home-aged-just-18-after-being-brought-up-in-modest-stockport-suburb/",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-foden-home",
+      "framingNote": "The Sun’s headline pairs the home with Foden’s age and Stockport upbringing; its body reportedly emphasized the family choosing the home and family closeness.",
+      "limits": "The title says ‘mum’; supporting body descriptions also refer to his parents/family. Preserve that distinction when summarizing the article.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "5 Oct 2018, 08:46; updated 5 Oct 2018, 20:49",
+      "dateBasis": "Captured publisher display; retain both publication and update time as separate fields.",
+      "verification": "Original Sun URL supplied in the task; contemporaneous captured page preserves the headline and displayed publication/update times.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "foden-sun-home-20181005"
+    },
+    {
+      "id": "football-foden-sky-italia-home-20181007",
+      "subjectIds": [
+        "foden"
+      ],
+      "outlet": "Sky Sport Italia",
+      "headline": "Manchester City, Foden ragazzo d'oro: villa da 2 milioni di sterline in regalo ai genitori",
+      "date": "2018-10-07",
+      "format": "article",
+      "url": "https://sport.sky.it/calcio/premier-league/2018/10/07/phil-foden-manchester-city-villa-regalo-genitori",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "Sky’s headline calls Foden a ‘golden boy’ and describes the home as a gift to his parents; the page links the news to his first City goal and explains that a mortgage was involved.",
+      "limits": "Distinct Italian Sky article and framing, not a copy of the British Mail/Sun article; distinguish ‘gift to parents’ from the other pages’ ‘buys mum a home’ wording.",
+      "language": "it",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "07 ott 2018 - 11:51",
+      "dateBasis": "Publisher-displayed local timestamp.",
+      "verification": "Sky publisher page exposed the headline, timestamp and original Italian-language body.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "foden-sky-italia-home-20181007",
+      "englishHeadlineTranslation": "Sky’s headline calls Foden a ‘golden boy’ and describes the home as a gift to his parents; the page links the news to his first City goal and explains that a mortgage was involved."
+    },
+    {
+      "id": "football-retained-sterling-sterling-h08",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Guardian",
+      "headline": "Raheem Sterling accuses media of ‘fuelling racism’ after alleged abuse",
+      "date": "2018-12-09",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2018/dec/09/raheem-sterling-newspapers-fuelling-racism-alleged-abuse-chelsea",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-retained-2018-12-08",
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-h08"
+      }
+    },
+    {
+      "id": "football-retained-sterling-sterling-h09",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Guardian",
+      "headline": "The Sun insists Sterling reporting ‘nothing to do with skin colour’",
+      "date": "2018-12-11",
+      "format": "article",
+      "url": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-retained-2018-12-11",
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-h09"
+      }
+    },
+    {
+      "id": "football-retained-sterling-sterling-h10",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Guardian",
+      "headline": "Sterling’s racism ordeal was ugly but the reaction has been positive",
+      "date": "2018-12-13",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2018/dec/13/raheem-sterling-racism-media-scrutiny-manchester-city",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-h10"
+      }
+    },
+    {
+      "id": "football-retained-sterling-sterling-h11",
+      "subjectIds": [
+        "sterling"
+      ],
+      "outlet": "The Guardian",
+      "headline": "The ugly spectre of racism in football on the rise across Europe",
+      "date": "2018-12-16",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2018/dec/16/racism-on-the-rise-across-europe-football-raheem-sterling-chelsea",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "This piece is already part of the retained2018Sterling sample. Compare its wording with the event and response.",
+      "limits": "Already included in the original round; never add this supplemental view to the original count.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "dateBasis": "Retained publisher-date audit in the original case bundle.",
+      "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+      "checkedAt": "2026-10-14",
+      "alreadyInCore": {
+        "caseId": "sterling-campaign",
+        "recordId": "sterling-h11"
+      }
+    },
+    {
+      "id": "football-gazzetta-2020-07-10",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "La Gazzetta dello Sport",
+      "headline": "False identità e finto padre per i fratelli Traore: ora rischiano una lunga squalifica",
+      "date": "2020-07-10",
+      "format": "article",
+      "url": "https://www.gazzetta.it/Calcio/Serie-A/Atalanta/10-07-2020/fratelli-traore-guai-falsa-identita-rischiano-squalifica-380280436049.shtml",
+      "sourceStatus": "reported_date_only",
+      "eventId": null,
+      "framingNote": "Reports the Parma inquiry and identifies five adults accused of forgery and facilitating irregular immigration; it says the two players were not then investigated and had been heard as informed persons. The headline calls them brothers and forecasts a possible sports ban before the later FIGC process concluded.",
+      "limits": "The headline’s family term and disciplinary forecast are not established by the later FIGC notice. July reporting concerned the Parma inquiry, not the February 2021 sports sanction.",
+      "language": "it",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "10 luglio 2020, 21:44 (modified 22:13)",
+      "dateBasis": "Displayed article timestamp",
+      "verification": "Search-indexed article text and displayed publication/update time; direct page availability may vary.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "gazzetta-2020-07-10",
+      "englishHeadlineTranslation": "Reports the Parma inquiry and identifies five adults accused of forgery and facilitating irregular immigration; it says the two players were not then investigated and had been heard as informed persons. The headline calls them brothers and forecasts a possible sports ban before the later FIGC process concluded."
+    },
+    {
+      "id": "football-corriere-2020-07-11",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "Corriere della Sera (Bergamo edition)",
+      "headline": "«Il talento dell’Atalanta Traore portato in Italia illegalmente»: indagati i finti genitori",
+      "date": "2020-07-11",
+      "format": "article",
+      "url": "https://bergamo.corriere.it/notizie/cronaca/20_luglio_11/i-finti-genitori-indagati-il-talento-traore-portato-italia-illegalmente-20b18692-c342-11ea-bb88-8e386c514e2d.shtml",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "Reports the Parma investigation into adults suspected of false family reunification and immigration assistance; says the two footballers were heard as people informed of facts, not then suspects. The story uses quotation marks around ‘brother’ and says investigators had not established whether the two were brothers.",
+      "limits": "This is an early report of allegations and investigative claims, not a final criminal finding. Its headline’s ‘illegally’ wording is not itself a judgment.",
+      "language": "it",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "11 luglio 2020 - 08:51",
+      "dateBasis": "Article timestamp",
+      "verification": "Direct article opened; timestamp and headline visible.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "corriere-2020-07-11",
+      "englishHeadlineTranslation": "Reports the Parma investigation into adults suspected of false family reunification and immigration assistance; says the two footballers were heard as people informed of facts, not then suspects. The story uses quotation marks around ‘brother’ and says investigators had not established whether the two were brothers."
+    },
+    {
+      "id": "football-fa-2020-08-25-southgate-callup",
+      "subjectIds": [
+        "foden",
+        "greenwood"
+      ],
+      "outlet": "The FA / England Football",
+      "headline": "Phil Foden & Mason Greenwood capable of step up to senior squad, says England manager Gareth Southgate",
+      "date": "2020-08-25",
+      "format": "official",
+      "url": "https://www.thefa.com/news/2020/aug/25/gareth-southgate-interview-england-squad-iceland-denmark-250820",
+      "sourceStatus": "reported_date_only",
+      "eventId": null,
+      "framingNote": "Southgate discussed both players when naming his first England squad of the year for the Iceland and Denmark Nations League matches.",
+      "limits": "Official selection profile, not coverage of the later breach.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "25 August 2020",
+      "dateBasis": "The page labels publication 25 August 2020.",
+      "verification": "FA page title, date, and text recovered in search result; this is pre-incident selection context.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "fa-2020-08-25-southgate-callup"
+    },
+    {
+      "id": "football-fa-2020-09-02-greenwood-callup",
+      "subjectIds": [
+        "greenwood"
+      ],
+      "outlet": "The FA / England Football",
+      "headline": "Mason Greenwood reveals the story of his first England call and aims for dream debut",
+      "date": "2020-09-02",
+      "format": "official",
+      "url": "https://www.thefa.com/news/2020/sep/02/mason-greenwood-on-england-call-up-020920",
+      "sourceStatus": "reported_date_only",
+      "eventId": null,
+      "framingNote": "Greenwood discussed receiving his first senior England call-up ahead of the Iceland and Denmark matches.",
+      "limits": "Official player interview, not independent reporting.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Wednesday 02 Sep 2020",
+      "dateBasis": "The FA page labels publication Wednesday 02 Sep 2020.",
+      "verification": "FA article and its title/date recovered in search result.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "fa-2020-09-02-greenwood-callup"
+    },
+    {
+      "id": "football-bbc-2020-09-07-joint-report",
+      "subjectIds": [
+        "foden",
+        "greenwood"
+      ],
+      "outlet": "BBC Sport",
+      "headline": "England: Phil Foden & Mason Greenwood to leave camp after quarantine breach",
+      "date": "2020-09-07",
+      "format": "article",
+      "url": "https://www.bbc.co.uk/sport/football/54059328",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-iceland-breach",
+      "framingNote": "BBC reported Southgate's decision, the investigation, the players' ages/debuts, reported Iceland police fines, and separate club responses.",
+      "limits": "BBC reports the breach and club responses; the FA's own wording is narrower on what happened inside the hotel.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Published 7 September 2020",
+      "dateBasis": "BBC page publication date.",
+      "verification": "BBC page opened; H1 and published date visible. Page text distinguishes reports of alleged meetings with two women from the FA statement and explicitly reproduces the FA's narrower statement that they remained in the hotel. It also carries separate Manchester City and Manchester United responses.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "bbc-2020-09-07-joint-report",
+      "alreadyInCore": {
+        "caseId": "greenwood-pre2022-campaign",
+        "recordId": "football-bbc-2020-09-07-joint-report"
+      }
+    },
+    {
+      "id": "football-city-2020-09-07-foden-response",
+      "subjectIds": [
+        "foden"
+      ],
+      "outlet": "Manchester City FC",
+      "headline": "Club Statement",
+      "date": "2020-09-07",
+      "format": "official",
+      "url": "https://www.mancity.com/news/club/man-city-club-statement-7-september-63735079",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-iceland-breach",
+      "framingNote": "City said Foden's conduct contravened Covid guidelines and fell below the expected standard, supported the FA, and said club officials were in contact about his early return.",
+      "limits": "The statement concerns Foden and does not mention Greenwood by name.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "7 September 2020 (date in canonical URL)",
+      "dateBasis": "Date is stated in the canonical page URL; page body refers to the story emerging that day.",
+      "verification": "Official club statement page recovered and body inspected.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "city-2020-09-07-foden-response"
+    },
+    {
+      "id": "football-sky-2020-09-07-joint-report",
+      "subjectIds": [
+        "greenwood"
+      ],
+      "outlet": "Sky News",
+      "headline": "Coronavirus: England duo Greenwood and Foden dropped for breaking COVID-19 rules in Iceland",
+      "date": "2020-09-07",
+      "format": "article",
+      "url": "https://news.sky.com/story/coronavirus-england-football-duo-dropped-for-breaking-covid-19-protocols-in-iceland-12065974",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-iceland-breach",
+      "framingNote": "Sky reported the pair's removal and quoted Southgate and both clubs. It distinguished the media reports of meeting two local women from Southgate's initial statement that he was still establishing the details.",
+      "limits": "The page attributes the meeting detail to Icelandic media reports; Southgate said he was still getting to grips with details.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Monday 7 September 2020 21:52 UK",
+      "dateBasis": "Sky page timestamp, Monday 7 September 2020 at 21:52 UK.",
+      "verification": "Original Sky News article opened; headline, time, and body inspected.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "sky-2020-09-07-joint-report",
+      "alreadyInCore": {
+        "caseId": "greenwood-pre2022-campaign",
+        "recordId": "football-sky-2020-09-07-joint-report"
+      }
+    },
+    {
+      "id": "football-fa-2020-09-07-joint-incident",
+      "subjectIds": [
+        "foden",
+        "greenwood"
+      ],
+      "outlet": "The FA / England Football",
+      "headline": "Phil Foden and Mason Greewood to miss England's trip to Denmark",
+      "date": "2020-09-07",
+      "format": "official",
+      "url": "https://www.thefa.com/news/2020/sep/07/gareth-southgate-phil-foden-mason-greenwood-update-070920",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-iceland-breach",
+      "framingNote": "The FA said both players were outside the private team area, but had not left the team hotel; it called this an unacceptable breach of its Covid rules, reported their apologies, and said it would investigate.",
+      "limits": "The FA statement does not confirm the press reports' detail that the players met women; it says they remained in the hotel.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Monday 07 Sep 2020",
+      "dateBasis": "The FA page labels publication Monday 07 Sep 2020.",
+      "verification": "The FA page opened in Chrome; page title, H1, publication date, byline and body visible. The body states that both players remained in the hotel but spent time outside the private team area, calls it a protocol breach, and says the FA would launch a full investigation.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "fa-2020-09-07-joint-incident"
+    },
+    {
+      "id": "football-bbc-2020-09-08-greenwood-apology",
+      "subjectIds": [
+        "greenwood"
+      ],
+      "outlet": "BBC Sport",
+      "headline": "Mason Greenwood: England forward apologises over quarantine breach",
+      "date": "2020-09-08",
+      "format": "article",
+      "url": "https://www.bbc.co.uk/sport/football/54069377",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-greenwood-apology",
+      "framingNote": "BBC reported Greenwood's apology following his removal from the squad, including his acknowledgement of responsibility and apology to Southgate.",
+      "limits": "The article reproduces Greenwood's statement; it is not an independent investigation of event details.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Published 8 September 2020",
+      "dateBasis": "BBC page publication date.",
+      "verification": "BBC page opened; H1, published date and apology text visible. Page attributes meeting details to Icelandic and other media reports.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "bbc-2020-09-08-greenwood-apology",
+      "alreadyInCore": {
+        "caseId": "greenwood-pre2022-campaign",
+        "recordId": "football-bbc-2020-09-08-greenwood-apology"
+      }
+    },
+    {
+      "id": "football-rte-2020-09-13-greenwood-second-story",
+      "subjectIds": [
+        "greenwood"
+      ],
+      "outlet": "RTÉ Sport",
+      "headline": "Mason Greenwood sorry over 'poor judgement' on laughing gas",
+      "date": "2020-09-13",
+      "format": "article",
+      "url": "https://www.rte.ie/sport/soccer/2020/0913/1164923-greenwood-sorry-over-poor-judgement-over-laughing-gas/",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "RTÉ reported a separate apology about historical footage appearing to show Greenwood inhaling nitrous oxide, and reproduced his statement via Manchester United. It also recalled the Iceland incident as recent context.",
+      "limits": "A distinct story from Iceland; RTÉ says the images were reportedly filmed weeks earlier and labels them historical.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Updated Sunday, 13 Sep 2020 12:50",
+      "dateBasis": "RTÉ update timestamp; original publication time is not separately displayed in recovered page.",
+      "verification": "Original RTÉ page opened; title, update time, and body inspected.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "rte-2020-09-13-greenwood-second-story"
+    },
+    {
+      "id": "football-bbc-2020-10-01-england-omission-analysis",
+      "subjectIds": [
+        "foden",
+        "greenwood"
+      ],
+      "outlet": "BBC Sport",
+      "headline": "England squad: Phil Foden and Mason Greenwood omissions 'perfectly justified'",
+      "date": "2020-10-01",
+      "format": "opinion",
+      "url": "https://www.bbc.co.uk/sport/football/54377952",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-october-selection",
+      "framingNote": "Phil McNulty's analysis argues Southgate was justified in leaving both players out of the October squad after the Iceland breach and describes the omissions as further reflection and sanction.",
+      "limits": "Analysis/opinion by the BBC chief football writer, not an FA announcement or a neutral news report.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Published 1 October 2020",
+      "dateBasis": "BBC publisher page.",
+      "verification": "BBC page opened; exact H1, publication date, byline and full body visible.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "bbc-2020-10-01-england-omission-analysis",
+      "alreadyInCore": {
+        "caseId": "greenwood-pre2022-campaign",
+        "recordId": "football-bbc-2020-10-01-england-omission-analysis"
+      }
+    },
+    {
+      "id": "football-independent-2020-10-19-solskjaer-denial",
+      "subjectIds": [
+        "greenwood"
+      ],
+      "outlet": "The Independent",
+      "headline": "Mason Greenwood: Manchester United teenager not dropped for disciplinary reasons, says Ole Gunnar Solskjaer",
+      "date": "2020-10-19",
+      "format": "article",
+      "url": "https://www.independent.co.uk/sport/football/european/mason-greenwood-injury-man-utd-news-latest-psg-champions-league-b1161692.html",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-absence-response",
+      "framingNote": "Before the Guardian's October 21 late-timekeeping report, Solskjaer denied that Greenwood's exclusion from the Newcastle and PSG squads was for disciplinary reasons, saying Greenwood had a 'niggle'; the article notes he trained with the squad on Monday.",
+      "limits": "This does not rebut later specific reporting about punctuality; it records the manager's account of the earlier absences.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Monday 19 October 2020 20:30 BST",
+      "dateBasis": "Publisher page timestamp.",
+      "verification": "Independent article opened; headline, time/date, subhead and article text visible.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "independent-2020-10-19-solskjaer-denial",
+      "alreadyInCore": {
+        "caseId": "greenwood-pre2022-campaign",
+        "recordId": "football-independent-2020-10-19-solskjaer-denial"
+      }
+    },
+    {
+      "id": "football-guardian-2020-10-21-discipline-report",
+      "subjectIds": [
+        "greenwood"
+      ],
+      "outlet": "The Guardian",
+      "headline": "Mason Greenwood warned over discipline by Manchester United",
+      "date": "2020-10-21",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2020/oct/21/mason-greenwood-warned-over-discipline-by-manchester-united",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-discipline-report",
+      "framingNote": "Compare this wording with the dated development and response.",
+      "limits": "The report says the club warning was understood by the outlet; Ole Gunnar Solskjaer publicly denied two days later that Greenwood was ever late to training. Reported absences and manager's injury explanation both matter.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Wed 21 Oct 2020 13.09 EDT; last modified Mon 15 Apr 2024 08.54 EDT",
+      "dateBasis": "Guardian timestamp and page revision label.",
+      "verification": "Original article opened; original and modified timestamps, headline, and body inspected.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "guardian-2020-10-21-discipline-report",
+      "alreadyInCore": {
+        "caseId": "greenwood-pre2022-campaign",
+        "recordId": "football-guardian-2020-10-21-discipline-report"
+      }
+    },
+    {
+      "id": "football-sky-2020-10-23-solskjaer-response",
+      "subjectIds": [
+        "greenwood"
+      ],
+      "outlet": "Sky Sports",
+      "headline": "Mason Greenwood behaviour not a problem for Man Utd boss Ole Gunnar Solskjaer",
+      "date": "2020-10-23",
+      "format": "article",
+      "url": "https://www.skysports.com/football/news/12111941/mason-greenwood-behaviour-not-a-problem-for-man-utd-boss-ole-gunnar-solskjaer",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-manager-denial",
+      "framingNote": "Sky reports Solskjaer rejecting professionalism concerns, saying Greenwood was always on time and not a problem on the training ground, while acknowledging the Iceland Covid breach as a mistake. The page states that Greenwood's timekeeping and behaviour had been reported as causing concern.",
+      "limits": "Sky's page summarizes previous reporting but does not name the original reporting outlet in the visible body. It does not establish whether the punctuality reports were accurate.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Friday 23 October 2020 18:29 UK",
+      "dateBasis": "Sky Sports page timestamp.",
+      "verification": "Sky Sports page opened in Chrome; exact H1, timestamp and body visible.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "sky-2020-10-23-solskjaer-response",
+      "alreadyInCore": {
+        "caseId": "greenwood-pre2022-campaign",
+        "recordId": "football-sky-2020-10-23-solskjaer-response"
+      }
+    },
+    {
+      "id": "football-guardian-2020-10-23-solskjaer-response",
+      "subjectIds": [
+        "greenwood"
+      ],
+      "outlet": "The Guardian",
+      "headline": "Ole Gunnar Solskjær defends media 'target' Mason Greenwood after illness",
+      "date": "2020-10-23",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2020/oct/23/ole-gunnar-solskjaer-defence-media-target-mason-greenwood-manchester-united",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-manager-denial",
+      "framingNote": "Compare this wording with the dated development and response.",
+      "limits": "Live coverage rather than a recovered standalone article; manager's denial does not independently resolve the reporting.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "First published Fri 23 Oct 2020 06.14 EDT; updated Fri 23 Oct 2020 17.30 EDT (Guardian UK-time rendering). The Guardian Australia page renders the same instants as first published Fri 23 Oct 21.14 AEDT and updated Sat 24 Oct 08.30 AEDT.",
+      "dateBasis": "Guardian index listing for the linked live coverage, timestamped 23 October 2020 at 17:30 EDT.",
+      "verification": "Standalone Guardian article opened; H1, summary, byline and both timestamps visible. It reports the prior club discipline warning while carrying Solskjær's direct public denial that Greenwood had been an issue in training.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "guardian-2020-10-23-solskjaer-response",
+      "alreadyInCore": {
+        "caseId": "greenwood-pre2022-campaign",
+        "recordId": "football-guardian-2020-10-23-solskjaer-response"
+      }
+    },
+    {
+      "id": "football-fa-2020-11-18-foden-return",
+      "subjectIds": [
+        "foden"
+      ],
+      "outlet": "The FA / England Football",
+      "headline": "Phil Foden reacts after scoring his first goals for England in win over Iceland",
+      "date": "2020-11-18",
+      "format": "official",
+      "url": "https://www.thefa.com/news/2020/nov/18/phil-foden-england-iceland-reaction-181120",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-foden-goals",
+      "framingNote": "Foden's return story is framed around football: first England goals, a brace against Iceland, and his delivery for Rice's opener. The FA also includes Foden's own reflection on the September departure and says the performance justified his return.",
+      "limits": "Official FA player interview; Foden's own account of the emotional impact is direct quotation, not an independent assessment.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Wednesday 18 Nov 2020",
+      "dateBasis": "Publisher page date, Wednesday 18 Nov 2020.",
+      "verification": "Opened on the FA publisher page in Chrome. H1 and date are visible; the article says Foden returned to the lineup after missing October, assisted Declan Rice, scored twice, and described the September departure as one of the hardest moments of his life.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "fa-2020-11-18-foden-return"
+    },
+    {
+      "id": "football-guardian-2020-11-18-foden-match-report",
+      "subjectIds": [
+        "foden"
+      ],
+      "outlet": "The Guardian",
+      "headline": "Foden's sparkling double sinks Iceland and completes return from England cold",
+      "date": "2020-11-18",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2020/nov/18/fodens-sparking-double-sinks-iceland-and-completes-return-from-england-cold",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-foden-goals",
+      "framingNote": "Compare this wording with the dated development and response.",
+      "limits": "The match report ties the story to the prior incident but also supplies relevant football context, including opponent strength and competition stakes.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Wed 18 Nov 2020 22.01 GMT; last modified Thu 19 Nov 2020 04.36 GMT",
+      "dateBasis": "Guardian article timestamp and modification label.",
+      "verification": "Opened on the Guardian publisher page. Exact headline, byline, timestamps and full match-report context are visible.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "guardian-2020-11-18-foden-match-report"
+    },
+    {
+      "id": "football-figc-2021-02-05",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "Federazione Italiana Giuoco Calcio (FIGC)",
+      "headline": "Comunicato Ufficiale N. 271/AA — Art. 126 CGS — Diallo - Traore",
+      "date": "2021-02-05",
+      "format": "official",
+      "url": "https://www.figc.it/media/130807/271-art-126-cgs-diallo-traore.pdf",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-figc-notice",
+      "framingNote": "Records Diallo’s alleged conduct in relation to Boca Barco registration on 14 January 2015 and an Atalanta first professional contract dated 11 July 2018, and makes public an agreed €48,000 fine for each player under Article 126. This is a sports-disciplinary agreement, not a criminal-court judgment or a finding that Diallo committed human trafficking.",
+      "limits": "The notice describes conduct and an agreed sanction; it does not resolve the separate Parma criminal investigation, establish the players’ family relationship, or determine whether Diallo was trafficked.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Pubblicato in Roma il 5 febbraio 2021",
+      "dateBasis": "Date printed in the notice",
+      "verification": "Direct primary document; publication date and text visible on pages 1–2.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "figc-2021-02-05"
+    },
+    {
+      "id": "football-calcioatalanta-2021-02-10",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "CalcioAtalanta",
+      "headline": "Risolto il caso Diallo-Traore: 48 mila euro di multa",
+      "date": "2021-02-10",
+      "format": "article",
+      "url": "https://www.calcioatalanta.it/2021/02/10/risolto-il-caso-diallo-traore-48-mila-euro-di-multa/",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-diallo-uk-wave",
+      "framingNote": "Reports the FIGC fine and references the earlier Parma case. Its subtitle asserts the two were not brothers and had pretended to be; it also says the matter was definitively closed.",
+      "limits": "The FIGC notice does not establish whether the players are related or say they pretended to be brothers. ‘Closed’ applies to the reported FIGC matter, not the separate criminal inquiry.",
+      "language": "it",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "10 Febbraio 2021, 12:00",
+      "dateBasis": "Article timestamp",
+      "verification": "Direct article opened; date, time, author and body visible.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "calcioatalanta-2021-02-10",
+      "englishHeadlineTranslation": "Reports the FIGC fine and references the earlier Parma case. Its subtitle asserts the two were not brothers and had pretended to be; it also says the matter was definitively closed."
+    },
+    {
+      "id": "football-daily-mail-2021-02-10",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "Daily Mail / MailOnline",
+      "headline": "Man United’s £37m Amad Diallo is fined £42,000 for ‘falsifying documents and using bogus parents to push through his move to Italy…",
+      "date": "2021-02-10",
+      "format": "article",
+      "url": null,
+      "sourceStatus": "reported_date_only",
+      "eventId": "football-event-diallo-uk-wave",
+      "framingNote": "The reported headline foregrounds Diallo, the fine, and culpability-coded ‘falsifying’/‘bogus’ language. Later commentary criticizes its framing. This record captures the headline as quoted by that commentary; it is not a direct inspection of the Mail article.",
+      "limits": "Treat headline punctuation, exact date, article body, and context as provisional until the original Mail page/archive is inspected. Do not claim the Daily Mail alone proves a pile-on.",
+      "language": "en",
+      "headlineIsExcerpt": true,
+      "publishedDisplay": "10 February 2021 (date supported by contemporaneous secondary references; original page not retrieved)",
+      "dateBasis": "Secondary citation and later source; exact timestamp not verified",
+      "verification": "Headline quoted verbatim by Counterfire on 24 May 2021; date/author cross-referenced in a later academic source identifying Chris Wheeler and 10 February. The original Mail page was blocked or not located in this pass.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "daily-mail-2021-02-10"
+    },
+    {
+      "id": "football-index-2021-02-10",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "Index.hr",
+      "headline": "Mlada zvijezda Uniteda u Europu je ušla s lažnim papirima i fiktivnim roditeljima",
+      "date": "2021-02-10",
+      "format": "article",
+      "url": "https://www.index.hr/sport/clanak/mlada-zvijezda-uniteda-u-europu-je-usla-s-laznim-papirima-i-fiktivnim-roditeljima/2253401.aspx",
+      "sourceStatus": "reported_date_only",
+      "eventId": "football-event-diallo-uk-wave",
+      "framingNote": "Frames the case around false papers and fictitious parents, while noting the criminal inquiry involved five suspected traffickers and that Diallo was a minor at the time. It inaccurately calls the FIGC process a court case in the headline/body.",
+      "limits": "The sanction was recorded by FIGC under sports code Article 126, not issued by a court. Family relationship remains unproven in the FIGC notice.",
+      "language": "hr",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "14:57, 10. veljače 2021.",
+      "dateBasis": "Displayed article timestamp",
+      "verification": "Search-indexed full article and timestamp; linked source page identified.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "index-2021-02-10",
+      "englishHeadlineTranslation": "Frames the case around false papers and fictitious parents, while noting the criminal inquiry involved five suspected traffickers and that Diallo was a minor at the time. It inaccurately calls the FIGC process a court case in the headline/body."
+    },
+    {
+      "id": "football-stretty-news-2021-02-10",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "Stretty News",
+      "headline": "Amad Diallo fined £42,000 after alleged use of fake documents to enable transfer",
+      "date": "2021-02-10",
+      "format": "opinion",
+      "url": "https://strettynews.com/2021/02/10/amad-diallo-fined-after-alleged-use-of-fake-documents-to-enable-transfer/",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-diallo-uk-wave",
+      "framingNote": "The writer reports the fine and describes the allegation as ‘fishy,’ then speculates about whether United knew of the matter and asserts it does not change Diallo’s status. The article relies on the Daily Mail for key facts and quotes the FIGC statement.",
+      "limits": "Specialist fan publication, not a national newspaper. Its language and speculation should be distinguished from original reporting; article says the siblingship is also alleged rather than settled.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Posted 10 February 2021, 14:18",
+      "dateBasis": "Displayed post time",
+      "verification": "Publisher page indexed with headline, timestamp, byline and body.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "stretty-news-2021-02-10",
+      "alreadyInCore": {
+        "caseId": "diallo-documents-campaign",
+        "recordId": "football-stretty-news-2021-02-10"
+      }
+    },
+    {
+      "id": "football-trivela-2021-02-10",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "Trivela",
+      "headline": "Promessa do United, Amad Diallo é multado por documentos falsos, em caso que revela fraude com garotos africanos rumo à Itália",
+      "date": "2021-02-10",
+      "format": "article",
+      "url": "https://trivela.com.br/italia/serie-a/promessa-do-united-amad-diallo-e-multado-por-documentos-falsos-em-caso-que-revela-fraude-com-garotos-africanos-rumo-a-italia/",
+      "sourceStatus": "reported_date_only",
+      "eventId": "football-event-diallo-uk-wave",
+      "framingNote": "Frames the FIGC sanction as part of a broader fraud involving young African players, and links the penalty to the registration-document allegations.",
+      "limits": "The page has a later update; separate the original 2021 publication from edits made in 2023. Sports settlement does not establish trafficking or criminal guilt.",
+      "language": "pt",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "10/02/2021 - 14:41 (page later updated 05/04/2023)",
+      "dateBasis": "Original timestamp displayed separately from 2023 update",
+      "verification": "Search-indexed full article with original publication and later update time; original page identified.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "trivela-2021-02-10",
+      "englishHeadlineTranslation": "Frames the FIGC sanction as part of a broader fraud involving young African players, and links the penalty to the registration-document allegations."
+    },
+    {
+      "id": "football-repubblica-2021-02-10",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "la Repubblica (Parma/Bologna)",
+      "headline": "La Procura di Parma svelò il sistema dei falsi genitori: patteggiano i calciatori Traore e Diallo",
+      "date": "2021-02-10",
+      "format": "article",
+      "url": "https://parma.bologna.repubblica.it/cronaca/2021/02/10/news/diallo-286852854/",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-diallo-uk-wave",
+      "framingNote": "Reports the agreed €48,000 sanctions and reproduces the FIGC’s account of the 2015 registration, 2018 professional contract, and later registrations. It clearly attributes the detailed conduct to the FIGC communication.",
+      "limits": "Headline describes the players as ‘patteggiano’ (accepted an agreed sanction); the underlying FIGC document is the controlling source.",
+      "language": "it",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "10 Febbraio 2021 alle 08:52",
+      "dateBasis": "Article timestamp",
+      "verification": "Direct article opened; headline, time, and quoted FIGC wording visible.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "repubblica-2021-02-10",
+      "englishHeadlineTranslation": "Reports the agreed €48,000 sanctions and reproduces the FIGC’s account of the 2015 registration, 2018 professional contract, and later registrations. It clearly attributes the detailed conduct to the FIGC communication."
+    },
+    {
+      "id": "football-football365-2021-02-11",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "Football365",
+      "headline": "New Man Utd recruit Diallo fined over the use of false documents",
+      "date": "2021-02-11",
+      "format": "article",
+      "url": "https://www.football365.com/news/man-utd-amad-diallo-fined-use-false-documents",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-diallo-pa",
+      "framingNote": "Reports the €48,000 FIGC sanction, gives the 2015 Boca Barco and 2018 Atalanta context, and says United declined comment. The no-comment wording is outlet-attributed, not a direct club statement.",
+      "limits": "Count this as one PA-originated report, not an independent investigation. The sentence about United is second-hand; no official United statement was located.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "11 Feb 2021, 3:18 PM",
+      "dateBasis": "Publisher timestamp",
+      "verification": "Direct publisher page opened; headline, author, date, time and body visible. Text closely matches the later PA Media version at Sky Sports and RTÉ.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "football365-2021-02-11",
+      "storyGroupId": "pa-diallo-20210211",
+      "sourceCopyGroupNote": "Two publisher placements of the PA account. Their publication counts remain separate; they are one known shared report, not two independent investigations.",
+      "alreadyInCore": {
+        "caseId": "diallo-documents-campaign",
+        "recordId": "football-football365-2021-02-11"
+      }
+    },
+    {
+      "id": "football-footballtransfers-2021-02-11",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "FootballTransfers",
+      "headline": "Man Utd new boy Amad Diallo fined in false documentation storm",
+      "date": "2021-02-11",
+      "format": "article",
+      "url": "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2021/02/man-utd-new-boy-amad-diallo-fined-in-false-documentation-storm",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "Robin Bairner reports the €48,000 fine and the FIGC’s statement. The headline’s ‘storm’ language adds a dramatic news frame; the body also inaccurately states that Diallo could not have signed without the documents and calls Hamed his brother.",
+      "limits": "The FIGC notice does not establish siblingship, and the document does not itself say Diallo could not have signed. Publisher’s national ownership/location not established here; included as UK-focused English-language football coverage rather than a verified UK-headquartered outlet.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "11 Feb 2021, 15:52 GMT",
+      "dateBasis": "Publisher schema.org datePublished; later updated display is not a new publication.",
+      "verification": "Original publisher page inspected; schema.org datePublished is2021-02-11T15:52:17+00:00. Visible update is19May2021, distinct from first publication.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "footballtransfers-2021-02-11",
+      "alreadyInCore": {
+        "caseId": "diallo-documents-campaign",
+        "recordId": "football-footballtransfers-2021-02-11"
+      }
+    },
+    {
+      "id": "football-sky-sports-2021-02-11",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "Sky Sports",
+      "headline": "Amad Diallo: Manchester United winger fined over false documents that allowed him to enter Italy",
+      "date": "2021-02-11",
+      "format": "article",
+      "url": "https://www.skysports.com/football/news/12215244/amad-diallo-manchester-united-winger-fined-over-false-documents-that-allowed-him-to-enter-italy",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-diallo-pa",
+      "framingNote": "Sky publishes the PA Media report describing the fine and the FIGC statement. It says United declined comment and reports the club was understood to be confident the matter would not affect Diallo’s ability to play.",
+      "limits": "Near-identical to Football365 and RTÉ reporting, so this is distribution reach, not an additional independent story. United’s position is reported indirectly.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Thursday 11 February 2021, 20:38 UK",
+      "dateBasis": "Publisher timestamp",
+      "verification": "Direct Sky Sports article indexed with PA Media byline, headline, exact timestamp and body.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "sky-sports-2021-02-11",
+      "storyGroupId": "pa-diallo-20210211",
+      "sourceCopyGroupNote": "Two publisher placements of the PA account. Their publication counts remain separate; they are one known shared report, not two independent investigations.",
+      "alreadyInCore": {
+        "caseId": "diallo-documents-campaign",
+        "recordId": "football-sky-sports-2021-02-11"
+      }
+    },
+    {
+      "id": "football-times-2021-02-14",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "The Times",
+      "headline": "Police case sheds light on rings that bring gifted youngsters from Ivory Coast to Italy",
+      "date": "2021-02-14",
+      "format": "article",
+      "url": null,
+      "sourceStatus": "reported_date_only",
+      "eventId": null,
+      "framingNote": "Places Diallo within a wider alleged network involving five young Ivorians and five adults, reports that the Parma investigation remained open, and quotes a judicial source saying Diallo was a minor and not under investigation by magistrates. This contextual follow-up complicates a headline-only account of the FIGC fine.",
+      "limits": "Primary Times page is paywalled/not retrieved; Reddit is used only as a date/text access path. Verify exact headline and wording against the publisher before formal quotation.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "14 February 2021, 12:01 am",
+      "dateBasis": "Contemporaneous excerpt states the publication date/time",
+      "verification": "Headline, byline and article text visible in contemporaneous Reddit posts reproducing a Times article; original Times page not opened in this pass.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "times-2021-02-14"
+    },
+    {
+      "id": "football-hare-court-2021-02-15",
+      "subjectIds": [
+        "diallo"
+      ],
+      "outlet": "2 Hare Court",
+      "headline": "Does Sport have a problem with Human Trafficking?",
+      "date": "2021-02-15",
+      "format": "opinion",
+      "url": "https://www.2harecourt.com/2021/02/15/does-sport-have-a-problem-with-human-trafficking/",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-diallo-care",
+      "framingNote": "A barrister argues for examining child vulnerability; the blog’s chronology differs from the dated registration acts in the FIGC notice.",
+      "limits": "Commentary contains conflicting chronology (it refers to entry into Italy in 2010 and 2008); use the FIGC notice for the dated registration and contract acts. It is not a case judgment.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "15 February 2021",
+      "dateBasis": "Publisher date",
+      "verification": "Search-indexed full text and publication date; publisher page identified.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "hare-court-2021-02-15"
+    },
+    {
+      "id": "football-counterfire-2021-05-24",
+      "subjectIds": [
+        "diallo",
+        "foden",
+        "greenwood",
+        "sterling"
+      ],
+      "outlet": "Counterfire",
+      "headline": "Black footballers and the media: Amad Diallo, the tabloids and racism",
+      "date": "2021-05-24",
+      "format": "opinion",
+      "url": "https://www.counterfire.org/article/black-footballers-and-the-media-amad-diallo-the-tabloids-and-racism/",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "Euan Burns criticizes the Daily Mail headline as portraying children as ‘criminal masterminds’ and situates it within arguments about coverage of young Black footballers. The article explicitly predicts the Diallo story is likely to remain a one-off until he becomes more newsworthy, then speculates future coverage might revive details of his past.",
+      "limits": "Opinion piece, not an exhaustive media study. Its use of ‘brother’ and its trafficking characterization are assertions beyond what the FIGC notice establishes. Do not use it to label the February coverage a proven pile-on.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "24 May 2021",
+      "dateBasis": "Article date printed by publisher",
+      "verification": "Direct article opened; date, author, quoted Daily Mail headline and forecast are visible.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "counterfire-2021-05-24"
+    },
+    {
+      "id": "football-guardian-2021-06-01-euro-withdrawal",
+      "subjectIds": [
+        "greenwood"
+      ],
+      "outlet": "The Guardian",
+      "headline": "England’s Euro 2020 squad: Greenwood withdraws, no Ward-Prowse or Lingard",
+      "date": "2021-06-01",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2021/jun/01/mason-greenwood-pulls-out-of-england-squad-to-recovery-fully-from-injury-euro-2020",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-greenwood-injury",
+      "framingNote": "Compare this wording with the dated development and response.",
+      "limits": "Do not conflate injury withdrawal with an England disciplinary omission.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Tue 1 Jun 2021 05.17 EDT; last modified Mon 15 Apr 2024 08.53 EDT",
+      "dateBasis": "Guardian original timestamp and page revision label.",
+      "verification": "Original article opened; headline, dates and United statement reproduced in body.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "guardian-2021-06-01-euro-withdrawal",
+      "alreadyInCore": {
+        "caseId": "greenwood-pre2022-campaign",
+        "recordId": "football-guardian-2021-06-01-euro-withdrawal"
+      }
+    },
+    {
+      "id": "football-guardian-2021-08-26-england-omission",
+      "subjectIds": [
+        "greenwood"
+      ],
+      "outlet": "The Guardian",
+      "headline": "Patrick Bamford receives first England call-up but Mason Greenwood misses out",
+      "date": "2021-08-26",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2021/aug/26/patrick-bamford-receives-first-england-call-up-but-mason-greenwood-misses-out",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "Compare this wording with the dated development and response.",
+      "limits": "This is a selection report. The headline does not claim the Iceland breach caused the omission.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Thu 26 Aug 2021 09.10 EDT; last modified Thu 26 Aug 2021 11.15 EDT",
+      "dateBasis": "Guardian article timestamps.",
+      "verification": "Original article opened; timestamps and body inspected.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "guardian-2021-08-26-england-omission",
+      "alreadyInCore": {
+        "caseId": "greenwood-pre2022-campaign",
+        "recordId": "football-guardian-2021-08-26-england-omission"
+      }
+    },
+    {
+      "id": "football-guardian-2021-08-28-england-future",
+      "subjectIds": [
+        "greenwood"
+      ],
+      "outlet": "The Guardian / Observer archive",
+      "headline": "Mason Greenwood will 100% stick with England, says Gareth Southgate",
+      "date": "2021-08-28",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2021/aug/28/mason-greenwood-will-100-stick-with-england-says-gareth-southgate",
+      "sourceStatus": "publisher_verified",
+      "eventId": null,
+      "framingNote": "Compare this wording with the dated development and response.",
+      "limits": "Selection commentary, not evidence of an Iceland-related sanction.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Sat 28 Aug 2021 17.30 EDT; last modified Mon 15 Apr 2024 08.53 EDT",
+      "dateBasis": "Guardian timestamps.",
+      "verification": "Original article recovered in search result with headline, original and modified timestamps, and body summary.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "guardian-2021-08-28-england-future",
+      "alreadyInCore": {
+        "caseId": "greenwood-pre2022-campaign",
+        "recordId": "football-guardian-2021-08-28-england-future"
+      }
+    },
+    {
+      "id": "football-guardian-2021-11-04-england-pause",
+      "subjectIds": [
+        "greenwood"
+      ],
+      "outlet": "The Guardian",
+      "headline": "Mason Greenwood opted out of England selection until next year, says Southgate",
+      "date": "2021-11-04",
+      "format": "article",
+      "url": "https://www.theguardian.com/football/2021/nov/04/mason-greenwood-opted-out-of-england-selection-until-next-year-says-gareth-southgate",
+      "sourceStatus": "publisher_verified",
+      "eventId": "football-event-greenwood-choice",
+      "framingNote": "Compare this wording with the dated development and response.",
+      "limits": "The article attributes the account to Southgate. It does not say the pause resulted from the Iceland incident.",
+      "language": "en",
+      "headlineIsExcerpt": false,
+      "publishedDisplay": "Thu 4 Nov 2021 18.30 EDT; last modified Fri 5 Nov 2021 01.30 EDT",
+      "dateBasis": "Guardian timestamps.",
+      "verification": "Original article recovered in search result with timestamps, headline, and summary.",
+      "checkedAt": "2026-10-14",
+      "primarySourceId": "guardian-2021-11-04-england-pause"
+    }
+  ],
+  "events": [
+    {
+      "id": "football-event-euro-exit",
+      "date": "2016-06-27",
+      "label": "England loses to Iceland at Euro2016",
+      "url": "https://www.skysports.com/football/news/12016/10328946/raheem-sterling-shows-off-luxury-mansion-hours-after-england-exit-from-euro-2016",
+      "summary": "The later house-tour reports refer to this sporting defeat. A video and the coverage are separate observations; its upload time is not reconstructed."
+    },
+    {
+      "id": "football-event-house-reports",
+      "date": "2016-06-30",
+      "label": "House-tour reports appear at several publishers",
+      "url": "https://www.thesun.co.uk/news/1368946/luxury-pad-raheem-sterling-flaunted-in-video-hours-after-euros-return-was-bought-for-his-mum/",
+      "summary": "These are several placements around the same video, not evidence of several distinct private-life developments."
+    },
+    {
+      "id": "football-event-sterling-response",
+      "date": "2017-03-31",
+      "label": "Sterling gives an interview about press treatment",
+      "url": "https://www.theguardian.com/football/2017/mar/31/raheem-sterling-manchester-city-im-not-a-brat",
+      "summary": "A response adds the subject’s perspective."
+    },
+    {
+      "id": "football-event-foden-home",
+      "date": "2018-10-05",
+      "label": "Verified Foden family-home report",
+      "url": "https://www.thesun.co.uk/sport/football/7422846/manchester-city-starlet-phil-foden-buys-mum-new-2m-home-aged-just-18-after-being-brought-up-in-modest-stockport-suburb/",
+      "summary": "The Sun’s story supplies a comparator. Different years, ages, mortgages and sporting circumstances need consideration."
+    },
+    {
+      "id": "football-event-iceland-breach",
+      "date": "2020-09-07",
+      "label": "FA excludes both players from the Denmark trip",
+      "url": "https://www.thefa.com/news/2020/sep/07/gareth-southgate-phil-foden-mason-greenwood-update-070920",
+      "summary": "The FA says both remained in the hotel but spent time outside its private team area, breaching protocols. Press accounts about meetings remain attributed."
+    },
+    {
+      "id": "football-event-greenwood-apology",
+      "date": "2020-09-08",
+      "label": "Greenwood’s apology reported",
+      "url": "https://www.bbc.co.uk/sport/football/54069377",
+      "summary": "A public response after the shared breach; not a new finding of another offence."
+    },
+    {
+      "id": "football-event-october-selection",
+      "date": "2020-10-01",
+      "label": "BBC publishes analysis of both October omissions",
+      "url": "https://www.bbc.co.uk/sport/football/54377952",
+      "summary": "This is named football analysis, separated from official announcements."
+    },
+    {
+      "id": "football-event-absence-response",
+      "date": "2020-10-19",
+      "label": "Manager says absences were not disciplinary",
+      "url": "https://www.independent.co.uk/sport/football/european/mason-greenwood-injury-man-utd-news-latest-psg-champions-league-b1161692.html",
+      "summary": "The manager describes an injury; this statement precedes the later warning report."
+    },
+    {
+      "id": "football-event-discipline-report",
+      "date": "2020-10-21",
+      "label": "Guardian reports a discipline warning",
+      "url": "https://www.theguardian.com/football/2020/oct/21/mason-greenwood-warned-over-discipline-by-manchester-united",
+      "summary": "The headline is a report attributed to the outlet’s understanding, not an adjudicated finding."
+    },
+    {
+      "id": "football-event-manager-denial",
+      "date": "2020-10-23",
+      "label": "Solskjaer rejects timekeeping concerns publicly",
+      "url": "https://www.skysports.com/football/news/12111941/mason-greenwood-behaviour-not-a-problem-for-man-utd-boss-ole-gunnar-solskjaer",
+      "summary": "Keep this denial beside the earlier report. The selected record does not resolve which account was correct."
+    },
+    {
+      "id": "football-event-foden-goals",
+      "date": "2020-11-18",
+      "label": "Foden scores his first senior England goals",
+      "url": "https://www.thefa.com/news/2020/nov/18/phil-foden-england-iceland-reaction-181120",
+      "summary": "An individual sporting development provides a new hook. A performance-led account cannot establish that the press forgot or forgave every earlier report."
+    },
+    {
+      "id": "football-event-figc-notice",
+      "date": "2021-02-05",
+      "label": "FIGC publishes its sports-sanction agreement",
+      "url": "https://www.figc.it/media/130807/271-art-126-cgs-diallo-traore.pdf",
+      "summary": "Official notice271/AA records Article126 agreed fines of€48,000 each. This is not a criminal-court conviction."
+    },
+    {
+      "id": "football-event-diallo-uk-wave",
+      "date": "2021-02-10",
+      "label": "Selected English-language follow-ups begin",
+      "url": "https://strettynews.com/2021/02/10/amad-diallo-fined-after-alleged-use-of-fake-documents-to-enable-transfer/",
+      "summary": "Publisher story dates differ from the earlier official notice. Every placement still needs its own public-value explanation."
+    },
+    {
+      "id": "football-event-diallo-pa",
+      "date": "2021-02-11",
+      "label": "PA account appears at Sky and Football365",
+      "url": "https://www.skysports.com/football/news/12215244/amad-diallo-manchester-united-winger-fined-over-false-documents-that-allowed-him-to-enter-italy",
+      "summary": "Two retained publisher placements share the same report. Their distribution is distinct from independent investigation."
+    },
+    {
+      "id": "football-event-diallo-care",
+      "date": "2021-02-15",
+      "label": "A barrister publishes a child-vulnerability critique",
+      "url": "https://www.2harecourt.com/2021/02/15/does-sport-have-a-problem-with-human-trafficking/",
+      "summary": "Legal commentary raises an ethical challenge. Its disputed chronology is not substituted for the official notice."
+    },
+    {
+      "id": "football-event-greenwood-injury",
+      "date": "2021-06-01",
+      "label": "England withdrawal reported as injury-related",
+      "url": "https://www.theguardian.com/football/2021/jun/01/mason-greenwood-pulls-out-of-england-squad-to-recovery-fully-from-injury-euro-2020",
+      "summary": "A later selection development, rather than a new discipline finding."
+    },
+    {
+      "id": "football-event-greenwood-choice",
+      "date": "2021-11-04",
+      "label": "Southgate reports a request to pause selection",
+      "url": "https://www.theguardian.com/football/2021/nov/04/mason-greenwood-opted-out-of-england-selection-until-next-year-says-gareth-southgate",
+      "summary": "A new manager account. It remains outside the playable pre2022round’s one-year window."
+    },
+    {
+      "id": "football-event-retained-2018-05-28",
+      "date": "2018-05-28",
+      "label": "The Sun publishes its original web report about Sterling’s tattoo",
+      "url": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+      "summary": "Event from the already retained2018case; it is context for these publisher dates."
+    },
+    {
+      "id": "football-event-retained-2018-05-29",
+      "date": "2018-05-29",
+      "label": "Print coverage, contemporary reporting and Sterling’s public explanation of the tattoo",
+      "url": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
+      "summary": "Event from the already retained2018case; it is context for these publisher dates."
+    },
+    {
+      "id": "football-event-retained-2018-06-01",
+      "date": "2018-06-01",
+      "label": "England manager responds to tattoo coverage",
+      "url": "https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-england-football-team-raheem-sterling-tattoo-sun-front-page-gareth-southgate-a8379251.html",
+      "summary": "Event from the already retained2018case; it is context for these publisher dates."
+    },
+    {
+      "id": "football-event-retained-2018-12-08",
+      "date": "2018-12-08",
+      "label": "Alleged racist incident at Stamford Bridge",
+      "url": "https://www.theguardian.com/football/2018/dec/09/raheem-sterling-newspapers-fuelling-racism-alleged-abuse-chelsea",
+      "summary": "Event from the already retained2018case; it is context for these publisher dates."
+    },
+    {
+      "id": "football-event-retained-2018-12-09",
+      "date": "2018-12-09",
+      "label": "Sterling posts about media portrayals after the alleged incident",
+      "url": "https://www.theguardian.com/football/2018/dec/09/raheem-sterling-newspapers-fuelling-racism-alleged-abuse-chelsea",
+      "summary": "Event from the already retained2018case; it is context for these publisher dates."
+    },
+    {
+      "id": "football-event-retained-2018-12-11",
+      "date": "2018-12-11",
+      "label": "Publisher responds to criticism of its reporting",
+      "url": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
+      "summary": "Event from the already retained2018case; it is context for these publisher dates."
+    }
+  ],
+  "episodes": [
+    {
+      "id": "football-episode-sterling-house",
+      "title": "Sterling: the 2016 house-tour wave",
+      "start": "2016-06-27",
+      "end": "2016-07-03",
+      "recordIds": [
+        "football-sterling-standard-house-20160630",
+        "football-sterling-mail-house-20160630",
+        "football-sterling-sky-house-20160630",
+        "football-sterling-sun-mum-house-20160630"
+      ],
+      "eventIds": [
+        "football-event-euro-exit",
+        "football-event-house-reports"
+      ],
+      "scopeNote": "A selected same-event wave. Publisher placements are not independent developments. Some Mail details remain attributed leads."
+    },
+    {
+      "id": "football-episode-sterling-lifestyle",
+      "title": "Sterling: spending, ordinary life and his response",
+      "start": "2017-01-01",
+      "end": "2017-10-31",
+      "recordIds": [
+        "football-sterling-mail-poundworld-20170105",
+        "football-sterling-guardian-interview-20170331",
+        "football-sterling-irish-indy-comment-20171030"
+      ],
+      "eventIds": [
+        "football-event-sterling-response"
+      ],
+      "scopeNote": "Separate episodes across ten months. Sparse dates are recovery gaps; this chart does not imply continuous coverage."
+    },
+    {
+      "id": "football-episode-sterling-2018",
+      "title": "Sterling: the existing 2018 tattoo and racism window",
+      "start": "2018-05-28",
+      "end": "2018-12-16",
+      "recordIds": [
+        "football-retained-sterling-sterling-sun-original-tattoo-web-20180528",
+        "football-retained-sterling-sterling-bbc-sport-tattoo-20180529",
+        "football-retained-sterling-sterling-guardian-tabloid-snobbery-comment-20180529",
+        "football-retained-sterling-sterling-guardian-tattoo-response-20180529",
+        "football-retained-sterling-sterling-h01",
+        "football-retained-sterling-sterling-h02",
+        "football-retained-sterling-sterling-h05",
+        "football-retained-sterling-sterling-h04",
+        "football-retained-sterling-sterling-h06",
+        "football-retained-sterling-sterling-h07",
+        "football-retained-sterling-sterling-h08",
+        "football-retained-sterling-sterling-h09",
+        "football-retained-sterling-sterling-h10",
+        "football-retained-sterling-sterling-h11"
+      ],
+      "eventIds": [
+        "football-event-foden-home",
+        "football-event-retained-2018-05-28",
+        "football-event-retained-2018-05-29",
+        "football-event-retained-2018-06-01",
+        "football-event-retained-2018-12-08",
+        "football-event-retained-2018-12-09",
+        "football-event-retained-2018-12-11"
+      ],
+      "scopeNote": "Linked view of the15records already retained in the original round; do not add them to it again."
+    },
+    {
+      "id": "football-episode-foden-home",
+      "title": "Foden: family-home comparison",
+      "start": "2018-10-04",
+      "end": "2018-10-08",
+      "recordIds": [
+        "football-foden-mail-home-20181004",
+        "football-foden-sun-home-20181005",
+        "football-foden-sky-italia-home-20181007"
+      ],
+      "eventIds": [
+        "football-event-foden-home"
+      ],
+      "scopeNote": "Two verified publisher originals, including an Italian comparator. The Mail date remains unresolved and excluded from verified counts."
+    },
+    {
+      "id": "football-episode-iceland",
+      "title": "Greenwood and Foden: shared breach and first follow-ups",
+      "start": "2020-09-05",
+      "end": "2020-10-02",
+      "recordIds": [
+        "football-bbc-2020-09-07-joint-report",
+        "football-city-2020-09-07-foden-response",
+        "football-sky-2020-09-07-joint-report",
+        "football-fa-2020-09-07-joint-incident",
+        "football-bbc-2020-09-08-greenwood-apology",
+        "football-rte-2020-09-13-greenwood-second-story",
+        "football-bbc-2020-10-01-england-omission-analysis"
+      ],
+      "eventIds": [
+        "football-event-iceland-breach",
+        "football-event-greenwood-apology",
+        "football-event-october-selection"
+      ],
+      "scopeNote": "Joint articles count once; official club/FA statements and named analysis have their own totals. Both players were subject to the same initial decision."
+    },
+    {
+      "id": "football-episode-greenwood-october",
+      "title": "Greenwood: absence, warning report and manager’s denial",
+      "start": "2020-10-17",
+      "end": "2020-10-25",
+      "recordIds": [
+        "football-independent-2020-10-19-solskjaer-denial",
+        "football-guardian-2020-10-21-discipline-report",
+        "football-sky-2020-10-23-solskjaer-response",
+        "football-guardian-2020-10-23-solskjaer-response"
+      ],
+      "eventIds": [
+        "football-event-absence-response",
+        "football-event-discipline-report",
+        "football-event-manager-denial"
+      ],
+      "scopeNote": "A report and a subsequent denial are distinct publications, not adjudication. No claim of secret newsroom knowledge is made."
+    },
+    {
+      "id": "football-episode-foden-return",
+      "title": "Foden: return and first England goals",
+      "start": "2020-11-16",
+      "end": "2020-11-20",
+      "recordIds": [
+        "football-fa-2020-11-18-foden-return",
+        "football-guardian-2020-11-18-foden-match-report"
+      ],
+      "eventIds": [
+        "football-event-foden-goals"
+      ],
+      "scopeNote": "A new football performance, not a like-for-like test of unrelated later Greenwood selection decisions."
+    },
+    {
+      "id": "football-episode-diallo",
+      "title": "Diallo: official sanction and February coverage",
+      "start": "2021-02-05",
+      "end": "2021-02-15",
+      "recordIds": [
+        "football-figc-2021-02-05",
+        "football-calcioatalanta-2021-02-10",
+        "football-daily-mail-2021-02-10",
+        "football-index-2021-02-10",
+        "football-stretty-news-2021-02-10",
+        "football-trivela-2021-02-10",
+        "football-repubblica-2021-02-10",
+        "football-football365-2021-02-11",
+        "football-footballtransfers-2021-02-11",
+        "football-sky-sports-2021-02-11",
+        "football-times-2021-02-14",
+        "football-hare-court-2021-02-15"
+      ],
+      "eventIds": [
+        "football-event-figc-notice",
+        "football-event-diallo-uk-wave",
+        "football-event-diallo-pa",
+        "football-event-diallo-care"
+      ],
+      "scopeNote": "UK sports publishers and separately labelled Italian/international context are a selected sample. Several publishers repeat one notice. No sustained pile-on has been established from this inventory."
+    },
+    {
+      "id": "football-episode-greenwood-2021",
+      "title": "Greenwood: later selection context before 2022",
+      "start": "2021-05-24",
+      "end": "2021-11-05",
+      "recordIds": [
+        "football-counterfire-2021-05-24",
+        "football-guardian-2021-06-01-euro-withdrawal",
+        "football-guardian-2021-08-26-england-omission",
+        "football-guardian-2021-08-28-england-future",
+        "football-guardian-2021-11-04-england-pause"
+      ],
+      "eventIds": [
+        "football-event-greenwood-injury",
+        "football-event-greenwood-choice"
+      ],
+      "scopeNote": "These later hooks and commentary are separated from the2020incident and from the2022–23criminal proceedings."
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "football-comparison-family-homes",
+      "title": "Sterling and Foden: family homes in the same newspaper",
+      "leftRecordIds": [
+        "football-sterling-sun-mum-house-20160630"
+      ],
+      "rightRecordIds": [
+        "football-foden-sun-home-20181005"
+      ],
+      "sharedAct": "A successful young footballer and a family home.",
+      "contextDifferences": "Sterling’s video followed England’s Euro exit in2016; Foden’s2018report followed a City breakthrough and mentioned a mortgage. This pair is not a controlled experiment.",
+      "questions": [
+        "Does the sporting context explain why personal prosperity was framed differently?",
+        "What does a reader learn from the private-life detail, and what stereotype could it invite?"
+      ],
+      "limit": "Compare actual wording; two examples cannot measure a general racial disparity or establish editorial motive."
+    },
+    {
+      "id": "football-comparison-iceland-return",
+      "title": "A shared breach, different later news hooks",
+      "leftRecordIds": [
+        "football-bbc-2020-09-07-joint-report",
+        "football-guardian-2020-10-23-solskjaer-response"
+      ],
+      "rightRecordIds": [
+        "football-guardian-2020-11-18-foden-match-report"
+      ],
+      "sharedAct": "Both players were excluded after the same Iceland protocol breach.",
+      "contextDifferences": "The October piece reports Greenwood’s manager rejecting concerns; the November piece concerns Foden’s goals. They are different developments, not matched measures of total coverage.",
+      "questions": [
+        "When should an earlier breach remain relevant background?",
+        "How fairly did the outlet present new football facts and responses for each player?"
+      ],
+      "limit": "Recovered rows do not establish silence, automatic forgiveness or a racial cause."
+    },
+    {
+      "id": "football-comparison-diallo-notice",
+      "title": "Diallo: the sanction, dramatic framing and child context",
+      "leftRecordIds": [
+        "football-figc-2021-02-05",
+        "football-sky-sports-2021-02-11"
+      ],
+      "rightRecordIds": [
+        "football-footballtransfers-2021-02-11",
+        "football-hare-court-2021-02-15"
+      ],
+      "sharedAct": "Reports respond to one sports-disciplinary notice.",
+      "contextDifferences": "A federation notice, news placements and ethical commentary have different roles. The barrister’s chronology differs from the official document; no Foden documentation case has been established as a matched control.",
+      "questions": [
+        "Did headlines explain sports discipline and his age at the acts, or invite a broader criminal impression?",
+        "Did each follow-up add a fact or mostly redistribute the same notice?"
+      ],
+      "limit": "An agreed FIGC sanction is real; it is not a criminal-court conviction. Trafficking status and family relationships are not adjudicated by this notice."
+    }
+  ],
+  "accessGaps": [
+    {
+      "item": "Daily Mail breakfast story following the 2018 PFA awards",
+      "headline": "Raheem Sterling treats himself to a spot of breakfast despite missing out on being crowned Young Player of the Year the night before at PFA awards",
+      "reportedDate": "2018-04-23",
+      "evidenceSourceURL": "https://ajeuk.org/wp-content/uploads/2018/10/HARTE-AJE-banal-journalism-2018.pdf",
+      "gap": "A contemporaneous page capture records MailOnline by Sam McEvoy, 11:24 EDT, updated 12:26 EDT; the original Mail URL/body was not recovered, so this is retained as a lead rather than counted among the 10 original-page records."
+    },
+    {
+      "item": "Daily Star Primark/Poundland/Greggs and easyJet stories, plus The Sun’s 2017 mansion-location story",
+      "evidenceSourceURL": "https://www.gq-magazine.co.uk/article/raheem-sterling-racial-abuse",
+      "gap": "GQ supplies headline wording for several examples, but direct original URLs and/or dated original page captures were not verified in this pass. They should be added only after recovering the source pages or contemporaneous print captures."
+    },
+    {
+      "item": "Daily Mirror Primark story",
+      "evidenceSourceURL": "https://www.si.com/soccer/2018/04/24/tabloid-attention-raheem-sterling-reaches-new-lows-england-star-slated-eating-breakfast",
+      "gap": "Secondary coverage says the Mirror published a March 2018 Primark story, but the original headline, date, and URL were not independently recovered here."
+    },
+    "No full primary Icelandic DV/Vísir report was recovered in this pass; news reports name Icelandic media as the origin of the alleged meeting detail.",
+    "Manchester United's original September 7 statement was not recovered as a standalone current club page; its wording is reported by BBC and Sky. The club's response is kept separate from City's direct statement.",
+    "The training-attitude story referenced by Counterfire appears to derive from The Athletic, but no independently accessible original Athletic article was recovered here. Sky's November 10 papers roundup and the Guardian's October 21 report are secondary/attributed evidence; do not call the claims false. Solskjaer's October 23 denial is directly recorded.",
+    "The Counterfire article names Jeremy Wisten and describes him as Greenwood's close friend, but provides no citation for this claim in the article. The connection and any effect on Greenwood should be independently verified before use as factual narrative context.",
+    "This sample recovered 16 publication records across seven source families (FA, Manchester City, BBC, Sky, RTÉ, Guardian, Counterfire); counts reflect this returned set and are not a census.",
+    "The Daily Mail original page was not retrieved. The headline and 10 February date are supported by Counterfire’s direct quotation and later secondary references; original-page context and exact metadata remain unverified.",
+    "The Times article was paywalled/not opened; its date, headline and text were available in a contemporaneous Reddit-posted excerpt. Use the publisher page for formal citation if accessible.",
+    "No direct official Manchester United statement about the sanction was located. Football365 and RTÉ report that the club declined comment; this remains outlet-attributed rather than a primary club statement.",
+    "Some secondary coverage and commentary calls the settlement a conviction, court judgment, or proof of trafficking. The primary FIGC record is a sports-disciplinary Article 126 agreement and does not decide the criminal case.",
+    "No claim is made here that Amad Diallo and Hamed Traore are siblings or are unrelated. The FIGC notice names them separately but does not decide kinship.",
+    "The Daily Mail original page was blocked/not retrieved. Counterfire quotes its headline; later references identify Chris Wheeler and 10 February. The proposed article number 9249017 is unrelated (a 1997 biochemistry article), so the original URL remains unknown.",
+    "Targeted searches of BBC Sport, The Guardian, Metro and the Evening Standard did not surface a relevant 9–12 February sanction article. Search absence does not prove no article existed.",
+    "Sky Sports and Football365 text matches a PA Media story, with Sky explicitly crediting PA; RTÉ carries a very similar instance but is outside the UK-publisher set. Treat placements as syndication, not separate reporting.",
+    "No direct Manchester United statement was found. The outlets say the club declined comment and report an understood position; neither should be cited as an on-record club statement.",
+    "The FA November 5 squad-announcement page was found in search results and states that Foden returned to the squad while Greenwood remained out; a direct publisher-page open timed out in this pass, so it is not counted as verified here.",
+    "Sky Sports' November 5 recall article was also found, but its publisher-page fetch returned a cache miss; not included as a verified record."
+  ],
+  "sourceCopyGroupNote": "Publisher placements answer who published a headline. A common PA story or the same video does not establish multiple independent investigations."
+}
