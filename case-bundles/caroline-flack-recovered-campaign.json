@@ -330,6 +330,36 @@
       "date": "2020-02-20",
       "retrospective": true,
       "text": "Urges restraint in reporting after Flack’s death, arguing that public interest does not justify sensational detail or disregard for relatives and vulnerable readers. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. This is aftermath after the 14 February cutoff, not evidence of pre-death coverage or a cause of death."
+    },
+    {
+      "id": "media-flack-relationship-promotion",
+      "label": "Older relationship remarks revisited after the charge · original X post",
+      "url": "https://x.com/TheSun/status/1205879044333539329",
+      "date": "2019-12-14",
+      "text": "Promotes earlier romantic remarks about Flack’s partner, placing them beside the assault allegation after she was charged. The post juxtaposes prior relationship material with a pending allegation. It is not a conviction or an additional legal finding. Its linked article is outside the fixed recovered headline sample."
+    },
+    {
+      "id": "media-flack-career-joke-promotion",
+      "label": "An awards-show joke renews attention weeks later · original X post",
+      "url": "https://x.com/TheSun/status/1222415859962064896",
+      "date": "2020-01-29",
+      "text": "Promotes a report of an awards-show joke about Flack’s career and the audience’s reaction. The event can be examined as a new entertainment development; it is not a new finding in the criminal proceedings. The linked article is supplemental to the fixed headline sample."
+    },
+    {
+      "id": "account-flack-cps-inquest",
+      "label": "CPS evidence to the inquest · 2020-07-28",
+      "url": "https://www.cps.gov.uk/publication/witness-statement-lisa-ramsarran-matter-inquest-touching-upon-death-caroline-flack",
+      "date": "2020-07-28",
+      "retrospective": true,
+      "text": "The witness statement records six prosecution reviews between 15 December 2019 and 13 February 2020 and three case-management panels. The CPS maintained that its charging decision was proper. Signed 28 July 2020; the website labels publication 10 November 2025. This is the prosecutor’s account, not a verdict on press conduct. Internal reviews do not prove editors knew about them during the coverage."
+    },
+    {
+      "id": "account-flack-inquest-reported",
+      "label": "The inquest conclusion, reported by ITV · 2020-08-06",
+      "url": "https://www.itv.com/news/2020-08-06/police-and-prosecutors-had-it-in-for-caroline-flack-says-stars-mother",
+      "date": "2020-08-06",
+      "retrospective": true,
+      "text": "ITV’s inquest report attributes to the coroner a conclusion of suicide and an account of distress about the impending criminal trial and publicity. It also records the family’s criticism and the police officer’s denial of bias. This is an inquest report, not the original Record of Inquest. Family accusations and witness evidence must be distinguished from the coroner’s conclusions. It does not allocate responsibility to individual outlets or establish a single cause."
     }
   ],
   "reasoningChecks": [
@@ -3124,11 +3154,119 @@
         "media-caroline-flack-recovered-2"
       ],
       "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-flack-relationship-promotion",
+      "caseId": "caroline-flack-recovered-campaign",
+      "outlet": "The Sun",
+      "channel": "social",
+      "format": "social_post",
+      "platform": "Twitter / X",
+      "title": "Older relationship remarks revisited after the charge",
+      "date": "2019-12-14",
+      "dateBasis": "platform_post_date",
+      "publishedAtUTC": "2019-12-14T15:55:42.000Z",
+      "publicationDisplay": "Original X timestamp: 2019-12-14T15:55:42.000Z (UTC).",
+      "programme": null,
+      "url": "https://x.com/TheSun/status/1205879044333539329",
+      "contentBasis": "original_post",
+      "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+      "summary": "Promotes earlier romantic remarks about Flack’s partner, placing them beside the assault allegation after she was charged.",
+      "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+      "limit": "The post juxtaposes prior relationship material with a pending allegation. It is not a conviction or an additional legal finding. Its linked article is outside the fixed recovered headline sample. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "promotedWrittenRecordId": null,
+      "relatedArticleURL": "https://www.thesun.co.uk/tvandshowbiz/10552400/caroline-flack-lewis-burton-love-forever/",
+      "publicationRole": "outlet_promotion",
+      "publicationRelationship": "published_post",
+      "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+      "actorType": "Publisher or public commentator account",
+      "distributionEvents": [],
+      "observedMetrics": [
+        {
+          "name": "shares",
+          "value": 2,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/TheSun/status/1205879044333539329",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "likes",
+          "value": 9,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/TheSun/status/1205879044333539329",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        }
+      ],
+      "evidenceIds": [
+        "media-flack-relationship-promotion"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-flack-career-joke-promotion",
+      "caseId": "caroline-flack-recovered-campaign",
+      "outlet": "The Sun",
+      "channel": "social",
+      "format": "social_post",
+      "platform": "Twitter / X",
+      "title": "An awards-show joke renews attention weeks later",
+      "date": "2020-01-29",
+      "dateBasis": "platform_post_date",
+      "publishedAtUTC": "2020-01-29T07:07:07.000Z",
+      "publicationDisplay": "Original X timestamp: 2020-01-29T07:07:07.000Z (UTC).",
+      "programme": null,
+      "url": "https://x.com/TheSun/status/1222415859962064896",
+      "contentBasis": "original_post",
+      "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+      "summary": "Promotes a report of an awards-show joke about Flack’s career and the audience’s reaction.",
+      "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+      "limit": "The event can be examined as a new entertainment development; it is not a new finding in the criminal proceedings. The linked article is supplemental to the fixed headline sample. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "promotedWrittenRecordId": null,
+      "relatedArticleURL": "https://www.thesun.co.uk/tvandshowbiz/10842310/david-walliams-booed-ntas-caroline-flack-joke/",
+      "publicationRole": "outlet_promotion",
+      "publicationRelationship": "published_post",
+      "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+      "actorType": "Publisher or public commentator account",
+      "distributionEvents": [],
+      "observedMetrics": [
+        {
+          "name": "shares",
+          "value": 4,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/TheSun/status/1222415859962064896",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "likes",
+          "value": 8,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/TheSun/status/1222415859962064896",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        }
+      ],
+      "evidenceIds": [
+        "media-flack-career-joke-promotion"
+      ],
+      "verifiedAt": "2026-10-14"
     }
   ],
   "mediaScope": {
     "verifiedAt": "2026-10-14",
-    "recordCount": 2,
+    "recordCount": 4,
     "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
     "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
     "gaps": [
@@ -3141,7 +3279,7 @@
         "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
       }
     ],
-    "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+    "socialPostRecovery": "Selected original contributing posts and counter-speech are distinguished; archived and reported sources retain their own date basis. This is not an X census or complete repost graph. Current counters cannot reconstruct historical reach."
   },
   "editorialRecords": [
     {
@@ -3170,5 +3308,52 @@
     "recordCount": 1,
     "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
     "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
+  },
+  "spreadLinks": [],
+  "attentionScope": {
+    "method": "Written records, contributing posts, counter-speech, editorial records and case events share a date axis but keep separate counts. Links are shown only for verified previews, article promotion, quoting or replies. The fixed 179-headline inventory is unchanged.",
+    "limits": "Recovered examples do not measure all exposure or establish that every item was a pile-on. Present counters and historical snapshots have different dates and cannot be joined into an assumed growth curve.",
+    "gaps": "No qualifying contributing X post recovered for Jefferies. Other cases contain selected examples, not complete platform samples. Deleted posts and missing captures remain recovery gaps."
+  },
+  "accountabilityRecords": [
+    {
+      "id": "account-flack-cps-inquest",
+      "date": "2020-07-28",
+      "dateBasis": "statement_date",
+      "publicationDate": "2025-11-10",
+      "title": "CPS evidence to the inquest",
+      "institution": "Crown Prosecution Service",
+      "status": "institutional_account",
+      "url": "https://www.cps.gov.uk/publication/witness-statement-lisa-ramsarran-matter-inquest-touching-upon-death-caroline-flack",
+      "summary": "The witness statement records six prosecution reviews between 15 December 2019 and 13 February 2020 and three case-management panels. The CPS maintained that its charging decision was proper.",
+      "limit": "Signed 28 July 2020; the website labels publication 10 November 2025. This is the prosecutor’s account, not a verdict on press conduct. Internal reviews do not prove editors knew about them during the coverage.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "account-flack-cps-inquest"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "account-flack-inquest-reported",
+      "date": "2020-08-06",
+      "dateBasis": "report_date",
+      "publicationDate": null,
+      "title": "The inquest conclusion, reported by ITV",
+      "institution": "Poplar Coroner’s Court · ITV reporting",
+      "status": "reported_finding",
+      "url": "https://www.itv.com/news/2020-08-06/police-and-prosecutors-had-it-in-for-caroline-flack-says-stars-mother",
+      "summary": "ITV’s inquest report attributes to the coroner a conclusion of suicide and an account of distress about the impending criminal trial and publicity. It also records the family’s criticism and the police officer’s denial of bias.",
+      "limit": "This is an inquest report, not the original Record of Inquest. Family accusations and witness evidence must be distinguished from the coroner’s conclusions. It does not allocate responsibility to individual outlets or establish a single cause.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "account-flack-inquest-reported"
+      ],
+      "verifiedAt": "2026-10-14"
+    }
+  ],
+  "accountabilityScope": {
+    "checkedAt": "2026-10-14",
+    "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
+    "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
   }
 }

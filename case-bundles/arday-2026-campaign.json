@@ -250,6 +250,42 @@
       "date": "2026-08-07",
       "retrospective": false,
       "text": "Calls for university scrutiny while defending diversity and recommending a pause to the memoir. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. Allegations were still under scrutiny; the editorial is not an adjudication."
+    },
+    {
+      "id": "media-arday-telegraph-promotion",
+      "label": "A resignation report promoted on X · original X post",
+      "url": "https://x.com/Telegraph/status/2085085013335245074",
+      "date": "2026-08-05",
+      "text": "Announces Arday’s resignation, foregrounds the outlet’s book claim and links its report. The book claim is the outlet’s assertion. A resignation is not an adjudication of all allegations."
+    },
+    {
+      "id": "media-arday-spectator-promotion",
+      "label": "A column broadens the argument to sociology · original X post",
+      "url": "https://x.com/spectator/status/2086691524977320157",
+      "date": "2026-08-10",
+      "text": "Promotes Patrick West’s column, using criticism of Arday’s scholarship to discuss sociology’s standing. This is signed-column promotion, not an unsigned leader or evidence of owner direction. Its adverse framing is a judgment, not a research finding."
+    },
+    {
+      "id": "media-arday-ai-claim",
+      "label": "An AI-authorship allegation added to the resignation · original X post",
+      "url": "https://x.com/SwipeWright/status/2085090552731570261",
+      "date": "2026-08-05",
+      "text": "Claims Arday’s resignation letter was AI-generated, citing an AI detector’s output alongside allegations about his work and biography. The post’s detector claim is not verified authorship or an inquiry finding. No detector test was performed for this bundle. No direct link to the earlier Telegraph post is established."
+    },
+    {
+      "id": "media-arday-ai-quote",
+      "label": "A reply repeats the AI claim without qualification · original X post",
+      "url": "https://x.com/Brittlish/status/2085101265546256442",
+      "date": "2026-08-05",
+      "text": "States the letter is entirely AI-generated, quoting Wright’s detector claim in a reply beneath the resignation announcement. The quote and reply links are verified; the authorship claim is not. The categorical wording should be compared with the evidence available at that time."
+    },
+    {
+      "id": "account-arday-welfare-terms",
+      "label": "A welfare review sets its scope · 2026-09-14",
+      "url": "https://www.cam.ac.uk/news/nazir-afzal-obe-launches-part-one-of-the-independent-review-following-the-death-of-professor-jason",
+      "date": "2026-09-14",
+      "retrospective": true,
+      "text": "Part One will examine the University’s support, decisions and communications, judged against what was known at each stage. The terms distinguish welfare questions from scrutiny of Arday’s academic record. These are terms of reference, not completed findings. Third-party media conduct and legal liability are outside this review’s remit; it cannot determine why he died."
     }
   ],
   "reasoningChecks": [
@@ -4111,11 +4147,255 @@
         "media-arday-2026-2"
       ],
       "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-arday-telegraph-promotion",
+      "caseId": "arday-2026-campaign",
+      "outlet": "The Telegraph",
+      "channel": "social",
+      "format": "social_post",
+      "platform": "Twitter / X",
+      "title": "A resignation report promoted on X",
+      "date": "2026-08-05",
+      "dateBasis": "platform_post_date",
+      "publishedAtUTC": "2026-08-05T19:26:20.000Z",
+      "publicationDisplay": "Original X timestamp: 2026-08-05T19:26:20.000Z (UTC).",
+      "programme": null,
+      "url": "https://x.com/Telegraph/status/2085085013335245074",
+      "contentBasis": "original_post",
+      "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+      "summary": "Announces Arday’s resignation, foregrounds the outlet’s book claim and links its report.",
+      "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+      "limit": "The book claim is the outlet’s assertion. A resignation is not an adjudication of all allegations. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "promotedWrittenRecordId": "arday-the-telegraph-13",
+      "relatedArticleURL": "https://www.telegraph.co.uk/news/2026/08/05/jason-arday-falsely-claimed-to-have-published-book/",
+      "publicationRole": "outlet_promotion",
+      "publicationRelationship": "published_post",
+      "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+      "actorType": "Publisher or public commentator account",
+      "distributionEvents": [],
+      "observedMetrics": [
+        {
+          "name": "views",
+          "value": 2300092,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/Telegraph/status/2085085013335245074",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "shares",
+          "value": 976,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/Telegraph/status/2085085013335245074",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "likes",
+          "value": 3473,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/Telegraph/status/2085085013335245074",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        }
+      ],
+      "evidenceIds": [
+        "media-arday-telegraph-promotion"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-arday-spectator-promotion",
+      "caseId": "arday-2026-campaign",
+      "outlet": "The Spectator",
+      "channel": "social",
+      "format": "social_post",
+      "platform": "Twitter / X",
+      "title": "A column broadens the argument to sociology",
+      "date": "2026-08-10",
+      "dateBasis": "platform_post_date",
+      "publishedAtUTC": "2026-08-10T05:50:03.000Z",
+      "publicationDisplay": "Original X timestamp: 2026-08-10T05:50:03.000Z (UTC).",
+      "programme": null,
+      "url": "https://x.com/spectator/status/2086691524977320157",
+      "contentBasis": "original_post",
+      "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+      "summary": "Promotes Patrick West’s column, using criticism of Arday’s scholarship to discuss sociology’s standing.",
+      "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+      "limit": "This is signed-column promotion, not an unsigned leader or evidence of owner direction. Its adverse framing is a judgment, not a research finding. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "promotedWrittenRecordId": "arday-the-spectator-12",
+      "relatedArticleURL": "https://spectator.com/article/sociology-is-about-much-more-than-fools-like-jason-arday/",
+      "publicationRole": "outlet_promotion",
+      "publicationRelationship": "published_post",
+      "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+      "actorType": "Publisher or public commentator account",
+      "distributionEvents": [],
+      "observedMetrics": [
+        {
+          "name": "views",
+          "value": 31678,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/spectator/status/2086691524977320157",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "shares",
+          "value": 71,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/spectator/status/2086691524977320157",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "likes",
+          "value": 205,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/spectator/status/2086691524977320157",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        }
+      ],
+      "evidenceIds": [
+        "media-arday-spectator-promotion"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-arday-ai-claim",
+      "caseId": "arday-2026-campaign",
+      "outlet": "Colin Wright (@SwipeWright)",
+      "channel": "social",
+      "format": "social_post",
+      "platform": "Twitter / X",
+      "title": "An AI-authorship allegation added to the resignation",
+      "date": "2026-08-05",
+      "dateBasis": "platform_post_date",
+      "publishedAtUTC": "2026-08-05T19:48:21.000Z",
+      "publicationDisplay": "Original X timestamp: 2026-08-05T19:48:21.000Z (UTC).",
+      "programme": null,
+      "url": "https://x.com/SwipeWright/status/2085090552731570261",
+      "contentBasis": "original_post",
+      "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+      "summary": "Claims Arday’s resignation letter was AI-generated, citing an AI detector’s output alongside allegations about his work and biography.",
+      "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+      "limit": "The post’s detector claim is not verified authorship or an inquiry finding. No detector test was performed for this bundle. No direct link to the earlier Telegraph post is established. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "promotedWrittenRecordId": null,
+      "relatedArticleURL": null,
+      "publicationRole": "allegation_amplification",
+      "publicationRelationship": "published_post",
+      "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+      "actorType": "Named public commentator, speaking personally",
+      "distributionEvents": [],
+      "observedMetrics": [
+        {
+          "name": "views",
+          "value": 1340915,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/SwipeWright/status/2085090552731570261",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "shares",
+          "value": 2210,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/SwipeWright/status/2085090552731570261",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "likes",
+          "value": 12795,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/SwipeWright/status/2085090552731570261",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        }
+      ],
+      "evidenceIds": [
+        "media-arday-ai-claim"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-arday-ai-quote",
+      "caseId": "arday-2026-campaign",
+      "outlet": "Brittlish (@Brittlish)",
+      "channel": "social",
+      "format": "social_post",
+      "platform": "Twitter / X",
+      "title": "A reply repeats the AI claim without qualification",
+      "date": "2026-08-05",
+      "dateBasis": "platform_post_date",
+      "publishedAtUTC": "2026-08-05T20:30:55.000Z",
+      "publicationDisplay": "Original X timestamp: 2026-08-05T20:30:55.000Z (UTC).",
+      "programme": null,
+      "url": "https://x.com/Brittlish/status/2085101265546256442",
+      "contentBasis": "original_post",
+      "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+      "summary": "States the letter is entirely AI-generated, quoting Wright’s detector claim in a reply beneath the resignation announcement.",
+      "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+      "limit": "The quote and reply links are verified; the authorship claim is not. The categorical wording should be compared with the evidence available at that time. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "promotedWrittenRecordId": null,
+      "relatedArticleURL": null,
+      "publicationRole": "allegation_amplification",
+      "publicationRelationship": "published_post",
+      "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+      "actorType": "Public individual account; organisational role not established",
+      "distributionEvents": [],
+      "observedMetrics": [
+        {
+          "name": "views",
+          "value": 18652,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/Brittlish/status/2085101265546256442",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "shares",
+          "value": 45,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/Brittlish/status/2085101265546256442",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "likes",
+          "value": 458,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/Brittlish/status/2085101265546256442",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        }
+      ],
+      "evidenceIds": [
+        "media-arday-ai-quote"
+      ],
+      "verifiedAt": "2026-10-14"
     }
   ],
   "mediaScope": {
     "verifiedAt": "2026-10-14",
-    "recordCount": 2,
+    "recordCount": 6,
     "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
     "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
     "gaps": [
@@ -4133,7 +4413,7 @@
         "note": "No original GB News clip in this window was verified. A GB News employee’s appearance on Spiked is attributed to Spiked, not GB News."
       }
     ],
-    "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+    "socialPostRecovery": "Selected original contributing posts and counter-speech are distinguished; archived and reported sources retain their own date basis. This is not an X census or complete repost graph. Current counters cannot reconstruct historical reach."
   },
   "editorialRecords": [
     {
@@ -4162,5 +4442,107 @@
     "recordCount": 1,
     "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
     "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
+  },
+  "spreadLinks": [
+    {
+      "id": "spread-arday-telegraph-promotion",
+      "fromId": "arday-the-telegraph-13",
+      "toId": "media-arday-telegraph-promotion",
+      "relation": "promotes",
+      "date": "2026-08-05",
+      "sourceURL": "https://x.com/Telegraph/status/2085085013335245074",
+      "basis": "The original post’s outbound link resolves to this exact retained article URL.",
+      "limit": "This proves this specific publication, preview, quote or reply relationship. It does not establish total reach, coordination, intent or causal harm. Same-day ordering of an article without a timestamp remains unknown.",
+      "evidenceIds": [
+        "media-arday-telegraph-promotion"
+      ]
+    },
+    {
+      "id": "spread-arday-spectator-promotion",
+      "fromId": "arday-the-spectator-12",
+      "toId": "media-arday-spectator-promotion",
+      "relation": "promotes",
+      "date": "2026-08-10",
+      "sourceURL": "https://x.com/spectator/status/2086691524977320157",
+      "basis": "The original post’s outbound link resolves to this exact retained column URL.",
+      "limit": "This proves this specific publication, preview, quote or reply relationship. It does not establish total reach, coordination, intent or causal harm. Same-day ordering of an article without a timestamp remains unknown.",
+      "evidenceIds": [
+        "media-arday-spectator-promotion"
+      ]
+    },
+    {
+      "id": "spread-arday-ai-quote",
+      "fromId": "media-arday-ai-claim",
+      "toId": "media-arday-ai-quote",
+      "relation": "quotes",
+      "date": "2026-08-05",
+      "sourceURL": "https://x.com/Brittlish/status/2085101265546256442",
+      "basis": "The reply contains a native quote of Wright’s exact original status, posted about 42 minutes later.",
+      "limit": "This proves this specific publication, preview, quote or reply relationship. It does not establish total reach, coordination, intent or causal harm. Same-day ordering of an article without a timestamp remains unknown.",
+      "evidenceIds": [
+        "media-arday-ai-claim",
+        "media-arday-ai-quote"
+      ]
+    },
+    {
+      "id": "spread-arday-reply",
+      "fromId": "media-arday-telegraph-promotion",
+      "toId": "media-arday-ai-quote",
+      "relation": "replies_to",
+      "date": "2026-08-05",
+      "sourceURL": "https://x.com/Brittlish/status/2085101265546256442",
+      "basis": "The original thread places this reply beneath the Telegraph post; the reply also quotes Wright separately.",
+      "limit": "This proves this specific publication, preview, quote or reply relationship. It does not establish total reach, coordination, intent or causal harm. Same-day ordering of an article without a timestamp remains unknown.",
+      "evidenceIds": [
+        "media-arday-telegraph-promotion",
+        "media-arday-ai-quote"
+      ]
+    }
+  ],
+  "attentionScope": {
+    "method": "Written records, contributing posts, counter-speech, editorial records and case events share a date axis but keep separate counts. Links are shown only for verified previews, article promotion, quoting or replies. The fixed 179-headline inventory is unchanged.",
+    "limits": "Recovered examples do not measure all exposure or establish that every item was a pile-on. Present counters and historical snapshots have different dates and cannot be joined into an assumed growth curve.",
+    "gaps": "No qualifying contributing X post recovered for Jefferies. Other cases contain selected examples, not complete platform samples. Deleted posts and missing captures remain recovery gaps."
+  },
+  "accountabilityRecords": [
+    {
+      "id": "account-arday-appointment-announcement",
+      "date": "2026-08-12",
+      "dateBasis": "statement_date",
+      "publicationDate": null,
+      "title": "An independent appointment investigation announced",
+      "institution": "University of Cambridge",
+      "status": "announcement",
+      "url": "https://www.cam.ac.uk/notices/news/statement-from-the-vice-chancellor-12-august-2026",
+      "summary": "Cambridge announced an independent appointment investigation and said this case should not be generalised to staff of colour.",
+      "limit": "An announcement is not a finding about allegations or the justification for the coverage.",
+      "phase": "within_window",
+      "evidenceIds": [
+        "cambridge-original-20260812"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "account-arday-welfare-terms",
+      "date": "2026-09-14",
+      "dateBasis": "publication_date",
+      "publicationDate": null,
+      "title": "A welfare review sets its scope",
+      "institution": "University of Cambridge / Nazir Afzal",
+      "status": "review_terms",
+      "url": "https://www.cam.ac.uk/news/nazir-afzal-obe-launches-part-one-of-the-independent-review-following-the-death-of-professor-jason",
+      "summary": "Part One will examine the University’s support, decisions and communications, judged against what was known at each stage. The terms distinguish welfare questions from scrutiny of Arday’s academic record.",
+      "limit": "These are terms of reference, not completed findings. Third-party media conduct and legal liability are outside this review’s remit; it cannot determine why he died.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "account-arday-welfare-terms"
+      ],
+      "verifiedAt": "2026-10-14"
+    }
+  ],
+  "accountabilityScope": {
+    "checkedAt": "2026-10-14",
+    "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
+    "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
   }
 }

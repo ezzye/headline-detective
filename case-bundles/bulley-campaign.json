@@ -262,6 +262,29 @@
       "url": "https://www.theguardian.com/uk-news/2023/feb/16/nicola-bulley-personal-details-police",
       "date": "2023-02-15",
       "text": "Questions how disclosure helps the search. This is counter-speech about police conduct, not an attack on Bulley. Original page verification is separately labelled; no historical reach or distribution curve is available."
+    },
+    {
+      "id": "media-bulley-personal-disclosure",
+      "label": "A personal disclosure is repeated as breaking news · original X post",
+      "url": "https://x.com/mwilliamsthomas/status/1625914878144700416",
+      "date": "2023-02-15",
+      "text": "Repeats newly disclosed private health information about Bulley as breaking news. This amplifies the police disclosure, not an independently established account of what happened. The bundle does not reproduce the medical detail. No causal link to harm is established."
+    },
+    {
+      "id": "account-bulley-ofcom-status",
+      "label": "Ofcom’s consideration remained open at this date · 2023-08-09",
+      "url": "https://www.ofcom.org.uk/siteassets/resources/documents/about-ofcom/foi/2023/august/investigation-into-itv-and-sky-news-further-to-claims-made-by-nicola-bulleys-family-in-relation-to-harassment-publish.pdf?v=330082",
+      "date": "2023-08-09",
+      "retrospective": true,
+      "text": "Ofcom’s FOI response said its consideration of the family’s concerns about ITV and Sky had not concluded. This is a dated procedural update, not an upheld breach. No later final merits decision was recovered in this research pass; that gap does not establish that none exists."
+    },
+    {
+      "id": "account-bulley-progress",
+      "label": "Communication changes reported to the Accountability Board · 2024-02-13",
+      "url": "https://www.lancashire-pcc.gov.uk/wp-content/uploads/2024/02/Final-Draft-Minutes-of-the-Accountability-Board-13.02.24.pdf",
+      "date": "2024-02-13",
+      "retrospective": true,
+      "text": "The Deputy Chief Constable reported that all but two actions from the review were complete. Media-engagement training and a peer review remained outstanding. These are recorded progress claims by the organisations involved, not an independent implementation audit or proof that wider media practices changed."
     }
   ],
   "reasoningChecks": [
@@ -2170,12 +2193,74 @@
       "verifiedAt": "2026-10-14",
       "actorType": "MP, speaking on police disclosure",
       "reportURL": "https://www.theguardian.com/uk-news/2023/feb/16/nicola-bulley-personal-details-police",
-      "reportDate": "2023-02-16"
+      "reportDate": "2023-02-16",
+      "publicationRole": "counter_speech"
+    },
+    {
+      "id": "media-bulley-personal-disclosure",
+      "caseId": "bulley-campaign",
+      "outlet": "Mark Williams-Thomas (@mwilliamsthomas)",
+      "channel": "social",
+      "format": "social_post",
+      "platform": "Twitter / X",
+      "title": "A personal disclosure is repeated as breaking news",
+      "date": "2023-02-15",
+      "dateBasis": "platform_post_date",
+      "publishedAtUTC": "2023-02-15T17:48:09.000Z",
+      "publicationDisplay": "Original X timestamp: 2023-02-15T17:48:09.000Z (UTC).",
+      "programme": null,
+      "url": "https://x.com/mwilliamsthomas/status/1625914878144700416",
+      "contentBasis": "original_post",
+      "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+      "summary": "Repeats newly disclosed private health information about Bulley as breaking news.",
+      "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+      "limit": "This amplifies the police disclosure, not an independently established account of what happened. The bundle does not reproduce the medical detail. No causal link to harm is established. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "promotedWrittenRecordId": null,
+      "relatedArticleURL": null,
+      "publicationRole": "allegation_amplification",
+      "publicationRelationship": "published_post",
+      "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+      "actorType": "Named public commentator, speaking on the investigation",
+      "distributionEvents": [],
+      "observedMetrics": [
+        {
+          "name": "views",
+          "value": 44210,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/mwilliamsthomas/status/1625914878144700416",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "shares",
+          "value": 17,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/mwilliamsthomas/status/1625914878144700416",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "likes",
+          "value": 75,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/mwilliamsthomas/status/1625914878144700416",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        }
+      ],
+      "evidenceIds": [
+        "media-bulley-personal-disclosure"
+      ],
+      "verifiedAt": "2026-10-14"
     }
   ],
   "mediaScope": {
     "verifiedAt": "2026-10-14",
-    "recordCount": 6,
+    "recordCount": 7,
     "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
     "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
     "gaps": [
@@ -2188,7 +2273,7 @@
         "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
       }
     ],
-    "socialPostRecovery": "1 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+    "socialPostRecovery": "Selected original contributing posts and counter-speech are distinguished; archived and reported sources retain their own date basis. This is not an X census or complete repost graph. Current counters cannot reconstruct historical reach."
   },
   "editorialRecords": [
     {
@@ -2238,5 +2323,69 @@
     "recordCount": 2,
     "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
     "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
+  },
+  "spreadLinks": [],
+  "attentionScope": {
+    "method": "Written records, contributing posts, counter-speech, editorial records and case events share a date axis but keep separate counts. Links are shown only for verified previews, article promotion, quoting or replies. The fixed 179-headline inventory is unchanged.",
+    "limits": "Recovered examples do not measure all exposure or establish that every item was a pile-on. Present counters and historical snapshots have different dates and cannot be joined into an assumed growth curve.",
+    "gaps": "No qualifying contributing X post recovered for Jefferies. Other cases contain selected examples, not complete platform samples. Deleted posts and missing captures remain recovery gaps."
+  },
+  "accountabilityRecords": [
+    {
+      "id": "account-bulley-ofcom-status",
+      "date": "2023-08-09",
+      "dateBasis": "decision_date",
+      "publicationDate": null,
+      "title": "Ofcom’s consideration remained open at this date",
+      "institution": "Ofcom",
+      "status": "procedural_status",
+      "url": "https://www.ofcom.org.uk/siteassets/resources/documents/about-ofcom/foi/2023/august/investigation-into-itv-and-sky-news-further-to-claims-made-by-nicola-bulleys-family-in-relation-to-harassment-publish.pdf?v=330082",
+      "summary": "Ofcom’s FOI response said its consideration of the family’s concerns about ITV and Sky had not concluded.",
+      "limit": "This is a dated procedural update, not an upheld breach. No later final merits decision was recovered in this research pass; that gap does not establish that none exists.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "account-bulley-ofcom-status"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "account-bulley-review",
+      "date": "2023-11-21",
+      "dateBasis": "publication_date",
+      "publicationDate": null,
+      "title": "An independent review examines the disclosure",
+      "institution": "College of Policing",
+      "status": "review_finding",
+      "url": "https://assets.college.police.uk/s3fs-public/2023-11/Nicola-Bulley-independent-external-review.pdf",
+      "summary": "The independent review concluded that releasing personal information on 15 February was avoidable and unnecessary, and examined police communications under intense news and social-media attention.",
+      "limit": "The review assesses the police response; it is not a legal finding against each publisher or a complete count of online speculation. Personal health details are not repeated here.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "college-review"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "account-bulley-progress",
+      "date": "2024-02-13",
+      "dateBasis": "meeting_date",
+      "publicationDate": null,
+      "title": "Communication changes reported to the Accountability Board",
+      "institution": "Lancashire PCC / Constabulary",
+      "status": "institutional_account",
+      "url": "https://www.lancashire-pcc.gov.uk/wp-content/uploads/2024/02/Final-Draft-Minutes-of-the-Accountability-Board-13.02.24.pdf",
+      "summary": "The Deputy Chief Constable reported that all but two actions from the review were complete. Media-engagement training and a peer review remained outstanding.",
+      "limit": "These are recorded progress claims by the organisations involved, not an independent implementation audit or proof that wider media practices changed.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "account-bulley-progress"
+      ],
+      "verifiedAt": "2026-10-14"
+    }
+  ],
+  "accountabilityScope": {
+    "checkedAt": "2026-10-14",
+    "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
+    "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
   }
 }

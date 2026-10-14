@@ -564,6 +564,14 @@
       "date": "2011-02-01",
       "retrospective": false,
       "text": "Condemns prejudicial coverage of an uncharged suspect and calls for stronger restraint. It considers both suspect anonymity and the difficulty of regulating online publication. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. The publisher displays 31 January 19:00 EST, equivalent to 1 February 00:00 GMT; the bundle uses the UK date."
+    },
+    {
+      "id": "account-jefferies-leveson",
+      "label": "Leveson examines the concentrated character attacks · 2012-11-29",
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+      "date": "2012-11-29",
+      "retrospective": true,
+      "text": "Leveson identifies the damaging three-day character coverage and records settlements by eight titles over 40 articles. Mirror editor Richard Wallace claimed off-record police briefings; Chief Constable Colin Port disputed this. The inquiry could not resolve that conflict. Sections 4.12–4.21 criticise appearance and temperament judgments and reckless publication, while finding no evidence of Mirror malice. The briefing dispute does not establish undisclosed incriminating facts. This is a later inquiry assessment, not a complete social-media census."
     }
   ],
   "reasoningChecks": [
@@ -3603,7 +3611,7 @@
         "note": "A Hacked Off transcript links to a BBC Today interview, but the original was not verified here. It remains an uncounted lead."
       }
     ],
-    "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+    "socialPostRecovery": "Selected original contributing posts and counter-speech are distinguished; archived and reported sources retain their own date basis. This is not an X census or complete repost graph. Current counters cannot reconstruct historical reach."
   },
   "editorialRecords": [
     {
@@ -3632,5 +3640,87 @@
     "recordCount": 1,
     "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
     "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
-  }
+  },
+  "spreadLinks": [],
+  "attentionScope": {
+    "method": "Written records, contributing posts, counter-speech, editorial records and case events share a date axis but keep separate counts. Links are shown only for verified previews, article promotion, quoting or replies. The fixed 179-headline inventory is unchanged.",
+    "limits": "Recovered examples do not measure all exposure or establish that every item was a pile-on. Present counters and historical snapshots have different dates and cannot be joined into an assumed growth curve.",
+    "gaps": "No qualifying contributing X post recovered for Jefferies. Other cases contain selected examples, not complete platform samples. Deleted posts and missing captures remain recovery gaps."
+  },
+  "accountabilityRecords": [
+    {
+      "id": "account-jefferies-contempt",
+      "date": "2011-07-29",
+      "dateBasis": "decision_date",
+      "publicationDate": null,
+      "title": "Three publications found to risk the course of justice",
+      "institution": "High Court / Attorney General’s Office",
+      "status": "judgment",
+      "url": "https://www.gov.uk/government/news/newspapers-guilty-of-contempt-during-joanna-yeates-murder-investigation",
+      "summary": "The High Court found contempt concerning two Daily Mirror publications and one Sun publication. The Attorney General identified their dates and the risk to the course of justice.",
+      "limit": "The finding applies to those specified publications, not all reporting. An arrest was a news development; it did not justify implying guilt.",
+      "phase": "within_window",
+      "evidenceIds": [
+        "ag-official-result"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "account-jefferies-leveson",
+      "date": "2012-11-29",
+      "dateBasis": "publication_date",
+      "publicationDate": null,
+      "title": "Leveson examines the concentrated character attacks",
+      "institution": "Leveson Inquiry",
+      "status": "review_finding",
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+      "summary": "Leveson identifies the damaging three-day character coverage and records settlements by eight titles over 40 articles. Mirror editor Richard Wallace claimed off-record police briefings; Chief Constable Colin Port disputed this. The inquiry could not resolve that conflict.",
+      "limit": "Sections 4.12–4.21 criticise appearance and temperament judgments and reckless publication, while finding no evidence of Mirror malice. The briefing dispute does not establish undisclosed incriminating facts. This is a later inquiry assessment, not a complete social-media census.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "account-jefferies-leveson"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "account-jefferies-later-judgment",
+      "date": "2018-11-29",
+      "dateBasis": "decision_date",
+      "publicationDate": null,
+      "title": "A later judgment records innocence and redress",
+      "institution": "High Court",
+      "status": "judicial_background",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2018/11/final-judgment-in-jefferies-others-v-sshd-others.pdf",
+      "summary": "Paragraphs 7–11 record Jefferies’s innocence, admitted libel liability by eight newspapers over 40 articles, and a police settlement and apology in August 2013.",
+      "limit": "This judgment’s legal issue was the government’s termination of Leveson Part Two. The background is primary judicial confirmation, not a new 2018 press-liability trial.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "judicial-review-facts"
+      ],
+      "verifiedAt": "2026-10-14"
+    }
+  ],
+  "accountabilityScope": {
+    "checkedAt": "2026-10-14",
+    "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
+    "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
+  },
+  "researchLeads": [
+    {
+      "title": "The Lost Honour of Christopher Jefferies · two-part ITV drama",
+      "date": "2014-12-10",
+      "url": "https://www.itv.com/news/westcountry/2014-12-10/itv-drama-airs-tonight-about-wrongful-arrest-of-christopher-jefferies",
+      "kind": "drama_and_interview",
+      "summary": "Peter Morgan wrote the drama, Roger Michell directed it and Jason Watkins played Jefferies. The producer describes research through interviews with Jefferies. ITV’s contemporaneous report points to an interview with him.",
+      "limit": "A dramatisation is a research lead, not proof that every scene occurred."
+    },
+    {
+      "title": "How the drama was researched · Roger Michell interview",
+      "date": "2014-11-27",
+      "url": "https://www.timeshighereducation.com/features/culture/the-lost-honour-of-christopher-jefferies/2017129.article",
+      "kind": "firsthand_production_account",
+      "summary": "Michell describes Jefferies’s requested script changes and the use of police interview transcripts. He also identifies an invented scene.",
+      "limit": "The director’s account helps identify leads and dramatic liberties; the original transcript or inquiry record is needed to substantiate a scene."
+    }
+  ]
 }

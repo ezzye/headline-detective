@@ -251,6 +251,42 @@
         "date": "2026-08-07",
         "retrospective": false,
         "text": "Calls for university scrutiny while defending diversity and recommending a pause to the memoir. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. Allegations were still under scrutiny; the editorial is not an adjudication."
+      },
+      {
+        "id": "media-arday-telegraph-promotion",
+        "label": "A resignation report promoted on X · original X post",
+        "url": "https://x.com/Telegraph/status/2085085013335245074",
+        "date": "2026-08-05",
+        "text": "Announces Arday’s resignation, foregrounds the outlet’s book claim and links its report. The book claim is the outlet’s assertion. A resignation is not an adjudication of all allegations."
+      },
+      {
+        "id": "media-arday-spectator-promotion",
+        "label": "A column broadens the argument to sociology · original X post",
+        "url": "https://x.com/spectator/status/2086691524977320157",
+        "date": "2026-08-10",
+        "text": "Promotes Patrick West’s column, using criticism of Arday’s scholarship to discuss sociology’s standing. This is signed-column promotion, not an unsigned leader or evidence of owner direction. Its adverse framing is a judgment, not a research finding."
+      },
+      {
+        "id": "media-arday-ai-claim",
+        "label": "An AI-authorship allegation added to the resignation · original X post",
+        "url": "https://x.com/SwipeWright/status/2085090552731570261",
+        "date": "2026-08-05",
+        "text": "Claims Arday’s resignation letter was AI-generated, citing an AI detector’s output alongside allegations about his work and biography. The post’s detector claim is not verified authorship or an inquiry finding. No detector test was performed for this bundle. No direct link to the earlier Telegraph post is established."
+      },
+      {
+        "id": "media-arday-ai-quote",
+        "label": "A reply repeats the AI claim without qualification · original X post",
+        "url": "https://x.com/Brittlish/status/2085101265546256442",
+        "date": "2026-08-05",
+        "text": "States the letter is entirely AI-generated, quoting Wright’s detector claim in a reply beneath the resignation announcement. The quote and reply links are verified; the authorship claim is not. The categorical wording should be compared with the evidence available at that time."
+      },
+      {
+        "id": "account-arday-welfare-terms",
+        "label": "A welfare review sets its scope · 2026-09-14",
+        "url": "https://www.cam.ac.uk/news/nazir-afzal-obe-launches-part-one-of-the-independent-review-following-the-death-of-professor-jason",
+        "date": "2026-09-14",
+        "retrospective": true,
+        "text": "Part One will examine the University’s support, decisions and communications, judged against what was known at each stage. The terms distinguish welfare questions from scrutiny of Arday’s academic record. These are terms of reference, not completed findings. Third-party media conduct and legal liability are outside this review’s remit; it cannot determine why he died."
       }
     ],
     "reasoningChecks": [
@@ -4132,11 +4168,255 @@
           "media-arday-2026-2"
         ],
         "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-arday-telegraph-promotion",
+        "caseId": "arday-2026-campaign",
+        "outlet": "The Telegraph",
+        "channel": "social",
+        "format": "social_post",
+        "platform": "Twitter / X",
+        "title": "A resignation report promoted on X",
+        "date": "2026-08-05",
+        "dateBasis": "platform_post_date",
+        "publishedAtUTC": "2026-08-05T19:26:20.000Z",
+        "publicationDisplay": "Original X timestamp: 2026-08-05T19:26:20.000Z (UTC).",
+        "programme": null,
+        "url": "https://x.com/Telegraph/status/2085085013335245074",
+        "contentBasis": "original_post",
+        "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+        "summary": "Announces Arday’s resignation, foregrounds the outlet’s book claim and links its report.",
+        "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+        "limit": "The book claim is the outlet’s assertion. A resignation is not an adjudication of all allegations. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "promotedWrittenRecordId": "arday-the-telegraph-13",
+        "relatedArticleURL": "https://www.telegraph.co.uk/news/2026/08/05/jason-arday-falsely-claimed-to-have-published-book/",
+        "publicationRole": "outlet_promotion",
+        "publicationRelationship": "published_post",
+        "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+        "actorType": "Publisher or public commentator account",
+        "distributionEvents": [],
+        "observedMetrics": [
+          {
+            "name": "views",
+            "value": 2300092,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/Telegraph/status/2085085013335245074",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "shares",
+            "value": 976,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/Telegraph/status/2085085013335245074",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "likes",
+            "value": 3473,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/Telegraph/status/2085085013335245074",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          }
+        ],
+        "evidenceIds": [
+          "media-arday-telegraph-promotion"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-arday-spectator-promotion",
+        "caseId": "arday-2026-campaign",
+        "outlet": "The Spectator",
+        "channel": "social",
+        "format": "social_post",
+        "platform": "Twitter / X",
+        "title": "A column broadens the argument to sociology",
+        "date": "2026-08-10",
+        "dateBasis": "platform_post_date",
+        "publishedAtUTC": "2026-08-10T05:50:03.000Z",
+        "publicationDisplay": "Original X timestamp: 2026-08-10T05:50:03.000Z (UTC).",
+        "programme": null,
+        "url": "https://x.com/spectator/status/2086691524977320157",
+        "contentBasis": "original_post",
+        "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+        "summary": "Promotes Patrick West’s column, using criticism of Arday’s scholarship to discuss sociology’s standing.",
+        "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+        "limit": "This is signed-column promotion, not an unsigned leader or evidence of owner direction. Its adverse framing is a judgment, not a research finding. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "promotedWrittenRecordId": "arday-the-spectator-12",
+        "relatedArticleURL": "https://spectator.com/article/sociology-is-about-much-more-than-fools-like-jason-arday/",
+        "publicationRole": "outlet_promotion",
+        "publicationRelationship": "published_post",
+        "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+        "actorType": "Publisher or public commentator account",
+        "distributionEvents": [],
+        "observedMetrics": [
+          {
+            "name": "views",
+            "value": 31678,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/spectator/status/2086691524977320157",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "shares",
+            "value": 71,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/spectator/status/2086691524977320157",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "likes",
+            "value": 205,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/spectator/status/2086691524977320157",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          }
+        ],
+        "evidenceIds": [
+          "media-arday-spectator-promotion"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-arday-ai-claim",
+        "caseId": "arday-2026-campaign",
+        "outlet": "Colin Wright (@SwipeWright)",
+        "channel": "social",
+        "format": "social_post",
+        "platform": "Twitter / X",
+        "title": "An AI-authorship allegation added to the resignation",
+        "date": "2026-08-05",
+        "dateBasis": "platform_post_date",
+        "publishedAtUTC": "2026-08-05T19:48:21.000Z",
+        "publicationDisplay": "Original X timestamp: 2026-08-05T19:48:21.000Z (UTC).",
+        "programme": null,
+        "url": "https://x.com/SwipeWright/status/2085090552731570261",
+        "contentBasis": "original_post",
+        "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+        "summary": "Claims Arday’s resignation letter was AI-generated, citing an AI detector’s output alongside allegations about his work and biography.",
+        "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+        "limit": "The post’s detector claim is not verified authorship or an inquiry finding. No detector test was performed for this bundle. No direct link to the earlier Telegraph post is established. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "promotedWrittenRecordId": null,
+        "relatedArticleURL": null,
+        "publicationRole": "allegation_amplification",
+        "publicationRelationship": "published_post",
+        "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+        "actorType": "Named public commentator, speaking personally",
+        "distributionEvents": [],
+        "observedMetrics": [
+          {
+            "name": "views",
+            "value": 1340915,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/SwipeWright/status/2085090552731570261",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "shares",
+            "value": 2210,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/SwipeWright/status/2085090552731570261",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "likes",
+            "value": 12795,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/SwipeWright/status/2085090552731570261",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          }
+        ],
+        "evidenceIds": [
+          "media-arday-ai-claim"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-arday-ai-quote",
+        "caseId": "arday-2026-campaign",
+        "outlet": "Brittlish (@Brittlish)",
+        "channel": "social",
+        "format": "social_post",
+        "platform": "Twitter / X",
+        "title": "A reply repeats the AI claim without qualification",
+        "date": "2026-08-05",
+        "dateBasis": "platform_post_date",
+        "publishedAtUTC": "2026-08-05T20:30:55.000Z",
+        "publicationDisplay": "Original X timestamp: 2026-08-05T20:30:55.000Z (UTC).",
+        "programme": null,
+        "url": "https://x.com/Brittlish/status/2085101265546256442",
+        "contentBasis": "original_post",
+        "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+        "summary": "States the letter is entirely AI-generated, quoting Wright’s detector claim in a reply beneath the resignation announcement.",
+        "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+        "limit": "The quote and reply links are verified; the authorship claim is not. The categorical wording should be compared with the evidence available at that time. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "promotedWrittenRecordId": null,
+        "relatedArticleURL": null,
+        "publicationRole": "allegation_amplification",
+        "publicationRelationship": "published_post",
+        "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+        "actorType": "Public individual account; organisational role not established",
+        "distributionEvents": [],
+        "observedMetrics": [
+          {
+            "name": "views",
+            "value": 18652,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/Brittlish/status/2085101265546256442",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "shares",
+            "value": 45,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/Brittlish/status/2085101265546256442",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "likes",
+            "value": 458,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/Brittlish/status/2085101265546256442",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          }
+        ],
+        "evidenceIds": [
+          "media-arday-ai-quote"
+        ],
+        "verifiedAt": "2026-10-14"
       }
     ],
     "mediaScope": {
       "verifiedAt": "2026-10-14",
-      "recordCount": 2,
+      "recordCount": 6,
       "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
       "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
       "gaps": [
@@ -4154,7 +4434,7 @@
           "note": "No original GB News clip in this window was verified. A GB News employee’s appearance on Spiked is attributed to Spiked, not GB News."
         }
       ],
-      "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+      "socialPostRecovery": "Selected original contributing posts and counter-speech are distinguished; archived and reported sources retain their own date basis. This is not an X census or complete repost graph. Current counters cannot reconstruct historical reach."
     },
     "editorialRecords": [
       {
@@ -4183,6 +4463,108 @@
       "recordCount": 1,
       "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
       "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
+    },
+    "spreadLinks": [
+      {
+        "id": "spread-arday-telegraph-promotion",
+        "fromId": "arday-the-telegraph-13",
+        "toId": "media-arday-telegraph-promotion",
+        "relation": "promotes",
+        "date": "2026-08-05",
+        "sourceURL": "https://x.com/Telegraph/status/2085085013335245074",
+        "basis": "The original post’s outbound link resolves to this exact retained article URL.",
+        "limit": "This proves this specific publication, preview, quote or reply relationship. It does not establish total reach, coordination, intent or causal harm. Same-day ordering of an article without a timestamp remains unknown.",
+        "evidenceIds": [
+          "media-arday-telegraph-promotion"
+        ]
+      },
+      {
+        "id": "spread-arday-spectator-promotion",
+        "fromId": "arday-the-spectator-12",
+        "toId": "media-arday-spectator-promotion",
+        "relation": "promotes",
+        "date": "2026-08-10",
+        "sourceURL": "https://x.com/spectator/status/2086691524977320157",
+        "basis": "The original post’s outbound link resolves to this exact retained column URL.",
+        "limit": "This proves this specific publication, preview, quote or reply relationship. It does not establish total reach, coordination, intent or causal harm. Same-day ordering of an article without a timestamp remains unknown.",
+        "evidenceIds": [
+          "media-arday-spectator-promotion"
+        ]
+      },
+      {
+        "id": "spread-arday-ai-quote",
+        "fromId": "media-arday-ai-claim",
+        "toId": "media-arday-ai-quote",
+        "relation": "quotes",
+        "date": "2026-08-05",
+        "sourceURL": "https://x.com/Brittlish/status/2085101265546256442",
+        "basis": "The reply contains a native quote of Wright’s exact original status, posted about 42 minutes later.",
+        "limit": "This proves this specific publication, preview, quote or reply relationship. It does not establish total reach, coordination, intent or causal harm. Same-day ordering of an article without a timestamp remains unknown.",
+        "evidenceIds": [
+          "media-arday-ai-claim",
+          "media-arday-ai-quote"
+        ]
+      },
+      {
+        "id": "spread-arday-reply",
+        "fromId": "media-arday-telegraph-promotion",
+        "toId": "media-arday-ai-quote",
+        "relation": "replies_to",
+        "date": "2026-08-05",
+        "sourceURL": "https://x.com/Brittlish/status/2085101265546256442",
+        "basis": "The original thread places this reply beneath the Telegraph post; the reply also quotes Wright separately.",
+        "limit": "This proves this specific publication, preview, quote or reply relationship. It does not establish total reach, coordination, intent or causal harm. Same-day ordering of an article without a timestamp remains unknown.",
+        "evidenceIds": [
+          "media-arday-telegraph-promotion",
+          "media-arday-ai-quote"
+        ]
+      }
+    ],
+    "attentionScope": {
+      "method": "Written records, contributing posts, counter-speech, editorial records and case events share a date axis but keep separate counts. Links are shown only for verified previews, article promotion, quoting or replies. The fixed 179-headline inventory is unchanged.",
+      "limits": "Recovered examples do not measure all exposure or establish that every item was a pile-on. Present counters and historical snapshots have different dates and cannot be joined into an assumed growth curve.",
+      "gaps": "No qualifying contributing X post recovered for Jefferies. Other cases contain selected examples, not complete platform samples. Deleted posts and missing captures remain recovery gaps."
+    },
+    "accountabilityRecords": [
+      {
+        "id": "account-arday-appointment-announcement",
+        "date": "2026-08-12",
+        "dateBasis": "statement_date",
+        "publicationDate": null,
+        "title": "An independent appointment investigation announced",
+        "institution": "University of Cambridge",
+        "status": "announcement",
+        "url": "https://www.cam.ac.uk/notices/news/statement-from-the-vice-chancellor-12-august-2026",
+        "summary": "Cambridge announced an independent appointment investigation and said this case should not be generalised to staff of colour.",
+        "limit": "An announcement is not a finding about allegations or the justification for the coverage.",
+        "phase": "within_window",
+        "evidenceIds": [
+          "cambridge-original-20260812"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "account-arday-welfare-terms",
+        "date": "2026-09-14",
+        "dateBasis": "publication_date",
+        "publicationDate": null,
+        "title": "A welfare review sets its scope",
+        "institution": "University of Cambridge / Nazir Afzal",
+        "status": "review_terms",
+        "url": "https://www.cam.ac.uk/news/nazir-afzal-obe-launches-part-one-of-the-independent-review-following-the-death-of-professor-jason",
+        "summary": "Part One will examine the University’s support, decisions and communications, judged against what was known at each stage. The terms distinguish welfare questions from scrutiny of Arday’s academic record.",
+        "limit": "These are terms of reference, not completed findings. Third-party media conduct and legal liability are outside this review’s remit; it cannot determine why he died.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "account-arday-welfare-terms"
+        ],
+        "verifiedAt": "2026-10-14"
+      }
+    ],
+    "accountabilityScope": {
+      "checkedAt": "2026-10-14",
+      "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
+      "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
     }
   },
   {
@@ -4517,6 +4899,36 @@
         "date": "2020-02-20",
         "retrospective": true,
         "text": "Urges restraint in reporting after Flack’s death, arguing that public interest does not justify sensational detail or disregard for relatives and vulnerable readers. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. This is aftermath after the 14 February cutoff, not evidence of pre-death coverage or a cause of death."
+      },
+      {
+        "id": "media-flack-relationship-promotion",
+        "label": "Older relationship remarks revisited after the charge · original X post",
+        "url": "https://x.com/TheSun/status/1205879044333539329",
+        "date": "2019-12-14",
+        "text": "Promotes earlier romantic remarks about Flack’s partner, placing them beside the assault allegation after she was charged. The post juxtaposes prior relationship material with a pending allegation. It is not a conviction or an additional legal finding. Its linked article is outside the fixed recovered headline sample."
+      },
+      {
+        "id": "media-flack-career-joke-promotion",
+        "label": "An awards-show joke renews attention weeks later · original X post",
+        "url": "https://x.com/TheSun/status/1222415859962064896",
+        "date": "2020-01-29",
+        "text": "Promotes a report of an awards-show joke about Flack’s career and the audience’s reaction. The event can be examined as a new entertainment development; it is not a new finding in the criminal proceedings. The linked article is supplemental to the fixed headline sample."
+      },
+      {
+        "id": "account-flack-cps-inquest",
+        "label": "CPS evidence to the inquest · 2020-07-28",
+        "url": "https://www.cps.gov.uk/publication/witness-statement-lisa-ramsarran-matter-inquest-touching-upon-death-caroline-flack",
+        "date": "2020-07-28",
+        "retrospective": true,
+        "text": "The witness statement records six prosecution reviews between 15 December 2019 and 13 February 2020 and three case-management panels. The CPS maintained that its charging decision was proper. Signed 28 July 2020; the website labels publication 10 November 2025. This is the prosecutor’s account, not a verdict on press conduct. Internal reviews do not prove editors knew about them during the coverage."
+      },
+      {
+        "id": "account-flack-inquest-reported",
+        "label": "The inquest conclusion, reported by ITV · 2020-08-06",
+        "url": "https://www.itv.com/news/2020-08-06/police-and-prosecutors-had-it-in-for-caroline-flack-says-stars-mother",
+        "date": "2020-08-06",
+        "retrospective": true,
+        "text": "ITV’s inquest report attributes to the coroner a conclusion of suicide and an account of distress about the impending criminal trial and publicity. It also records the family’s criticism and the police officer’s denial of bias. This is an inquest report, not the original Record of Inquest. Family accusations and witness evidence must be distinguished from the coroner’s conclusions. It does not allocate responsibility to individual outlets or establish a single cause."
       }
     ],
     "reasoningChecks": [
@@ -7331,11 +7743,119 @@
           "media-caroline-flack-recovered-2"
         ],
         "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-flack-relationship-promotion",
+        "caseId": "caroline-flack-recovered-campaign",
+        "outlet": "The Sun",
+        "channel": "social",
+        "format": "social_post",
+        "platform": "Twitter / X",
+        "title": "Older relationship remarks revisited after the charge",
+        "date": "2019-12-14",
+        "dateBasis": "platform_post_date",
+        "publishedAtUTC": "2019-12-14T15:55:42.000Z",
+        "publicationDisplay": "Original X timestamp: 2019-12-14T15:55:42.000Z (UTC).",
+        "programme": null,
+        "url": "https://x.com/TheSun/status/1205879044333539329",
+        "contentBasis": "original_post",
+        "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+        "summary": "Promotes earlier romantic remarks about Flack’s partner, placing them beside the assault allegation after she was charged.",
+        "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+        "limit": "The post juxtaposes prior relationship material with a pending allegation. It is not a conviction or an additional legal finding. Its linked article is outside the fixed recovered headline sample. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "promotedWrittenRecordId": null,
+        "relatedArticleURL": "https://www.thesun.co.uk/tvandshowbiz/10552400/caroline-flack-lewis-burton-love-forever/",
+        "publicationRole": "outlet_promotion",
+        "publicationRelationship": "published_post",
+        "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+        "actorType": "Publisher or public commentator account",
+        "distributionEvents": [],
+        "observedMetrics": [
+          {
+            "name": "shares",
+            "value": 2,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/TheSun/status/1205879044333539329",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "likes",
+            "value": 9,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/TheSun/status/1205879044333539329",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          }
+        ],
+        "evidenceIds": [
+          "media-flack-relationship-promotion"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-flack-career-joke-promotion",
+        "caseId": "caroline-flack-recovered-campaign",
+        "outlet": "The Sun",
+        "channel": "social",
+        "format": "social_post",
+        "platform": "Twitter / X",
+        "title": "An awards-show joke renews attention weeks later",
+        "date": "2020-01-29",
+        "dateBasis": "platform_post_date",
+        "publishedAtUTC": "2020-01-29T07:07:07.000Z",
+        "publicationDisplay": "Original X timestamp: 2020-01-29T07:07:07.000Z (UTC).",
+        "programme": null,
+        "url": "https://x.com/TheSun/status/1222415859962064896",
+        "contentBasis": "original_post",
+        "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+        "summary": "Promotes a report of an awards-show joke about Flack’s career and the audience’s reaction.",
+        "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+        "limit": "The event can be examined as a new entertainment development; it is not a new finding in the criminal proceedings. The linked article is supplemental to the fixed headline sample. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "promotedWrittenRecordId": null,
+        "relatedArticleURL": "https://www.thesun.co.uk/tvandshowbiz/10842310/david-walliams-booed-ntas-caroline-flack-joke/",
+        "publicationRole": "outlet_promotion",
+        "publicationRelationship": "published_post",
+        "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+        "actorType": "Publisher or public commentator account",
+        "distributionEvents": [],
+        "observedMetrics": [
+          {
+            "name": "shares",
+            "value": 4,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/TheSun/status/1222415859962064896",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "likes",
+            "value": 8,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/TheSun/status/1222415859962064896",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          }
+        ],
+        "evidenceIds": [
+          "media-flack-career-joke-promotion"
+        ],
+        "verifiedAt": "2026-10-14"
       }
     ],
     "mediaScope": {
       "verifiedAt": "2026-10-14",
-      "recordCount": 2,
+      "recordCount": 4,
       "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
       "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
       "gaps": [
@@ -7348,7 +7868,7 @@
           "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
         }
       ],
-      "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+      "socialPostRecovery": "Selected original contributing posts and counter-speech are distinguished; archived and reported sources retain their own date basis. This is not an X census or complete repost graph. Current counters cannot reconstruct historical reach."
     },
     "editorialRecords": [
       {
@@ -7377,6 +7897,53 @@
       "recordCount": 1,
       "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
       "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
+    },
+    "spreadLinks": [],
+    "attentionScope": {
+      "method": "Written records, contributing posts, counter-speech, editorial records and case events share a date axis but keep separate counts. Links are shown only for verified previews, article promotion, quoting or replies. The fixed 179-headline inventory is unchanged.",
+      "limits": "Recovered examples do not measure all exposure or establish that every item was a pile-on. Present counters and historical snapshots have different dates and cannot be joined into an assumed growth curve.",
+      "gaps": "No qualifying contributing X post recovered for Jefferies. Other cases contain selected examples, not complete platform samples. Deleted posts and missing captures remain recovery gaps."
+    },
+    "accountabilityRecords": [
+      {
+        "id": "account-flack-cps-inquest",
+        "date": "2020-07-28",
+        "dateBasis": "statement_date",
+        "publicationDate": "2025-11-10",
+        "title": "CPS evidence to the inquest",
+        "institution": "Crown Prosecution Service",
+        "status": "institutional_account",
+        "url": "https://www.cps.gov.uk/publication/witness-statement-lisa-ramsarran-matter-inquest-touching-upon-death-caroline-flack",
+        "summary": "The witness statement records six prosecution reviews between 15 December 2019 and 13 February 2020 and three case-management panels. The CPS maintained that its charging decision was proper.",
+        "limit": "Signed 28 July 2020; the website labels publication 10 November 2025. This is the prosecutor’s account, not a verdict on press conduct. Internal reviews do not prove editors knew about them during the coverage.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "account-flack-cps-inquest"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "account-flack-inquest-reported",
+        "date": "2020-08-06",
+        "dateBasis": "report_date",
+        "publicationDate": null,
+        "title": "The inquest conclusion, reported by ITV",
+        "institution": "Poplar Coroner’s Court · ITV reporting",
+        "status": "reported_finding",
+        "url": "https://www.itv.com/news/2020-08-06/police-and-prosecutors-had-it-in-for-caroline-flack-says-stars-mother",
+        "summary": "ITV’s inquest report attributes to the coroner a conclusion of suicide and an account of distress about the impending criminal trial and publicity. It also records the family’s criticism and the police officer’s denial of bias.",
+        "limit": "This is an inquest report, not the original Record of Inquest. Family accusations and witness evidence must be distinguished from the coroner’s conclusions. It does not allocate responsibility to individual outlets or establish a single cause.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "account-flack-inquest-reported"
+        ],
+        "verifiedAt": "2026-10-14"
+      }
+    ],
+    "accountabilityScope": {
+      "checkedAt": "2026-10-14",
+      "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
+      "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
     }
   },
   {
@@ -7755,9 +8322,31 @@
       {
         "id": "media-sterling-keyworth",
         "label": "A headline-comparison thread",
-        "url": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
-        "date": "2018-05-29",
-        "text": "JOE reports a thread collecting negative coverage and describes it as widely shared that morning. The date plotted is the report’s date, not a verified thread publication date. The full thread and screenshots were not recovered; no article list or reach number is inferred."
+        "url": "https://web.archive.org/web/20180528225517/https://twitter.com/adamkeyworth/status/1001218545588502530",
+        "date": "2018-05-28",
+        "text": "Collects examples of press treatment of Sterling in a critical headline-comparison thread. The preserved copy verifies this captured version, not a complete original archive of every image. Publication time has no established timezone. Capture time is not publication time. The live page’s unavailability does not establish why it disappeared."
+      },
+      {
+        "id": "media-sterling-frontpage-share",
+        "label": "The next day’s front page enters a social feed · original X post",
+        "url": "https://x.com/hendopolis/status/1001212445883543557",
+        "date": "2018-05-28",
+        "text": "Redistributes The Sun’s next-day Sterling front page under a newspaper-preview hashtag. The posting account is Henderson’s, not The Sun’s. Sharing the cover does not establish personal endorsement of its framing."
+      },
+      {
+        "id": "media-sterling-talksport-target",
+        "label": "A radio guest’s target claim becomes a social clip · original X post",
+        "url": "https://x.com/talkSPORT/status/1071775992455282689",
+        "date": "2018-12-09",
+        "text": "Promotes Dave Kitson’s comments that footballers should be careful with social media and can make themselves targets. The publisher’s caption is verified. Kitson’s claim is attributed opinion, not a justification for racist abuse. Upload time is not the original radio airtime; the full discussion was not transcribed."
+      },
+      {
+        "id": "account-sterling-chelsea",
+        "label": "Chelsea announces sanctions after the December match · 2019-07-30",
+        "url": "https://www.chelseafc.com/en/news/article/statement-on-sanctions-against-people-regarding-behaviour-during",
+        "date": "2019-07-30",
+        "retrospective": true,
+        "text": "Chelsea said it permanently excluded one spectator for racially abusive language and threatening or aggressive behaviour, and temporarily excluded five others for abusive behaviour. It described its evidence process and appeal rights. A club ticketing decision under a civil standard, not a criminal conviction or a finding about press coverage. The statement does not say all six used racist language. The CPS did not bring criminal prosecutions."
       }
     ],
     "reasoningChecks": [
@@ -10433,7 +11022,8 @@
         "verifiedAt": "2026-10-14",
         "actorType": "football pundit, speaking personally",
         "reportURL": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
-        "reportDate": "2018-05-29"
+        "reportDate": "2018-05-29",
+        "publicationRole": "counter_speech"
       },
       {
         "id": "media-sterling-keyworth",
@@ -10443,15 +11033,15 @@
         "format": "social_post",
         "platform": "Twitter / X",
         "title": "A headline-comparison thread",
-        "date": "2018-05-29",
-        "dateBasis": "contemporaneous_report_date",
-        "publicationDisplay": "Documented by JOE at 09:57 BST on 29 May 2018. Original post date not recovered.",
+        "date": "2018-05-28",
+        "dateBasis": "archive_post_date",
+        "publicationDisplay": "Captured Twitter page displays 28 May 2018, 02:47 PM; display timezone not established.",
         "programme": null,
         "url": "https://x.com/adamkeyworth/status/1001218545588502530",
-        "contentBasis": "contemporaneous_report",
-        "sourceBasis": "JOE’s 29 May 2018 report links the exact thread and describes Lineker sharing it. The original thread currently returns a page-unavailable message.",
-        "summary": "JOE reports a thread collecting negative coverage and describes it as widely shared that morning.",
-        "limit": "The date plotted is the report’s date, not a verified thread publication date. The full thread and screenshots were not recovered; no article list or reach number is inferred.",
+        "contentBasis": "archived_post",
+        "sourceBasis": "Wayback’s first listed capture preserves the original thread heading, displayed publication date and numbered follow-up entries. The original live X page was unavailable in this check.",
+        "summary": "Collects examples of press treatment of Sterling in a critical headline-comparison thread.",
+        "limit": "The preserved copy verifies this captured version, not a complete original archive of every image. Publication time has no established timezone. Capture time is not publication time. The live page’s unavailability does not establish why it disappeared.",
         "duration": {
           "display": null,
           "totalSeconds": null,
@@ -10462,7 +11052,24 @@
         "publicationRelationship": "counter_speech",
         "relationshipNote": "A response to coverage can spread the subject’s name while challenging the framing. It is not automatically an attack on the subject or another independent news report.",
         "distributionEvents": [],
-        "observedMetrics": [],
+        "observedMetrics": [
+          {
+            "name": "shares",
+            "value": 887,
+            "observedAt": "2018-05-28T22:55:17Z",
+            "sourceURL": "https://web.archive.org/web/20180528225517/https://twitter.com/adamkeyworth/status/1001218545588502530",
+            "observationKind": "archived_capture",
+            "scope": "Counter displayed in the captured page: one period-specific snapshot, not unique audience or a growth curve."
+          },
+          {
+            "name": "likes",
+            "value": 911,
+            "observedAt": "2018-05-28T22:55:17Z",
+            "sourceURL": "https://web.archive.org/web/20180528225517/https://twitter.com/adamkeyworth/status/1001218545588502530",
+            "observationKind": "archived_capture",
+            "scope": "Counter displayed in the captured page: one period-specific snapshot, not unique audience or a growth curve."
+          }
+        ],
         "evidenceIds": [
           "media-sterling-keyworth"
         ],
@@ -10470,18 +11077,129 @@
         "actorType": "individual commentator",
         "reportURL": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
         "reportDate": "2018-05-29",
-        "postPublicationDate": null,
+        "postPublicationDate": "2018-05-28",
         "viralityEvidence": {
           "status": "contemporaneous_description_only",
           "description": "JOE called the thread “widely shared” on 29 May; no numeric reach or growth rate is established.",
           "sourceURL": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
           "date": "2018-05-29"
-        }
+        },
+        "archiveURL": "https://web.archive.org/web/20180528225517/https://twitter.com/adamkeyworth/status/1001218545588502530",
+        "captureTimestamp": "2018-05-28T22:55:17Z",
+        "publicationRole": "counter_speech"
+      },
+      {
+        "id": "media-sterling-frontpage-share",
+        "caseId": "sterling-campaign",
+        "outlet": "Neil Henderson (@hendopolis)",
+        "channel": "social",
+        "format": "social_post",
+        "platform": "Twitter / X",
+        "title": "The next day’s front page enters a social feed",
+        "date": "2018-05-28",
+        "dateBasis": "platform_post_date",
+        "publishedAtUTC": "2018-05-28T21:23:43.000Z",
+        "publicationDisplay": "Original X timestamp: 2018-05-28T21:23:43.000Z (UTC).",
+        "programme": null,
+        "url": "https://x.com/hendopolis/status/1001212445883543557",
+        "contentBasis": "original_post",
+        "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+        "summary": "Redistributes The Sun’s next-day Sterling front page under a newspaper-preview hashtag.",
+        "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+        "limit": "The posting account is Henderson’s, not The Sun’s. Sharing the cover does not establish personal endorsement of its framing. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "promotedWrittenRecordId": null,
+        "relatedArticleURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+        "publicationRole": "outlet_promotion",
+        "publicationRelationship": "published_post",
+        "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+        "actorType": "Named newspaper-preview account; acting in that format",
+        "distributionEvents": [],
+        "observedMetrics": [
+          {
+            "name": "shares",
+            "value": 393,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/hendopolis/status/1001212445883543557",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "likes",
+            "value": 70,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/hendopolis/status/1001212445883543557",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          }
+        ],
+        "evidenceIds": [
+          "media-sterling-frontpage-share"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-sterling-talksport-target",
+        "caseId": "sterling-campaign",
+        "outlet": "talkSPORT",
+        "channel": "social",
+        "format": "social_post",
+        "platform": "Twitter / X",
+        "title": "A radio guest’s target claim becomes a social clip",
+        "date": "2018-12-09",
+        "dateBasis": "platform_post_date",
+        "publishedAtUTC": "2018-12-09T14:38:03.000Z",
+        "publicationDisplay": "Original X timestamp: 2018-12-09T14:38:03.000Z (UTC).",
+        "programme": null,
+        "url": "https://x.com/talkSPORT/status/1071775992455282689",
+        "contentBasis": "original_post",
+        "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+        "summary": "Promotes Dave Kitson’s comments that footballers should be careful with social media and can make themselves targets.",
+        "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+        "limit": "The publisher’s caption is verified. Kitson’s claim is attributed opinion, not a justification for racist abuse. Upload time is not the original radio airtime; the full discussion was not transcribed. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+        "duration": {
+          "display": "77 seconds · embedded clip",
+          "totalSeconds": 77,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "promotedWrittenRecordId": null,
+        "relatedArticleURL": null,
+        "publicationRole": "outlet_promotion",
+        "publicationRelationship": "published_post",
+        "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+        "actorType": "Official radio-outlet account; caption quotes its guest",
+        "distributionEvents": [],
+        "observedMetrics": [
+          {
+            "name": "shares",
+            "value": 1568,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/talkSPORT/status/1071775992455282689",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "likes",
+            "value": 900,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/talkSPORT/status/1071775992455282689",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          }
+        ],
+        "evidenceIds": [
+          "media-sterling-talksport-target"
+        ],
+        "verifiedAt": "2026-10-14"
       }
     ],
     "mediaScope": {
       "verifiedAt": "2026-10-14",
-      "recordCount": 3,
+      "recordCount": 5,
       "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
       "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
       "gaps": [
@@ -10498,7 +11216,7 @@
           "note": "The located BBC Radio5Live programme lead is linked from a May2019 article, outside the selected2018window; it is not counted."
         }
       ],
-      "socialPostRecovery": "2 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+      "socialPostRecovery": "Selected original contributing posts and counter-speech are distinguished; archived and reported sources retain their own date basis. This is not an X census or complete repost graph. Current counters cannot reconstruct historical reach."
     },
     "editorialRecords": [
       {
@@ -10548,6 +11266,64 @@
       "recordCount": 2,
       "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
       "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
+    },
+    "spreadLinks": [
+      {
+        "id": "spread-sterling-frontpage-preview",
+        "fromId": "media-sterling-frontpage-share",
+        "toId": "sterling-sun-print-tattoo-20180529",
+        "relation": "previews",
+        "date": "2018-05-28",
+        "sourceURL": "https://x.com/hendopolis/status/1001212445883543557",
+        "basis": "The original post previews the next day’s Sun cover; the retained print headline is dated to that edition.",
+        "limit": "This proves this specific publication, preview, quote or reply relationship. It does not establish total reach, coordination, intent or causal harm. Same-day ordering of an article without a timestamp remains unknown.",
+        "evidenceIds": [
+          "media-sterling-frontpage-share"
+        ]
+      },
+      {
+        "id": "spread-sterling-thread-lineker",
+        "fromId": "media-sterling-keyworth",
+        "toId": "media-sterling-lineker",
+        "relation": "links_to",
+        "date": "2018-05-29",
+        "sourceURL": "https://x.com/GaryLineker/status/1001244624323686400",
+        "basis": "Lineker’s original post directly links Keyworth’s thread; the archive establishes the earlier date of the thread.",
+        "limit": "This proves this specific publication, preview, quote or reply relationship. It does not establish total reach, coordination, intent or causal harm. Same-day ordering of an article without a timestamp remains unknown.",
+        "evidenceIds": [
+          "media-sterling-keyworth",
+          "media-sterling-lineker"
+        ]
+      }
+    ],
+    "attentionScope": {
+      "method": "Written records, contributing posts, counter-speech, editorial records and case events share a date axis but keep separate counts. Links are shown only for verified previews, article promotion, quoting or replies. The fixed 179-headline inventory is unchanged.",
+      "limits": "Recovered examples do not measure all exposure or establish that every item was a pile-on. Present counters and historical snapshots have different dates and cannot be joined into an assumed growth curve.",
+      "gaps": "No qualifying contributing X post recovered for Jefferies. Other cases contain selected examples, not complete platform samples. Deleted posts and missing captures remain recovery gaps."
+    },
+    "accountabilityRecords": [
+      {
+        "id": "account-sterling-chelsea",
+        "date": "2019-07-30",
+        "dateBasis": "statement_date",
+        "publicationDate": null,
+        "title": "Chelsea announces sanctions after the December match",
+        "institution": "Chelsea Football Club",
+        "status": "institutional_account",
+        "url": "https://www.chelseafc.com/en/news/article/statement-on-sanctions-against-people-regarding-behaviour-during",
+        "summary": "Chelsea said it permanently excluded one spectator for racially abusive language and threatening or aggressive behaviour, and temporarily excluded five others for abusive behaviour. It described its evidence process and appeal rights.",
+        "limit": "A club ticketing decision under a civil standard, not a criminal conviction or a finding about press coverage. The statement does not say all six used racist language. The CPS did not bring criminal prosecutions.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "account-sterling-chelsea"
+        ],
+        "verifiedAt": "2026-10-14"
+      }
+    ],
+    "accountabilityScope": {
+      "checkedAt": "2026-10-14",
+      "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
+      "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
     }
   },
   {
@@ -10658,11 +11434,11 @@
       },
       {
         "id": "initial-judgment",
-        "label": "High Court judgment dated 1 May 2020 (retrospective)",
+        "label": "High Court strike-out ruling dated 1 May 2020 (retrospective)",
         "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
         "date": "2020-05-01",
         "retrospective": true,
-        "text": "The High Court granted summary judgment on the Duchess’s misuse-of-private-information and copyright claims. Associated Newspapers said it was disappointed and sought to appeal. This is a 2020 decision, not the 2021 Court of Appeal outcome."
+        "text": "The High Court struck three categories of pleaded allegation about dishonesty or bad faith, stirring up father–daughter conflict and an alleged agenda to publish intrusive or damaging stories. This procedural ruling did not determine substantive privacy or copyright liability. Copyright was not in issue on this application; the substantive summary judgment came on 11 February 2021."
       },
       {
         "id": "markle-letter-h11",
@@ -10771,6 +11547,37 @@
         "label": "official-court-summary",
         "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
         "text": "PDF page 2 states People date 6 February; quotes the MoS headline and refers to the first line of the MoS article; explains the Court of Appeal's conclusion and citations to paragraphs 95/102/106. Concise official summary, explicitly not itself part of the decision; use the judgment for authoritative findings."
+      },
+      {
+        "id": "media-markle-early-letter-promotion",
+        "label": "An early letter and family-rift report is promoted · original X post",
+        "url": "https://x.com/DailyMailUK/status/1093142106581946368",
+        "date": "2019-02-06",
+        "text": "Promotes a report about a letter and Meghan’s dispute with her father, before the later publication of letter extracts. The current profile displays Mail+; the 2019 display name was not recovered. The link resolves to a Mail news page, but this post is not evidence that the five later challenged articles were already published. No private letter text is reproduced."
+      },
+      {
+        "id": "account-markle-summary",
+        "label": "Privacy and copyright summary judgment · 2021-02-11",
+        "url": "https://www.bailii.org/ew/cases/EWHC/Ch/2021/273.html",
+        "date": "2021-02-11",
+        "retrospective": true,
+        "text": "The court granted summary judgment on misuse of private information and on copyright subsistence and infringement. A limited copyright co-authorship issue remained open. The decision concerns the challenged letter articles, not all reporting about Markle or a numerical threshold for acceptable coverage."
+      },
+      {
+        "id": "account-markle-notice",
+        "label": "Publication of a copyright notice ordered · 2021-03-05",
+        "url": "https://www.judiciary.uk/judgments/duchess-of-sussex-v-associated-newspapers-ltd/",
+        "date": "2021-03-05",
+        "retrospective": true,
+        "text": "The court set terms for print and online notices reporting its copyright finding. The May judgment records that publication was stayed pending an appeal application. An order is not proof the notice appeared on that date, and a court notice is not a voluntary apology. The remaining ownership issue and later appeal must retain their own dates."
+      },
+      {
+        "id": "account-markle-copyright",
+        "label": "Final copyright liability and account of profits · 2021-05-12",
+        "url": "https://www.judiciary.uk/wp-content/uploads/2021/05/Duchess-of-Sussex-v-Associated-judgment.pdf",
+        "date": "2021-05-12",
+        "retrospective": true,
+        "text": "The court resolved the remaining ownership issue in Markle’s favour, entered final summary judgment on copyright liability and gave directions for an account of profits. This did not quantify the profits or decide all privacy financial remedies. It confirms an article-specific legal result rather than a finding about the entire news cycle."
       }
     ],
     "reasoningChecks": [
@@ -11674,7 +12481,7 @@
       "retrospectiveEvidence": [
         {
           "date": "2020-05-01",
-          "text": "High Court granted summary judgment on the privacy/copyright claims. This is outside the 2019 sample window.",
+          "text": "High Court struck three pleaded categories of allegation; it did not determine substantive privacy or copyright liability. This is outside the 2019 sample window.",
           "evidenceIds": [
             "initial-judgment"
           ],
@@ -12095,10 +12902,65 @@
       "No private letter text was transcribed or reproduced."
     ],
     "accessDate": "2026-10-14",
-    "mediaRecords": [],
+    "mediaRecords": [
+      {
+        "id": "media-markle-early-letter-promotion",
+        "caseId": "markle-letter-campaign",
+        "outlet": "@DailyMailUK (now Mail+)",
+        "channel": "social",
+        "format": "social_post",
+        "platform": "Twitter / X",
+        "title": "An early letter and family-rift report is promoted",
+        "date": "2019-02-06",
+        "dateBasis": "platform_post_date",
+        "publishedAtUTC": "2019-02-06T13:39:22.000Z",
+        "publicationDisplay": "Original X timestamp: 2019-02-06T13:39:22.000Z (UTC).",
+        "programme": null,
+        "url": "https://x.com/DailyMailUK/status/1093142106581946368",
+        "contentBasis": "original_post",
+        "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+        "summary": "Promotes a report about a letter and Meghan’s dispute with her father, before the later publication of letter extracts.",
+        "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+        "limit": "The current profile displays Mail+; the 2019 display name was not recovered. The link resolves to a Mail news page, but this post is not evidence that the five later challenged articles were already published. No private letter text is reproduced. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "promotedWrittenRecordId": null,
+        "relatedArticleURL": "https://www.dailymail.com/news/article-6673951/Meghan-begged-father-stop-victimizing-wedding.html",
+        "publicationRole": "outlet_promotion",
+        "publicationRelationship": "published_post",
+        "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+        "actorType": "Publisher account; current identity and historical handle distinguished",
+        "distributionEvents": [],
+        "observedMetrics": [
+          {
+            "name": "shares",
+            "value": 3,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/DailyMailUK/status/1093142106581946368",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "likes",
+            "value": 6,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/DailyMailUK/status/1093142106581946368",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          }
+        ],
+        "evidenceIds": [
+          "media-markle-early-letter-promotion"
+        ],
+        "verifiedAt": "2026-10-14"
+      }
+    ],
     "mediaScope": {
       "verifiedAt": "2026-10-14",
-      "recordCount": 0,
+      "recordCount": 1,
       "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
       "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
       "gaps": [
@@ -12115,13 +12977,111 @@
           "note": "No recovered media records in this first pass. This does not mean there was no broadcast or social coverage."
         }
       ],
-      "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+      "socialPostRecovery": "Selected original contributing posts and counter-speech are distinguished; archived and reported sources retain their own date basis. This is not an X census or complete repost graph. Current counters cannot reconstruct historical reach."
     },
     "editorialRecords": [],
     "editorialScope": {
       "recordCount": 0,
       "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
       "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
+    },
+    "spreadLinks": [],
+    "attentionScope": {
+      "method": "Written records, contributing posts, counter-speech, editorial records and case events share a date axis but keep separate counts. Links are shown only for verified previews, article promotion, quoting or replies. The fixed 179-headline inventory is unchanged.",
+      "limits": "Recovered examples do not measure all exposure or establish that every item was a pile-on. Present counters and historical snapshots have different dates and cannot be joined into an assumed growth curve.",
+      "gaps": "No qualifying contributing X post recovered for Jefferies. Other cases contain selected examples, not complete platform samples. Deleted posts and missing captures remain recovery gaps."
+    },
+    "accountabilityRecords": [
+      {
+        "id": "account-markle-strikeout",
+        "date": "2020-05-01",
+        "dateBasis": "decision_date",
+        "publicationDate": null,
+        "title": "A procedural ruling, before the merits decision",
+        "institution": "High Court",
+        "status": "judgment",
+        "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+        "summary": "The court struck three pleaded categories of allegation. Copyright was not in issue on this application.",
+        "limit": "This did not decide whether the letter publication infringed privacy or copyright. The earlier bundle description of this ruling as substantive summary judgment has been corrected.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "initial-judgment"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "account-markle-summary",
+        "date": "2021-02-11",
+        "dateBasis": "decision_date",
+        "publicationDate": null,
+        "title": "Privacy and copyright summary judgment",
+        "institution": "High Court",
+        "status": "judgment",
+        "url": "https://www.bailii.org/ew/cases/EWHC/Ch/2021/273.html",
+        "summary": "The court granted summary judgment on misuse of private information and on copyright subsistence and infringement. A limited copyright co-authorship issue remained open.",
+        "limit": "The decision concerns the challenged letter articles, not all reporting about Markle or a numerical threshold for acceptable coverage.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "account-markle-summary"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "account-markle-notice",
+        "date": "2021-03-05",
+        "dateBasis": "decision_date",
+        "publicationDate": null,
+        "title": "Publication of a copyright notice ordered",
+        "institution": "High Court",
+        "status": "remedy_order",
+        "url": "https://www.judiciary.uk/judgments/duchess-of-sussex-v-associated-newspapers-ltd/",
+        "summary": "The court set terms for print and online notices reporting its copyright finding. The May judgment records that publication was stayed pending an appeal application.",
+        "limit": "An order is not proof the notice appeared on that date, and a court notice is not a voluntary apology. The remaining ownership issue and later appeal must retain their own dates.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "account-markle-notice"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "account-markle-copyright",
+        "date": "2021-05-12",
+        "dateBasis": "decision_date",
+        "publicationDate": null,
+        "title": "Final copyright liability and account of profits",
+        "institution": "High Court",
+        "status": "judgment",
+        "url": "https://www.judiciary.uk/wp-content/uploads/2021/05/Duchess-of-Sussex-v-Associated-judgment.pdf",
+        "summary": "The court resolved the remaining ownership issue in Markle’s favour, entered final summary judgment on copyright liability and gave directions for an account of profits.",
+        "limit": "This did not quantify the profits or decide all privacy financial remedies. It confirms an article-specific legal result rather than a finding about the entire news cycle.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "account-markle-copyright"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "account-markle-appeal",
+        "date": "2021-12-02",
+        "dateBasis": "decision_date",
+        "publicationDate": null,
+        "title": "The appeal tests proportionate publication",
+        "institution": "Court of Appeal",
+        "status": "judgment",
+        "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-judgment-021221.pdf",
+        "summary": "The appeal upheld the privacy outcome concerning five challenged articles. The court concluded that publication was not a proportionate response to the People article.",
+        "limit": "This is a later legal finding about identified publications. It does not adjudicate every outlet’s coverage or disclose what editors knew at every earlier stage.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "trial-judgment"
+        ],
+        "verifiedAt": "2026-10-14"
+      }
+    ],
+    "accountabilityScope": {
+      "checkedAt": "2026-10-14",
+      "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
+      "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
     }
   },
   {
@@ -12388,6 +13348,29 @@
         "url": "https://www.theguardian.com/uk-news/2023/feb/16/nicola-bulley-personal-details-police",
         "date": "2023-02-15",
         "text": "Questions how disclosure helps the search. This is counter-speech about police conduct, not an attack on Bulley. Original page verification is separately labelled; no historical reach or distribution curve is available."
+      },
+      {
+        "id": "media-bulley-personal-disclosure",
+        "label": "A personal disclosure is repeated as breaking news · original X post",
+        "url": "https://x.com/mwilliamsthomas/status/1625914878144700416",
+        "date": "2023-02-15",
+        "text": "Repeats newly disclosed private health information about Bulley as breaking news. This amplifies the police disclosure, not an independently established account of what happened. The bundle does not reproduce the medical detail. No causal link to harm is established."
+      },
+      {
+        "id": "account-bulley-ofcom-status",
+        "label": "Ofcom’s consideration remained open at this date · 2023-08-09",
+        "url": "https://www.ofcom.org.uk/siteassets/resources/documents/about-ofcom/foi/2023/august/investigation-into-itv-and-sky-news-further-to-claims-made-by-nicola-bulleys-family-in-relation-to-harassment-publish.pdf?v=330082",
+        "date": "2023-08-09",
+        "retrospective": true,
+        "text": "Ofcom’s FOI response said its consideration of the family’s concerns about ITV and Sky had not concluded. This is a dated procedural update, not an upheld breach. No later final merits decision was recovered in this research pass; that gap does not establish that none exists."
+      },
+      {
+        "id": "account-bulley-progress",
+        "label": "Communication changes reported to the Accountability Board · 2024-02-13",
+        "url": "https://www.lancashire-pcc.gov.uk/wp-content/uploads/2024/02/Final-Draft-Minutes-of-the-Accountability-Board-13.02.24.pdf",
+        "date": "2024-02-13",
+        "retrospective": true,
+        "text": "The Deputy Chief Constable reported that all but two actions from the review were complete. Media-engagement training and a peer review remained outstanding. These are recorded progress claims by the organisations involved, not an independent implementation audit or proof that wider media practices changed."
       }
     ],
     "reasoningChecks": [
@@ -14316,12 +15299,74 @@
         "verifiedAt": "2026-10-14",
         "actorType": "MP, speaking on police disclosure",
         "reportURL": "https://www.theguardian.com/uk-news/2023/feb/16/nicola-bulley-personal-details-police",
-        "reportDate": "2023-02-16"
+        "reportDate": "2023-02-16",
+        "publicationRole": "counter_speech"
+      },
+      {
+        "id": "media-bulley-personal-disclosure",
+        "caseId": "bulley-campaign",
+        "outlet": "Mark Williams-Thomas (@mwilliamsthomas)",
+        "channel": "social",
+        "format": "social_post",
+        "platform": "Twitter / X",
+        "title": "A personal disclosure is repeated as breaking news",
+        "date": "2023-02-15",
+        "dateBasis": "platform_post_date",
+        "publishedAtUTC": "2023-02-15T17:48:09.000Z",
+        "publicationDisplay": "Original X timestamp: 2023-02-15T17:48:09.000Z (UTC).",
+        "programme": null,
+        "url": "https://x.com/mwilliamsthomas/status/1625914878144700416",
+        "contentBasis": "original_post",
+        "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+        "summary": "Repeats newly disclosed private health information about Bulley as breaking news.",
+        "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+        "limit": "This amplifies the police disclosure, not an independently established account of what happened. The bundle does not reproduce the medical detail. No causal link to harm is established. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "promotedWrittenRecordId": null,
+        "relatedArticleURL": null,
+        "publicationRole": "allegation_amplification",
+        "publicationRelationship": "published_post",
+        "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+        "actorType": "Named public commentator, speaking on the investigation",
+        "distributionEvents": [],
+        "observedMetrics": [
+          {
+            "name": "views",
+            "value": 44210,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/mwilliamsthomas/status/1625914878144700416",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "shares",
+            "value": 17,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/mwilliamsthomas/status/1625914878144700416",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          },
+          {
+            "name": "likes",
+            "value": 75,
+            "observedAt": "2026-10-14",
+            "sourceURL": "https://x.com/mwilliamsthomas/status/1625914878144700416",
+            "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+          }
+        ],
+        "evidenceIds": [
+          "media-bulley-personal-disclosure"
+        ],
+        "verifiedAt": "2026-10-14"
       }
     ],
     "mediaScope": {
       "verifiedAt": "2026-10-14",
-      "recordCount": 6,
+      "recordCount": 7,
       "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
       "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
       "gaps": [
@@ -14334,7 +15379,7 @@
           "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
         }
       ],
-      "socialPostRecovery": "1 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+      "socialPostRecovery": "Selected original contributing posts and counter-speech are distinguished; archived and reported sources retain their own date basis. This is not an X census or complete repost graph. Current counters cannot reconstruct historical reach."
     },
     "editorialRecords": [
       {
@@ -14384,6 +15429,70 @@
       "recordCount": 2,
       "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
       "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
+    },
+    "spreadLinks": [],
+    "attentionScope": {
+      "method": "Written records, contributing posts, counter-speech, editorial records and case events share a date axis but keep separate counts. Links are shown only for verified previews, article promotion, quoting or replies. The fixed 179-headline inventory is unchanged.",
+      "limits": "Recovered examples do not measure all exposure or establish that every item was a pile-on. Present counters and historical snapshots have different dates and cannot be joined into an assumed growth curve.",
+      "gaps": "No qualifying contributing X post recovered for Jefferies. Other cases contain selected examples, not complete platform samples. Deleted posts and missing captures remain recovery gaps."
+    },
+    "accountabilityRecords": [
+      {
+        "id": "account-bulley-ofcom-status",
+        "date": "2023-08-09",
+        "dateBasis": "decision_date",
+        "publicationDate": null,
+        "title": "Ofcom’s consideration remained open at this date",
+        "institution": "Ofcom",
+        "status": "procedural_status",
+        "url": "https://www.ofcom.org.uk/siteassets/resources/documents/about-ofcom/foi/2023/august/investigation-into-itv-and-sky-news-further-to-claims-made-by-nicola-bulleys-family-in-relation-to-harassment-publish.pdf?v=330082",
+        "summary": "Ofcom’s FOI response said its consideration of the family’s concerns about ITV and Sky had not concluded.",
+        "limit": "This is a dated procedural update, not an upheld breach. No later final merits decision was recovered in this research pass; that gap does not establish that none exists.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "account-bulley-ofcom-status"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "account-bulley-review",
+        "date": "2023-11-21",
+        "dateBasis": "publication_date",
+        "publicationDate": null,
+        "title": "An independent review examines the disclosure",
+        "institution": "College of Policing",
+        "status": "review_finding",
+        "url": "https://assets.college.police.uk/s3fs-public/2023-11/Nicola-Bulley-independent-external-review.pdf",
+        "summary": "The independent review concluded that releasing personal information on 15 February was avoidable and unnecessary, and examined police communications under intense news and social-media attention.",
+        "limit": "The review assesses the police response; it is not a legal finding against each publisher or a complete count of online speculation. Personal health details are not repeated here.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "college-review"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "account-bulley-progress",
+        "date": "2024-02-13",
+        "dateBasis": "meeting_date",
+        "publicationDate": null,
+        "title": "Communication changes reported to the Accountability Board",
+        "institution": "Lancashire PCC / Constabulary",
+        "status": "institutional_account",
+        "url": "https://www.lancashire-pcc.gov.uk/wp-content/uploads/2024/02/Final-Draft-Minutes-of-the-Accountability-Board-13.02.24.pdf",
+        "summary": "The Deputy Chief Constable reported that all but two actions from the review were complete. Media-engagement training and a peer review remained outstanding.",
+        "limit": "These are recorded progress claims by the organisations involved, not an independent implementation audit or proof that wider media practices changed.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "account-bulley-progress"
+        ],
+        "verifiedAt": "2026-10-14"
+      }
+    ],
+    "accountabilityScope": {
+      "checkedAt": "2026-10-14",
+      "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
+      "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
     }
   },
   {
@@ -14952,6 +16061,14 @@
         "date": "2011-02-01",
         "retrospective": false,
         "text": "Condemns prejudicial coverage of an uncharged suspect and calls for stronger restraint. It considers both suspect anonymity and the difficulty of regulating online publication. Institutional position, not evidence of an owner’s private views or direction. The linked page may have changed since first publication. The publisher displays 31 January 19:00 EST, equivalent to 1 February 00:00 GMT; the bundle uses the UK date."
+      },
+      {
+        "id": "account-jefferies-leveson",
+        "label": "Leveson examines the concentrated character attacks · 2012-11-29",
+        "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+        "date": "2012-11-29",
+        "retrospective": true,
+        "text": "Leveson identifies the damaging three-day character coverage and records settlements by eight titles over 40 articles. Mirror editor Richard Wallace claimed off-record police briefings; Chief Constable Colin Port disputed this. The inquiry could not resolve that conflict. Sections 4.12–4.21 criticise appearance and temperament judgments and reckless publication, while finding no evidence of Mirror malice. The briefing dispute does not establish undisclosed incriminating facts. This is a later inquiry assessment, not a complete social-media census."
       }
     ],
     "reasoningChecks": [
@@ -18011,7 +19128,7 @@
           "note": "A Hacked Off transcript links to a BBC Today interview, but the original was not verified here. It remains an uncounted lead."
         }
       ],
-      "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+      "socialPostRecovery": "Selected original contributing posts and counter-speech are distinguished; archived and reported sources retain their own date basis. This is not an X census or complete repost graph. Current counters cannot reconstruct historical reach."
     },
     "editorialRecords": [
       {
@@ -18040,6 +19157,88 @@
       "recordCount": 1,
       "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
       "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
-    }
+    },
+    "spreadLinks": [],
+    "attentionScope": {
+      "method": "Written records, contributing posts, counter-speech, editorial records and case events share a date axis but keep separate counts. Links are shown only for verified previews, article promotion, quoting or replies. The fixed 179-headline inventory is unchanged.",
+      "limits": "Recovered examples do not measure all exposure or establish that every item was a pile-on. Present counters and historical snapshots have different dates and cannot be joined into an assumed growth curve.",
+      "gaps": "No qualifying contributing X post recovered for Jefferies. Other cases contain selected examples, not complete platform samples. Deleted posts and missing captures remain recovery gaps."
+    },
+    "accountabilityRecords": [
+      {
+        "id": "account-jefferies-contempt",
+        "date": "2011-07-29",
+        "dateBasis": "decision_date",
+        "publicationDate": null,
+        "title": "Three publications found to risk the course of justice",
+        "institution": "High Court / Attorney General’s Office",
+        "status": "judgment",
+        "url": "https://www.gov.uk/government/news/newspapers-guilty-of-contempt-during-joanna-yeates-murder-investigation",
+        "summary": "The High Court found contempt concerning two Daily Mirror publications and one Sun publication. The Attorney General identified their dates and the risk to the course of justice.",
+        "limit": "The finding applies to those specified publications, not all reporting. An arrest was a news development; it did not justify implying guilt.",
+        "phase": "within_window",
+        "evidenceIds": [
+          "ag-official-result"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "account-jefferies-leveson",
+        "date": "2012-11-29",
+        "dateBasis": "publication_date",
+        "publicationDate": null,
+        "title": "Leveson examines the concentrated character attacks",
+        "institution": "Leveson Inquiry",
+        "status": "review_finding",
+        "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+        "summary": "Leveson identifies the damaging three-day character coverage and records settlements by eight titles over 40 articles. Mirror editor Richard Wallace claimed off-record police briefings; Chief Constable Colin Port disputed this. The inquiry could not resolve that conflict.",
+        "limit": "Sections 4.12–4.21 criticise appearance and temperament judgments and reckless publication, while finding no evidence of Mirror malice. The briefing dispute does not establish undisclosed incriminating facts. This is a later inquiry assessment, not a complete social-media census.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "account-jefferies-leveson"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "account-jefferies-later-judgment",
+        "date": "2018-11-29",
+        "dateBasis": "decision_date",
+        "publicationDate": null,
+        "title": "A later judgment records innocence and redress",
+        "institution": "High Court",
+        "status": "judicial_background",
+        "url": "https://www.judiciary.uk/wp-content/uploads/2018/11/final-judgment-in-jefferies-others-v-sshd-others.pdf",
+        "summary": "Paragraphs 7–11 record Jefferies’s innocence, admitted libel liability by eight newspapers over 40 articles, and a police settlement and apology in August 2013.",
+        "limit": "This judgment’s legal issue was the government’s termination of Leveson Part Two. The background is primary judicial confirmation, not a new 2018 press-liability trial.",
+        "phase": "retrospective",
+        "evidenceIds": [
+          "judicial-review-facts"
+        ],
+        "verifiedAt": "2026-10-14"
+      }
+    ],
+    "accountabilityScope": {
+      "checkedAt": "2026-10-14",
+      "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
+      "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
+    },
+    "researchLeads": [
+      {
+        "title": "The Lost Honour of Christopher Jefferies · two-part ITV drama",
+        "date": "2014-12-10",
+        "url": "https://www.itv.com/news/westcountry/2014-12-10/itv-drama-airs-tonight-about-wrongful-arrest-of-christopher-jefferies",
+        "kind": "drama_and_interview",
+        "summary": "Peter Morgan wrote the drama, Roger Michell directed it and Jason Watkins played Jefferies. The producer describes research through interviews with Jefferies. ITV’s contemporaneous report points to an interview with him.",
+        "limit": "A dramatisation is a research lead, not proof that every scene occurred."
+      },
+      {
+        "title": "How the drama was researched · Roger Michell interview",
+        "date": "2014-11-27",
+        "url": "https://www.timeshighereducation.com/features/culture/the-lost-honour-of-christopher-jefferies/2017129.article",
+        "kind": "firsthand_production_account",
+        "summary": "Michell describes Jefferies’s requested script changes and the use of police interview transcripts. He also identifies an invented scene.",
+        "limit": "The director’s account helps identify leads and dramatic liberties; the original transcript or inquiry record is needed to substantiate a scene."
+      }
+    ]
   }
 ]

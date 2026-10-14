@@ -374,9 +374,31 @@
     {
       "id": "media-sterling-keyworth",
       "label": "A headline-comparison thread",
-      "url": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
-      "date": "2018-05-29",
-      "text": "JOE reports a thread collecting negative coverage and describes it as widely shared that morning. The date plotted is the report’s date, not a verified thread publication date. The full thread and screenshots were not recovered; no article list or reach number is inferred."
+      "url": "https://web.archive.org/web/20180528225517/https://twitter.com/adamkeyworth/status/1001218545588502530",
+      "date": "2018-05-28",
+      "text": "Collects examples of press treatment of Sterling in a critical headline-comparison thread. The preserved copy verifies this captured version, not a complete original archive of every image. Publication time has no established timezone. Capture time is not publication time. The live page’s unavailability does not establish why it disappeared."
+    },
+    {
+      "id": "media-sterling-frontpage-share",
+      "label": "The next day’s front page enters a social feed · original X post",
+      "url": "https://x.com/hendopolis/status/1001212445883543557",
+      "date": "2018-05-28",
+      "text": "Redistributes The Sun’s next-day Sterling front page under a newspaper-preview hashtag. The posting account is Henderson’s, not The Sun’s. Sharing the cover does not establish personal endorsement of its framing."
+    },
+    {
+      "id": "media-sterling-talksport-target",
+      "label": "A radio guest’s target claim becomes a social clip · original X post",
+      "url": "https://x.com/talkSPORT/status/1071775992455282689",
+      "date": "2018-12-09",
+      "text": "Promotes Dave Kitson’s comments that footballers should be careful with social media and can make themselves targets. The publisher’s caption is verified. Kitson’s claim is attributed opinion, not a justification for racist abuse. Upload time is not the original radio airtime; the full discussion was not transcribed."
+    },
+    {
+      "id": "account-sterling-chelsea",
+      "label": "Chelsea announces sanctions after the December match · 2019-07-30",
+      "url": "https://www.chelseafc.com/en/news/article/statement-on-sanctions-against-people-regarding-behaviour-during",
+      "date": "2019-07-30",
+      "retrospective": true,
+      "text": "Chelsea said it permanently excluded one spectator for racially abusive language and threatening or aggressive behaviour, and temporarily excluded five others for abusive behaviour. It described its evidence process and appeal rights. A club ticketing decision under a civil standard, not a criminal conviction or a finding about press coverage. The statement does not say all six used racist language. The CPS did not bring criminal prosecutions."
     }
   ],
   "reasoningChecks": [
@@ -3032,7 +3054,8 @@
       "verifiedAt": "2026-10-14",
       "actorType": "football pundit, speaking personally",
       "reportURL": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
-      "reportDate": "2018-05-29"
+      "reportDate": "2018-05-29",
+      "publicationRole": "counter_speech"
     },
     {
       "id": "media-sterling-keyworth",
@@ -3042,15 +3065,15 @@
       "format": "social_post",
       "platform": "Twitter / X",
       "title": "A headline-comparison thread",
-      "date": "2018-05-29",
-      "dateBasis": "contemporaneous_report_date",
-      "publicationDisplay": "Documented by JOE at 09:57 BST on 29 May 2018. Original post date not recovered.",
+      "date": "2018-05-28",
+      "dateBasis": "archive_post_date",
+      "publicationDisplay": "Captured Twitter page displays 28 May 2018, 02:47 PM; display timezone not established.",
       "programme": null,
       "url": "https://x.com/adamkeyworth/status/1001218545588502530",
-      "contentBasis": "contemporaneous_report",
-      "sourceBasis": "JOE’s 29 May 2018 report links the exact thread and describes Lineker sharing it. The original thread currently returns a page-unavailable message.",
-      "summary": "JOE reports a thread collecting negative coverage and describes it as widely shared that morning.",
-      "limit": "The date plotted is the report’s date, not a verified thread publication date. The full thread and screenshots were not recovered; no article list or reach number is inferred.",
+      "contentBasis": "archived_post",
+      "sourceBasis": "Wayback’s first listed capture preserves the original thread heading, displayed publication date and numbered follow-up entries. The original live X page was unavailable in this check.",
+      "summary": "Collects examples of press treatment of Sterling in a critical headline-comparison thread.",
+      "limit": "The preserved copy verifies this captured version, not a complete original archive of every image. Publication time has no established timezone. Capture time is not publication time. The live page’s unavailability does not establish why it disappeared.",
       "duration": {
         "display": null,
         "totalSeconds": null,
@@ -3061,7 +3084,24 @@
       "publicationRelationship": "counter_speech",
       "relationshipNote": "A response to coverage can spread the subject’s name while challenging the framing. It is not automatically an attack on the subject or another independent news report.",
       "distributionEvents": [],
-      "observedMetrics": [],
+      "observedMetrics": [
+        {
+          "name": "shares",
+          "value": 887,
+          "observedAt": "2018-05-28T22:55:17Z",
+          "sourceURL": "https://web.archive.org/web/20180528225517/https://twitter.com/adamkeyworth/status/1001218545588502530",
+          "observationKind": "archived_capture",
+          "scope": "Counter displayed in the captured page: one period-specific snapshot, not unique audience or a growth curve."
+        },
+        {
+          "name": "likes",
+          "value": 911,
+          "observedAt": "2018-05-28T22:55:17Z",
+          "sourceURL": "https://web.archive.org/web/20180528225517/https://twitter.com/adamkeyworth/status/1001218545588502530",
+          "observationKind": "archived_capture",
+          "scope": "Counter displayed in the captured page: one period-specific snapshot, not unique audience or a growth curve."
+        }
+      ],
       "evidenceIds": [
         "media-sterling-keyworth"
       ],
@@ -3069,18 +3109,129 @@
       "actorType": "individual commentator",
       "reportURL": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
       "reportDate": "2018-05-29",
-      "postPublicationDate": null,
+      "postPublicationDate": "2018-05-28",
       "viralityEvidence": {
         "status": "contemporaneous_description_only",
         "description": "JOE called the thread “widely shared” on 29 May; no numeric reach or growth rate is established.",
         "sourceURL": "https://www.joe.co.uk/sport/gary-lineker-calls-for-raheem-sterling-to-be-left-alone-by-british-press-after-gun-tattoo-story-181196",
         "date": "2018-05-29"
-      }
+      },
+      "archiveURL": "https://web.archive.org/web/20180528225517/https://twitter.com/adamkeyworth/status/1001218545588502530",
+      "captureTimestamp": "2018-05-28T22:55:17Z",
+      "publicationRole": "counter_speech"
+    },
+    {
+      "id": "media-sterling-frontpage-share",
+      "caseId": "sterling-campaign",
+      "outlet": "Neil Henderson (@hendopolis)",
+      "channel": "social",
+      "format": "social_post",
+      "platform": "Twitter / X",
+      "title": "The next day’s front page enters a social feed",
+      "date": "2018-05-28",
+      "dateBasis": "platform_post_date",
+      "publishedAtUTC": "2018-05-28T21:23:43.000Z",
+      "publicationDisplay": "Original X timestamp: 2018-05-28T21:23:43.000Z (UTC).",
+      "programme": null,
+      "url": "https://x.com/hendopolis/status/1001212445883543557",
+      "contentBasis": "original_post",
+      "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+      "summary": "Redistributes The Sun’s next-day Sterling front page under a newspaper-preview hashtag.",
+      "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+      "limit": "The posting account is Henderson’s, not The Sun’s. Sharing the cover does not establish personal endorsement of its framing. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "promotedWrittenRecordId": null,
+      "relatedArticleURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+      "publicationRole": "outlet_promotion",
+      "publicationRelationship": "published_post",
+      "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+      "actorType": "Named newspaper-preview account; acting in that format",
+      "distributionEvents": [],
+      "observedMetrics": [
+        {
+          "name": "shares",
+          "value": 393,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/hendopolis/status/1001212445883543557",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "likes",
+          "value": 70,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/hendopolis/status/1001212445883543557",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        }
+      ],
+      "evidenceIds": [
+        "media-sterling-frontpage-share"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-sterling-talksport-target",
+      "caseId": "sterling-campaign",
+      "outlet": "talkSPORT",
+      "channel": "social",
+      "format": "social_post",
+      "platform": "Twitter / X",
+      "title": "A radio guest’s target claim becomes a social clip",
+      "date": "2018-12-09",
+      "dateBasis": "platform_post_date",
+      "publishedAtUTC": "2018-12-09T14:38:03.000Z",
+      "publicationDisplay": "Original X timestamp: 2018-12-09T14:38:03.000Z (UTC).",
+      "programme": null,
+      "url": "https://x.com/talkSPORT/status/1071775992455282689",
+      "contentBasis": "original_post",
+      "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+      "summary": "Promotes Dave Kitson’s comments that footballers should be careful with social media and can make themselves targets.",
+      "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+      "limit": "The publisher’s caption is verified. Kitson’s claim is attributed opinion, not a justification for racist abuse. Upload time is not the original radio airtime; the full discussion was not transcribed. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+      "duration": {
+        "display": "77 seconds · embedded clip",
+        "totalSeconds": 77,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "promotedWrittenRecordId": null,
+      "relatedArticleURL": null,
+      "publicationRole": "outlet_promotion",
+      "publicationRelationship": "published_post",
+      "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+      "actorType": "Official radio-outlet account; caption quotes its guest",
+      "distributionEvents": [],
+      "observedMetrics": [
+        {
+          "name": "shares",
+          "value": 1568,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/talkSPORT/status/1071775992455282689",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "likes",
+          "value": 900,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/talkSPORT/status/1071775992455282689",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        }
+      ],
+      "evidenceIds": [
+        "media-sterling-talksport-target"
+      ],
+      "verifiedAt": "2026-10-14"
     }
   ],
   "mediaScope": {
     "verifiedAt": "2026-10-14",
-    "recordCount": 3,
+    "recordCount": 5,
     "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
     "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
     "gaps": [
@@ -3097,7 +3248,7 @@
         "note": "The located BBC Radio5Live programme lead is linked from a May2019 article, outside the selected2018window; it is not counted."
       }
     ],
-    "socialPostRecovery": "2 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+    "socialPostRecovery": "Selected original contributing posts and counter-speech are distinguished; archived and reported sources retain their own date basis. This is not an X census or complete repost graph. Current counters cannot reconstruct historical reach."
   },
   "editorialRecords": [
     {
@@ -3147,5 +3298,63 @@
     "recordCount": 2,
     "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
     "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
+  },
+  "spreadLinks": [
+    {
+      "id": "spread-sterling-frontpage-preview",
+      "fromId": "media-sterling-frontpage-share",
+      "toId": "sterling-sun-print-tattoo-20180529",
+      "relation": "previews",
+      "date": "2018-05-28",
+      "sourceURL": "https://x.com/hendopolis/status/1001212445883543557",
+      "basis": "The original post previews the next day’s Sun cover; the retained print headline is dated to that edition.",
+      "limit": "This proves this specific publication, preview, quote or reply relationship. It does not establish total reach, coordination, intent or causal harm. Same-day ordering of an article without a timestamp remains unknown.",
+      "evidenceIds": [
+        "media-sterling-frontpage-share"
+      ]
+    },
+    {
+      "id": "spread-sterling-thread-lineker",
+      "fromId": "media-sterling-keyworth",
+      "toId": "media-sterling-lineker",
+      "relation": "links_to",
+      "date": "2018-05-29",
+      "sourceURL": "https://x.com/GaryLineker/status/1001244624323686400",
+      "basis": "Lineker’s original post directly links Keyworth’s thread; the archive establishes the earlier date of the thread.",
+      "limit": "This proves this specific publication, preview, quote or reply relationship. It does not establish total reach, coordination, intent or causal harm. Same-day ordering of an article without a timestamp remains unknown.",
+      "evidenceIds": [
+        "media-sterling-keyworth",
+        "media-sterling-lineker"
+      ]
+    }
+  ],
+  "attentionScope": {
+    "method": "Written records, contributing posts, counter-speech, editorial records and case events share a date axis but keep separate counts. Links are shown only for verified previews, article promotion, quoting or replies. The fixed 179-headline inventory is unchanged.",
+    "limits": "Recovered examples do not measure all exposure or establish that every item was a pile-on. Present counters and historical snapshots have different dates and cannot be joined into an assumed growth curve.",
+    "gaps": "No qualifying contributing X post recovered for Jefferies. Other cases contain selected examples, not complete platform samples. Deleted posts and missing captures remain recovery gaps."
+  },
+  "accountabilityRecords": [
+    {
+      "id": "account-sterling-chelsea",
+      "date": "2019-07-30",
+      "dateBasis": "statement_date",
+      "publicationDate": null,
+      "title": "Chelsea announces sanctions after the December match",
+      "institution": "Chelsea Football Club",
+      "status": "institutional_account",
+      "url": "https://www.chelseafc.com/en/news/article/statement-on-sanctions-against-people-regarding-behaviour-during",
+      "summary": "Chelsea said it permanently excluded one spectator for racially abusive language and threatening or aggressive behaviour, and temporarily excluded five others for abusive behaviour. It described its evidence process and appeal rights.",
+      "limit": "A club ticketing decision under a civil standard, not a criminal conviction or a finding about press coverage. The statement does not say all six used racist language. The CPS did not bring criminal prosecutions.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "account-sterling-chelsea"
+      ],
+      "verifiedAt": "2026-10-14"
+    }
+  ],
+  "accountabilityScope": {
+    "checkedAt": "2026-10-14",
+    "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
+    "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
   }
 }

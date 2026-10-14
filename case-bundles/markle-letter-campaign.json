@@ -106,11 +106,11 @@
     },
     {
       "id": "initial-judgment",
-      "label": "High Court judgment dated 1 May 2020 (retrospective)",
+      "label": "High Court strike-out ruling dated 1 May 2020 (retrospective)",
       "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
       "date": "2020-05-01",
       "retrospective": true,
-      "text": "The High Court granted summary judgment on the Duchess’s misuse-of-private-information and copyright claims. Associated Newspapers said it was disappointed and sought to appeal. This is a 2020 decision, not the 2021 Court of Appeal outcome."
+      "text": "The High Court struck three categories of pleaded allegation about dishonesty or bad faith, stirring up father–daughter conflict and an alleged agenda to publish intrusive or damaging stories. This procedural ruling did not determine substantive privacy or copyright liability. Copyright was not in issue on this application; the substantive summary judgment came on 11 February 2021."
     },
     {
       "id": "markle-letter-h11",
@@ -219,6 +219,37 @@
       "label": "official-court-summary",
       "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
       "text": "PDF page 2 states People date 6 February; quotes the MoS headline and refers to the first line of the MoS article; explains the Court of Appeal's conclusion and citations to paragraphs 95/102/106. Concise official summary, explicitly not itself part of the decision; use the judgment for authoritative findings."
+    },
+    {
+      "id": "media-markle-early-letter-promotion",
+      "label": "An early letter and family-rift report is promoted · original X post",
+      "url": "https://x.com/DailyMailUK/status/1093142106581946368",
+      "date": "2019-02-06",
+      "text": "Promotes a report about a letter and Meghan’s dispute with her father, before the later publication of letter extracts. The current profile displays Mail+; the 2019 display name was not recovered. The link resolves to a Mail news page, but this post is not evidence that the five later challenged articles were already published. No private letter text is reproduced."
+    },
+    {
+      "id": "account-markle-summary",
+      "label": "Privacy and copyright summary judgment · 2021-02-11",
+      "url": "https://www.bailii.org/ew/cases/EWHC/Ch/2021/273.html",
+      "date": "2021-02-11",
+      "retrospective": true,
+      "text": "The court granted summary judgment on misuse of private information and on copyright subsistence and infringement. A limited copyright co-authorship issue remained open. The decision concerns the challenged letter articles, not all reporting about Markle or a numerical threshold for acceptable coverage."
+    },
+    {
+      "id": "account-markle-notice",
+      "label": "Publication of a copyright notice ordered · 2021-03-05",
+      "url": "https://www.judiciary.uk/judgments/duchess-of-sussex-v-associated-newspapers-ltd/",
+      "date": "2021-03-05",
+      "retrospective": true,
+      "text": "The court set terms for print and online notices reporting its copyright finding. The May judgment records that publication was stayed pending an appeal application. An order is not proof the notice appeared on that date, and a court notice is not a voluntary apology. The remaining ownership issue and later appeal must retain their own dates."
+    },
+    {
+      "id": "account-markle-copyright",
+      "label": "Final copyright liability and account of profits · 2021-05-12",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2021/05/Duchess-of-Sussex-v-Associated-judgment.pdf",
+      "date": "2021-05-12",
+      "retrospective": true,
+      "text": "The court resolved the remaining ownership issue in Markle’s favour, entered final summary judgment on copyright liability and gave directions for an account of profits. This did not quantify the profits or decide all privacy financial remedies. It confirms an article-specific legal result rather than a finding about the entire news cycle."
     }
   ],
   "reasoningChecks": [
@@ -1122,7 +1153,7 @@
     "retrospectiveEvidence": [
       {
         "date": "2020-05-01",
-        "text": "High Court granted summary judgment on the privacy/copyright claims. This is outside the 2019 sample window.",
+        "text": "High Court struck three pleaded categories of allegation; it did not determine substantive privacy or copyright liability. This is outside the 2019 sample window.",
         "evidenceIds": [
           "initial-judgment"
         ],
@@ -1523,10 +1554,65 @@
     "No private letter text was transcribed or reproduced."
   ],
   "accessDate": "2026-10-14",
-  "mediaRecords": [],
+  "mediaRecords": [
+    {
+      "id": "media-markle-early-letter-promotion",
+      "caseId": "markle-letter-campaign",
+      "outlet": "@DailyMailUK (now Mail+)",
+      "channel": "social",
+      "format": "social_post",
+      "platform": "Twitter / X",
+      "title": "An early letter and family-rift report is promoted",
+      "date": "2019-02-06",
+      "dateBasis": "platform_post_date",
+      "publishedAtUTC": "2019-02-06T13:39:22.000Z",
+      "publicationDisplay": "Original X timestamp: 2019-02-06T13:39:22.000Z (UTC).",
+      "programme": null,
+      "url": "https://x.com/DailyMailUK/status/1093142106581946368",
+      "contentBasis": "original_post",
+      "sourceBasis": "Original X page read in the browser: account, text, publication timestamp and linked or quoted material checked.",
+      "summary": "Promotes a report about a letter and Meghan’s dispute with her father, before the later publication of letter extracts.",
+      "statusAtPublication": "The summary records the published wording or framing; it does not endorse an allegation or establish its truth.",
+      "limit": "The current profile displays Mail+; the 2019 display name was not recovered. The link resolves to a Mail news page, but this post is not evidence that the five later challenged articles were already published. No private letter text is reproduced. Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "promotedWrittenRecordId": null,
+      "relatedArticleURL": "https://www.dailymail.com/news/article-6673951/Meghan-begged-father-stop-victimizing-wedding.html",
+      "publicationRole": "outlet_promotion",
+      "publicationRelationship": "published_post",
+      "relationshipNote": "The post renewed public attention. Classification describes what it circulated, not a verdict about public interest, motive or harm.",
+      "actorType": "Publisher account; current identity and historical handle distinguished",
+      "distributionEvents": [],
+      "observedMetrics": [
+        {
+          "name": "shares",
+          "value": 3,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/DailyMailUK/status/1093142106581946368",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        },
+        {
+          "name": "likes",
+          "value": 6,
+          "observedAt": "2026-10-14",
+          "sourceURL": "https://x.com/DailyMailUK/status/1093142106581946368",
+          "scope": "Current cumulative X counter checked on 14 October 2026; not campaign-period reach, unique people, a growth curve or proof of harm."
+        }
+      ],
+      "evidenceIds": [
+        "media-markle-early-letter-promotion"
+      ],
+      "verifiedAt": "2026-10-14"
+    }
+  ],
   "mediaScope": {
     "verifiedAt": "2026-10-14",
-    "recordCount": 0,
+    "recordCount": 1,
     "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
     "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
     "gaps": [
@@ -1543,12 +1629,110 @@
         "note": "No recovered media records in this first pass. This does not mean there was no broadcast or social coverage."
       }
     ],
-    "socialPostRecovery": "0 documented X post records; original versus attributed sources and report dates are labelled. This is a selected sample, not a platform census. Historical audience and a complete repost chain are unavailable."
+    "socialPostRecovery": "Selected original contributing posts and counter-speech are distinguished; archived and reported sources retain their own date basis. This is not an X census or complete repost graph. Current counters cannot reconstruct historical reach."
   },
   "editorialRecords": [],
   "editorialScope": {
     "recordCount": 0,
     "method": "Supplemental editorial audit, separate from the fixed headline counts. Linked records are already counted; unmatched items are additional context, not a revised census. Aftermath is excluded from the selected window. Unsigned leaders show institutional positions; bylined opinion shows its author’s position. No direct owner statement or direction has been established.",
     "gaps": "No qualifying record recovered here does not establish that an outlet published no editorials. Original Sun leader page and a complete cross-outlet editorial census remain gaps."
+  },
+  "spreadLinks": [],
+  "attentionScope": {
+    "method": "Written records, contributing posts, counter-speech, editorial records and case events share a date axis but keep separate counts. Links are shown only for verified previews, article promotion, quoting or replies. The fixed 179-headline inventory is unchanged.",
+    "limits": "Recovered examples do not measure all exposure or establish that every item was a pile-on. Present counters and historical snapshots have different dates and cannot be joined into an assumed growth curve.",
+    "gaps": "No qualifying contributing X post recovered for Jefferies. Other cases contain selected examples, not complete platform samples. Deleted posts and missing captures remain recovery gaps."
+  },
+  "accountabilityRecords": [
+    {
+      "id": "account-markle-strikeout",
+      "date": "2020-05-01",
+      "dateBasis": "decision_date",
+      "publicationDate": null,
+      "title": "A procedural ruling, before the merits decision",
+      "institution": "High Court",
+      "status": "judgment",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "summary": "The court struck three pleaded categories of allegation. Copyright was not in issue on this application.",
+      "limit": "This did not decide whether the letter publication infringed privacy or copyright. The earlier bundle description of this ruling as substantive summary judgment has been corrected.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "initial-judgment"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "account-markle-summary",
+      "date": "2021-02-11",
+      "dateBasis": "decision_date",
+      "publicationDate": null,
+      "title": "Privacy and copyright summary judgment",
+      "institution": "High Court",
+      "status": "judgment",
+      "url": "https://www.bailii.org/ew/cases/EWHC/Ch/2021/273.html",
+      "summary": "The court granted summary judgment on misuse of private information and on copyright subsistence and infringement. A limited copyright co-authorship issue remained open.",
+      "limit": "The decision concerns the challenged letter articles, not all reporting about Markle or a numerical threshold for acceptable coverage.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "account-markle-summary"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "account-markle-notice",
+      "date": "2021-03-05",
+      "dateBasis": "decision_date",
+      "publicationDate": null,
+      "title": "Publication of a copyright notice ordered",
+      "institution": "High Court",
+      "status": "remedy_order",
+      "url": "https://www.judiciary.uk/judgments/duchess-of-sussex-v-associated-newspapers-ltd/",
+      "summary": "The court set terms for print and online notices reporting its copyright finding. The May judgment records that publication was stayed pending an appeal application.",
+      "limit": "An order is not proof the notice appeared on that date, and a court notice is not a voluntary apology. The remaining ownership issue and later appeal must retain their own dates.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "account-markle-notice"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "account-markle-copyright",
+      "date": "2021-05-12",
+      "dateBasis": "decision_date",
+      "publicationDate": null,
+      "title": "Final copyright liability and account of profits",
+      "institution": "High Court",
+      "status": "judgment",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2021/05/Duchess-of-Sussex-v-Associated-judgment.pdf",
+      "summary": "The court resolved the remaining ownership issue in Markle’s favour, entered final summary judgment on copyright liability and gave directions for an account of profits.",
+      "limit": "This did not quantify the profits or decide all privacy financial remedies. It confirms an article-specific legal result rather than a finding about the entire news cycle.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "account-markle-copyright"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "account-markle-appeal",
+      "date": "2021-12-02",
+      "dateBasis": "decision_date",
+      "publicationDate": null,
+      "title": "The appeal tests proportionate publication",
+      "institution": "Court of Appeal",
+      "status": "judgment",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-judgment-021221.pdf",
+      "summary": "The appeal upheld the privacy outcome concerning five challenged articles. The court concluded that publication was not a proportionate response to the People article.",
+      "limit": "This is a later legal finding about identified publications. It does not adjudicate every outlet’s coverage or disclose what editors knew at every earlier stage.",
+      "phase": "retrospective",
+      "evidenceIds": [
+        "trial-judgment"
+      ],
+      "verifiedAt": "2026-10-14"
+    }
+  ],
+  "accountabilityScope": {
+    "checkedAt": "2026-10-14",
+    "rule": "Later findings have their own dates and scope. They are excluded from the headline counts and do not establish what an editor knew at first publication. An institution’s account, a reported finding and a court judgment are different kinds of evidence.",
+    "gaps": "Samples remain uneven. Complete daily social reach, full broadcast transcripts, earlier page versions and a consistently measured comparator have not been recovered for every case."
   }
 }

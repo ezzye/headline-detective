@@ -94,3 +94,17 @@ test('all six final cases open cold, return source-approved briefings, and freez
   }
   assert.equal(providerCalls,0);
 });
+
+test('all cases answer accountability questions with dated sources and keep earlier knowledge separate',async()=>{
+  const {readFile}=await import('node:fs/promises');
+  const all=JSON.parse(await readFile(new URL('./campaigns.json',import.meta.url),'utf8'));
+  const app=createGameServer({env:{},random:()=>0});
+  for(const item of all){
+    const s=(await post(app,'/api/campaign/session',{caseId:item.id})).json();
+    const r=await answer(app,s,s.desks[0].outletId,'What did the later judgments, inquiries or apologies establish?');
+    assert.equal(r.status,200,item.id);const out=r.json();
+    assert.equal(out.mode,'offline');assert.match(out.reply,/information available when we published/);
+    assert.match(out.reply,/earlier stage/);assert(out.reply.length<=2000);
+    assert(out.evidenceIds.length>0&&out.evidenceIds.every(id=>item.evidence.some(e=>e.id===id)));
+  }
+});
