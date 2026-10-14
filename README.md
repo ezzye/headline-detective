@@ -50,3 +50,7 @@ Share the HTML files themselves for private/offline review, or share the public 
 The automated checks pass; owner acceptance remains unreviewed. Check [verification.html](verification.html) for the current status before describing the cases as fully verified.
 
 The original comparison prototype is archived separately as [`comparison.html`](comparison.html); it is not one of the campaign cases.
+
+## Archive evidence update · 14 October 2026
+
+Six case bundles contain 179 retained dated records and 22 playable outlet desks. `research.html` describes the original/archived/official evidence and recovery gaps. Publication, modification and capture times remain distinct; comparator examples are outside subject counts. These are recovered samples, not comparable censuses. No paid provider requests were made for this revision.

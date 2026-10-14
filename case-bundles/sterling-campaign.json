@@ -2,10 +2,11 @@
   "id": "sterling-campaign",
   "title": "Raheem Sterling: tattoo scrutiny and the 2018 challenge about racialised football coverage",
   "subject": "Raheem Sterling: tattoo scrutiny and the 2018 challenge about racialised football coverage",
-  "start": "2018-05-29",
+  "start": "2018-05-28",
   "end": "2018-12-16",
   "endNote": "Inclusive bounded research window",
   "days": [
+    "2018-05-28",
     "2018-05-29",
     "2018-05-30",
     "2018-05-31",
@@ -212,18 +213,23 @@
   "source": {
     "name": "Recovered headline sample",
     "url": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
-    "retrieved": "2026-10-13",
+    "retrieved": "2026-10-14",
     "unit": "dated recovered headline records",
-    "corpusCount": 10,
-    "outletUniverse": 2,
-    "selectedCount": 10,
-    "scopeNote": "Fixed window 2018-05-29 through 2018-12-16 inclusive. Counts derive only from 10 dated recovered headlines after the source audit, across 2 outlets. The chart selects 2 desks. Missing records/dates are not proof that nothing was published; this is not a census and counts do not establish motive, harm or causation.",
-    "sampleNote": "10 dated records retained after page-level audit across 2 outlets; chart selects 2 desks. Inaccessible pages with previously recovered metadata are explicitly labelled; unsupported and mismatched records are excluded. This is a bounded incomplete sample, not a census."
+    "corpusCount": 15,
+    "outletUniverse": 4,
+    "selectedCount": 15,
+    "scopeNote": "Fixed window 2018-05-28 through 2018-12-16 inclusive. The retained sample contains 15 dated Sterling headline records across four playable desks (The Guardian, The Independent, The Sun and BBC Sport). It includes two direct Guardian pages dated 29 May, one Sun print headline reproduced by the Guardian, one Sun web page dated 28 May, and one BBC Sport page. The Foden MailOnline page is comparator context only and excluded because it is about Foden; the January Adarabioyo comparator remains unretrieved and outside this window. Missing records are unknown, not zero; this is not a census and does not establish motive, harm or causation.",
+    "sampleNote": "15 records retained for Sterling. The Sun print item is a contemporaneous secondary reproduction, while its 28 May web story is a direct original publisher page. Four desks are playable; Foden's verified MailOnline story is source-linked comparison context, not a Sterling row."
   },
   "events": [
     {
+      "date": "2018-05-28",
+      "label": "The Sun publishes its original web report about Sterling’s tattoo",
+      "evidenceId": "sterling-sun-original-tattoo-web-20180528"
+    },
+    {
       "date": "2018-05-29",
-      "label": "Tattoo coverage and Sterling’s public explanation",
+      "label": "Print coverage, contemporary reporting and Sterling’s public explanation of the tattoo",
       "evidenceId": "tattoo-response"
     },
     {
@@ -293,6 +299,48 @@
       "date": "2018-12-11",
       "url": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
       "text": "Audited publisher headline reports the response to criticism of coverage."
+    },
+    {
+      "id": "sterling-sun-print-tattoo-20180529",
+      "date": "2018-05-29",
+      "label": "The Sun print headline (reproduced contemporaneously)",
+      "url": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+      "text": "Contemporaneous Guardian report published 29 May 2018 states The Sun placed the tattoo image on that day's front page and gives the reproduced headline. The Independent's contemporaneous page independently says the story was on Tuesday's front page, but the Sun page itself was not recovered. Record this as a print edition, not a Sun web article. Headline and date evidence: Guardian page: first published 29 May 2018; it attributes the front-page wording to The Sun."
+    },
+    {
+      "id": "sterling-guardian-tattoo-response-20180529",
+      "date": "2018-05-29",
+      "label": "The Guardian news",
+      "url": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+      "text": "Publisher page shows the exact headline and first-publication timestamp (29 May 2018, 11:10 CEST). It reports the FA response, Sterling's explanation, and The Sun front page. It is a distinct story missing from the current Guardian records. Headline and date evidence: Publisher H1 and first-published time are visible on the Guardian page, lines 49 and 57."
+    },
+    {
+      "id": "sterling-guardian-tabloid-snobbery-comment-20180529",
+      "date": "2018-05-29",
+      "label": "The Guardian comment",
+      "url": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+      "text": "Publisher page shows exact headline and first-publication time (29 May 2018, 17:23 CEST). This is a comment/analysis item, not straight news; it quotes the reproduced Sun headline and reviews earlier coverage. Keep genre explicit. Headline and date evidence: Publisher H1 and first-published time are visible on the Guardian page, lines 49 and 57."
+    },
+    {
+      "id": "sterling-bbc-sport-tattoo-20180529",
+      "date": "2018-05-29",
+      "label": "BBC Sport news-web",
+      "url": "https://www.bbc.co.uk/sport/football/44289119",
+      "text": "Direct BBC Sport article opened in ordinary browser UI; displayed H1 and Published date visible. The body reports FA support, Sterling's explanation, and references The Sun's front-page story. This is an additional publisher's own contemporaneous web report, not a print item. Headline and date evidence: BBC Sport H1: “Raheem Sterling: FA shows support after gun tattoo row.” Displayed publication date: 29 May 2018."
+    },
+    {
+      "id": "sterling-sun-original-tattoo-web-20180528",
+      "date": "2018-05-28",
+      "label": "The Sun news-web",
+      "url": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+      "text": "Direct original Sun article opened in ordinary browser UI; page H1 and published time visible, with body describing initial publication of the tattoo story. This is The Sun's web article dated 28 May, separate from the 29 May print front-page item already documented. Headline and date evidence: The Sun H1: “England ace Raheem Sterling sparks fury by unveiling M16 assault rifle tattoo on his leg.” Displayed publication time: 21:57, 28 May 2018."
+    },
+    {
+      "id": "sterling-mailonline-foden-home-20181004",
+      "date": "2018-10-04",
+      "label": "MailOnline comparator page, outside subject attribution",
+      "url": "https://www.dailymail.com/sport/football/article-6241313/Manchester-City-starlet-Phil-Foden-buys-new-2m-home-mum.html",
+      "text": "The publisher page directly verifies the exact Foden headline and first publication on 4 October 2018 (updated 5 October). This is a story about Phil Foden, not Raheem Sterling; exclude it from the Sterling headline corpus. It is cited only because Sterling later compared it with the Adarabioyo story."
     }
   ],
   "reasoningChecks": [
@@ -419,6 +467,7 @@
       "outlet": "The Guardian",
       "dailyCounts": [
         0,
+        2,
         1,
         0,
         1,
@@ -621,92 +670,164 @@
         0,
         1
       ],
-      "listedCount": 7,
-      "activeDays": 7,
-      "peakDaily": 1,
+      "listedCount": 9,
+      "activeDays": 8,
+      "peakDaily": 2,
       "examples": [
         {
-          "id": "sterling-h02",
-          "headline": "Clarke Carlisle criticises ‘unfair’ treatment of Raheem Sterling",
-          "url": "https://www.theguardian.com/football/2018/may/30/clarke-carlisle-raheem-sterling-tattoo-england",
-          "published": "2018-05-30",
-          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "id": "sterling-guardian-tabloid-snobbery-comment-20180529",
+          "date": "2018-05-29",
+          "outlet": "The Guardian",
+          "headline": "Raheem Sterling is a victim of vicious tabloid snobbery",
+          "kind": "comment",
+          "originalURL": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+          "verificationSourceURL": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+          "sourceURL": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+          "verification": "Publisher page shows exact headline and first-publication time (29 May 2018, 17:23 CEST). This is a comment/analysis item, not straight news; it quotes the reproduced Sun headline and reviews earlier coverage. Keep genre explicit.",
+          "eventId": "tattoo-response",
+          "event": "Commentary about the tattoo response and prior press treatment.",
+          "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+          "noveltyClaim": "Adds a separate verified in-window opinion article; do not count it as another Sun article.",
+          "archiveReproduction": false,
+          "sampleNote": "Direct current publisher page reviewed; no archive capture verified.",
+          "url": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+          "auditNote": null,
+          "format": "web",
+          "evidenceId": "sterling-guardian-tabloid-snobbery-comment-20180529",
+          "accessDate": "2026-10-14",
+          "published": "2018-05-29"
+        },
+        {
+          "id": "sterling-guardian-tattoo-response-20180529",
+          "date": "2018-05-29",
+          "outlet": "The Guardian",
+          "headline": "FA backs Raheem Sterling after criticism over gun tattoo",
           "kind": "news",
-          "eventId": "event-1",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "originalURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "verificationSourceURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "sourceURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "verification": "Publisher page shows the exact headline and first-publication timestamp (29 May 2018, 11:10 CEST). It reports the FA response, Sterling's explanation, and The Sun front page. It is a distinct story missing from the current Guardian records.",
+          "eventId": "tattoo-response",
+          "event": "FA response to criticism of Sterling's tattoo.",
+          "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+          "noveltyClaim": "Adds a verified in-window Guardian article absent from the current sample.",
+          "archiveReproduction": false,
+          "sampleNote": "Direct current publisher page reviewed; no archive capture verified.",
+          "url": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "auditNote": null,
+          "format": "web",
+          "evidenceId": "sterling-guardian-tattoo-response-20180529",
+          "accessDate": "2026-10-14",
+          "published": "2018-05-29"
+        },
+        {
+          "id": "sterling-h02",
+          "date": "2018-05-30",
+          "outlet": "The Guardian",
+          "headline": "Clarke Carlisle criticises ‘unfair’ treatment of Raheem Sterling",
+          "kind": "news",
+          "originalURL": "https://www.theguardian.com/football/2018/may/30/clarke-carlisle-raheem-sterling-tattoo-england",
+          "verificationSourceURL": "https://www.theguardian.com/football/2018/may/30/clarke-carlisle-raheem-sterling-tattoo-england",
+          "sourceURL": "https://www.theguardian.com/football/2018/may/30/clarke-carlisle-raheem-sterling-tattoo-england",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "eventId": "tattoo-response",
+          "event": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished.",
+          "wave": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.theguardian.com/football/2018/may/30/clarke-carlisle-raheem-sterling-tattoo-england",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/football/2018/may/30/clarke-carlisle-raheem-sterling-tattoo-england",
+          "auditNote": null,
+          "accessDate": "2026-10-14",
+          "published": "2018-05-30"
         },
         {
           "id": "sterling-h05",
+          "date": "2018-06-01",
+          "outlet": "The Guardian",
           "headline": "Raheem Sterling sorry after arriving 12 hours late for England training",
-          "url": "https://www.theguardian.com/football/2018/jun/01/raheem-sterling-support-gareth-southgate-tattoo-england",
-          "published": "2018-06-01",
-          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
           "kind": "news",
+          "originalURL": "https://www.theguardian.com/football/2018/jun/01/raheem-sterling-support-gareth-southgate-tattoo-england",
+          "verificationSourceURL": "https://www.theguardian.com/football/2018/jun/01/raheem-sterling-support-gareth-southgate-tattoo-england",
+          "sourceURL": "https://www.theguardian.com/football/2018/jun/01/raheem-sterling-support-gareth-southgate-tattoo-england",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
           "eventId": "event-2",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "event": "England manager Gareth Southgate publicly supported Sterling and described the tattoo’s meaning as individual.",
+          "wave": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished. / England manager Gareth Southgate publicly supported Sterling and described the tattoo’s meaning as individual.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.theguardian.com/football/2018/jun/01/raheem-sterling-support-gareth-southgate-tattoo-england",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/football/2018/jun/01/raheem-sterling-support-gareth-southgate-tattoo-england",
+          "auditNote": null,
+          "accessDate": "2026-10-14",
+          "published": "2018-06-01"
         },
         {
           "id": "sterling-h06",
+          "date": "2018-06-05",
+          "outlet": "The Guardian",
           "headline": "Raheem Sterling: I understand the criticism but it does not affect me",
-          "url": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
-          "published": "2018-06-05",
-          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
           "kind": "news",
-          "eventId": "event-2",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "originalURL": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
+          "verificationSourceURL": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
+          "sourceURL": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "eventId": "tattoo-response",
+          "event": "England manager Gareth Southgate publicly supported Sterling and described the tattoo’s meaning as individual.",
+          "wave": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished. / England manager Gareth Southgate publicly supported Sterling and described the tattoo’s meaning as individual.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
+          "auditNote": null,
+          "accessDate": "2026-10-14",
+          "published": "2018-06-05"
         },
         {
           "id": "sterling-h08",
+          "date": "2018-12-09",
+          "outlet": "The Guardian",
           "headline": "Raheem Sterling accuses media of ‘fuelling racism’ after alleged abuse",
+          "kind": "news",
+          "originalURL": "https://www.theguardian.com/football/2018/dec/09/raheem-sterling-newspapers-fuelling-racism-alleged-abuse-chelsea",
+          "verificationSourceURL": "https://www.theguardian.com/football/2018/dec/09/raheem-sterling-newspapers-fuelling-racism-alleged-abuse-chelsea",
+          "sourceURL": "https://www.theguardian.com/football/2018/dec/09/raheem-sterling-newspapers-fuelling-racism-alleged-abuse-chelsea",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "eventId": "representation-comparison",
+          "event": "After an alleged racist incident at Stamford Bridge, Sterling posted about media portrayals of young Black players and compared headlines about Adarabioyo and Foden.",
+          "wave": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished. / England manager Gareth Southgate publicly supported Sterling and described the tattoo’s meaning as individual. / After an alleged racist incident at Stamford Bridge, Sterling posted about media portrayals of young Black players and compared headlines about Adarabioyo and Foden.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
           "url": "https://www.theguardian.com/football/2018/dec/09/raheem-sterling-newspapers-fuelling-racism-alleged-abuse-chelsea",
-          "published": "2018-12-09",
-          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
-          "kind": "news",
-          "eventId": "event-3",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
-        },
-        {
-          "id": "sterling-h09",
-          "headline": "The Sun insists Sterling reporting ‘nothing to do with skin colour’",
-          "url": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
-          "published": "2018-12-11",
-          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
-          "kind": "news",
-          "eventId": "event-4",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
-        },
-        {
-          "id": "sterling-h10",
-          "headline": "Sterling’s racism ordeal was ugly but the reaction has been positive",
-          "url": "https://www.theguardian.com/football/2018/dec/13/raheem-sterling-racism-media-scrutiny-manchester-city",
-          "published": "2018-12-13",
-          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
-          "kind": "comment",
-          "eventId": "event-4",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
-        },
-        {
-          "id": "sterling-h11",
-          "headline": "The ugly spectre of racism in football on the rise across Europe",
-          "url": "https://www.theguardian.com/football/2018/dec/16/racism-on-the-rise-across-europe-football-raheem-sterling-chelsea",
-          "published": "2018-12-16",
-          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
-          "kind": "news",
-          "eventId": "event-4",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/football/2018/dec/09/raheem-sterling-newspapers-fuelling-racism-alleged-abuse-chelsea",
+          "auditNote": null,
+          "accessDate": "2026-10-14",
+          "published": "2018-12-09"
         }
       ],
       "reviewNotes": {
         "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
-        "pressure": "The cleaned recovered sample lists 7 headline records from this desk over 7 publication dates. This is not a complete archive or proof of intent.",
-        "limit": "Headline and date are recovered from the cited publisher or named archive. Repeated records are not automatically independent reporting or evidence of harm."
+        "pressure": "The cleaned recovered sample lists 9 dated headline records from this desk over 8 publication dates. This is not a complete archive or proof of intent.",
+        "limit": "The bounded sample spans 15 retained headline records from four playable outlets; repeated records are not automatically independent reporting or evidence of harm."
       },
       "scrutiny": [
         {
           "criterionId": "public_value",
           "observation": "The sample covers a tattoo story and a separate December comparison about racialised portrayals.",
           "question": "What public information did each episode add, and when did a new development justify another item?",
-          "limit": "The sample has 11 headlines across two episodes; it is not a census of football coverage.",
+          "limit": "The 15 retained records across four desks form a partial sample, not a census; comparison alone does not establish motive or causation.",
           "evidenceIds": [
             "tattoo-response"
           ]
@@ -715,7 +836,7 @@
           "criterionId": "context",
           "observation": "Sterling explained the tattoo’s personal meaning; his account changes the context of an image but does not settle every view of it.",
           "question": "Did items distinguish his explanation from criticism of the image?",
-          "limit": "The headlines alone cannot show how fully each article reported the explanation.",
+          "limit": "The 15 retained records across four desks form a partial sample, not a census; comparison alone does not establish motive or causation.",
           "evidenceIds": [
             "tattoo-response"
           ]
@@ -724,7 +845,7 @@
           "criterionId": "framing",
           "observation": "A rifle image and a later allegation about racialised coverage carry different risks of stereotype and overclaim.",
           "question": "Did the headline invite evidence-based scrutiny or encourage a broad inference about character or motive?",
-          "limit": "A headline sample cannot establish an outlet’s intent or a causal link to abuse.",
+          "limit": "The 15 retained records across four desks form a partial sample, not a census; comparison alone does not establish motive or causation.",
           "evidenceIds": [
             "tattoo-response"
           ]
@@ -733,7 +854,7 @@
           "criterionId": "care",
           "observation": "The December material followed an alleged racist incident and a public post; repetition may increase pressure.",
           "question": "Was continued attention proportionate and did it respect the people discussed?",
-          "limit": "No causal claim about headlines causing racist behaviour is supported here.",
+          "limit": "The 15 retained records across four desks form a partial sample, not a census; comparison alone does not establish motive or causation.",
           "evidenceIds": [
             "tattoo-response"
           ]
@@ -742,7 +863,7 @@
           "criterionId": "consistency",
           "observation": "Sterling publicly compared headlines about two young players.",
           "question": "Would the same framing be used for comparable players and circumstances?",
-          "limit": "A small selected set cannot establish outlet-wide consistency.",
+          "limit": "The 15 retained records across four desks form a partial sample, not a census; comparison alone does not establish motive or causation.",
           "evidenceIds": [
             "tattoo-response"
           ]
@@ -751,7 +872,7 @@
           "criterionId": "transparency",
           "observation": "Some rows are publisher pages and others are reproductions or reports of a public exchange.",
           "question": "Can readers tell which records are direct publisher headlines and which are later context?",
-          "limit": "The 11-item sample is event-led and non-exhaustive.",
+          "limit": "The 15 retained records across four desks form a partial sample, not a census; comparison alone does not establish motive or causation.",
           "evidenceIds": [
             "tattoo-response"
           ]
@@ -762,7 +883,7 @@
         "paragraphs": [
           {
             "kind": "report",
-            "text": "We selected these 11 dated headlines from a publisher and a publisher across two episodes: the tattoo criticism in May and Sterling’s December public challenge about racialised portrayals. We would defend reporting a prominent England player’s public explanation and the debate over how headlines portray players. The tattoo image was newsworthy because it was already circulating and drew criticism.",
+            "text": "In this fictional exercise, our desk accounts for 9 of the 15 retained records in a four-outlet sample spanning 28 May to 16 December. The May tattoo coverage and December debate about racialised portrayals concern different moments; each item needs its own public-interest justification.",
             "evidenceIds": [
               "tattoo-response",
               "event-1",
@@ -787,7 +908,7 @@
           },
           {
             "kind": "analysis",
-            "text": "The sample is small, selected and not an audit of every article. We would show the headline dates and sources, acknowledge where the wording is only a reproduced record, and invite readers to judge proportionality. Our defence is that these public developments warranted reporting; it does not settle whether each headline was fair.",
+            "text": "The retained sample is selected and incomplete. We would distinguish direct publisher pages from the Sun print headline reproduced by the Guardian, identify the format and dates, and state that the comparator stories concern other Manchester City players. These records do not prove racist intent or that headlines caused abuse.",
             "evidenceIds": [
               "representation-comparison",
               "sterling-response"
@@ -796,6 +917,54 @@
         ]
       },
       "records": [
+        {
+          "id": "sterling-guardian-tabloid-snobbery-comment-20180529",
+          "date": "2018-05-29",
+          "outlet": "The Guardian",
+          "headline": "Raheem Sterling is a victim of vicious tabloid snobbery",
+          "kind": "comment",
+          "originalURL": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+          "verificationSourceURL": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+          "sourceURL": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+          "verification": "Publisher page shows exact headline and first-publication time (29 May 2018, 17:23 CEST). This is a comment/analysis item, not straight news; it quotes the reproduced Sun headline and reviews earlier coverage. Keep genre explicit.",
+          "eventId": "tattoo-response",
+          "event": "Commentary about the tattoo response and prior press treatment.",
+          "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+          "noveltyClaim": "Adds a separate verified in-window opinion article; do not count it as another Sun article.",
+          "archiveReproduction": false,
+          "sampleNote": "Direct current publisher page reviewed; no archive capture verified.",
+          "url": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+          "auditNote": null,
+          "format": "web",
+          "evidenceId": "sterling-guardian-tabloid-snobbery-comment-20180529",
+          "accessDate": "2026-10-14"
+        },
+        {
+          "id": "sterling-guardian-tattoo-response-20180529",
+          "date": "2018-05-29",
+          "outlet": "The Guardian",
+          "headline": "FA backs Raheem Sterling after criticism over gun tattoo",
+          "kind": "news",
+          "originalURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "verificationSourceURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "sourceURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "verification": "Publisher page shows the exact headline and first-publication timestamp (29 May 2018, 11:10 CEST). It reports the FA response, Sterling's explanation, and The Sun front page. It is a distinct story missing from the current Guardian records.",
+          "eventId": "tattoo-response",
+          "event": "FA response to criticism of Sterling's tattoo.",
+          "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+          "noveltyClaim": "Adds a verified in-window Guardian article absent from the current sample.",
+          "archiveReproduction": false,
+          "sampleNote": "Direct current publisher page reviewed; no archive capture verified.",
+          "url": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "auditNote": null,
+          "format": "web",
+          "evidenceId": "sterling-guardian-tattoo-response-20180529",
+          "accessDate": "2026-10-14"
+        },
         {
           "id": "sterling-h02",
           "date": "2018-05-30",
@@ -815,7 +984,8 @@
           "url": "https://www.theguardian.com/football/2018/may/30/clarke-carlisle-raheem-sterling-tattoo-england",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/football/2018/may/30/clarke-carlisle-raheem-sterling-tattoo-england",
-          "auditNote": null
+          "auditNote": null,
+          "accessDate": "2026-10-14"
         },
         {
           "id": "sterling-h05",
@@ -836,7 +1006,8 @@
           "url": "https://www.theguardian.com/football/2018/jun/01/raheem-sterling-support-gareth-southgate-tattoo-england",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/football/2018/jun/01/raheem-sterling-support-gareth-southgate-tattoo-england",
-          "auditNote": null
+          "auditNote": null,
+          "accessDate": "2026-10-14"
         },
         {
           "id": "sterling-h06",
@@ -857,7 +1028,8 @@
           "url": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
-          "auditNote": null
+          "auditNote": null,
+          "accessDate": "2026-10-14"
         },
         {
           "id": "sterling-h08",
@@ -878,7 +1050,8 @@
           "url": "https://www.theguardian.com/football/2018/dec/09/raheem-sterling-newspapers-fuelling-racism-alleged-abuse-chelsea",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/football/2018/dec/09/raheem-sterling-newspapers-fuelling-racism-alleged-abuse-chelsea",
-          "auditNote": null
+          "auditNote": null,
+          "accessDate": "2026-10-14"
         },
         {
           "id": "sterling-h09",
@@ -899,7 +1072,8 @@
           "url": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
-          "auditNote": null
+          "auditNote": null,
+          "accessDate": "2026-10-14"
         },
         {
           "id": "sterling-h10",
@@ -920,7 +1094,8 @@
           "url": "https://www.theguardian.com/football/2018/dec/13/raheem-sterling-racism-media-scrutiny-manchester-city",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/football/2018/dec/13/raheem-sterling-racism-media-scrutiny-manchester-city",
-          "auditNote": null
+          "auditNote": null,
+          "accessDate": "2026-10-14"
         },
         {
           "id": "sterling-h11",
@@ -941,7 +1116,8 @@
           "url": "https://www.theguardian.com/football/2018/dec/16/racism-on-the-rise-across-europe-football-raheem-sterling-chelsea",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/football/2018/dec/16/racism-on-the-rise-across-europe-football-raheem-sterling-chelsea",
-          "auditNote": null
+          "auditNote": null,
+          "accessDate": "2026-10-14"
         }
       ]
     },
@@ -949,6 +1125,7 @@
       "id": "the-independent",
       "outlet": "The Independent",
       "dailyCounts": [
+        0,
         1,
         0,
         0,
@@ -1158,46 +1335,85 @@
       "examples": [
         {
           "id": "sterling-h01",
-          "headline": "Raheem Sterling has hit out at criticism of his new tattoo",
-          "url": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
-          "published": "2018-05-29",
-          "verification": "Audited publisher metadata gives this headline: “Raheem Sterling has hit out at criticism of his new tattoo” and publication date 2018-05-29; previous wording/date replaced where different.",
+          "date": "2018-05-29",
+          "outlet": "The Independent",
+          "headline": "Raheem Sterling tattoo: England star hits back at criticism of gun body art",
           "kind": "news",
-          "eventId": "event-1",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "originalURL": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
+          "verificationSourceURL": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
+          "sourceURL": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
+          "verification": "Publisher H1 and date verified directly; published 29 May 2018 at 13:05 BST. Preserve this page H1, not its SEO title/slug or the reproduced Sun print headline.",
+          "eventId": "tattoo-response",
+          "event": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished.",
+          "wave": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
+          "auditNote": "Corrected from the current Independent page H1; publication date confirmed, H1 distinguished from SEO metadata.",
+          "accessDate": "2026-10-14",
+          "published": "2018-05-29"
         },
         {
           "id": "sterling-h04",
+          "date": "2018-06-01",
+          "outlet": "The Independent",
           "headline": "Gareth Southgate supports Raheem Sterling over gun tattoo controversy",
-          "url": "https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-england-football-team-raheem-sterling-tattoo-sun-front-page-gareth-southgate-a8379251.html",
-          "published": "2018-06-01",
-          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
           "kind": "news",
-          "eventId": "event-2",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "originalURL": "https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-england-football-team-raheem-sterling-tattoo-sun-front-page-gareth-southgate-a8379251.html",
+          "verificationSourceURL": "https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-england-football-team-raheem-sterling-tattoo-sun-front-page-gareth-southgate-a8379251.html",
+          "sourceURL": "https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-england-football-team-raheem-sterling-tattoo-sun-front-page-gareth-southgate-a8379251.html",
+          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "eventId": "southgate-response",
+          "event": "England manager Gareth Southgate publicly supported Sterling and described the tattoo’s meaning as individual.",
+          "wave": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished. / England manager Gareth Southgate publicly supported Sterling and described the tattoo’s meaning as individual.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-england-football-team-raheem-sterling-tattoo-sun-front-page-gareth-southgate-a8379251.html",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-england-football-team-raheem-sterling-tattoo-sun-front-page-gareth-southgate-a8379251.html",
+          "auditNote": null,
+          "accessDate": "2026-10-14",
+          "published": "2018-06-01"
         },
         {
           "id": "sterling-h07",
-          "headline": "Kyle Walker has come out in defence of Raheem Sterling over the gun tattoo controversy.",
-          "url": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
-          "published": "2018-06-12",
-          "verification": "Audited publisher metadata gives this headline: “Kyle Walker has come out in defence of Raheem Sterling over the gun tattoo controversy.” and publication date 2018-06-12; previous wording/date replaced where different.",
+          "date": "2018-06-12",
+          "outlet": "The Independent",
+          "headline": "England World Cup squad: Raheem Sterling should not have been forced to explain gun tattoo, insists Kyle Walker",
           "kind": "news",
-          "eventId": "event-2",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "originalURL": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
+          "verificationSourceURL": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
+          "sourceURL": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
+          "verification": "Publisher H1 and date verified directly; published 12 June 2018 at 22:30 BST. Preserve the page H1, distinct from any alternate metadata title.",
+          "eventId": "southgate-response",
+          "event": "England manager Gareth Southgate publicly supported Sterling and described the tattoo’s meaning as individual.",
+          "wave": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished. / England manager Gareth Southgate publicly supported Sterling and described the tattoo’s meaning as individual.",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
+          "auditNote": "Corrected from the current Independent page H1; publication date confirmed, H1 distinguished from SEO metadata.",
+          "accessDate": "2026-10-14",
+          "published": "2018-06-12"
         }
       ],
       "reviewNotes": {
         "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
-        "pressure": "The cleaned recovered sample lists 3 headline records from this desk over 3 publication dates. This is not a complete archive or proof of intent.",
-        "limit": "Headline and date are recovered from the cited publisher or named archive. Repeated records are not automatically independent reporting or evidence of harm."
+        "pressure": "The cleaned recovered sample lists 3 dated headline records from this desk over 3 publication dates. This is not a complete archive or proof of intent.",
+        "limit": "The bounded sample spans 15 retained headline records from four playable outlets; repeated records are not automatically independent reporting or evidence of harm."
       },
       "scrutiny": [
         {
           "criterionId": "public_value",
           "observation": "The sample covers a tattoo story and a separate December comparison about racialised portrayals.",
           "question": "What public information did each episode add, and when did a new development justify another item?",
-          "limit": "The sample has 11 headlines across two episodes; it is not a census of football coverage.",
+          "limit": "The 15 retained records across four desks form a partial sample, not a census; comparison alone does not establish motive or causation.",
           "evidenceIds": [
             "tattoo-response"
           ]
@@ -1206,7 +1422,7 @@
           "criterionId": "context",
           "observation": "Sterling explained the tattoo’s personal meaning; his account changes the context of an image but does not settle every view of it.",
           "question": "Did items distinguish his explanation from criticism of the image?",
-          "limit": "The headlines alone cannot show how fully each article reported the explanation.",
+          "limit": "The 15 retained records across four desks form a partial sample, not a census; comparison alone does not establish motive or causation.",
           "evidenceIds": [
             "tattoo-response"
           ]
@@ -1215,7 +1431,7 @@
           "criterionId": "framing",
           "observation": "A rifle image and a later allegation about racialised coverage carry different risks of stereotype and overclaim.",
           "question": "Did the headline invite evidence-based scrutiny or encourage a broad inference about character or motive?",
-          "limit": "A headline sample cannot establish an outlet’s intent or a causal link to abuse.",
+          "limit": "The 15 retained records across four desks form a partial sample, not a census; comparison alone does not establish motive or causation.",
           "evidenceIds": [
             "tattoo-response"
           ]
@@ -1224,7 +1440,7 @@
           "criterionId": "care",
           "observation": "The December material followed an alleged racist incident and a public post; repetition may increase pressure.",
           "question": "Was continued attention proportionate and did it respect the people discussed?",
-          "limit": "No causal claim about headlines causing racist behaviour is supported here.",
+          "limit": "The 15 retained records across four desks form a partial sample, not a census; comparison alone does not establish motive or causation.",
           "evidenceIds": [
             "tattoo-response"
           ]
@@ -1233,7 +1449,7 @@
           "criterionId": "consistency",
           "observation": "Sterling publicly compared headlines about two young players.",
           "question": "Would the same framing be used for comparable players and circumstances?",
-          "limit": "A small selected set cannot establish outlet-wide consistency.",
+          "limit": "The 15 retained records across four desks form a partial sample, not a census; comparison alone does not establish motive or causation.",
           "evidenceIds": [
             "tattoo-response"
           ]
@@ -1242,7 +1458,7 @@
           "criterionId": "transparency",
           "observation": "Some rows are publisher pages and others are reproductions or reports of a public exchange.",
           "question": "Can readers tell which records are direct publisher headlines and which are later context?",
-          "limit": "The 11-item sample is event-led and non-exhaustive.",
+          "limit": "The 15 retained records across four desks form a partial sample, not a census; comparison alone does not establish motive or causation.",
           "evidenceIds": [
             "tattoo-response"
           ]
@@ -1253,7 +1469,7 @@
         "paragraphs": [
           {
             "kind": "report",
-            "text": "We would defend covering both the tattoo debate and Sterling’s later public comparison of headlines because each became a significant public discussion involving a national-team player. Our sample contains four dated a publisher headlines and seven a publisher records; it is an event-led selection, not a complete account of either outlet.",
+            "text": "In this fictional exercise, our desk accounts for 3 of the 15 retained records in a four-outlet sample spanning 28 May to 16 December. The May tattoo coverage and December debate about racialised portrayals concern different moments; each item needs its own public-interest justification.",
             "evidenceIds": [
               "tattoo-response",
               "event-1",
@@ -1278,7 +1494,7 @@
           },
           {
             "kind": "analysis",
-            "text": "The record has only 11 recovered headlines across two selected outlets. We would link the original pages where available, label reproduced text, and acknowledge what the sample cannot tell readers about article context or outlet-wide consistency. A defensible public-interest purpose does not make every framing beyond scrutiny.",
+            "text": "The retained sample is selected and incomplete. We would distinguish direct publisher pages from the Sun print headline reproduced by the Guardian, identify the format and dates, and state that the comparator stories concern other Manchester City players. These records do not prove racist intent or that headlines caused abuse.",
             "evidenceIds": [
               "representation-comparison",
               "sterling-response"
@@ -1291,12 +1507,12 @@
           "id": "sterling-h01",
           "date": "2018-05-29",
           "outlet": "The Independent",
-          "headline": "Raheem Sterling has hit out at criticism of his new tattoo",
+          "headline": "Raheem Sterling tattoo: England star hits back at criticism of gun body art",
           "kind": "news",
           "originalURL": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
           "verificationSourceURL": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
           "sourceURL": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
-          "verification": "Audited publisher metadata gives this headline: “Raheem Sterling has hit out at criticism of his new tattoo” and publication date 2018-05-29; previous wording/date replaced where different.",
+          "verification": "Publisher H1 and date verified directly; published 29 May 2018 at 13:05 BST. Preserve this page H1, not its SEO title/slug or the reproduced Sun print headline.",
           "eventId": "tattoo-response",
           "event": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished.",
           "wave": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished.",
@@ -1304,9 +1520,10 @@
           "archiveReproduction": false,
           "sampleNote": "",
           "url": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
-          "auditStatus": "publisher_page_title_mismatch",
+          "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
-          "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+          "auditNote": "Corrected from the current Independent page H1; publication date confirmed, H1 distinguished from SEO metadata.",
+          "accessDate": "2026-10-14"
         },
         {
           "id": "sterling-h04",
@@ -1327,18 +1544,19 @@
           "url": "https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-england-football-team-raheem-sterling-tattoo-sun-front-page-gareth-southgate-a8379251.html",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-england-football-team-raheem-sterling-tattoo-sun-front-page-gareth-southgate-a8379251.html",
-          "auditNote": null
+          "auditNote": null,
+          "accessDate": "2026-10-14"
         },
         {
           "id": "sterling-h07",
           "date": "2018-06-12",
           "outlet": "The Independent",
-          "headline": "Kyle Walker has come out in defence of Raheem Sterling over the gun tattoo controversy.",
+          "headline": "England World Cup squad: Raheem Sterling should not have been forced to explain gun tattoo, insists Kyle Walker",
           "kind": "news",
           "originalURL": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
           "verificationSourceURL": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
           "sourceURL": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
-          "verification": "Audited publisher metadata gives this headline: “Kyle Walker has come out in defence of Raheem Sterling over the gun tattoo controversy.” and publication date 2018-06-12; previous wording/date replaced where different.",
+          "verification": "Publisher H1 and date verified directly; published 12 June 2018 at 22:30 BST. Preserve the page H1, distinct from any alternate metadata title.",
           "eventId": "southgate-response",
           "event": "England manager Gareth Southgate publicly supported Sterling and described the tattoo’s meaning as individual.",
           "wave": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished. / England manager Gareth Southgate publicly supported Sterling and described the tattoo’s meaning as individual.",
@@ -1346,16 +1564,801 @@
           "archiveReproduction": false,
           "sampleNote": "",
           "url": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
-          "auditStatus": "publisher_page_title_mismatch",
+          "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
-          "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+          "auditNote": "Corrected from the current Independent page H1; publication date confirmed, H1 distinguished from SEO metadata.",
+          "accessDate": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "the-sun",
+      "outlet": "The Sun",
+      "dailyCounts": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "listedCount": 2,
+      "activeDays": 2,
+      "peakDaily": 1,
+      "examples": [
+        {
+          "id": "sterling-sun-original-tattoo-web-20180528",
+          "date": "2018-05-28",
+          "outlet": "The Sun",
+          "headline": "England ace Raheem Sterling sparks fury by unveiling M16 assault rifle tattoo on his leg",
+          "kind": "news",
+          "originalURL": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+          "verificationSourceURL": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+          "sourceURL": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+          "verification": "Direct original Sun article opened in ordinary browser UI; page H1 and published time visible, with body describing initial publication of the tattoo story. This is The Sun's web article dated 28 May, separate from the 29 May print front-page item already documented.",
+          "eventId": "tattoo-response",
+          "event": "The Sun's initial online report about Sterling's tattoo, preceding the 29 May print front-page record.",
+          "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+          "noveltyClaim": "Adds the actual originating publisher page and distinguishes its 28 May web publication from the next day's print headline/reproduction.",
+          "archiveReproduction": false,
+          "sampleNote": "Direct current publisher page reviewed; no archive capture verified.",
+          "url": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+          "auditNote": null,
+          "format": "web",
+          "evidenceId": "sterling-sun-original-tattoo-web-20180528",
+          "accessDate": "2026-10-14",
+          "published": "2018-05-28"
+        },
+        {
+          "id": "sterling-sun-print-tattoo-20180529",
+          "date": "2018-05-29",
+          "outlet": "The Sun",
+          "headline": "Raheem shoots himself in the foot",
+          "kind": "news",
+          "originalURL": null,
+          "verificationSourceURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "sourceURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "verification": "Contemporaneous Guardian report published 29 May 2018 states The Sun placed the tattoo image on that day's front page and gives the reproduced headline. The Independent's contemporaneous page independently says the story was on Tuesday's front page, but the Sun page itself was not recovered. Record this as a print edition, not a Sun web article. The reproduced Sun print wording comes from the Guardian report, not a recovered Sun scan.",
+          "eventId": "tattoo-response",
+          "event": "The Sun's front-page coverage of Sterling's tattoo and his public explanation.",
+          "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+          "noveltyClaim": "Adds the missing newspaper outlet as a transparently reproduced print record; it is not an independently recovered Sun page or a full census item.",
+          "archiveReproduction": true,
+          "sampleNote": "Print headline reproduced by a contemporaneous Guardian report; original print page/image not recovered.",
+          "url": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "auditStatus": "contemporaneous_secondary_reproduction",
+          "auditedURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "auditNote": null,
+          "format": "print edition",
+          "evidenceId": "sterling-sun-print-tattoo-20180529",
+          "accessDate": "2026-10-14",
+          "published": "2018-05-29"
+        }
+      ],
+      "reviewNotes": {
+        "publicValue": "Assess the public information in each dated item and whether it added a verified development.",
+        "pressure": "The recovered sample contains 2 The Sun record(s); it is not a census or proof of intent.",
+        "limit": "The sample combines direct web pages with a separately identified reproduced Sun print headline. It cannot establish all coverage or motive."
+      },
+      "scrutiny": [
+        {
+          "criterionId": "public_value",
+          "observation": "The sample covers a tattoo story and a separate December comparison about racialised portrayals.",
+          "question": "What public information did each episode add, and when did a new development justify another item?",
+          "limit": "A small, event-led sample cannot establish outlet-wide practice, intent or a causal link to abuse.",
+          "evidenceIds": [
+            "tattoo-response"
+          ]
+        },
+        {
+          "criterionId": "context",
+          "observation": "Sterling explained the tattoo’s personal meaning; his account changes the context of an image but does not settle every view of it.",
+          "question": "Did items distinguish his explanation from criticism of the image?",
+          "limit": "A small, event-led sample cannot establish outlet-wide practice, intent or a causal link to abuse.",
+          "evidenceIds": [
+            "tattoo-response"
+          ]
+        },
+        {
+          "criterionId": "framing",
+          "observation": "A rifle image and a later allegation about racialised coverage carry different risks of stereotype and overclaim.",
+          "question": "Did the headline invite evidence-based scrutiny or encourage a broad inference about character or motive?",
+          "limit": "A small, event-led sample cannot establish outlet-wide practice, intent or a causal link to abuse.",
+          "evidenceIds": [
+            "tattoo-response"
+          ]
+        },
+        {
+          "criterionId": "care",
+          "observation": "The December material followed an alleged racist incident and a public post; repetition may increase pressure.",
+          "question": "Was continued attention proportionate and did it respect the people discussed?",
+          "limit": "A small, event-led sample cannot establish outlet-wide practice, intent or a causal link to abuse.",
+          "evidenceIds": [
+            "tattoo-response"
+          ]
+        },
+        {
+          "criterionId": "consistency",
+          "observation": "Sterling publicly compared headlines about two young players.",
+          "question": "Would the same framing be used for comparable players and circumstances?",
+          "limit": "A small, event-led sample cannot establish outlet-wide practice, intent or a causal link to abuse.",
+          "evidenceIds": [
+            "tattoo-response"
+          ]
+        },
+        {
+          "criterionId": "transparency",
+          "observation": "Some rows are publisher pages and others are reproductions or reports of a public exchange.",
+          "question": "Can readers tell which records are direct publisher headlines and which are later context?",
+          "limit": "A small, event-led sample cannot establish outlet-wide practice, intent or a causal link to abuse.",
+          "evidenceIds": [
+            "tattoo-response"
+          ]
+        }
+      ],
+      "briefing": {
+        "title": "A fictional desk defence of its sampled coverage",
+        "paragraphs": [
+          {
+            "kind": "report",
+            "text": "In this fictional exercise, two retained items cover the tattoo story. One is a web report published on 28 May; the other is a 29 May print headline reproduced in a contemporaneous report. The web page is directly available; the print item has no recovered scan or original page. These are separate formats and dates, not duplicate copies of one article.",
+            "evidenceIds": [
+              "sterling-sun-original-tattoo-web-20180528",
+              "sterling-sun-print-tattoo-20180529"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "The strongest challenge is the emphasis on anger around the tattoo, which could invite judgment before readers reach Sterling’s explanation. A responsible account should place his explanation near the top: he connected the image to his father’s killing and said he would never touch a gun. Readers need not approve of the tattoo, but this context matters to how they understand it.",
+            "evidenceIds": [
+              "sterling-sun-original-tattoo-web-20180528",
+              "tattoo-response"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "Our defence is that the image and public criticism were already a live World Cup story, and the web report included campaigners’ objections and Sterling’s response. We should still examine whether the headline gave too much weight to outrage and whether the opening gave enough weight to his explanation. That is the strongest question these records raise about our choices.",
+            "evidenceIds": [
+              "sterling-sun-original-tattoo-web-20180528",
+              "sterling-sun-print-tattoo-20180529",
+              "tattoo-response"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "The limit is clear: two items cannot show all our coverage, readers’ reactions, or whether a headline influenced the later alleged abuse. The print wording is a contemporaneous reproduction, not an original page. The comparison involving other players cannot establish our motive or prove a causal link. We should identify each format and source precisely, and accept that this sample cannot settle fairness across the wider press.",
+            "evidenceIds": [
+              "sterling-sun-print-tattoo-20180529",
+              "representation-comparison",
+              "alleged-abuse"
+            ]
+          }
+        ]
+      },
+      "records": [
+        {
+          "id": "sterling-sun-original-tattoo-web-20180528",
+          "date": "2018-05-28",
+          "outlet": "The Sun",
+          "headline": "England ace Raheem Sterling sparks fury by unveiling M16 assault rifle tattoo on his leg",
+          "kind": "news",
+          "originalURL": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+          "verificationSourceURL": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+          "sourceURL": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+          "verification": "Direct original Sun article opened in ordinary browser UI; page H1 and published time visible, with body describing initial publication of the tattoo story. This is The Sun's web article dated 28 May, separate from the 29 May print front-page item already documented.",
+          "eventId": "tattoo-response",
+          "event": "The Sun's initial online report about Sterling's tattoo, preceding the 29 May print front-page record.",
+          "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+          "noveltyClaim": "Adds the actual originating publisher page and distinguishes its 28 May web publication from the next day's print headline/reproduction.",
+          "archiveReproduction": false,
+          "sampleNote": "Direct current publisher page reviewed; no archive capture verified.",
+          "url": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+          "auditNote": null,
+          "format": "web",
+          "evidenceId": "sterling-sun-original-tattoo-web-20180528",
+          "accessDate": "2026-10-14"
+        },
+        {
+          "id": "sterling-sun-print-tattoo-20180529",
+          "date": "2018-05-29",
+          "outlet": "The Sun",
+          "headline": "Raheem shoots himself in the foot",
+          "kind": "news",
+          "originalURL": null,
+          "verificationSourceURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "sourceURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "verification": "Contemporaneous Guardian report published 29 May 2018 states The Sun placed the tattoo image on that day's front page and gives the reproduced headline. The Independent's contemporaneous page independently says the story was on Tuesday's front page, but the Sun page itself was not recovered. Record this as a print edition, not a Sun web article. The reproduced Sun print wording comes from the Guardian report, not a recovered Sun scan.",
+          "eventId": "tattoo-response",
+          "event": "The Sun's front-page coverage of Sterling's tattoo and his public explanation.",
+          "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+          "noveltyClaim": "Adds the missing newspaper outlet as a transparently reproduced print record; it is not an independently recovered Sun page or a full census item.",
+          "archiveReproduction": true,
+          "sampleNote": "Print headline reproduced by a contemporaneous Guardian report; original print page/image not recovered.",
+          "url": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "auditStatus": "contemporaneous_secondary_reproduction",
+          "auditedURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+          "auditNote": null,
+          "format": "print edition",
+          "evidenceId": "sterling-sun-print-tattoo-20180529",
+          "accessDate": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "bbc-sport",
+      "outlet": "BBC Sport",
+      "dailyCounts": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "listedCount": 1,
+      "activeDays": 1,
+      "peakDaily": 1,
+      "examples": [
+        {
+          "id": "sterling-bbc-sport-tattoo-20180529",
+          "date": "2018-05-29",
+          "outlet": "BBC Sport",
+          "headline": "Raheem Sterling: FA shows support after gun tattoo row",
+          "kind": "news",
+          "originalURL": "https://www.bbc.co.uk/sport/football/44289119",
+          "verificationSourceURL": "https://www.bbc.co.uk/sport/football/44289119",
+          "sourceURL": "https://www.bbc.co.uk/sport/football/44289119",
+          "verification": "Direct BBC Sport article opened in ordinary browser UI; displayed H1 and Published date visible. The body reports FA support, Sterling's explanation, and references The Sun's front-page story. This is an additional publisher's own contemporaneous web report, not a print item.",
+          "eventId": "tattoo-response",
+          "event": "BBC coverage of FA support and Sterling's explanation during the tattoo controversy.",
+          "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+          "noveltyClaim": "Adds a directly verified contemporaneous report from a separate publisher to contextualize the coverage sequence.",
+          "archiveReproduction": false,
+          "sampleNote": "Direct current publisher page reviewed; no archive capture verified.",
+          "url": "https://www.bbc.co.uk/sport/football/44289119",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.bbc.co.uk/sport/football/44289119",
+          "auditNote": null,
+          "format": "web",
+          "evidenceId": "sterling-bbc-sport-tattoo-20180529",
+          "accessDate": "2026-10-14",
+          "published": "2018-05-29"
+        }
+      ],
+      "reviewNotes": {
+        "publicValue": "Assess the public information in each dated item and whether it added a verified development.",
+        "pressure": "The recovered sample contains 1 BBC Sport record(s); it is not a census or proof of intent.",
+        "limit": "The sample combines direct web pages with a separately identified reproduced Sun print headline. It cannot establish all coverage or motive."
+      },
+      "scrutiny": [
+        {
+          "criterionId": "public_value",
+          "observation": "The sample covers a tattoo story and a separate December comparison about racialised portrayals.",
+          "question": "What public information did each episode add, and when did a new development justify another item?",
+          "limit": "A small, event-led sample cannot establish outlet-wide practice, intent or a causal link to abuse.",
+          "evidenceIds": [
+            "tattoo-response"
+          ]
+        },
+        {
+          "criterionId": "context",
+          "observation": "Sterling explained the tattoo’s personal meaning; his account changes the context of an image but does not settle every view of it.",
+          "question": "Did items distinguish his explanation from criticism of the image?",
+          "limit": "A small, event-led sample cannot establish outlet-wide practice, intent or a causal link to abuse.",
+          "evidenceIds": [
+            "tattoo-response"
+          ]
+        },
+        {
+          "criterionId": "framing",
+          "observation": "A rifle image and a later allegation about racialised coverage carry different risks of stereotype and overclaim.",
+          "question": "Did the headline invite evidence-based scrutiny or encourage a broad inference about character or motive?",
+          "limit": "A small, event-led sample cannot establish outlet-wide practice, intent or a causal link to abuse.",
+          "evidenceIds": [
+            "tattoo-response"
+          ]
+        },
+        {
+          "criterionId": "care",
+          "observation": "The December material followed an alleged racist incident and a public post; repetition may increase pressure.",
+          "question": "Was continued attention proportionate and did it respect the people discussed?",
+          "limit": "A small, event-led sample cannot establish outlet-wide practice, intent or a causal link to abuse.",
+          "evidenceIds": [
+            "tattoo-response"
+          ]
+        },
+        {
+          "criterionId": "consistency",
+          "observation": "Sterling publicly compared headlines about two young players.",
+          "question": "Would the same framing be used for comparable players and circumstances?",
+          "limit": "A small, event-led sample cannot establish outlet-wide practice, intent or a causal link to abuse.",
+          "evidenceIds": [
+            "tattoo-response"
+          ]
+        },
+        {
+          "criterionId": "transparency",
+          "observation": "Some rows are publisher pages and others are reproductions or reports of a public exchange.",
+          "question": "Can readers tell which records are direct publisher headlines and which are later context?",
+          "limit": "A small, event-led sample cannot establish outlet-wide practice, intent or a causal link to abuse.",
+          "evidenceIds": [
+            "tattoo-response"
+          ]
+        }
+      ],
+      "briefing": {
+        "title": "A fictional desk defence of its sampled coverage",
+        "paragraphs": [
+          {
+            "kind": "report",
+            "text": "In this fictional exercise, our one retained report was published on 29 May, as the tattoo story drew criticism. Its headline foregrounds the Football Association’s support after the row, while the article reports Sterling’s explanation and the FA response. We would defend covering a public controversy when an England player and the governing body had addressed it.",
+            "evidenceIds": [
+              "sterling-bbc-sport-tattoo-20180529"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "The strongest challenge is whether the headline gave readers enough context. A reference to a ‘gun tattoo row’ can leave the image and conflict in the foreground, even when the article explains Sterling’s personal reason. We should ask whether the headline and opening made that explanation visible, rather than assuming that context later in the article corrects the first impression.",
+            "evidenceIds": [
+              "sterling-bbc-sport-tattoo-20180529",
+              "tattoo-response"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "Our answer is that reporting the FA’s support added a distinct, attributable development. We should include Sterling’s account that the tattoo connected to his father’s killing, and avoid presenting the image as evidence that he supported gun use. Readers can understand both the criticism and his explanation without being asked to hold one view of the tattoo.",
+            "evidenceIds": [
+              "sterling-bbc-sport-tattoo-20180529",
+              "tattoo-response"
+            ]
+          },
+          {
+            "kind": "analysis",
+            "text": "The specific limit is that one dated page is one record in an incomplete sample. It cannot establish how this desk covered the story on other days, how its audience reacted, or whether its wording was fair across all formats. The later allegation about abuse and debate about newspaper framing are separate developments; this report cannot establish motive or causation. We would make those boundaries clear whenever we cite the sample.",
+            "evidenceIds": [
+              "sterling-bbc-sport-tattoo-20180529",
+              "alleged-abuse",
+              "representation-comparison"
+            ]
+          }
+        ]
+      },
+      "records": [
+        {
+          "id": "sterling-bbc-sport-tattoo-20180529",
+          "date": "2018-05-29",
+          "outlet": "BBC Sport",
+          "headline": "Raheem Sterling: FA shows support after gun tattoo row",
+          "kind": "news",
+          "originalURL": "https://www.bbc.co.uk/sport/football/44289119",
+          "verificationSourceURL": "https://www.bbc.co.uk/sport/football/44289119",
+          "sourceURL": "https://www.bbc.co.uk/sport/football/44289119",
+          "verification": "Direct BBC Sport article opened in ordinary browser UI; displayed H1 and Published date visible. The body reports FA support, Sterling's explanation, and references The Sun's front-page story. This is an additional publisher's own contemporaneous web report, not a print item.",
+          "eventId": "tattoo-response",
+          "event": "BBC coverage of FA support and Sterling's explanation during the tattoo controversy.",
+          "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+          "noveltyClaim": "Adds a directly verified contemporaneous report from a separate publisher to contextualize the coverage sequence.",
+          "archiveReproduction": false,
+          "sampleNote": "Direct current publisher page reviewed; no archive capture verified.",
+          "url": "https://www.bbc.co.uk/sport/football/44289119",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.bbc.co.uk/sport/football/44289119",
+          "auditNote": null,
+          "format": "web",
+          "evidenceId": "sterling-bbc-sport-tattoo-20180529",
+          "accessDate": "2026-10-14"
         }
       ]
     }
   ],
   "context": {
-    "statusAtWindowEnd": "Use only the public-interest facts needed to explain the two episodes. No inference that the tattoo promotes violence; no finding of racist intent or causal link from headlines to abuse. Preserve allegation/denial dates and the distinction between reported racism, complaint, investigation and adjudication. Headlines are exact page titles; these 11 items are a sample, not all coverage.",
+    "statusAtWindowEnd": "Use only public-interest facts needed to explain the episodes. No inference that the tattoo promoted violence; no finding of racist intent or causal link from headlines to alleged abuse. Preserve the allegation/investigation/adjudication distinction. This 15-item sample is incomplete; the Foden MailOnline page is comparator context about Foden and is excluded from the Sterling corpus.",
     "sequence": [
+      {
+        "date": "2018-05-28",
+        "text": "The Sun publishes its original web report about Sterling’s tattoo.",
+        "evidenceIds": [
+          "sterling-sun-original-tattoo-web-20180528"
+        ]
+      },
       {
         "date": "2018-05-29",
         "text": "Tattoo coverage and Sterling’s public explanation",
@@ -1393,7 +2396,37 @@
       }
     ]
   },
-  "comparison": {},
+  "comparison": {
+    "status": "qualified contextual comparison; not part of retained Sterling corpus",
+    "includedCount": false,
+    "foden": {
+      "outlet": "MailOnline (Daily Mail)",
+      "headline": "Manchester City starlet Phil Foden buys new £2m home for his mum",
+      "publicationDate": "2018-10-04",
+      "updatedDate": "2018-10-05",
+      "originalURL": "https://www.dailymail.com/sport/football/article-6241313/Manchester-City-starlet-Phil-Foden-buys-new-2m-home-mum.html",
+      "verificationSourceURL": "https://www.dailymail.com/sport/football/article-6241313/Manchester-City-starlet-Phil-Foden-buys-new-2m-home-mum.html",
+      "verification": "Current MailOnline page directly displays this exact H1 and publication/update metadata. The Guardian’s 9 December comparison uses shorter wording; one underlying Foden article only.",
+      "subject": "Phil Foden, not Raheem Sterling.",
+      "corpusDecision": "Do not count this row in the Sterling corpus/campaign; retain only as a source-linked comparator because Sterling cited it in his later comparison.",
+      "accessDate": "2026-10-14"
+    },
+    "adarabioyo": {
+      "outlet": "MailOnline",
+      "guardianReferenceWording": "Young Manchester City footballer, 20, on £25,000 a week splashes out on mansion",
+      "reportedPublicationTiming": "January 2018, as described by the Guardian on 9 December 2018",
+      "originalURL": null,
+      "verificationSourceURL": "https://www.theguardian.com/football/2018/dec/09/raheem-sterling-newspapers-fuelling-racism-alleged-abuse-chelsea",
+      "verification": "Original publisher page not retrieved in the bounded search; wording is the Guardian’s reference, not verified MailOnline H1.",
+      "corpusDecision": "Outside window and not counted. No inference about racial motive from headline comparison or counts.",
+      "accessDate": "2026-10-14"
+    },
+    "title": "The housing-headline comparison",
+    "limit": "These are contextual examples, not matched publication counts. The Foden original was recovered; the Adarabioyo original was not recovered. Different subjects, dates and circumstances require examination before inferring unequal treatment or motive.",
+    "evidenceIds": [
+      "representation-comparison"
+    ]
+  },
   "narrationNotice": "Fictional editor role-play; not an actual outlet statement.",
   "countMode": "dated-sample",
   "scrutinyCriteria": [
@@ -1428,22 +2461,120 @@
       "question": "Can we account for the sample, its limits, later edits and the outlet’s role?"
     }
   ],
-  "dataCompleteness": "This is an audited recovered sample only. It does not estimate daily volume, peak intensity, or all coverage; absence from this file means no claim about whether an outlet covered the case. News, comment and live-blog formats are labeled where identified.",
+  "dataCompleteness": "This is an audited recovered sample of 15 retained Sterling records from four playable outlets, not a census or daily-volume estimate. The Sun print headline is reproduced by a contemporaneous Guardian report; its separate 28 May web story is directly verified. The October Foden story is directly verified but excluded because it concerns Foden, not Sterling; the January Adarabioyo original page was not retrieved and remains an out-of-window Guardian-referenced comparator. Missing dates are unknown, not zero.",
   "researchProvenance": {
-    "file": "case-sterling-research.json",
-    "retrievedOn": "2026-10-13"
+    "file": "work/archive-research/sterling-findings.json",
+    "retrievedOn": "2026-10-14",
+    "researchUpdate": "Integrated two Guardian 29 May pages, a contemporaneously reproduced Sun print headline, the Sun original 28 May web report, and BBC Sport 29 May. Directly verified October MailOnline Foden article is excluded as a subject-mismatched comparator; January Adarabioyo original page remains unretrieved/outside-window. No archive capture was verified.",
+    "accessDate": "2026-10-14"
   },
   "allHeadlines": [
+    {
+      "id": "sterling-sun-original-tattoo-web-20180528",
+      "date": "2018-05-28",
+      "outlet": "The Sun",
+      "headline": "England ace Raheem Sterling sparks fury by unveiling M16 assault rifle tattoo on his leg",
+      "kind": "news",
+      "originalURL": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+      "verificationSourceURL": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+      "sourceURL": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+      "verification": "Direct original Sun article opened in ordinary browser UI; page H1 and published time visible, with body describing initial publication of the tattoo story. This is The Sun's web article dated 28 May, separate from the 29 May print front-page item already documented.",
+      "eventId": "tattoo-response",
+      "event": "The Sun's initial online report about Sterling's tattoo, preceding the 29 May print front-page record.",
+      "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+      "noveltyClaim": "Adds the actual originating publisher page and distinguishes its 28 May web publication from the next day's print headline/reproduction.",
+      "archiveReproduction": false,
+      "sampleNote": "Direct current publisher page reviewed; no archive capture verified.",
+      "url": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.thesun.co.uk/sport/6397808/raheem-sterling-m16-assault-rifle-tattoo/",
+      "auditNote": null,
+      "format": "web",
+      "evidenceId": "sterling-sun-original-tattoo-web-20180528",
+      "accessDate": "2026-10-14"
+    },
+    {
+      "id": "sterling-bbc-sport-tattoo-20180529",
+      "date": "2018-05-29",
+      "outlet": "BBC Sport",
+      "headline": "Raheem Sterling: FA shows support after gun tattoo row",
+      "kind": "news",
+      "originalURL": "https://www.bbc.co.uk/sport/football/44289119",
+      "verificationSourceURL": "https://www.bbc.co.uk/sport/football/44289119",
+      "sourceURL": "https://www.bbc.co.uk/sport/football/44289119",
+      "verification": "Direct BBC Sport article opened in ordinary browser UI; displayed H1 and Published date visible. The body reports FA support, Sterling's explanation, and references The Sun's front-page story. This is an additional publisher's own contemporaneous web report, not a print item.",
+      "eventId": "tattoo-response",
+      "event": "BBC coverage of FA support and Sterling's explanation during the tattoo controversy.",
+      "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+      "noveltyClaim": "Adds a directly verified contemporaneous report from a separate publisher to contextualize the coverage sequence.",
+      "archiveReproduction": false,
+      "sampleNote": "Direct current publisher page reviewed; no archive capture verified.",
+      "url": "https://www.bbc.co.uk/sport/football/44289119",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.bbc.co.uk/sport/football/44289119",
+      "auditNote": null,
+      "format": "web",
+      "evidenceId": "sterling-bbc-sport-tattoo-20180529",
+      "accessDate": "2026-10-14"
+    },
+    {
+      "id": "sterling-guardian-tabloid-snobbery-comment-20180529",
+      "date": "2018-05-29",
+      "outlet": "The Guardian",
+      "headline": "Raheem Sterling is a victim of vicious tabloid snobbery",
+      "kind": "comment",
+      "originalURL": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+      "verificationSourceURL": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+      "sourceURL": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+      "verification": "Publisher page shows exact headline and first-publication time (29 May 2018, 17:23 CEST). This is a comment/analysis item, not straight news; it quotes the reproduced Sun headline and reviews earlier coverage. Keep genre explicit.",
+      "eventId": "tattoo-response",
+      "event": "Commentary about the tattoo response and prior press treatment.",
+      "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+      "noveltyClaim": "Adds a separate verified in-window opinion article; do not count it as another Sun article.",
+      "archiveReproduction": false,
+      "sampleNote": "Direct current publisher page reviewed; no archive capture verified.",
+      "url": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/football/shortcuts/2018/may/29/raheem-sterling-tabloid-snobbery-gun-tattoo",
+      "auditNote": null,
+      "format": "web",
+      "evidenceId": "sterling-guardian-tabloid-snobbery-comment-20180529",
+      "accessDate": "2026-10-14"
+    },
+    {
+      "id": "sterling-guardian-tattoo-response-20180529",
+      "date": "2018-05-29",
+      "outlet": "The Guardian",
+      "headline": "FA backs Raheem Sterling after criticism over gun tattoo",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+      "verificationSourceURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+      "sourceURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+      "verification": "Publisher page shows the exact headline and first-publication timestamp (29 May 2018, 11:10 CEST). It reports the FA response, Sterling's explanation, and The Sun front page. It is a distinct story missing from the current Guardian records.",
+      "eventId": "tattoo-response",
+      "event": "FA response to criticism of Sterling's tattoo.",
+      "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+      "noveltyClaim": "Adds a verified in-window Guardian article absent from the current sample.",
+      "archiveReproduction": false,
+      "sampleNote": "Direct current publisher page reviewed; no archive capture verified.",
+      "url": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+      "auditNote": null,
+      "format": "web",
+      "evidenceId": "sterling-guardian-tattoo-response-20180529",
+      "accessDate": "2026-10-14"
+    },
     {
       "id": "sterling-h01",
       "date": "2018-05-29",
       "outlet": "The Independent",
-      "headline": "Raheem Sterling has hit out at criticism of his new tattoo",
+      "headline": "Raheem Sterling tattoo: England star hits back at criticism of gun body art",
       "kind": "news",
       "originalURL": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
       "verificationSourceURL": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
       "sourceURL": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
-      "verification": "Audited publisher metadata gives this headline: “Raheem Sterling has hit out at criticism of his new tattoo” and publication date 2018-05-29; previous wording/date replaced where different.",
+      "verification": "Publisher H1 and date verified directly; published 29 May 2018 at 13:05 BST. Preserve this page H1, not its SEO title/slug or the reproduced Sun print headline.",
       "eventId": "tattoo-response",
       "event": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished.",
       "wave": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished.",
@@ -1451,9 +2582,34 @@
       "archiveReproduction": false,
       "sampleNote": "",
       "url": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
-      "auditStatus": "publisher_page_title_mismatch",
+      "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.independent.co.uk/sport/football/world-cup/raheem-sterling-tattoo-sun-front-page-gun-instagram-story-world-cup-2018-latest-update-a8373561.html",
-      "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+      "auditNote": "Corrected from the current Independent page H1; publication date confirmed, H1 distinguished from SEO metadata.",
+      "accessDate": "2026-10-14"
+    },
+    {
+      "id": "sterling-sun-print-tattoo-20180529",
+      "date": "2018-05-29",
+      "outlet": "The Sun",
+      "headline": "Raheem shoots himself in the foot",
+      "kind": "news",
+      "originalURL": null,
+      "verificationSourceURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+      "sourceURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+      "verification": "Contemporaneous Guardian report published 29 May 2018 states The Sun placed the tattoo image on that day's front page and gives the reproduced headline. The Independent's contemporaneous page independently says the story was on Tuesday's front page, but the Sun page itself was not recovered. Record this as a print edition, not a Sun web article. The reproduced Sun print wording comes from the Guardian report, not a recovered Sun scan.",
+      "eventId": "tattoo-response",
+      "event": "The Sun's front-page coverage of Sterling's tattoo and his public explanation.",
+      "wave": "The Sun published its initial web report on 28 May; print front-page coverage and other publishers’ reports followed on 29 May, then Sterling publicly explained the tattoo.",
+      "noveltyClaim": "Adds the missing newspaper outlet as a transparently reproduced print record; it is not an independently recovered Sun page or a full census item.",
+      "archiveReproduction": true,
+      "sampleNote": "Print headline reproduced by a contemporaneous Guardian report; original print page/image not recovered.",
+      "url": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+      "auditStatus": "contemporaneous_secondary_reproduction",
+      "auditedURL": "https://www.theguardian.com/football/2018/may/29/footballer-raheem-sterling-defends-gun-tattoo",
+      "auditNote": null,
+      "format": "print edition",
+      "evidenceId": "sterling-sun-print-tattoo-20180529",
+      "accessDate": "2026-10-14"
     },
     {
       "id": "sterling-h02",
@@ -1474,7 +2630,8 @@
       "url": "https://www.theguardian.com/football/2018/may/30/clarke-carlisle-raheem-sterling-tattoo-england",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/football/2018/may/30/clarke-carlisle-raheem-sterling-tattoo-england",
-      "auditNote": null
+      "auditNote": null,
+      "accessDate": "2026-10-14"
     },
     {
       "id": "sterling-h04",
@@ -1495,7 +2652,8 @@
       "url": "https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-england-football-team-raheem-sterling-tattoo-sun-front-page-gareth-southgate-a8379251.html",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-england-football-team-raheem-sterling-tattoo-sun-front-page-gareth-southgate-a8379251.html",
-      "auditNote": null
+      "auditNote": null,
+      "accessDate": "2026-10-14"
     },
     {
       "id": "sterling-h05",
@@ -1516,7 +2674,8 @@
       "url": "https://www.theguardian.com/football/2018/jun/01/raheem-sterling-support-gareth-southgate-tattoo-england",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/football/2018/jun/01/raheem-sterling-support-gareth-southgate-tattoo-england",
-      "auditNote": null
+      "auditNote": null,
+      "accessDate": "2026-10-14"
     },
     {
       "id": "sterling-h06",
@@ -1537,18 +2696,19 @@
       "url": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
-      "auditNote": null
+      "auditNote": null,
+      "accessDate": "2026-10-14"
     },
     {
       "id": "sterling-h07",
       "date": "2018-06-12",
       "outlet": "The Independent",
-      "headline": "Kyle Walker has come out in defence of Raheem Sterling over the gun tattoo controversy.",
+      "headline": "England World Cup squad: Raheem Sterling should not have been forced to explain gun tattoo, insists Kyle Walker",
       "kind": "news",
       "originalURL": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
       "verificationSourceURL": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
       "sourceURL": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
-      "verification": "Audited publisher metadata gives this headline: “Kyle Walker has come out in defence of Raheem Sterling over the gun tattoo controversy.” and publication date 2018-06-12; previous wording/date replaced where different.",
+      "verification": "Publisher H1 and date verified directly; published 12 June 2018 at 22:30 BST. Preserve the page H1, distinct from any alternate metadata title.",
       "eventId": "southgate-response",
       "event": "England manager Gareth Southgate publicly supported Sterling and described the tattoo’s meaning as individual.",
       "wave": "The Sun foregrounded an image of Sterling’s rifle tattoo; Sterling publicly explained it as connected to his father’s killing and said it was unfinished. / England manager Gareth Southgate publicly supported Sterling and described the tattoo’s meaning as individual.",
@@ -1556,9 +2716,10 @@
       "archiveReproduction": false,
       "sampleNote": "",
       "url": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
-      "auditStatus": "publisher_page_title_mismatch",
+      "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.independent.co.uk/sport/football/world-cup/england-squad-world-cup-2018-raheem-sterling-gun-tattoo-instagram-kyle-walker-a8395136.html",
-      "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+      "auditNote": "Corrected from the current Independent page H1; publication date confirmed, H1 distinguished from SEO metadata.",
+      "accessDate": "2026-10-14"
     },
     {
       "id": "sterling-h08",
@@ -1579,7 +2740,8 @@
       "url": "https://www.theguardian.com/football/2018/dec/09/raheem-sterling-newspapers-fuelling-racism-alleged-abuse-chelsea",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/football/2018/dec/09/raheem-sterling-newspapers-fuelling-racism-alleged-abuse-chelsea",
-      "auditNote": null
+      "auditNote": null,
+      "accessDate": "2026-10-14"
     },
     {
       "id": "sterling-h09",
@@ -1600,7 +2762,8 @@
       "url": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/media/2018/dec/11/the-sun-newspaper-reporting-sterling-race",
-      "auditNote": null
+      "auditNote": null,
+      "accessDate": "2026-10-14"
     },
     {
       "id": "sterling-h10",
@@ -1621,7 +2784,8 @@
       "url": "https://www.theguardian.com/football/2018/dec/13/raheem-sterling-racism-media-scrutiny-manchester-city",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/football/2018/dec/13/raheem-sterling-racism-media-scrutiny-manchester-city",
-      "auditNote": null
+      "auditNote": null,
+      "accessDate": "2026-10-14"
     },
     {
       "id": "sterling-h11",
@@ -1642,7 +2806,8 @@
       "url": "https://www.theguardian.com/football/2018/dec/16/racism-on-the-rise-across-europe-football-raheem-sterling-chelsea",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/football/2018/dec/16/racism-on-the-rise-across-europe-football-raheem-sterling-chelsea",
-      "auditNote": null
+      "auditNote": null,
+      "accessDate": "2026-10-14"
     }
   ],
   "publicContext": {
@@ -1650,6 +2815,13 @@
     "url": "https://www.theguardian.com/football/2018/jun/05/raheem-sterling-tattoo-row-england-manchester-city",
     "allegationResponse": "The recovered sample includes criticism of newspaper coverage as well as reports about Sterling. It does not measure every article about him.",
     "sequence": [
+      {
+        "date": "2018-05-28",
+        "text": "The Sun publishes its original web report about Sterling’s tattoo.",
+        "evidenceIds": [
+          "sterling-sun-original-tattoo-web-20180528"
+        ]
+      },
       {
         "date": "2018-05-29",
         "text": "Tattoo coverage and Sterling’s public explanation",
@@ -1702,5 +2874,35 @@
       "filePage": "https://commons.wikimedia.org/wiki/File:City_of_Manchester_Stadium.jpg",
       "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/"
     }
-  ]
+  ],
+  "archiveChecks": [
+    {
+      "target": "The Sun front-page print item dated 2018-05-29",
+      "attempt": "Search results and archive lookup for the newspaper's own page/image; no original Sun item URL was recoverable from this pass.",
+      "archiveURL": null,
+      "captureTimestamp": null,
+      "outcome": "No capture retrieved. Do not enter an archive URL or timestamp. A contemporaneous Guardian reproduction is not an archive capture of The Sun."
+    },
+    {
+      "target": "Known Guardian/People pages used in this report",
+      "attempt": "Wayback CDX endpoints were inaccessible in the web tool; archive.org availability endpoint returned 429 before JSON/capture metadata was visible in the temporary browser tabs.",
+      "archiveURL": null,
+      "captureTimestamp": null,
+      "outcome": "Blocked/no capture verified; this does not show that no capture exists."
+    },
+    {
+      "target": "Newly retrieved MailOnline, BBC Sport and Sun tattoo pages",
+      "attempt": "Read the current publisher pages in ordinary browser UI; no archival endpoint was queried in this follow-up, consistent with the prior 429 limitation.",
+      "archiveURL": null,
+      "captureTimestamp": null,
+      "outcome": "No archive capture was retrieved or verified; do not infer that none exists."
+    }
+  ],
+  "searchLimitations": [
+    "No original The Sun page-image, scan, or article URL for the May 2018 front page was retrieved. Available evidence is contemporary reproduction by other publishers; the Sun print headline is kept distinct from their own web headlines.",
+    "The 2018-12-09 alleged racist abuse remains a contemporaneous allegation under investigation in the Guardian report; no adjudicated finding is offered here.",
+    "No race-motive claim is supported by counting or comparing these headlines alone.",
+    "The October Foden MailOnline article was directly retrieved and is in-window. A bounded search for the January Adarabioyo MailOnline article did not surface its original URL/page; the Guardian's 9 December comparison supplies the January timing, so it remains an out-of-window comparator and is not counted. No further retry was made."
+  ],
+  "accessDate": "2026-10-14"
 }

@@ -49,7 +49,7 @@ test('online page omits all embedded raster bytes while preserving full records 
   const manifest=JSON.parse(await readFile(new URL('./assets/media-credits.json',import.meta.url),'utf8'));
   const online=onlinePage(html,manifest),extract=s=>JSON.parse(s.match(/<script id="campaign-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
   const source=extract(html),web=extract(online);
-  assert.equal(web.length,6);assert.equal(web.reduce((n,c)=>n+c.allHeadlines.length,0),152);
+  assert.equal(web.length,6);assert.equal(web.reduce((n,c)=>n+c.allHeadlines.length,0),179);
   assert(Buffer.byteLength(online)<Buffer.byteLength(html)*0.15);
   assert.equal(web.flatMap(c=>c.images).length,12);
   for(let c=0;c<web.length;c++)for(let i=0;i<web[c].images.length;i++){

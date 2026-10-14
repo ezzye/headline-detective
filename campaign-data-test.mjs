@@ -95,8 +95,8 @@ test('portable game boots offline and keeps Flack sample separate from aggregate
   await vm.runInContext('start()', context);
   assert.match(node('#app').innerHTML, /recovered dated headline sample/i);
   assert.doesNotMatch(node('#app').innerHTML, /Aggregate window/);
-  assert.match(node('#app').innerHTML, /24/);
-  assert.match(node('#app').innerHTML, /19/);
+  assert.match(node('#app').innerHTML, /32/);
+  assert.match(node('#app').innerHTML, /26/);
   assert.match(node('#app').innerHTML, /class="bar"/);
   assert.equal(vm.runInContext('desks.length',context),4);
   assert.equal(vm.runInContext('Object.keys(answers).length',context),0);
@@ -170,9 +170,9 @@ test('six playable cases share source-linked criteria and bounded sample rules',
   assert.equal(aggregate.outlet,'The Sun'); assert.equal(aggregate.count,99);
   assert.equal(aggregate.windowStart,'2019-08-14'); assert.equal(aggregate.windowEnd,'2020-02-14');
   assert.equal(aggregate.isDailySeries,false); assert.equal(aggregate.isThisSample,false);
-  assert.equal(flack.source.corpusCount,24); assert.equal(flack.source.selectedCount,19);
-  assert.equal(flack.allHeadlines.length,24);
-  assert.equal(flack.campaigns.reduce((n,d)=>n+d.listedCount,0),19);
+  assert.equal(flack.source.corpusCount,32); assert.equal(flack.source.selectedCount,26);
+  assert.equal(flack.allHeadlines.length,32);
+  assert.equal(flack.campaigns.reduce((n,d)=>n+d.listedCount,0),26);
   assert.ok(!flack.days.some(day => day < aggregate.windowStart), 'sample timeline does not extend the selected plot to the aggregate window');
   assert.notEqual(flack.source.corpusCount,aggregate.count,'dated sample and reported aggregate remain distinct quantities');
 });

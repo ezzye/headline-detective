@@ -28,13 +28,13 @@
   "source": {
     "name": "Recovered headline sample",
     "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-judgment-021221.pdf",
-    "retrieved": "2026-10-13",
+    "retrieved": "2026-10-14",
     "unit": "dated recovered headline records",
-    "corpusCount": 9,
-    "outletUniverse": 3,
+    "corpusCount": 10,
+    "outletUniverse": 4,
     "selectedCount": 9,
-    "scopeNote": "Fixed window 2019-02-06 through 2019-02-23 inclusive. The recovered set contains 9 dated headline records across three desks: four Guardian publisher-page items and five Mail/MailOnline titles transcribed in the 2020 High Court judgment, all dated 10 February. The court-listed titles are evidence of challenged items, not independent publisher page recoveries. This clustered, selected sample is insufficient to judge daily growth or compare overall coverage volume; missing records/dates are unknown, not zero.",
-    "sampleNote": "9 dated records retained: four dated Guardian publisher pages (13, 16, 20, 23 Feb), two Mail on Sunday print titles and three MailOnline titles documented in the later court judgment as published on 10 Feb. Three outlets are represented, but five rows share one date; ranked volume comparison disabled."
+    "scopeNote": "Fixed window 2019-02-06 through 2019-02-23 inclusive. Ten dated records: four Guardian publisher pages, five Mail/MailOnline article titles transcribed in paragraph 6 of the 2020 High Court judgment, and one directly verified People context page dated 6 February. Three playable desks remain; People is context-only, not a fourth chart desk. Court records two print headlines and three MailOnline web headlines, all dated 10 February 2019. Secondary commentary also gives 9 February; retain the court date pending original timestamp evidence. The sample does not establish overall volume or trends.",
+    "sampleNote": "10 records including one People context-only publisher page; chart retains three desks and nine playable/countable records. Five Mail/MailOnline titles are court-transcribed, not direct publisher page recoveries. Print/web distinction preserved; no private letter text."
   },
   "events": [
     {
@@ -195,6 +195,30 @@
       "url": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
       "date": "2019-02-23",
       "text": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit."
+    },
+    {
+      "id": "markle-five-court-listed-articles",
+      "label": "official-high-court-judgment",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "text": "Paragraph 6, PDF pp. 1-2: names both publications, dates the challenged articles 10 February 2019, lists two print page spreads and three MailOnline headlines. Primary support for record separation, publication date, outlet/format and the already-stored headline transcriptions. This is a later court transcription, not contemporaneous publisher-page retrieval."
+    },
+    {
+      "id": "markle-contemporaneous-people-page",
+      "label": "original-publisher-page",
+      "url": "https://people.com/royals/meghan-markles-best-friends-break-their-silence-we-want-to-speak-the-truth/",
+      "text": "Current publisher H1 and date at lines 22 and 37. Digital page title is not the shorter magazine/cover title used by the court. Direct publisher verification of the People web record and date."
+    },
+    {
+      "id": "markle-appeal-judgment",
+      "label": "official-court-of-appeal-judgment",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-judgment-021221.pdf",
+      "text": "Paragraph 20 (PDF p. 6) dates the People article to 6 February. Paragraphs 95 and 106 are cited in the official summary for the Court's conclusion about whether the Mail articles were proportionate. Paragraph 56 of the 2021 High Court judgment describes the five Mail articles and says the coverage was across print and web. Retrospective judicial context and confirmation; not a contemporaneous count row. No private-letter text is reproduced."
+    },
+    {
+      "id": "markle-appeal-summary",
+      "label": "official-court-summary",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+      "text": "PDF page 2 states People date 6 February; quotes the MoS headline and refers to the first line of the MoS article; explains the Court of Appeal's conclusion and citations to paragraphs 95/102/106. Concise official summary, explicitly not itself part of the decision; use the judgment for authoritative findings."
     }
   ],
   "reasoningChecks": [
@@ -346,35 +370,55 @@
         {
           "id": "markle-letter-h01",
           "headline": "Revealed: The letter showing true tragedy of Meghan’s rift with a father she says has “broken her heart into a million pieces”",
-          "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
           "published": "2019-02-10",
-          "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
+          "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
           "kind": "news",
           "eventId": "event-2",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "originalURL": null,
+          "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
+          "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+          "format": "Mail on Sunday print",
+          "evidenceId": "markle-five-court-listed-articles",
+          "accessDate": "2026-10-14",
+          "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. Mail on Sunday print."
         },
         {
           "id": "markle-letter-h11",
           "headline": "Meghan: Stop painful attacks on Harry; Her dad: I like him…. I’ll always love you",
           "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
           "published": "2019-02-10",
-          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
           "kind": "news",
           "eventId": "event-2",
-          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events."
+          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
+          "originalURL": null,
+          "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
+          "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+          "format": "Mail on Sunday print",
+          "evidenceId": "markle-five-court-listed-articles",
+          "accessDate": "2026-10-14",
+          "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. Mail on Sunday print."
         }
       ],
       "reviewNotes": {
         "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
         "pressure": "The cleaned recovered sample lists 2 dated headline records from this desk over 1 publication dates. Court-listed titles are records of distinct challenged articles, not separate events. This is not a complete archive or proof of intent.",
-        "limit": "These titles and their 10 February publication date are transcribed from the later High Court judgment; the contemporaneous publisher pages and URLs were not recovered. The selected set is too clustered for a volume ranking."
+        "limit": "Nine playable records across three desks plus one context-only People web row; the five court-transcribed Mail articles cluster on 10 February and do not establish volume or trend."
       },
       "scrutiny": [
         {
           "criterionId": "public_value",
           "observation": "The sample follows the publication of extracts from a private letter and subsequent legal steps.",
           "question": "What public interest did each item serve, and what information could be reported without reproducing private correspondence?",
-          "limit": "Nine records form a selected, date-clustered sample, not a census or daily volume series.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -383,7 +427,7 @@
           "criterionId": "context",
           "observation": "The publisher argued its article answered inaccuracies; the Court of Appeal later upheld a privacy finding concerning five specific articles.",
           "question": "Were the parties’ arguments and the later, case-specific legal outcome kept distinct?",
-          "limit": "The court ruling concerns specified articles, not every item or all coverage.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -392,7 +436,7 @@
           "criterionId": "framing",
           "observation": "Framing family correspondence as a dramatic rift can turn private pain into spectacle.",
           "question": "Did headlines provide necessary context without treating intimate correspondence as entertainment?",
-          "limit": "Headline wording cannot by itself establish what the article disclosed.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -401,7 +445,7 @@
           "criterionId": "care",
           "observation": "Legal action was contemplated in the sample window; adjudication came later.",
           "question": "Was persistence proportionate while proceedings were unresolved?",
-          "limit": "Later legal outcomes are retrospective evidence and must be dated separately.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -410,7 +454,7 @@
           "criterionId": "consistency",
           "observation": "The sample includes publisher and competing outlet accounts.",
           "question": "Would similar private correspondence involving another public figure receive similar restraint?",
-          "limit": "The selected outlets do not show the whole media response.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -419,7 +463,7 @@
           "criterionId": "transparency",
           "observation": "Four Guardian items are verified publisher pages; five Mail/MailOnline titles and their date are transcribed from the later High Court judgment.",
           "question": "Can readers identify original publisher items versus legal-record reproductions?",
-          "limit": "Five court-listed titles share 10 February and do not establish five separate events; original page URLs are not recovered.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -430,7 +474,7 @@
         "paragraphs": [
           {
             "kind": "report",
-            "text": "We would say readers had an interest in a public figure’s family dispute and in the father’s response to an earlier account. The court record lists two print headlines from 10 February. These are transcriptions from a later judgment, not recovered publisher pages or a census of our output.",
+            "text": "We would say readers had an interest in a public figure’s family dispute and in the father’s response to an earlier account. The court record lists two print headlines from 10 February transcribed in High Court judgment paragraph 6 (PDF pp. 2–3). These are transcriptions from a later judgment, not recovered publisher pages or a census of our output.",
             "evidenceIds": [
               "markle-letter-h01",
               "markle-letter-h11",
@@ -456,7 +500,7 @@
           },
           {
             "kind": "analysis",
-            "text": "Our two titles share one date; they are not two separate events, and their original pages remain unrecovered. They show wording identified by the court, not total output or a daily trend. A responsible account would avoid repeating the letter, state the dispute’s status, and admit where the public-interest case fails.",
+            "text": "The complete sample has ten records, including one context-only People web page dated 6 February; the playable chart remains three desks. The five Mail/MailOnline titles are a court-confirmed 10 February record, not recovered original pages. Secondary commentary also gives 9 February, so we preserve that uncertainty rather than silently changing the court date. No private letter is reproduced.",
             "evidenceIds": [
               "markle-letter-h01",
               "markle-letter-h11",
@@ -473,19 +517,22 @@
           "headline": "Revealed: The letter showing true tragedy of Meghan’s rift with a father she says has “broken her heart into a million pieces”",
           "kind": "news",
           "originalURL": null,
-          "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
-          "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
-          "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
+          "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
           "eventId": "event-2",
           "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
           "wave": "People published an article quoting friends and referencing a private letter to Thomas Markle. / The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
           "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
           "archiveReproduction": true,
-          "sampleNote": "Exact print headline reproduced in court summary; direct article URL is a best-effort URL and should be checked before production use.",
-          "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
-          "auditStatus": "primary_document_headline_match",
-          "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
-          "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record. Verification URL differs from original URL; this audit checked the recorded verification URL only."
+          "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. Mail on Sunday print.",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
+          "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+          "format": "Mail on Sunday print",
+          "evidenceId": "markle-five-court-listed-articles",
+          "accessDate": "2026-10-14"
         },
         {
           "id": "markle-letter-h11",
@@ -496,17 +543,20 @@
           "originalURL": null,
           "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
           "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
           "eventId": "event-2",
           "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
           "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
           "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
           "archiveReproduction": true,
-          "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+          "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. Mail on Sunday print.",
           "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-          "auditStatus": "primary_court_transcription_date_title_match",
+          "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
           "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-          "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+          "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+          "format": "Mail on Sunday print",
+          "evidenceId": "markle-five-court-listed-articles",
+          "accessDate": "2026-10-14"
         }
       ]
     },
@@ -542,43 +592,73 @@
           "headline": "Revealed: The Handwritten letter showing true tragedy of Meghan’s rift with a father she says has ‘broken her heart into a million pieces’",
           "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
           "published": "2019-02-10",
-          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
           "kind": "news",
           "eventId": "event-2",
-          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events."
+          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
+          "originalURL": null,
+          "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
+          "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+          "format": "MailOnline web",
+          "evidenceId": "markle-five-court-listed-articles",
+          "accessDate": "2026-10-14",
+          "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. MailOnline web."
         },
         {
           "id": "markle-letter-h13",
           "headline": "Meghan Markle urged her father to stop ‘painful’ attacks on ‘patient, kind and understanding’ Prince Harry in five-page letter – but anguished dad says ‘I like him… and I’ll always love you’",
           "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
           "published": "2019-02-10",
-          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
           "kind": "news",
           "eventId": "event-2",
-          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events."
+          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
+          "originalURL": null,
+          "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
+          "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+          "format": "MailOnline web",
+          "evidenceId": "markle-five-court-listed-articles",
+          "accessDate": "2026-10-14",
+          "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. MailOnline web."
         },
         {
           "id": "markle-letter-h14",
           "headline": "Secrets of Meghan’s letter revealed: note to her father saying her heart has been ‘broken into a million pieces’ reveals she is a ‘narcissistic showman whose self-control is wavering",
           "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
           "published": "2019-02-10",
-          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
           "kind": "news",
           "eventId": "event-2",
-          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events."
+          "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
+          "originalURL": null,
+          "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+          "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
+          "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+          "format": "MailOnline web",
+          "evidenceId": "markle-five-court-listed-articles",
+          "accessDate": "2026-10-14",
+          "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. MailOnline web."
         }
       ],
       "reviewNotes": {
         "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
         "pressure": "The cleaned recovered sample lists 3 dated headline records from this desk over 1 publication dates. Court-listed titles are records of distinct challenged articles, not separate events. This is not a complete archive or proof of intent.",
-        "limit": "These titles and their 10 February publication date are transcribed from the later High Court judgment; the contemporaneous publisher pages and URLs were not recovered. The selected set is too clustered for a volume ranking."
+        "limit": "Nine playable records across three desks plus one context-only People web row; the five court-transcribed Mail articles cluster on 10 February and do not establish volume or trend."
       },
       "scrutiny": [
         {
           "criterionId": "public_value",
           "observation": "The sample follows the publication of extracts from a private letter and subsequent legal steps.",
           "question": "What public interest did each item serve, and what information could be reported without reproducing private correspondence?",
-          "limit": "Nine records form a selected, date-clustered sample, not a census or daily volume series.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -587,7 +667,7 @@
           "criterionId": "context",
           "observation": "The publisher argued its article answered inaccuracies; the Court of Appeal later upheld a privacy finding concerning five specific articles.",
           "question": "Were the parties’ arguments and the later, case-specific legal outcome kept distinct?",
-          "limit": "The court ruling concerns specified articles, not every item or all coverage.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -596,7 +676,7 @@
           "criterionId": "framing",
           "observation": "Framing family correspondence as a dramatic rift can turn private pain into spectacle.",
           "question": "Did headlines provide necessary context without treating intimate correspondence as entertainment?",
-          "limit": "Headline wording cannot by itself establish what the article disclosed.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -605,7 +685,7 @@
           "criterionId": "care",
           "observation": "Legal action was contemplated in the sample window; adjudication came later.",
           "question": "Was persistence proportionate while proceedings were unresolved?",
-          "limit": "Later legal outcomes are retrospective evidence and must be dated separately.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -614,7 +694,7 @@
           "criterionId": "consistency",
           "observation": "The sample includes publisher and competing outlet accounts.",
           "question": "Would similar private correspondence involving another public figure receive similar restraint?",
-          "limit": "The selected outlets do not show the whole media response.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -623,7 +703,7 @@
           "criterionId": "transparency",
           "observation": "Four Guardian items are verified publisher pages; five Mail/MailOnline titles and their date are transcribed from the later High Court judgment.",
           "question": "Can readers identify original publisher items versus legal-record reproductions?",
-          "limit": "Five court-listed titles share 10 February and do not establish five separate events; original page URLs are not recovered.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -662,7 +742,7 @@
           },
           {
             "kind": "analysis",
-            "text": "Our three titles share one date and are listed in the court record; they do not establish daily growth, total site coverage, or separate underlying events. A responsible defence would explain purpose without reproducing the letter, distinguish claims from rulings, and admit the difficulty of defending the most personal framing.",
+            "text": "The complete sample has ten records, including one context-only People web page dated 6 February; the playable chart remains three desks. The five Mail/our online desk titles are a court-confirmed 10 February record, not recovered original pages. Secondary commentary also gives 9 February, so we preserve that uncertainty rather than silently changing the court date. No private letter is reproduced.",
             "evidenceIds": [
               "markle-letter-h12",
               "markle-letter-h13",
@@ -682,17 +762,20 @@
           "originalURL": null,
           "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
           "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
           "eventId": "event-2",
           "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
           "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
           "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
           "archiveReproduction": true,
-          "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+          "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. MailOnline web.",
           "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-          "auditStatus": "primary_court_transcription_date_title_match",
+          "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
           "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-          "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+          "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+          "format": "MailOnline web",
+          "evidenceId": "markle-five-court-listed-articles",
+          "accessDate": "2026-10-14"
         },
         {
           "id": "markle-letter-h13",
@@ -703,17 +786,20 @@
           "originalURL": null,
           "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
           "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
           "eventId": "event-2",
           "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
           "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
           "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
           "archiveReproduction": true,
-          "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+          "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. MailOnline web.",
           "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-          "auditStatus": "primary_court_transcription_date_title_match",
+          "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
           "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-          "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+          "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+          "format": "MailOnline web",
+          "evidenceId": "markle-five-court-listed-articles",
+          "accessDate": "2026-10-14"
         },
         {
           "id": "markle-letter-h14",
@@ -724,17 +810,20 @@
           "originalURL": null,
           "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
           "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-          "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+          "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
           "eventId": "event-2",
           "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
           "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
           "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
           "archiveReproduction": true,
-          "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+          "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. MailOnline web.",
           "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-          "auditStatus": "primary_court_transcription_date_title_match",
+          "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
           "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-          "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+          "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+          "format": "MailOnline web",
+          "evidenceId": "markle-five-court-listed-articles",
+          "accessDate": "2026-10-14"
         }
       ]
     },
@@ -773,7 +862,9 @@
           "verification": "Guardian page gives exact headline and first-published time Wed 13 Feb 2019 05:43 EST; agency report quotes Clooney criticizing the pursuit and publication of the letter.",
           "kind": "news",
           "eventId": "event-4",
-          "noveltyClaim": "Reports a public response about press conduct; it is not a separate event in the family dispute."
+          "noveltyClaim": "Reports a public response about press conduct; it is not a separate event in the family dispute.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "publisher_page_title_date_match"
         },
         {
           "id": "markle-letter-h16",
@@ -783,7 +874,9 @@
           "verification": "Guardian page gives exact headline and date Sat 16 Feb 2019 15:30 EST; Catherine Bennett’s comment explicitly discusses press treatment and the letter released by Meghan’s father.",
           "kind": "comment",
           "eventId": "event-5",
-          "noveltyClaim": "Opinion about accumulated press treatment; it is not a separate event in the family dispute."
+          "noveltyClaim": "Opinion about accumulated press treatment; it is not a separate event in the family dispute.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "publisher_page_title_date_match"
         },
         {
           "id": "markle-letter-h17",
@@ -793,7 +886,9 @@
           "verification": "Guardian page gives exact headline and date Wed 20 Feb 2019 12:44 EST; Zoe Williams’s comment addresses the level of scrutiny and vilification.",
           "kind": "comment",
           "eventId": "event-6",
-          "noveltyClaim": "Opinion about the broader pattern of scrutiny; it is not a separate event in the family dispute."
+          "noveltyClaim": "Opinion about the broader pattern of scrutiny; it is not a separate event in the family dispute.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "publisher_page_title_date_match"
         },
         {
           "id": "markle-letter-h10",
@@ -803,20 +898,22 @@
           "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
           "kind": "news",
           "eventId": "event-3",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "publisher_page_title_date_match"
         }
       ],
       "reviewNotes": {
         "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
         "pressure": "The cleaned recovered sample lists 4 dated headline records from this desk over 4 publication dates. Five Mail/MailOnline rows are court-listed titles all dated 10 February; they are not five separate events. This is not a complete archive or proof of intent.",
-        "limit": "The Guardian rows are verified publisher pages; the five Mail/MailOnline titles are transcribed from a later court judgment, and their original pages were not recovered. The set is too clustered and incomplete for a volume ranking."
+        "limit": "Nine playable records across three desks plus one context-only People web row; the five court-transcribed Mail articles cluster on 10 February and do not establish volume or trend."
       },
       "scrutiny": [
         {
           "criterionId": "public_value",
           "observation": "The sample follows the publication of extracts from a private letter and subsequent legal steps.",
           "question": "What public interest did each item serve, and what information could be reported without reproducing private correspondence?",
-          "limit": "Nine records form a selected, date-clustered sample, not a census or daily volume series.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -825,7 +922,7 @@
           "criterionId": "context",
           "observation": "The publisher argued its article answered inaccuracies; the Court of Appeal later upheld a privacy finding concerning five specific articles.",
           "question": "Were the parties’ arguments and the later, case-specific legal outcome kept distinct?",
-          "limit": "The court ruling concerns specified articles, not every item or all coverage.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -834,7 +931,7 @@
           "criterionId": "framing",
           "observation": "Framing family correspondence as a dramatic rift can turn private pain into spectacle.",
           "question": "Did headlines provide necessary context without treating intimate correspondence as entertainment?",
-          "limit": "Headline wording cannot by itself establish what the article disclosed.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -843,7 +940,7 @@
           "criterionId": "care",
           "observation": "Legal action was contemplated in the sample window; adjudication came later.",
           "question": "Was persistence proportionate while proceedings were unresolved?",
-          "limit": "Later legal outcomes are retrospective evidence and must be dated separately.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -852,7 +949,7 @@
           "criterionId": "consistency",
           "observation": "The sample includes publisher and competing outlet accounts.",
           "question": "Would similar private correspondence involving another public figure receive similar restraint?",
-          "limit": "The selected outlets do not show the whole media response.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -861,7 +958,7 @@
           "criterionId": "transparency",
           "observation": "Four Guardian items are verified publisher pages; five Mail/MailOnline titles and their date are transcribed from the later High Court judgment.",
           "question": "Can readers identify original publisher items versus legal-record reproductions?",
-          "limit": "Five court-listed titles share 10 February and do not establish five separate events; original page URLs are not recovered.",
+          "limit": "The ten-row full sample includes one People context row outside the charts; five court-listed Mail articles share one date. The sample is not a census or volume trend.",
           "evidenceIds": [
             "trial-judgment"
           ]
@@ -897,7 +994,7 @@
           },
           {
             "kind": "analysis",
-            "text": "Later courts found five specific articles unlawful on privacy grounds; that does not decide every report or column. Our defence is that scrutiny of press conduct and a legal threat mattered publicly. It weakens wherever our wording amplified distress or invited judgment of the woman instead of the reporting.",
+            "text": "The complete sample has ten records, including one context-only People web page dated 6 February; the playable chart remains three desks. The five Mail/MailOnline titles are a court-confirmed 10 February record, not recovered original pages. Secondary commentary also gives 9 February, so we preserve that uncertainty rather than silently changing the court date. No private letter is reproduced.",
             "evidenceIds": [
               "initial-judgment",
               "trial-judgment"
@@ -925,7 +1022,8 @@
           "url": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
-          "auditNote": "Web publisher page confirms first publication date and headline."
+          "auditNote": "Web publisher page confirms first publication date and headline.",
+          "accessDate": "2026-10-14"
         },
         {
           "id": "markle-letter-h16",
@@ -946,7 +1044,8 @@
           "url": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
-          "auditNote": "Web publisher page confirms headline and original date; later modified date is excluded."
+          "auditNote": "Web publisher page confirms headline and original date; later modified date is excluded.",
+          "accessDate": "2026-10-14"
         },
         {
           "id": "markle-letter-h17",
@@ -967,7 +1066,8 @@
           "url": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
-          "auditNote": "Web publisher page confirms headline and original date; later modified date is excluded."
+          "auditNote": "Web publisher page confirms headline and original date; later modified date is excluded.",
+          "accessDate": "2026-10-14"
         },
         {
           "id": "markle-letter-h10",
@@ -988,13 +1088,14 @@
           "url": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
-          "auditNote": null
+          "auditNote": null,
+          "accessDate": "2026-10-14"
         }
       ]
     }
   ],
   "context": {
-    "statusAtWindowEnd": "Do not reproduce the letter or sensitive family correspondence. The courts ruled on privacy/copyright for five specific articles; the publisher disputed the judgment and argued a public-interest correction. This sample is not an exhaustive account of Meghan coverage and does not support blanket judgments about all outlets. The February 10 MailOnline row is a court-recorded title whose original page URL is uncertain; treat it as a separate online rendition only if the linked original can be confirmed.",
+    "statusAtWindowEnd": "No private letter text is reproduced. The 2019 dated sample contains five Mail/MailOnline articles listed retrospectively in High Court paragraph 6 (two print and three web) plus four Guardian pages; People’s 6 February publisher page is included as one context row. People is not a fourth playable desk. The five court-listed articles are distinct challenged titles on one date, not five separate events or a volume trend.",
     "sequence": [
       {
         "date": "2019-02-06",
@@ -1037,7 +1138,16 @@
       }
     ]
   },
-  "comparison": {},
+  "comparison": {
+    "fullSampleRecords": 10,
+    "playableDeskCount": 3,
+    "contextOnlyRecords": [
+      "markle-people-digital-20190206"
+    ],
+    "courtListedMailRecords": 5,
+    "courtDate": "2019-02-10",
+    "dateConflict": "Some secondary retrospective commentary says 2019-02-09; original Mail/MailOnline timestamps were not retrieved. Use the court-confirmed date in the corpus and preserve the conflict."
+  },
   "narrationNotice": "Fictional editor role-play; not an actual outlet statement.",
   "countMode": "dated-sample",
   "scrutinyCriteria": [
@@ -1072,12 +1182,40 @@
       "question": "Can we account for the sample, its limits, later edits and the outlet’s role?"
     }
   ],
-  "dataCompleteness": "This is a bounded, event-led recovered sample, not a census or daily volume series. Four Guardian publisher pages are verified for 13, 16, 20 and 23 February. Five exact Mail/MailOnline titles and their 10 February publication date are reproduced in the 1 May 2020 High Court judgment; contemporaneous publisher URLs were not recovered. Five titles on one date do not establish five separate events or an overall volume trend. Missing dates do not mean no coverage.",
+  "dataCompleteness": "This is a bounded 10-record sample: four Guardian publisher pages, five Mail/MailOnline headlines transcribed from paragraph 6 of the official 2020 High Court judgment, and one context-only People web page directly verified as published 6 February. The People row is not a playable desk; the three playable outlets remain Mail on Sunday, MailOnline and the Guardian. The five court titles are retrospective confirmation of challenged article headlines and 10 February date, not contemporaneous page retrieval. Secondary commentary gives a 9 February date; official High Court paragraph 6 and Court of Appeal paragraph 56 support 10 February, which is retained pending original timestamp verification. This is not a census or daily volume series. No private letter text is included.",
   "researchProvenance": {
-    "file": "case-markle-letter-research.json",
-    "retrievedOn": "2026-10-13"
+    "file": "work/archive-research/markle-findings.json",
+    "retrievedOn": "2026-10-14",
+    "researchUpdate": "Added the directly verified People web article dated 6 February as context-only. Upgraded all five Mail/MailOnline records to official High Court paragraph 6 title/date/format support (PDF pp. 2–3), with two print page spreads and three web articles. Preserved the 9 vs 10 February conflict; court-confirmed 10 February remains the corpus date.",
+    "accessDate": "2026-10-14"
   },
   "allHeadlines": [
+    {
+      "id": "markle-people-digital-20190206",
+      "date": "2019-02-06",
+      "outlet": "People",
+      "headline": "Meghan Markle's Best Friends Break Their Silence: 'We Want to Speak the Truth'",
+      "kind": "context",
+      "originalURL": "https://people.com/royals/meghan-markles-best-friends-break-their-silence-we-want-to-speak-the-truth/",
+      "verificationSourceURL": "https://people.com/royals/meghan-markles-best-friends-break-their-silence-we-want-to-speak-the-truth/",
+      "sourceURL": "https://people.com/royals/meghan-markles-best-friends-break-their-silence-we-want-to-speak-the-truth/",
+      "verification": "People's live publisher page shows the exact digital H1 and 'Published on February 6, 2019 08:00AM EST'. The 2021 Court of Appeal judgment, paragraph 20, independently identifies the People article as first published 6 February. This is the web headline; the court separately identifies the magazine/cover article as 'The Truth about Meghan'. Do not conflate the web headline with the print cover headline.",
+      "eventId": "event-1",
+      "event": "People's article preceded the Mail on Sunday/MailOnline letter coverage and was later cited by the publisher as context for its response.",
+      "wave": "People published a directly verified web article on 6 February; Mail on Sunday and MailOnline published the five court-listed articles on 10 February.",
+      "noveltyClaim": "Adds a directly verified publisher page for the opening event already described in the case chronology; keep this contextual People record separate from the five Mail articles dated by the High Court.",
+      "archiveReproduction": false,
+      "sampleNote": "Context-only web record; does not add a playable outlet or campaign desk. Publisher H1 is not the print-cover wording.",
+      "url": "https://people.com/royals/meghan-markles-best-friends-break-their-silence-we-want-to-speak-the-truth/",
+      "auditStatus": "publisher_page_title_date_match_context_only",
+      "auditedURL": "https://people.com/royals/meghan-markles-best-friends-break-their-silence-we-want-to-speak-the-truth/",
+      "auditNote": "Direct current People publisher page and Court of Appeal paragraph 20 confirm 6 February 2019.",
+      "format": "web",
+      "contextOnly": true,
+      "chartEligible": false,
+      "evidenceId": "markle-contemporaneous-people-page",
+      "accessDate": "2026-10-14"
+    },
     {
       "id": "markle-letter-h01",
       "date": "2019-02-10",
@@ -1085,19 +1223,22 @@
       "headline": "Revealed: The letter showing true tragedy of Meghan’s rift with a father she says has “broken her heart into a million pieces”",
       "kind": "news",
       "originalURL": null,
-      "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
-      "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
-      "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
+      "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
       "eventId": "event-2",
       "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
       "wave": "People published an article quoting friends and referencing a private letter to Thomas Markle. / The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
       "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
       "archiveReproduction": true,
-      "sampleNote": "Exact print headline reproduced in court summary; direct article URL is a best-effort URL and should be checked before production use.",
-      "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
-      "auditStatus": "primary_document_headline_match",
-      "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-summary-021221.pdf",
-      "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record. Verification URL differs from original URL; this audit checked the recorded verification URL only."
+      "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. Mail on Sunday print.",
+      "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
+      "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
+      "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+      "format": "Mail on Sunday print",
+      "evidenceId": "markle-five-court-listed-articles",
+      "accessDate": "2026-10-14"
     },
     {
       "id": "markle-letter-h11",
@@ -1108,17 +1249,20 @@
       "originalURL": null,
       "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
       "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-      "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+      "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
       "eventId": "event-2",
       "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
       "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
       "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
       "archiveReproduction": true,
-      "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+      "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. Mail on Sunday print.",
       "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-      "auditStatus": "primary_court_transcription_date_title_match",
+      "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
       "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-      "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+      "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+      "format": "Mail on Sunday print",
+      "evidenceId": "markle-five-court-listed-articles",
+      "accessDate": "2026-10-14"
     },
     {
       "id": "markle-letter-h12",
@@ -1129,17 +1273,20 @@
       "originalURL": null,
       "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
       "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-      "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+      "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
       "eventId": "event-2",
       "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
       "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
       "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
       "archiveReproduction": true,
-      "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+      "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. MailOnline web.",
       "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-      "auditStatus": "primary_court_transcription_date_title_match",
+      "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
       "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-      "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+      "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+      "format": "MailOnline web",
+      "evidenceId": "markle-five-court-listed-articles",
+      "accessDate": "2026-10-14"
     },
     {
       "id": "markle-letter-h13",
@@ -1150,17 +1297,20 @@
       "originalURL": null,
       "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
       "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-      "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+      "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
       "eventId": "event-2",
       "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
       "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
       "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
       "archiveReproduction": true,
-      "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+      "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. MailOnline web.",
       "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-      "auditStatus": "primary_court_transcription_date_title_match",
+      "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
       "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-      "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+      "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+      "format": "MailOnline web",
+      "evidenceId": "markle-five-court-listed-articles",
+      "accessDate": "2026-10-14"
     },
     {
       "id": "markle-letter-h14",
@@ -1171,17 +1321,20 @@
       "originalURL": null,
       "verificationSourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
       "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-      "verification": "Exact headline and date transcribed from paragraph 6, table of challenged articles, in the High Court judgment handed down 1 May 2020; contemporaneous publisher page and URL not recovered.",
+      "verification": "Exact title and publication date transcribed from paragraph 6 of the official High Court judgment handed down 1 May 2020 (PDF pp. 2–3). The judgment identifies these as two Mail on Sunday print headlines (pp. 4–5 and 6–7) and three MailOnline web headlines, all dated 10 February 2019. Original publisher URLs were not recovered; this later judgment is retrospective verification, not a 2019 publication row.",
       "eventId": "event-2",
       "event": "The Mail on Sunday and MailOnline published extracts from the handwritten letter.",
       "wave": "The sample’s 10 February letter publication and subsequent coverage led to criticism, legal threat reporting, and later commentary.",
       "noveltyClaim": "A separate challenged headline listed by the court; the court records five articles on 10 February, not five distinct underlying events.",
       "archiveReproduction": true,
-      "sampleNote": "Court-recorded headline transcription; not an independently recovered publisher page. Original URL unavailable.",
+      "sampleNote": "Court-transcribed headline/date; retrospective official judicial evidence, not a recovered original publisher page. MailOnline web.",
       "url": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-      "auditStatus": "primary_court_transcription_date_title_match",
+      "auditStatus": "official_high_court_para6_transcription_date_format_confirmed",
       "auditedURL": "https://www.judiciary.uk/wp-content/uploads/2020/05/sussex-v-associated-judgment-010520-1-1.pdf",
-      "auditNote": "Paragraph 6 of official High Court judgment lists the title and publication date. This is retrospective court evidence, not publisher-page retrieval."
+      "auditNote": "High Court judgment, paragraph 6, PDF pp. 2–3; date support: 10 February 2019. Court of Appeal judgment paragraph 56 also describes five articles on Sunday 10 February. Some later secondary legal commentary gives 9 February; without original publisher timestamps, preserve the conflict and do not silently shift the court-confirmed date.",
+      "format": "MailOnline web",
+      "evidenceId": "markle-five-court-listed-articles",
+      "accessDate": "2026-10-14"
     },
     {
       "id": "markle-letter-h15",
@@ -1202,7 +1355,8 @@
       "url": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/film/2019/feb/13/meghan-vilified-and-chased-by-press-like-diana-says-george-clooney",
-      "auditNote": "Web publisher page confirms first publication date and headline."
+      "auditNote": "Web publisher page confirms first publication date and headline.",
+      "accessDate": "2026-10-14"
     },
     {
       "id": "markle-letter-h16",
@@ -1223,7 +1377,8 @@
       "url": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/commentisfree/2019/feb/16/tormenting-meghan-markle-has-become-a-national-sport-that-shames-us",
-      "auditNote": "Web publisher page confirms headline and original date; later modified date is excluded."
+      "auditNote": "Web publisher page confirms headline and original date; later modified date is excluded.",
+      "accessDate": "2026-10-14"
     },
     {
       "id": "markle-letter-h17",
@@ -1244,7 +1399,8 @@
       "url": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/commentisfree/2019/feb/20/meghan-duchess-sussex-damned-hate-figure",
-      "auditNote": "Web publisher page confirms headline and original date; later modified date is excluded."
+      "auditNote": "Web publisher page confirms headline and original date; later modified date is excluded.",
+      "accessDate": "2026-10-14"
     },
     {
       "id": "markle-letter-h10",
@@ -1265,11 +1421,12 @@
       "url": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/uk-news/2019/feb/23/duchess-of-sussex-threatens-to-sue-mail-on-sunday-over-letter-to-father",
-      "auditNote": null
+      "auditNote": null,
+      "accessDate": "2026-10-14"
     }
   ],
   "rankedComparisonEligible": false,
-  "rankedComparisonNote": "Disabled: five court-listed titles improve the recovered record set, but all five are one day of challenged articles and only four Guardian publisher pages are recovered in-window. This is not a representative daily series or census.",
+  "rankedComparisonNote": "Disabled: the 10-row full sample includes one People context row excluded from charting, while five Mail/MailOnline titles are a single court-documented date and four Guardian pages span later dates. The source formats and evidence bases differ; this is not a reliable ranked-volume comparison.",
   "publicContext": {
     "intro": "Coverage in February 2019 centred on Meghan, Duchess of Sussex, her relationship with her father and publication of a private letter. Public curiosity and public interest are different questions. Later court findings about privacy and copyright provide context, while remaining separate from what editors knew at publication.",
     "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/Sussex-v-Associated-News-judgment-021221.pdf",
@@ -1334,5 +1491,36 @@
       "filePage": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace.jpg",
       "licenseURL": "https://creativecommons.org/licenses/by/2.0/"
     }
-  ]
+  ],
+  "archiveChecks": [
+    {
+      "target": "MailOnline February 2019 article pages",
+      "attempt": "Publisher-domain search was blocked by robots.txt in the web search tool. No MailOnline original URL was recovered from the official judgment table. Wayback CDX was inaccessible; archive.org availability returned 429 before any archive metadata appeared in temporary tabs.",
+      "archiveURL": null,
+      "captureTimestamp": null,
+      "outcome": "No archive capture retrieved or verified. The court's title/date table is not an archive capture."
+    },
+    {
+      "target": "Mail on Sunday print pages 4-7, 10 February 2019",
+      "attempt": "Official High Court judgment paragraph 6 provides page references and title transcription. No print scan or publisher page was recovered. Wayback cannot establish a print scan where no online source was identified.",
+      "archiveURL": null,
+      "captureTimestamp": null,
+      "outcome": "No archive capture retrieved or verified."
+    },
+    {
+      "target": "People digital article dated 2019-02-06",
+      "attempt": "Direct publisher page opened; Wayback CDX was inaccessible and archive.org availability returned 429 in the temporary browser.",
+      "archiveURL": null,
+      "captureTimestamp": null,
+      "outcome": "Publisher page verifies current page title/date; no archive capture metadata retrieved."
+    }
+  ],
+  "searchLimitations": [
+    "The four existing Mail/MailOnline headline records remain court-transcribed records, not recovered contemporaneous publisher pages. Direct search for the original MailOnline pages was blocked by robots.txt, and the official judgment table does not supply their URLs.",
+    "The High Court and Court of Appeal treat the challenged publication as 10 February 2019. Secondary retrospective legal commentary found in search results gives 9 February; without original online timestamps, preserve this conflict and the court-confirmed date.",
+    "Print and web are separate editions/publications in the source table. Five headline records on one date do not represent five independent events or five days of coverage.",
+    "Court judgments are retrospective context. Do not insert their publication dates as in-window media coverage rows.",
+    "No private letter text was transcribed or reproduced."
+  ],
+  "accessDate": "2026-10-14"
 }

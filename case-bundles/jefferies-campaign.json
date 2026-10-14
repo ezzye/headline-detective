@@ -342,36 +342,56 @@
     "2011-11-28"
   ],
   "source": {
-    "name": "Recovered headline sample",
+    "name": "Recovered headline and dated coverage sample",
     "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-    "retrieved": "2026-10-13",
+    "retrieved": "2026-10-14",
     "unit": "dated recovered headline records",
-    "corpusCount": 8,
+    "corpusCount": 15,
     "outletUniverse": 4,
-    "selectedCount": 8,
-    "scopeNote": "Fixed window 2010-12-30 through 2011-11-28 inclusive. Counts derive only from 8 dated recovered headlines after the source audit, across 4 outlets. The chart selects 4 desks. Missing records/dates are not proof that nothing was published; this is not a census and counts do not establish motive, harm or causation.",
-    "sampleNote": "8 dated records retained after page-level audit across 4 outlets; chart selects 4 desks. Inaccessible pages with previously recovered metadata are explicitly labelled; unsupported and mismatched records are excluded. This is a bounded incomplete sample, not a census."
+    "selectedCount": 15,
+    "scopeNote": "Fixed window 2010-12-30 through 2011-11-28 inclusive. Counts derive only from 15 dated records in the recovered sample across 4 selected outlets. Missing records or dates are not proof nothing was published; this is not a census and counts do not establish motive, harm or causation. The long window includes the initial late-December/early-January reporting burst and later legal/accountability coverage; it is not evidence of a continuous 334-day pile-on.",
+    "sampleNote": "15 dated records retained after this bounded source audit across 4 outlets. Print reproductions, publisher reports, opinion and judgment reproductions are distinguished. This is incomplete, not a census."
   },
   "events": [
     {
       "date": "2010-12-30",
-      "label": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
+      "label": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
       "evidenceId": "event-1"
     },
     {
       "date": "2011-01-01",
-      "label": "Jefferies was released on police bail. He was later cleared; the later clearance is not dated as 1 January here.",
+      "label": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
       "evidenceId": "event-2"
     },
     {
+      "date": "2011-02-01",
+      "label": "The Independent published an editorial calling for limits on naming uncharged people and criticizing the press treatment; this was commentary, not a legal change.",
+      "evidenceId": "editorial-debate"
+    },
+    {
+      "date": "2011-03-08",
+      "label": "The Independent reported police confirmation that Jefferies’s bail conditions had ended. This is the report date; the article’s “formally cleared” phrasing is not an acquittal or a charge decision.",
+      "evidenceId": "bail-conditions-ended-reported"
+    },
+    {
+      "date": "2011-05-11",
+      "label": "The Guardian reported that the Attorney General planned to launch contempt proceedings the next day; permission was granted on 12 May. This was a procedural step, not a finding.",
+      "evidenceId": "contempt-proceedings"
+    },
+    {
+      "date": "2011-06-30",
+      "label": "The Guardian previewed the scheduled contempt hearing and reported that both publishers denied liability.",
+      "evidenceId": "contempt-hearing"
+    },
+    {
       "date": "2011-07-29",
-      "label": "High Court found publishers of specific Sun and Daily Mirror material in contempt; eight newspapers also settled libel claims covering 40 articles.",
-      "evidenceId": "contempt-judgment"
+      "label": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
+      "evidenceId": "event-3"
     },
     {
       "date": "2011-11-28",
-      "label": "Jefferies gave evidence to the Leveson inquiry about the effects of press coverage.",
-      "evidenceId": "released-without-charge"
+      "label": "Jefferies gave evidence to the Leveson Inquiry about his account of the press coverage; this testimony is retrospective.",
+      "evidenceId": "event-4"
     }
   ],
   "evidence": [
@@ -385,15 +405,18 @@
       "id": "contempt-judgment",
       "label": "Leveson report reproducing court findings",
       "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
-      "text": "The Attorney General’s contempt proceedings resulted in fines of £50,000 for Mirror Group Newspapers for Daily Mirror articles published 31 December 2010 and 1 January 2011, and £18,000 for News Group Newspapers for a Sun article on 1 January 2011. The court found a substantial risk to the course of justice.",
-      "date": "2011-07-29",
-      "outcome": "formal contempt finding"
+      "text": "The report summarizes contempt findings tied to the Daily Mirror articles of 31 December 2010 and 1 January 2011 and The Sun article of 1 January 2011.",
+      "date": "2012-11-29",
+      "outcome": "formal contempt finding",
+      "retrospective": true,
+      "courtPage": "PDF pp. 134-136, report pp. 558-560, paras 4.3-4.7"
     },
     {
-      "id": "released-without-charge",
-      "label": "contemporaneous inquiry reporting",
+      "id": "guardian-leveson-20111128",
+      "label": "Guardian report on Leveson evidence, 28 November 2011",
       "url": "https://www.theguardian.com/media/2011/nov/28/leveson-inquiry-christopher-jefferies",
-      "text": "Jefferies was released without charge and later testified to the Leveson inquiry that he was vilified. The neighbour was later convicted; the wrongful-suspicion point is confirmed in the judicial report."
+      "text": "This record is an inquiry-day report, not proof that release from police custody on 1 January meant release from bail conditions.",
+      "date": "2011-11-28"
     },
     {
       "id": "libel-settlements",
@@ -410,30 +433,129 @@
     {
       "id": "event-1",
       "date": "2010-12-30",
-      "label": "Public-interest chronology: 2010-12-30",
-      "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-      "text": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder. The arrest initiated active proceedings and made prejudicial publication a fair-trial concern; it was not a charge or proof."
+      "label": "Public-interest chronology: 2010-12-30 arrest",
+      "url": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+      "text": "Jefferies’s witness statement says he was arrested on suspicion on 30 December 2010."
     },
     {
       "id": "event-2",
       "date": "2011-01-01",
-      "label": "Public-interest chronology: 2011-01-01",
-      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
-      "text": "Jefferies was released on police bail and later without charge; the case proceeded against another suspect. Status updates should distinguish arrest, bail, release and charge."
+      "label": "Public-interest chronology: 2011-01-01 custody release on police bail",
+      "url": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
+      "text": "Guardian reported custody release on police bail and said the investigation continued."
     },
     {
       "id": "event-3",
       "date": "2011-07-29",
-      "label": "Public-interest chronology: 2011-07-29",
-      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
-      "text": "High Court found publishers of specific Sun and Daily Mirror material in contempt; eight newspapers also settled libel claims covering 40 articles. Formal legal outcomes establish accountability for defined material, not guilt by association across every outlet or item."
+      "label": "Public-interest chronology: 2011-07-29 High Court judgment",
+      "url": "https://www.gov.uk/government/news/newspapers-guilty-of-contempt-during-joanna-yeates-murder-investigation",
+      "text": "The Attorney General’s official release records the contempt finding and identifies the Daily Mirror and Sun publication dates at issue. This is a specific legal finding."
     },
     {
       "id": "event-4",
       "date": "2011-11-28",
-      "label": "Public-interest chronology: 2011-11-28",
+      "label": "Public-interest chronology: 2011-11-28 Leveson evidence",
       "url": "https://www.theguardian.com/media/2011/nov/28/leveson-inquiry-christopher-jefferies",
-      "text": "Jefferies gave evidence to the Leveson inquiry about the effects of press coverage. His account and the later inquiry findings add a subject perspective and standards context."
+      "text": "Guardian reports Jefferies’s testimony and attributed account of press coverage; it is a retrospective account."
+    },
+    {
+      "id": "editorial-debate",
+      "label": "Public-interest chronology: 2011-02-01 editorial",
+      "url": "https://www.independent.co.uk/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
+      "date": "2011-02-01",
+      "text": "The Independent’s editorial argues against naming people before charge; commentary rather than a legal development."
+    },
+    {
+      "id": "bail-conditions-ended-reported",
+      "label": "Independent report of police confirmation on bail conditions",
+      "url": "https://www.independent.co.uk/news/uk/crime/convicted-by-the-press-now-released-without-charge-2235161.html",
+      "date": "2011-03-08",
+      "text": "The Independent reported that police confirmed Jefferies had been released from bail conditions. This entry uses the reporting date and does not assert a charge or acquittal decision."
+    },
+    {
+      "id": "contempt-proceedings",
+      "label": "Public-interest chronology: Attorney General contempt proceedings announcement",
+      "url": "https://www.theguardian.com/uk/2011/may/11/joanna-yeates-trial-mirror-sun",
+      "date": "2011-05-11",
+      "text": "Guardian reported planned proceedings for 12 May. The later court outcome is recorded separately."
+    },
+    {
+      "id": "contempt-hearing",
+      "label": "Public-interest chronology: hearing preview",
+      "url": "https://www.theguardian.com/media/greenslade/2011/jun/30/national-newspapers-medialaw",
+      "date": "2011-06-30",
+      "text": "Guardian previewed the following week’s hearing and reported that both newspaper groups denied liability."
+    },
+    {
+      "id": "jefferies-20110101-guardian-bail",
+      "label": "Guardian custody release report",
+      "url": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
+      "date": "2011-01-01",
+      "text": "Guardian page reports release from custody on police bail and says investigation continued."
+    },
+    {
+      "id": "jefferies-20110308-independent-bail-lifted",
+      "label": "Independent police-bail report",
+      "url": "https://www.independent.co.uk/news/uk/crime/convicted-by-the-press-now-released-without-charge-2235161.html",
+      "date": "2011-03-08",
+      "text": "Publisher article reports police confirmation that bail conditions had ended; its “formally cleared” phrase is not a judicial acquittal."
+    },
+    {
+      "id": "jefferies-20110511-guardian-ag-action",
+      "label": "Guardian announcement of planned contempt proceedings",
+      "url": "https://www.theguardian.com/uk/2011/may/11/joanna-yeates-trial-mirror-sun",
+      "date": "2011-05-11",
+      "text": "Guardian reports that the Attorney General planned proceedings for the next day; later court finding is separate."
+    },
+    {
+      "id": "jefferies-20110630-guardian-contempt-trial",
+      "label": "Guardian contempt-hearing preview",
+      "url": "https://www.theguardian.com/media/greenslade/2011/jun/30/national-newspapers-medialaw",
+      "date": "2011-06-30",
+      "text": "Guardian previews the scheduled hearing and says both publishers denied liability."
+    },
+    {
+      "id": "jefferies-20110729-guardian-judgment-news",
+      "label": "Guardian article reporting contempt judgment",
+      "url": "https://www.theguardian.com/uk/2011/jul/29/joanna-yeates-murder-court-contempt",
+      "date": "2011-07-29",
+      "text": "Distinct Guardian news article reports the High Court outcome; not the separate Guardian page reproducing the full judgment."
+    },
+    {
+      "id": "jefferies-20110729-independent-judgment-news",
+      "label": "Independent article reporting contempt judgment",
+      "url": "https://www.independent.co.uk/news/media/press/tabloid-newspapers-fined-for-contempt-2328381.html",
+      "date": "2011-07-29",
+      "text": "Independent article reports the same High Court decision; it is a separate publisher item, not another legal decision."
+    },
+    {
+      "id": "jefferies-20111128-independent-leveson-evidence",
+      "label": "Independent report of Jefferies’s Leveson evidence",
+      "url": "https://www.independent.co.uk/news/media/press/chris-jefferies-faced-witchhunt-6269050.html",
+      "date": "2011-11-28",
+      "text": "Independent article reports testimony that day; Jefferies’s account is attributed and retrospective."
+    },
+    {
+      "id": "high-court-judgment",
+      "label": "High Court contempt judgment",
+      "url": "https://www.theguardian.com/media/interactive/2011/jul/29/high-court-daily-mirror-sun-contempt",
+      "date": "2011-07-29",
+      "text": "Guardian page reproduces the judgment. The legal finding applies to specified Daily Mirror and Sun publications, not all coverage.",
+      "courtPage": "High Court judgment [2011] EWHC 2074 (Admin), paras 1-2, 28-39"
+    },
+    {
+      "id": "ag-official-result",
+      "label": "Attorney General official judgment summary",
+      "url": "https://www.gov.uk/government/news/newspapers-guilty-of-contempt-during-joanna-yeates-murder-investigation",
+      "date": "2011-07-29",
+      "text": "Official release identifies articles published in the Daily Mirror on 31 December and 1 January and in The Sun on 1 January."
+    },
+    {
+      "id": "leveson-print-exhibit",
+      "label": "Leveson witness statement and print exhibits",
+      "url": "https://www.discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
+      "date": "2011-11",
+      "text": "Witness statement and cited exhibit bundle reproduce print headlines; they are not recovered original publisher webpages."
     }
   ],
   "reasoningChecks": [
@@ -561,86 +683,7 @@
       "dailyCounts": [
         0,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
         0,
         0,
         0,
@@ -820,6 +863,85 @@
         0,
         0,
         0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -894,9 +1016,9 @@
         0,
         1
       ],
-      "listedCount": 3,
-      "activeDays": 3,
-      "peakDaily": 1,
+      "listedCount": 7,
+      "activeDays": 6,
+      "peakDaily": 2,
       "examples": [
         {
           "id": "jefferies-h02",
@@ -906,87 +1028,112 @@
           "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
           "kind": "news",
           "eventId": "event-1",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "publisher_page_title_date_match"
         },
         {
-          "id": "jefferies-h07",
-          "headline": "High court ruling against Daily Mirror and Sun for contempt of court over Christopher Jefferies",
-          "url": "https://www.theguardian.com/media/interactive/2011/jul/29/high-court-daily-mirror-sun-contempt",
-          "published": "2011-07-29",
-          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "id": "jefferies-20110101-guardian-bail",
+          "headline": "Chris Jefferies released on bail",
+          "url": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
+          "published": "2011-01-01",
+          "verification": "Guardian page metadata and article text identify publication on 1 January and say the investigation was ongoing after release.",
           "kind": "news",
-          "eventId": "event-3",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "eventId": "event-2",
+          "noveltyClaim": "A new early-window follow-up and a material status update, but release on bail did not mean the investigation ended or that he had been cleared.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "publisher_page_title_date_match"
         },
         {
-          "id": "jefferies-h09",
-          "headline": "Leveson inquiry: Christopher Jefferies ‘forced into hole in the corner by press’",
-          "url": "https://www.theguardian.com/media/2011/nov/28/leveson-inquiry-christopher-jefferies",
-          "published": "2011-11-28",
-          "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
+          "id": "jefferies-20110511-guardian-ag-action",
+          "headline": "Joanna Yeates trial: Mirror and Sun face contempt charges",
+          "url": "https://www.theguardian.com/uk/2011/may/11/joanna-yeates-trial-mirror-sun",
+          "published": "2011-05-11",
+          "verification": "Publisher page metadata gives 11 May 2011 and article body says the Attorney General would begin action on Thursday 12 May.",
           "kind": "news",
-          "eventId": "event-4",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "eventId": "contempt-proceedings",
+          "noveltyClaim": "A new procedural development, not a finding of contempt at this publication date. The coverage names the two publishers that were later proceeded against.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "publisher_page_title_date_match"
+        },
+        {
+          "id": "jefferies-20110630-guardian-contempt-trial",
+          "headline": "Sun and Mirror face contempt trial",
+          "url": "https://www.theguardian.com/media/greenslade/2011/jun/30/national-newspapers-medialaw",
+          "published": "2011-06-30",
+          "verification": "Guardian page gives first-publication date 30 June 2011 and states the case would start the following Tuesday; it notes both papers denied liability.",
+          "kind": "news",
+          "eventId": "contempt-hearing",
+          "noveltyClaim": "A distinct hearing-stage update before judgment; it records allegation/defence status, not guilt.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "publisher_page_title_date_match"
         }
       ],
       "reviewNotes": {
-        "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
-        "pressure": "The cleaned recovered sample lists 3 headline records from this desk over 3 publication dates. This is not a complete archive or proof of intent.",
-        "limit": "Headline and date are recovered from the cited publisher or named archive. Repeated records are not automatically independent reporting or evidence of harm."
+        "publicValue": "Check what each item adds beyond the underlying public-interest event. A dated headline is evidence of wording and timing, not by itself of the full article’s public value.",
+        "pressure": "The bounded sample contains 7 records from this selected desk across 6 publication dates. Counts are not a census or proof of intent.",
+        "limit": "Distinguish a new verified development from commentary, a repeated update, or a primary-document reproduction. Repeated coverage does not itself prove harm."
       },
       "scrutiny": [
         {
           "criterionId": "public_value",
-          "observation": "An arrest on suspicion made accurate reporting and fair-trial safeguards a public concern.",
-          "question": "What did a story add to the investigation or public understanding?",
-          "limit": "Eight early print headlines are reproduced from an inquiry statement; later rows document context, not a full corpus.",
+          "observation": "The sample moves from arrest coverage and print headlines to bail-status reporting, contempt proceedings, judgment and Leveson testimony.",
+          "question": "What did each item add beyond the event already in public view?",
+          "limit": "The selected sample contains 15 records, not a census of coverage.",
           "evidenceIds": [
-            "leveson-statement"
+            "event-1",
+            "bail-conditions-ended-reported",
+            "event-3"
           ]
         },
         {
           "criterionId": "context",
-          "observation": "Jefferies was arrested on suspicion, released without charge, and later identified as innocent; each status must be dated.",
-          "question": "Did coverage distinguish suspicion from proof and include his response?",
-          "limit": "The original print articles are not all available at publisher URLs.",
+          "observation": "Arrest on suspicion, custody release on police bail, later bail-conditions status and never charged are distinct. The March article is a police-confirmation report, not an acquittal.",
+          "question": "Does the item separate allegation, official status, response and finding?",
+          "limit": "The 8 March source reports police confirmation; the exact date bail ended is not asserted here.",
           "evidenceIds": [
-            "leveson-statement"
+            "event-2",
+            "bail-conditions-ended-reported",
+            "judicial-review-facts"
           ]
         },
         {
           "criterionId": "framing",
-          "observation": "Several recovered headlines used personal labels or insinuations unrelated to proving the crime.",
-          "question": "Did framing focus on verified public facts or invite prejudice about character?",
-          "limit": "The exhibit’s list records wording, not the full article context.",
+          "observation": "Several primary-document print headlines use characterizing or suggestive language; the headline exhibit does not reproduce every article in full.",
+          "question": "Does the headline invite an inference the evidence does not support?",
+          "limit": "Print headlines are documented wording, not the full articles or proof of impact.",
           "evidenceIds": [
-            "leveson-statement"
+            "leveson-print-exhibit",
+            "contempt-judgment"
           ]
         },
         {
           "criterionId": "care",
-          "observation": "The early burst preceded release; later legal outcomes applied to specific material.",
-          "question": "Was reporting corrected and restrained as the case developed?",
-          "limit": "A contempt finding about defined coverage does not classify every article.",
+          "observation": "The High Court contempt finding applies to identified Daily Mirror and Sun articles only.",
+          "question": "Was the detail proportionate to a legitimate public-interest purpose?",
+          "limit": "The legal finding covers specific publications and does not classify every article or outlet.",
           "evidenceIds": [
-            "leveson-statement"
+            "high-court-judgment",
+            "ag-official-result"
           ]
         },
         {
           "criterionId": "consistency",
-          "observation": "The sample contains four selected outlets, with different roles in the record.",
-          "question": "Would similar language be used about another arrested person?",
-          "limit": "The case is historically specific and cannot establish general outlet behaviour.",
+          "observation": "The sample includes the four selected outlets but cannot establish each outlet’s full conduct.",
+          "question": "Would the same standard be applied in a comparable case?",
+          "limit": "Only Daily Mirror, The Guardian, The Independent and The Sun are included.",
           "evidenceIds": [
-            "leveson-statement"
+            "leveson-print-exhibit"
           ]
         },
         {
           "criterionId": "transparency",
-          "observation": "Print headlines are transcribed from a witness statement; later items are publisher reports.",
-          "question": "Can readers distinguish reproduction, publisher reporting and legal outcome?",
-          "limit": "Several records share the inquiry exhibit URL; they remain distinct transcribed headlines without fabricated links.",
+          "observation": "Print exhibit rows, publisher news reports and the Guardian’s judgment-reproduction page are distinct record types.",
+          "question": "Can readers tell whether a row is print, commentary, news or primary legal material?",
+          "limit": "A judgment reproduction and a distinct news report on that judgment are separately labelled.",
           "evidenceIds": [
-            "leveson-statement"
+            "leveson-print-exhibit",
+            "high-court-judgment"
           ]
         }
       ],
@@ -995,34 +1142,31 @@
         "paragraphs": [
           {
             "kind": "report",
-            "text": "We would defend covering both the arrest and the press’s legal obligations because the investigation and fair-trial safeguards were matters of public interest. Our four selected rows include contemporary reporting and later inquiry coverage.",
-            "evidenceIds": [
-              "event-1",
-              "leveson-statement"
-            ]
-          },
-          {
-            "kind": "analysis",
-            "text": "We would state that arrest on suspicion is not proof, distinguish subsequent release and proceedings, and avoid repeating unsupported character claims. The inquiry and judgments add retrospective context that must be dated.",
+            "text": "The selected reports can be defended as coverage of separate steps, not one continuing allegation presented as fact. On 1 January, the report said Jefferies had been released from custody on police bail while the investigation continued. In May, the Attorney General announced planned contempt proceedings; in June, a hearing preview recorded that the publishers denied liability. On 29 July, the High Court made a finding about specified articles, and a separate page reproduced the judgment. A November report then covered Jefferies’s evidence to the Leveson Inquiry. These are distinct procedural events. The two July pages are distinct pieces of journalism, but they describe one court decision, not two independent findings.",
             "evidenceIds": [
               "event-2",
-              "judicial-review-facts"
+              "contempt-proceedings",
+              "contempt-hearing",
+              "high-court-judgment",
+              "event-4"
             ]
           },
           {
             "kind": "analysis",
-            "text": "A report about contempt applies to specific publications. It should not be generalized into a finding about all coverage, and a person’s appearance or private life should not substitute for evidence.",
+            "text": "The main counterargument is that the press had a duty to report a murder investigation, but that duty did not turn suspicion into proof. Jefferies was arrested, not charged, and the contemporaneous Attorney General warning was not itself a later court judgment. The contempt decision applied to identified publications; it does not classify every story in this sample. November testimony is a retrospective account, valuable but not necessarily information readers possessed during the arrest period. The defence must preserve those distinctions and avoid using the later ruling to imply that every newsroom knew the eventual findings at the time.",
             "evidenceIds": [
-              "contempt-judgment",
-              "libel-settlements"
+              "event-1",
+              "ag-official-result",
+              "guardian-leveson-20111128"
             ]
           },
           {
-            "kind": "analysis",
-            "text": "The sample is only ten headlines across four outlets. We would link the inquiry statement and judgments, label reproduced print headlines, and make clear where original publisher pages are unavailable. We would also separate the original period’s uncertainty from what was established later. A later account can explain the press’s role, but it should not imply that contemporaneous readers had all the same information. The archive identifies headlines, while the legal records establish findings only about specific conduct. We would not ask the reader to infer more than the documents establish.",
+            "kind": "comparison",
+            "text": "Compared with the print headlines preserved in the inquiry evidence, these later reports supply dated procedural context and response. Compared with the judgment reproduction, the news article summarizes rather than creates the legal outcome. Their public value lies in explaining what changed and who said so. The record remains incomplete: a bounded sample cannot establish all coverage, newsroom intent, the effect on Jefferies, or causation. A defensible account acknowledges both the legitimate interest in reporting a major investigation and the specific legal limits later applied to particular articles.",
             "evidenceIds": [
-              "leveson-statement",
-              "released-without-charge"
+              "event-2",
+              "event-3",
+              "event-4"
             ]
           }
         ]
@@ -1039,36 +1183,142 @@
           "sourceURL": "https://www.theguardian.com/media/2010/dec/31/medialaw-ukcrime",
           "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
           "eventId": "event-1",
-          "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
-          "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
+          "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
+          "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
           "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
           "archiveReproduction": false,
           "sampleNote": "",
           "url": "https://www.theguardian.com/media/2010/dec/31/medialaw-ukcrime",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/media/2010/dec/31/medialaw-ukcrime",
-          "auditNote": null
+          "auditNote": null,
+          "accessDate": "2026-10-14"
+        },
+        {
+          "id": "jefferies-20110101-guardian-bail",
+          "date": "2011-01-01",
+          "outlet": "The Guardian",
+          "headline": "Chris Jefferies released on bail",
+          "kind": "news",
+          "originalURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
+          "verificationSourceURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
+          "sourceURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
+          "verification": "Guardian page metadata and article text identify publication on 1 January and say the investigation was ongoing after release.",
+          "eventId": "event-2",
+          "event": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
+          "wave": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
+          "noveltyClaim": "A new early-window follow-up and a material status update, but release on bail did not mean the investigation ended or that he had been cleared.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
+          "auditNote": null,
+          "accessDate": "2026-10-14",
+          "evidenceIds": [
+            "jefferies-20110101-guardian-bail"
+          ]
+        },
+        {
+          "id": "jefferies-20110511-guardian-ag-action",
+          "date": "2011-05-11",
+          "outlet": "The Guardian",
+          "headline": "Joanna Yeates trial: Mirror and Sun face contempt charges",
+          "kind": "news",
+          "originalURL": "https://www.theguardian.com/uk/2011/may/11/joanna-yeates-trial-mirror-sun",
+          "verificationSourceURL": "https://www.theguardian.com/uk/2011/may/11/joanna-yeates-trial-mirror-sun",
+          "sourceURL": "https://www.theguardian.com/uk/2011/may/11/joanna-yeates-trial-mirror-sun",
+          "verification": "Publisher page metadata gives 11 May 2011 and article body says the Attorney General would begin action on Thursday 12 May.",
+          "eventId": "contempt-proceedings",
+          "event": "The Guardian reported that the Attorney General planned to launch contempt proceedings the next day; permission was granted on 12 May. This was a procedural step, not a finding.",
+          "wave": "The Guardian reported that the Attorney General planned to launch contempt proceedings the next day; permission was granted on 12 May. This was a procedural step, not a finding.",
+          "noveltyClaim": "A new procedural development, not a finding of contempt at this publication date. The coverage names the two publishers that were later proceeded against.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.theguardian.com/uk/2011/may/11/joanna-yeates-trial-mirror-sun",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/uk/2011/may/11/joanna-yeates-trial-mirror-sun",
+          "auditNote": null,
+          "accessDate": "2026-10-14",
+          "evidenceIds": [
+            "jefferies-20110511-guardian-ag-action"
+          ]
+        },
+        {
+          "id": "jefferies-20110630-guardian-contempt-trial",
+          "date": "2011-06-30",
+          "outlet": "The Guardian",
+          "headline": "Sun and Mirror face contempt trial",
+          "kind": "news",
+          "originalURL": "https://www.theguardian.com/media/greenslade/2011/jun/30/national-newspapers-medialaw",
+          "verificationSourceURL": "https://www.theguardian.com/media/greenslade/2011/jun/30/national-newspapers-medialaw",
+          "sourceURL": "https://www.theguardian.com/media/greenslade/2011/jun/30/national-newspapers-medialaw",
+          "verification": "Guardian page gives first-publication date 30 June 2011 and states the case would start the following Tuesday; it notes both papers denied liability.",
+          "eventId": "contempt-hearing",
+          "event": "The Guardian previewed the scheduled contempt hearing and reported that both publishers denied liability.",
+          "wave": "The Guardian previewed the scheduled contempt hearing and reported that both publishers denied liability.",
+          "noveltyClaim": "A distinct hearing-stage update before judgment; it records allegation/defence status, not guilt.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.theguardian.com/media/greenslade/2011/jun/30/national-newspapers-medialaw",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/media/greenslade/2011/jun/30/national-newspapers-medialaw",
+          "auditNote": null,
+          "accessDate": "2026-10-14",
+          "evidenceIds": [
+            "jefferies-20110630-guardian-contempt-trial"
+          ]
+        },
+        {
+          "id": "jefferies-20110729-guardian-judgment-news",
+          "date": "2011-07-29",
+          "outlet": "The Guardian",
+          "headline": "Joanna Yeates murder: Daily Mirror and the Sun fined for contempt of court",
+          "kind": "news",
+          "originalURL": "https://www.theguardian.com/uk/2011/jul/29/joanna-yeates-murder-court-contempt",
+          "verificationSourceURL": "https://www.theguardian.com/uk/2011/jul/29/joanna-yeates-murder-court-contempt",
+          "sourceURL": "https://www.theguardian.com/uk/2011/jul/29/joanna-yeates-murder-court-contempt",
+          "verification": "Guardian page gives 29 July publication date and reports the judgment, named publishers, identified dates of articles, and fines.",
+          "eventId": "event-3",
+          "event": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
+          "wave": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
+          "noveltyClaim": "A genuinely new adjudicated finding. The decision concerns those specified publications and strict-liability contempt; do not generalize it into a finding against every article or every outlet in the wider coverage.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.theguardian.com/uk/2011/jul/29/joanna-yeates-murder-court-contempt",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.theguardian.com/uk/2011/jul/29/joanna-yeates-murder-court-contempt",
+          "auditNote": null,
+          "accessDate": "2026-10-14",
+          "courtCitation": "A-G v MGN Ltd [2011] EWHC 2074 (Admin), paras 1-2, 28-39",
+          "evidenceIds": [
+            "jefferies-20110729-guardian-judgment-news",
+            "high-court-judgment",
+            "ag-official-result"
+          ]
         },
         {
           "id": "jefferies-h07",
           "date": "2011-07-29",
           "outlet": "The Guardian",
           "headline": "High court ruling against Daily Mirror and Sun for contempt of court over Christopher Jefferies",
-          "kind": "news",
+          "kind": "primary_judgment_reproduction",
           "originalURL": "https://www.theguardian.com/media/interactive/2011/jul/29/high-court-daily-mirror-sun-contempt",
           "verificationSourceURL": "https://www.theguardian.com/media/interactive/2011/jul/29/high-court-daily-mirror-sun-contempt",
           "sourceURL": "https://www.theguardian.com/media/interactive/2011/jul/29/high-court-daily-mirror-sun-contempt",
           "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
           "eventId": "event-3",
-          "event": "High Court found publishers of specific Sun and Daily Mirror material in contempt; eight newspapers also settled libel claims covering 40 articles.",
-          "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder. / Jefferies was released on police bail and later without charge; the case proceeded against another suspect. / High Court found publishers of specific Sun and Daily Mirror material in contempt; eight newspapers also settled libel claims covering 40 articles.",
+          "event": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
+          "wave": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
           "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
           "archiveReproduction": false,
           "sampleNote": "Follow-up reporting on formal contempt findings.",
           "url": "https://www.theguardian.com/media/interactive/2011/jul/29/high-court-daily-mirror-sun-contempt",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/media/interactive/2011/jul/29/high-court-daily-mirror-sun-contempt",
-          "auditNote": null
+          "auditNote": null,
+          "recordRole": "Guardian page reproducing the High Court judgment; distinct from the Guardian news article added for the same decision.",
+          "accessDate": "2026-10-14"
         },
         {
           "id": "jefferies-h09",
@@ -1081,15 +1331,16 @@
           "sourceURL": "https://www.theguardian.com/media/2011/nov/28/leveson-inquiry-christopher-jefferies",
           "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
           "eventId": "event-4",
-          "event": "Jefferies gave evidence to the Leveson inquiry about the effects of press coverage.",
-          "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder. / Jefferies was released on police bail and later without charge; the case proceeded against another suspect. / High Court found publishers of specific Sun and Daily Mirror material in contempt; eight newspapers also settled libel claims covering 40 articles. / Jefferies gave evidence to the Leveson inquiry about the effects of press coverage.",
+          "event": "Jefferies gave evidence to the Leveson Inquiry about his account of the press coverage; this testimony is retrospective.",
+          "wave": "Jefferies gave evidence to the Leveson Inquiry about his account of the press coverage; this testimony is retrospective.",
           "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
           "archiveReproduction": false,
           "sampleNote": "Retrospective account of testimony; not an original 2010 item.",
           "url": "https://www.theguardian.com/media/2011/nov/28/leveson-inquiry-christopher-jefferies",
           "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.theguardian.com/media/2011/nov/28/leveson-inquiry-christopher-jefferies",
-          "auditNote": null
+          "auditNote": null,
+          "accessDate": "2026-10-14"
         }
       ]
     },
@@ -1444,7 +1695,9 @@
           "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
           "kind": "news",
           "eventId": "event-1",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "primary_document_headline_match"
         },
         {
           "id": "jefferies-h04",
@@ -1454,67 +1707,76 @@
           "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
           "kind": "news",
           "eventId": "event-2",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "primary_document_headline_match"
         }
       ],
       "reviewNotes": {
-        "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
-        "pressure": "The cleaned recovered sample lists 2 headline records from this desk over 2 publication dates. This is not a complete archive or proof of intent.",
-        "limit": "Headline and date are recovered from the cited publisher or named archive. Repeated records are not automatically independent reporting or evidence of harm."
+        "publicValue": "Check what each item adds beyond the underlying public-interest event. A dated headline is evidence of wording and timing, not by itself of the full article’s public value.",
+        "pressure": "The bounded sample contains 2 records from this selected desk across 2 publication dates. Counts are not a census or proof of intent.",
+        "limit": "Distinguish a new verified development from commentary, a repeated update, or a primary-document reproduction. Repeated coverage does not itself prove harm."
       },
       "scrutiny": [
         {
           "criterionId": "public_value",
-          "observation": "An arrest on suspicion made accurate reporting and fair-trial safeguards a public concern.",
-          "question": "What did a story add to the investigation or public understanding?",
-          "limit": "Eight early print headlines are reproduced from an inquiry statement; later rows document context, not a full corpus.",
+          "observation": "The sample moves from arrest coverage and print headlines to bail-status reporting, contempt proceedings, judgment and Leveson testimony.",
+          "question": "What did each item add beyond the event already in public view?",
+          "limit": "The selected sample contains 15 records, not a census of coverage.",
           "evidenceIds": [
-            "leveson-statement"
+            "event-1",
+            "bail-conditions-ended-reported",
+            "event-3"
           ]
         },
         {
           "criterionId": "context",
-          "observation": "Jefferies was arrested on suspicion, released without charge, and later identified as innocent; each status must be dated.",
-          "question": "Did coverage distinguish suspicion from proof and include his response?",
-          "limit": "The original print articles are not all available at publisher URLs.",
+          "observation": "Arrest on suspicion, custody release on police bail, later bail-conditions status and never charged are distinct. The March article is a police-confirmation report, not an acquittal.",
+          "question": "Does the item separate allegation, official status, response and finding?",
+          "limit": "The 8 March source reports police confirmation; the exact date bail ended is not asserted here.",
           "evidenceIds": [
-            "leveson-statement"
+            "event-2",
+            "bail-conditions-ended-reported",
+            "judicial-review-facts"
           ]
         },
         {
           "criterionId": "framing",
-          "observation": "Several recovered headlines used personal labels or insinuations unrelated to proving the crime.",
-          "question": "Did framing focus on verified public facts or invite prejudice about character?",
-          "limit": "The exhibit’s list records wording, not the full article context.",
+          "observation": "Several primary-document print headlines use characterizing or suggestive language; the headline exhibit does not reproduce every article in full.",
+          "question": "Does the headline invite an inference the evidence does not support?",
+          "limit": "Print headlines are documented wording, not the full articles or proof of impact.",
           "evidenceIds": [
-            "leveson-statement"
+            "leveson-print-exhibit",
+            "contempt-judgment"
           ]
         },
         {
           "criterionId": "care",
-          "observation": "The early burst preceded release; later legal outcomes applied to specific material.",
-          "question": "Was reporting corrected and restrained as the case developed?",
-          "limit": "A contempt finding about defined coverage does not classify every article.",
+          "observation": "The High Court contempt finding applies to identified Daily Mirror and Sun articles only.",
+          "question": "Was the detail proportionate to a legitimate public-interest purpose?",
+          "limit": "The legal finding covers specific publications and does not classify every article or outlet.",
           "evidenceIds": [
-            "leveson-statement"
+            "high-court-judgment",
+            "ag-official-result"
           ]
         },
         {
           "criterionId": "consistency",
-          "observation": "The sample contains four selected outlets, with different roles in the record.",
-          "question": "Would similar language be used about another arrested person?",
-          "limit": "The case is historically specific and cannot establish general outlet behaviour.",
+          "observation": "The sample includes the four selected outlets but cannot establish each outlet’s full conduct.",
+          "question": "Would the same standard be applied in a comparable case?",
+          "limit": "Only Daily Mirror, The Guardian, The Independent and The Sun are included.",
           "evidenceIds": [
-            "leveson-statement"
+            "leveson-print-exhibit"
           ]
         },
         {
           "criterionId": "transparency",
-          "observation": "Print headlines are transcribed from a witness statement; later items are publisher reports.",
-          "question": "Can readers distinguish reproduction, publisher reporting and legal outcome?",
-          "limit": "Several records share the inquiry exhibit URL; they remain distinct transcribed headlines without fabricated links.",
+          "observation": "Print exhibit rows, publisher news reports and the Guardian’s judgment-reproduction page are distinct record types.",
+          "question": "Can readers tell whether a row is print, commentary, news or primary legal material?",
+          "limit": "A judgment reproduction and a distinct news report on that judgment are separately labelled.",
           "evidenceIds": [
-            "leveson-statement"
+            "leveson-print-exhibit",
+            "high-court-judgment"
           ]
         }
       ],
@@ -1523,34 +1785,27 @@
         "paragraphs": [
           {
             "kind": "report",
-            "text": "We would defend reporting on a murder investigation because accurate updates and fair-trial safeguards matter to the public. The two recovered a publisher headlines in this sample are print transcriptions from Jefferies’s Leveson evidence, not publisher web pages. That transcription preserves exact wording.",
+            "text": "Evidence for this desk is narrow: two dated print headlines reproduced in Christopher Jefferies’s Leveson witness-statement exhibits. They show the words readers could see and when those editions appeared, which makes them relevant to a discussion of reporting during an active murder investigation. They are not recovered web pages, and they do not provide the full articles, surrounding page, editorial process or any response that may have appeared elsewhere. A fair defence can explain the public interest in timely reporting and the importance of recording what was published, while being candid that these exhibits alone cannot supply the complete reporting context.",
             "evidenceIds": [
-              "leveson-statement",
-              "event-1"
+              "leveson-print-exhibit"
             ]
           },
           {
             "kind": "analysis",
-            "text": "At the time, Jefferies had been arrested on suspicion. We could say editors were responding to an urgent investigation, but the phrases “Jo Suspect is Peeping Tom” and “Was Killer Waiting in Jo’s flat?” invite readers to infer character or guilt beyond that status.",
+            "text": "The strongest counterargument is that Jefferies was arrested on suspicion, not charged or convicted, and headlines can create a firm impression before evidence is tested. The High Court later found contempt in relation to specified articles published on 31 December and 1 January. That is a concrete legal outcome and must be faced directly. The exhibit headlines are not, by themselves, the full reasoning for the ruling, and the finding should not be stretched to every item from this publisher or the wider press. Nor should retrospective knowledge be presented as what editors or readers necessarily knew on publication day.",
             "evidenceIds": [
               "event-1",
-              "leveson-statement"
+              "event-3",
+              "high-court-judgment"
             ]
           },
           {
-            "kind": "analysis",
-            "text": "On 29 July 2011, the High Court imposed a £50,000 fine on a publisher Group Newspapers over specified Daily a publisher articles published on 31 December and 1 January, finding a substantial risk to the course of justice. This is a formal contempt outcome tied to those articles.",
+            "kind": "comparison",
+            "text": "Compared with the contemporaneous print evidence, the later official summary and judgment provide the legal assessment that the headlines could not. Compared with other sampled outlets, this record contains fewer items and less original article material, so it cannot support a broad claim about a whole newsroom. The appropriate defence is limited: publishing on a matter of urgent public interest is not automatically contempt, but the court’s finding governs the specified articles. The responsible conclusion acknowledges both the reporting context and the failure identified by the court, without claiming intent, audience harm or consequences beyond the evidence.",
             "evidenceIds": [
-              "contempt-judgment",
-              "event-3"
-            ]
-          },
-          {
-            "kind": "analysis",
-            "text": "A public-interest defence does not erase the court’s finding. We would acknowledge where it fails: prejudicial presentation undermined the process the reporting should have respected. The cited inquiry exhibit supports the wording, while the court record supports the later legal outcome; neither is a complete archive.",
-            "evidenceIds": [
-              "contempt-judgment",
-              "judicial-review-facts"
+              "leveson-print-exhibit",
+              "ag-official-result",
+              "contempt-judgment"
             ]
           }
         ]
@@ -1567,15 +1822,20 @@
           "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
           "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
           "eventId": "event-1",
-          "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
-          "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
+          "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
+          "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
           "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
           "archiveReproduction": true,
           "sampleNote": "Print headline reproduced in Jefferies’s Leveson witness statement; original publisher URL not recovered.",
           "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
           "auditStatus": "primary_document_headline_match",
           "auditedURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-          "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record."
+          "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record.",
+          "recordRole": "Dated print headline reproduced in the Leveson witness-statement evidence; original publisher page URL not recovered.",
+          "evidenceIds": [
+            "leveson-print-exhibit"
+          ],
+          "accessDate": "2026-10-14"
         },
         {
           "id": "jefferies-h04",
@@ -1588,15 +1848,20 @@
           "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
           "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
           "eventId": "event-2",
-          "event": "Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
-          "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder. / Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
+          "event": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
+          "wave": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
           "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
           "archiveReproduction": true,
           "sampleNote": "Print headline reproduced in Jefferies’s Leveson witness statement; original publisher URL not recovered.",
           "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
           "auditStatus": "primary_document_headline_match",
           "auditedURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-          "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record."
+          "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record.",
+          "recordRole": "Dated print headline reproduced in the Leveson witness-statement evidence; original publisher page URL not recovered.",
+          "evidenceIds": [
+            "leveson-print-exhibit"
+          ],
+          "accessDate": "2026-10-14"
         }
       ]
     },
@@ -1604,6 +1869,41 @@
       "id": "the-independent",
       "outlet": "The Independent",
       "dailyCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
         0,
         0,
         0,
@@ -1780,6 +2080,7 @@
         0,
         0,
         0,
+        1,
         0,
         0,
         0,
@@ -1901,46 +2202,10 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        1
       ],
-      "listedCount": 1,
-      "activeDays": 1,
+      "listedCount": 4,
+      "activeDays": 4,
       "peakDaily": 1,
       "examples": [
         {
@@ -1948,70 +2213,115 @@
           "headline": "Leading article: The naming game should be brought to an end",
           "url": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
           "published": "2011-02-01",
-          "verification": "Audited publisher metadata gives this headline: “Leading article: The naming game should be brought to an end” and publication date 2011-02-01; previous wording/date replaced where different.",
+          "verification": "Publisher page headline and Tuesday 01 February 2011 date matched on 2026-10-14; classified as an editorial.",
           "kind": "comment",
-          "eventId": "event-2",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "eventId": "editorial-debate",
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "publisher_page_title_date_match"
+        },
+        {
+          "id": "jefferies-20110308-independent-bail-lifted",
+          "headline": "Convicted by the press, now released without charge",
+          "url": "https://www.independent.co.uk/news/uk/crime/convicted-by-the-press-now-released-without-charge-2235161.html",
+          "published": "2011-03-08",
+          "verification": "Publisher page identifies Adam Sherwin and Tuesday 8 March 2011; article body says police confirmed bail conditions had ended.",
+          "kind": "news",
+          "eventId": "bail-conditions-ended-reported",
+          "noveltyClaim": "A new outcome/status report. Preserve the body’s precise police-bail status and do not equate release from bail with arrest, release from custody, or an acquittal.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "publisher_page_title_date_match"
+        },
+        {
+          "id": "jefferies-20110729-independent-judgment-news",
+          "headline": "Tabloid newspapers fined for contempt",
+          "url": "https://www.independent.co.uk/news/media/press/tabloid-newspapers-fined-for-contempt-2328381.html",
+          "published": "2011-07-29",
+          "verification": "Publisher page metadata and article body identify 29 July 2011, the two publishers, court, and penalties.",
+          "kind": "news",
+          "eventId": "event-3",
+          "noveltyClaim": "Separate publisher coverage of a new court result; it is not counted as a second judicial event or as a second version of the same Guardian URL.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "publisher_page_title_date_match"
+        },
+        {
+          "id": "jefferies-20111128-independent-leveson-evidence",
+          "headline": "Chris Jefferies faced ‘witch-hunt’",
+          "url": "https://www.independent.co.uk/news/media/press/chris-jefferies-faced-witchhunt-6269050.html",
+          "published": "2011-11-28",
+          "verification": "Publisher page gives date/time 28 November 2011 11:18 GMT, headline, and reports the Leveson hearing. The Leveson hearing is reported by the publisher; no transcript link is asserted here because the exact hearing-document URL was not independently resolved in this pass.",
+          "kind": "news",
+          "eventId": "event-4",
+          "noveltyClaim": "Adds same-day coverage by a second selected outlet to the existing Guardian Leveson report. This is testimony and attributed personal account, not a court finding about every article.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "publisher_page_title_date_match"
         }
       ],
       "reviewNotes": {
-        "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
-        "pressure": "The cleaned recovered sample lists 1 headline records from this desk over 1 publication dates. This is not a complete archive or proof of intent.",
-        "limit": "Headline and date are recovered from the cited publisher or named archive. Repeated records are not automatically independent reporting or evidence of harm."
+        "publicValue": "Check what each item adds beyond the underlying public-interest event. A dated headline is evidence of wording and timing, not by itself of the full article’s public value.",
+        "pressure": "The bounded sample contains 4 records from this selected desk across 4 publication dates. Counts are not a census or proof of intent.",
+        "limit": "Distinguish a new verified development from commentary, a repeated update, or a primary-document reproduction. Repeated coverage does not itself prove harm."
       },
       "scrutiny": [
         {
           "criterionId": "public_value",
-          "observation": "An arrest on suspicion made accurate reporting and fair-trial safeguards a public concern.",
-          "question": "What did a story add to the investigation or public understanding?",
-          "limit": "Eight early print headlines are reproduced from an inquiry statement; later rows document context, not a full corpus.",
+          "observation": "The sample moves from arrest coverage and print headlines to bail-status reporting, contempt proceedings, judgment and Leveson testimony.",
+          "question": "What did each item add beyond the event already in public view?",
+          "limit": "The selected sample contains 15 records, not a census of coverage.",
           "evidenceIds": [
-            "leveson-statement"
+            "event-1",
+            "bail-conditions-ended-reported",
+            "event-3"
           ]
         },
         {
           "criterionId": "context",
-          "observation": "Jefferies was arrested on suspicion, released without charge, and later identified as innocent; each status must be dated.",
-          "question": "Did coverage distinguish suspicion from proof and include his response?",
-          "limit": "The original print articles are not all available at publisher URLs.",
+          "observation": "Arrest on suspicion, custody release on police bail, later bail-conditions status and never charged are distinct. The March article is a police-confirmation report, not an acquittal.",
+          "question": "Does the item separate allegation, official status, response and finding?",
+          "limit": "The 8 March source reports police confirmation; the exact date bail ended is not asserted here.",
           "evidenceIds": [
-            "leveson-statement"
+            "event-2",
+            "bail-conditions-ended-reported",
+            "judicial-review-facts"
           ]
         },
         {
           "criterionId": "framing",
-          "observation": "Several recovered headlines used personal labels or insinuations unrelated to proving the crime.",
-          "question": "Did framing focus on verified public facts or invite prejudice about character?",
-          "limit": "The exhibit’s list records wording, not the full article context.",
+          "observation": "Several primary-document print headlines use characterizing or suggestive language; the headline exhibit does not reproduce every article in full.",
+          "question": "Does the headline invite an inference the evidence does not support?",
+          "limit": "Print headlines are documented wording, not the full articles or proof of impact.",
           "evidenceIds": [
-            "leveson-statement"
+            "leveson-print-exhibit",
+            "contempt-judgment"
           ]
         },
         {
           "criterionId": "care",
-          "observation": "The early burst preceded release; later legal outcomes applied to specific material.",
-          "question": "Was reporting corrected and restrained as the case developed?",
-          "limit": "A contempt finding about defined coverage does not classify every article.",
+          "observation": "The High Court contempt finding applies to identified Daily Mirror and Sun articles only.",
+          "question": "Was the detail proportionate to a legitimate public-interest purpose?",
+          "limit": "The legal finding covers specific publications and does not classify every article or outlet.",
           "evidenceIds": [
-            "leveson-statement"
+            "high-court-judgment",
+            "ag-official-result"
           ]
         },
         {
           "criterionId": "consistency",
-          "observation": "The sample contains four selected outlets, with different roles in the record.",
-          "question": "Would similar language be used about another arrested person?",
-          "limit": "The case is historically specific and cannot establish general outlet behaviour.",
+          "observation": "The sample includes the four selected outlets but cannot establish each outlet’s full conduct.",
+          "question": "Would the same standard be applied in a comparable case?",
+          "limit": "Only Daily Mirror, The Guardian, The Independent and The Sun are included.",
           "evidenceIds": [
-            "leveson-statement"
+            "leveson-print-exhibit"
           ]
         },
         {
           "criterionId": "transparency",
-          "observation": "Print headlines are transcribed from a witness statement; later items are publisher reports.",
-          "question": "Can readers distinguish reproduction, publisher reporting and legal outcome?",
-          "limit": "Several records share the inquiry exhibit URL; they remain distinct transcribed headlines without fabricated links.",
+          "observation": "Print exhibit rows, publisher news reports and the Guardian’s judgment-reproduction page are distinct record types.",
+          "question": "Can readers tell whether a row is print, commentary, news or primary legal material?",
+          "limit": "A judgment reproduction and a distinct news report on that judgment are separately labelled.",
           "evidenceIds": [
-            "leveson-statement"
+            "leveson-print-exhibit",
+            "high-court-judgment"
           ]
         }
       ],
@@ -2020,34 +2330,29 @@
         "paragraphs": [
           {
             "kind": "report",
-            "text": "We would defend reporting on the investigation and its media consequences because the case raised questions of fair trial and press standards. Two a publisher headlines are in this bounded sample, one of them a later account of Jefferies’s evidence.",
+            "text": "This sample contains a mix of forms that should not be treated as interchangeable. The 1 February item is an editorial arguing against naming uncharged people, so it is opinion rather than a legal change. On 8 March, a news report said police had confirmed that Jefferies’s bail conditions had ended. A July article reported the High Court contempt decision, and a November article covered his evidence at Leveson. These items add a public debate, a status update, a court outcome and a retrospective account. Their value depends on making clear which kind of statement each one is and what date it belongs to.",
             "evidenceIds": [
-              "event-1",
-              "leveson-statement"
+              "editorial-debate",
+              "bail-conditions-ended-reported",
+              "jefferies-20110729-independent-judgment-news",
+              "jefferies-20111128-independent-leveson-evidence"
             ]
           },
           {
             "kind": "analysis",
-            "text": "We would preserve the procedural distinction between suspicion, arrest, release and later findings. Jefferies was not the murderer; that fact should be clear when retrospective coverage is read.",
+            "text": "The counterargument concerns the March headline’s phrase “formally cleared.” The article reported police confirmation that bail conditions had ended; the phrase must not be recast as an acquittal or a charge decision. Jefferies had never been charged. The later judicial review judgment supports the fact that he was innocent, but that later legal record does not mean every reader knew the full story in March. Likewise, his November account is attributable testimony, not independent proof of every allegation. A careful defence recognizes how compressed headlines can overstate what the underlying event establishes.",
             "evidenceIds": [
-              "event-2",
+              "bail-conditions-ended-reported",
               "judicial-review-facts"
             ]
           },
           {
-            "kind": "analysis",
-            "text": "The early headlines included in the inquiry exhibit invite scrutiny of whether personal insinuations served any legitimate purpose. Reporting should focus on verifiable facts and the legal process.",
+            "kind": "comparison",
+            "text": "Compared with outlets represented chiefly by reproduced print headlines, this sample includes an editorial and later reporting, but it remains only four selected records. The July report describes one specific contempt ruling concerning identified articles; it is not a finding against every publication in the wider sample. The November story adds Jefferies’s retrospective perspective, which should be distinguished from contemporaneous knowledge. Taken together, the items show changing public information and debate. They do not establish the desk’s intent, the total effect on Jefferies, or that any single report caused an outcome.",
             "evidenceIds": [
-              "contempt-judgment",
-              "libel-settlements"
-            ]
-          },
-          {
-            "kind": "analysis",
-            "text": "This is not a complete archive. Some records use one inquiry URL for multiple transcribed headlines; we would not invent separate article links or treat the exhibit as a full article. We would also keep the subject’s account visible without converting it into an unsupported claim about every newsroom. Later reporting can record what he told the inquiry and what the courts decided, but those are distinct sources. We would make the distinction clear wherever the timeline moves beyond the original investigation. We would be explicit whenever a conclusion comes from a later inquiry rather than the original coverage.",
-            "evidenceIds": [
-              "leveson-statement",
-              "released-without-charge"
+              "ag-official-result",
+              "jefferies-20111128-independent-leveson-evidence",
+              "editorial-debate"
             ]
           }
         ]
@@ -2062,17 +2367,99 @@
           "originalURL": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
           "verificationSourceURL": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
           "sourceURL": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
-          "verification": "Audited publisher metadata gives this headline: “Leading article: The naming game should be brought to an end” and publication date 2011-02-01; previous wording/date replaced where different.",
-          "eventId": "event-2",
-          "event": "Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
-          "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder. / Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
+          "verification": "Publisher page headline and Tuesday 01 February 2011 date matched on 2026-10-14; classified as an editorial.",
+          "eventId": "editorial-debate",
+          "event": "The Independent published an editorial calling for limits on naming uncharged people and criticizing the press treatment; this was commentary, not a legal change.",
+          "wave": "The Independent published an editorial calling for limits on naming uncharged people and criticizing the press treatment; this was commentary, not a legal change.",
           "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
           "archiveReproduction": false,
           "sampleNote": "",
           "url": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
-          "auditStatus": "publisher_title_match_date_mismatch",
+          "auditStatus": "publisher_page_title_date_match",
           "auditedURL": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
-          "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+          "auditNote": "Publisher page confirms the headline and Tuesday 01 February 2011 publication date; this is an editorial.",
+          "evidenceIds": [
+            "editorial-debate"
+          ],
+          "accessDate": "2026-10-14"
+        },
+        {
+          "id": "jefferies-20110308-independent-bail-lifted",
+          "date": "2011-03-08",
+          "outlet": "The Independent",
+          "headline": "Convicted by the press, now released without charge",
+          "kind": "news",
+          "originalURL": "https://www.independent.co.uk/news/uk/crime/convicted-by-the-press-now-released-without-charge-2235161.html",
+          "verificationSourceURL": "https://www.independent.co.uk/news/uk/crime/convicted-by-the-press-now-released-without-charge-2235161.html",
+          "sourceURL": "https://www.independent.co.uk/news/uk/crime/convicted-by-the-press-now-released-without-charge-2235161.html",
+          "verification": "Publisher page identifies Adam Sherwin and Tuesday 8 March 2011; article body says police confirmed bail conditions had ended.",
+          "eventId": "bail-conditions-ended-reported",
+          "event": "The Independent reported police confirmation that Jefferies’s bail conditions had ended. This is the report date; the article’s “formally cleared” phrasing is not an acquittal or a charge decision.",
+          "wave": "The Independent reported police confirmation that Jefferies’s bail conditions had ended. This is the report date; the article’s “formally cleared” phrasing is not an acquittal or a charge decision.",
+          "noveltyClaim": "A new outcome/status report. Preserve the body’s precise police-bail status and do not equate release from bail with arrest, release from custody, or an acquittal.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.independent.co.uk/news/uk/crime/convicted-by-the-press-now-released-without-charge-2235161.html",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.independent.co.uk/news/uk/crime/convicted-by-the-press-now-released-without-charge-2235161.html",
+          "auditNote": null,
+          "accessDate": "2026-10-14",
+          "evidenceIds": [
+            "jefferies-20110308-independent-bail-lifted"
+          ]
+        },
+        {
+          "id": "jefferies-20110729-independent-judgment-news",
+          "date": "2011-07-29",
+          "outlet": "The Independent",
+          "headline": "Tabloid newspapers fined for contempt",
+          "kind": "news",
+          "originalURL": "https://www.independent.co.uk/news/media/press/tabloid-newspapers-fined-for-contempt-2328381.html",
+          "verificationSourceURL": "https://www.independent.co.uk/news/media/press/tabloid-newspapers-fined-for-contempt-2328381.html",
+          "sourceURL": "https://www.independent.co.uk/news/media/press/tabloid-newspapers-fined-for-contempt-2328381.html",
+          "verification": "Publisher page metadata and article body identify 29 July 2011, the two publishers, court, and penalties.",
+          "eventId": "event-3",
+          "event": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
+          "wave": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
+          "noveltyClaim": "Separate publisher coverage of a new court result; it is not counted as a second judicial event or as a second version of the same Guardian URL.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.independent.co.uk/news/media/press/tabloid-newspapers-fined-for-contempt-2328381.html",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.independent.co.uk/news/media/press/tabloid-newspapers-fined-for-contempt-2328381.html",
+          "auditNote": null,
+          "accessDate": "2026-10-14",
+          "courtCitation": "A-G v MGN Ltd [2011] EWHC 2074 (Admin), paras 1-2, 28-39",
+          "evidenceIds": [
+            "jefferies-20110729-independent-judgment-news",
+            "high-court-judgment",
+            "ag-official-result"
+          ]
+        },
+        {
+          "id": "jefferies-20111128-independent-leveson-evidence",
+          "date": "2011-11-28",
+          "outlet": "The Independent",
+          "headline": "Chris Jefferies faced ‘witch-hunt’",
+          "kind": "news",
+          "originalURL": "https://www.independent.co.uk/news/media/press/chris-jefferies-faced-witchhunt-6269050.html",
+          "verificationSourceURL": "https://www.independent.co.uk/news/media/press/chris-jefferies-faced-witchhunt-6269050.html",
+          "sourceURL": "https://www.independent.co.uk/news/media/press/chris-jefferies-faced-witchhunt-6269050.html",
+          "verification": "Publisher page gives date/time 28 November 2011 11:18 GMT, headline, and reports the Leveson hearing. The Leveson hearing is reported by the publisher; no transcript link is asserted here because the exact hearing-document URL was not independently resolved in this pass.",
+          "eventId": "event-4",
+          "event": "Jefferies gave evidence to the Leveson Inquiry about his account of the press coverage; this testimony is retrospective.",
+          "wave": "Jefferies gave evidence to the Leveson Inquiry about his account of the press coverage; this testimony is retrospective.",
+          "noveltyClaim": "Adds same-day coverage by a second selected outlet to the existing Guardian Leveson report. This is testimony and attributed personal account, not a court finding about every article.",
+          "archiveReproduction": false,
+          "sampleNote": "",
+          "url": "https://www.independent.co.uk/news/media/press/chris-jefferies-faced-witchhunt-6269050.html",
+          "auditStatus": "publisher_page_title_date_match",
+          "auditedURL": "https://www.independent.co.uk/news/media/press/chris-jefferies-faced-witchhunt-6269050.html",
+          "auditNote": null,
+          "accessDate": "2026-10-14",
+          "evidenceIds": [
+            "jefferies-20111128-independent-leveson-evidence"
+          ]
         }
       ]
     },
@@ -2427,7 +2814,9 @@
           "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
           "kind": "news",
           "eventId": "event-1",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "primary_document_headline_match"
         },
         {
           "id": "jefferies-h05",
@@ -2437,67 +2826,76 @@
           "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
           "kind": "news",
           "eventId": "event-2",
-          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event."
+          "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
+          "accessDate": "2026-10-14",
+          "auditStatus": "primary_document_headline_match"
         }
       ],
       "reviewNotes": {
-        "publicValue": "Ask what each dated item adds beyond the underlying public-interest development. The sample records headlines, not the full article’s value.",
-        "pressure": "The cleaned recovered sample lists 2 headline records from this desk over 2 publication dates. This is not a complete archive or proof of intent.",
-        "limit": "Headline and date are recovered from the cited publisher or named archive. Repeated records are not automatically independent reporting or evidence of harm."
+        "publicValue": "Check what each item adds beyond the underlying public-interest event. A dated headline is evidence of wording and timing, not by itself of the full article’s public value.",
+        "pressure": "The bounded sample contains 2 records from this selected desk across 2 publication dates. Counts are not a census or proof of intent.",
+        "limit": "Distinguish a new verified development from commentary, a repeated update, or a primary-document reproduction. Repeated coverage does not itself prove harm."
       },
       "scrutiny": [
         {
           "criterionId": "public_value",
-          "observation": "An arrest on suspicion made accurate reporting and fair-trial safeguards a public concern.",
-          "question": "What did a story add to the investigation or public understanding?",
-          "limit": "Eight early print headlines are reproduced from an inquiry statement; later rows document context, not a full corpus.",
+          "observation": "The sample moves from arrest coverage and print headlines to bail-status reporting, contempt proceedings, judgment and Leveson testimony.",
+          "question": "What did each item add beyond the event already in public view?",
+          "limit": "The selected sample contains 15 records, not a census of coverage.",
           "evidenceIds": [
-            "leveson-statement"
+            "event-1",
+            "bail-conditions-ended-reported",
+            "event-3"
           ]
         },
         {
           "criterionId": "context",
-          "observation": "Jefferies was arrested on suspicion, released without charge, and later identified as innocent; each status must be dated.",
-          "question": "Did coverage distinguish suspicion from proof and include his response?",
-          "limit": "The original print articles are not all available at publisher URLs.",
+          "observation": "Arrest on suspicion, custody release on police bail, later bail-conditions status and never charged are distinct. The March article is a police-confirmation report, not an acquittal.",
+          "question": "Does the item separate allegation, official status, response and finding?",
+          "limit": "The 8 March source reports police confirmation; the exact date bail ended is not asserted here.",
           "evidenceIds": [
-            "leveson-statement"
+            "event-2",
+            "bail-conditions-ended-reported",
+            "judicial-review-facts"
           ]
         },
         {
           "criterionId": "framing",
-          "observation": "Several recovered headlines used personal labels or insinuations unrelated to proving the crime.",
-          "question": "Did framing focus on verified public facts or invite prejudice about character?",
-          "limit": "The exhibit’s list records wording, not the full article context.",
+          "observation": "Several primary-document print headlines use characterizing or suggestive language; the headline exhibit does not reproduce every article in full.",
+          "question": "Does the headline invite an inference the evidence does not support?",
+          "limit": "Print headlines are documented wording, not the full articles or proof of impact.",
           "evidenceIds": [
-            "leveson-statement"
+            "leveson-print-exhibit",
+            "contempt-judgment"
           ]
         },
         {
           "criterionId": "care",
-          "observation": "The early burst preceded release; later legal outcomes applied to specific material.",
-          "question": "Was reporting corrected and restrained as the case developed?",
-          "limit": "A contempt finding about defined coverage does not classify every article.",
+          "observation": "The High Court contempt finding applies to identified Daily Mirror and Sun articles only.",
+          "question": "Was the detail proportionate to a legitimate public-interest purpose?",
+          "limit": "The legal finding covers specific publications and does not classify every article or outlet.",
           "evidenceIds": [
-            "leveson-statement"
+            "high-court-judgment",
+            "ag-official-result"
           ]
         },
         {
           "criterionId": "consistency",
-          "observation": "The sample contains four selected outlets, with different roles in the record.",
-          "question": "Would similar language be used about another arrested person?",
-          "limit": "The case is historically specific and cannot establish general outlet behaviour.",
+          "observation": "The sample includes the four selected outlets but cannot establish each outlet’s full conduct.",
+          "question": "Would the same standard be applied in a comparable case?",
+          "limit": "Only Daily Mirror, The Guardian, The Independent and The Sun are included.",
           "evidenceIds": [
-            "leveson-statement"
+            "leveson-print-exhibit"
           ]
         },
         {
           "criterionId": "transparency",
-          "observation": "Print headlines are transcribed from a witness statement; later items are publisher reports.",
-          "question": "Can readers distinguish reproduction, publisher reporting and legal outcome?",
-          "limit": "Several records share the inquiry exhibit URL; they remain distinct transcribed headlines without fabricated links.",
+          "observation": "Print exhibit rows, publisher news reports and the Guardian’s judgment-reproduction page are distinct record types.",
+          "question": "Can readers tell whether a row is print, commentary, news or primary legal material?",
+          "limit": "A judgment reproduction and a distinct news report on that judgment are separately labelled.",
           "evidenceIds": [
-            "leveson-statement"
+            "leveson-print-exhibit",
+            "high-court-judgment"
           ]
         }
       ],
@@ -2506,34 +2904,27 @@
         "paragraphs": [
           {
             "kind": "report",
-            "text": "We would defend covering the murder investigation because readers needed accurate information about its progress. Our two recovered front-page transcriptions used the phrases “The Strange Mr Jefferies” and “Jo Suspect, ‘scared kids’ – Obsessed by death.” They are reproduced from inquiry evidence, not original web pages.",
+            "text": "The two available records for this desk are print headlines dated 31 December and 1 January, reproduced in the Leveson evidence. They document contemporaneous wording during an active murder investigation and are relevant to understanding what readers encountered. They are not original online pages, and the exhibits do not reproduce full articles or all surrounding context. A limited defence can point to the public interest in reporting an urgent investigation and to the value of preserving exact print evidence. It cannot claim that headlines alone tell us what the newsroom knew, what qualifications appeared in the articles, or how the stories were handled across all editions.",
             "evidenceIds": [
-              "leveson-statement",
-              "event-1"
+              "leveson-print-exhibit"
             ]
           },
           {
             "kind": "analysis",
-            "text": "At publication, Jefferies had been arrested on suspicion, not charged or convicted. We could argue that the papers were trying to explain a fast-moving investigation, but labels about character and unrelated fears do not establish what happened and risk inviting prejudice.",
+            "text": "The central counterargument is that Jefferies had been arrested on suspicion but not charged, and sensational wording can invite readers to treat suspicion as guilt. The High Court later found contempt in relation to a specified article published on 1 January. That finding must be stated plainly, while keeping its scope exact: it concerned identified material, not every Sun story or every report in the wider case. It is also retrospective. The court’s later assessment should not be described as knowledge necessarily available at the time, and the arrest itself was never proof of guilt.",
             "evidenceIds": [
               "event-1",
-              "judicial-review-facts"
+              "event-3",
+              "high-court-judgment"
             ]
           },
           {
-            "kind": "analysis",
-            "text": "On 29 July 2011, the High Court found contempt in proceedings concerning a paper’s 1 January article and imposed an £18,000 fine on its publisher group; the court found a substantial risk to the course of justice. That is a formal finding about defined material, not a general ruling on every story.",
+            "kind": "comparison",
+            "text": "Compared with later news reports and the court record, the print exhibits preserve wording but offer less context. The official summary and judgment establish the specific outcome; the print headlines establish what was published. Neither source should be asked to prove more than it can. A responsible desk defence can acknowledge a legitimate public-interest subject while accepting that the eventual contempt finding applies to the stated article. This small sample cannot establish motive, audience effect, total coverage or causation, and it cannot be used to label every article as unlawful.",
             "evidenceIds": [
-              "contempt-judgment",
-              "event-3"
-            ]
-          },
-          {
-            "kind": "analysis",
-            "text": "We cannot use public interest to excuse prejudicial content. We would acknowledge that the court’s finding shows the defence failed for the article before it, while asking readers to distinguish that decision from the full set of transcribed headlines. The sample is small and the original print pages were not recovered.",
-            "evidenceIds": [
-              "contempt-judgment",
-              "leveson-statement"
+              "leveson-print-exhibit",
+              "ag-official-result",
+              "contempt-judgment"
             ]
           }
         ]
@@ -2550,15 +2941,20 @@
           "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
           "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
           "eventId": "event-1",
-          "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
-          "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
+          "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
+          "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
           "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
           "archiveReproduction": true,
           "sampleNote": "Print headline reproduced in Jefferies’s Leveson witness statement; original publisher URL not recovered.",
           "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
           "auditStatus": "primary_document_headline_match",
           "auditedURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-          "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record."
+          "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record.",
+          "recordRole": "Dated print headline reproduced in the Leveson witness-statement evidence; original publisher page URL not recovered.",
+          "evidenceIds": [
+            "leveson-print-exhibit"
+          ],
+          "accessDate": "2026-10-14"
         },
         {
           "id": "jefferies-h05",
@@ -2571,48 +2967,81 @@
           "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
           "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
           "eventId": "event-2",
-          "event": "Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
-          "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder. / Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
+          "event": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
+          "wave": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
           "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
           "archiveReproduction": true,
           "sampleNote": "Print headline reproduced in Jefferies’s Leveson witness statement; original publisher URL not recovered.",
           "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
           "auditStatus": "primary_document_headline_match",
           "auditedURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-          "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record."
+          "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record.",
+          "recordRole": "Dated print headline reproduced in the Leveson witness-statement evidence; original publisher page URL not recovered.",
+          "evidenceIds": [
+            "leveson-print-exhibit"
+          ],
+          "accessDate": "2026-10-14"
         }
       ]
     }
   ],
   "context": {
-    "statusAtWindowEnd": "Christopher Jefferies was entirely innocent; an official High Court judgment says so. He was arrested on suspicion, later released without charge, and the neighbour Vincent Tabak was convicted. Contempt and libel outcomes concern specific publications, not all coverage. Do not display lurid claims without contextual warning or unnecessary private/family details. Early print headlines are transcribed from a Leveson witness-statement exhibit; original publisher article URLs were not recovered.",
+    "statusAtWindowEnd": "Jefferies was arrested on suspicion on 30 December 2010, released from custody on police bail on 1 January 2011, and never charged. The Independent reported on 8 March that police had confirmed his bail conditions had ended; do not treat this as an acquittal or equate it with custody release. On 29 July the High Court found contempt over specified Daily Mirror and Sun articles. Leveson evidence is retrospective and attributed.",
     "sequence": [
       {
         "date": "2010-12-30",
-        "text": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
+        "text": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
         "evidenceIds": [
           "event-1"
         ]
       },
       {
         "date": "2011-01-01",
-        "text": "Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
+        "text": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
         "evidenceIds": [
           "event-2"
         ]
       },
       {
-        "date": "2011-07-29",
-        "text": "High Court found publishers of specific Sun and Daily Mirror material in contempt; eight newspapers also settled libel claims covering 40 articles.",
+        "date": "2011-02-01",
+        "text": "The Independent published an editorial calling for limits on naming uncharged people and criticizing the press treatment; this was commentary, not a legal change.",
         "evidenceIds": [
-          "contempt-judgment"
+          "editorial-debate"
+        ]
+      },
+      {
+        "date": "2011-03-08",
+        "text": "The Independent reported police confirmation that Jefferies’s bail conditions had ended. This is the report date; the article’s “formally cleared” phrasing is not an acquittal or a charge decision.",
+        "evidenceIds": [
+          "bail-conditions-ended-reported"
+        ]
+      },
+      {
+        "date": "2011-05-11",
+        "text": "The Guardian reported that the Attorney General planned to launch contempt proceedings the next day; permission was granted on 12 May. This was a procedural step, not a finding.",
+        "evidenceIds": [
+          "contempt-proceedings"
+        ]
+      },
+      {
+        "date": "2011-06-30",
+        "text": "The Guardian previewed the scheduled contempt hearing and reported that both publishers denied liability.",
+        "evidenceIds": [
+          "contempt-hearing"
+        ]
+      },
+      {
+        "date": "2011-07-29",
+        "text": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
+        "evidenceIds": [
+          "event-3"
         ]
       },
       {
         "date": "2011-11-28",
-        "text": "Jefferies gave evidence to the Leveson inquiry about the effects of press coverage.",
+        "text": "Jefferies gave evidence to the Leveson Inquiry about his account of the press coverage; this testimony is retrospective.",
         "evidenceIds": [
-          "released-without-charge"
+          "event-4"
         ]
       }
     ]
@@ -2652,10 +3081,12 @@
       "question": "Can we account for the sample, its limits, later edits and the outlet’s role?"
     }
   ],
-  "dataCompleteness": "This is an audited recovered sample only. It does not estimate daily volume, peak intensity, or all coverage; absence from this file means no claim about whether an outlet covered the case. News, comment and live-blog formats are labeled where identified.",
+  "dataCompleteness": "This is an audited, bounded recovered sample. Counts describe only dated records shown; they do not estimate all publication volume, audience effect, intent or harm. Each entry is labelled where it is a print reproduction, opinion/commentary, publisher news report or primary judgment reproduction. Missing dates or URLs are not proof no coverage existed.",
   "researchProvenance": {
     "file": "case-jefferies-research.json",
-    "retrievedOn": "2026-10-13"
+    "retrievedOn": "2026-10-14",
+    "researchUpdate": "work/archive-research/jefferies-findings.json",
+    "integrationDate": "2026-10-14"
   },
   "allHeadlines": [
     {
@@ -2669,15 +3100,20 @@
       "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
       "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
       "eventId": "event-1",
-      "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
-      "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
+      "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
+      "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
       "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
       "archiveReproduction": true,
       "sampleNote": "Print headline reproduced in Jefferies’s Leveson witness statement; original publisher URL not recovered.",
       "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
       "auditStatus": "primary_document_headline_match",
       "auditedURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-      "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record."
+      "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record.",
+      "recordRole": "Dated print headline reproduced in the Leveson witness-statement evidence; original publisher page URL not recovered.",
+      "evidenceIds": [
+        "leveson-print-exhibit"
+      ],
+      "accessDate": "2026-10-14"
     },
     {
       "id": "jefferies-h02",
@@ -2690,15 +3126,16 @@
       "sourceURL": "https://www.theguardian.com/media/2010/dec/31/medialaw-ukcrime",
       "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
       "eventId": "event-1",
-      "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
-      "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
+      "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
+      "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
       "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
       "archiveReproduction": false,
       "sampleNote": "",
       "url": "https://www.theguardian.com/media/2010/dec/31/medialaw-ukcrime",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/media/2010/dec/31/medialaw-ukcrime",
-      "auditNote": null
+      "auditNote": null,
+      "accessDate": "2026-10-14"
     },
     {
       "id": "jefferies-h03",
@@ -2711,15 +3148,20 @@
       "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
       "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
       "eventId": "event-1",
-      "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
-      "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
+      "event": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
+      "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
       "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
       "archiveReproduction": true,
       "sampleNote": "Print headline reproduced in Jefferies’s Leveson witness statement; original publisher URL not recovered.",
       "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
       "auditStatus": "primary_document_headline_match",
       "auditedURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-      "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record."
+      "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record.",
+      "recordRole": "Dated print headline reproduced in the Leveson witness-statement evidence; original publisher page URL not recovered.",
+      "evidenceIds": [
+        "leveson-print-exhibit"
+      ],
+      "accessDate": "2026-10-14"
     },
     {
       "id": "jefferies-h04",
@@ -2732,15 +3174,20 @@
       "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
       "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
       "eventId": "event-2",
-      "event": "Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
-      "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder. / Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
+      "event": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
+      "wave": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
       "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
       "archiveReproduction": true,
       "sampleNote": "Print headline reproduced in Jefferies’s Leveson witness statement; original publisher URL not recovered.",
       "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
       "auditStatus": "primary_document_headline_match",
       "auditedURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-      "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record."
+      "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record.",
+      "recordRole": "Dated print headline reproduced in the Leveson witness-statement evidence; original publisher page URL not recovered.",
+      "evidenceIds": [
+        "leveson-print-exhibit"
+      ],
+      "accessDate": "2026-10-14"
     },
     {
       "id": "jefferies-h05",
@@ -2753,15 +3200,20 @@
       "sourceURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
       "verification": "Exact headline matched the cited inquiry/court document in the 2026-10-13 audit; original publisher page not recovered.",
       "eventId": "event-2",
-      "event": "Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
-      "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder. / Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
+      "event": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
+      "wave": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
       "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
       "archiveReproduction": true,
       "sampleNote": "Print headline reproduced in Jefferies’s Leveson witness statement; original publisher URL not recovered.",
       "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
       "auditStatus": "primary_document_headline_match",
       "auditedURL": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-      "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record."
+      "auditNote": "Public PDF fetched once; extracted text checked for the exact recorded headline. Dated row metadata remains as supplied by the source record.",
+      "recordRole": "Dated print headline reproduced in the Leveson witness-statement evidence; original publisher page URL not recovered.",
+      "evidenceIds": [
+        "leveson-print-exhibit"
+      ],
+      "accessDate": "2026-10-14"
     },
     {
       "id": "jefferies-h06",
@@ -2772,38 +3224,44 @@
       "originalURL": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
       "verificationSourceURL": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
       "sourceURL": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
-      "verification": "Audited publisher metadata gives this headline: “Leading article: The naming game should be brought to an end” and publication date 2011-02-01; previous wording/date replaced where different.",
-      "eventId": "event-2",
-      "event": "Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
-      "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder. / Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
+      "verification": "Publisher page headline and Tuesday 01 February 2011 date matched on 2026-10-14; classified as an editorial.",
+      "eventId": "editorial-debate",
+      "event": "The Independent published an editorial calling for limits on naming uncharged people and criticizing the press treatment; this was commentary, not a legal change.",
+      "wave": "The Independent published an editorial calling for limits on naming uncharged people and criticizing the press treatment; this was commentary, not a legal change.",
       "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
       "archiveReproduction": false,
       "sampleNote": "",
       "url": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
-      "auditStatus": "publisher_title_match_date_mismatch",
+      "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.the-independent.com/voices/editorials/leading-article-the-naming-game-should-be-brought-to-an-end-2200216.html",
-      "auditNote": "Recorded headline/date does not match accessible page metadata; inspect manually."
+      "auditNote": "Publisher page confirms the headline and Tuesday 01 February 2011 publication date; this is an editorial.",
+      "evidenceIds": [
+        "editorial-debate"
+      ],
+      "accessDate": "2026-10-14"
     },
     {
       "id": "jefferies-h07",
       "date": "2011-07-29",
       "outlet": "The Guardian",
       "headline": "High court ruling against Daily Mirror and Sun for contempt of court over Christopher Jefferies",
-      "kind": "news",
+      "kind": "primary_judgment_reproduction",
       "originalURL": "https://www.theguardian.com/media/interactive/2011/jul/29/high-court-daily-mirror-sun-contempt",
       "verificationSourceURL": "https://www.theguardian.com/media/interactive/2011/jul/29/high-court-daily-mirror-sun-contempt",
       "sourceURL": "https://www.theguardian.com/media/interactive/2011/jul/29/high-court-daily-mirror-sun-contempt",
       "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
       "eventId": "event-3",
-      "event": "High Court found publishers of specific Sun and Daily Mirror material in contempt; eight newspapers also settled libel claims covering 40 articles.",
-      "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder. / Jefferies was released on police bail and later without charge; the case proceeded against another suspect. / High Court found publishers of specific Sun and Daily Mirror material in contempt; eight newspapers also settled libel claims covering 40 articles.",
+      "event": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
+      "wave": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
       "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
       "archiveReproduction": false,
       "sampleNote": "Follow-up reporting on formal contempt findings.",
       "url": "https://www.theguardian.com/media/interactive/2011/jul/29/high-court-daily-mirror-sun-contempt",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/media/interactive/2011/jul/29/high-court-daily-mirror-sun-contempt",
-      "auditNote": null
+      "auditNote": null,
+      "recordRole": "Guardian page reproducing the High Court judgment; distinct from the Guardian news article added for the same decision.",
+      "accessDate": "2026-10-14"
     },
     {
       "id": "jefferies-h09",
@@ -2816,48 +3274,258 @@
       "sourceURL": "https://www.theguardian.com/media/2011/nov/28/leveson-inquiry-christopher-jefferies",
       "verification": "Publisher page title and first-publication date matched in the 2026-10-13 public GET audit.",
       "eventId": "event-4",
-      "event": "Jefferies gave evidence to the Leveson inquiry about the effects of press coverage.",
-      "wave": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder. / Jefferies was released on police bail and later without charge; the case proceeded against another suspect. / High Court found publishers of specific Sun and Daily Mirror material in contempt; eight newspapers also settled libel claims covering 40 articles. / Jefferies gave evidence to the Leveson inquiry about the effects of press coverage.",
+      "event": "Jefferies gave evidence to the Leveson Inquiry about his account of the press coverage; this testimony is retrospective.",
+      "wave": "Jefferies gave evidence to the Leveson Inquiry about his account of the press coverage; this testimony is retrospective.",
       "noveltyClaim": "Reports a further development or account within the dated sample; it does not establish a separate underlying event.",
       "archiveReproduction": false,
       "sampleNote": "Retrospective account of testimony; not an original 2010 item.",
       "url": "https://www.theguardian.com/media/2011/nov/28/leveson-inquiry-christopher-jefferies",
       "auditStatus": "publisher_page_title_date_match",
       "auditedURL": "https://www.theguardian.com/media/2011/nov/28/leveson-inquiry-christopher-jefferies",
-      "auditNote": null
+      "auditNote": null,
+      "accessDate": "2026-10-14"
+    },
+    {
+      "id": "jefferies-20110101-guardian-bail",
+      "date": "2011-01-01",
+      "outlet": "The Guardian",
+      "headline": "Chris Jefferies released on bail",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
+      "verificationSourceURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
+      "sourceURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
+      "verification": "Guardian page metadata and article text identify publication on 1 January and say the investigation was ongoing after release.",
+      "eventId": "event-2",
+      "event": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
+      "wave": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
+      "noveltyClaim": "A new early-window follow-up and a material status update, but release on bail did not mean the investigation ended or that he had been cleared.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/uk/2011/jan/01/chris-jefferies-released-on-bail",
+      "auditNote": null,
+      "accessDate": "2026-10-14",
+      "evidenceIds": [
+        "jefferies-20110101-guardian-bail"
+      ]
+    },
+    {
+      "id": "jefferies-20110308-independent-bail-lifted",
+      "date": "2011-03-08",
+      "outlet": "The Independent",
+      "headline": "Convicted by the press, now released without charge",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/news/uk/crime/convicted-by-the-press-now-released-without-charge-2235161.html",
+      "verificationSourceURL": "https://www.independent.co.uk/news/uk/crime/convicted-by-the-press-now-released-without-charge-2235161.html",
+      "sourceURL": "https://www.independent.co.uk/news/uk/crime/convicted-by-the-press-now-released-without-charge-2235161.html",
+      "verification": "Publisher page identifies Adam Sherwin and Tuesday 8 March 2011; article body says police confirmed bail conditions had ended.",
+      "eventId": "bail-conditions-ended-reported",
+      "event": "The Independent reported police confirmation that Jefferies’s bail conditions had ended. This is the report date; the article’s “formally cleared” phrasing is not an acquittal or a charge decision.",
+      "wave": "The Independent reported police confirmation that Jefferies’s bail conditions had ended. This is the report date; the article’s “formally cleared” phrasing is not an acquittal or a charge decision.",
+      "noveltyClaim": "A new outcome/status report. Preserve the body’s precise police-bail status and do not equate release from bail with arrest, release from custody, or an acquittal.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.independent.co.uk/news/uk/crime/convicted-by-the-press-now-released-without-charge-2235161.html",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.independent.co.uk/news/uk/crime/convicted-by-the-press-now-released-without-charge-2235161.html",
+      "auditNote": null,
+      "accessDate": "2026-10-14",
+      "evidenceIds": [
+        "jefferies-20110308-independent-bail-lifted"
+      ]
+    },
+    {
+      "id": "jefferies-20110511-guardian-ag-action",
+      "date": "2011-05-11",
+      "outlet": "The Guardian",
+      "headline": "Joanna Yeates trial: Mirror and Sun face contempt charges",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/uk/2011/may/11/joanna-yeates-trial-mirror-sun",
+      "verificationSourceURL": "https://www.theguardian.com/uk/2011/may/11/joanna-yeates-trial-mirror-sun",
+      "sourceURL": "https://www.theguardian.com/uk/2011/may/11/joanna-yeates-trial-mirror-sun",
+      "verification": "Publisher page metadata gives 11 May 2011 and article body says the Attorney General would begin action on Thursday 12 May.",
+      "eventId": "contempt-proceedings",
+      "event": "The Guardian reported that the Attorney General planned to launch contempt proceedings the next day; permission was granted on 12 May. This was a procedural step, not a finding.",
+      "wave": "The Guardian reported that the Attorney General planned to launch contempt proceedings the next day; permission was granted on 12 May. This was a procedural step, not a finding.",
+      "noveltyClaim": "A new procedural development, not a finding of contempt at this publication date. The coverage names the two publishers that were later proceeded against.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.theguardian.com/uk/2011/may/11/joanna-yeates-trial-mirror-sun",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/uk/2011/may/11/joanna-yeates-trial-mirror-sun",
+      "auditNote": null,
+      "accessDate": "2026-10-14",
+      "evidenceIds": [
+        "jefferies-20110511-guardian-ag-action"
+      ]
+    },
+    {
+      "id": "jefferies-20110630-guardian-contempt-trial",
+      "date": "2011-06-30",
+      "outlet": "The Guardian",
+      "headline": "Sun and Mirror face contempt trial",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/media/greenslade/2011/jun/30/national-newspapers-medialaw",
+      "verificationSourceURL": "https://www.theguardian.com/media/greenslade/2011/jun/30/national-newspapers-medialaw",
+      "sourceURL": "https://www.theguardian.com/media/greenslade/2011/jun/30/national-newspapers-medialaw",
+      "verification": "Guardian page gives first-publication date 30 June 2011 and states the case would start the following Tuesday; it notes both papers denied liability.",
+      "eventId": "contempt-hearing",
+      "event": "The Guardian previewed the scheduled contempt hearing and reported that both publishers denied liability.",
+      "wave": "The Guardian previewed the scheduled contempt hearing and reported that both publishers denied liability.",
+      "noveltyClaim": "A distinct hearing-stage update before judgment; it records allegation/defence status, not guilt.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.theguardian.com/media/greenslade/2011/jun/30/national-newspapers-medialaw",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/media/greenslade/2011/jun/30/national-newspapers-medialaw",
+      "auditNote": null,
+      "accessDate": "2026-10-14",
+      "evidenceIds": [
+        "jefferies-20110630-guardian-contempt-trial"
+      ]
+    },
+    {
+      "id": "jefferies-20110729-guardian-judgment-news",
+      "date": "2011-07-29",
+      "outlet": "The Guardian",
+      "headline": "Joanna Yeates murder: Daily Mirror and the Sun fined for contempt of court",
+      "kind": "news",
+      "originalURL": "https://www.theguardian.com/uk/2011/jul/29/joanna-yeates-murder-court-contempt",
+      "verificationSourceURL": "https://www.theguardian.com/uk/2011/jul/29/joanna-yeates-murder-court-contempt",
+      "sourceURL": "https://www.theguardian.com/uk/2011/jul/29/joanna-yeates-murder-court-contempt",
+      "verification": "Guardian page gives 29 July publication date and reports the judgment, named publishers, identified dates of articles, and fines.",
+      "eventId": "event-3",
+      "event": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
+      "wave": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
+      "noveltyClaim": "A genuinely new adjudicated finding. The decision concerns those specified publications and strict-liability contempt; do not generalize it into a finding against every article or every outlet in the wider coverage.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.theguardian.com/uk/2011/jul/29/joanna-yeates-murder-court-contempt",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.theguardian.com/uk/2011/jul/29/joanna-yeates-murder-court-contempt",
+      "auditNote": null,
+      "accessDate": "2026-10-14",
+      "courtCitation": "A-G v MGN Ltd [2011] EWHC 2074 (Admin), paras 1-2, 28-39",
+      "evidenceIds": [
+        "jefferies-20110729-guardian-judgment-news",
+        "high-court-judgment",
+        "ag-official-result"
+      ]
+    },
+    {
+      "id": "jefferies-20110729-independent-judgment-news",
+      "date": "2011-07-29",
+      "outlet": "The Independent",
+      "headline": "Tabloid newspapers fined for contempt",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/news/media/press/tabloid-newspapers-fined-for-contempt-2328381.html",
+      "verificationSourceURL": "https://www.independent.co.uk/news/media/press/tabloid-newspapers-fined-for-contempt-2328381.html",
+      "sourceURL": "https://www.independent.co.uk/news/media/press/tabloid-newspapers-fined-for-contempt-2328381.html",
+      "verification": "Publisher page metadata and article body identify 29 July 2011, the two publishers, court, and penalties.",
+      "eventId": "event-3",
+      "event": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
+      "wave": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
+      "noveltyClaim": "Separate publisher coverage of a new court result; it is not counted as a second judicial event or as a second version of the same Guardian URL.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.independent.co.uk/news/media/press/tabloid-newspapers-fined-for-contempt-2328381.html",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.independent.co.uk/news/media/press/tabloid-newspapers-fined-for-contempt-2328381.html",
+      "auditNote": null,
+      "accessDate": "2026-10-14",
+      "courtCitation": "A-G v MGN Ltd [2011] EWHC 2074 (Admin), paras 1-2, 28-39",
+      "evidenceIds": [
+        "jefferies-20110729-independent-judgment-news",
+        "high-court-judgment",
+        "ag-official-result"
+      ]
+    },
+    {
+      "id": "jefferies-20111128-independent-leveson-evidence",
+      "date": "2011-11-28",
+      "outlet": "The Independent",
+      "headline": "Chris Jefferies faced ‘witch-hunt’",
+      "kind": "news",
+      "originalURL": "https://www.independent.co.uk/news/media/press/chris-jefferies-faced-witchhunt-6269050.html",
+      "verificationSourceURL": "https://www.independent.co.uk/news/media/press/chris-jefferies-faced-witchhunt-6269050.html",
+      "sourceURL": "https://www.independent.co.uk/news/media/press/chris-jefferies-faced-witchhunt-6269050.html",
+      "verification": "Publisher page gives date/time 28 November 2011 11:18 GMT, headline, and reports the Leveson hearing. The Leveson hearing is reported by the publisher; no transcript link is asserted here because the exact hearing-document URL was not independently resolved in this pass.",
+      "eventId": "event-4",
+      "event": "Jefferies gave evidence to the Leveson Inquiry about his account of the press coverage; this testimony is retrospective.",
+      "wave": "Jefferies gave evidence to the Leveson Inquiry about his account of the press coverage; this testimony is retrospective.",
+      "noveltyClaim": "Adds same-day coverage by a second selected outlet to the existing Guardian Leveson report. This is testimony and attributed personal account, not a court finding about every article.",
+      "archiveReproduction": false,
+      "sampleNote": "",
+      "url": "https://www.independent.co.uk/news/media/press/chris-jefferies-faced-witchhunt-6269050.html",
+      "auditStatus": "publisher_page_title_date_match",
+      "auditedURL": "https://www.independent.co.uk/news/media/press/chris-jefferies-faced-witchhunt-6269050.html",
+      "auditNote": null,
+      "accessDate": "2026-10-14",
+      "evidenceIds": [
+        "jefferies-20111128-independent-leveson-evidence"
+      ]
     }
   ],
   "publicContext": {
-    "intro": "Christopher Jefferies was arrested during the investigation into Joanna Yeates’s murder in December 2010. Tabloid coverage focused on his appearance and character. He was innocent. Later legal proceedings and evidence to the Leveson Inquiry help distinguish reporting an arrest from treating an uncharged person as guilty.",
+    "intro": "Christopher Jefferies was arrested on suspicion during the Joanna Yeates murder investigation on 30 December 2010. He was released from custody on police bail on 1 January and was never charged. The Independent reported on 8 March that his bail conditions had ended. Later contempt findings applied to specified Daily Mirror and Sun articles; they do not classify all coverage.",
     "url": "https://discoverleveson.com/evidence/Witness_Statement_of_Christopher_Jefferies/6511/media",
-    "allegationResponse": "Court and inquiry records reproduce some historical headlines. Those are recovered primary-document examples, not a complete newspaper archive.",
+    "allegationResponse": "Early Daily Mirror and Sun headline evidence is reproduced print material from Jefferies’s Leveson witness statement. The original digital publisher pages were not recovered in this research. Keep arrest, custody release, release from bail conditions, court findings and retrospective testimony separate.",
     "sequence": [
       {
         "date": "2010-12-30",
-        "text": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder.",
+        "text": "Christopher Jefferies was arrested on suspicion of Joanna Yeates’s murder; arrest was not proof or a charge.",
         "evidenceIds": [
           "event-1"
         ]
       },
       {
         "date": "2011-01-01",
-        "text": "Jefferies was released on police bail and later without charge; the case proceeded against another suspect.",
+        "text": "Jefferies was released from custody on police bail; the investigation continued and he was not yet free of bail conditions.",
         "evidenceIds": [
           "event-2"
         ]
       },
       {
-        "date": "2011-07-29",
-        "text": "High Court found publishers of specific Sun and Daily Mirror material in contempt; eight newspapers also settled libel claims covering 40 articles.",
+        "date": "2011-02-01",
+        "text": "The Independent published an editorial calling for limits on naming uncharged people and criticizing the press treatment; this was commentary, not a legal change.",
         "evidenceIds": [
-          "contempt-judgment"
+          "editorial-debate"
+        ]
+      },
+      {
+        "date": "2011-03-08",
+        "text": "The Independent reported police confirmation that Jefferies’s bail conditions had ended. This is the report date; the article’s “formally cleared” phrasing is not an acquittal or a charge decision.",
+        "evidenceIds": [
+          "bail-conditions-ended-reported"
+        ]
+      },
+      {
+        "date": "2011-05-11",
+        "text": "The Guardian reported that the Attorney General planned to launch contempt proceedings the next day; permission was granted on 12 May. This was a procedural step, not a finding.",
+        "evidenceIds": [
+          "contempt-proceedings"
+        ]
+      },
+      {
+        "date": "2011-06-30",
+        "text": "The Guardian previewed the scheduled contempt hearing and reported that both publishers denied liability.",
+        "evidenceIds": [
+          "contempt-hearing"
+        ]
+      },
+      {
+        "date": "2011-07-29",
+        "text": "The High Court found the Daily Mirror and The Sun in contempt over specified articles; the decision does not classify every item in the coverage.",
+        "evidenceIds": [
+          "event-3"
         ]
       },
       {
         "date": "2011-11-28",
-        "text": "Jefferies gave evidence to the Leveson inquiry about the effects of press coverage.",
+        "text": "Jefferies gave evidence to the Leveson Inquiry about his account of the press coverage; this testimony is retrospective.",
         "evidenceIds": [
-          "released-without-charge"
+          "event-4"
         ]
       }
     ]
@@ -2877,5 +3545,30 @@
       "filePage": "https://commons.wikimedia.org/wiki/File:Court_building_-_geograph.org.uk_-_6805721.jpg",
       "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/"
     }
+  ],
+  "accessDate": "2026-10-14",
+  "archiveChecks": [
+    {
+      "scope": "The Sun and Daily Mirror original web pages for 31 December 2010 and 1 January 2011",
+      "status": "not recovered",
+      "detail": "The selected early rows remain print headlines reproduced in Leveson evidence. No digital counterpart or archive capture is asserted."
+    },
+    {
+      "scope": "Wayback Availability API/CDX broader lookup",
+      "status": "rate limited",
+      "detail": "HTTP 429 was reported for the broader lookup; no inference that missing captures do not exist."
+    }
+  ],
+  "researchUpdate": {
+    "date": "2026-10-14",
+    "summary": "Added seven publisher reports from the selected four outlets, corrected the Independent 1 February date audit, and separated custody release, later reported bail-conditions status, hearing steps, judgment, and retrospective testimony.",
+    "sourceFile": "work/archive-research/jefferies-findings.json"
+  },
+  "researchLimits": [
+    "The sample is bounded to four outlets and is not a census.",
+    "Early Daily Mirror and Sun entries are print headline reproductions, not original web article URLs.",
+    "The 8 March report confirms the police-bail status as reported by The Independent; no exact bail-end date or formal clearance is claimed here.",
+    "The 29 July judgment concerns specified Daily Mirror and Sun articles only.",
+    "Later court and inquiry findings are retrospective and should not be projected as knowledge available at arrest."
   ]
 }

@@ -287,7 +287,7 @@ test('real recovered Flack timeline keeps separate print aggregate context and s
   const s = await newSession(g.base, actual.id), state = g.app.sessions.get(s.sessionId);
   const d = s.desks.find(d => state.campaignByDesk[d.outletId].outlet === 'The Sun');
   assert.ok(d); assert.equal(s.countMode, 'dated-sample'); assert.equal(s.days.length, 65);
-  assert.equal(d.listedCount, 1); assert.equal(d.peakDaily, 1);
+  assert.equal(d.listedCount, 8); assert.equal(d.peakDaily, 3);
   assert.equal(d.dailyCounts.reduce((sum,n)=>sum+n,0), d.listedCount);
   assert.equal(s.source.corpusCount, actual.allHeadlines.length);
   assert.notEqual(s.desks.reduce((sum,d)=>sum+d.listedCount,0), actual.aggregateContext.count);
@@ -300,7 +300,7 @@ test('real recovered Flack timeline keeps separate print aggregate context and s
   const ratings=Object.fromEntries(actual.scrutinyCriteria.map(x=>[x.id,x.id==='framing'?'concern':'unknown']));
   const body={sessionId:s.sessionId,campaignVerdicts:Object.fromEntries(s.desks.map(d=>[d.outletId,'unclear'])),recommendedCounts:Object.fromEntries(s.desks.map(d=>[d.outletId,null])),scrutinyAssessments:Object.fromEntries(s.desks.map(d=>[d.outletId,{...ratings}])),reasoningAnswers:Object.fromEntries(actual.reasoningChecks.map(x=>[x.id,x.answer])),justification:'The recovered dated sample supports specific chronology checks. The separate six-month print total cannot stand in for this sample, and I leave overall editorial proportion unresolved.'};
   const result=await (await post(g.base,'/api/campaign/reveal',body)).json();
-  assert.equal(result.reasoningScore,10);const sun=result.roles.find(r=>r.outletName==='The Sun');assert.equal(sun.campaign.listedCount,1);assert.equal(sun.campaign.peakDaily,1);
+  assert.equal(result.reasoningScore,10);const sun=result.roles.find(r=>r.outletName==='The Sun');assert.equal(sun.campaign.listedCount,8);assert.equal(sun.campaign.peakDaily,3);
   assert.deepEqual(result.scrutinyAssessments,body.scrutinyAssessments);assert.equal(sun.recommendedCount,null);assert.equal(sun.decision,'unclear');
   assert.deepEqual(await (await post(g.base,'/api/campaign/reveal',{...body,campaignVerdicts:Object.fromEntries(s.desks.map(d=>[d.outletId,'pile-on']))})).json(),result);
 });

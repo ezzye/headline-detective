@@ -78,11 +78,11 @@ test('dated campaigns preserve continuous windows and totals; aggregates stay un
   const flack = campaigns.find((entry) => entry.id === 'flack-sun-aggregate');
   const recoveredFlack = campaigns.find((entry) => entry.id === 'caroline-flack-recovered-campaign');
   if (recoveredFlack) {
-    assert.equal(recoveredFlack.allHeadlines.length, 24, 'the audited Flack headline sample retains its recovered row count');
-    assert.equal(recoveredFlack.source.corpusCount, 24, 'Flack source count describes the recovered sample');
-    assert.equal(recoveredFlack.source.selectedCount, 19, 'the plotted selected outlets retain nineteen dated rows');
-    assert.equal(recoveredFlack.campaigns.reduce((sum, outlet) => sum + outlet.listedCount, 0), 19, 'Flack outlet lanes total only the selected dated sample');
-    assert.equal(recoveredFlack.allHeadlines.filter((row) => recoveredFlack.campaigns.some(outlet => outlet.id === row.outletId || outlet.outlet === row.outlet)).length, 19, 'selected sample rows are a distinct subset of the 24 recovered records');
+    assert.equal(recoveredFlack.allHeadlines.length, 32, 'the audited Flack headline sample retains its recovered row count');
+    assert.equal(recoveredFlack.source.corpusCount, 32, 'Flack source count describes the recovered sample');
+    assert.equal(recoveredFlack.source.selectedCount, 26, 'the plotted selected outlets retain twenty-six dated rows');
+    assert.equal(recoveredFlack.campaigns.reduce((sum, outlet) => sum + outlet.listedCount, 0), 26, 'Flack outlet lanes total only the selected dated sample');
+    assert.equal(recoveredFlack.allHeadlines.filter((row) => recoveredFlack.campaigns.some(outlet => outlet.id === row.outletId || outlet.outlet === row.outlet)).length, 26, 'selected sample rows are a distinct subset of the 32 recovered records');
     assert.ok(recoveredFlack.days[0] > recoveredFlack.aggregateContext.windowStart, 'Flack plot is bounded to the later dated sample, not the longer aggregate period');
     assert.equal(recoveredFlack.aggregateContext.outlet, 'The Sun');
     assert.equal(recoveredFlack.aggregateContext.count, 99, 'the Guardian-reported count remains in separate context');
