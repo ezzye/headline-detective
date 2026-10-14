@@ -310,6 +310,18 @@
       "captureTimestamp": "2020-12-13T14:42:22Z",
       "accessDate": "2026-10-14",
       "recordId": "h37"
+    },
+    {
+      "id": "media-caroline-flack-recovered-1",
+      "label": "Media source · ITV News · 2019-12-17",
+      "url": "https://www.itv.com/news/2019-12-17/caroline-flack-stand-down-host-of-upcoming-series-love-island-after-assault-charge",
+      "text": "ITV reported that Flack would stand down from the next Love Island series after being charged; it quoted her statement that media reports had not reflected matters as they were and that she could not comment further while proceedings continued. Date basis: hosting_page_publication. Web publication time is evidenced; it is not an airing time. ITV's page attributes Flack's statement to her Instagram account, but this record is ITV's report, not an independently inspected original Instagram post."
+    },
+    {
+      "id": "media-caroline-flack-recovered-2",
+      "label": "Media source · ITV News · 2019-12-23",
+      "url": "https://www.itv.com/news/2019-12-23/caroline-flack-pleads-not-guilty-to-assault",
+      "text": "The report covered Flack's first court hearing, where she pleaded not guilty; it also relayed arguments made by the prosecution and defence at the hearing. Date basis: hosting_page_publication. Courtroom claims are reported allegations, not findings. The online publication time does not prove when the clip aired on television; do not treat web page plus embedded clip as two items."
     }
   ],
   "reasoningChecks": [
@@ -3035,5 +3047,91 @@
       "CDX discovery remained incomplete: Sun wildcard query empty; DailyMail query returned 403 authorization required. Wayback availability requests returned 429 during this investigation; repeated requests were stopped. No host/proxy change or access-control bypass was attempted."
     ],
     "searchLimits": "No exhaustive archive coverage or full publication census. Several Sun pages were verified from current live publisher metadata, without pre-death snapshots; their original-display wording is not independently preserved. MailOnline was read through a later Wayback capture because web retrieval was robots-blocked. No causal or intent inference is supported."
+  },
+  "mediaRecords": [
+    {
+      "id": "media-caroline-flack-recovered-1",
+      "caseId": "caroline-flack-recovered-campaign",
+      "outlet": "ITV News",
+      "channel": "online_video",
+      "format": "video",
+      "platform": null,
+      "title": "Love Island host Caroline Flack standing down as host of upcoming series after assault charge",
+      "date": "2019-12-17",
+      "dateBasis": "hosting_page_publication",
+      "publicationDisplay": "Publisher page: 10:30am; video duration and original linear transmission time are not displayed.",
+      "programme": "ITV News; video report by correspondent Sejal Karia",
+      "url": "https://www.itv.com/news/2019-12-17/caroline-flack-stand-down-host-of-upcoming-series-love-island-after-assault-charge",
+      "contentBasis": "publisher_description_or_caption",
+      "sourceBasis": "ITV News publisher page itself displays the date/time and labels it a video report by Sejal Karia; the article describes Flack's Instagram statement and quotes her response.",
+      "summary": "ITV reported that Flack would stand down from the next Love Island series after being charged; it quoted her statement that media reports had not reflected matters as they were and that she could not comment further while proceedings continued.",
+      "statusAtPublication": "Summary is attributed to the publisher description; reported allegations and responses retain their dated status.",
+      "limit": "Web publication time is evidenced; it is not an airing time. ITV's page attributes Flack's statement to her Instagram account, but this record is ITV's report, not an independently inspected original Instagram post.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": "https://www.itv.com/news/2019-12-17/caroline-flack-stand-down-host-of-upcoming-series-love-island-after-assault-charge",
+      "linkedWrittenRecordId": "h08",
+      "publicationRelationship": "embedded_format_of_written_record",
+      "relationshipNote": "This is the ITV page that hosts/describes the video report, so do not count the page and its embedded report as two separate items.",
+      "distributionEvents": [],
+      "observedMetrics": [],
+      "evidenceIds": [
+        "media-caroline-flack-recovered-1"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-caroline-flack-recovered-2",
+      "caseId": "caroline-flack-recovered-campaign",
+      "outlet": "ITV News",
+      "channel": "online_video",
+      "format": "video",
+      "platform": null,
+      "title": "Love Island presenter Caroline Flack pleads not guilty to assault",
+      "date": "2019-12-23",
+      "dateBasis": "hosting_page_publication",
+      "publicationDisplay": "Publisher page: 11:17am; video duration and original linear transmission time are not displayed.",
+      "programme": "ITV News; video report by correspondent Neil Connery",
+      "url": "https://www.itv.com/news/2019-12-23/caroline-flack-pleads-not-guilty-to-assault",
+      "contentBasis": "publisher_description_or_caption",
+      "sourceBasis": "ITV News publisher page identifies a video report by Neil Connery and gives the publication time; its report says Flack denied the charge in court.",
+      "summary": "The report covered Flack's first court hearing, where she pleaded not guilty; it also relayed arguments made by the prosecution and defence at the hearing.",
+      "statusAtPublication": "Summary is attributed to the publisher description; reported allegations and responses retain their dated status.",
+      "limit": "Courtroom claims are reported allegations, not findings. The online publication time does not prove when the clip aired on television; do not treat web page plus embedded clip as two items.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": "https://www.itv.com/news/2019-12-23/caroline-flack-pleads-not-guilty-to-assault",
+      "linkedWrittenRecordId": "h24",
+      "publicationRelationship": "embedded_format_of_written_record",
+      "relationshipNote": "Separate later court-reporting item from ITV's 17 December stand-down report; each page hosts/describes its own video report.",
+      "distributionEvents": [],
+      "observedMetrics": [],
+      "evidenceIds": [
+        "media-caroline-flack-recovered-2"
+      ],
+      "verifiedAt": "2026-10-14"
+    }
+  ],
+  "mediaScope": {
+    "verifiedAt": "2026-10-14",
+    "recordCount": 2,
+    "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
+    "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
+    "gaps": [
+      {
+        "channel": "social",
+        "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+      },
+      {
+        "channel": "tv",
+        "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
+      }
+    ]
   }
 }

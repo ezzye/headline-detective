@@ -230,6 +230,18 @@
       "label": "Financial Times comparator page; body paywalled",
       "url": "https://www.ft.com/content/ae7f16ae-95ab-4aae-a676-0748e3e61b6d",
       "text": "The publisher displays the headline Cambridge professor remains in post despite plagiarism, but the body and publication date were not recovered in this pass. Do not date or count it from inference."
+    },
+    {
+      "id": "media-arday-2026-1",
+      "label": "Media source · Spiked · 2026-08-01",
+      "url": "https://podcasts.apple.com/ga/podcast/jason-arday-dei-and-how-woke-killed-the-university/id1439334347?i=1000779399340&l=en-GB",
+      "text": "A Spiked-produced Last Orders episode features GB News presenter Tom Harwood as a guest and discusses Jason Arday alongside other topics. Date basis: episode_release. Apple's listing verifies publication metadata and the episode description, but does not establish broadcast transmission, audience/reach, Harwood's employer speaking for the outlet, coordination, or any foreign influence. The described discussion is not independently transcribed here."
+    },
+    {
+      "id": "media-arday-2026-2",
+      "label": "Media source · LBC · 2026-08-13",
+      "url": "https://www.lbc.co.uk/videos/2JsSf7HeNf8/",
+      "text": "The original page advertises a discussion of the Cambridge inquiry with Lord Finkelstein and Nick Ferrari. The clip itself was not transcribed in this pass. Date basis: hosting_page_publication. This is video-page metadata and a programme-associated title. The page does not establish linear radio airtime, clip duration, audience, or the full argument made."
     }
   ],
   "reasoningChecks": [
@@ -4021,6 +4033,97 @@
       "All nine BBC checks are current publisher pages, not a complete edit history.",
       "NewsCord count229 and selected90 remain qualified inventory figures, not a new exhaustive audit.",
       "The comparator examples have no matched search period, format universe or coverage census."
+    ]
+  },
+  "mediaRecords": [
+    {
+      "id": "media-arday-2026-1",
+      "caseId": "arday-2026-campaign",
+      "outlet": "Spiked",
+      "channel": "podcast",
+      "format": "audio",
+      "platform": "Apple Podcasts",
+      "title": "Jason Arday, DEI and how woke killed the university",
+      "date": "2026-08-01",
+      "dateBasis": "episode_release",
+      "publicationDisplay": "Apple displays 08:55 UTC and 46 min.",
+      "programme": "Last Orders - a spiked podcast",
+      "url": "https://podcasts.apple.com/ga/podcast/jason-arday-dei-and-how-woke-killed-the-university/id1439334347?i=1000779399340&l=en-GB",
+      "contentBasis": "publisher_description_or_caption",
+      "sourceBasis": "Direct Apple Podcasts episode metadata: episode title, show name, published timestamp, 46-minute length, and description naming GB News' Tom Harwood as a guest with Chris Snowdon and Tom Slater.",
+      "summary": "A Spiked-produced Last Orders episode features GB News presenter Tom Harwood as a guest and discusses Jason Arday alongside other topics.",
+      "statusAtPublication": "Summary is attributed to the publisher description; reported allegations and responses retain their dated status.",
+      "limit": "Apple's listing verifies publication metadata and the episode description, but does not establish broadcast transmission, audience/reach, Harwood's employer speaking for the outlet, coordination, or any foreign influence. The described discussion is not independently transcribed here.",
+      "duration": {
+        "display": "46 min · whole episode",
+        "totalSeconds": 2760,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "publicationRelationship": "separate_media_record_with_unverified_origin_relationship",
+      "relationshipNote": "No separate publisher article located in this check; treat this as one podcast episode, not as GB News programme output or a second written item.",
+      "distributionEvents": [],
+      "observedMetrics": [],
+      "evidenceIds": [
+        "media-arday-2026-1"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-arday-2026-2",
+      "caseId": "arday-2026-campaign",
+      "outlet": "LBC",
+      "channel": "online_video",
+      "format": "video",
+      "platform": null,
+      "title": "Cambridge agrees to inquiry over ex-professor Jason Arday: Lord Finkelstein joins Nick Ferrari",
+      "date": "2026-08-13",
+      "dateBasis": "hosting_page_publication",
+      "publicationDisplay": "13 August 2026, 09:41 (hosting page; timezone not stated)",
+      "programme": "Nick Ferrari",
+      "url": "https://www.lbc.co.uk/videos/2JsSf7HeNf8/",
+      "contentBasis": "publisher_description_or_caption",
+      "sourceBasis": "Original LBC video page directly displays this title and 13 August 2026, 09:41. Page metadata identifies a clip featuring Lord Finkelstein joining Nick Ferrari.",
+      "summary": "The original page advertises a discussion of the Cambridge inquiry with Lord Finkelstein and Nick Ferrari. The clip itself was not transcribed in this pass.",
+      "statusAtPublication": "Summary is attributed to the publisher description; reported allegations and responses retain their dated status.",
+      "limit": "This is video-page metadata and a programme-associated title. The page does not establish linear radio airtime, clip duration, audience, or the full argument made.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "publicationRelationship": "separate_media_record_with_unverified_origin_relationship",
+      "relationshipNote": "No parent article or specific repeat/repost relationship established.",
+      "distributionEvents": [],
+      "observedMetrics": [],
+      "evidenceIds": [
+        "media-arday-2026-2"
+      ],
+      "verifiedAt": "2026-10-14"
+    }
+  ],
+  "mediaScope": {
+    "verifiedAt": "2026-10-14",
+    "recordCount": 2,
+    "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
+    "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
+    "gaps": [
+      {
+        "channel": "social",
+        "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+      },
+      {
+        "channel": "tv",
+        "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
+      },
+      {
+        "channel": "online_video",
+        "outlet": "GB News",
+        "note": "No original GB News clip in this window was verified. A GB News employee’s appearance on Spiked is attributed to Spiked, not GB News."
+      }
     ]
   }
 }

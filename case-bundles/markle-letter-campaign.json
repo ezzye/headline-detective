@@ -1522,5 +1522,26 @@
     "Court judgments are retrospective context. Do not insert their publication dates as in-window media coverage rows.",
     "No private letter text was transcribed or reproduced."
   ],
-  "accessDate": "2026-10-14"
+  "accessDate": "2026-10-14",
+  "mediaRecords": [],
+  "mediaScope": {
+    "verifiedAt": "2026-10-14",
+    "recordCount": 0,
+    "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
+    "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
+    "gaps": [
+      {
+        "channel": "social",
+        "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+      },
+      {
+        "channel": "tv",
+        "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
+      },
+      {
+        "channel": "all",
+        "note": "No recovered media records in this first pass. This does not mean there was no broadcast or social coverage."
+      }
+    ]
+  }
 }

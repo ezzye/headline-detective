@@ -209,6 +209,36 @@
       "label": "Public-interest chronology: Independent commentary before the police press conference",
       "url": "https://www.independent.co.uk/news/uk/home-news/nicola-bulley-missing-fitbit-phone-dog-willow-b2282488.html",
       "text": "The Independent publisher page gives 06:50 GMT on 15 February, before the police press conference later that day. This was attributed expert commentary, not a police update."
+    },
+    {
+      "id": "media-bulley-1",
+      "label": "Media source · GB News · 2023-02-14",
+      "url": "https://www.gbnews.com/news/nicola-bulley-forensic-expert-admits-warning-her-partner-to-prepare-for-worst-as-she-could-have-been-kidnapped/442052",
+      "text": "The publisher hosts a Peter Faulding interview and reports his suggestions of alternatives to the police working hypothesis. It also reports a neighbour’s doubts. Those possibilities are guest claims, not established findings. Date basis: hosting_page_publication. The publisher page's article publication time is not an aired time. Search-accessible page evidence shows a play control and describes interview content, but no player duration or linear broadcast log was recovered. The hypothetical kidnapping claim is not verified by this record. Only the Faulding player is identified here; the neighbour quotation is not a second recovered clip."
+    },
+    {
+      "id": "media-bulley-2",
+      "label": "Media source · Sky News · 2023-02-15",
+      "url": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+      "text": "A short excerpt shows police rejecting third-party-crime claims for lack of evidence, describing false rumours as distracting, and addressing several circulating claims. Date basis: hosting_page_publication. This is an online video page published after the press conference; the page does not state the original television airtime or prove that this exact edit aired linearly."
+    },
+    {
+      "id": "media-bulley-3",
+      "label": "Media source · ITV News · 2023-02-15",
+      "url": "https://www.youtube.com/watch?v=_o7dFQdGcOY",
+      "text": "ITV’s official upload reports the police explanation of the high-risk classification and their disclosure of personal information. The need for disclosure is an editorial question, not settled by its publication. Date basis: platform_upload_date. The official page verifies the upload date, 2:25 full-video duration and a current counter observed on 14 October 2026. No linear ITV transmission timestamp was established. Description metadata does not supply a complete transcript or a measure of campaign-period reach."
+    },
+    {
+      "id": "media-bulley-4",
+      "label": "Media source · Sky News · 2023-02-15",
+      "url": "https://www.youtube.com/watch?v=wfTE_D3dFcw",
+      "text": "Full press briefing by Lancashire Police about the missing-person investigation. Date basis: platform_upload_date. Upload date is not the conference's exact start time or proof of a particular Sky linear transmission. Duration was not established from the search result inspected."
+    },
+    {
+      "id": "media-bulley-5",
+      "label": "Media source · BBC Radio 4 · 2023-02-22",
+      "url": "https://www.bbc.co.uk/programmes/m001jc8s",
+      "text": "The programme asks what media should learn from the family’s criticism of coverage. The same episode also discusses war reporting; its full duration is not time devoted solely to Bulley. Date basis: broadcast_schedule. Programme description and schedule were checked; the audio was not transcribed or timed by topic. The two slots establish a first listed broadcast and repeat of one episode, not two independent reports. No listening figures are supplied."
     }
   ],
   "reasoningChecks": [
@@ -1874,5 +1904,230 @@
     "The 19 February announcement was recovery with identification pending; identification and family statement were reported on 20 February.",
     "Ofcom’s 21 February explanation request was not a breach determination.",
     "The College review published in November 2023 is retrospective and does not establish what was known during the February window."
-  ]
+  ],
+  "mediaRecords": [
+    {
+      "id": "media-bulley-1",
+      "caseId": "bulley-campaign",
+      "outlet": "GB News",
+      "channel": "online_video",
+      "format": "video",
+      "platform": null,
+      "title": "Nicola Bulley: Forensic expert admits warning her partner to 'prepare for worst' as she ‘could have been kidnapped’",
+      "date": "2023-02-14",
+      "dateBasis": "hosting_page_publication",
+      "publicationDisplay": "12:38 (publisher page publication time; timezone not stated)",
+      "programme": "Patrick Christys interview (publisher attribution; exact programme/airtime not verified)",
+      "url": "https://www.gbnews.com/news/nicola-bulley-forensic-expert-admits-warning-her-partner-to-prepare-for-worst-as-she-could-have-been-kidnapped/442052",
+      "contentBasis": "publisher_description_or_caption",
+      "sourceBasis": "GB News publisher page identifies date/time, displays a play control and labels Peter Faulding's appearance as an interview with Patrick Christys; page text also says Charlotte Drake joined Eamonn Holmes and Saira Khan on GB News.",
+      "summary": "The publisher hosts a Peter Faulding interview and reports his suggestions of alternatives to the police working hypothesis. It also reports a neighbour’s doubts. Those possibilities are guest claims, not established findings.",
+      "statusAtPublication": "These are attributed guest opinions and possibilities, not established facts. At the time, police had publicly described entry into the river as their working hypothesis; no criminal or third-party involvement was established in the cited record.",
+      "limit": "The publisher page's article publication time is not an aired time. Search-accessible page evidence shows a play control and describes interview content, but no player duration or linear broadcast log was recovered. The hypothetical kidnapping claim is not verified by this record. Only the Faulding player is identified here; the neighbour quotation is not a second recovered clip.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "publicationRelationship": "separate_media_record_with_unverified_origin_relationship",
+      "relationshipNote": "No parent article or repost relationship established; record is classified as online video from the page's play control and interview description, not as a television transmission.",
+      "distributionEvents": [],
+      "observedMetrics": [],
+      "evidenceIds": [
+        "media-bulley-1"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-bulley-2",
+      "caseId": "bulley-campaign",
+      "outlet": "Sky News",
+      "channel": "online_video",
+      "format": "video",
+      "platform": null,
+      "title": "Nicola Bulley: The 'myths' and 'false information' dispelled by police investigating her disappearance",
+      "date": "2023-02-15",
+      "dateBasis": "hosting_page_publication",
+      "publicationDisplay": "17:47 UK",
+      "programme": null,
+      "url": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+      "contentBasis": "publisher_description_or_caption",
+      "sourceBasis": "Sky News original publisher page labels the item 'Video 1:49', gives the publication timestamp, and describes the 15 February police press conference.",
+      "summary": "A short excerpt shows police rejecting third-party-crime claims for lack of evidence, describing false rumours as distracting, and addressing several circulating claims.",
+      "statusAtPublication": "Police statements are attributed to the officials at the briefing. Their working hypothesis remained that Bulley had entered the river; they said there was no evidence of crime or third-party involvement. The clip is not an independent finding about every online claim.",
+      "limit": "This is an online video page published after the press conference; the page does not state the original television airtime or prove that this exact edit aired linearly.",
+      "duration": {
+        "display": "1:49",
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+      "linkedWrittenRecordId": "bulley-h05",
+      "publicationRelationship": "embedded_format_of_written_record",
+      "relationshipNote": "Original Sky News publisher video page; no repost relationship identified.",
+      "distributionEvents": [],
+      "observedMetrics": [],
+      "evidenceIds": [
+        "media-bulley-2"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-bulley-3",
+      "caseId": "bulley-campaign",
+      "outlet": "ITV News",
+      "channel": "social",
+      "format": "video",
+      "platform": "YouTube",
+      "title": "Nicola Bulley: Police clarify why missing woman was deemed 'high risk' | ITV News",
+      "date": "2023-02-15",
+      "dateBasis": "platform_upload_date",
+      "publicationDisplay": "15 February 2023 · YouTube upload date",
+      "programme": null,
+      "url": "https://www.youtube.com/watch?v=_o7dFQdGcOY",
+      "contentBasis": "publisher_description_or_caption",
+      "sourceBasis": "Official verified ITV News YouTube page read in the browser: upload 15 February 2023; video duration2:25; description and chapter labels visible. The clip was not transcribed in this pass.",
+      "summary": "ITV’s official upload reports the police explanation of the high-risk classification and their disclosure of personal information. The need for disclosure is an editorial question, not settled by its publication.",
+      "statusAtPublication": "The health-related account is attributed to Lancashire Police's statement, not independently established by the video. The record captures the disclosure and official explanation; it does not prove that disclosure was necessary or justified.",
+      "limit": "The official page verifies the upload date, 2:25 full-video duration and a current counter observed on 14 October 2026. No linear ITV transmission timestamp was established. Description metadata does not supply a complete transcript or a measure of campaign-period reach.",
+      "duration": {
+        "display": "2:25 · full video",
+        "totalSeconds": 145,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "publicationRelationship": "separate_media_record_with_unverified_origin_relationship",
+      "relationshipNote": "Official ITV News channel upload; no specific parent article or separate rebroadcast relationship proven.",
+      "distributionEvents": [
+        {
+          "kind": "outlet_social_upload",
+          "date": "2023-02-15",
+          "platform": "YouTube",
+          "url": "https://www.youtube.com/watch?v=_o7dFQdGcOY"
+        }
+      ],
+      "observedMetrics": [
+        {
+          "name": "views",
+          "value": 56500,
+          "observedAt": "2026-10-14T12:51:09Z",
+          "sourceURL": "https://www.youtube.com/watch?v=_o7dFQdGcOY",
+          "scope": "Current cumulative platform counter; not unique people, campaign-period views, or a measure of harm."
+        }
+      ],
+      "evidenceIds": [
+        "media-bulley-3"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-bulley-4",
+      "caseId": "bulley-campaign",
+      "outlet": "Sky News",
+      "channel": "social",
+      "format": "video",
+      "platform": "YouTube",
+      "title": "In full: Nicola Bulley news conference",
+      "date": "2023-02-15",
+      "dateBasis": "platform_upload_date",
+      "publicationDisplay": "2023-02-15",
+      "programme": null,
+      "url": "https://www.youtube.com/watch?v=wfTE_D3dFcw",
+      "contentBasis": "publisher_description_or_caption",
+      "sourceBasis": "Verified Sky News YouTube channel upload titled 'In full'; official channel metadata gives 15 February 2023 and description identifies it as Lancashire Police's news conference about Bulley's disappearance.",
+      "summary": "Full press briefing by Lancashire Police about the missing-person investigation.",
+      "statusAtPublication": "Primary-record footage of police remarks. Statements remain attributed to police and should be read as the force's account at that date, not as independently adjudicated findings.",
+      "limit": "Upload date is not the conference's exact start time or proof of a particular Sky linear transmission. Duration was not established from the search result inspected.",
+      "duration": {
+        "display": null,
+        "totalSeconds": null,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "publicationRelationship": "separate_media_record_with_unverified_origin_relationship",
+      "relationshipNote": "Official Sky News channel upload; no separate article-to-video relationship established.",
+      "distributionEvents": [
+        {
+          "kind": "outlet_social_upload",
+          "date": "2023-02-15",
+          "platform": "YouTube",
+          "url": "https://www.youtube.com/watch?v=wfTE_D3dFcw"
+        }
+      ],
+      "observedMetrics": [],
+      "evidenceIds": [
+        "media-bulley-4"
+      ],
+      "verifiedAt": "2026-10-14"
+    },
+    {
+      "id": "media-bulley-5",
+      "caseId": "bulley-campaign",
+      "outlet": "BBC Radio 4",
+      "channel": "radio",
+      "format": "audio",
+      "platform": null,
+      "title": "The 'shameful' coverage of Nicola Bulley",
+      "date": "2023-02-22",
+      "dateBasis": "broadcast_schedule",
+      "publicationDisplay": "22 February 2023 · first listed broadcast 16:30 UK; repeat 21:30 UK",
+      "programme": "The Media Show",
+      "url": "https://www.bbc.co.uk/programmes/m001jc8s",
+      "contentBasis": "publisher_description_and_schedule",
+      "sourceBasis": "Original BBC programme page read in the browser after text retrieval was blocked. The page identifies The Media Show, its description, 28-minute duration, and both Radio 4 broadcasts on 22 February at 16:30 and 21:30.",
+      "summary": "The programme asks what media should learn from the family’s criticism of coverage. The same episode also discusses war reporting; its full duration is not time devoted solely to Bulley.",
+      "statusAtPublication": "The programme description attributes the 'shameful' characterization to the family and frames the broadcast as a discussion of reporting lessons; it is not itself a regulator's finding about named outlets.",
+      "limit": "Programme description and schedule were checked; the audio was not transcribed or timed by topic. The two slots establish a first listed broadcast and repeat of one episode, not two independent reports. No listening figures are supplied.",
+      "duration": {
+        "display": "28 min · whole programme",
+        "totalSeconds": 1680,
+        "topicSeconds": null
+      },
+      "parentArticleURL": null,
+      "linkedWrittenRecordId": null,
+      "publicationRelationship": "separate_media_record_with_unverified_origin_relationship",
+      "relationshipNote": "BBC programme entry; no online article repost relationship identified.",
+      "distributionEvents": [
+        {
+          "kind": "broadcast",
+          "date": "2023-02-22",
+          "time": "16:30",
+          "timezone": "Europe/London",
+          "url": "https://www.bbc.co.uk/programmes/m001jc8s"
+        },
+        {
+          "kind": "repeat_broadcast",
+          "date": "2023-02-22",
+          "time": "21:30",
+          "timezone": "Europe/London",
+          "url": "https://www.bbc.co.uk/programmes/m001jc8s"
+        }
+      ],
+      "observedMetrics": [],
+      "evidenceIds": [
+        "media-bulley-5"
+      ],
+      "verifiedAt": "2026-10-14"
+    }
+  ],
+  "mediaScope": {
+    "verifiedAt": "2026-10-14",
+    "recordCount": 5,
+    "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
+    "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
+    "gaps": [
+      {
+        "channel": "social",
+        "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+      },
+      {
+        "channel": "tv",
+        "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
+      }
+    ]
+  }
 }

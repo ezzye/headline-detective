@@ -231,6 +231,18 @@
         "label": "Financial Times comparator page; body paywalled",
         "url": "https://www.ft.com/content/ae7f16ae-95ab-4aae-a676-0748e3e61b6d",
         "text": "The publisher displays the headline Cambridge professor remains in post despite plagiarism, but the body and publication date were not recovered in this pass. Do not date or count it from inference."
+      },
+      {
+        "id": "media-arday-2026-1",
+        "label": "Media source · Spiked · 2026-08-01",
+        "url": "https://podcasts.apple.com/ga/podcast/jason-arday-dei-and-how-woke-killed-the-university/id1439334347?i=1000779399340&l=en-GB",
+        "text": "A Spiked-produced Last Orders episode features GB News presenter Tom Harwood as a guest and discusses Jason Arday alongside other topics. Date basis: episode_release. Apple's listing verifies publication metadata and the episode description, but does not establish broadcast transmission, audience/reach, Harwood's employer speaking for the outlet, coordination, or any foreign influence. The described discussion is not independently transcribed here."
+      },
+      {
+        "id": "media-arday-2026-2",
+        "label": "Media source · LBC · 2026-08-13",
+        "url": "https://www.lbc.co.uk/videos/2JsSf7HeNf8/",
+        "text": "The original page advertises a discussion of the Cambridge inquiry with Lord Finkelstein and Nick Ferrari. The clip itself was not transcribed in this pass. Date basis: hosting_page_publication. This is video-page metadata and a programme-associated title. The page does not establish linear radio airtime, clip duration, audience, or the full argument made."
       }
     ],
     "reasoningChecks": [
@@ -4043,6 +4055,97 @@
         "NewsCord count229 and selected90 remain qualified inventory figures, not a new exhaustive audit.",
         "The comparator examples have no matched search period, format universe or coverage census."
       ]
+    },
+    "mediaRecords": [
+      {
+        "id": "media-arday-2026-1",
+        "caseId": "arday-2026-campaign",
+        "outlet": "Spiked",
+        "channel": "podcast",
+        "format": "audio",
+        "platform": "Apple Podcasts",
+        "title": "Jason Arday, DEI and how woke killed the university",
+        "date": "2026-08-01",
+        "dateBasis": "episode_release",
+        "publicationDisplay": "Apple displays 08:55 UTC and 46 min.",
+        "programme": "Last Orders - a spiked podcast",
+        "url": "https://podcasts.apple.com/ga/podcast/jason-arday-dei-and-how-woke-killed-the-university/id1439334347?i=1000779399340&l=en-GB",
+        "contentBasis": "publisher_description_or_caption",
+        "sourceBasis": "Direct Apple Podcasts episode metadata: episode title, show name, published timestamp, 46-minute length, and description naming GB News' Tom Harwood as a guest with Chris Snowdon and Tom Slater.",
+        "summary": "A Spiked-produced Last Orders episode features GB News presenter Tom Harwood as a guest and discusses Jason Arday alongside other topics.",
+        "statusAtPublication": "Summary is attributed to the publisher description; reported allegations and responses retain their dated status.",
+        "limit": "Apple's listing verifies publication metadata and the episode description, but does not establish broadcast transmission, audience/reach, Harwood's employer speaking for the outlet, coordination, or any foreign influence. The described discussion is not independently transcribed here.",
+        "duration": {
+          "display": "46 min · whole episode",
+          "totalSeconds": 2760,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "publicationRelationship": "separate_media_record_with_unverified_origin_relationship",
+        "relationshipNote": "No separate publisher article located in this check; treat this as one podcast episode, not as GB News programme output or a second written item.",
+        "distributionEvents": [],
+        "observedMetrics": [],
+        "evidenceIds": [
+          "media-arday-2026-1"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-arday-2026-2",
+        "caseId": "arday-2026-campaign",
+        "outlet": "LBC",
+        "channel": "online_video",
+        "format": "video",
+        "platform": null,
+        "title": "Cambridge agrees to inquiry over ex-professor Jason Arday: Lord Finkelstein joins Nick Ferrari",
+        "date": "2026-08-13",
+        "dateBasis": "hosting_page_publication",
+        "publicationDisplay": "13 August 2026, 09:41 (hosting page; timezone not stated)",
+        "programme": "Nick Ferrari",
+        "url": "https://www.lbc.co.uk/videos/2JsSf7HeNf8/",
+        "contentBasis": "publisher_description_or_caption",
+        "sourceBasis": "Original LBC video page directly displays this title and 13 August 2026, 09:41. Page metadata identifies a clip featuring Lord Finkelstein joining Nick Ferrari.",
+        "summary": "The original page advertises a discussion of the Cambridge inquiry with Lord Finkelstein and Nick Ferrari. The clip itself was not transcribed in this pass.",
+        "statusAtPublication": "Summary is attributed to the publisher description; reported allegations and responses retain their dated status.",
+        "limit": "This is video-page metadata and a programme-associated title. The page does not establish linear radio airtime, clip duration, audience, or the full argument made.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "publicationRelationship": "separate_media_record_with_unverified_origin_relationship",
+        "relationshipNote": "No parent article or specific repeat/repost relationship established.",
+        "distributionEvents": [],
+        "observedMetrics": [],
+        "evidenceIds": [
+          "media-arday-2026-2"
+        ],
+        "verifiedAt": "2026-10-14"
+      }
+    ],
+    "mediaScope": {
+      "verifiedAt": "2026-10-14",
+      "recordCount": 2,
+      "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
+      "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
+      "gaps": [
+        {
+          "channel": "social",
+          "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+        },
+        {
+          "channel": "tv",
+          "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
+        },
+        {
+          "channel": "online_video",
+          "outlet": "GB News",
+          "note": "No original GB News clip in this window was verified. A GB News employee’s appearance on Spiked is attributed to Spiked, not GB News."
+        }
+      ]
     }
   },
   {
@@ -4357,6 +4460,18 @@
         "captureTimestamp": "2020-12-13T14:42:22Z",
         "accessDate": "2026-10-14",
         "recordId": "h37"
+      },
+      {
+        "id": "media-caroline-flack-recovered-1",
+        "label": "Media source · ITV News · 2019-12-17",
+        "url": "https://www.itv.com/news/2019-12-17/caroline-flack-stand-down-host-of-upcoming-series-love-island-after-assault-charge",
+        "text": "ITV reported that Flack would stand down from the next Love Island series after being charged; it quoted her statement that media reports had not reflected matters as they were and that she could not comment further while proceedings continued. Date basis: hosting_page_publication. Web publication time is evidenced; it is not an airing time. ITV's page attributes Flack's statement to her Instagram account, but this record is ITV's report, not an independently inspected original Instagram post."
+      },
+      {
+        "id": "media-caroline-flack-recovered-2",
+        "label": "Media source · ITV News · 2019-12-23",
+        "url": "https://www.itv.com/news/2019-12-23/caroline-flack-pleads-not-guilty-to-assault",
+        "text": "The report covered Flack's first court hearing, where she pleaded not guilty; it also relayed arguments made by the prosecution and defence at the hearing. Date basis: hosting_page_publication. Courtroom claims are reported allegations, not findings. The online publication time does not prove when the clip aired on television; do not treat web page plus embedded clip as two items."
       }
     ],
     "reasoningChecks": [
@@ -7102,6 +7217,92 @@
         "CDX discovery remained incomplete: Sun wildcard query empty; DailyMail query returned 403 authorization required. Wayback availability requests returned 429 during this investigation; repeated requests were stopped. No host/proxy change or access-control bypass was attempted."
       ],
       "searchLimits": "No exhaustive archive coverage or full publication census. Several Sun pages were verified from current live publisher metadata, without pre-death snapshots; their original-display wording is not independently preserved. MailOnline was read through a later Wayback capture because web retrieval was robots-blocked. No causal or intent inference is supported."
+    },
+    "mediaRecords": [
+      {
+        "id": "media-caroline-flack-recovered-1",
+        "caseId": "caroline-flack-recovered-campaign",
+        "outlet": "ITV News",
+        "channel": "online_video",
+        "format": "video",
+        "platform": null,
+        "title": "Love Island host Caroline Flack standing down as host of upcoming series after assault charge",
+        "date": "2019-12-17",
+        "dateBasis": "hosting_page_publication",
+        "publicationDisplay": "Publisher page: 10:30am; video duration and original linear transmission time are not displayed.",
+        "programme": "ITV News; video report by correspondent Sejal Karia",
+        "url": "https://www.itv.com/news/2019-12-17/caroline-flack-stand-down-host-of-upcoming-series-love-island-after-assault-charge",
+        "contentBasis": "publisher_description_or_caption",
+        "sourceBasis": "ITV News publisher page itself displays the date/time and labels it a video report by Sejal Karia; the article describes Flack's Instagram statement and quotes her response.",
+        "summary": "ITV reported that Flack would stand down from the next Love Island series after being charged; it quoted her statement that media reports had not reflected matters as they were and that she could not comment further while proceedings continued.",
+        "statusAtPublication": "Summary is attributed to the publisher description; reported allegations and responses retain their dated status.",
+        "limit": "Web publication time is evidenced; it is not an airing time. ITV's page attributes Flack's statement to her Instagram account, but this record is ITV's report, not an independently inspected original Instagram post.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": "https://www.itv.com/news/2019-12-17/caroline-flack-stand-down-host-of-upcoming-series-love-island-after-assault-charge",
+        "linkedWrittenRecordId": "h08",
+        "publicationRelationship": "embedded_format_of_written_record",
+        "relationshipNote": "This is the ITV page that hosts/describes the video report, so do not count the page and its embedded report as two separate items.",
+        "distributionEvents": [],
+        "observedMetrics": [],
+        "evidenceIds": [
+          "media-caroline-flack-recovered-1"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-caroline-flack-recovered-2",
+        "caseId": "caroline-flack-recovered-campaign",
+        "outlet": "ITV News",
+        "channel": "online_video",
+        "format": "video",
+        "platform": null,
+        "title": "Love Island presenter Caroline Flack pleads not guilty to assault",
+        "date": "2019-12-23",
+        "dateBasis": "hosting_page_publication",
+        "publicationDisplay": "Publisher page: 11:17am; video duration and original linear transmission time are not displayed.",
+        "programme": "ITV News; video report by correspondent Neil Connery",
+        "url": "https://www.itv.com/news/2019-12-23/caroline-flack-pleads-not-guilty-to-assault",
+        "contentBasis": "publisher_description_or_caption",
+        "sourceBasis": "ITV News publisher page identifies a video report by Neil Connery and gives the publication time; its report says Flack denied the charge in court.",
+        "summary": "The report covered Flack's first court hearing, where she pleaded not guilty; it also relayed arguments made by the prosecution and defence at the hearing.",
+        "statusAtPublication": "Summary is attributed to the publisher description; reported allegations and responses retain their dated status.",
+        "limit": "Courtroom claims are reported allegations, not findings. The online publication time does not prove when the clip aired on television; do not treat web page plus embedded clip as two items.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": "https://www.itv.com/news/2019-12-23/caroline-flack-pleads-not-guilty-to-assault",
+        "linkedWrittenRecordId": "h24",
+        "publicationRelationship": "embedded_format_of_written_record",
+        "relationshipNote": "Separate later court-reporting item from ITV's 17 December stand-down report; each page hosts/describes its own video report.",
+        "distributionEvents": [],
+        "observedMetrics": [],
+        "evidenceIds": [
+          "media-caroline-flack-recovered-2"
+        ],
+        "verifiedAt": "2026-10-14"
+      }
+    ],
+    "mediaScope": {
+      "verifiedAt": "2026-10-14",
+      "recordCount": 2,
+      "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
+      "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
+      "gaps": [
+        {
+          "channel": "social",
+          "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+        },
+        {
+          "channel": "tv",
+          "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
+        }
+      ]
     }
   },
   {
@@ -7447,6 +7648,12 @@
         "label": "MailOnline comparator page, outside subject attribution",
         "url": "https://www.dailymail.com/sport/football/article-6241313/Manchester-City-starlet-Phil-Foden-buys-new-2m-home-mum.html",
         "text": "The publisher page directly verifies the exact Foden headline and first publication on 4 October 2018 (updated 5 October). This is a story about Phil Foden, not Raheem Sterling; exclude it from the Sterling headline corpus. It is cited only because Sterling later compared it with the Adarabioyo story."
+      },
+      {
+        "id": "media-sterling-1",
+        "label": "Media source · BBC Sport · 2018-12-09",
+        "url": "https://www.bbc.co.uk/sport/football/46498849",
+        "text": "BBC Sport published a page reporting Sterling's criticism of newspaper portrayals of young Black footballers and embedded a clip in which Ian Wright comments on criticism of Sterling. Date basis: hosting_page_publication. This verifies BBC's online publication and embedded clip caption, not a separate broadcast airing or the original upload date of the video. BBC reports Sterling's social post; the article is not itself Sterling's original post."
       }
     ],
     "reasoningChecks": [
@@ -10030,7 +10237,63 @@
       "No race-motive claim is supported by counting or comparing these headlines alone.",
       "The October Foden MailOnline article was directly retrieved and is in-window. A bounded search for the January Adarabioyo MailOnline article did not surface its original URL/page; the Guardian's 9 December comparison supplies the January timing, so it remains an out-of-window comparator and is not counted. No further retry was made."
     ],
-    "accessDate": "2026-10-14"
+    "accessDate": "2026-10-14",
+    "mediaRecords": [
+      {
+        "id": "media-sterling-1",
+        "caseId": "sterling-campaign",
+        "outlet": "BBC Sport",
+        "channel": "online_video",
+        "format": "video",
+        "platform": null,
+        "title": "Ian Wright says the media criticism of Raheem Sterling is 'tinged with racism'",
+        "date": "2018-12-09",
+        "dateBasis": "hosting_page_publication",
+        "publicationDisplay": "BBC page date: 9 December 2018. The embedded clip's separate upload time and duration are not shown in the retrieved page text.",
+        "programme": "BBC Sport page; embedded video caption identifies Ian Wright",
+        "url": "https://www.bbc.co.uk/sport/football/46498849",
+        "contentBasis": "publisher_description_or_caption",
+        "sourceBasis": "The BBC Sport page displays its publication date and an embedded video section captioned with Ian Wright's comment; the same page reports Sterling's Instagram post as the subject of the story.",
+        "summary": "BBC Sport published a page reporting Sterling's criticism of newspaper portrayals of young Black footballers and embedded a clip in which Ian Wright comments on criticism of Sterling.",
+        "statusAtPublication": "Summary is attributed to the publisher description; reported allegations and responses retain their dated status.",
+        "limit": "This verifies BBC's online publication and embedded clip caption, not a separate broadcast airing or the original upload date of the video. BBC reports Sterling's social post; the article is not itself Sterling's original post.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": "https://www.bbc.co.uk/sport/football/46498849",
+        "linkedWrittenRecordId": null,
+        "publicationRelationship": "embedded_in_unlisted_written_page",
+        "relationshipNote": "The clip appears within this BBC Sport page; do not count the article and embedded video as two publications without separate upload evidence.",
+        "distributionEvents": [],
+        "observedMetrics": [],
+        "evidenceIds": [
+          "media-sterling-1"
+        ],
+        "verifiedAt": "2026-10-14"
+      }
+    ],
+    "mediaScope": {
+      "verifiedAt": "2026-10-14",
+      "recordCount": 1,
+      "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
+      "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
+      "gaps": [
+        {
+          "channel": "social",
+          "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+        },
+        {
+          "channel": "tv",
+          "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
+        },
+        {
+          "channel": "radio",
+          "note": "The located BBC Radio5Live programme lead is linked from a May2019 article, outside the selected2018window; it is not counted."
+        }
+      ]
+    }
   },
   {
     "id": "markle-letter-campaign",
@@ -11576,7 +11839,28 @@
       "Court judgments are retrospective context. Do not insert their publication dates as in-window media coverage rows.",
       "No private letter text was transcribed or reproduced."
     ],
-    "accessDate": "2026-10-14"
+    "accessDate": "2026-10-14",
+    "mediaRecords": [],
+    "mediaScope": {
+      "verifiedAt": "2026-10-14",
+      "recordCount": 0,
+      "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
+      "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
+      "gaps": [
+        {
+          "channel": "social",
+          "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+        },
+        {
+          "channel": "tv",
+          "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
+        },
+        {
+          "channel": "all",
+          "note": "No recovered media records in this first pass. This does not mean there was no broadcast or social coverage."
+        }
+      ]
+    }
   },
   {
     "id": "bulley-campaign",
@@ -11789,6 +12073,36 @@
         "label": "Public-interest chronology: Independent commentary before the police press conference",
         "url": "https://www.independent.co.uk/news/uk/home-news/nicola-bulley-missing-fitbit-phone-dog-willow-b2282488.html",
         "text": "The Independent publisher page gives 06:50 GMT on 15 February, before the police press conference later that day. This was attributed expert commentary, not a police update."
+      },
+      {
+        "id": "media-bulley-1",
+        "label": "Media source · GB News · 2023-02-14",
+        "url": "https://www.gbnews.com/news/nicola-bulley-forensic-expert-admits-warning-her-partner-to-prepare-for-worst-as-she-could-have-been-kidnapped/442052",
+        "text": "The publisher hosts a Peter Faulding interview and reports his suggestions of alternatives to the police working hypothesis. It also reports a neighbour’s doubts. Those possibilities are guest claims, not established findings. Date basis: hosting_page_publication. The publisher page's article publication time is not an aired time. Search-accessible page evidence shows a play control and describes interview content, but no player duration or linear broadcast log was recovered. The hypothetical kidnapping claim is not verified by this record. Only the Faulding player is identified here; the neighbour quotation is not a second recovered clip."
+      },
+      {
+        "id": "media-bulley-2",
+        "label": "Media source · Sky News · 2023-02-15",
+        "url": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+        "text": "A short excerpt shows police rejecting third-party-crime claims for lack of evidence, describing false rumours as distracting, and addressing several circulating claims. Date basis: hosting_page_publication. This is an online video page published after the press conference; the page does not state the original television airtime or prove that this exact edit aired linearly."
+      },
+      {
+        "id": "media-bulley-3",
+        "label": "Media source · ITV News · 2023-02-15",
+        "url": "https://www.youtube.com/watch?v=_o7dFQdGcOY",
+        "text": "ITV’s official upload reports the police explanation of the high-risk classification and their disclosure of personal information. The need for disclosure is an editorial question, not settled by its publication. Date basis: platform_upload_date. The official page verifies the upload date, 2:25 full-video duration and a current counter observed on 14 October 2026. No linear ITV transmission timestamp was established. Description metadata does not supply a complete transcript or a measure of campaign-period reach."
+      },
+      {
+        "id": "media-bulley-4",
+        "label": "Media source · Sky News · 2023-02-15",
+        "url": "https://www.youtube.com/watch?v=wfTE_D3dFcw",
+        "text": "Full press briefing by Lancashire Police about the missing-person investigation. Date basis: platform_upload_date. Upload date is not the conference's exact start time or proof of a particular Sky linear transmission. Duration was not established from the search result inspected."
+      },
+      {
+        "id": "media-bulley-5",
+        "label": "Media source · BBC Radio 4 · 2023-02-22",
+        "url": "https://www.bbc.co.uk/programmes/m001jc8s",
+        "text": "The programme asks what media should learn from the family’s criticism of coverage. The same episode also discusses war reporting; its full duration is not time devoted solely to Bulley. Date basis: broadcast_schedule. Programme description and schedule were checked; the audio was not transcribed or timed by topic. The two slots establish a first listed broadcast and repeat of one episode, not two independent reports. No listening figures are supplied."
       }
     ],
     "reasoningChecks": [
@@ -13474,7 +13788,232 @@
       "The 19 February announcement was recovery with identification pending; identification and family statement were reported on 20 February.",
       "Ofcom’s 21 February explanation request was not a breach determination.",
       "The College review published in November 2023 is retrospective and does not establish what was known during the February window."
-    ]
+    ],
+    "mediaRecords": [
+      {
+        "id": "media-bulley-1",
+        "caseId": "bulley-campaign",
+        "outlet": "GB News",
+        "channel": "online_video",
+        "format": "video",
+        "platform": null,
+        "title": "Nicola Bulley: Forensic expert admits warning her partner to 'prepare for worst' as she ‘could have been kidnapped’",
+        "date": "2023-02-14",
+        "dateBasis": "hosting_page_publication",
+        "publicationDisplay": "12:38 (publisher page publication time; timezone not stated)",
+        "programme": "Patrick Christys interview (publisher attribution; exact programme/airtime not verified)",
+        "url": "https://www.gbnews.com/news/nicola-bulley-forensic-expert-admits-warning-her-partner-to-prepare-for-worst-as-she-could-have-been-kidnapped/442052",
+        "contentBasis": "publisher_description_or_caption",
+        "sourceBasis": "GB News publisher page identifies date/time, displays a play control and labels Peter Faulding's appearance as an interview with Patrick Christys; page text also says Charlotte Drake joined Eamonn Holmes and Saira Khan on GB News.",
+        "summary": "The publisher hosts a Peter Faulding interview and reports his suggestions of alternatives to the police working hypothesis. It also reports a neighbour’s doubts. Those possibilities are guest claims, not established findings.",
+        "statusAtPublication": "These are attributed guest opinions and possibilities, not established facts. At the time, police had publicly described entry into the river as their working hypothesis; no criminal or third-party involvement was established in the cited record.",
+        "limit": "The publisher page's article publication time is not an aired time. Search-accessible page evidence shows a play control and describes interview content, but no player duration or linear broadcast log was recovered. The hypothetical kidnapping claim is not verified by this record. Only the Faulding player is identified here; the neighbour quotation is not a second recovered clip.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "publicationRelationship": "separate_media_record_with_unverified_origin_relationship",
+        "relationshipNote": "No parent article or repost relationship established; record is classified as online video from the page's play control and interview description, not as a television transmission.",
+        "distributionEvents": [],
+        "observedMetrics": [],
+        "evidenceIds": [
+          "media-bulley-1"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-bulley-2",
+        "caseId": "bulley-campaign",
+        "outlet": "Sky News",
+        "channel": "online_video",
+        "format": "video",
+        "platform": null,
+        "title": "Nicola Bulley: The 'myths' and 'false information' dispelled by police investigating her disappearance",
+        "date": "2023-02-15",
+        "dateBasis": "hosting_page_publication",
+        "publicationDisplay": "17:47 UK",
+        "programme": null,
+        "url": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+        "contentBasis": "publisher_description_or_caption",
+        "sourceBasis": "Sky News original publisher page labels the item 'Video 1:49', gives the publication timestamp, and describes the 15 February police press conference.",
+        "summary": "A short excerpt shows police rejecting third-party-crime claims for lack of evidence, describing false rumours as distracting, and addressing several circulating claims.",
+        "statusAtPublication": "Police statements are attributed to the officials at the briefing. Their working hypothesis remained that Bulley had entered the river; they said there was no evidence of crime or third-party involvement. The clip is not an independent finding about every online claim.",
+        "limit": "This is an online video page published after the press conference; the page does not state the original television airtime or prove that this exact edit aired linearly.",
+        "duration": {
+          "display": "1:49",
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": "https://news.sky.com/story/nicola-bulley-the-myths-and-false-information-dispelled-by-police-investigating-her-disappearance-12811741",
+        "linkedWrittenRecordId": "bulley-h05",
+        "publicationRelationship": "embedded_format_of_written_record",
+        "relationshipNote": "Original Sky News publisher video page; no repost relationship identified.",
+        "distributionEvents": [],
+        "observedMetrics": [],
+        "evidenceIds": [
+          "media-bulley-2"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-bulley-3",
+        "caseId": "bulley-campaign",
+        "outlet": "ITV News",
+        "channel": "social",
+        "format": "video",
+        "platform": "YouTube",
+        "title": "Nicola Bulley: Police clarify why missing woman was deemed 'high risk' | ITV News",
+        "date": "2023-02-15",
+        "dateBasis": "platform_upload_date",
+        "publicationDisplay": "15 February 2023 · YouTube upload date",
+        "programme": null,
+        "url": "https://www.youtube.com/watch?v=_o7dFQdGcOY",
+        "contentBasis": "publisher_description_or_caption",
+        "sourceBasis": "Official verified ITV News YouTube page read in the browser: upload 15 February 2023; video duration2:25; description and chapter labels visible. The clip was not transcribed in this pass.",
+        "summary": "ITV’s official upload reports the police explanation of the high-risk classification and their disclosure of personal information. The need for disclosure is an editorial question, not settled by its publication.",
+        "statusAtPublication": "The health-related account is attributed to Lancashire Police's statement, not independently established by the video. The record captures the disclosure and official explanation; it does not prove that disclosure was necessary or justified.",
+        "limit": "The official page verifies the upload date, 2:25 full-video duration and a current counter observed on 14 October 2026. No linear ITV transmission timestamp was established. Description metadata does not supply a complete transcript or a measure of campaign-period reach.",
+        "duration": {
+          "display": "2:25 · full video",
+          "totalSeconds": 145,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "publicationRelationship": "separate_media_record_with_unverified_origin_relationship",
+        "relationshipNote": "Official ITV News channel upload; no specific parent article or separate rebroadcast relationship proven.",
+        "distributionEvents": [
+          {
+            "kind": "outlet_social_upload",
+            "date": "2023-02-15",
+            "platform": "YouTube",
+            "url": "https://www.youtube.com/watch?v=_o7dFQdGcOY"
+          }
+        ],
+        "observedMetrics": [
+          {
+            "name": "views",
+            "value": 56500,
+            "observedAt": "2026-10-14T12:51:09Z",
+            "sourceURL": "https://www.youtube.com/watch?v=_o7dFQdGcOY",
+            "scope": "Current cumulative platform counter; not unique people, campaign-period views, or a measure of harm."
+          }
+        ],
+        "evidenceIds": [
+          "media-bulley-3"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-bulley-4",
+        "caseId": "bulley-campaign",
+        "outlet": "Sky News",
+        "channel": "social",
+        "format": "video",
+        "platform": "YouTube",
+        "title": "In full: Nicola Bulley news conference",
+        "date": "2023-02-15",
+        "dateBasis": "platform_upload_date",
+        "publicationDisplay": "2023-02-15",
+        "programme": null,
+        "url": "https://www.youtube.com/watch?v=wfTE_D3dFcw",
+        "contentBasis": "publisher_description_or_caption",
+        "sourceBasis": "Verified Sky News YouTube channel upload titled 'In full'; official channel metadata gives 15 February 2023 and description identifies it as Lancashire Police's news conference about Bulley's disappearance.",
+        "summary": "Full press briefing by Lancashire Police about the missing-person investigation.",
+        "statusAtPublication": "Primary-record footage of police remarks. Statements remain attributed to police and should be read as the force's account at that date, not as independently adjudicated findings.",
+        "limit": "Upload date is not the conference's exact start time or proof of a particular Sky linear transmission. Duration was not established from the search result inspected.",
+        "duration": {
+          "display": null,
+          "totalSeconds": null,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "publicationRelationship": "separate_media_record_with_unverified_origin_relationship",
+        "relationshipNote": "Official Sky News channel upload; no separate article-to-video relationship established.",
+        "distributionEvents": [
+          {
+            "kind": "outlet_social_upload",
+            "date": "2023-02-15",
+            "platform": "YouTube",
+            "url": "https://www.youtube.com/watch?v=wfTE_D3dFcw"
+          }
+        ],
+        "observedMetrics": [],
+        "evidenceIds": [
+          "media-bulley-4"
+        ],
+        "verifiedAt": "2026-10-14"
+      },
+      {
+        "id": "media-bulley-5",
+        "caseId": "bulley-campaign",
+        "outlet": "BBC Radio 4",
+        "channel": "radio",
+        "format": "audio",
+        "platform": null,
+        "title": "The 'shameful' coverage of Nicola Bulley",
+        "date": "2023-02-22",
+        "dateBasis": "broadcast_schedule",
+        "publicationDisplay": "22 February 2023 · first listed broadcast 16:30 UK; repeat 21:30 UK",
+        "programme": "The Media Show",
+        "url": "https://www.bbc.co.uk/programmes/m001jc8s",
+        "contentBasis": "publisher_description_and_schedule",
+        "sourceBasis": "Original BBC programme page read in the browser after text retrieval was blocked. The page identifies The Media Show, its description, 28-minute duration, and both Radio 4 broadcasts on 22 February at 16:30 and 21:30.",
+        "summary": "The programme asks what media should learn from the family’s criticism of coverage. The same episode also discusses war reporting; its full duration is not time devoted solely to Bulley.",
+        "statusAtPublication": "The programme description attributes the 'shameful' characterization to the family and frames the broadcast as a discussion of reporting lessons; it is not itself a regulator's finding about named outlets.",
+        "limit": "Programme description and schedule were checked; the audio was not transcribed or timed by topic. The two slots establish a first listed broadcast and repeat of one episode, not two independent reports. No listening figures are supplied.",
+        "duration": {
+          "display": "28 min · whole programme",
+          "totalSeconds": 1680,
+          "topicSeconds": null
+        },
+        "parentArticleURL": null,
+        "linkedWrittenRecordId": null,
+        "publicationRelationship": "separate_media_record_with_unverified_origin_relationship",
+        "relationshipNote": "BBC programme entry; no online article repost relationship identified.",
+        "distributionEvents": [
+          {
+            "kind": "broadcast",
+            "date": "2023-02-22",
+            "time": "16:30",
+            "timezone": "Europe/London",
+            "url": "https://www.bbc.co.uk/programmes/m001jc8s"
+          },
+          {
+            "kind": "repeat_broadcast",
+            "date": "2023-02-22",
+            "time": "21:30",
+            "timezone": "Europe/London",
+            "url": "https://www.bbc.co.uk/programmes/m001jc8s"
+          }
+        ],
+        "observedMetrics": [],
+        "evidenceIds": [
+          "media-bulley-5"
+        ],
+        "verifiedAt": "2026-10-14"
+      }
+    ],
+    "mediaScope": {
+      "verifiedAt": "2026-10-14",
+      "recordCount": 5,
+      "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
+      "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
+      "gaps": [
+        {
+          "channel": "social",
+          "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+        },
+        {
+          "channel": "tv",
+          "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
+        }
+      ]
+    }
   },
   {
     "id": "jefferies-campaign",
@@ -17068,6 +17607,31 @@
       "The 8 March report confirms the police-bail status as reported by The Independent; no exact bail-end date or formal clearance is claimed here.",
       "The 29 July judgment concerns specified Daily Mirror and Sun articles only.",
       "Later court and inquiry findings are retrospective and should not be projected as knowledge available at arrest."
-    ]
+    ],
+    "mediaRecords": [],
+    "mediaScope": {
+      "verifiedAt": "2026-10-14",
+      "recordCount": 0,
+      "method": "Recovered media samples are separate from the written inventory. Hosting-page dates, uploads, podcast releases and broadcast slots have distinct meanings. One programme may have several broadcasts or clips; these are distribution events, not automatically independent reports. Current view counters are dated observations, not unique audiences or campaign-period reach. Similar timing/framing or ideological alignment does not establish payments, direction, motive or foreign coordination.",
+      "financingOrCoordinationEvidence": "Not established by this collection. Ownership, guest affiliation or repeated framing alone is insufficient.",
+      "gaps": [
+        {
+          "channel": "social",
+          "note": "No original X, Facebook, Instagram or TikTok outlet posts or repost chains were recovered in this bounded pass. YouTube uploads are separately labelled where verified."
+        },
+        {
+          "channel": "tv",
+          "note": "No complete linear-TV log is supplied; online video dates do not establish airtime."
+        },
+        {
+          "channel": "all",
+          "note": "No recovered media records in this first pass. This does not mean there was no broadcast or social coverage."
+        },
+        {
+          "channel": "radio",
+          "note": "A Hacked Off transcript links to a BBC Today interview, but the original was not verified here. It remains an uncounted lead."
+        }
+      ]
+    }
   }
 ]

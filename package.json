@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node scripts/start.mjs",
-    "test": "node --test backend-test.mjs campaign-backend-test.mjs campaign-data-test.mjs game-test.mjs scripts/check-secrets.test.mjs donor-pool.test.mjs lambda-handler.test.mjs public-gateway.test.mjs response-quality.test.mjs voice-direction.test.mjs release-data.test.mjs edge-worker.test.mjs donor-ui.test.mjs speech-client.test.mjs archive-evidence.test.mjs",
+    "test": "node --test backend-test.mjs campaign-backend-test.mjs campaign-data-test.mjs game-test.mjs scripts/check-secrets.test.mjs donor-pool.test.mjs lambda-handler.test.mjs public-gateway.test.mjs response-quality.test.mjs voice-direction.test.mjs release-data.test.mjs edge-worker.test.mjs donor-ui.test.mjs speech-client.test.mjs archive-evidence.test.mjs media-evidence.test.mjs",
     "check:secrets": "node scripts/check-secrets.mjs --history",
     "setup:hooks": "git config --local core.hooksPath .githooks"
   }

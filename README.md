@@ -54,3 +54,7 @@ The original comparison prototype is archived separately as [`comparison.html`](
 ## Archive evidence update · 14 October 2026
 
 Six case bundles contain 179 retained dated records and 22 playable outlet desks. `research.html` describes the original/archived/official evidence and recovery gaps. Publication, modification and capture times remain distinct; comparator examples are outside subject counts. These are recovered samples, not comparable censuses. No paid provider requests were made for this revision.
+
+## Cross-media pilot · 14 October 2026
+
+`mediaRecords` adds ten observed audiovisual/social source records across four cases without changing179written records. Linked embedded formats, programme repeats, metadata-only verification, whole-programme duration and timestamped current counters are explicit. Original X/Facebook/Instagram/TikTok chains, complete linear-TV inventories and financing/coordination remain gaps. See `crossmedia.html` and `media-records.csv`. Public media players are links, with no autoplay or copying.
