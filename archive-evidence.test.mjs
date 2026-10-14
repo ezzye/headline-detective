@@ -7,11 +7,11 @@ const all=JSON.parse(await readFile(new URL('./campaigns.json',import.meta.url),
 const get=id=>all.find(c=>c.id===id);
 const post=(app,url,body)=>new Promise(resolve=>{const req=Readable.from([Buffer.from(JSON.stringify(body))]);Object.assign(req,{method:'POST',url,headers:{host:'127.0.0.1','content-type':'application/json'}});let status;app.server.emit('request',req,{writeHead(s){status=s},end(bytes){resolve({status,json:JSON.parse(bytes)})}})});
 test('archive update reconciles retained and playable totals with canonical bundles',async()=>{
- assert.deepEqual(all.map(c=>c.allHeadlines.length),[90,32,15,10,17,15]);
- assert.equal(all.reduce((n,c)=>n+c.allHeadlines.length,0),179);
- assert.equal(all.reduce((n,c)=>n+c.campaigns.length,0),22);
+ assert.deepEqual(all.map(c=>c.allHeadlines.length),[90,32,15,10,17,15,15]);
+ assert.equal(all.reduce((n,c)=>n+c.allHeadlines.length,0),194);
+ assert.equal(all.reduce((n,c)=>n+c.campaigns.length,0),25);
  for(const c of all){const b=JSON.parse(await readFile(new URL(`./case-bundles/${c.id}.json`,import.meta.url),'utf8'));assert.deepEqual(c.allHeadlines,b.allHeadlines);assert.equal(c.source.selectedCount,c.campaigns.reduce((n,d)=>n+d.listedCount,0));for(const event of c.events)assert(c.evidence.some(e=>e.id===event.evidenceId));}
- const csv=await readFile(new URL('./recovered-headlines.csv',import.meta.url),'utf8');assert.equal(csv.trim().split(/\r?\n/).length,180);
+ const csv=await readFile(new URL('./recovered-headlines.csv',import.meta.url),'utf8');assert.equal(csv.trim().split(/\r?\n/).length,195);
 });
 test('captured versions never add articles or replace publication dates',()=>{
  const c=get('caroline-flack-recovered-campaign'),h=c.allHeadlines.find(r=>r.id==='h21');

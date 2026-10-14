@@ -1,8 +1,8 @@
 # Headline Detective · Pile-on Jury
 
-An evidence-led game about whether sustained media attention serves the public interest or becomes disproportionate pressure. Six case bundles let players compare dated coverage, hear fictional outlet defences, ask questions and make their own judgments.
+An evidence-led game about whether sustained media attention serves the public interest or becomes disproportionate pressure. Seven case bundles let players compare dated coverage, hear fictional outlet defences, ask questions and make their own judgments.
 
-[Live game](https://codingforjustice.org.uk/) · [Setup and sharing](README.html) · [Verification status](verification.html) · [Attention guide](attention.html) · [Coverage audit](pileon-coverage-audit.html) · [Jefferies three-day guide](jefferies.html) · [Archive research](research.html)
+[Live game](https://codingforjustice.org.uk/) · [Setup and sharing](README.html) · [Verification status](verification.html) · [Attention guide](attention.html) · [Coverage audit](coverage-audit.html) · [Jefferies three-day guide](jefferies.html) · [Archive research](research.html) · [Studies and case evidence](case-evidence.html)
 
 ## The six-step round
 
@@ -15,7 +15,7 @@ An evidence-led game about whether sustained media attention serves the public i
 
 Volume alone does not establish motive, discrimination or harm. A documented sharing link does not establish coordination, owner instruction or causation.
 
-## Six case bundles
+## Seven case bundles
 
 | Case | Retained written records | Window |
 | --- | ---: | --- |
@@ -25,8 +25,9 @@ Volume alone does not establish motive, discrimination or harm. A documented sha
 | Meghan Markle | 10 | 6–23 February 2019 |
 | Nicola Bulley | 17 | 8–22 February 2023 |
 | Christopher Jefferies | 15 | 30 December 2010–28 November 2011 |
+| Mason Greenwood | 15 | 2 February–1 September 2023 |
 
-The fixed inventory contains **179 retained written records** and 22 playable outlet desks. Research depth is uneven: Arday accounts for 90 written records, while the five older cases contain 32, 15, 10, 17 and 15. These are recovered samples with different selection rules, not comparable censuses; sample size is not a severity score. Some retained context records are outside the playable desks; Jefferies' long window is not a claim of continuous coverage.
+The fixed inventory contains **194 retained written records** and 25 playable outlet desks. Research depth is uneven: Arday accounts for 90 written records, while the other six cases contain 32, 15, 10, 17, 15 and 15. These are recovered samples with different selection rules, not comparable censuses; sample size is not a severity score. Some retained context records are outside the playable desks; Jefferies' long window is not a claim of continuous coverage.
 
 Arday's selected 90 records sit within the qualified NewsCord inventory of 229 distinct substantive written pieces across 15 outlets. The Flack round now uses a dated recovered sample. The separate Guardian analysis of 99 Sun print stories among 387 newspaper stories over 14 August 2019–14 February 2020 remains aggregate context; its mention rule and period differ from the recovered sample, and 99 does not mean 99 negative stories. No daily sequence is inferred from that aggregate.
 
@@ -36,7 +37,7 @@ Arday's selected 90 records sit within the qualified NewsCord inventory of 229 d
 
 The current cross-media supplement contains **23 records**, including **13 X posts**: ten contributing posts across five cases and three counter-speech records. The contributing examples include publisher promotions, a front-page preview, repeated allegations, a radio clip and renewed personal exposure. Their classification records circulation, not a verdict that every post was unjustified.
 
-`spreadLinks` contains six verified promotion, preview, quote, reply or direct-link relationships. The replay shows those connections alongside headlines and seven editorial records. Unsigned leaders and bylined opinion keep different labels; the Flack aftermath is optional and marked. Two editorials already belong to the written inventory and are not counted again.
+`spreadLinks` contains six verified promotion, preview, quote, reply or direct-link relationships. The replay shows those connections alongside headlines and eight editorial records. Unsigned leaders and bylined opinion keep different labels; the Flack aftermath is optional and marked. Three opinion or editorial pieces already belong to the written inventory and are not counted again.
 
 Original X timestamps, where available, support precise ordering. Present engagement counters retain the 14 October 2026 observation date and cannot reconstruct the original audience or a historical growth curve. Keyworth's unavailable live thread was recovered through a Wayback capture made at 22:55:17 UTC on 28 May 2018. It displays a 28 May publication date with an unknown timezone and a historical snapshot of 887 reposts and 911 likes. Capture time is not publication time.
 
@@ -46,7 +47,7 @@ No qualifying contributing X post was recovered for Jefferies in this pass. Dele
 
 ## Coverage audit
 
-[Open the standalone coverage audit](pileon-coverage-audit.html). It compares five bounded evidence bundles and separates verified article counts, opinions, date-only records and uncensused gaps. Its Jefferies recovery section confirms the 40-article aggregate but adds no independently verified article records.
+[Open the standalone coverage audit](coverage-audit.html). It compares six bounded evidence bundles and separates verified article counts, opinions, date-only records and uncensused gaps. Its Jefferies recovery section confirms the 40-article aggregate but adds two recovered Mail webpages whose membership of the settlement set is unverified.
 
 ## Jefferies three-day guide
 
@@ -54,7 +55,7 @@ No qualifying contributing X post was recovered for Jefferies in this pass. Dele
 
 ## Accountability after the coverage
 
-Sixteen `accountabilityRecords` across all six cases distinguish announcements, review terms, institutional accounts, reported inquest conclusions, review findings and court judgments. Their dates and `phase` keep later knowledge separate from the original publication windows. Flack’s CPS statement was signed on 28 July 2020 but published on the website on 10 November 2025; the ITV inquest record is reporting, not the original Record of Inquest.
+Eighteen `accountabilityRecords` across all seven cases distinguish announcements, review terms, institutional accounts, reported inquest conclusions, review findings and court judgments. Their dates and `phase` keep later knowledge separate from the original publication windows. Flack’s CPS statement was signed on 28 July 2020 but published on the website on 10 November 2025; the ITV inquest record is reporting, not the original Record of Inquest.
 
 The Markle sequence distinguishes the May 2020 procedural strike-out from the 2021 privacy/copyright merits and remedy rulings. Jefferies includes specified contempt findings, Leveson’s examination of appearance and temperament judgments, and later judicial confirmation of settlements and the police apology. The Mirror editor’s claim of off-record police briefings was disputed by the Chief Constable and unresolved by Leveson; neither secret incriminating information nor its absence is established by that dispute. Criticism of reckless publication does not prove malice. The Bulley review concerns police disclosure; the recovered Ofcom document is a procedural status, not an upheld broadcast breach. Arday’s investigation announcement and welfare terms remain distinct from completed findings, and Chelsea’s Sterling sanctions remain club decisions, not press judgments or criminal convictions.
 
@@ -83,3 +84,5 @@ Share standalone HTML files for offline review, or share the public source repos
 Check `verification.html` and current release records before claiming deployment or full verification. Owner acceptance remains separate. The original comparison prototype is archived as `comparison.html`; it is not one of the current campaign rounds.
 
 The Jefferies recovery audit now includes two full Mail Online pages preserved by Wayback, five dated front-cover references, and eight selected Leveson print packages. These evidence sets are separate: no new page has been individually mapped to the reported 40 settled articles. Publisher-displayed dates are distinct from capture dates; web pages are not automatically additional print articles.
+
+Greenwood is a seventh playable campaign:15 verified written pieces across three outlet families,2February–1September2023. A separate, overlapping BBC audit records25 page IDs throughApril2026, with live, AV, gossip and audience formats labelled. Later De Zerbi comments and reactions are attributed context. Six event-led comparison bundles include Reform/Farage finance allegations; criticism alone is not treated as a documented pile-on. Neither the game nor its source inventory decides guilt, intent, racial causation or the fairness of every later mention.

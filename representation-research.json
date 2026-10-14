@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-14",
+  "title": "When an individual story becomes a racial pattern",
+  "interpretation": "A defensible initial story does not settle whether selection, repeated framing, prominence and persistence produce unequal treatment. Structural bias can be examined without an editor admitting intent. A deliberate strategy to conceal bias is a separate claim requiring evidence.",
+  "studies": [
+    {
+      "id": "research-reach-2011",
+      "label": "Cardiff REACH media monitoring report (2011)",
+      "url": "https://orca.cardiff.ac.uk/id/eprint/28559/1/2113275.pdf",
+      "text": "Cardiff REACH report (2011): 66.9% of 499 sampled items featuring Black males aged11–24 were crime-related, compared with41.9% for all young men/boys, not white-only. Eight two-week monitoring windows,2008–09; news in print, TV and radio. Victims were included. This is historical content analysis, not a measure of the present cases or evidence of each editor’s intent.",
+      "finding": "Crime accounted for 66.9% of sampled items featuring Black young men and boys, against 41.9% for all young men and boys.",
+      "limit": "The comparator includes Black youth; the sample is from 2008–09 and includes victims. It does not mean 67% portrayed Black people as criminals.",
+      "locator": "Executive summary; Table 2.0; methodology; Chapter 3."
+    },
+    {
+      "id": "research-black-british-voices",
+      "label": "Black British Voices Project (2023)",
+      "url": "https://www.cam.ac.uk/stories/black-british-voices-report",
+      "text": "Cambridge/Voice/I-Cubed Black British Voices (2023), over10,000 respondents: three in four believed Black businesses were treated unfairly by investors and financial institutions. The report describes perceived media stereotyping and football double standards. Survey/interviews are evidence of respondents’ experiences and perceptions, not a content audit or a causal finding for these cases.",
+      "finding": "Three in four respondents believed Black businesses were treated unfairly by investors and financial institutions. Media stereotyping and football double standards were also concerns in the report.",
+      "limit": "A survey and interviews document reported experience and perceptions. Business-investment findings cannot be relabelled as a measured media-coverage disparity.",
+      "locator": "Business/enterprise and media chapters; University of Cambridge summary."
+    }
+  ],
+  "industrySource": {
+    "label": "NCTJ Diversity in Journalism (2023)",
+    "url": "https://www.nctj.com/wp-content/uploads/2023/05/Diversity-in-journalism-2023-4WEB.pdf",
+    "finding": "Its 2022 data estimated that 88% of UK journalists were White. Workforce representation is relevant context; this statistic alone does not demonstrate a newsroom’s bias."
+  },
+  "attributionCorrections": [
+    "The crime statistic is from Cardiff’s REACH report, not a verified Reuters study.",
+    "The Lammy Review concerns criminal-justice disparities. The cited wealth-and-driving claim is not established by that review; separate Liberty/StopWatch work addresses traffic stops."
+  ],
+  "questions": [
+    "Did criticism of a specific act become a fixed judgment about the whole person?",
+    "Did money, dress, cars or ambition become a reason to portray someone as undeserving?",
+    "Was an allegation repeatedly recalled after its status changed, without new information?",
+    "Were replies, achievements and ordinary context given similar prominence?",
+    "Would the same conduct, evidence and public role have attracted similar persistence and framing for someone else?"
+  ],
+  "claimBoundary": "Neither serious allegations nor proven wrongdoing gives an outlet unlimited permission for humiliation. Fair scrutiny of alleged abuse also protects complainants; the question is how the coverage treats evidence, power and people."
+}

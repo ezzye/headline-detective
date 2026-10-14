@@ -16,7 +16,7 @@ const session=async(app,caseId='jefferies-campaign')=>{
 };
 test('canonical comparison samples retain inquiry precision, separate units and incomplete recovery',async()=>{
   const bundles=JSON.parse(await readFile(new URL('./comparison-bundles.json',import.meta.url),'utf8'));
-  assert.equal(bundles.length,5);assert(bundles.every(validComparisonBundle));
+  assert.equal(bundles.length,6);assert(bundles.every(validComparisonBundle));
   const gap=bundles.find(b=>b.id==='comparison-cyril-smith');
   assert.equal(gap.anchor.publicDate,'1979-05');assert.equal(gap.windows.length,0);
   assert.equal(gap.coverageVerdict,'documented_non_pickup');

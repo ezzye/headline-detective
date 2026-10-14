@@ -855,5 +855,567 @@
     "searchLog": [
       "Original inquiry exhibit PDFs redirected or returned403; accessible official report HTML supports the finding. No access control was bypassed."
     ]
+  },
+  {
+    "id": "comparison-farage",
+    "title": "Nigel Farage and Reform UK: political-finance scrutiny",
+    "kind": "reported_comparator",
+    "relatedCaseIds": [
+      "arday-2026-campaign",
+      "caroline-flack-recovered-campaign",
+      "sterling-campaign",
+      "markle-letter-campaign",
+      "bulley-campaign",
+      "jefferies-campaign",
+      "greenwood-campaign"
+    ],
+    "summary": "Political finance has a strong public-interest claim: these reports concern a political leader’s large donor relationship, election funding and alleged concealment. The April personal-gift disclosure and September undercover investigation are separate episodes. Parliamentary and police inquiries are not findings of guilt. The recovered sample is not a measure of total attention or proof that the university case received disproportionate coverage.",
+    "anchors": [
+      {
+        "id": "farage-undercover-anchor",
+        "label": "Channel 4 News broadcasts its verified Verbatim undercover investigation",
+        "eventDate": "2026-09-03",
+        "publicDate": "2026-09-03",
+        "datePrecision": "day",
+        "displayDate": "3 September 2026"
+      },
+      {
+        "id": "farage-gift-anchor",
+        "label": "The Guardian reveals the £5m personal gift; Farage confirms it to the Telegraph",
+        "eventDate": "2024-04-05",
+        "publicDate": "2026-04-29",
+        "datePrecision": "day",
+        "displayDate": "29 April 2026 (public revelation)"
+      }
+    ],
+    "officialSources": [
+      {
+        "id": "comparison-farage-channel4-original",
+        "title": "Exclusive: Nigel Farage filmed undercover celebrating secret new foreign donations",
+        "url": "https://www.channel4.com/news/exclusive-nigel-farage-filmed-undercover-celebrating-secret-new-foreign-donations",
+        "summary": "Channel 4 News original page (opened in Chrome, displayed 3 Sep 2026) says it independently verified footage produced by Verbatim. It reports that a US company paid £32,500 for three Reform-commissioned polls, and that a future £500,000 donation was proposed via a UK-based son using funds from his US-based father. The larger transfer was never made. At a late-July meeting, Farage praised the polls and thanked the undercover team. Channel 4 says Reform did not comment before broadcast and later states the subjects deny the allegations.",
+        "date": "2026-09-03",
+        "datePrecision": "day",
+        "locator": "Original Channel 4 News page opened in Chrome; displayed date and full article read. Official associated YouTube video separately verified: https://www.youtube.com/watch?v=aXut3s90rUI",
+        "sourceType": "original_reporting"
+      },
+      {
+        "id": "comparison-farage-commons-investigation",
+        "title": "Allegations currently under investigation by the Parliamentary Commissioner for Standards",
+        "url": "https://www.parliament.uk/mps-lords-and-offices/standards-and-financial-interests/parliamentary-commissioner-for-standards/complaints-and-investigations/allegations-currently-under-investigation-by-the-commissioner/",
+        "summary": "Current official list says Nigel Farage MP, opened 13 May 2026, Rule 5: failure to register an interest. Parliament expressly says the existence of an inquiry does not mean rules were broken. This listed inquiry concerns the gift/register question; do not conflate it with the later party-funding police investigation.",
+        "date": "2026-05-13",
+        "datePrecision": "day",
+        "locator": "Current investigation table, Nigel Farage MP entry; page checked 14 October 2026",
+        "sourceType": "official"
+      },
+      {
+        "id": "comparison-farage-register",
+        "title": "Register of Interests for Nigel Farage MP",
+        "url": "https://members.parliament.uk/member/5091/registeredinterests?categoryId=5",
+        "summary": "Current register lists disclosed benefits including a £25,000 flight seat from Harborne for a February 2026 visit; the page's current categories and content are not a formal finding about the separate £5m 2024 gift. The Commissioner investigation remains separately listed.",
+        "date": null,
+        "datePrecision": "unknown",
+        "locator": "Official Parliament member interests register, current page checked 14 October 2026",
+        "sourceType": "official"
+      },
+      {
+        "id": "comparison-farage-met-statement",
+        "title": "Metropolitan Police statement on Reform UK donations/polling reports",
+        "url": "https://www.itv.com/news/2026-09-09/police-will-investigate-reform-uk-over-donations",
+        "summary": "ITV original page opened in Chrome, dated 9 September 2026, reproduces the Met statement: after the 3 September Channel 4 broadcast, police assessed reports and identified potential offences requiring investigation, to be added to the existing Special Enquiry Team investigation into donations to the same party. Met says allegations concern potential offences under PPERA 2000 and detectives are seeking broadcast footage. Reform says it denies wrongdoing and will cooperate.",
+        "date": "2026-09-09",
+        "datePrecision": "day",
+        "locator": "ITV page opened in Chrome; title/date and Met spokesperson statement verified in page body",
+        "sourceType": "reported_official_statement"
+      },
+      {
+        "id": "comparison-farage-electoral-law",
+        "title": "Political Parties, Elections and Referendums Act 2000, Part IV",
+        "url": "https://www.legislation.gov.uk/ukpga/2000/41/contents",
+        "summary": "Section 54 defines permissible donors (including an individual registered on an electoral register); sections 50 and 55 address what counts as a party donation, including indirect benefits and third-party spending to meet party expenses; section 61 addresses knowing arrangements facilitating donations from impermissible donors. An overseas residence alone does not establish that a donor is impermissible. Whether the reported facts meet these rules is for investigators/courts, not this evidence summary.",
+        "date": null,
+        "datePrecision": "unknown",
+        "locator": "Sections 50, 54, 55 and 61; legislation page says updated through 3 October 2026",
+        "sourceType": "official"
+      },
+      {
+        "id": "comparison-farage-electoral-commission-records",
+        "title": "Electoral Commission donations search: Christopher Harborne",
+        "url": "https://search.electoralcommission.org.uk/Search/Donations?et=perpar,pp,ppm,rd,tp&includeOutsideSection75=true&isIrishSourceNo=true&isIrishSourceYes=true&order=desc&postPoll=true&prePoll=false&query=Christopher%20harborne&register=gb,ni,none&sort=AcceptedDate&currentPage=1",
+        "summary": "Official Commission search export contained 47 records associated with Harborne's registered party donations on the 23 September 2026 export. This supports that he is a party donor but does not establish the classification or legal status of his separate £5m personal gift to Farage.",
+        "date": "2026-09-23",
+        "datePrecision": "day",
+        "locator": "Electoral Commission PDF export, query Christopher Harborne, generated 23 September 2026",
+        "sourceType": "official"
+      },
+      {
+        "id": "comparison-farage-nathan-gill",
+        "title": "Former UKIP MEP jailed for taking bribes",
+        "url": "https://www.cps.gov.uk/cps/news/former-ukip-mep-jailed-taking-bribes",
+        "summary": "CPS records that former Reform Wales leader Nathan Gill pleaded guilty to eight bribery counts and was sentenced to 10.5 years in November 2025 for payments tied to conduct in the European Parliament in 2018–19. This conviction is a separate case and is not proof about Farage, the Harborne gift, or the September 2026 allegations.",
+        "date": "2025-11-21",
+        "datePrecision": "day",
+        "locator": "CPS press release",
+        "sourceType": "official"
+      },
+      {
+        "id": "comparison-farage-oreilly-comparator",
+        "title": "William O’Reilly: an education-panel comparison with missing public reasons",
+        "url": "https://www.varsity.co.uk/news/26105",
+        "summary": "The current comparison bundle has an O’Reilly sample of one Varsity news report, one Per Capita report and one separately classified Varsity opinion in 29 September–5 October 2023, plus a separate June 2023 FT initial report whose original article metadata/body was not independently recovered. The bundle marks coverage unmeasured and notes no named official panel decision/full reasons. This is not a coverage census.",
+        "date": null,
+        "datePrecision": "unknown",
+        "locator": "Cross-check against local comparison-bundles.json, comparison-oreilly; Varsity story is linked as public anchor",
+        "sourceType": "reported_institutional_response"
+      }
+    ],
+    "records": [
+      {
+        "id": "comparison-farage-sep-record-1",
+        "date": "2026-09-03",
+        "outlet": "Channel 4 News / Verbatim",
+        "headline": "Exclusive: Nigel Farage filmed undercover celebrating secret new foreign donations",
+        "url": "https://www.channel4.com/news/exclusive-nigel-farage-filmed-undercover-celebrating-secret-new-foreign-donations",
+        "format": "investigation_package",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-farage-channel4-original"
+        ],
+        "publicationDisplay": "3 Sep 2026; Channel 4 News evening broadcast",
+        "verificationNote": "Original Channel 4 publisher page opened; displayed date 3 Sep 2026 and exact title verified. Separate official Channel 4 News YouTube video record is linked below."
+      },
+      {
+        "id": "comparison-farage-sep-record-2",
+        "date": "2026-09-03",
+        "outlet": "The Guardian",
+        "headline": "Reform officials ‘plotted to break law on foreign donations’ in undercover film",
+        "url": "https://www.theguardian.com/politics/2026/sep/03/reform-officials-plotted-to-break-law-on-foreign-donations-in-undercover-film",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-farage-channel4-original"
+        ],
+        "publicationDisplay": "First published Thu 3 Sep 2026 20:51 BST; updated Fri 4 Sep 2026 14:30 BST",
+        "verificationNote": "Original Guardian publisher page opened; first publication and update timestamps verified. Counted by first-publication date."
+      },
+      {
+        "id": "comparison-farage-sep-record-3",
+        "date": "2026-09-04",
+        "outlet": "BBC News",
+        "headline": "Farage says his aides' donor comments were 'loose pub talk'",
+        "url": "https://www.bbc.co.uk/news/articles/c3eqvyj5qg5o",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-farage-channel4-original"
+        ],
+        "publicationDisplay": "4 Sep 2026",
+        "verificationNote": "BBC original page opened in Chrome; headline and Published 4 September 2026 verified."
+      },
+      {
+        "id": "comparison-farage-sep-record-4",
+        "date": "2026-09-05",
+        "outlet": "ITV News",
+        "headline": "'Clear breaches of the law': Standards watchdog asked to investigate Reform over donations sting",
+        "url": "https://www.itv.com/news/2026-09-04/farage-insists-reform-has-done-nothing-wrong-after-undercover-donations-sting",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-farage-channel4-original"
+        ],
+        "publicationDisplay": "Saturday 5 September 2026 at 06:40 BST (publisher page; article:published_time metadata 2026-09-05T05:40:19Z)",
+        "verificationNote": "Original ITV page opened in Chrome. Its slug contains 2026-09-04, but the publisher display and article:published_time show first publication on 5 September; counted on 5 September."
+      },
+      {
+        "id": "comparison-farage-sep-record-5",
+        "date": "2026-09-04",
+        "outlet": "Associated Press",
+        "headline": "Nigel Farage's party suspends top officials after undercover sting makes foreign funding claims",
+        "url": "https://apnews.com/article/bb61ee0c3626ba21dc664b62b6c73bfe",
+        "format": "article",
+        "sourceStatus": "reported_date_only",
+        "evidenceIds": [
+          "comparison-farage-channel4-original"
+        ],
+        "publicationDisplay": "Fri 4 Sep 2026 10:31 UTC",
+        "verificationNote": "AP dateline/time recovered from publisher search result."
+      },
+      {
+        "id": "comparison-farage-sep-record-6",
+        "date": "2026-09-04",
+        "outlet": "The Guardian",
+        "headline": "The Guardian view on Reform’s funding scandal: Nigel Farage has questions to answer",
+        "url": "https://www.theguardian.com/commentisfree/2026/sep/04/the-guardian-view-on-reforms-funding-scandal-nigel-farage-has-questions-to-answer",
+        "format": "editorial",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-farage-channel4-original"
+        ],
+        "publicationDisplay": "Fri 4 Sep 2026 17:52 BST; publisher labels it Opinion / Editorial",
+        "verificationNote": "Original Guardian page opened in Chrome; title, timestamp, and editorial classification verified."
+      },
+      {
+        "id": "comparison-farage-sep-record-7",
+        "date": "2026-09-04",
+        "outlet": "Euronews",
+        "headline": "Reform UK reported to police over claims of illegal donations as two senior aides resign",
+        "url": "https://www.euronews.com/2026/09/04/reform-uk-reported-to-police-over-claims-of-illegal-donations-as-farage-opens-conference",
+        "format": "article",
+        "sourceStatus": "reported_date_only",
+        "evidenceIds": [
+          "comparison-farage-channel4-original"
+        ],
+        "publicationDisplay": "4 Sep 2026",
+        "verificationNote": "Publisher search result verified title/date; not counted as a UK-origin outlet but included in international pickup sample."
+      },
+      {
+        "id": "comparison-farage-sep-record-8",
+        "date": "2026-09-05",
+        "outlet": "ITV News",
+        "headline": "Nigel Farage '100% confident' his party has never taken illegal donations",
+        "url": "https://www.itv.com/news/2026-09-05/nigel-farage-100-confident-his-party-has-never-taken-illegal-donations",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-farage-channel4-original"
+        ],
+        "publicationDisplay": "Saturday 5 September 2026 at 16:02 BST",
+        "verificationNote": "Original ITV page opened in Chrome; title and publication time verified."
+      },
+      {
+        "id": "comparison-farage-sep-record-9",
+        "date": "2026-09-06",
+        "outlet": "The Guardian",
+        "headline": "Farage says overseas donation row ‘looks bad’ but denies Reform breached electoral law",
+        "url": "https://www.theguardian.com/politics/2026/sep/06/farage-says-overseas-donation-row-looks-bad-but-denies-reform-breached-electoral-law",
+        "format": "article",
+        "sourceStatus": "reported_date_only",
+        "evidenceIds": [
+          "comparison-farage-channel4-original"
+        ],
+        "publicationDisplay": "6 Sep 2026",
+        "verificationNote": "Publisher page verified from result; follow-up covers denial and conference response."
+      },
+      {
+        "id": "comparison-farage-sep-record-10",
+        "date": "2026-09-09",
+        "outlet": "ITV News",
+        "headline": "Police will investigate Reform UK over donations",
+        "url": "https://www.itv.com/news/2026-09-09/police-will-investigate-reform-uk-over-donations",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-farage-met-statement"
+        ],
+        "publicationDisplay": "Wednesday 9 September 2026 at 17:24 BST",
+        "verificationNote": "Original ITV page opened in Chrome; title, publication time and reproduced Met statement verified."
+      },
+      {
+        "id": "comparison-farage-sep-record-11",
+        "date": "2026-09-09",
+        "outlet": "Associated Press",
+        "headline": "UK police open criminal investigation into whether Reform UK broke foreign-funding rules",
+        "url": "https://apnews.com/article/8dc9d6790e3e06b2bb898f803231bec1",
+        "format": "article",
+        "sourceStatus": "reported_date_only",
+        "evidenceIds": [
+          "comparison-farage-met-statement"
+        ],
+        "publicationDisplay": "Wed 9 Sep 2026 14:06 UTC",
+        "verificationNote": "AP publisher result verified title/date/time; explicitly reports allegations and denial."
+      },
+      {
+        "id": "comparison-farage-gift-record-1",
+        "date": "2026-04-29",
+        "outlet": "The Guardian",
+        "headline": "Exclusive: Nigel Farage was given undisclosed £5m by crypto billionaire in 2024",
+        "url": "https://www.theguardian.com/politics/2026/apr/29/revealed-nigel-farage-was-given-undisclosed-5m-by-crypto-billionaire-in-2024",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-farage-commons-investigation"
+        ],
+        "publicationDisplay": "Wed 29 Apr 2026 11:19 BST first published",
+        "verificationNote": "Original Guardian publisher page opened; title and first-published time verified."
+      },
+      {
+        "id": "comparison-farage-gift-record-2",
+        "date": "2026-04-29",
+        "outlet": "The Guardian",
+        "headline": "Farage’s attempt to get ahead of £5m gift story only raises more questions",
+        "url": "https://www.theguardian.com/politics/2026/apr/29/nigel-farage-christopher-harborne-gift-story-raises-more-questions",
+        "format": "analysis",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-farage-commons-investigation"
+        ],
+        "publicationDisplay": "Wed 29 Apr 2026 17:03 BST first published",
+        "verificationNote": "Original Guardian publisher page opened; title, publication time and Analysis classification verified."
+      },
+      {
+        "id": "comparison-farage-gift-record-3",
+        "date": "2026-04-29",
+        "outlet": "The Guardian",
+        "headline": "Nigel Farage referred to standards watchdog over undisclosed £5m gift",
+        "url": "https://www.theguardian.com/politics/2026/apr/29/nigel-farage-referred-standards-watchdog-undisclosed-gift",
+        "format": "article",
+        "sourceStatus": "reported_date_only",
+        "evidenceIds": [
+          "comparison-farage-commons-investigation"
+        ],
+        "publicationDisplay": "Wed 29 Apr 2026 13:24 EDT (18:24 BST)",
+        "verificationNote": "Follow-up on referral; same-outlet multiple stories count as articles, not distinct outlets."
+      },
+      {
+        "id": "comparison-farage-gift-record-4",
+        "date": "2026-04-29",
+        "outlet": "BBC News",
+        "headline": "Farage received £5m from donor before he became MP",
+        "url": "https://www.bbc.co.uk/news/articles/cn5pr0gp3gro",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-farage-commons-investigation"
+        ],
+        "publicationDisplay": "Published 29 April 2026 (BBC page; day only)",
+        "verificationNote": "Original BBC publisher page opened; exact page title and Published date verified."
+      },
+      {
+        "id": "comparison-farage-gift-record-5",
+        "date": "2026-04-29",
+        "outlet": "The Independent",
+        "headline": "Nigel Farage says his home was firebombed last year",
+        "url": "https://www.independent.co.uk/news/uk/home-news/nigel-farage-reform-uk-thailand-mps-home-office-b2967119.html",
+        "format": "article",
+        "sourceStatus": "reported_date_only",
+        "evidenceIds": [
+          "comparison-farage-commons-investigation"
+        ],
+        "publicationDisplay": "Wed 29 Apr 2026 14:07 BST",
+        "verificationNote": "Publisher search result verified date/title."
+      },
+      {
+        "id": "comparison-farage-gift-record-6",
+        "date": "2026-04-29",
+        "outlet": "Bloomberg",
+        "headline": "Farage Accused by Labour, Conservatives of Breaking Rules Over £5 Million Gift",
+        "url": "https://www.bloomberg.com/news/articles/2026-04-29/farage-accused-of-rule-break-over-5-million-donation",
+        "format": "article",
+        "sourceStatus": "reported_date_only",
+        "evidenceIds": [
+          "comparison-farage-commons-investigation"
+        ],
+        "publicationDisplay": "29 Apr 2026 13:14 UTC",
+        "verificationNote": "Publisher search result verified date/title."
+      },
+      {
+        "id": "comparison-farage-gift-record-7",
+        "date": "2026-04-29",
+        "outlet": "The Independent",
+        "headline": "Farage referred to watchdog over £5m ‘gift’ from Thai-based British crypto billionaire",
+        "url": "https://www.the-independent.com/news/uk/politics/nigel-farage-crypto-christopher-harborne-reform-donations-b2967144.html",
+        "format": "article",
+        "sourceStatus": "reported_date_only",
+        "evidenceIds": [
+          "comparison-farage-commons-investigation"
+        ],
+        "publicationDisplay": "Wed 29 Apr 2026 12:21 EDT (17:21 BST)",
+        "verificationNote": "Publisher result verified title/date."
+      },
+      {
+        "id": "comparison-farage-gift-record-8",
+        "date": "2026-04-30",
+        "outlet": "Sky News",
+        "headline": "Politics latest: Farage did not need to declare 'private' £5m gift before becoming MP, Braverman says",
+        "url": "https://news.sky.com/story/politics-latest-starmer-labour-badenoch-small-boats-farage-12593360?postid=10056109",
+        "format": "liveblog_entry",
+        "sourceStatus": "reported_date_only",
+        "evidenceIds": [
+          "comparison-farage-commons-investigation"
+        ],
+        "publicationDisplay": "Thu 30 Apr 2026 12:18 BST",
+        "verificationNote": "This is a dated live-blog entry, not a standalone article; it reports a defense by Reform MP Suella Braverman."
+      },
+      {
+        "id": "comparison-farage-gift-record-9",
+        "date": "2026-05-05",
+        "outlet": "The Guardian",
+        "headline": "Farage deploys the rottweiler to distract from awkward £5m gift story",
+        "url": "https://www.theguardian.com/politics/2026/may/05/farage-deploys-the-rottweiler-to-distract-from-awkward-5m-gift-story",
+        "format": "opinion",
+        "sourceStatus": "reported_date_only",
+        "evidenceIds": [
+          "comparison-farage-commons-investigation"
+        ],
+        "publicationDisplay": "Tue 5 May 2026 12:23 BST",
+        "verificationNote": "Guardian columnist John Crace; explicitly commentary and at the end of the seven-day window."
+      },
+      {
+        "id": "comparison-farage-sep-video",
+        "date": "2026-09-03",
+        "outlet": "Channel 4 News",
+        "headline": "Going undercover to expose Reform's secret donations plot",
+        "url": "https://www.youtube.com/watch?v=aXut3s90rUI",
+        "format": "video",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-farage-channel4-original"
+        ],
+        "publicationDisplay": "YouTube uploadDate 2026-09-03T11:07:36-07:00; verified Channel 4 News channel",
+        "verificationNote": "Verified Channel 4 News channel, video upload date3September2026. Hosting publication and video are a linked package, not two news articles.",
+        "hostingPageURL": "https://www.youtube.com/watch?v=aXut3s90rUI"
+      }
+    ],
+    "windows": [
+      {
+        "id": "comparison-farage-undercover-3days",
+        "start": "2026-09-03",
+        "end": "2026-09-05",
+        "daysInclusive": 3,
+        "unit": "written_articles",
+        "scopeNote": "Selected publisher-original sample, not a census. Verified article count below excludes search-only/derivative records. Channel 4 official video is recorded separately and excluded from written-item count. The Guardian editorial is classified separately; no audience, front-page prominence, broadcast duration or total output is measured."
+      },
+      {
+        "id": "comparison-farage-undercover-7days",
+        "start": "2026-09-03",
+        "end": "2026-09-09",
+        "daysInclusive": 7,
+        "unit": "written_articles",
+        "scopeNote": "Selected publisher-original sample, not a census. Verified article count below excludes search-only/derivative records and adds the original ITV 9 September Met update. Channel 4 official video is recorded separately and excluded from written-item count. The Guardian editorial is classified separately."
+      },
+      {
+        "id": "comparison-farage-gift-3days",
+        "start": "2026-04-29",
+        "end": "2026-05-01",
+        "daysInclusive": 3,
+        "unit": "written_articles",
+        "scopeNote": "Selected publisher-original sample after public revelation, not a census. Verified count separates straight news from Guardian analysis; other search-indexed results remain date-only and are excluded. The £5m transfer was reported as occurring in April 2024; these dates describe disclosure/reporting."
+      },
+      {
+        "id": "comparison-farage-gift-7days",
+        "start": "2026-04-29",
+        "end": "2026-05-05",
+        "daysInclusive": 7,
+        "unit": "written_articles",
+        "scopeNote": "Selected publisher-original sample, not a census. Verified count separates straight news from Guardian analysis; search-only commentary and follow-up results remain date-only and are excluded. Does not measure prominence, reach, or total daily output."
+      }
+    ],
+    "coverageVerdict": "reporting_observed",
+    "census": false,
+    "limits": [
+      "The sample recovered multiple named outlets, a Channel 4 investigative broadcast and a Guardian editorial within the first week of the September allegations, plus follow-up reporting when the Met announced investigation. This proves reporting occurred, not how much relative to other stories.",
+      "The £5m was reported as a personal gift to Farage from Harborne, not a registered Reform party donation. Farage said it funded lifetime personal security and was a personal, unconditional gift; he has denied wrongdoing and said he had no obligation to declare it. Parliament's open Rule 5 inquiry is not an adverse finding. Do not call the gift illegal, a bribe, or a party donation as settled fact.",
+      "The September undercover material describes £32,500 paid for three polls by a US company and a proposed £500,000 route from an American father through his UK-based son; that larger proposed donation never occurred. Whether polling support was a donation in kind, whether the source was impermissible, and who knew what remain matters for investigation. Residence alone does not decide permissible donor status.",
+      "Met announced a live criminal investigation on 9 September. Reform denies wrongdoing and says it will cooperate. No police, Commission, or court finding establishing guilt was located as of 14 October 2026.",
+      "Nathan Gill pleaded guilty to bribery and was sentenced in a different matter concerning European Parliament conduct in 2018–19. His conviction must not be used as proof that Farage or Reform committed the separate alleged offences.",
+      "The O’Reilly academic plagiarism comparator concerns a reported institutional panel outcome; named official reasons were not recovered. In its 29 September–5 October 2023 window, the current bundle has two publisher-verified news reports (Varsity, 29 Sep; Per Capita, 2 Oct) and one publisher-verified Varsity opinion item (30 Sep). The 3-day 29 Sep–1 Oct window contains one verified news item plus that opinion item. Its separate June Financial Times item is not original-page verified and must not enter these counts. Both coverage totals are selected samples, but political leader/party-finance allegations involving elections and a possible criminal investigation have materially different public-interest and legal stakes from an individual university plagiarism case.",
+      "No systematic same-outlet search, print front-page audit, broadcast minutes, audience/reach data, prominence coding, or complete daily article count was performed. Do not infer that coverage was disproportionate or unusually light from this comparison."
+    ],
+    "comparisonConclusion": "The verified seven-day September sample contains five news reports, one institutional editorial and one official Channel 4 video, with search-only candidates excluded. O’Reilly’s seven-day sample contains two news reports and one opinion. These are different selected outlet samples, not complete or matched censuses. They show that political-finance scrutiny occurred, but cannot establish relative attention. Power over public decisions, electoral integrity, sums involved and credible new evidence support sustained scrutiny; a criminal conviction is not a prerequisite for public-interest reporting. Fair reporting must also preserve denials, distinguish suspicion from proof, and update outcomes.",
+    "searchLog": [
+      {
+        "query": "Channel 4 News Verbatim 3 September 2026 undercover foreign donations Reform Farage",
+        "channels": [
+          "Channel 4 original page via indexed mirror",
+          "YouTube official Channel 4 publication",
+          "Guardian",
+          "ITV",
+          "BBC",
+          "AP",
+          "Euronews"
+        ],
+        "result": "Verified original broadcast/investigation, precise allegations, denial, dates, follow-ups and Met update; sample is non-exhaustive."
+      },
+      {
+        "query": "Christopher Harborne £5m personal gift Farage 29 April 2026 Parliament rules",
+        "channels": [
+          "Parliament current investigations page and interests register",
+          "Electoral Commission register",
+          "Guardian",
+          "BBC",
+          "Independent",
+          "Bloomberg",
+          "Sky"
+        ],
+        "result": "Verified distinct personal-gift disclosure, stated security rationale, open Rule 5 investigation and registered party-donation context. No adverse finding located."
+      },
+      {
+        "query": "O’Reilly comparison bundle coverage scope",
+        "channels": [
+          "Local comparison-bundles.json"
+        ],
+        "result": "Confirmed selected and unmeasured comparison sample: two Varsity reports/opinion items, one Per Capita item in Sep follow-up window; one June FT original not verified."
+      },
+      {
+        "query": "Nathan Gill conviction official case",
+        "channels": [
+          "Crown Prosecution Service"
+        ],
+        "result": "Confirmed separate guilty plea and sentence, included only to guard against conflation."
+      },
+      {
+        "query": "Publisher-original verification pass via browser; Channel 4, YouTube, BBC, ITV and Guardian",
+        "channels": [
+          "Chrome browser, original publisher pages",
+          "official Channel 4 News YouTube channel"
+        ],
+        "result": "Directly verified Channel 4 page date/title and official video upload URL/date; both BBC original pages and publication dates; ITV 4 Sep URL actually first published 5 Sep 06:40 BST, and other 5/9 Sep ITV original dates; Guardian Sep 3 report and Sep 4 editorial timestamps. Search-only records remain reported_date_only and do not contribute to verified counts. Corrected O’Reilly 7-day base to 2 news plus 1 opinion; no June FT inclusion."
+      }
+    ],
+    "asOf": "2026-10-14",
+    "verifiedWindowCounts": [
+      {
+        "windowId": "farage-undercover-3days",
+        "publishedArticles": 4,
+        "editorialsOrOpinion": 1,
+        "videosOrBroadcasts": 1,
+        "basis": "Channel 4 original article (3 Sep), Guardian original article (3 Sep), BBC original article (4 Sep), ITV original article (publisher first publication 5 Sep); Guardian editorial (4 Sep) separately; official YouTube video (3 Sep) separate."
+      },
+      {
+        "windowId": "farage-undercover-7days",
+        "publishedArticles": 5,
+        "editorialsOrOpinion": 1,
+        "videosOrBroadcasts": 1,
+        "basis": "3-day verified set plus ITV original Met update (9 Sep); other search-only reports are not included."
+      },
+      {
+        "windowId": "farage-gift-3days",
+        "publishedArticles": 2,
+        "editorialsOrOpinion": 0,
+        "analysis": 1,
+        "videosOrBroadcasts": 0,
+        "basis": "Guardian original disclosure article and BBC original article (both 29 Apr); Guardian same-day analysis separated."
+      },
+      {
+        "windowId": "farage-gift-7days",
+        "publishedArticles": 2,
+        "editorialsOrOpinion": 0,
+        "analysis": 1,
+        "videosOrBroadcasts": 0,
+        "basis": "Same verified set; later commentary/feed results lack original-page verification and are excluded."
+      }
+    ],
+    "anchor": {
+      "id": "farage-undercover-anchor",
+      "label": "Channel 4 News broadcasts its verified Verbatim undercover investigation",
+      "eventDate": "2026-09-03",
+      "publicDate": "2026-09-03",
+      "datePrecision": "day",
+      "displayDate": "3 September 2026"
+    },
+    "subjectAliases": [
+      "Farage",
+      "Reform",
+      "Harborne",
+      "foreign donations",
+      "political funding"
+    ],
+    "questions": [
+      "Did each new story add a verified development about political funding or repeat an allegation?",
+      "Were the personal gift, party donations, proposed transaction and separate Gill conviction kept distinct?",
+      "How did denials and later procedural developments receive prominence?",
+      "What matched outlet inventory, airtime and placement evidence would be needed to compare this with an academic controversy?"
+    ]
   }
 ]

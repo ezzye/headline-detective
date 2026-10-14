@@ -13,7 +13,7 @@ const urlIsHttp = (value) => {
   try { return ['http:', 'https:'].includes(new URL(value).protocol); } catch { return false; }
 };
 
-test('release dataset has six distinct cases with sourced, identified records', async () => {
+test('legacy headline dataset has six distinct cases with sourced, identified records', async () => {
   const cases = await readJson('cases.json');
   assert.equal(cases.length, 6, 'the learning release covers six cases');
   assert.ok(unique(cases.map((entry) => entry.id)), 'case IDs are unique');

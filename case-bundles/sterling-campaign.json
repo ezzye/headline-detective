@@ -473,6 +473,72 @@
       "label": "Cyril Smith: documented non-pickup by major national newspapers · source audit",
       "url": "https://codingforjustice.org.uk/coverage-audit.html#comparison-cyril-smith",
       "text": "IICSA recorded local articles in May and June 1979, followed by no major-national-newspaper pickup of those allegations. Private Eye and the New Statesman were exceptions. It contacted national papers’ archives without resolving why the story was not taken up. This is documented non-pickup, not an inference from empty searches. The report gives month-level publication dates; no invented daily curve or numerical national-article total is plotted."
+    },
+    {
+      "id": "comparison-farage-channel4-original",
+      "label": "Exclusive: Nigel Farage filmed undercover celebrating secret new foreign donations",
+      "url": "https://www.channel4.com/news/exclusive-nigel-farage-filmed-undercover-celebrating-secret-new-foreign-donations",
+      "text": "Channel 4 News original page (opened in Chrome, displayed 3 Sep 2026) says it independently verified footage produced by Verbatim. It reports that a US company paid £32,500 for three Reform-commissioned polls, and that a future £500,000 donation was proposed via a UK-based son using funds from his US-based father. The larger transfer was never made. At a late-July meeting, Farage praised the polls and thanked the undercover team. Channel 4 says Reform did not comment before broadcast and later states the subjects deny the allegations. Original Channel 4 News page opened in Chrome; displayed date and full article read. Official associated YouTube video separately verified: https://www.youtube.com/watch?v=aXut3s90rUI"
+    },
+    {
+      "id": "comparison-farage-commons-investigation",
+      "label": "Allegations currently under investigation by the Parliamentary Commissioner for Standards",
+      "url": "https://www.parliament.uk/mps-lords-and-offices/standards-and-financial-interests/parliamentary-commissioner-for-standards/complaints-and-investigations/allegations-currently-under-investigation-by-the-commissioner/",
+      "text": "Current official list says Nigel Farage MP, opened 13 May 2026, Rule 5: failure to register an interest. Parliament expressly says the existence of an inquiry does not mean rules were broken. This listed inquiry concerns the gift/register question; do not conflate it with the later party-funding police investigation. Current investigation table, Nigel Farage MP entry; page checked 14 October 2026"
+    },
+    {
+      "id": "comparison-farage-register",
+      "label": "Register of Interests for Nigel Farage MP",
+      "url": "https://members.parliament.uk/member/5091/registeredinterests?categoryId=5",
+      "text": "Current register lists disclosed benefits including a £25,000 flight seat from Harborne for a February 2026 visit; the page's current categories and content are not a formal finding about the separate £5m 2024 gift. The Commissioner investigation remains separately listed. Official Parliament member interests register, current page checked 14 October 2026"
+    },
+    {
+      "id": "comparison-farage-met-statement",
+      "label": "Metropolitan Police statement on Reform UK donations/polling reports",
+      "url": "https://www.itv.com/news/2026-09-09/police-will-investigate-reform-uk-over-donations",
+      "text": "ITV original page opened in Chrome, dated 9 September 2026, reproduces the Met statement: after the 3 September Channel 4 broadcast, police assessed reports and identified potential offences requiring investigation, to be added to the existing Special Enquiry Team investigation into donations to the same party. Met says allegations concern potential offences under PPERA 2000 and detectives are seeking broadcast footage. Reform says it denies wrongdoing and will cooperate. ITV page opened in Chrome; title/date and Met spokesperson statement verified in page body"
+    },
+    {
+      "id": "comparison-farage-electoral-law",
+      "label": "Political Parties, Elections and Referendums Act 2000, Part IV",
+      "url": "https://www.legislation.gov.uk/ukpga/2000/41/contents",
+      "text": "Section 54 defines permissible donors (including an individual registered on an electoral register); sections 50 and 55 address what counts as a party donation, including indirect benefits and third-party spending to meet party expenses; section 61 addresses knowing arrangements facilitating donations from impermissible donors. An overseas residence alone does not establish that a donor is impermissible. Whether the reported facts meet these rules is for investigators/courts, not this evidence summary. Sections 50, 54, 55 and 61; legislation page says updated through 3 October 2026"
+    },
+    {
+      "id": "comparison-farage-electoral-commission-records",
+      "label": "Electoral Commission donations search: Christopher Harborne",
+      "url": "https://search.electoralcommission.org.uk/Search/Donations?et=perpar,pp,ppm,rd,tp&includeOutsideSection75=true&isIrishSourceNo=true&isIrishSourceYes=true&order=desc&postPoll=true&prePoll=false&query=Christopher%20harborne&register=gb,ni,none&sort=AcceptedDate&currentPage=1",
+      "text": "Official Commission search export contained 47 records associated with Harborne's registered party donations on the 23 September 2026 export. This supports that he is a party donor but does not establish the classification or legal status of his separate £5m personal gift to Farage. Electoral Commission PDF export, query Christopher Harborne, generated 23 September 2026"
+    },
+    {
+      "id": "comparison-farage-nathan-gill",
+      "label": "Former UKIP MEP jailed for taking bribes",
+      "url": "https://www.cps.gov.uk/cps/news/former-ukip-mep-jailed-taking-bribes",
+      "text": "CPS records that former Reform Wales leader Nathan Gill pleaded guilty to eight bribery counts and was sentenced to 10.5 years in November 2025 for payments tied to conduct in the European Parliament in 2018–19. This conviction is a separate case and is not proof about Farage, the Harborne gift, or the September 2026 allegations. CPS press release"
+    },
+    {
+      "id": "comparison-farage-oreilly-comparator",
+      "label": "William O’Reilly: an education-panel comparison with missing public reasons",
+      "url": "https://www.varsity.co.uk/news/26105",
+      "text": "The current comparison bundle has an O’Reilly sample of one Varsity news report, one Per Capita report and one separately classified Varsity opinion in 29 September–5 October 2023, plus a separate June 2023 FT initial report whose original article metadata/body was not independently recovered. The bundle marks coverage unmeasured and notes no named official panel decision/full reasons. This is not a coverage census. Cross-check against local comparison-bundles.json, comparison-oreilly; Varsity story is linked as public anchor"
+    },
+    {
+      "id": "comparison-farage-sample",
+      "label": "Nigel Farage and Reform UK: political-finance scrutiny · source audit",
+      "url": "https://codingforjustice.org.uk/coverage-audit.html#comparison-farage",
+      "text": "Political finance has a strong public-interest claim: these reports concern a political leader’s large donor relationship, election funding and alleged concealment. The April personal-gift disclosure and September undercover investigation are separate episodes. Parliamentary and police inquiries are not findings of guilt. The recovered sample is not a measure of total attention or proof that the university case received disproportionate coverage. The verified seven-day September sample contains five news reports, one institutional editorial and one official Channel 4 video, with search-only candidates excluded. O’Reilly’s seven-day sample contains two news reports and one opinion. These are different selected outlet samples, not complete or matched censuses. They show that political-finance scrutiny occurred, but cannot establish relative attention. Power over public decisions, electoral integrity, sums involved and credible new evidence support sustained scrutiny; a criminal conviction is not a prerequisite for public-interest reporting. Fair reporting must also preserve denials, distinguish suspicion from proof, and update outcomes."
+    },
+    {
+      "id": "research-reach-2011",
+      "label": "Cardiff REACH media monitoring report (2011)",
+      "url": "https://orca.cardiff.ac.uk/id/eprint/28559/1/2113275.pdf",
+      "text": "Cardiff REACH report (2011): 66.9% of 499 sampled items featuring Black males aged11–24 were crime-related, compared with41.9% for all young men/boys, not white-only. Eight two-week monitoring windows,2008–09; news in print, TV and radio. Victims were included. This is historical content analysis, not a measure of the present cases or evidence of each editor’s intent."
+    },
+    {
+      "id": "research-black-british-voices",
+      "label": "Black British Voices Project (2023)",
+      "url": "https://www.cam.ac.uk/stories/black-british-voices-report",
+      "text": "Cambridge/Voice/I-Cubed Black British Voices (2023), over10,000 respondents: three in four believed Black businesses were treated unfairly by investors and financial institutions. The report describes perceived media stereotyping and football double standards. Survey/interviews are evidence of respondents’ experiences and perceptions, not a content audit or a causal finding for these cases."
     }
   ],
   "reasoningChecks": [
@@ -3470,6 +3536,49 @@
     "comparison-andrew",
     "comparison-archer",
     "comparison-westwood",
-    "comparison-cyril-smith"
-  ]
+    "comparison-cyril-smith",
+    "comparison-farage"
+  ],
+  "representationResearch": {
+    "checkedAt": "2026-10-14",
+    "title": "When an individual story becomes a racial pattern",
+    "interpretation": "A defensible initial story does not settle whether selection, repeated framing, prominence and persistence produce unequal treatment. Structural bias can be examined without an editor admitting intent. A deliberate strategy to conceal bias is a separate claim requiring evidence.",
+    "studies": [
+      {
+        "id": "research-reach-2011",
+        "label": "Cardiff REACH media monitoring report (2011)",
+        "url": "https://orca.cardiff.ac.uk/id/eprint/28559/1/2113275.pdf",
+        "text": "Cardiff REACH report (2011): 66.9% of 499 sampled items featuring Black males aged11–24 were crime-related, compared with41.9% for all young men/boys, not white-only. Eight two-week monitoring windows,2008–09; news in print, TV and radio. Victims were included. This is historical content analysis, not a measure of the present cases or evidence of each editor’s intent.",
+        "finding": "Crime accounted for 66.9% of sampled items featuring Black young men and boys, against 41.9% for all young men and boys.",
+        "limit": "The comparator includes Black youth; the sample is from 2008–09 and includes victims. It does not mean 67% portrayed Black people as criminals.",
+        "locator": "Executive summary; Table 2.0; methodology; Chapter 3."
+      },
+      {
+        "id": "research-black-british-voices",
+        "label": "Black British Voices Project (2023)",
+        "url": "https://www.cam.ac.uk/stories/black-british-voices-report",
+        "text": "Cambridge/Voice/I-Cubed Black British Voices (2023), over10,000 respondents: three in four believed Black businesses were treated unfairly by investors and financial institutions. The report describes perceived media stereotyping and football double standards. Survey/interviews are evidence of respondents’ experiences and perceptions, not a content audit or a causal finding for these cases.",
+        "finding": "Three in four respondents believed Black businesses were treated unfairly by investors and financial institutions. Media stereotyping and football double standards were also concerns in the report.",
+        "limit": "A survey and interviews document reported experience and perceptions. Business-investment findings cannot be relabelled as a measured media-coverage disparity.",
+        "locator": "Business/enterprise and media chapters; University of Cambridge summary."
+      }
+    ],
+    "industrySource": {
+      "label": "NCTJ Diversity in Journalism (2023)",
+      "url": "https://www.nctj.com/wp-content/uploads/2023/05/Diversity-in-journalism-2023-4WEB.pdf",
+      "finding": "Its 2022 data estimated that 88% of UK journalists were White. Workforce representation is relevant context; this statistic alone does not demonstrate a newsroom’s bias."
+    },
+    "attributionCorrections": [
+      "The crime statistic is from Cardiff’s REACH report, not a verified Reuters study.",
+      "The Lammy Review concerns criminal-justice disparities. The cited wealth-and-driving claim is not established by that review; separate Liberty/StopWatch work addresses traffic stops."
+    ],
+    "questions": [
+      "Did criticism of a specific act become a fixed judgment about the whole person?",
+      "Did money, dress, cars or ambition become a reason to portray someone as undeserving?",
+      "Was an allegation repeatedly recalled after its status changed, without new information?",
+      "Were replies, achievements and ordinary context given similar prominence?",
+      "Would the same conduct, evidence and public role have attracted similar persistence and framing for someone else?"
+    ],
+    "claimBoundary": "Neither serious allegations nor proven wrongdoing gives an outlet unlimited permission for humiliation. Fair scrutiny of alleged abuse also protects complainants; the question is how the coverage treats evidence, power and people."
+  }
 }

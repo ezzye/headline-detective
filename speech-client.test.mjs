@@ -49,12 +49,12 @@ test('online page omits all embedded raster bytes while preserving full records 
   const manifest=JSON.parse(await readFile(new URL('./assets/media-credits.json',import.meta.url),'utf8'));
   const online=onlinePage(html,manifest),extract=s=>JSON.parse(s.match(/<script id="campaign-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
   const source=extract(html),web=extract(online);
-  assert.equal(web.length,6);assert.equal(web.reduce((n,c)=>n+c.allHeadlines.length,0),179);
+  assert.equal(web.length,7);assert.equal(web.reduce((n,c)=>n+c.allHeadlines.length,0),194);
   // Evidence grew independently of the offline image payload. Bound the actual
   // visitor download rather than a percentage of unrelated embedded pictures.
   assert(Buffer.byteLength(online)<1300*1024);
   assert(!/data:image\/(?:jpeg|png|webp);base64,[A-Za-z0-9+/]{40}/.test(online));
-  assert.equal(web.flatMap(c=>c.images).length,12);
+  assert.equal(web.flatMap(c=>c.images).length,14);
   for(let c=0;c<web.length;c++)for(let i=0;i<web[c].images.length;i++){
     assert.match(web[c].images[i].url,/^\/assets\/images\//);
     assert.deepEqual({...web[c].images[i],url:source[c].images[i].url},source[c].images[i]);

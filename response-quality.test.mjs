@@ -65,11 +65,11 @@ test('shared verification document permits distinct articles on same date but du
   data.campaigns[0].examples.at(-1).headline=first.headline;await writeFile(campaignsPath,JSON.stringify([data]));const bad=createGameServer({env:{},campaignsPath});assert.equal((await post(bad,'/api/campaign/session',{caseId:data.id})).status,503);
 });
 
-test('all six final cases open cold, return source-approved briefings, and freeze variable-desk ungraded reveals',async()=> {
+test('all seven final cases open cold, return source-approved briefings, and freeze variable-desk ungraded reveals',async()=> {
   const {readFile}=await import('node:fs/promises');
   const {exportSessions,restoreSessions}=await import('./public-gateway.mjs');
   const all=JSON.parse(await readFile(new URL('./campaigns.json',import.meta.url),'utf8'));
-  assert.equal(all.length,6);let providerCalls=0;
+  assert.equal(all.length,7);let providerCalls=0;
   const fresh=()=>createGameServer({env:{DEEPSEEK_API_KEY:'synthetic-no-live-provider'},random:()=>0,fetchImpl:async()=>{providerCalls++;throw new Error('reviewed briefings must never need a provider');}});
   for(const item of all) {
     const warm=fresh(),created=await post(warm,'/api/campaign/session',{caseId:item.id});

@@ -123,7 +123,7 @@ test('real three-day set preserves six titles, eight selected articles and later
   assert.deepEqual(trail.dates.map(day => day.outlets.reduce((sum, row) => sum + row.count, 0)), [5, 2, 1]);
   assert.deepEqual(trail.dates.map(day => day.outlets.reduce((sum, row) => sum + row.cumulativeCount, 0)), [5, 7, 8]);
   assert.equal(c.episode.additionalRecords.length, 4);
-  assert.equal(cases.reduce((sum, item) => sum + item.allHeadlines.length, 0), 179);
+  assert.equal(cases.reduce((sum, item) => sum + item.allHeadlines.length, 0), 194);
   const bail = c.allHeadlines.find(row => row.id === 'jefferies-20110101-guardian-bail');
   assert.equal(bail.date, '2011-01-02');
   assert.equal(bail.publishedAtUTC, '2011-01-02T00:39:00Z');

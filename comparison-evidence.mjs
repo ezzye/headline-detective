@@ -1,8 +1,8 @@
 const KINDS = new Set(['documented_gap', 'institutional_delay', 'coverage_counterexample', 'reported_comparator']);
 const VERDICTS = new Set(['documented_non_pickup', 'reporting_observed', 'unmeasured']);
 const DATE_PRECISIONS = new Set(['day', 'month', 'year', 'unknown']);
-const SOURCE_TYPES = new Set(['official', 'filed_document_copy', 'reported_institutional_response']);
-const FORMATS = new Set(['article', 'liveblog', 'opinion', 'broadcast_transcript']);
+const SOURCE_TYPES = new Set(['official', 'filed_document_copy', 'reported_institutional_response','original_reporting','reported_official_statement']);
+const FORMATS = new Set(['article', 'liveblog', 'opinion', 'broadcast_transcript','editorial','analysis','video','liveblog_entry','investigation_package']);
 const SOURCE_STATUSES = new Set(['publisher_verified', 'reported_date_only']);
 
 function validDate(value, precision = 'day') {
@@ -147,6 +147,7 @@ export function summarizeComparisonWindow(bundle, windowId) {
     unit: window.unit,
     observedWrittenCount: countFormat('article') + countFormat('liveblog'),
     observedOpinionCount: countFormat('opinion'),
+    observedEditorialCount:countFormat('editorial'),observedAnalysisCount:countFormat('analysis'),observedVideoCount:countFormat('video'),observedLiveblogEntryCount:countFormat('liveblog_entry'),observedInvestigationPackageCount:countFormat('investigation_package'),
     observedBroadcastCount: countFormat('broadcast_transcript'),
     reportedDateOnlyExcludedCount: uniqueRecords.filter(record => record.sourceStatus === 'reported_date_only').length,
     duplicateRecordIds,

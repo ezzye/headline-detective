@@ -12,6 +12,9 @@ export function onlinePage(html, manifest) {
       const rendered=['schemaVersion','id','asOf','reportedSettlementArticles','settlementTitles','settlementSource','settlementNote','previousSelectedArticlePackages','newIndependentlyIdentifiedArticleCount','coverReferences','editionParticipationEvidence','gapNote','followupRoutes','titleParticipation','recoveredWebArticles','newRecoveredWebPageCount','additionalArticlesConfirmedAsMembersOf40'];
       campaign.recoveryDossier=Object.fromEntries(rendered.filter(key=>key in campaign.recoveryDossier).map(key=>[key,campaign.recoveryDossier[key]]));
     }
+    // Full repeated desk inventories remain in the offline source and server.
+    // The UI renders the canonical allHeadlines and compact examples instead.
+    for(const desk of campaign.campaigns||[]) {delete desk.records;delete desk.chronologicalRecords;}
     for(const image of campaign.images||[]) {
     const file=files.get(image.filePage);
     if(!file||!/^assets\/images\/[a-z0-9-]+\.(jpg|jpeg|png|webp)$/.test(file))throw Error('Missing licensed image');

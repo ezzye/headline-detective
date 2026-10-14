@@ -129,11 +129,11 @@ test('Arday outlet defences contain sourced first-person scripts and a qualified
 });
 
 
-test('six playable cases share source-linked criteria and bounded sample rules', () => {
-  assert.equal(campaigns.length, 6);
+test('seven playable cases share source-linked criteria and bounded sample rules', () => {
+  assert.equal(campaigns.length, 7);
   assert.deepEqual(campaigns.map(c => c.id), [
     'arday-2026-campaign', 'caroline-flack-recovered-campaign', 'sterling-campaign',
-    'markle-letter-campaign', 'bulley-campaign', 'jefferies-campaign'
+    'markle-letter-campaign', 'bulley-campaign', 'jefferies-campaign','greenwood-campaign'
   ]);
   const ids = ['public_value','context','framing','care','consistency','transparency'];
   for (const c of campaigns) {
@@ -177,7 +177,7 @@ test('six playable cases share source-linked criteria and bounded sample rules',
   assert.notEqual(flack.source.corpusCount,aggregate.count,'dated sample and reported aggregate remain distinct quantities');
 });
 
-test('headline identities remain masked until reveal and all six image payloads are embedded', async () => {
+test('headline identities remain masked until reveal and all seven image payloads are embedded', async () => {
   const nodes = new Map();
   const node = id => {
     if (!nodes.has(id)) nodes.set(id, { textContent: id === '#campaign-data' ? JSON.stringify(campaigns) : '', innerHTML:'',style:{},dataset:{},classList:{toggle(){}},isConnected:true,value:flack.id,addEventListener(){},pause(){},load(){},removeAttribute(){},setAttribute(){},querySelector(){return null;} });

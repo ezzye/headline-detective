@@ -4,9 +4,9 @@ import {readFile} from 'node:fs/promises';
 import {validAccountabilityRecord} from './accountability-evidence.mjs';
 import {buildAttentionTimeline} from './attention-timeline.mjs';
 const cases=JSON.parse(await readFile(new URL('./campaigns.json',import.meta.url),'utf8'));
-test('all six cases have dated, source-backed accountability records without increasing the written sample',()=>{
-  assert.equal(cases.reduce((n,c)=>n+c.allHeadlines.length,0),179);
-  assert.equal(cases.reduce((n,c)=>n+c.accountabilityRecords.length,0),16);
+test('all seven cases have dated, source-backed accountability records without increasing the written sample',()=>{
+  assert.equal(cases.reduce((n,c)=>n+c.allHeadlines.length,0),194);
+  assert.equal(cases.reduce((n,c)=>n+c.accountabilityRecords.length,0),18);
   for(const c of cases){
     assert(c.accountabilityRecords.length>0,c.id);
     for(const r of c.accountabilityRecords)assert.equal(validAccountabilityRecord(r,c),true,r.id);

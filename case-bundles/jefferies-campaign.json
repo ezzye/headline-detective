@@ -734,6 +734,60 @@
       "url": "https://web.archive.org/web/20110102222144/http://www.dailymail.co.uk/news/article-1343233/Joanna-Yeates-murder-Landlord-Chris-Jefferies-Prof-Strange-quizzed-police.html",
       "label": "Archived Mail Online article created 1 January 2011",
       "text": "This page reports continued detention and questioning of a neighbour. Its headline places the nickname “Prof Strange” alongside those procedural developments, and its caption labels Jefferies a suspect. A jury reader can ask which parts add verified investigative information and which encourage a character judgment. The wording is evidence of what the archived publisher page said, not evidence that its allegations were true. One distinct publisher web page, created-date label 1 January 2011, recovered in a 2 January capture. The displayed 02:46 creation time has no timezone. Print-equivalence, edit history and membership in the 40 remain unproved. Count the page once, not each internal heading."
+    },
+    {
+      "id": "comparison-farage-channel4-original",
+      "label": "Exclusive: Nigel Farage filmed undercover celebrating secret new foreign donations",
+      "url": "https://www.channel4.com/news/exclusive-nigel-farage-filmed-undercover-celebrating-secret-new-foreign-donations",
+      "text": "Channel 4 News original page (opened in Chrome, displayed 3 Sep 2026) says it independently verified footage produced by Verbatim. It reports that a US company paid £32,500 for three Reform-commissioned polls, and that a future £500,000 donation was proposed via a UK-based son using funds from his US-based father. The larger transfer was never made. At a late-July meeting, Farage praised the polls and thanked the undercover team. Channel 4 says Reform did not comment before broadcast and later states the subjects deny the allegations. Original Channel 4 News page opened in Chrome; displayed date and full article read. Official associated YouTube video separately verified: https://www.youtube.com/watch?v=aXut3s90rUI"
+    },
+    {
+      "id": "comparison-farage-commons-investigation",
+      "label": "Allegations currently under investigation by the Parliamentary Commissioner for Standards",
+      "url": "https://www.parliament.uk/mps-lords-and-offices/standards-and-financial-interests/parliamentary-commissioner-for-standards/complaints-and-investigations/allegations-currently-under-investigation-by-the-commissioner/",
+      "text": "Current official list says Nigel Farage MP, opened 13 May 2026, Rule 5: failure to register an interest. Parliament expressly says the existence of an inquiry does not mean rules were broken. This listed inquiry concerns the gift/register question; do not conflate it with the later party-funding police investigation. Current investigation table, Nigel Farage MP entry; page checked 14 October 2026"
+    },
+    {
+      "id": "comparison-farage-register",
+      "label": "Register of Interests for Nigel Farage MP",
+      "url": "https://members.parliament.uk/member/5091/registeredinterests?categoryId=5",
+      "text": "Current register lists disclosed benefits including a £25,000 flight seat from Harborne for a February 2026 visit; the page's current categories and content are not a formal finding about the separate £5m 2024 gift. The Commissioner investigation remains separately listed. Official Parliament member interests register, current page checked 14 October 2026"
+    },
+    {
+      "id": "comparison-farage-met-statement",
+      "label": "Metropolitan Police statement on Reform UK donations/polling reports",
+      "url": "https://www.itv.com/news/2026-09-09/police-will-investigate-reform-uk-over-donations",
+      "text": "ITV original page opened in Chrome, dated 9 September 2026, reproduces the Met statement: after the 3 September Channel 4 broadcast, police assessed reports and identified potential offences requiring investigation, to be added to the existing Special Enquiry Team investigation into donations to the same party. Met says allegations concern potential offences under PPERA 2000 and detectives are seeking broadcast footage. Reform says it denies wrongdoing and will cooperate. ITV page opened in Chrome; title/date and Met spokesperson statement verified in page body"
+    },
+    {
+      "id": "comparison-farage-electoral-law",
+      "label": "Political Parties, Elections and Referendums Act 2000, Part IV",
+      "url": "https://www.legislation.gov.uk/ukpga/2000/41/contents",
+      "text": "Section 54 defines permissible donors (including an individual registered on an electoral register); sections 50 and 55 address what counts as a party donation, including indirect benefits and third-party spending to meet party expenses; section 61 addresses knowing arrangements facilitating donations from impermissible donors. An overseas residence alone does not establish that a donor is impermissible. Whether the reported facts meet these rules is for investigators/courts, not this evidence summary. Sections 50, 54, 55 and 61; legislation page says updated through 3 October 2026"
+    },
+    {
+      "id": "comparison-farage-electoral-commission-records",
+      "label": "Electoral Commission donations search: Christopher Harborne",
+      "url": "https://search.electoralcommission.org.uk/Search/Donations?et=perpar,pp,ppm,rd,tp&includeOutsideSection75=true&isIrishSourceNo=true&isIrishSourceYes=true&order=desc&postPoll=true&prePoll=false&query=Christopher%20harborne&register=gb,ni,none&sort=AcceptedDate&currentPage=1",
+      "text": "Official Commission search export contained 47 records associated with Harborne's registered party donations on the 23 September 2026 export. This supports that he is a party donor but does not establish the classification or legal status of his separate £5m personal gift to Farage. Electoral Commission PDF export, query Christopher Harborne, generated 23 September 2026"
+    },
+    {
+      "id": "comparison-farage-nathan-gill",
+      "label": "Former UKIP MEP jailed for taking bribes",
+      "url": "https://www.cps.gov.uk/cps/news/former-ukip-mep-jailed-taking-bribes",
+      "text": "CPS records that former Reform Wales leader Nathan Gill pleaded guilty to eight bribery counts and was sentenced to 10.5 years in November 2025 for payments tied to conduct in the European Parliament in 2018–19. This conviction is a separate case and is not proof about Farage, the Harborne gift, or the September 2026 allegations. CPS press release"
+    },
+    {
+      "id": "comparison-farage-oreilly-comparator",
+      "label": "William O’Reilly: an education-panel comparison with missing public reasons",
+      "url": "https://www.varsity.co.uk/news/26105",
+      "text": "The current comparison bundle has an O’Reilly sample of one Varsity news report, one Per Capita report and one separately classified Varsity opinion in 29 September–5 October 2023, plus a separate June 2023 FT initial report whose original article metadata/body was not independently recovered. The bundle marks coverage unmeasured and notes no named official panel decision/full reasons. This is not a coverage census. Cross-check against local comparison-bundles.json, comparison-oreilly; Varsity story is linked as public anchor"
+    },
+    {
+      "id": "comparison-farage-sample",
+      "label": "Nigel Farage and Reform UK: political-finance scrutiny · source audit",
+      "url": "https://codingforjustice.org.uk/coverage-audit.html#comparison-farage",
+      "text": "Political finance has a strong public-interest claim: these reports concern a political leader’s large donor relationship, election funding and alleged concealment. The April personal-gift disclosure and September undercover investigation are separate episodes. Parliamentary and police inquiries are not findings of guilt. The recovered sample is not a measure of total attention or proof that the university case received disproportionate coverage. The verified seven-day September sample contains five news reports, one institutional editorial and one official Channel 4 video, with search-only candidates excluded. O’Reilly’s seven-day sample contains two news reports and one opinion. These are different selected outlet samples, not complete or matched censuses. They show that political-finance scrutiny occurred, but cannot establish relative attention. Power over public decisions, electoral integrity, sums involved and credible new evidence support sustained scrutiny; a criminal conviction is not a prerequisite for public-interest reporting. Fair reporting must also preserve denials, distinguish suspicion from proof, and update outcomes."
     }
   ],
   "reasoningChecks": [
@@ -4171,7 +4225,8 @@
     "comparison-archer",
     "comparison-westwood",
     "comparison-oreilly",
-    "comparison-cyril-smith"
+    "comparison-cyril-smith",
+    "comparison-farage"
   ],
   "recoveryDossier": {
     "schemaVersion": 1,
