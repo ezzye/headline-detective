@@ -2,7 +2,7 @@
 
 An evidence-led game about whether sustained media attention serves the public interest or becomes disproportionate pressure. Six case bundles let players compare dated coverage, hear fictional outlet defences, ask questions and make their own judgments.
 
-[Live game](https://codingforjustice.org.uk/) · [Setup and sharing](README.html) · [Verification status](verification.html) · [Attention guide](attention.html) · [Jefferies three-day guide](jefferies.html) · [Archive research](research.html)
+[Live game](https://codingforjustice.org.uk/) · [Setup and sharing](README.html) · [Verification status](verification.html) · [Attention guide](attention.html) · [Coverage audit](pileon-coverage-audit.html) · [Jefferies three-day guide](jefferies.html) · [Archive research](research.html)
 
 ## The six-step round
 
@@ -44,6 +44,10 @@ See `attention.html`, `media-records.csv`, `spread-links.csv` and `editorial-rec
 
 No qualifying contributing X post was recovered for Jefferies in this pass. Deleted originals, period-specific engagement sequences, complete repost networks and complete broadcast inventories remain gaps. The AI distinguishes a desk's own publications from external commentators and counter-speech; owner intent is not inferred from an editorial's existence.
 
+## Coverage audit
+
+[Open the standalone coverage audit](pileon-coverage-audit.html). It compares five bounded evidence bundles and separates verified article counts, opinions, date-only records and uncensused gaps. Its Jefferies recovery section confirms the 40-article aggregate but adds no independently verified article records.
+
 ## Jefferies three-day guide
 
 [Open the standalone selected-print guide](jefferies.html). It follows eight selected articles across three dates, identifies four supplemental print records separately from the original sample, and distinguishes public event timing from later inquiry findings.
@@ -77,3 +81,5 @@ The public hosted game uses a separate private server-side provider control laye
 Share standalone HTML files for offline review, or share the public source repository. Guides have Save HTML and Share file controls; if native sharing is unavailable, download the HTML and attach it. Source pages and live AI need internet; browser and physical-device verification are distinct from automated checks.
 
 Check `verification.html` and current release records before claiming deployment or full verification. Owner acceptance remains separate. The original comparison prototype is archived as `comparison.html`; it is not one of the current campaign rounds.
+
+The Jefferies recovery audit now includes two full Mail Online pages preserved by Wayback, five dated front-cover references, and eight selected Leveson print packages. These evidence sets are separate: no new page has been individually mapped to the reported 40 settled articles. Publisher-displayed dates are distinct from capture dates; web pages are not automatically additional print articles.

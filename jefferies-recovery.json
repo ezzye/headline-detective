@@ -1,0 +1,594 @@
+{
+  "schemaVersion": 1,
+  "id": "jefferies-settlement-recovery",
+  "asOf": "2026-10-14",
+  "reportedSettlementArticles": 40,
+  "settlementTitles": [
+    "The Sun",
+    "Daily Mirror",
+    "Sunday Mirror",
+    "Daily Record",
+    "Daily Mail",
+    "Daily Star",
+    "The Scotsman",
+    "Daily Express"
+  ],
+  "settlementSource": {
+    "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/270941/0780_ii.pdf",
+    "locator": "Volume2, PartF, chapter5, paragraph4.8, printedp.560; statementp.5, paragraph26."
+  },
+  "settlementNote": "The primary report records40articles across eight titles. No public per-article schedule was recovered. The eight selected witness examples are not a complete itemised settlement ledger.",
+  "previousSelectedArticlePackages": 8,
+  "newIndependentlyIdentifiedArticleCount": 0,
+  "coverReferences": [
+    {
+      "id": "jefferies-cover-1",
+      "date": "2010-12-31",
+      "outlet": "Daily Star",
+      "headline": "Tragic Jo: Cops quiz landlord",
+      "sourceURL": "https://en.kiosko.net/uk/2010-12-31/np/daily_star.html",
+      "sourceLocator": "The full cover scan has masthead date Friday, December 31, 2010. Left-column item reads 'ARRESTED: Jefferies' and 'Tragic Jo: Cops quiz landlord', directing readers to pages 4–5.",
+      "format": "cover_reference",
+      "subjectRole": "arrest_coverage",
+      "articleCount": null,
+      "membershipIn40": "item_mapping_unavailable",
+      "verification": "Archive scan masthead inspected. The date follows the printed issue, not the archive-page label.",
+      "limit": "headline evidence only; do not count as a separate article until the referenced page/layout or schedule establishes its relationship to other copy."
+    },
+    {
+      "id": "jefferies-cover-2",
+      "date": "2010-12-31",
+      "outlet": "Daily Express",
+      "headline": "Strangled Joanna: Landlord quizzed",
+      "sourceURL": "https://en.kiosko.net/uk/2010-12-31/np/daily_express.html",
+      "sourceLocator": "The full cover scan has masthead date Friday, December 31, 2010. Lower-right item reads 'Strangled Joanna: Landlord quizzed' and directs readers to pages 4–5.",
+      "format": "cover_reference",
+      "subjectRole": "arrest_coverage",
+      "articleCount": null,
+      "membershipIn40": "item_mapping_unavailable",
+      "verification": "Archive scan masthead inspected. The date follows the printed issue, not the archive-page label.",
+      "limit": "headline evidence only; relationship to the existing selected Daily Express item 'Joanna suspect Ex-teacher known as Mr Chips' is unresolved; no additional article count."
+    },
+    {
+      "id": "jefferies-cover-3",
+      "date": "2010-12-31",
+      "outlet": "The Scotsman",
+      "headline": "Landlord in murder arrest",
+      "sourceURL": "https://en.kiosko.net/uk/2010-12-31/np/scotsman.html",
+      "sourceLocator": "The full cover scan has masthead date Friday, December 31, 2010. 'Inside Today' box includes 'Landlord in murder arrest' and refers readers to news page 5.",
+      "format": "cover_reference",
+      "subjectRole": "arrest_coverage",
+      "articleCount": null,
+      "membershipIn40": "item_mapping_unavailable",
+      "verification": "Archive scan masthead inspected. The date follows the printed issue, not the archive-page label.",
+      "limit": "headline evidence only; exact article identity/count and settlement membership unresolved."
+    },
+    {
+      "id": "jefferies-cover-5",
+      "date": "2010-12-30",
+      "outlet": "The Scotsman",
+      "headline": "New lead in Joanna death",
+      "sourceURL": "https://en.kiosko.net/uk/2010-12-30/np/scotsman.html",
+      "sourceLocator": "The scan masthead reads Thursday 30 December 2010. Its Inside Today column headline is “New lead in Joanna death”; the short teaser describes new CCTV images and points to news page 7.",
+      "format": "cover_reference",
+      "subjectRole": "yeates_investigation_context",
+      "articleCount": null,
+      "membershipIn40": "item_mapping_unavailable",
+      "verification": "Archive scan masthead inspected. The date follows the printed issue, not the archive-page label.",
+      "limit": "additional dated headline evidence only; separate full article and item-level match not established."
+    },
+    {
+      "id": "jefferies-cover-6",
+      "date": "2010-12-29",
+      "outlet": "The Scotsman",
+      "headline": "Architect murder probe",
+      "sourceURL": "https://en.kiosko.net/uk/2010-12-29/np/scotsman.html",
+      "sourceLocator": "The cover scan internally dated Wednesday, 29 December 2010 has “Architect murder probe” in its Inside Today column; teaser points to news page 6.",
+      "format": "cover_reference",
+      "subjectRole": "yeates_investigation_context",
+      "articleCount": null,
+      "membershipIn40": "item_mapping_unavailable",
+      "verification": "Archive scan masthead inspected. The date follows the printed issue, not the archive-page label.",
+      "limit": "headline evidence only; exact settlement-item mapping not established."
+    }
+  ],
+  "editionParticipationEvidence": [
+    {
+      "outlet": "Daily Star",
+      "coverageDates": [
+        "2010-12-31",
+        "2011-01-01"
+      ],
+      "headline": "unknown",
+      "articleCount": "unknown",
+      "evidenceSourceURL": "https://tabloid-watch.blogspot.com/2011/07/page-two-apologies-to-christopher.html",
+      "originalApologyURL": "https://www.dailystar.co.uk/news/view/203643/Christopher-Jefferies-Apology/",
+      "evidenceLocator": "Contemporaneous reproduction of the paper's apology says articles were published on 31 December 2010 and 1 January 2011; it identifies plural articles but no headline or number.",
+      "membership": "Daily Star is one of the eight settlement titles (Leveson Vol. 2, para 4.8); the apology explicitly associates the dated coverage with the apology/settlement. Exact mapping to individual entries within the aggregate 40 remains unavailable.",
+      "status": "edition/date participation evidence only; not an article-level record"
+    },
+    {
+      "outlet": "Daily Express",
+      "coverageDates": [
+        "2010-12-31"
+      ],
+      "headline": "unknown",
+      "articleCount": "unknown",
+      "evidenceSourceURL": "https://tabloid-watch.blogspot.com/2011/07/page-two-apologies-to-christopher.html",
+      "originalApologyURL": "https://www.express.co.uk/posts/view/262038/Christopher-Jefferies-Apology",
+      "evidenceLocator": "Contemporaneous reproduction of the paper's apology says articles were published in the Daily Express on 31 December 2010; it identifies plural articles but no headline or number.",
+      "membership": "Daily Express is one of the eight settlement titles (Leveson Vol. 2, para 4.8); the apology explicitly associates the dated coverage with the apology/settlement. Exact mapping to individual entries within the aggregate 40 remains unavailable.",
+      "status": "edition/date participation evidence only; not an article-level record"
+    },
+    {
+      "outlet": "Daily Mail",
+      "coverageDates": "not specified in the reproduced apology",
+      "headline": "unknown",
+      "articleCount": "unknown",
+      "evidenceSourceURL": "https://tabloid-watch.blogspot.com/2011/07/page-two-apologies-to-christopher.html",
+      "originalApologyURL": "https://www.dailymail.co.uk/home/article-2020289/Chris-Jefferies.html",
+      "evidenceLocator": "Reproduced apology describes false allegations, but does not state coverage issue dates, headline, or item count.",
+      "membership": "Daily Mail is one of the eight settlement titles; no dated edition-level information recoverable from this apology text.",
+      "status": "publisher apology / settlement participation only; not an article-level record"
+    },
+    {
+      "outlet": "Daily Record",
+      "coverageDates": "not specified in the reproduced apology",
+      "headline": "unknown",
+      "articleCount": "unknown",
+      "evidenceSourceURL": "https://tabloid-watch.blogspot.com/2011/07/page-two-apologies-to-christopher.html",
+      "originalApologyURL": "https://www.dailyrecord.co.uk/news/uk-world-news/2011/07/29/christopher-jefferies-apology-86908-23305705/",
+      "evidenceLocator": "Reproduced apology describes false allegations, but does not state coverage issue dates, headline, or item count.",
+      "membership": "Daily Record is one of the eight settlement titles; no dated edition-level information recoverable from this apology text.",
+      "status": "publisher apology / settlement participation only; not an article-level record"
+    },
+    {
+      "outlet": "The Sun",
+      "coverageDates": "not specified in the reproduced apology",
+      "headline": "unknown",
+      "articleCount": "unknown",
+      "evidenceSourceURL": "https://tabloid-watch.blogspot.com/2011/07/page-two-apologies-to-christopher.html",
+      "originalApologyURL": "https://www.thesun.co.uk/sol/homepage/news/3722799/Christopher-Jefferies.html",
+      "evidenceLocator": "Reproduced apology describes false allegations but does not state original coverage issue dates, headline, or item count.",
+      "membership": "The Sun is one of the eight settlement titles; no dated edition-level information recoverable from this apology text.",
+      "status": "publisher apology / settlement participation only; not an article-level record"
+    },
+    {
+      "outlet": "Daily Mirror and Sunday Mirror",
+      "coverageDates": "not specified in the reproduced group apology",
+      "headline": "unknown",
+      "articleCount": "unknown",
+      "evidenceSourceURL": "https://tabloid-watch.blogspot.com/2011/07/page-two-apologies-to-christopher.html",
+      "originalApologyURL": "https://www.mirror.co.uk/news/top-stories/2011/07/30/christopher-jefferies-115875-23305989/",
+      "evidenceLocator": "Reproduced group apology distinguishes false allegations previously made by the Daily Mirror and Sunday Mirror, but gives no issue dates, headline, or item count.",
+      "membership": "Both titles are among the eight settlement titles; the group apology does not map individual articles to dates or to the aggregate 40.",
+      "status": "publisher apology / settlement participation only; not an article-level record"
+    },
+    {
+      "outlet": "The Scotsman",
+      "coverageDates": "not specified in the reproduced apology",
+      "headline": "unknown",
+      "articleCount": "unknown",
+      "evidenceSourceURL": "https://tabloid-watch.blogspot.com/2011/07/page-two-apologies-to-christopher.html",
+      "originalApologyURL": "https://thescotsman.scotsman.com/scotland/Apology-Christopher-Jefferies-.6811241.jp",
+      "evidenceLocator": "Reproduced apology describes false allegations but does not state original coverage issue dates, headline, or item count. Its online apology publication is reported as 1 August 2011; that is not the original coverage date.",
+      "membership": "The Scotsman is one of the eight settlement titles; no dated edition-level information recoverable from the apology text.",
+      "status": "publisher apology / settlement participation only; not an article-level record"
+    }
+  ],
+  "ambiguousFragments": [
+    {
+      "outlet": "Daily Record",
+      "date": "2010-12-31",
+      "witnessStatementLocator": "Christopher Jefferies statement, p. 8, numbered excerpt 16 (under Daily Record heading); paragraph locator corrected to 28.",
+      "fragment": "'Jo landlord was sinister peeping Tom, says tenants'",
+      "issue": "The numbered extract follows the already-listed Daily Record example, but its status as a separate article rather than a subhead, panel, or continuation is not independently established by the surviving excerpt.",
+      "countTreatment": "ambiguous fragment; excluded from article count and additional article records until an original page or explicit identification resolves it."
+    },
+    {
+      "outlet": "Daily Mail",
+      "date": "2010-12-31",
+      "witnessStatementLocator": "Christopher Jefferies statement, p. 9, numbered excerpts 17-19 (under Daily Mail heading); paragraph locator corrected to 28.",
+      "fragments": [
+        "The teacher they called Mr Strange",
+        "passage numbered 18, with no independent headline established",
+        "Links to unsolved murder yards away"
+      ],
+      "issue": "The extract numbering/headings do not establish that each fragment is a distinct article. Items 17 and 19 could be deck/subhead/panel text within a selected article or another same-edition story; no original layout/article identifiers were recovered.",
+      "countTreatment": "all three fragments excluded from additional article count; retain only as leads pending original page/layout evidence."
+    }
+  ],
+  "undatedHeadlineEvidence": [
+    {
+      "id": "jefferies-headline-evidence-dailystar-undated-coverage-window",
+      "outlet": "Daily Star",
+      "headline": "Jo landlord is a creep who freaked out school girls",
+      "exactIssueDate": null,
+      "dateWindowSupportedBySeparatePublisherApology": [
+        "2010-12-31",
+        "2011-01-01"
+      ],
+      "format": "front-page headline, as identified during a recorded Jefferies interview; newspaper image shown to the interviewer",
+      "originalURL": null,
+      "sourceURL": "https://hackinginquiry.org/christopher-jefferies-interview-with-bbc-radio-4/",
+      "sourceLocator": "Hacked Off transcript of BBC Radio 4 Today interview, 2 November 2011, line 57: interviewer says 'Here's The Daily Star' and reads the front-page headline; lines 48–49 date the interview/context, and Jefferies responds at line 58 that this was among the coverage prompting the legal action.",
+      "dateBasis": "The separate contemporaneous reproduction of the Daily Star's settlement apology says its articles were published 31 December 2010 and 1 January 2011. Neither the interview transcript nor apology maps this exact headline to one of those two issue dates.",
+      "membershipInThe40": "not individually proven. Same settlement title and the separate apology's two-date coverage window make this a strong same-window settlement candidate, but no item-level settlement schedule or date-to-headline mapping was found.",
+      "verification": "A 2011 recorded-interview transcript identifies a specific Daily Star front-page headline and Jefferies connects the coverage to the legal action. It is additional exact-headline evidence absent from the eight selected CSV examples, but is not a separately dated original publisher article page.",
+      "countTreatment": "count as one additional headline observed, not as a confirmed unique settlement article; exclude from any exact-40 tally pending issue-date/layout or schedule evidence."
+    },
+    {
+      "id": "jefferies-cover-headline-dailystar-20101231",
+      "outlet": "Daily Star",
+      "headline": "Tragic Jo: Cops quiz landlord",
+      "date": "2010-12-31",
+      "format": "front-page teaser; cover also says 'Arrested: Jefferies'; refers to pages 4–5",
+      "originalURL": null,
+      "sourceURL": "https://en.kiosko.net/uk/2010-12-31/np/daily_star.html",
+      "sourceLocator": "The cover scan masthead reads Friday, December 31, 2010; left-column Jefferies item. The 1 January Kiosko page displays this same internally dated 31 December scan.",
+      "membershipInThe40": "not individually proven; same title/date as Daily Star apology participation, but no item-level settlement list",
+      "countTreatment": "headline evidence only; full article and relation to other Daily Star copy unresolved; not counted as a new independent article"
+    },
+    {
+      "id": "jefferies-cover-headline-dailyexpress-20101231",
+      "outlet": "Daily Express",
+      "headline": "Strangled Joanna: Landlord quizzed",
+      "date": "2010-12-31",
+      "format": "front-page teaser with 'See pages 4 & 5'",
+      "originalURL": null,
+      "sourceURL": "https://en.kiosko.net/uk/2010-12-31/np/daily_express.html",
+      "sourceLocator": "The cover scan masthead reads Friday, December 31, 2010; lower-right Jefferies/Yeates item points to pages 4–5.",
+      "membershipInThe40": "not individually proven; the Express apology confirms articles on 31 Dec, but does not map the teaser or inside article into the 40",
+      "countTreatment": "headline evidence only; relationship to existing selected Express headline unresolved; not counted as a new independent article"
+    },
+    {
+      "id": "jefferies-cover-headline-scotsman-20101231",
+      "outlet": "The Scotsman",
+      "headline": "Landlord in murder arrest",
+      "date": "2010-12-31",
+      "format": "front-page 'Inside Today' teaser referring to news page 5",
+      "originalURL": null,
+      "sourceURL": "https://en.kiosko.net/uk/2010-12-31/np/scotsman.html",
+      "sourceLocator": "The cover scan masthead reads Friday, December 31, 2010; 'Inside Today' column includes the headline and says news page 5.",
+      "membershipInThe40": "not individually proven; The Scotsman was a settlement title but its apology does not state coverage dates or map this item",
+      "countTreatment": "headline evidence only; full article/relationship to any other content and settlement item mapping unresolved"
+    },
+    {
+      "id": "jefferies-cover-headline-scotsman-20101230",
+      "outlet": "The Scotsman",
+      "headline": "New lead in Joanna death",
+      "date": "2010-12-30",
+      "format": "front-page Inside Today teaser referring to news page 7",
+      "originalURL": null,
+      "sourceURL": "https://en.kiosko.net/uk/2010-12-30/np/scotsman.html",
+      "sourceLocator": "The cover scan masthead reads Thursday, 30 December 2010. Inside Today column says police released new CCTV images and directs readers to news page 7.",
+      "membershipInThe40": "not individually proven; The Scotsman is a settlement title, but its apology does not state coverage dates or map this item",
+      "countTreatment": "headline evidence only; not a verified full-text article record or item-level settlement match; do not count independently without page 7 or a schedule"
+    },
+    {
+      "id": "jefferies-cover-headline-scotsman-20101229",
+      "outlet": "The Scotsman",
+      "headline": "Architect murder probe",
+      "date": "2010-12-29",
+      "format": "front-page Inside Today teaser referring to news page 6",
+      "originalURL": null,
+      "sourceURL": "https://en.kiosko.net/uk/2010-12-29/np/scotsman.html",
+      "sourceLocator": "The scan masthead reads Wednesday, 29 December 2010. Inside Today teaser says police launched a murder investigation after the post-mortem and points to news page 6.",
+      "membershipInThe40": "not individually proven; The Scotsman is a settlement title, but its apology does not state coverage dates or map this item",
+      "countTreatment": "dated headline evidence only; article page not recovered and no item-level settlement schedule match; do not add to confirmed article count"
+    }
+  ],
+  "laterContextRecords": [
+    {
+      "id": "jefferies-scale-record-04-scotsman-20110120",
+      "date": "2011-01-20",
+      "outlet": "The Scotsman",
+      "headline": "Joanna Yeates: Timeline",
+      "originalURL": "https://www.scotsman.com/news/joanna-yeates-timeline-1688196",
+      "sourceURL": "https://www.scotsman.com/news/joanna-yeates-timeline-1688196",
+      "sourceLocator": "Original publisher page metadata: Published 20 January 2011 at 15:13 BST; updated 20 January 2011 at 23:07 BST. The timeline records Jefferies's arrest and release on police bail.",
+      "editionStatus": "Publisher web page. No print-edition copy or print publication is asserted.",
+      "verification": "Direct page from one of the eight settlement titles, with explicit publication and update times. This is a January case-related article outside the settlement's stated early-January period, retained for chronology only.",
+      "settlementMembership": "not established; the publisher-page timeline is dated 20 January 2011 and was retained for wider chronology only, outside the late-December/early-January period described in settlement coverage."
+    }
+  ],
+  "archiveChecks": {
+    "dailyStarJan1ArchiveURL": "https://en.kiosko.net/uk/2011-01-01/np/daily_star.html",
+    "dailyStarJan1Finding": "Kiosko labels its page Jan 1, but the rendered scan itself is the same cover with an internal masthead date Friday, Dec 31, 2010. Do not treat it as a separate Jan 1 print cover or map the undated Hacked Off interview headline to this scan.",
+    "dailyExpressJan1ArchiveURL": "https://en.kiosko.net/uk/2011-01-01/np/daily_express.html",
+    "dailyExpressJan1Finding": "The rendered scan likewise shows an internal Friday, Dec 31, 2010 masthead; it does not establish an independently dated Jan 1 cover.",
+    "dailyRecordFinding": "The Kiosko UK date directory displayed Daily Mail, Daily Express, Daily Star, and The Scotsman, but not Daily Record. Searches for a Kiosko Daily Record date page found no indexed matching page; this archive does not establish that no Daily Record edition/article existed.",
+    "guardianStarImageFinding": "The Guardian page identifies an image as the Daily Star front page dated 31/12/2010, but the browser-rendered image field was blank/unreadable. The Kiosko scan independently supplies the legible dated Daily Star cover.",
+    "sundayMirrorJan2ArchiveURL": "https://en.kiosko.net/uk/2011-01-02/",
+    "sundayMirrorJan2Finding": "Inspected the Kiosko UK 2 January directory and visible Sunday front-page scans. The displayed Sunday titles included Mail on Sunday, Sunday Express, Daily Star Sunday, Sunday Telegraph, Independent on Sunday, and Sunday Herald; Sunday Mirror was not listed or inspectable there. This archive omission is only a coverage gap and does not establish non-publication or absence of settlement coverage.",
+    "jan2AdditionalScanFinding": "The Jefferies-related Sunday Express teaser visible on the 2 January page belongs to Sunday Express, which is outside the specified eight settlement titles; it was excluded from the recovery records. The Daily Star Sunday scan is a distinct Sunday title and was not conflated with Daily Star.",
+    "dailyMailJan1ArchiveURL": "https://en.kiosko.net/uk/2011-01-01/np/daily_mail.html",
+    "dailyMailJan1Finding": "The Kiosko directory labels the page 1 January 2011, but the scanned Daily Mail cover itself is internally dated Friday, 31 December 2010 and repeats the already-selected “Was Jo’s body hidden…” cover story. It does not establish a distinct 1 January Mail issue/article.",
+    "dailyExpressJan3ArchiveURL": "https://en.kiosko.net/uk/2011-01-03/np/daily_express.html",
+    "dailyExpressJan3Finding": "Kiosko displays a Daily Express cover whose internal masthead is Monday, 3 January 2011. The visible front-page text contains no Jefferies item. This cover-only check cannot establish whether a relevant inside article appeared.",
+    "scotsmanDec30ArchiveURL": "https://en.kiosko.net/uk/2010-12-30/np/scotsman.html",
+    "scotsmanDec30Finding": "The internally dated Thursday 30 December cover gives the exact teaser “New lead in Joanna death” and points to news page 7. It is additional dated headline evidence but page 7/article text and individual settlement membership remain unverified.",
+    "scotsmanDec29ArchiveURL": "https://en.kiosko.net/uk/2010-12-29/np/scotsman.html",
+    "scotsmanDec29Finding": "The internally dated Wednesday 29 December cover has the exact “Architect murder probe” teaser, pointing to news page 6. The article page and any mapping into the later settlement set remain unavailable."
+  },
+  "searchLog": [
+    {
+      "date": "2026-10-14",
+      "query": "Christopher Jefferies 40 articles Daily Record Daily Mail Daily Star Scotsman Daily Express July 29 2011 settlement articles names",
+      "result": "Confirmed aggregate and all eight settlement titles in contemporary and retrospective reporting; no per-article schedule found."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Christopher Jefferies libel 40 articles newspaper headlines 2011 Daily Star Scotsman",
+      "result": "Found settlement reporting and the existing witness statement; no independently listed 40-item schedule."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Daily Star / Scotsman / Sunday Mirror Christopher Jefferies December 2010 or January 2011 exact-headline searches",
+      "result": "No additional original article page from these searches was verified for the early-January settlement window."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "site:dailymail.co.uk, site:express.co.uk and site:scotsman.com searches for Jefferies/Yeates January 2011",
+      "result": "Search tool blocked Daily Mail, Express and Scotsman domains via robots.txt for one site-restricted request. This is an access limitation, not evidence no articles existed. A separate direct Scotsman result was accessible."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Exact title searches for 'The teacher they called Mr Strange', 'Links to unsolved murder yards away', and 'Jo landlord was sinister peeping Tom, says tenants'",
+      "result": "Search surfaced the original Leveson witness statement and an independent copy of it, but no original Daily Mail or Daily Record article URLs. The Leveson statement was used as the primary preserved reproduction."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Internet Archive/preserved source and original Daily Mail URL lead for Jefferies/Yeates",
+      "result": "A direct Daily Mail URL lead (article 1342427) was found in an old forum quotation, but the publisher page could not be opened and no trustworthy capture with publication metadata was verified in this pass; excluded from article records."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Daily Star and Daily Express apology pages via contemporaneous reproduction; exact article/headline searches for 31 December 2010 and 1 January 2011",
+      "result": "Recovered apology wording identifying Daily Star coverage on 31 Dec 2010 and 1 Jan 2011 and Daily Express coverage on 31 Dec 2010. Exact headline, issue/article identifiers, and counts are not stated. Original publisher apology URLs are linked in the reproduction but were not independently fetched in this pass; treated as dated participation evidence, not article records."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Daily Star Jefferies January 2011 article and Daily Express / Scotsman December 2010 exact headlines",
+      "result": "Searches surfaced contextual press coverage and the Leveson statement but no independently verified additional original article page in the specified window. A Daily Star 7 January story mentions Jefferies, but no evidence found that it belongs to the apology-described dates or to the 40-item settlement schedule; excluded."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Daily Mail article 1342427 archive capture and Internet Archive CDX",
+      "result": "A Daily Mail article-ID lead was not verified with reliable date/title metadata; archive lookup access was unavailable in this pass. No URL was guessed and no record was added."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Tabloid Watch contemporaneous page-two apology reproduction for Christopher Jefferies (30 July 2011)",
+      "result": "Recovered reproduced apology text and linked original publisher apology URLs for all eight titles (Mirror apology covers Daily Mirror and Sunday Mirror together). Only Star and Express specify original coverage dates in the apology text. Apology dates/locations refer to corrections after settlement and are not original coverage dates."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Hacked Off transcript of Christopher Jefferies BBC Radio 4 Today interview, 2 November 2011, and Daily Star front page shown during interview",
+      "result": "Verified an additional Daily Star front-page headline from the interview transcript. Exact issue date is not stated. The publisher apology separately dates the Star coverage to 31 December 2010 and 1 January 2011, but does not map this title to either date; recorded as undated headline evidence, not a confirmed article-count addition."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Direct browser check of linked Daily Star apology URL",
+      "result": "The original URL https://www.dailystar.co.uk/news/view/203643/Christopher-Jefferies-Apology/ redirected to the current Daily Star News landing page in Chrome, without serving the historical apology or original news issue. The contemporaneous Tabloid Watch reproduction remains the evidence for the quoted apology. No paywall or control bypass attempted."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Kiosko.net official-date front-page scans, UK archive 2010-12-31, Daily Star, Daily Express, The Scotsman and Daily Mail; checked Jan 1 repeat pages",
+      "result": "Browser inspected the full legible covers. On the internal masthead date Friday 31 Dec, Daily Star shows 'Tragic Jo: Cops quiz landlord' (pages 4–5); Daily Express shows 'Strangled Joanna: Landlord quizzed' (pages 4–5); The Scotsman has an 'Inside Today' teaser 'Landlord in murder arrest' (news page 5). Daily Mail cover headline matches selected CSV evidence and is not additional. Kiosko Jan 1 Daily Star/Express pages display copies whose paper mastheads still read Fri 31 Dec; no distinct Jan 1 issue cover verified. All three new exact cover headlines remain teaser evidence, not distinct article counts or proved members of the 40."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "SIOC/11/0892, SIOC/11/0893, SIOC/11/0894; Simons Muirhead & Burton / Louis Charalambous primary statement and schedule searches",
+      "result": "Inforrm 2011 list provides three case references and a short settlement summary only. Exact-ID and solicitor-name searches did not locate primary open-court statements or a 40-item annex. No article mapping recovered."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Daily Mail article-1342427 original URL plus Internet Archive CDX exact-URL checks",
+      "result": "The direct Daily Mail article URL was blocked by robots and the only accessible URL citation was a 2017 forum post. CDX API requests were inaccessible through the research tool and browser attempt timed out; no capture record, publication date, or independent title verification recovered. Kept as an unverified lead only."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Kiosko UK newspaper archive 2011-01-02 Sunday Mirror and visible Sunday front pages",
+      "result": "Inspected the dated directory and visible covers. Sunday Mirror was not listed; the archive gap is not evidence of non-publication. A Sunday Express Jefferies teaser was outside the eight requested settlement titles; Daily Star Sunday was kept distinct from Daily Star."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Kiosko archive: The Scotsman 2010-12-30; Daily Mail 2011-01-01; Daily Express 2011-01-03 cover scans",
+      "result": "Scotsman cover internally dated 30 Dec shows “New lead in Joanna death” and a page 7 teaser. Kiosko Daily Mail 1 Jan page is actually internally dated 31 Dec and repeats the selected cover story. Express 3 Jan scan has no visible Jefferies cover item; the scan cannot rule out interior coverage."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Kiosko UK archive The Scotsman 2010-12-29 front page",
+      "result": "Scan internally dated Wed 29 Dec shows “Architect murder probe”, with an Inside Today teaser to news page 6. Added as dated headline evidence only; page 6 and settlement item matching not recovered."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Free Internet Archive: known Daily Star apology Wayback calendar; Advanced Search title/date query; public archive search",
+      "result": "Daily Star apology calendar remained on loading spinners with no capture list. Advanced Search query title:\"Daily Star\" AND date:[2010-12-30 TO 2011-01-02] submitted but results page was blocked in Chrome (ERR_BLOCKED_BY_CLIENT). Public search loaded but remained “Searching…” without visible results. No conclusion about missing archive holdings; no other title/date queries were repeated after the block."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Visible related headline ‘Murdered Joanna: Now police quiz next-door neighbour’ on recovered Daily Mail article-1342427 page",
+      "result": "Followed only the visible Today's headlines link. Archived destination first showed a 301 redirect from the observed original article-1343233 URL to a canonical publisher URL. The destination rendered distinct H1 and publisher-created label ‘Created 2:46 AM on 1st January 2011’ (timezone not shown). Added as a chronology record only; individual membership in the 40 unproven. Do not infer newsroom knowledge from archive capture time."
+    },
+    {
+      "date": "2026-10-14",
+      "query": "Visible related headline ‘Murdered Joanna: Now police quiz next-door neighbour’ on recovered Daily Mail article-1342427 page",
+      "result": "Followed only the visible Today's headlines link. Archived destination first showed a 301 redirect from the observed original article-1343233 URL to a canonical publisher URL. The destination rendered distinct H1 and publisher-created label ‘Created 2:46 AM on 1st January 2011’ (timezone not shown). Added as a chronology record only; individual membership in the 40 unproven. Do not infer newsroom knowledge from archive capture time."
+    }
+  ],
+  "gapNote": "The full 40-item schedule and original inside-page layouts remain missing. Five covers show title/date visibility but can duplicate existing print packages. Two full Mail Online pages have now been recovered through Wayback. Publisher-displayed dates and archive-capture dates are separate; their print equivalence and membership in the 40 remain unproved.",
+  "followupRoutes": [
+    {
+      "label": "Internet Archive: recovered Mail Online page",
+      "url": "https://web.archive.org/web/20110101065317/https://www.dailymail.co.uk/news/article-1342427/Joanna-Yeates-murder-Landlord-Chris-Jefferies-hold-key.html",
+      "limit": "Opened public capture from 1 January 2011, displaying a 30 December update label. First-publication timestamp and settlement membership are not established."
+    },
+    {
+      "label": "Internet Archive: second Mail Online page",
+      "url": "https://web.archive.org/web/20110102222144/http://www.dailymail.co.uk/news/article-1343233/Joanna-Yeates-murder-Landlord-Chris-Jefferies-Prof-Strange-quizzed-police.html",
+      "limit": "One distinct publisher web page, created-date label 1 January 2011, recovered in a 2 January capture. The displayed 02:46 creation time has no timezone. Print-equivalence, edit history and membership in the 40 remain unproved. Count the page once, not each internal heading."
+    },
+    {
+      "label": "Civil statements in open court",
+      "reference": "SIOC/11/0892, SIOC/11/0893, SIOC/11/0894;29July2011",
+      "url": "https://inforrm.org/2012/01/13/defamation-actions-statements-in-open-court-and-other-disposals-2011/amp/",
+      "limit": "Reference index only; not the underlying statements or an article schedule."
+    },
+    {
+      "label": "Contemporaneous publisher apologies reproduced",
+      "url": "https://tabloid-watch.blogspot.com/2011/07/page-two-apologies-to-christopher.html",
+      "limit": "Reproduced statements preserve some date ranges; they are not a per-article schedule. Original pages are missing or redirected."
+    },
+    {
+      "label": "Inside-page archive route",
+      "url": "https://digitorial.co.uk/publications/entry/daily-star",
+      "limit": "Publisher archive describes coverage from2000. Access was not purchased or bypassed; the relevant inside pages remain unrecovered."
+    }
+  ],
+  "titleParticipation": [
+    {
+      "outlet": "The Sun",
+      "selectedArticleDates": [
+        "2010-12-31",
+        "2011-01-01"
+      ],
+      "coverDates": [],
+      "apologyDates": [],
+      "articleTotal": null,
+      "exactSettlementMapping": false
+    },
+    {
+      "outlet": "Daily Mirror",
+      "selectedArticleDates": [
+        "2010-12-31",
+        "2011-01-01"
+      ],
+      "coverDates": [],
+      "apologyDates": [],
+      "articleTotal": null,
+      "exactSettlementMapping": false
+    },
+    {
+      "outlet": "Sunday Mirror",
+      "selectedArticleDates": [
+        "2011-01-02"
+      ],
+      "coverDates": [],
+      "apologyDates": [],
+      "articleTotal": null,
+      "exactSettlementMapping": false
+    },
+    {
+      "outlet": "Daily Record",
+      "selectedArticleDates": [
+        "2010-12-31"
+      ],
+      "coverDates": [],
+      "apologyDates": [],
+      "articleTotal": null,
+      "exactSettlementMapping": false
+    },
+    {
+      "outlet": "Daily Mail",
+      "selectedArticleDates": [
+        "2010-12-31"
+      ],
+      "coverDates": [],
+      "apologyDates": [],
+      "articleTotal": null,
+      "exactSettlementMapping": false
+    },
+    {
+      "outlet": "Daily Star",
+      "selectedArticleDates": [],
+      "coverDates": [
+        "2010-12-31"
+      ],
+      "apologyDates": [
+        "2010-12-31",
+        "2011-01-01"
+      ],
+      "articleTotal": null,
+      "exactSettlementMapping": false
+    },
+    {
+      "outlet": "The Scotsman",
+      "selectedArticleDates": [],
+      "coverDates": [
+        "2010-12-29",
+        "2010-12-30",
+        "2010-12-31"
+      ],
+      "apologyDates": [],
+      "articleTotal": null,
+      "exactSettlementMapping": false
+    },
+    {
+      "outlet": "Daily Express",
+      "selectedArticleDates": [
+        "2010-12-31"
+      ],
+      "coverDates": [
+        "2010-12-31"
+      ],
+      "apologyDates": [
+        "2010-12-31"
+      ],
+      "articleTotal": null,
+      "exactSettlementMapping": false
+    }
+  ],
+  "recoveredWebArticles": [
+    {
+      "id": "jefferies-ia-wayback-dailymail-article-1342427",
+      "outlet": "Daily Mail",
+      "headline": "Could landlord hold the key to Joanna's murder? 'I saw her leave with two others and talking in hushed tones'",
+      "originalURL": "https://www.dailymail.co.uk/news/article-1342427/Joanna-Yeates-murder-Landlord-Chris-Jefferies-hold-key.html",
+      "sourceURL": "https://web.archive.org/web/20110101065317/https://www.dailymail.co.uk/news/article-1342427/Joanna-Yeates-murder-Landlord-Chris-Jefferies-hold-key.html",
+      "archiveCaptureTimestamp": "2011-01-01T06:53:17Z",
+      "archiveCaptureEvidence": "Wayback calendar for this exact original publisher URL showed 13 saves, with the displayed range beginning 1 January 2011 and ending 1 September 2025. Opened the 1 January 2011 06:53:17 capture; full publisher page and article text rendered.",
+      "publicationDate": "not displayed as a first-publication timestamp",
+      "publisherDisplayedTemporalEvidence": "The captured Mail Online page header reads “Saturday, Jan 01 2011”; its byline says “Last updated at 3:56 PM on 30th December 2010” (timezone not shown). These are page display/update evidence, not a proven first-publication timestamp.",
+      "sourceLocator": "Archived Mail Online article page: H1 and author block at the top; author names Luke Salkeld, Arthur Martin, Ryan Kisiel and Emily Andrews; byline update label as above. The page has one distinct Mail Online article URL/ID (article-1342427). It also contains additional section headings within the same page; those headings are not counted as separate article records.",
+      "editionStatus": "Publisher web article captured in Wayback; no print-edition page or exact print issue is asserted.",
+      "independentArticleIdentity": "One distinct publisher article page, identified by its stable article ID and main headline; not the same URL as the eight selected witness-statement exhibit examples. Do not count its internal headings as separate articles.",
+      "settlementMembership": "not individually proven; no 40-item schedule or article-to-settlement mapping was recovered. The page is relevant to the wider late-December/early-January coverage period, but membership in the 40 cannot be asserted.",
+      "countTreatment": "Count as one independently recovered publisher article-page record in the wider Jefferies chronology; do not call it a confirmed member of the 40 or include in any settlement-member subtotal until schedule evidence exists.",
+      "date": "2010-12-30",
+      "datePrecision": "publisher displayed last-update date; first-publication date not shown",
+      "dateBasis": "Publisher-displayed last-update date, not first publication or archive capture date.",
+      "format": "archived_web_article",
+      "membershipIn40": "item_mapping_unavailable",
+      "articleCountInSettlement": null,
+      "summary": "The archived story centres on a reported sighting by Jefferies, conflicting neighbours’ accounts and his qualification that he could not identify Yeates. Its body reports police describing him as a witness rather than a suspect, while a photo caption describes him as in custody. These mixed states cannot establish the exact sequence of edits or what the newsroom knew before arrest. Personal descriptors sit alongside investigative information; their relevance can be scrutinised.",
+      "limit": "One stable publisher web page is recovered. No print-equivalence, exact first-publication time, edit sequence or membership in the 40 is proved. Its section headings are not counted separately."
+    },
+    {
+      "id": "jefferies-ia-wayback-dailymail-article-1343233",
+      "outlet": "Daily Mail",
+      "headline": "Police can hold ‘Prof Strange’ for rest of weekend as next door neighbour is also quizzed over Joanna’s murder",
+      "originalURL": "http://www.dailymail.co.uk/news/article-1343233/Joanna-Yeates-murder-Landlord-Chris-Jefferies-Prof-Strange-quizzed-police.html",
+      "sourceURL": "https://web.archive.org/web/20110102222144/http://www.dailymail.co.uk/news/article-1343233/Joanna-Yeates-murder-Landlord-Chris-Jefferies-Prof-Strange-quizzed-police.html",
+      "archiveCaptureTimestamp": "2011-01-02T22:21:44Z",
+      "publisherDisplayedDate": "Created 2:46 AM on 1st January 2011; timezone not displayed",
+      "date": "2011-01-01",
+      "datePrecision": "publisher-created date; timezone and first publication time not independently established",
+      "dateBasis": "Captured publisher page says ‘Created 2:46 AM on 1st January 2011’; Wayback capture is 2 January 2011 22:21:44 UTC. Keep those dates distinct.",
+      "sourceLocator": "On the article-1342427 capture, Today's headlines included ‘Murdered Joanna: Now police quiz next-door neighbour’. Following this visible link led to a Wayback capture showing 301 redirect from the observed original URL to this canonical publisher URL. The full destination page rendered a distinct H1 and its own author/date block.",
+      "editionStatus": "Publisher web article captured by Wayback; no print-edition page or exact issue asserted.",
+      "independentArticleIdentity": "Distinct publisher page ID 1343233 and URL, separate from article-1342427 and the eight selected witness-statement examples. Count the page once; internal headings are not separate articles.",
+      "settlementMembership": "not individually proven; no 40-item schedule or item-to-settlement mapping identifies this page.",
+      "countTreatment": "Count as one additional publisher article page in the broader chronology only; exclude from any confirmed settlement-member subtotal.",
+      "temporalContext": "The page reports Jefferies's arrest/detention and its photo caption says ‘Suspect’. The capture timestamp is not evidence of newsroom knowledge at any exact time.",
+      "format": "archived_web_article",
+      "membershipIn40": "item_mapping_unavailable",
+      "articleCountInSettlement": null,
+      "summary": "This page reports continued detention and questioning of a neighbour. Its headline places the nickname “Prof Strange” alongside those procedural developments, and its caption labels Jefferies a suspect. A jury reader can ask which parts add verified investigative information and which encourage a character judgment. The wording is evidence of what the archived publisher page said, not evidence that its allegations were true.",
+      "limit": "One distinct publisher web page, created-date label 1 January 2011, recovered in a 2 January capture. The displayed 02:46 creation time has no timezone. Print-equivalence, edit history and membership in the 40 remain unproved. Count the page once, not each internal heading."
+    }
+  ],
+  "newRecoveredWebPageCount": 2,
+  "additionalArticlesConfirmedAsMembersOf40": 0
+}

@@ -1,0 +1,859 @@
+[
+  {
+    "id": "comparison-andrew",
+    "title": "Prince Andrew: civil settlement and public scrutiny",
+    "kind": "coverage_counterexample",
+    "relatedCaseIds": [
+      "arday-2026-campaign",
+      "caroline-flack-recovered-campaign",
+      "sterling-campaign",
+      "markle-letter-campaign",
+      "bulley-campaign",
+      "jefferies-campaign"
+    ],
+    "summary": "The settlement generated multiple dated reports and next-day newspaper-front-page scrutiny. This establishes that reporting occurred; it does not establish its complete volume or proportionality.",
+    "anchor": {
+      "label": "Joint filing and public announcement that Virginia Giuffre and Prince Andrew had reached an out-of-court settlement in principle in Giuffre v. Prince Andrew, S.D.N.Y. No. 1:21-cv-06702.",
+      "eventDate": "2022-02-15",
+      "publicDate": "2022-02-15",
+      "datePrecision": "day",
+      "displayDate": "2022-02-15"
+    },
+    "officialSources": [
+      {
+        "id": "comparison-andrew-anchor",
+        "title": "Settlement statement filed as Document 78-1",
+        "url": "https://www.courthousenews.com/wp-content/uploads/2022/02/giuffre-andrew-settlement-defamation.pdf",
+        "summary": "The 15 February 2022 civil settlement did not adjudicate the allegations and contained no admission of liability. Andrew denied the allegations. This case must not be described as a conviction.",
+        "date": "2022-02-15",
+        "datePrecision": "day",
+        "locator": "Court-filed party statement; copy hosted by Court News Service, not the court's own docket",
+        "sourceType": "filed_document_copy"
+      }
+    ],
+    "records": [
+      {
+        "id": "comparison-andrew-record-1",
+        "date": "2022-02-15",
+        "outlet": "The Guardian",
+        "headline": "Prince Andrew settles Virginia Giuffre sexual assault case in US",
+        "url": "https://www.theguardian.com/uk-news/2022/feb/15/prince-andrew-and-virginia-giuffre-reach-settlement-in-principle",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-andrew-record-1"
+        ],
+        "publicationDisplay": "Tue 15 Feb 2022 11:13 EST; updated 15:35 EST",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-andrew-record-2",
+        "date": "2022-02-15",
+        "outlet": "The Guardian",
+        "headline": "Prince Andrew’s settlement with Virginia Giuffre: what just happened?",
+        "url": "https://www.theguardian.com/uk-news/2022/feb/15/prince-andrews-settlement-with-virginia-giuffre-what-just-happened",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-andrew-record-2"
+        ],
+        "publicationDisplay": "Tue 15 Feb 2022 14:47 EST",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-andrew-record-3",
+        "date": "2022-02-15",
+        "outlet": "The Guardian",
+        "headline": "Why Andrew had to settle with Virginia Giuffre: lawyers say he had little choice",
+        "url": "https://www.theguardian.com/uk-news/2022/feb/15/why-andrew-had-to-settle-with-virginia-giuffre-lawyers-say-he-had-little-choice",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-andrew-record-3"
+        ],
+        "publicationDisplay": "Tue 15 Feb 2022 15:42 EST",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-andrew-record-4",
+        "date": "2022-02-15",
+        "outlet": "Sky News",
+        "headline": "Prince Andrew to make 'substantial donation' to Virginia Giuffre's charity in settlement deal",
+        "url": "https://news.sky.com/story/prince-andrew-and-virginia-giuffre-settle-out-of-court-over-civil-sex-assault-claim-12542826",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-andrew-record-4"
+        ],
+        "publicationDisplay": "Tue 15 Feb 2022 23:34 UK",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-andrew-record-5",
+        "date": "2022-02-15",
+        "outlet": "BBC News",
+        "headline": "Prince Andrew settles US civil sex assault case with Virginia Giuffre",
+        "url": "https://www.bbc.com/news/uk-60393843",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-andrew-record-5"
+        ],
+        "publicationDisplay": null,
+        "verificationNote": "Original BBC publisher page opened and title/date verified in Chrome on14October2026."
+      },
+      {
+        "id": "comparison-andrew-record-6",
+        "date": "2022-02-16",
+        "outlet": "The Guardian",
+        "headline": "Prince Andrew to remain counsellor of state after settling sexual abuse lawsuit",
+        "url": "https://www.theguardian.com/uk-news/2022/feb/16/prince-andrew-to-remain-counsellor-of-state-after-settling-sexual-abuse-lawsuit",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-andrew-record-6"
+        ],
+        "publicationDisplay": "Wed 16 Feb 2022 14:16 EST",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-andrew-record-7",
+        "date": "2022-02-16",
+        "outlet": "The Guardian",
+        "headline": "“Hard up” Andrew may turn to family and friends to help pay settlement",
+        "url": "https://www.theguardian.com/uk-news/2022/feb/16/hard-up-andrew-may-turn-to-family-and-friends-to-help-pay-settlement",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-andrew-record-7"
+        ],
+        "publicationDisplay": "Wed 16 Feb 2022 14:49 EST",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-andrew-record-8",
+        "date": "2022-02-16",
+        "outlet": "The Guardian",
+        "headline": "'His final disgrace': how the papers covered Prince Andrew's sex assault case settlement",
+        "url": "https://www.theguardian.com/uk-news/2022/feb/16/his-final-disgrace-papers-prince-andrew-case-settlement",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-andrew-record-8"
+        ],
+        "publicationDisplay": null,
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      }
+    ],
+    "windows": [
+      {
+        "id": "comparison-andrew-3days",
+        "start": "2022-02-15",
+        "end": "2022-02-17",
+        "daysInclusive": 3,
+        "unit": "written_articles",
+        "scopeNote": "Recovered items are a selected sample, not a complete census. Missing rows do not prove no publication. Equal calendar windows do not make different legal stages, years or subjects equivalent."
+      },
+      {
+        "id": "comparison-andrew-7days",
+        "start": "2022-02-15",
+        "end": "2022-02-21",
+        "daysInclusive": 7,
+        "unit": "written_articles",
+        "scopeNote": "Recovered items are a selected sample, not a complete census. Missing rows do not prove no publication. Equal calendar windows do not make different legal stages, years or subjects equivalent."
+      }
+    ],
+    "coverageVerdict": "reporting_observed",
+    "census": false,
+    "limits": [
+      "Recovered items are a selected sample, not a complete census. Missing rows do not prove no publication. Equal calendar windows do not make different legal stages, years or subjects equivalent.",
+      "The 15 February 2022 civil settlement did not adjudicate the allegations and contained no admission of liability. Andrew denied the allegations. This case must not be described as a conviction.",
+      "These recovered reports chiefly represent the Guardian; a broad multi-outlet census and broadcast exposure have not been measured."
+    ],
+    "questions": [
+      "Which new public facts did the follow-up add?",
+      "Did critical language serve accountability, humiliation or both?",
+      "What would be needed to compare the same outlets at the same legal stage?"
+    ],
+    "searchLog": "The written records below are a small recovered sample from named publishers, not a comprehensive article census. They do not measure article prominence, front-page placement, broadcast duration, audience reach, or daily total volume. An absent article or outlet in this file is not evidence of non-coverage.",
+    "laterFrame": null
+  },
+  {
+    "id": "comparison-archer",
+    "title": "Jeffrey Archer: conviction and public scrutiny",
+    "kind": "coverage_counterexample",
+    "relatedCaseIds": [
+      "arday-2026-campaign",
+      "caroline-flack-recovered-campaign",
+      "sterling-campaign",
+      "markle-letter-campaign",
+      "bulley-campaign",
+      "jefferies-campaign"
+    ],
+    "summary": "The conviction generated same-day reports, critical profiles and follow-up. The record contradicts a claim of no reporting, while leaving the overall volume and proportionality unmeasured.",
+    "anchor": {
+      "label": "A jury at the Central Criminal Court convicted Archer on two counts of perverting the course of public justice and two counts of perjury; he was sentenced to four years' imprisonment. The event followed a seven-week criminal trial.",
+      "eventDate": "2001-07-19",
+      "publicDate": "2001-07-19",
+      "datePrecision": "day",
+      "displayDate": "2001-07-19"
+    },
+    "officialSources": [
+      {
+        "id": "comparison-archer-anchor",
+        "title": "The Lord Archer of Weston-Super-Mare, House of Lords Hansard",
+        "url": "https://api.parliament.uk/historic-hansard/lords/2001/jul/23/the-lord-archer-of-weston-super-mare",
+        "summary": "Archer was convicted on 19 July 2001 and sentenced to four years. The House of Lords recorded the court clerk’s notice on 23 July. An obituary is a different editorial event from sentencing.",
+        "date": "2001-07-23",
+        "datePrecision": "day",
+        "locator": "Official parliamentary record quoting a notification from the Clerk of the Central Criminal Court",
+        "sourceType": "official"
+      }
+    ],
+    "records": [
+      {
+        "id": "comparison-archer-record-1",
+        "date": "2001-07-19",
+        "outlet": "The Guardian",
+        "headline": "Archer jailed for four years",
+        "url": "https://www.theguardian.com/uk/2001/jul/19/archer.politics4",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-archer-record-1"
+        ],
+        "publicationDisplay": "Thu 19 Jul 2001 18:01 CEST",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-archer-record-2",
+        "date": "2001-07-19",
+        "outlet": "The Guardian",
+        "headline": "The rise and fall of Jeffrey Archer",
+        "url": "https://www.theguardian.com/uk/2001/jul/19/archer.politics2",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-archer-record-2"
+        ],
+        "publicationDisplay": "Thu 19 Jul 2001 11:15 EDT (displayed by search index)",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-archer-record-3",
+        "date": "2001-07-19",
+        "outlet": "The Guardian",
+        "headline": "Archer trial - the charges",
+        "url": "https://www.theguardian.com/uk/2001/jul/19/archer.politics5",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-archer-record-3"
+        ],
+        "publicationDisplay": "Thu 19 Jul 2001 07:56 EDT (displayed by search index)",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-archer-record-4",
+        "date": "2001-07-19",
+        "outlet": "BBC News",
+        "headline": "Archer jailed for perjury",
+        "url": "https://news.bbc.co.uk/1/hi/uk/1424501.stm",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-archer-record-4"
+        ],
+        "publicationDisplay": "Thursday19July2001,16:00GMT /17:00UK",
+        "verificationNote": "Original BBC publisher page opened and title/date verified in Chrome on14October2026."
+      },
+      {
+        "id": "comparison-archer-record-5",
+        "date": "2001-07-20",
+        "outlet": "The Guardian",
+        "headline": "A liar's moment of truth",
+        "url": "https://www.theguardian.com/uk/2001/jul/20/conservatives.archer7",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-archer-record-5"
+        ],
+        "publicationDisplay": "Thu 19 Jul 2001 20:49 EDT; UK conversion Fri 20 Jul 01:49 BST",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-archer-record-6",
+        "date": "2001-07-20",
+        "outlet": "The Guardian",
+        "headline": "Disgraced Archer may lose peerage",
+        "url": "https://www.theguardian.com/uk/2001/jul/20/archer.politics2",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-archer-record-6"
+        ],
+        "publicationDisplay": "Fri 20 Jul 2001 11:29 CEST",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-archer-record-7",
+        "date": "2001-07-20",
+        "outlet": "The Guardian",
+        "headline": "Archer and the 'A' list jailbirds",
+        "url": "https://www.theguardian.com/uk/2001/jul/20/archer.politics3",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-archer-record-7"
+        ],
+        "publicationDisplay": "Fri 20 Jul 2001 11:57 CEST",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-archer-record-8",
+        "date": "2001-07-20",
+        "outlet": "The Guardian",
+        "headline": "Tabloid seeks revenge with £2.2m legal action",
+        "url": "https://www.theguardian.com/media/2001/jul/20/dailystar.pressandpublishing",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-archer-record-8"
+        ],
+        "publicationDisplay": "Fri 20 Jul 2001 08:02 CEST",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-archer-record-9",
+        "date": "2001-07-21",
+        "outlet": "The Guardian",
+        "headline": "Archer to be freed for mother's funeral",
+        "url": "https://www.theguardian.com/uk/2001/jul/21/conservatives.archer",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-archer-record-9"
+        ],
+        "publicationDisplay": "Fri 20 Jul 2001 20:08 EDT; UK conversion Sat 21 Jul 01:08 BST",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      },
+      {
+        "id": "comparison-archer-record-10",
+        "date": "2001-07-21",
+        "outlet": "The Guardian",
+        "headline": "Major 'wanted to make novelist a minister'",
+        "url": "https://www.theguardian.com/uk/2001/jul/21/conservatives.archer1",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-archer-record-10"
+        ],
+        "publicationDisplay": "Fri 20 Jul 2001 20:08 EDT; UK conversion Sat 21 Jul 01:08 BST",
+        "verificationNote": "Original publisher title/date checked; UK calendar day used."
+      }
+    ],
+    "windows": [
+      {
+        "id": "comparison-archer-3days",
+        "start": "2001-07-19",
+        "end": "2001-07-21",
+        "daysInclusive": 3,
+        "unit": "written_articles",
+        "scopeNote": "Recovered items are a selected sample, not a complete census. Missing rows do not prove no publication. Equal calendar windows do not make different legal stages, years or subjects equivalent."
+      },
+      {
+        "id": "comparison-archer-7days",
+        "start": "2001-07-19",
+        "end": "2001-07-25",
+        "daysInclusive": 7,
+        "unit": "written_articles",
+        "scopeNote": "Recovered items are a selected sample, not a complete census. Missing rows do not prove no publication. Equal calendar windows do not make different legal stages, years or subjects equivalent."
+      }
+    ],
+    "coverageVerdict": "reporting_observed",
+    "census": false,
+    "limits": [
+      "Recovered items are a selected sample, not a complete census. Missing rows do not prove no publication. Equal calendar windows do not make different legal stages, years or subjects equivalent.",
+      "Archer was convicted on 19 July 2001 and sentenced to four years. The House of Lords recorded the court clerk’s notice on 23 July. An obituary is a different editorial event from sentencing.",
+      "These recovered reports chiefly represent the Guardian; a broad multi-outlet census and broadcast exposure have not been measured."
+    ],
+    "questions": [
+      "Which new public facts did the follow-up add?",
+      "Did critical language serve accountability, humiliation or both?",
+      "What would be needed to compare the same outlets at the same legal stage?"
+    ],
+    "searchLog": "The written records below are a small recovered sample from named publishers, not a comprehensive article census. They do not measure article prominence, front-page placement, broadcast duration, audience reach, or daily total volume. An absent article or outlet in this file is not evidence of non-coverage.",
+    "laterFrame": {
+      "date": "2026-10-05",
+      "development": "Jeffrey Archer died, aged 86. The official website statement currently available says he died at home the previous day, but does not display a statement publication date in the page text; Associated Press reported on 6 October 2026 that he died on 5 October. Treat this as a separate 2026 obituary/news frame, not as part of the 2001 event-window comparison and not as a proxy for the 2001 coverage volume.",
+      "primarySource": "https://jeffreyarcher.com/with-great-sadness/",
+      "officialNewsIndex": "https://jeffreyarcher.com/news/",
+      "sourceNote": "The official site confirms the death and identifies age 86 but does not display a date on the statement text accessed. AP's 6 October 2026 report independently dates his death to 5 October. This fact is explicitly kept outside the 2001 window."
+    }
+  },
+  {
+    "id": "comparison-westwood",
+    "title": "Tim Westwood: concerns, institutional response and later reporting",
+    "kind": "institutional_delay",
+    "relatedCaseIds": [
+      "arday-2026-campaign",
+      "caroline-flack-recovered-campaign",
+      "sterling-campaign",
+      "markle-letter-campaign",
+      "bulley-campaign",
+      "jefferies-campaign"
+    ],
+    "summary": "The 2025 review records informal handling of workplace concerns, weak records and missed opportunities. It also found very little evidence that public sexual-misconduct concerns had been reported to the BBC. This supports a specific institutional-response comparison, not a claim that all allegations were known or that no journalism occurred.",
+    "anchor": {
+      "label": "BBC publishes the independent Gemma White KC review",
+      "eventDate": "2025-02-25",
+      "publicDate": "2025-02-25",
+      "datePrecision": "day",
+      "displayDate": "25 February 2025"
+    },
+    "officialSources": [
+      {
+        "id": "comparison-westwood-review",
+        "title": "Gemma White KC's Report into the BBC's response to claims over Tim Westwood's Conduct",
+        "url": "https://www.bbc.co.uk/aboutthebbc/documents/gemma-white-kc-report-bbc-response-to-claims-tim-westwood-conduct.pdf",
+        "summary": "The 2025 review records informal handling of workplace concerns, weak records and missed opportunities. It also found very little evidence that public sexual-misconduct concerns had been reported to the BBC. This supports a specific institutional-response comparison, not a claim that all allegations were known or that no journalism occurred.",
+        "date": "2025-02-25",
+        "datePrecision": "day",
+        "locator": "Executive Summary, printed pp.2–6, paragraphs 12–24; Part IV, pp.39–40, paragraphs 145–150.",
+        "sourceType": "official"
+      },
+      {
+        "id": "comparison-westwood-release",
+        "title": "BBC publishes Board-commissioned review into Tim Westwood's conduct",
+        "url": "https://www.bbc.co.uk/mediacentre/2025/bbc-publishes-board-commissioned-review-tim-westwood-conduct",
+        "summary": "The Board accepted the review and apologised. Its qualification about no widespread or significant knowledge concerns predatory sexual behaviour; internal workplace concerns are a distinct record.",
+        "date": "2025-02-25",
+        "datePrecision": "day",
+        "locator": "BBC Board response and publication explanation",
+        "sourceType": "official"
+      },
+      {
+        "id": "comparison-westwood-met",
+        "title": "Metropolitan Police Service charges Tim Westwood with further offences",
+        "url": "https://news.met.police.uk/news/metropolitan-police-service-charges-tim-westwood-with-further-offences-513128",
+        "summary": "On 22 September 2026 the Met announced two further charges, taking the total to 17. Charges are allegations, not convictions; the original trial was scheduled for January 2027. No plea on the two new charges is established by this record.",
+        "date": "2026-09-22",
+        "datePrecision": "day",
+        "locator": "Met release dated 22 September 2026; procedural status only",
+        "sourceType": "official"
+      }
+    ],
+    "records": [
+      {
+        "id": "comparison-westwood-record-1",
+        "date": "2025-02-25",
+        "outlet": "ITV News",
+        "headline": "BBC Board apologises for 'missed opportunities' after Tim Westwood review",
+        "url": "https://www.itv.com/news/london/2025-02-25/bbc-board-apologises-for-missed-opportunities-after-tim-westwood-review",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-westwood-record-1"
+        ],
+        "verificationNote": "live article/page available in search result"
+      },
+      {
+        "id": "comparison-westwood-record-2",
+        "date": "2025-02-25",
+        "outlet": "The Guardian",
+        "headline": "BBC admits it 'fell short and failed people' over Tim Westwood",
+        "url": "https://www.theguardian.com/media/2025/feb/25/bbc-admits-it-fell-short-and-failed-people-over-tim-westwood",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-westwood-record-2"
+        ],
+        "verificationNote": "Guardian topic index verified title and publication date; article URL follows Guardian slug pattern."
+      },
+      {
+        "id": "comparison-westwood-record-3",
+        "date": "2025-02-25",
+        "outlet": "The Guardian",
+        "headline": "Tim Westwood inquiry report: what new allegations against him have emerged?",
+        "url": "https://www.theguardian.com/media/2025/feb/25/tim-westwood-inquiry-report-what-new-allegations-against-him-have-emerged",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-westwood-record-3"
+        ],
+        "verificationNote": "Guardian topic index verified title and publication date; article URL follows Guardian slug pattern."
+      },
+      {
+        "id": "comparison-westwood-record-4",
+        "date": "2025-02-25",
+        "outlet": "Sky News",
+        "headline": "BBC apologises for failing to stop DJ Tim Westwood's 'bullying and misogynistic behaviour'",
+        "url": "https://news.sky.com/story/amp/bbc-apologises-for-failing-to-stop-dj-tim-westwoods-bullying-and-misogynistic-behaviour-13316715",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-westwood-record-4"
+        ],
+        "verificationNote": "search result/article text available"
+      },
+      {
+        "id": "comparison-westwood-record-5",
+        "date": "2025-02-25",
+        "outlet": "BBC News",
+        "headline": "BBC sorry for 'missed opportunities' over DJ Tim Westwood's 'bullying behaviour'",
+        "url": "https://www.bbc.com/news/articles/ce98n0074zro",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-westwood-record-5"
+        ],
+        "verificationNote": "Original BBC publisher page opened and title/date verified in Chrome on14October2026."
+      },
+      {
+        "id": "comparison-westwood-record-6",
+        "date": "2025-02-28",
+        "outlet": "The Guardian",
+        "headline": "The BBC wanted Black listeners and turned to Tim Westwood, white son of a vicar. A parable for our times",
+        "url": "https://www.theguardian.com/commentisfree/2025/feb/28/bbc-black-listeners-tim-westwood-report",
+        "format": "opinion",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-westwood-record-6"
+        ],
+        "verificationNote": "Guardian topic index verified title and publication date; article URL follows Guardian slug pattern."
+      }
+    ],
+    "windows": [
+      {
+        "id": "comparison-westwood-3days",
+        "start": "2025-02-25",
+        "end": "2025-02-27",
+        "daysInclusive": 3,
+        "unit": "written_articles",
+        "scopeNote": "Recovered items are a selected sample, not a complete census. Missing rows do not prove no publication. Equal calendar windows do not make different legal stages, years or subjects equivalent."
+      },
+      {
+        "id": "comparison-westwood-7days",
+        "start": "2025-02-25",
+        "end": "2025-03-03",
+        "daysInclusive": 7,
+        "unit": "written_articles",
+        "scopeNote": "Recovered items are a selected sample, not a complete census. Missing rows do not prove no publication. Equal calendar windows do not make different legal stages, years or subjects equivalent."
+      }
+    ],
+    "coverageVerdict": "reporting_observed",
+    "census": false,
+    "limits": [
+      "Recovered items are a selected sample, not a complete census. Missing rows do not prove no publication. Equal calendar windows do not make different legal stages, years or subjects equivalent.",
+      "Workplace concerns, public allegations and criminal charges are different evidence categories. The review did not adjudicate criminal guilt. Westwood denied wrongdoing.",
+      "The selected release-window reports show coverage occurred in 2025. They do not measure earlier press silence, nor establish when each newsroom first received evidence."
+    ],
+    "questions": [
+      "What information reached which level of management, and when?",
+      "Why were concerns handled separately, and what response did staff receive?",
+      "How did the public investigation and review change the information journalists could report?"
+    ],
+    "knowledgeTimeline": [
+      {
+        "date": "2009–2012",
+        "precision": "range",
+        "label": "1 Xtra workplace concerns",
+        "summary": "The review describes production-staff concerns and largely informal executive-producer responses. It distinguishes them from alleged sexual offences against members of the public."
+      },
+      {
+        "date": "2012",
+        "precision": "year",
+        "label": "Management action and incomplete records",
+        "summary": "The Controller removed Westwood from the drivetime show. A racialised-language concern reached senior staff; the review found gaps in the recorded response to the employee."
+      },
+      {
+        "date": "2022-04-26",
+        "precision": "day",
+        "label": "Public BBC/Guardian investigation",
+        "summary": "The later review dates the initial public investigation and BBC Three documentary to 26 April 2022."
+      },
+      {
+        "date": "2025-02-25",
+        "precision": "day",
+        "label": "Independent report becomes public",
+        "summary": "Earlier institutional knowledge is assessed retrospectively. The report’s publication was delayed at police request, rather than assumed suppressed by editors."
+      }
+    ],
+    "searchLog": [
+      "Research ended within the assigned 25-minute cap; no exhaustive database, archival, or FOI research was done.",
+      "The official 174-page BBC PDF rendered in the browser and its Executive Summary plus selected Part IV pages were read; shell retrieval could not resolve the BBC host, and no local copy was saved. Findings about detailed incident chronology are limited to the inspected pages, not a page-by-page audit of all 174 pages.",
+      "Search result counts are discovery leads, not a complete measure of coverage. Absence of a located result is not evidence of no reporting.",
+      "No attempt was made to identify complainants, investigate underlying criminal allegations, infer guilt, or equate newsroom/institutional scrutiny across the two cases."
+    ]
+  },
+  {
+    "id": "comparison-oreilly",
+    "title": "William O’Reilly: an education-panel comparison with missing public reasons",
+    "kind": "reported_comparator",
+    "relatedCaseIds": [
+      "arday-2026-campaign",
+      "jefferies-campaign"
+    ],
+    "summary": "Varsity reported an upheld plagiarism complaint and quoted a University response that the panel process had concluded. The named panel reasons were not recovered. Two later news pieces and one commentary show reporting occurred; they cannot establish that the case received unusually little coverage.",
+    "anchor": {
+      "label": "Varsity follow-up publishes the University response",
+      "eventDate": "2023-09-29",
+      "publicDate": "2023-09-29",
+      "datePrecision": "day",
+      "displayDate": "29 September 2023"
+    },
+    "officialSources": [
+      {
+        "id": "comparison-oreilly-reported-response",
+        "title": "University response reported by Varsity",
+        "url": "https://www.varsity.co.uk/news/26105",
+        "summary": "The University said an independent panel had considered the matter and it would not comment further. The reported negligence/no-intent outcome remains a reported account, not independently read official reasons.",
+        "date": "2023-09-29",
+        "datePrecision": "day",
+        "locator": "University spokesperson response and reported tribunal account",
+        "sourceType": "reported_institutional_response"
+      },
+      {
+        "id": "comparison-oreilly-procedure",
+        "title": "Cambridge research-misconduct procedure",
+        "url": "https://www.cam.ac.uk/research/integrity/research-misconduct",
+        "summary": "The official procedure explains the process but does not identify this case’s outcome.",
+        "date": null,
+        "datePrecision": "unknown",
+        "locator": "General procedure; not a named case finding",
+        "sourceType": "official"
+      },
+      {
+        "id": "comparison-oreilly-annual",
+        "title": "Cambridge Research Integrity Report 2023–24",
+        "url": "https://www.cam.ac.uk/sites/default/files/ucam_research_integrity_report_2023-24.pdf",
+        "summary": "The annual report gives anonymised cases. It cannot identify which entry, if any, concerns O’Reilly.",
+        "date": "2024-11-25",
+        "datePrecision": "day",
+        "locator": "Report received by Council 25 November 2024; anonymised case reporting",
+        "sourceType": "official"
+      }
+    ],
+    "records": [
+      {
+        "id": "comparison-oreilly-record-1",
+        "date": "2023-09-29",
+        "outlet": "Varsity",
+        "headline": "Plagiarising professor stays in post and threatens student journalists",
+        "url": "https://www.varsity.co.uk/news/26105",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-oreilly-record-1"
+        ]
+      },
+      {
+        "id": "comparison-oreilly-record-2",
+        "date": "2023-09-30",
+        "outlet": "Varsity",
+        "headline": "Respect must go both ways",
+        "url": "https://www.varsity.co.uk/comment/26086",
+        "format": "opinion",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-oreilly-record-2"
+        ]
+      },
+      {
+        "id": "comparison-oreilly-record-3",
+        "date": "2023-10-02",
+        "outlet": "Per Capita",
+        "headline": "Cambridge Professor defends 'accidentally' plagiarising his student's essay",
+        "url": "https://per-capita.co.uk/news-highlights/714/",
+        "format": "article",
+        "sourceStatus": "publisher_verified",
+        "evidenceIds": [
+          "comparison-oreilly-record-3"
+        ]
+      },
+      {
+        "id": "comparison-oreilly-record-4",
+        "date": "2023-06-16",
+        "outlet": "Financial Times",
+        "headline": "Cambridge professor remains in post despite plagiarism",
+        "url": "https://www.ft.com/content/ae7f16ae-95ab-4aae-a676-0748e3e61b6d",
+        "format": "article",
+        "sourceStatus": "reported_date_only",
+        "evidenceIds": [
+          "comparison-oreilly-record-4"
+        ],
+        "verificationNote": "FT headline/date indexed, but original article metadata/body not independently recovered; excluded from verified totals."
+      }
+    ],
+    "windows": [
+      {
+        "id": "comparison-oreilly-3days",
+        "start": "2023-09-29",
+        "end": "2023-10-01",
+        "daysInclusive": 3,
+        "unit": "written_articles",
+        "scopeNote": "Recovered items are a selected sample, not a complete census. Missing rows do not prove no publication. Equal calendar windows do not make different legal stages, years or subjects equivalent."
+      },
+      {
+        "id": "comparison-oreilly-7days",
+        "start": "2023-09-29",
+        "end": "2023-10-05",
+        "daysInclusive": 7,
+        "unit": "written_articles",
+        "scopeNote": "Recovered items are a selected sample, not a complete census. Missing rows do not prove no publication. Equal calendar windows do not make different legal stages, years or subjects equivalent."
+      },
+      {
+        "id": "comparison-oreilly-initial7days",
+        "start": "2023-06-16",
+        "end": "2023-06-22",
+        "daysInclusive": 7,
+        "unit": "written_articles",
+        "scopeNote": "Initial indexed FT disclosure window; separate from September follow-up. Original FT record remains unverified."
+      }
+    ],
+    "coverageVerdict": "unmeasured",
+    "census": false,
+    "limits": [
+      "Recovered items are a selected sample, not a complete census. Missing rows do not prove no publication. Equal calendar windows do not make different legal stages, years or subjects equivalent.",
+      "No named official decision or full panel reasons recovered. Anonymised institutional statistics cannot be mapped to an individual.",
+      "The June disclosure and September follow-up are separate windows. A columnist’s estimate of roughly six reports has no defined denominator or matched window.",
+      "Arday’s continuing allegations and inquiry differed from a concluded panel process. No racial or class cause is established by these examples."
+    ],
+    "questions": [
+      "What did the university publish, and what did it keep confidential?",
+      "Would the same outlet and event stage produce a fair comparison?",
+      "Can either coverage count be described as complete?"
+    ],
+    "searchLog": [
+      {
+        "query": "Tim Westwood Gemma White KC BBC report official PDF, current status charges September 2026",
+        "channels": [
+          "web search",
+          "official BBC indexed result",
+          "official Met source"
+        ],
+        "result": "Located BBC publication notice/report URL and official current Met charge update; BBC PDF retrieval blocked."
+      },
+      {
+        "query": "25 February 2025 Tim Westwood review news coverage",
+        "channels": [
+          "BBC News",
+          "Guardian",
+          "ITV",
+          "Sky News",
+          "RadioToday",
+          "The Standard"
+        ],
+        "result": "Found at least five dated reports across BBC, Guardian, ITV, Sky; used four independent/varied outlets plus BBC institutional reporting; added Guardian opinion separately."
+      },
+      {
+        "query": "William O'Reilly Cambridge plagiarism tribunal official university decision",
+        "channels": [
+          "University of Cambridge research misconduct page",
+          "Cambridge Reporter",
+          "official annual report",
+          "Varsity",
+          "Financial Times"
+        ],
+        "result": "No named official decision or full panel reasons located. Public response is reported by Varsity; annual integrity report is anonymized."
+      },
+      {
+        "query": "William O'Reilly 2023 publications within 7-day and follow-up windows",
+        "channels": [
+          "Financial Times",
+          "Varsity",
+          "Per Capita",
+          "index search"
+        ],
+        "result": "Initial 16-22 June window: one original FT report verified. Follow-up window 29 September-2 October: Varsity news, Varsity opinion, and Per Capita interview/report. Derivative copies excluded."
+      }
+    ]
+  },
+  {
+    "id": "comparison-cyril-smith",
+    "title": "Cyril Smith: documented non-pickup by major national newspapers",
+    "kind": "documented_gap",
+    "relatedCaseIds": [
+      "arday-2026-campaign",
+      "caroline-flack-recovered-campaign",
+      "sterling-campaign",
+      "markle-letter-campaign",
+      "bulley-campaign",
+      "jefferies-campaign"
+    ],
+    "summary": "IICSA recorded local articles in May and June 1979, followed by no major-national-newspaper pickup of those allegations. Private Eye and the New Statesman were exceptions. It contacted national papers’ archives without resolving why the story was not taken up. This is documented non-pickup, not an inference from empty searches.",
+    "anchor": {
+      "label": "Rochdale Alternative Paper publishes allegations",
+      "eventDate": "1979-05",
+      "publicDate": "1979-05",
+      "datePrecision": "month",
+      "displayDate": "May 1979; follow-up June 1979"
+    },
+    "officialSources": [
+      {
+        "id": "comparison-cyril-smith-finding",
+        "title": "IICSA: the 1979 Rochdale Alternative Paper articles",
+        "url": "https://www.iicsa.org.uk/reports-recommendations/publications/investigation/cambridge-house-knowl-view-rochdale/part-b-cambridge-house/1979-rochdale-alternative-paper-articles",
+        "summary": "IICSA recorded local articles in May and June 1979, followed by no major-national-newspaper pickup of those allegations. Private Eye and the New Statesman were exceptions. It contacted national papers’ archives without resolving why the story was not taken up. This is documented non-pickup, not an inference from empty searches.",
+        "date": "2018-04-12",
+        "datePrecision": "day",
+        "locator": "Cambridge House, Knowl View and Rochdale report, Part B, paragraphs 62–75; particularly 65–71.",
+        "sourceType": "official"
+      },
+      {
+        "id": "comparison-cyril-smith-report-date",
+        "title": "IICSA report publication record",
+        "url": "https://www.iicsa.org.uk/document/cambridge-house-knowl-view-and-rochdale-investigation-report-april-2018.html",
+        "summary": "The official report was published 12 April 2018. Its findings about 1979 are retrospective.",
+        "date": "2018-04-12",
+        "datePrecision": "day",
+        "locator": "Report publication date",
+        "sourceType": "official"
+      }
+    ],
+    "records": [],
+    "windows": [],
+    "coverageVerdict": "documented_non_pickup",
+    "census": false,
+    "limits": [
+      "The report gives month-level publication dates; no invented daily curve or numerical national-article total is plotted.",
+      "The inquiry distinguished documented non-pickup from unresolved explanations. It did not corroborate a D-notice or a supposed legal warning as the cause.",
+      "Local publication and two national-magazine exceptions mean this was not complete media silence. This episode is a qualitative comparison, not a matched rate with Jefferies.",
+      "Retrospective inquiry findings do not establish exactly what each editor knew in1979, or a general racial/class explanation."
+    ],
+    "questions": [
+      "Why did verified local reporting not lead to national scrutiny?",
+      "What evidence supports the gap, and what remains unknown about its cause?",
+      "When does restraint protect due process, and when can it leave powerful people insufficiently scrutinised?"
+    ],
+    "knowledgeTimeline": [
+      {
+        "date": "1969–1970",
+        "precision": "range",
+        "label": "Earlier police investigation",
+        "summary": "The 1979 local article described the earlier investigation, according to IICSA. This is not proof every national editor possessed the police file."
+      },
+      {
+        "date": "1979-05",
+        "precision": "month",
+        "label": "Local first article",
+        "summary": "RAP reported allegations supported by affidavits, according to the later inquiry."
+      },
+      {
+        "date": "1979-06",
+        "precision": "month",
+        "label": "Local follow-up asks why national papers had not acted",
+        "summary": "IICSA records no major-national-newspaper pickup; it identifies two magazine exceptions."
+      },
+      {
+        "date": "2018-04-12",
+        "precision": "day",
+        "label": "Inquiry documents the non-pickup",
+        "summary": "The report investigated explanations but left the precise cause unresolved."
+      }
+    ],
+    "searchLog": [
+      "Original inquiry exhibit PDFs redirected or returned403; accessible official report HTML supports the finding. No access control was bypassed."
+    ]
+  }
+]
