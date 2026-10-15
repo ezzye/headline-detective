@@ -25,6 +25,6 @@ export function onlinePage(html, manifest) {
     image.url='/'+file;
     }
   }
-  const output=html.replace(pattern,()=>'<script id="campaign-data" type="application/json">'+JSON.stringify(records).replace(/</g,'\\u003c')+'</script>');
+  const output=html.replace(/(<img data-film-poster src=")data:image\/jpeg;base64,[A-Za-z0-9+/=]+(")/, '$1/assets/film/coding-for-justice-poster.jpg$2').replace(pattern,()=>'<script id="campaign-data" type="application/json">'+JSON.stringify(records).replace(/</g,'\\u003c')+'</script>');
   return output.replace(/(<script id="comparison-data" type="application\/json">)([\s\S]*?)(<\/script>)/,(_,open,data,close)=>open+JSON.stringify(JSON.parse(data)).replace(/</g,'\\u003c')+close);
 }
