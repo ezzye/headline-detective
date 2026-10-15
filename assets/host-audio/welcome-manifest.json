@@ -1,0 +1,24 @@
+{
+  "version": "cfj-host-welcome-v1",
+  "profile": {
+    "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
+    "model": "eleven_v3",
+    "format": "mp3_44100_64",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "use_speaker_boost": true
+    },
+    "direction": "[warmly]"
+  },
+  "clips": [
+    {
+      "part": "welcome",
+      "text": "Welcome to the jury. Look at the evidence, then pick an answer. I will read each question and explain the answer. You can mute me at any time. Let’s begin.",
+      "digest": "4d169c775ededcfc386b3ff86834b0002401af438d03db58261ea372532a8d7b",
+      "src": "/assets/host-audio/4d169c775ededcfc386b3ff86834b0002401af438d03db58261ea372532a8d7b.mp3",
+      "bytes": 90113,
+      "audioSha256": "eb316b0c6b68da5d8a3d2746bba4f493c9437bc3560074e6606704197329d8d8"
+    }
+  ]
+}
