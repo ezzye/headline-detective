@@ -174,3 +174,39 @@ test('ElevenLabs donor unknown subscription refuses paid use and does not try an
  let reads=0,paid=0;const {call,gateway}=await setup(t,{fetchImpl:async(_url,opts)=>{if(opts.method==='POST'){paid++;throw new Error('must not pay');}reads++;return {ok:true,json:async()=>({character_limit:1000})};}});
  await call('/api/donations',voiceDonation());await call('/api/donations',voiceDonation());const body=await ownedSpeech(call,gateway);assert.equal((await call('/api/speak',body)).status,502);assert.equal(reads,1);assert.equal(paid,0);
 });
+
+test('owner ElevenLabs top-up is detected after cooldown, survives restart, and preserves prepaid reservations',async t=> {
+ const c=config();c.env.ELEVENLABS_API_KEY='owner-voice';let now=Date.now(),limit=100,count=100,reads=0,paid=0;
+ const extras={config:c,clock:()=>now,fetchImpl:async(url,opts)=>{if(opts.method==='GET'){reads++;assert.equal(opts.cache,'no-store');return {ok:true,json:async()=>({character_limit:limit,character_count:count})};}paid++;return {ok:true,headers:{get:()=> 'audio/mpeg'},arrayBuffer:async()=>new Uint8Array([1]).buffer};}};
+ const first=await setup(t,extras);await first.gateway.refreshOwnerAllowances();assert.equal(first.gateway.state.owner.elevenlabs.status,'unavailable');assert.equal(reads,1);assert.equal(paid,0);
+ const restored=await setup(t,{...extras,state:structuredClone(first.gateway.state)});limit=600;
+ await restored.gateway.refreshOwnerAllowances();assert.equal(reads,1,'cooldown is durable across cold starts');assert.equal(restored.gateway.state.owner.elevenlabs.status,'unavailable');
+ now+=60000;await restored.gateway.refreshOwnerAllowances();assert.equal(reads,2);assert.equal(restored.gateway.state.owner.elevenlabs.status,'active');assert.equal(restored.gateway.state.owner.elevenlabs.remainingUnits,500);assert.equal(paid,0,'reactivation makes no paid request');
+ const speech=await ownedSpeech(restored.call,restored.gateway);assert.equal((await restored.call('/api/speak',speech)).status,200);assert.equal(paid,1);const reserved=restored.gateway.state.owner.elevenlabs.remainingUnits;
+ now+=60000;await restored.gateway.refreshOwnerAllowances();assert.equal(restored.gateway.state.owner.elevenlabs.remainingUnits,reserved,'unchanged stale provider count cannot refund the reservation');
+ assert.equal(restored.gateway.state.owner.elevenlabs.reservedCalls,1);
+});
+
+test('unknown owner recovery checks never authorize generation or consume paid quota',async t=> {
+ for(const kind of ['malformed','transport','auth','rate'])await t.test(kind,async child=>{
+  const c=config();c.env.ELEVENLABS_API_KEY='owner-voice';let now=Date.now(),broken=false,paid=0,reads=0;
+  const {gateway}=await setup(child,{config:c,clock:()=>now,fetchImpl:async(_url,opts)=>{if(opts.method==='POST'){paid++;throw Error('must not pay');}reads++;if(broken){if(kind==='transport')throw Error('private failure');if(kind==='auth')return {ok:false,status:401};if(kind==='rate')return {ok:false,status:429};return {ok:true,json:async()=>({character_limit:'1000',character_count:0})};}return {ok:true,json:async()=>({character_limit:100,character_count:100})};}});
+  await gateway.refreshOwnerAllowances();broken=true;now+=60000;await gateway.refreshOwnerAllowances();assert.equal(gateway.state.owner.elevenlabs.status,'unavailable');assert.equal(gateway.state.owner.elevenlabs.remainingUnits,0);assert.equal(gateway.state.owner.elevenlabs.usedUnits,0);assert.equal(gateway.state.owner.elevenlabs.reservedCalls,0);assert.equal(paid,0);assert.equal(reads,2);
+ });
+});
+
+test('owner DeepSeek reactivates on verified funding and explicit pause stays paused',async t=> {
+ const c=config();c.env.DEEPSEEK_API_KEY='owner-key';let now=Date.now(),available=false,reads=0,paid=0;
+ const {gateway,call}=await setup(t,{config:c,clock:()=>now,fetchImpl:async(url,opts)=>{if(url.endsWith('/user/balance')){reads++;return {ok:true,json:async()=>({is_available:available})};}paid++;return providerResult(opts);}});
+ await gateway.refreshOwnerAllowances();assert.equal(gateway.state.owner.deepseek.status,'unavailable');available=true;now+=60000;await gateway.refreshOwnerAllowances();assert.equal(gateway.state.owner.deepseek.status,'active');assert.equal(paid,0);
+ const s=await session(call),reply=parsed(await call('/api/campaign/respond',{sessionId:s.sessionId,outletId:s.desks[0].outletId,question:'What changed?'}));assert.equal(reply.mode,'deepseek');assert.equal(paid,1);
+ const before=reads;gateway.state.owner.deepseek.status='paused';now+=60000;await gateway.refreshOwnerAllowances();assert.equal(reads,before);assert.equal(gateway.state.owner.deepseek.status,'paused');
+});
+
+test('ElevenLabs owner 402 cannot recover from the same stale balance; a new funding increase can',async t=> {
+ const c=config();c.env.ELEVENLABS_API_KEY='owner-voice';let now=Date.now(),limit=1000,paid=0;
+ const {gateway,call}=await setup(t,{config:c,clock:()=>now,fetchImpl:async(_url,opts)=>{if(opts.method==='GET')return {ok:true,json:async()=>({character_limit:limit,character_count:0})};paid++;return {ok:false,status:402};}});
+ const speech=await ownedSpeech(call,gateway);assert.equal((await call('/api/speak',speech)).status,502);assert.equal(paid,1);assert.equal(gateway.state.owner.elevenlabs.remainingUnits,0);
+ now+=60000;await gateway.refreshOwnerAllowances();assert.equal(gateway.state.owner.elevenlabs.status,'unavailable');assert.equal(gateway.state.owner.elevenlabs.remainingUnits,0);assert.equal(paid,1);
+ limit+=500;now+=60000;await gateway.refreshOwnerAllowances();assert.equal(gateway.state.owner.elevenlabs.status,'active');assert.equal(gateway.state.owner.elevenlabs.remainingUnits,500);assert.equal(paid,1);
+});

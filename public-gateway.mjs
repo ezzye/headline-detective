@@ -15,6 +15,21 @@ export function speechCacheKey({text,voiceId,model,performance,voiceSettings,cac
 }
 const error=code=>Object.assign(new Error(code),{code});
 const finite=n=>Number.isSafeInteger(n)&&n>=0&&n<=1000000000;
+export const OWNER_BALANCE_CHECK_MS=60000;
+// Credit only an observed funding increase, not provider reporting lag after
+// our own durable reservations. Keep this observation in the encrypted ledger.
+export function reconcileElevenAllowance(owner,data,now) {
+  if(!data||!finite(data.character_limit)||!finite(data.character_count))throw error('invalid_owner_balance');
+  const limit=data.character_limit,remaining=Math.max(0,limit-data.character_count),old=owner.allowanceObservation;
+  const period=Number.isSafeInteger(data.next_character_count_reset_unix)&&data.next_character_count_reset_unix>0?data.next_character_count_reset_unix:null;
+  const known=old&&finite(old.limitHighWater),oldPeriod=Number.isSafeInteger(old?.periodEnd)&&old.periodEnd>0?old.periodEnd:null;
+  if(known&&oldPeriod!==null&&period!==null&&period<oldPeriod)throw error('invalid_owner_balance');
+  if(known&&oldPeriod!==null&&period!==null&&period>oldPeriod&&now<oldPeriod*1000)return {...owner,remainingUnits:Math.min(finite(owner.remainingUnits)?owner.remainingUnits:0,remaining)};
+  const renewed=known&&oldPeriod!==null&&period!==null&&period>oldPeriod&&now>=oldPeriod*1000;
+  const local=finite(owner.remainingUnits)?owner.remainingUnits:0;
+  const funded=renewed?remaining:!owner.balanceInitialized?remaining:local+(known?Math.max(0,limit-old.limitHighWater):0);
+  return {...owner,remainingUnits:Math.min(remaining,funded),balanceInitialized:true,allowanceObservation:{limitHighWater:renewed?limit:known?Math.max(old.limitHighWater,limit):limit,periodEnd:period===null?oldPeriod:oldPeriod===null?period:Math.max(oldPeriod,period)}};
+}
 const response=(status,body)=>({status,headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'},body:JSON.stringify(body),isBase64Encoded:false});
 function equal(a,b) { if(typeof a!=='string'||typeof b!=='string')return false;const aa=Buffer.from(a),bb=Buffer.from(b);return aa.length===bb.length&&timingSafeEqual(aa,bb); }
 function strict(v,allowed) {if(!v||typeof v!=='object'||Array.isArray(v)||Object.keys(v).some(k=>!allowed.includes(k)))throw error('invalid_schema');}
@@ -92,20 +107,24 @@ export function createPublicGateway({config,storagePath,masterKey,state={},persi
   function debitRate(provider,units) {const r=rate(),limit=provider==='deepseek'?262144:12000;if(r.paidCalls>=24||!maintenanceVoiceActive&&r[provider]+units>limit)throw error('visitor_budget_exhausted');r.paidCalls++;r[provider]+=units;}
   const credentials={deepseek:env.DEEPSEEK_API_KEY,elevenlabs:env.ELEVENLABS_API_KEY || env.ELEVEN_LABS_API_KEY || env.XI_API_KEY};
   async function ownerAvailable(provider,units) {
-    const owner=ledger.owner[provider],key=credentials[provider];if(!key||owner.status!=='active')return false;
-    if(clock()-owner.checkedAt>60000||!owner.checkedAt) {
-      let known=false,available=false,remaining=null;
+    const owner=ledger.owner[provider],key=credentials[provider];
+    // Only automatic outages recover. An explicit pause/revocation stays put.
+    if(!key||!['active','unavailable'].includes(owner.status))return false;
+    const now=clock();
+    if(!owner.checkedAt||now-owner.checkedAt>=OWNER_BALANCE_CHECK_MS||now<owner.checkedAt) {
+      let known=false,available=false;
       try {
         const endpoint=provider==='deepseek'?'https://api.deepseek.com/user/balance':'https://api.elevenlabs.io/v1/user/subscription';
-        const result=await fetchImpl(endpoint,{method:'GET',redirect:'error',signal:AbortSignal.timeout(8000),headers:provider==='deepseek'?{authorization:'Bearer '+key}:{'xi-api-key':key}});
+        const result=await fetchImpl(endpoint,{method:'GET',cache:'no-store',redirect:'error',signal:AbortSignal.timeout(8000),headers:provider==='deepseek'?{authorization:'Bearer '+key}:{'xi-api-key':key}});
         if(result.ok) {const data=await result.json();if(provider==='deepseek'&&typeof data.is_available==='boolean'){known=true;available=data.is_available;}
-          if(provider==='elevenlabs'&&finite(data.character_limit)&&finite(data.character_count)){known=true;remaining=Math.max(0,data.character_limit-data.character_count);available=remaining>=units;}}
+          if(provider==='elevenlabs'){const reconciled=reconcileElevenAllowance(owner,data,now);Object.assign(owner,reconciled);known=true;available=owner.remainingUnits>0;}}
         else if([401,402,403].includes(result.status)){known=true;available=false;owner.status='unavailable';}
       } catch {}
-      owner.checkedAt=clock();const manualCurrent=owner.manualFunded&&Number.isFinite(Date.parse(owner.asOf))&&clock()-Date.parse(owner.asOf)>=0&&clock()-Date.parse(owner.asOf)<=86400000;
-      owner.checkedAvailable=known?available:provider==='deepseek'?manualCurrent:owner.manual;
-      if(known&&!available)owner.status='unavailable';
-      if(remaining!==null) {owner.remainingUnits=owner.balanceInitialized?Math.min(owner.remainingUnits,remaining):remaining;owner.balanceInitialized=true;}
+      owner.checkedAt=now;
+      // A failed/unknown check cannot recover a stopped key, even with an old
+      // manual report. Reactivation requires authenticated provider evidence.
+      owner.checkedAvailable=known&&available;
+      owner.status=owner.checkedAvailable?'active':'unavailable';
       // DeepSeek provider_prepaid mode uses the freshly verified finite provider
       // balance and provider-side insufficient-credit stop. Never invent a token
       // entitlement or money-to-token conversion, and never trigger a top-up.
@@ -156,7 +175,7 @@ export function createPublicGateway({config,storagePath,masterKey,state={},persi
       let result;
       try {result=await dispatch(credentials[provider]);}
       catch(e) {
-        if([401,402,403,429].includes(e.status)){owner.status='unavailable';await save();}
+        if([401,402,403,429].includes(e.status)){owner.status='unavailable';owner.checkedAvailable=false;owner.checkedAt=clock();if(provider==='elevenlabs'&&e.status===402)owner.remainingUnits=0;await save();}
         else {await save();throw error('provider_unavailable');} // Uncertain owner call: never swap/retry.
       }
       if(result) {if(finite(result.actualUnits)&&result.actualUnits<=units){owner.usedUnits-=units-result.actualUnits;if(provider==='elevenlabs')owner.remainingUnits+=units-result.actualUnits;};await save();return result.value;}
@@ -185,7 +204,7 @@ export function createPublicGateway({config,storagePath,masterKey,state={},persi
     try {
       const r=rate();if(r.requests>=200)return response(429,{error:'visitor_rate_limit'});r.requests++;
       if(method==='GET') {
-        if(path==='/api/health'){await save();return response(200,{ok:true,enabled:true,models:{...models},donationsEnabled:pool.enabled});}
+        if(path==='/api/health'){await refreshOwnerAllowances();return response(200,{ok:true,enabled:true,models:{...models},donationsEnabled:pool.enabled});}
         if(path==='/api/donations/options'){await save();return response(200,{enabled:pool.enabled,models:{...models},providers:Object.entries(models).map(([provider,model])=>({provider,model,unit:provider==='deepseek'?'tokens':'characters'})),modes:['prepaid_remaining'],consentVersion:DONOR_CONSENT_VERSION,withdrawal:'Stops new calls; already dispatched calls may finish. Donations do not buy editorial control.'});}
         if(path==='/api/donations/status'){await save();return response(200,pool.status());}
         return response(405,{error:'method_not_allowed'});
@@ -275,6 +294,12 @@ export function createPublicGateway({config,storagePath,masterKey,state={},persi
   async function updateOwnerBalance({provider,remainingUnits,allowManual=false,manualFunded=false,asOf=null}) {
     if(!Object.hasOwn(models,provider)||(provider==='elevenlabs'&&!finite(remainingUnits))||(provider==='deepseek'&&manualFunded&&(!Number.isFinite(Date.parse(asOf))||Date.parse(asOf)>clock())))throw error('invalid_owner_report');ledger.owner[provider]={remainingUnits:finite(remainingUnits)?remainingUnits:0,manual:allowManual===true,manualFunded:manualFunded===true,asOf,mode:provider==='deepseek'?'provider_prepaid':'provider_characters',usedUnits:0,reservedCalls:0,balanceInitialized:finite(remainingUnits),status:'active',checkedAt:0,checkedAvailable:false};await save();return {updated:true,provider,remainingUnits};
   }
+  async function refreshOwnerAllowances() {
+    // Balance GETs only. No generation, automatic purchase or new scheduler.
+    for(const provider of Object.keys(PUBLIC_MODELS))await ownerAvailable(provider,1);
+    await save();
+    return {checked:true,providers:Object.keys(PUBLIC_MODELS).map(provider=>({provider,status:ledger.owner[provider].status,checkedAt:ledger.owner[provider].checkedAt,remainingUnits:provider==='elevenlabs'?ledger.owner[provider].remainingUnits:null}))};
+  }
   async function migrateInlineFixedAudio() {
     if(typeof audioStorage?.put!=='function')throw error('audio_storage_unavailable');
     await pruneAudio();const candidates=[];let bytes=0;
@@ -283,5 +308,5 @@ export function createPublicGateway({config,storagePath,masterKey,state={},persi
     for(const {id,entry,raw} of candidates){await audioStorage.put(id,raw);ledger.audioCache[id]={cacheClass:'fixed',external:true,createdAt:entry.createdAt,lastUsedAt:entry.lastUsedAt||entry.createdAt,dataBytes:entry.dataBytes};await save();}
     return {migrated:candidates.length,bytes,remainingInline:Object.values(ledger.audioCache).filter(e=>e.cacheClass==='fixed'&&!e.external).length,calls:ledger.voiceWarmup.calls,characters:ledger.voiceWarmup.characters};
   }
-  return {handle,pool,app,save,state:ledger,updateOwnerBalance,prepareReviewedVoiceBatch,migrateInlineFixedAudio,close(){pool.close();}};
+  return {handle,pool,app,save,state:ledger,updateOwnerBalance,refreshOwnerAllowances,prepareReviewedVoiceBatch,migrateInlineFixedAudio,close(){pool.close();}};
 }

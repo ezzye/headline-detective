@@ -33,6 +33,7 @@ export function createLambdaHandler({loadConfig,loadSnapshot,saveSnapshot,audioS
       }});
       const isHttp=Boolean(event?.requestContext || event?.rawPath || event?.httpMethod || event?.headers);
       if(!isHttp&&event?.action==='update-owner-balance')return await gateway.updateOwnerBalance(event.report || {}); // IAM Invoke only.
+      if(!isHttp&&event?.action==='refresh-owner-allowances')return await gateway.refreshOwnerAllowances(); // IAM Invoke only; free balance GETs.
       if(!isHttp&&event?.action==='prepare-reviewed-voice')return await gateway.prepareReviewedVoiceBatch(event.request || {}); // IAM Invoke only; fixed reviewed scripts only.
       if(!isHttp&&event?.action==='migrate-audio-cache')return await gateway.migrateInlineFixedAudio(); // IAM Invoke only; no provider calls.
       if(!isHttp)return fail();

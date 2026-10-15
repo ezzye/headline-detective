@@ -98,3 +98,12 @@ test('reserved speech after a crash remains blocked across cold restart without 
  assert.equal((await m.handler(request)).statusCode,503);m.fail=false;
  const repeat={...request,headers:{...request.headers,'x-request-id':'different-retry-id'}};assert.equal((await m.handler(repeat)).statusCode,409);assert.equal(paid,1);
 });
+
+test('IAM balance refresh persists observations across cold invocations and cannot be invoked by HTTP action spoofing',async()=> {
+ const c=config();c.env.ELEVENLABS_API_KEY='owner-voice';let gets=0;
+ const m=memory(c,async(_url,options)=>{assert.equal(options.method,'GET');gets++;return {ok:true,json:async()=>({character_limit:1000,character_count:25})};});
+ const refreshed=await m.handler({action:'refresh-owner-allowances'});assert.equal(refreshed.checked,true);assert.equal(gets,1);assert.equal(refreshed.providers.find(x=>x.provider==='elevenlabs').remainingUnits,975);assert.equal(m.saves.at(-1).state.owner.elevenlabs.allowanceObservation.limitHighWater,1000);
+ await m.handler({action:'refresh-owner-allowances'});assert.equal(gets,1,'no repeated free check within the cooldown');
+ const spoof=event(c,'/api/donations/options',undefined,'GET');spoof.action='refresh-owner-allowances';await m.handler(spoof);assert.equal(gets,1);
+ const health=await m.handler(event(c,'/api/health',undefined,'GET'));assert.equal(health.statusCode,200);assert(!health.body.includes('975'));assert(!health.body.includes('owner-voice'));
+});
