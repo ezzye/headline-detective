@@ -10,14 +10,20 @@ const manifest=JSON.parse(files['assets/media-credits.json'].content);const case
 const hostRoot=path.join(ROOT,'assets/host-audio');
 const hostManifest=JSON.parse(await readFile(path.join(hostRoot,'manifest.json'),'utf8'));
 if(hostManifest.version!=='cfj-host-v1'||!Array.isArray(hostManifest.clips))throw Error('Invalid host audio manifest');
-files['assets/host-audio/manifest.json']={content:JSON.stringify(hostManifest),type:'application/json'};
-for(const clip of hostManifest.clips){
- if(!/^[a-f0-9]{64}$/.test(clip.digest)||clip.src!==`/assets/host-audio/${clip.digest}.mp3`||!Number.isInteger(clip.bytes)||clip.bytes<1||!/^[a-f0-9]{64}$/.test(clip.audioSha256))throw Error('Invalid host audio clip metadata');
- const bytes=await readFile(path.join(hostRoot,`${clip.digest}.mp3`));
- if(bytes.length!==clip.bytes||createHash('sha256').update(bytes).digest('hex')!==clip.audioSha256)throw Error('Host audio clip integrity mismatch: '+clip.digest);
- const name=`assets/host-audio/${clip.digest}.mp3`;
- files[name]={type:'audio/mpeg',encoding:'base64',content:bytes.toString('base64'),etag:'"'+clip.audioSha256+'"'};
+const comparisonManifest=JSON.parse(await readFile(path.join(hostRoot,'comparison-manifest.json'),'utf8'));
+if(comparisonManifest.version!=='cfj-comparison-host-v1'||!Array.isArray(comparisonManifest.clips)||comparisonManifest.clips.length!==16)throw Error('Invalid comparison host audio manifest');
+async function embedAudioManifest(name, audioManifest){
+ files[`assets/host-audio/${name}`]={content:JSON.stringify(audioManifest),type:'application/json'};
+ for(const clip of audioManifest.clips){
+  if(!/^[a-f0-9]{64}$/.test(clip.digest)||clip.src!==`/assets/host-audio/${clip.digest}.mp3`||!Number.isInteger(clip.bytes)||clip.bytes<1||!/^[a-f0-9]{64}$/.test(clip.audioSha256))throw Error('Invalid host audio clip metadata');
+  const bytes=await readFile(path.join(hostRoot,`${clip.digest}.mp3`));
+  if(bytes.length!==clip.bytes||createHash('sha256').update(bytes).digest('hex')!==clip.audioSha256)throw Error('Host audio clip integrity mismatch: '+clip.digest);
+  const file=`assets/host-audio/${clip.digest}.mp3`;
+  files[file]={type:'audio/mpeg',encoding:'base64',content:bytes.toString('base64'),etag:'"'+clip.audioSha256+'"'};
+ }
 }
+await embedAudioManifest('manifest.json',hostManifest);
+await embedAudioManifest('comparison-manifest.json',comparisonManifest);
 const online=onlinePage(files['index.html'].content,manifest);
 for(const file of Object.values(files))if(!file.etag)file.etag='"'+createHash('sha256').update(file.content).digest('hex')+'"';
 const setup=`const embedded=JSON.parse(FILES['index.html'].content.match(/<script id="campaign-data" type="application\\/json">([\\s\\S]*?)<\\/script>/)[1]).flatMap(c=>c.images||[]);for(const [name,page] of Object.entries(${JSON.stringify(mapping)})){const im=embedded.find(x=>x.filePage===page);FILES[name]={type:im.url.split(';')[0].slice(5),encoding:'base64',content:im.url.slice(im.url.indexOf(',')+1),etag:JSON.parse(FILES['assets/media-credits.json'].content).images.find(x=>x.file===name).sha256}};FILES['offline.html']=FILES['index.html'];FILES['index.html']={type:'text/html; charset=utf-8',content:${JSON.stringify(online)},etag:${JSON.stringify('"'+createHash('sha256').update(online).digest('hex')+'"')}};\n`;

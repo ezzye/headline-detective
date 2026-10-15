@@ -1,0 +1,164 @@
+{
+  "version": "cfj-comparison-host-v1",
+  "profile": {
+    "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
+    "model": "eleven_v3",
+    "format": "mp3_44100_64",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "use_speaker_boost": true
+    },
+    "direction": {
+      "intro": "[curious]",
+      "story": "[thoughtful]",
+      "limits": "[thoughtful]"
+    }
+  },
+  "clips": [
+    {
+      "id": "arday-2026-campaign",
+      "kind": "intro",
+      "text": "You’re investigating Jason Arday: 22 days of coverage. Ask what new developments justified sustained scrutiny, and how attention was shared between the individual and institutions. Now step into a separate comparison story. Its evidence sits outside your main timeline.",
+      "digest": "28b496529794655b5409855cea7301f2962770906530ae2e6d75af8a57f3d537",
+      "src": "/assets/host-audio/28b496529794655b5409855cea7301f2962770906530ae2e6d75af8a57f3d537.mp3",
+      "audioSha256": "80732ea02300e7cc0d86f2766207618e341f9dc7ca06eb786309c5889eef7c8d",
+      "bytes": 167017
+    },
+    {
+      "id": "caroline-flack-recovered-campaign",
+      "kind": "intro",
+      "text": "You’re investigating Caroline Flack: recovered dated headline sample. Ask how repeated personal exposure differed from reporting new public-interest developments. Now step into a separate comparison story. Its evidence sits outside your main timeline.",
+      "digest": "81a3b3bb3a62962f3f8e627d7731711f5bdcb00e65e9b899b48e67b411795599",
+      "src": "/assets/host-audio/81a3b3bb3a62962f3f8e627d7731711f5bdcb00e65e9b899b48e67b411795599.mp3",
+      "audioSha256": "14a3ea939e0956901f8409d804c653595c7ebc102233a31e27b0d6f88f1061a6",
+      "bytes": 151553
+    },
+    {
+      "id": "sterling-campaign",
+      "kind": "intro",
+      "text": "You’re investigating Raheem Sterling: tattoo scrutiny and the 2018 challenge about racialised football coverage. Ask how framing, wealth and personal choices became repeated news hooks, and what a fair comparison would require. Now step into a separate comparison story. Its evidence sits outside your main timeline.",
+      "digest": "69d6658dbe2dc617f9dc45523cec017a0c9f4e029e4c01cd35bc91d40b77eb39",
+      "src": "/assets/host-audio/69d6658dbe2dc617f9dc45523cec017a0c9f4e029e4c01cd35bc91d40b77eb39.mp3",
+      "audioSha256": "42043b9e1b8d8b0481c486361938d6f75d86c3098a63c470a85b96b9449efebe",
+      "bytes": 190632
+    },
+    {
+      "id": "markle-letter-campaign",
+      "kind": "intro",
+      "text": "You’re investigating Meghan Markle: private-letter publication and the 2019 media wave. Ask when public-interest scrutiny intrudes into private life, and what each new story added. Now step into a separate comparison story. Its evidence sits outside your main timeline.",
+      "digest": "3f7035188463491648e42aab5a621c1e98b28116d07a279cb3811a3a55a93276",
+      "src": "/assets/host-audio/3f7035188463491648e42aab5a621c1e98b28116d07a279cb3811a3a55a93276.mp3",
+      "audioSha256": "8fdca3700b42b4e0f6609334552a3e9e33b54c4c7a2c3daba97168a2343ad685",
+      "bytes": 165136
+    },
+    {
+      "id": "bulley-campaign",
+      "kind": "intro",
+      "text": "You’re investigating Nicola Bulley: missing-person reporting, speculation and disclosure. Ask how an urgent search developed into repeated speculation and personal disclosure. Now step into a separate comparison story. Its evidence sits outside your main timeline.",
+      "digest": "dbd75dae7ce4575d08918562cbe1ae94546f1020bb784f31b56acb0f083549d2",
+      "src": "/assets/host-audio/dbd75dae7ce4575d08918562cbe1ae94546f1020bb784f31b56acb0f083549d2.mp3",
+      "audioSha256": "9bc5012cc269ce8d8faede33cf869694ff67bb4ba7d4bb7d9aff7bb54c5eacb2",
+      "bytes": 157404
+    },
+    {
+      "id": "jefferies-campaign",
+      "kind": "intro",
+      "text": "You’re investigating Christopher Jefferies: wrongful suspicion and prejudicial press coverage. Ask what editors actually knew when suspicion turned into repeated judgments about a person’s character. Now step into a separate comparison story. Its evidence sits outside your main timeline.",
+      "digest": "ae82fb04951fa558eab93ace9aec2e96f76469dca819a2816288872e82e185c0",
+      "src": "/assets/host-audio/ae82fb04951fa558eab93ace9aec2e96f76469dca819a2816288872e82e185c0.mp3",
+      "audioSha256": "56869a355b7b7237cb9895a6d7a52bb0ea6443929d3be83e68719cd51d8c0da7",
+      "bytes": 163674
+    },
+    {
+      "id": "greenwood-campaign",
+      "kind": "intro",
+      "text": "You’re investigating Mason Greenwood: criminal proceedings discontinued, United’s inquiry and the move to Getafe. Keep discontinued criminal proceedings separate from the club’s employment decision. Ask what later developments justified renewed attention. Now step into a separate comparison story. Its evidence sits outside your main timeline.",
+      "digest": "f02cdd5a48fb5ec40ed19bdfbb52de330346443712b93711dd849500f13e8788",
+      "src": "/assets/host-audio/f02cdd5a48fb5ec40ed19bdfbb52de330346443712b93711dd849500f13e8788.mp3",
+      "audioSha256": "616d95c88fd013c8a3d491bff0c8f214bddcdb688d74dc26b5a744a23a9f2f75",
+      "bytes": 197110
+    },
+    {
+      "id": "greenwood-pre2022-campaign",
+      "kind": "intro",
+      "text": "You’re investigating Mason Greenwood before 2022: the shared Iceland breach, follow-ups and responses. Compare the shared conduct with Foden, then ask whether later headlines treated the two players differently. Now step into a separate comparison story. Its evidence sits outside your main timeline.",
+      "digest": "d3452cdc33e20505791717551990ac6dc5b427f416e2a9fd0b06a5a8e53a6fce",
+      "src": "/assets/host-audio/d3452cdc33e20505791717551990ac6dc5b427f416e2a9fd0b06a5a8e53a6fce.mp3",
+      "audioSha256": "dfa70fd21ff5e03ffa2fa6858f1c330265001d08213ff7486afe4847abd316f5",
+      "bytes": 177884
+    },
+    {
+      "id": "diallo-documents-campaign",
+      "kind": "intro",
+      "text": "You’re investigating Amad Diallo: a sports-sanction notice and its February 2021 coverage. Keep the sporting sanction distinct from unproven wider wrongdoing. Ask how framing amplified the story. Now step into a separate comparison story. Its evidence sits outside your main timeline.",
+      "digest": "07ce82be7490a095263704904166b2e0bef599bba297bf21a8599602745895c6",
+      "src": "/assets/host-audio/07ce82be7490a095263704904166b2e0bef599bba297bf21a8599602745895c6.mp3",
+      "audioSha256": "edc97c5523f6a6957f75c058e45df71f28ce3e589e52f37f7cfa629e7265ee0a",
+      "bytes": 173287
+    },
+    {
+      "id": "comparison-andrew",
+      "kind": "story",
+      "text": "Prince Andrew: civil settlement and public scrutiny. The settlement generated multiple dated reports and next-day newspaper-front-page scrutiny. This establishes that reporting occurred; it does not establish its complete volume or proportionality. What does this example show about whether scrutiny can occur, and what remains unknown about its overall volume?",
+      "digest": "ab0074582f05e6aa26d07cb67400612b23f41fbd13dd6446afd8132c8d74e99e",
+      "src": "/assets/host-audio/ab0074582f05e6aa26d07cb67400612b23f41fbd13dd6446afd8132c8d74e99e.mp3",
+      "audioSha256": "03f18f5b8e9263d67d4d40f8ffac081ac2de092fdb478531415dff34607894ef",
+      "bytes": 208604
+    },
+    {
+      "id": "comparison-archer",
+      "kind": "story",
+      "text": "Jeffrey Archer: conviction and public scrutiny. The conviction generated same-day reports, critical profiles and follow-up. The record contradicts a claim of no reporting, while leaving the overall volume and proportionality unmeasured. What does this example show about whether scrutiny can occur, and what remains unknown about its overall volume?",
+      "digest": "16da54993730b56cc4aad23a096c7135d661b42ef85f1a153178de137376fea7",
+      "src": "/assets/host-audio/16da54993730b56cc4aad23a096c7135d661b42ef85f1a153178de137376fea7.mp3",
+      "audioSha256": "06824ae2b5426ff8465ecbff7943fd521b26f3418fb823a5846c4a608e3755fb",
+      "bytes": 199618
+    },
+    {
+      "id": "comparison-westwood",
+      "kind": "story",
+      "text": "Tim Westwood: concerns, institutional response and later reporting. The 2025 review records informal handling of workplace concerns, weak records and missed opportunities. It also found very little evidence that public sexual-misconduct concerns had been reported to the BBC. This supports a specific institutional-response comparison, not a claim that all allegations were known or that no journalism occurred. What does this record show about institutional handling, and what does it leave unknown about public reporting?",
+      "digest": "d5a5111e56422eaae5bf3603f374d2b75d461d6ddfdef9c30c23ccab1877415a",
+      "src": "/assets/host-audio/d5a5111e56422eaae5bf3603f374d2b75d461d6ddfdef9c30c23ccab1877415a.mp3",
+      "audioSha256": "cecbf199ce94f793185cd4679a4035219f0a01d322ef5402b87d5de66a27f82b",
+      "bytes": 305780
+    },
+    {
+      "id": "comparison-oreilly",
+      "kind": "story",
+      "text": "William O’Reilly: an education-panel comparison with missing public reasons. Varsity reported an upheld plagiarism complaint and quoted a University response that the panel process had concluded. The named panel reasons were not recovered. Two later news pieces and one commentary show reporting occurred; they cannot establish that the case received unusually little coverage. What can the reports establish, and what further evidence would be needed to compare attention fairly?",
+      "digest": "36233701ccc9b6074870a87485adf9731b9cb2ef3f58969a53ea645c4613e521",
+      "src": "/assets/host-audio/36233701ccc9b6074870a87485adf9731b9cb2ef3f58969a53ea645c4613e521.mp3",
+      "audioSha256": "74da9f87857b1f727acdc96965b38272b7b84e61a1142428d1fbf684f5858d62",
+      "bytes": 283419
+    },
+    {
+      "id": "comparison-cyril-smith",
+      "kind": "story",
+      "text": "Cyril Smith: documented non-pickup by major national newspapers. The Independent Inquiry into Child Sexual Abuse recorded local articles in May and June 1979, followed by no major-national-newspaper pickup of those allegations. Private Eye and the New Statesman were exceptions. It contacted national papers’ archives without resolving why the story was not taken up. This is documented non-pickup, not an inference from empty searches. What does the documented gap establish, and what evidence would be needed to explain why it occurred?",
+      "digest": "30e103f13134abf1904b614aba36ece0f3be927a10fab43754aa867659930928",
+      "src": "/assets/host-audio/30e103f13134abf1904b614aba36ece0f3be927a10fab43754aa867659930928.mp3",
+      "audioSha256": "476c4f794dfd24c25525cf0b2c137afe75418df893e70699ef7a58b281c12528",
+      "bytes": 344232
+    },
+    {
+      "id": "comparison-farage",
+      "kind": "story",
+      "text": "Nigel Farage and Reform UK: political-finance scrutiny. Political finance has a strong public-interest claim: these reports concern a political leader’s large donor relationship, election funding and alleged concealment. The April personal-gift disclosure and September undercover investigation are separate episodes. Parliamentary and police inquiries are not findings of guilt. The recovered sample is not a measure of total attention or proof that another case received disproportionate coverage. What can the reports establish, and what further evidence would be needed to compare attention fairly?",
+      "digest": "38d601773da1672dacfbceff7d69f73418d7df13281441bc9b518aeab1147eef",
+      "src": "/assets/host-audio/38d601773da1672dacfbceff7d69f73418d7df13281441bc9b518aeab1147eef.mp3",
+      "audioSha256": "ea296690e0b49ba692d8fb3b484bfc9d736c7093a19c48edc4db4ae221b3f291",
+      "bytes": 353845
+    },
+    {
+      "id": "comparison-limits",
+      "kind": "limits",
+      "text": "Use the selected comparison period and sources on the page to check the detail. These records stay outside your main timeline totals. A selected sample cannot measure all coverage or make different cases equivalent. Bring the question back to your case: what justified the attention, and what did repetition add?",
+      "digest": "d15c240a7c6738398693d8da3aa115992ed2dd13d99618f490f8dad786c90996",
+      "src": "/assets/host-audio/d15c240a7c6738398693d8da3aa115992ed2dd13d99618f490f8dad786c90996.mp3",
+      "audioSha256": "e74d41e26a1c58d9bc6d28cd8dd65ecbecd1c172877c82922b93f72861d33b44",
+      "bytes": 182273
+    }
+  ]
+}

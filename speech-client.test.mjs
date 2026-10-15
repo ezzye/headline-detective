@@ -53,8 +53,8 @@ test('online page omits all embedded raster bytes while preserving full records 
   // Evidence grew independently of the offline image payload. Bound the actual
   // visitor download rather than a percentage of unrelated embedded pictures.
   // The challenge, host controls and comparison factoid add no dependencies.
-  // Keep the actual visitor page bounded; the context styling adds under5KiB.
-  assert(Buffer.byteLength(online)<1530*1024);
+  // Keep the actual visitor page bounded; the comparison styling and voice controls remain a small bounded addition.
+  assert(Buffer.byteLength(online)<1550*1024);
   assert(!/data:image\/(?:jpeg|png|webp);base64,[A-Za-z0-9+/]{40}/.test(online));
   assert.equal(web.flatMap(c=>c.images).length,17);
   for(let c=0;c<web.length;c++)for(let i=0;i<web[c].images.length;i++){
