@@ -1,0 +1,919 @@
+{
+  "version": "cfj-host-v1",
+  "profile": {
+    "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
+    "model": "eleven_v3",
+    "format": "mp3_44100_64",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "use_speaker_boost": true
+    },
+    "direction": {
+      "question": "[curious]",
+      "feedback": "[thoughtful]"
+    }
+  },
+  "clips": [
+    {
+      "caseId": "arday-2026-campaign",
+      "questionId": "unit",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 1 of 5. What do the bars count? A. Every mention, including broadcasts B. Distinct substantive written pieces C. Proven attacks on the subject",
+      "digest": "2c8081eb2a6fc03e231bbaf138ae8ac6ae671f846bd760a41ce6d38ba684bbed",
+      "src": "/assets/host-audio/2c8081eb2a6fc03e231bbaf138ae8ac6ae671f846bd760a41ce6d38ba684bbed.mp3",
+      "audioSha256": "d83c81e8869068f18376441ed92d909e03faa2e91d62c0b0a9d6a21731828745",
+      "bytes": 129819
+    },
+    {
+      "caseId": "arday-2026-campaign",
+      "questionId": "unit",
+      "part": "feedback",
+      "text": "The correct answer is B. Distinct substantive written pieces. One unit is a substantive written item in the inventory, including news, comment or a letters page. It is not a count of proven attacks.",
+      "digest": "591bb3c583e02ef3100c104ae75f90ead5c03ac5a78513e4912cfd4f73e35606",
+      "src": "/assets/host-audio/591bb3c583e02ef3100c104ae75f90ead5c03ac5a78513e4912cfd4f73e35606.mp3",
+      "audioSha256": "1fa0844ebb0ef0f0d93b0d71d9b8876bc8ea350f685539c8d79ad6c0d4deeab3",
+      "bytes": 129192
+    },
+    {
+      "caseId": "arday-2026-campaign",
+      "questionId": "scope",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 2 of 5. Do these four desks represent all UK coverage? A. Yes, all UK outlets and formats B. No, four outlets selected from a bounded inventory C. Yes, all 15 inventoried outlets",
+      "digest": "d81cb2aa3401140ebc828bdf4dca1927f72672b083ca3b68b0c9d574ba3ac30e",
+      "src": "/assets/host-audio/d81cb2aa3401140ebc828bdf4dca1927f72672b083ca3b68b0c9d574ba3ac30e.mp3",
+      "audioSha256": "dd5dc3b965495309f58ecaa012363fa8f4567f064627aaf34bc70c4b6fd6ecc5",
+      "bytes": 169525
+    },
+    {
+      "caseId": "arday-2026-campaign",
+      "questionId": "scope",
+      "part": "feedback",
+      "text": "The correct answer is B. No, four outlets selected from a bounded inventory. These desks account for 90 listed pieces. The full fixed inventory lists 229 across 15 outlets; it has declared indexing gaps.",
+      "digest": "81c9ec4cdad5f4b24481e43686a83f3a6fc8dfab86b90aecd5b040889b615885",
+      "src": "/assets/host-audio/81c9ec4cdad5f4b24481e43686a83f3a6fc8dfab86b90aecd5b040889b615885.mp3",
+      "audioSha256": "97272a261efa3aa4cb8440e3a1322dc68789819e295234ea751299d84d903035",
+      "bytes": 142567
+    },
+    {
+      "caseId": "arday-2026-campaign",
+      "questionId": "event",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 3 of 5. Does resignation automatically end the public interest? A. Yes, every later item is excessive B. No, any later volume is justified C. No; later developments can justify further scrutiny",
+      "digest": "18e36e14ca7959f74a15554a0e152d8aa2885c443efa0a417d0113a52abb09c8",
+      "src": "/assets/host-audio/18e36e14ca7959f74a15554a0e152d8aa2885c443efa0a417d0113a52abb09c8.mp3",
+      "audioSha256": "0357caadf003a432cbff5f11b5c882b6c5fe32395c0643801572426b25679748",
+      "bytes": 169525
+    },
+    {
+      "caseId": "arday-2026-campaign",
+      "questionId": "event",
+      "part": "feedback",
+      "text": "The correct answer is C. No; later developments can justify further scrutiny. The subsequent inquiry is a documented development. Whether it warrants the actual amount of later coverage remains your campaign judgment.",
+      "digest": "e429a24b7fb697200fe2d9b339e73fa58e99c8b2fcb741934a8908292989106a",
+      "src": "/assets/host-audio/e429a24b7fb697200fe2d9b339e73fa58e99c8b2fcb741934a8908292989106a.mp3",
+      "audioSha256": "27482fb27cb7e3676f107deb9fd700f13d550e80f2a42f5ef7736e5234f08ed3",
+      "bytes": 129192
+    },
+    {
+      "caseId": "arday-2026-campaign",
+      "questionId": "motive",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 4 of 5. What can a high daily peak establish by itself? A. Concentrated publication volume B. Deliberate bullying or racist intent C. That coverage caused harm",
+      "digest": "de456f436371b6af69a08f88a304784fae355a9681472a981b52ffbf164f8a8b",
+      "src": "/assets/host-audio/de456f436371b6af69a08f88a304784fae355a9681472a981b52ffbf164f8a8b.mp3",
+      "audioSha256": "3f36bce857af0c07237f3e47428b106e01cd9e20f4524d4ffb00a57148ab734c",
+      "bytes": 151553
+    },
+    {
+      "caseId": "arday-2026-campaign",
+      "questionId": "motive",
+      "part": "feedback",
+      "text": "The correct answer is A. Concentrated publication volume. Daily totals show concentration. Intent, discrimination and consequences need additional evidence.",
+      "digest": "112df9826ddfa49624383224713f9b631df059dc8fd1a82f2013ac29229111c5",
+      "src": "/assets/host-audio/112df9826ddfa49624383224713f9b631df059dc8fd1a82f2013ac29229111c5.mp3",
+      "audioSha256": "8f1f85aa34ba33e6dd58d71d34d4f63f22a2af469fbf32901fc5d787d0a947ce",
+      "bytes": 97845
+    },
+    {
+      "caseId": "arday-2026-campaign",
+      "questionId": "zero",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 5 of 5. What does a zero in this archive mean? A. The outlet definitely published nothing B. No qualifying item is listed for that date C. The outlet was unquestionably fair",
+      "digest": "40efcf1fd2249a97596c59d13b760e640ea7a2902ba823d39997a18830c29441",
+      "src": "/assets/host-audio/40efcf1fd2249a97596c59d13b760e640ea7a2902ba823d39997a18830c29441.mp3",
+      "audioSha256": "e78c1489a92c150eeb74602c3479cc5a09391ce05f2d634ae948fc936e1cbe9e",
+      "bytes": 152807
+    },
+    {
+      "caseId": "arday-2026-campaign",
+      "questionId": "zero",
+      "part": "feedback",
+      "text": "The correct answer is B. No qualifying item is listed for that date. A zero describes the retrieved inventory. Indexing gaps and excluded formats prevent an absolute claim about all publication.",
+      "digest": "83fe520895e70c9996ea6c1d2d75f574ec85140c366013ad9fd475ec9280629f",
+      "src": "/assets/host-audio/83fe520895e70c9996ea6c1d2d75f574ec85140c366013ad9fd475ec9280629f.mp3",
+      "audioSha256": "5c09b21b28844b72dedf65c9db0d2200fcf6c52f4ff3a7f14388e5870d7f730f",
+      "bytes": 122714
+    },
+    {
+      "caseId": "caroline-flack-recovered-campaign",
+      "questionId": "unit",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 1 of 5. What do the chart bars count? A. All UK coverage about Flack B. Dated recovered records from four selected outlets C. Proven hostile articles",
+      "digest": "a952239b8e4313f12afd3249f830b0e88968171bb91ab7943082752926676d40",
+      "src": "/assets/host-audio/a952239b8e4313f12afd3249f830b0e88968171bb91ab7943082752926676d40.mp3",
+      "audioSha256": "d518905747b0da8ff38557875e8e0007effec9dbbae5a2c24678a960ca2ea47c",
+      "bytes": 142567
+    },
+    {
+      "caseId": "caroline-flack-recovered-campaign",
+      "questionId": "unit",
+      "part": "feedback",
+      "text": "The correct answer is B. Dated recovered records from four selected outlets. The chart counts dated recovered sample rows from four outlets, not all coverage or attacks.",
+      "digest": "0f444e314ff81ccd7c3ebc706022bd66f8c8239c83b8d01054a1626bee427e21",
+      "src": "/assets/host-audio/0f444e314ff81ccd7c3ebc706022bd66f8c8239c83b8d01054a1626bee427e21.mp3",
+      "audioSha256": "41ccb8f41a048d741fd81c71987814e7fd31f06b8562fb8bf197f909f4bc8882",
+      "bytes": 104323
+    },
+    {
+      "caseId": "caroline-flack-recovered-campaign",
+      "questionId": "scope",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 2 of 5. What is the Guardian’s 99 Sun figure? A. 99 dated Sun headlines in this sample B. A separate six-month print-story aggregate without daily rows C. 99 stories classified as negative",
+      "digest": "f1484f2024f2599fa9725867c62b804d97686bb9b2576c8a7b28c90d17e5130f",
+      "src": "/assets/host-audio/f1484f2024f2599fa9725867c62b804d97686bb9b2576c8a7b28c90d17e5130f.mp3",
+      "audioSha256": "3f4ead28872620b83cd2f9fb83696bef00b2b66c8ff1ae75bf16af93a1d077be",
+      "bytes": 179765
+    },
+    {
+      "caseId": "caroline-flack-recovered-campaign",
+      "questionId": "scope",
+      "part": "feedback",
+      "text": "The correct answer is B. A separate six-month print-story aggregate without daily rows. The Guardian reports 99 print stories mentioning Flack in headline or body; it is not itemized here and is not a daily series.",
+      "digest": "4ce92963fdc3f2ab7af392719f7f0d38185efdefdfac26fc001dbe37e95a243f",
+      "src": "/assets/host-audio/4ce92963fdc3f2ab7af392719f7f0d38185efdefdfac26fc001dbe37e95a243f.mp3",
+      "audioSha256": "d4ed51b4b654c8bfeeb258c59a4b8e0f2b8b0b6121196e671a2aaa39b7399c5f",
+      "bytes": 143820
+    },
+    {
+      "caseId": "caroline-flack-recovered-campaign",
+      "questionId": "status",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 3 of 5. What was the court status by the end of this window? A. Convicted of assault B. She had pleaded not guilty; no trial verdict in the window C. The allegation was disproved",
+      "digest": "975b2aaacd2baea05a45a3b3dc0f9299c442457fe0e3364da5c82982673f1a8e",
+      "src": "/assets/host-audio/975b2aaacd2baea05a45a3b3dc0f9299c442457fe0e3364da5c82982673f1a8e.mp3",
+      "audioSha256": "1316543deeec52a15c5386826f37ab2de0d42e5cc8d537cfb580e0ea613124e9",
+      "bytes": 152180
+    },
+    {
+      "caseId": "caroline-flack-recovered-campaign",
+      "questionId": "status",
+      "part": "feedback",
+      "text": "The correct answer is B. She had pleaded not guilty; no trial verdict in the window. The records establish a not-guilty plea and scheduled trial, not a verdict.",
+      "digest": "3eea76808fa5b7dfd53d0138433c98f129e66043ee301f89e9bd00dbb73c7970",
+      "src": "/assets/host-audio/3eea76808fa5b7dfd53d0138433c98f129e66043ee301f89e9bd00dbb73c7970.mp3",
+      "audioSha256": "157ed0700910b6ee1a666faff7f3abef6ea057b373091d76e945ff357d853bc3",
+      "bytes": 93456
+    },
+    {
+      "caseId": "caroline-flack-recovered-campaign",
+      "questionId": "provenance",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 4 of 5. What does the recovered Valentine-card snapshot establish? A. The original Sun page’s wording in a dated capture; publication and capture are separate B. Only another outlet’s account, with no original page recovered C. The wording and intent of every Sun story",
+      "digest": "55bf8087ae0daf212492f5602d60ceaa708c0895451a596232392721519bf297",
+      "src": "/assets/host-audio/55bf8087ae0daf212492f5602d60ceaa708c0895451a596232392721519bf297.mp3",
+      "audioSha256": "7ff5c732c783e416fd3afff8786454bd96ff3090acddb3891f51ad56ffa4c86f",
+      "bytes": 218844
+    },
+    {
+      "caseId": "caroline-flack-recovered-campaign",
+      "questionId": "provenance",
+      "part": "feedback",
+      "text": "The correct answer is A. The original Sun page’s wording in a dated capture; publication and capture are separate. The original Sun article is visible in a 14 February 2020 Wayback snapshot. Its displayed publication and update times differ from the capture time; one recovered article does not establish every item or editorial intent.",
+      "digest": "6a2504f2005f4d24953d8fe687ec5793c1231909fe1a54ad718888a8703699e9",
+      "src": "/assets/host-audio/6a2504f2005f4d24953d8fe687ec5793c1231909fe1a54ad718888a8703699e9.mp3",
+      "audioSha256": "01b6ab8dc5c9e0ed7cd77aef8e1110864cb5afb536e50ffcbb4c8befae3a28be",
+      "bytes": 211112
+    },
+    {
+      "caseId": "caroline-flack-recovered-campaign",
+      "questionId": "cause",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 5 of 5. Can this sample establish that coverage caused Flack’s death? A. Yes, a count proves causation B. No; the sample supports questions about coverage, not a causal claim C. Yes, if any headline mocked her",
+      "digest": "acba7fb649b29e0b30c7a30d1c914571e58ceff173a3b107de8ea7b8224ba5a4",
+      "src": "/assets/host-audio/acba7fb649b29e0b30c7a30d1c914571e58ceff173a3b107de8ea7b8224ba5a4.mp3",
+      "audioSha256": "3786d56b3eee4ce9a1fe0daaaa295481781ff065a2bdc2e5212bc6a13c4bcc00",
+      "bytes": 180392
+    },
+    {
+      "caseId": "caroline-flack-recovered-campaign",
+      "questionId": "cause",
+      "part": "feedback",
+      "text": "The correct answer is B. No; the sample supports questions about coverage, not a causal claim. This bounded headline sample does not establish motive, subjective experience or causation.",
+      "digest": "526723379ea07b6cbe523aa121d1c46079f2539bc8ab1ed13fc24dae849a13a6",
+      "src": "/assets/host-audio/526723379ea07b6cbe523aa121d1c46079f2539bc8ab1ed13fc24dae849a13a6.mp3",
+      "audioSha256": "36218882b3e8d659e5181dc6587574edfe92f508aa413d4520da79357988ea9a",
+      "bytes": 117071
+    },
+    {
+      "caseId": "sterling-campaign",
+      "questionId": "unit",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 1 of 5. What does each bar count? A. Dated recovered headline records from the selected outlet sample B. Every mention across all media C. Proven harmful stories",
+      "digest": "fdad257f9bb33e6770a9f241d5ccda60a77496577db7fd8620b17b95ec8b8c75",
+      "src": "/assets/host-audio/fdad257f9bb33e6770a9f241d5ccda60a77496577db7fd8620b17b95ec8b8c75.mp3",
+      "audioSha256": "9db6d385958f0b27da2e2134c3f5a470e7d102f89fcc82f95918db14d242753f",
+      "bytes": 145910
+    },
+    {
+      "caseId": "sterling-campaign",
+      "questionId": "unit",
+      "part": "feedback",
+      "text": "The correct answer is A. Dated recovered headline records from the selected outlet sample. Bars are computed from the dated records shown in this sample, not all media or proven harmful stories.",
+      "digest": "47e34f46b95f612257f7ff0c89094a30e5290473586df832a1d012d1a1e971f8",
+      "src": "/assets/host-audio/47e34f46b95f612257f7ff0c89094a30e5290473586df832a1d012d1a1e971f8.mp3",
+      "audioSha256": "60b8ca63cc580fe9ed536dcc2a46a580719037ad4669fab98a32e348cbfc9162",
+      "bytes": 113100
+    },
+    {
+      "caseId": "sterling-campaign",
+      "questionId": "scope",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 2 of 5. Is this an exhaustive census? A. Yes, every relevant story B. No, a bounded recovered sample with selection limits C. Yes, all formats and outlets",
+      "digest": "4830a02a9c55c58f407b27693cdc0834de8ffba1de540429d2aaabcccae622b6",
+      "src": "/assets/host-audio/4830a02a9c55c58f407b27693cdc0834de8ffba1de540429d2aaabcccae622b6.mp3",
+      "audioSha256": "4984ef78c1c5057f34d219ac7b4aab5d8b4d05327da264baaca4fb9ff3fc7092",
+      "bytes": 142567
+    },
+    {
+      "caseId": "sterling-campaign",
+      "questionId": "scope",
+      "part": "feedback",
+      "text": "The correct answer is B. No, a bounded recovered sample with selection limits. The research pack describes a selected sample; missing records and outlets remain unknown.",
+      "digest": "47e45fa5f0a5f7dc2da3fd5f3745b431eb2afb18f03727e992ba846c571a870c",
+      "src": "/assets/host-audio/47e45fa5f0a5f7dc2da3fd5f3745b431eb2afb18f03727e992ba846c571a870c.mp3",
+      "audioSha256": "d434b6765a0337a9e49dc6b162d465656a1e7ba489b80b5fa9c9b6805c6f368a",
+      "bytes": 107458
+    },
+    {
+      "caseId": "sterling-campaign",
+      "questionId": "status",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 3 of 5. How should disputed claims be described? A. As proven facts in every case B. With the allegation, response and procedural status kept separate C. Ignore the response",
+      "digest": "3e0c964d3cb0852c677c451f7f87c462a7627ac10e104858015dac2220ae3204",
+      "src": "/assets/host-audio/3e0c964d3cb0852c677c451f7f87c462a7627ac10e104858015dac2220ae3204.mp3",
+      "audioSha256": "9bbe9c08b42ed1cdba05fff1e0f20190f70a79539ce3a6f8fa04e46b4d6f4fde",
+      "bytes": 163047
+    },
+    {
+      "caseId": "sterling-campaign",
+      "questionId": "status",
+      "part": "feedback",
+      "text": "The correct answer is B. With the allegation, response and procedural status kept separate. Use the status supported by the dated record; an allegation, response, inquiry and judgment are distinct.",
+      "digest": "fab4f51ae814620246ba4a4579afa93bc9040addca8846b56a8a9a451906b0b5",
+      "src": "/assets/host-audio/fab4f51ae814620246ba4a4579afa93bc9040addca8846b56a8a9a451906b0b5.mp3",
+      "audioSha256": "973f36b8baae239ec7f98ab62f4e54e10c766739ecf2b40f0aec78e6c4a0a431",
+      "bytes": 120206
+    },
+    {
+      "caseId": "sterling-campaign",
+      "questionId": "limits",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 4 of 5. What does a headline alone tell us? A. The full article and all editorial choices B. The recovered wording, not full context or effects C. Nothing at all",
+      "digest": "bd2a8b7ccae2e9d46d9da5dd0bf536cec22dcdc0e2a05e228d581fe680b0701e",
+      "src": "/assets/host-audio/bd2a8b7ccae2e9d46d9da5dd0bf536cec22dcdc0e2a05e228d581fe680b0701e.mp3",
+      "audioSha256": "e2f3ca37715247b1182d31554152fb5b13ff2d21491d615223cbb479ce88d99e",
+      "bytes": 148418
+    },
+    {
+      "caseId": "sterling-campaign",
+      "questionId": "limits",
+      "part": "feedback",
+      "text": "The correct answer is B. The recovered wording, not full context or effects. The headline is evidence of wording; the full article and consequences need separate evidence.",
+      "digest": "8abc8f8b098e5364337c071c3f2ca4640a8f228377f2795fd2cc4da4a2f0f073",
+      "src": "/assets/host-audio/8abc8f8b098e5364337c071c3f2ca4640a8f228377f2795fd2cc4da4a2f0f073.mp3",
+      "audioSha256": "a88e6185347ccc9dc644f30a1f21237e99711762c355249d4f328a339c9d1db1",
+      "bytes": 106831
+    },
+    {
+      "caseId": "sterling-campaign",
+      "questionId": "motive",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 5 of 5. Can counts or a severe headline prove motive or causation? A. Yes, by themselves B. No; they support questions, not automatic conclusions C. Yes, if coverage is repeated",
+      "digest": "47151814db75d335c26db9f9af7cb9dfe2441b9fa102979a3cbd0bac98ba2707",
+      "src": "/assets/host-audio/47151814db75d335c26db9f9af7cb9dfe2441b9fa102979a3cbd0bac98ba2707.mp3",
+      "audioSha256": "d4ce00d0f00776902c00bd40bac3d620a953495b0f8ea42cd8c1e174938d99b0",
+      "bytes": 170152
+    },
+    {
+      "caseId": "sterling-campaign",
+      "questionId": "motive",
+      "part": "feedback",
+      "text": "The correct answer is B. No; they support questions, not automatic conclusions. Frequency and wording do not independently establish motive, harm or causal effect.",
+      "digest": "944432d2ce751fefb184d8fc1660cfbe201663b3105f7c84f9d24a4eccd68efb",
+      "src": "/assets/host-audio/944432d2ce751fefb184d8fc1660cfbe201663b3105f7c84f9d24a4eccd68efb.mp3",
+      "audioSha256": "e89f723d3ca689ed34312c02899fe9cc938d8e75d0568d6ec24f30ecb2559470",
+      "bytes": 106831
+    },
+    {
+      "caseId": "markle-letter-campaign",
+      "questionId": "unit",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 1 of 5. What does each bar count? A. Dated recovered headline records from the selected outlet sample B. Every mention across all media C. Proven harmful stories",
+      "digest": "fdad257f9bb33e6770a9f241d5ccda60a77496577db7fd8620b17b95ec8b8c75",
+      "src": "/assets/host-audio/fdad257f9bb33e6770a9f241d5ccda60a77496577db7fd8620b17b95ec8b8c75.mp3",
+      "audioSha256": "9db6d385958f0b27da2e2134c3f5a470e7d102f89fcc82f95918db14d242753f",
+      "bytes": 145910
+    },
+    {
+      "caseId": "markle-letter-campaign",
+      "questionId": "unit",
+      "part": "feedback",
+      "text": "The correct answer is A. Dated recovered headline records from the selected outlet sample. Bars are computed from the dated records shown in this sample, not all media or proven harmful stories.",
+      "digest": "47e34f46b95f612257f7ff0c89094a30e5290473586df832a1d012d1a1e971f8",
+      "src": "/assets/host-audio/47e34f46b95f612257f7ff0c89094a30e5290473586df832a1d012d1a1e971f8.mp3",
+      "audioSha256": "60b8ca63cc580fe9ed536dcc2a46a580719037ad4669fab98a32e348cbfc9162",
+      "bytes": 113100
+    },
+    {
+      "caseId": "markle-letter-campaign",
+      "questionId": "scope",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 2 of 5. Is this an exhaustive census? A. Yes, every relevant story B. No, a bounded recovered sample with selection limits C. Yes, all formats and outlets",
+      "digest": "4830a02a9c55c58f407b27693cdc0834de8ffba1de540429d2aaabcccae622b6",
+      "src": "/assets/host-audio/4830a02a9c55c58f407b27693cdc0834de8ffba1de540429d2aaabcccae622b6.mp3",
+      "audioSha256": "4984ef78c1c5057f34d219ac7b4aab5d8b4d05327da264baaca4fb9ff3fc7092",
+      "bytes": 142567
+    },
+    {
+      "caseId": "markle-letter-campaign",
+      "questionId": "scope",
+      "part": "feedback",
+      "text": "The correct answer is B. No, a bounded recovered sample with selection limits. The research pack describes a selected sample; missing records and outlets remain unknown.",
+      "digest": "47e45fa5f0a5f7dc2da3fd5f3745b431eb2afb18f03727e992ba846c571a870c",
+      "src": "/assets/host-audio/47e45fa5f0a5f7dc2da3fd5f3745b431eb2afb18f03727e992ba846c571a870c.mp3",
+      "audioSha256": "d434b6765a0337a9e49dc6b162d465656a1e7ba489b80b5fa9c9b6805c6f368a",
+      "bytes": 107458
+    },
+    {
+      "caseId": "markle-letter-campaign",
+      "questionId": "status",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 3 of 5. How should disputed claims be described? A. As proven facts in every case B. With the allegation, response and procedural status kept separate C. Ignore the response",
+      "digest": "3e0c964d3cb0852c677c451f7f87c462a7627ac10e104858015dac2220ae3204",
+      "src": "/assets/host-audio/3e0c964d3cb0852c677c451f7f87c462a7627ac10e104858015dac2220ae3204.mp3",
+      "audioSha256": "9bbe9c08b42ed1cdba05fff1e0f20190f70a79539ce3a6f8fa04e46b4d6f4fde",
+      "bytes": 163047
+    },
+    {
+      "caseId": "markle-letter-campaign",
+      "questionId": "status",
+      "part": "feedback",
+      "text": "The correct answer is B. With the allegation, response and procedural status kept separate. Use the status supported by the dated record; an allegation, response, inquiry and judgment are distinct.",
+      "digest": "fab4f51ae814620246ba4a4579afa93bc9040addca8846b56a8a9a451906b0b5",
+      "src": "/assets/host-audio/fab4f51ae814620246ba4a4579afa93bc9040addca8846b56a8a9a451906b0b5.mp3",
+      "audioSha256": "973f36b8baae239ec7f98ab62f4e54e10c766739ecf2b40f0aec78e6c4a0a431",
+      "bytes": 120206
+    },
+    {
+      "caseId": "markle-letter-campaign",
+      "questionId": "limits",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 4 of 5. What does a headline alone tell us? A. The full article and all editorial choices B. The recovered wording, not full context or effects C. Nothing at all",
+      "digest": "bd2a8b7ccae2e9d46d9da5dd0bf536cec22dcdc0e2a05e228d581fe680b0701e",
+      "src": "/assets/host-audio/bd2a8b7ccae2e9d46d9da5dd0bf536cec22dcdc0e2a05e228d581fe680b0701e.mp3",
+      "audioSha256": "e2f3ca37715247b1182d31554152fb5b13ff2d21491d615223cbb479ce88d99e",
+      "bytes": 148418
+    },
+    {
+      "caseId": "markle-letter-campaign",
+      "questionId": "limits",
+      "part": "feedback",
+      "text": "The correct answer is B. The recovered wording, not full context or effects. The headline is evidence of wording; the full article and consequences need separate evidence.",
+      "digest": "8abc8f8b098e5364337c071c3f2ca4640a8f228377f2795fd2cc4da4a2f0f073",
+      "src": "/assets/host-audio/8abc8f8b098e5364337c071c3f2ca4640a8f228377f2795fd2cc4da4a2f0f073.mp3",
+      "audioSha256": "a88e6185347ccc9dc644f30a1f21237e99711762c355249d4f328a339c9d1db1",
+      "bytes": 106831
+    },
+    {
+      "caseId": "markle-letter-campaign",
+      "questionId": "motive",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 5 of 5. Can counts or a severe headline prove motive or causation? A. Yes, by themselves B. No; they support questions, not automatic conclusions C. Yes, if coverage is repeated",
+      "digest": "47151814db75d335c26db9f9af7cb9dfe2441b9fa102979a3cbd0bac98ba2707",
+      "src": "/assets/host-audio/47151814db75d335c26db9f9af7cb9dfe2441b9fa102979a3cbd0bac98ba2707.mp3",
+      "audioSha256": "d4ce00d0f00776902c00bd40bac3d620a953495b0f8ea42cd8c1e174938d99b0",
+      "bytes": 170152
+    },
+    {
+      "caseId": "markle-letter-campaign",
+      "questionId": "motive",
+      "part": "feedback",
+      "text": "The correct answer is B. No; they support questions, not automatic conclusions. Frequency and wording do not independently establish motive, harm or causal effect.",
+      "digest": "944432d2ce751fefb184d8fc1660cfbe201663b3105f7c84f9d24a4eccd68efb",
+      "src": "/assets/host-audio/944432d2ce751fefb184d8fc1660cfbe201663b3105f7c84f9d24a4eccd68efb.mp3",
+      "audioSha256": "e89f723d3ca689ed34312c02899fe9cc938d8e75d0568d6ec24f30ecb2559470",
+      "bytes": 106831
+    },
+    {
+      "caseId": "bulley-campaign",
+      "questionId": "unit",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 1 of 5. What does each bar count? A. Dated recovered headline records from the selected outlet sample B. Every mention across all media C. Proven harmful stories",
+      "digest": "fdad257f9bb33e6770a9f241d5ccda60a77496577db7fd8620b17b95ec8b8c75",
+      "src": "/assets/host-audio/fdad257f9bb33e6770a9f241d5ccda60a77496577db7fd8620b17b95ec8b8c75.mp3",
+      "audioSha256": "9db6d385958f0b27da2e2134c3f5a470e7d102f89fcc82f95918db14d242753f",
+      "bytes": 145910
+    },
+    {
+      "caseId": "bulley-campaign",
+      "questionId": "unit",
+      "part": "feedback",
+      "text": "The correct answer is A. Dated recovered headline records from the selected outlet sample. Bars are computed from the dated records shown in this sample, not all media or proven harmful stories.",
+      "digest": "47e34f46b95f612257f7ff0c89094a30e5290473586df832a1d012d1a1e971f8",
+      "src": "/assets/host-audio/47e34f46b95f612257f7ff0c89094a30e5290473586df832a1d012d1a1e971f8.mp3",
+      "audioSha256": "60b8ca63cc580fe9ed536dcc2a46a580719037ad4669fab98a32e348cbfc9162",
+      "bytes": 113100
+    },
+    {
+      "caseId": "bulley-campaign",
+      "questionId": "scope",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 2 of 5. Is this an exhaustive census? A. Yes, every relevant story B. No, a bounded recovered sample with selection limits C. Yes, all formats and outlets",
+      "digest": "4830a02a9c55c58f407b27693cdc0834de8ffba1de540429d2aaabcccae622b6",
+      "src": "/assets/host-audio/4830a02a9c55c58f407b27693cdc0834de8ffba1de540429d2aaabcccae622b6.mp3",
+      "audioSha256": "4984ef78c1c5057f34d219ac7b4aab5d8b4d05327da264baaca4fb9ff3fc7092",
+      "bytes": 142567
+    },
+    {
+      "caseId": "bulley-campaign",
+      "questionId": "scope",
+      "part": "feedback",
+      "text": "The correct answer is B. No, a bounded recovered sample with selection limits. The research pack describes a selected sample; missing records and outlets remain unknown.",
+      "digest": "47e45fa5f0a5f7dc2da3fd5f3745b431eb2afb18f03727e992ba846c571a870c",
+      "src": "/assets/host-audio/47e45fa5f0a5f7dc2da3fd5f3745b431eb2afb18f03727e992ba846c571a870c.mp3",
+      "audioSha256": "d434b6765a0337a9e49dc6b162d465656a1e7ba489b80b5fa9c9b6805c6f368a",
+      "bytes": 107458
+    },
+    {
+      "caseId": "bulley-campaign",
+      "questionId": "status",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 3 of 5. How should disputed claims be described? A. As proven facts in every case B. With the allegation, response and procedural status kept separate C. Ignore the response",
+      "digest": "3e0c964d3cb0852c677c451f7f87c462a7627ac10e104858015dac2220ae3204",
+      "src": "/assets/host-audio/3e0c964d3cb0852c677c451f7f87c462a7627ac10e104858015dac2220ae3204.mp3",
+      "audioSha256": "9bbe9c08b42ed1cdba05fff1e0f20190f70a79539ce3a6f8fa04e46b4d6f4fde",
+      "bytes": 163047
+    },
+    {
+      "caseId": "bulley-campaign",
+      "questionId": "status",
+      "part": "feedback",
+      "text": "The correct answer is B. With the allegation, response and procedural status kept separate. Use the status supported by the dated record; an allegation, response, inquiry and judgment are distinct.",
+      "digest": "fab4f51ae814620246ba4a4579afa93bc9040addca8846b56a8a9a451906b0b5",
+      "src": "/assets/host-audio/fab4f51ae814620246ba4a4579afa93bc9040addca8846b56a8a9a451906b0b5.mp3",
+      "audioSha256": "973f36b8baae239ec7f98ab62f4e54e10c766739ecf2b40f0aec78e6c4a0a431",
+      "bytes": 120206
+    },
+    {
+      "caseId": "bulley-campaign",
+      "questionId": "limits",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 4 of 5. What does a headline alone tell us? A. The full article and all editorial choices B. The recovered wording, not full context or effects C. Nothing at all",
+      "digest": "bd2a8b7ccae2e9d46d9da5dd0bf536cec22dcdc0e2a05e228d581fe680b0701e",
+      "src": "/assets/host-audio/bd2a8b7ccae2e9d46d9da5dd0bf536cec22dcdc0e2a05e228d581fe680b0701e.mp3",
+      "audioSha256": "e2f3ca37715247b1182d31554152fb5b13ff2d21491d615223cbb479ce88d99e",
+      "bytes": 148418
+    },
+    {
+      "caseId": "bulley-campaign",
+      "questionId": "limits",
+      "part": "feedback",
+      "text": "The correct answer is B. The recovered wording, not full context or effects. The headline is evidence of wording; the full article and consequences need separate evidence.",
+      "digest": "8abc8f8b098e5364337c071c3f2ca4640a8f228377f2795fd2cc4da4a2f0f073",
+      "src": "/assets/host-audio/8abc8f8b098e5364337c071c3f2ca4640a8f228377f2795fd2cc4da4a2f0f073.mp3",
+      "audioSha256": "a88e6185347ccc9dc644f30a1f21237e99711762c355249d4f328a339c9d1db1",
+      "bytes": 106831
+    },
+    {
+      "caseId": "bulley-campaign",
+      "questionId": "motive",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 5 of 5. Can counts or a severe headline prove motive or causation? A. Yes, by themselves B. No; they support questions, not automatic conclusions C. Yes, if coverage is repeated",
+      "digest": "47151814db75d335c26db9f9af7cb9dfe2441b9fa102979a3cbd0bac98ba2707",
+      "src": "/assets/host-audio/47151814db75d335c26db9f9af7cb9dfe2441b9fa102979a3cbd0bac98ba2707.mp3",
+      "audioSha256": "d4ce00d0f00776902c00bd40bac3d620a953495b0f8ea42cd8c1e174938d99b0",
+      "bytes": 170152
+    },
+    {
+      "caseId": "bulley-campaign",
+      "questionId": "motive",
+      "part": "feedback",
+      "text": "The correct answer is B. No; they support questions, not automatic conclusions. Frequency and wording do not independently establish motive, harm or causal effect.",
+      "digest": "944432d2ce751fefb184d8fc1660cfbe201663b3105f7c84f9d24a4eccd68efb",
+      "src": "/assets/host-audio/944432d2ce751fefb184d8fc1660cfbe201663b3105f7c84f9d24a4eccd68efb.mp3",
+      "audioSha256": "e89f723d3ca689ed34312c02899fe9cc938d8e75d0568d6ec24f30ecb2559470",
+      "bytes": 106831
+    },
+    {
+      "caseId": "jefferies-campaign",
+      "questionId": "unit",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 1 of 5. What does each bar count? A. Dated recovered headline records from the selected outlet sample B. Every mention across all media C. Proven harmful stories",
+      "digest": "fdad257f9bb33e6770a9f241d5ccda60a77496577db7fd8620b17b95ec8b8c75",
+      "src": "/assets/host-audio/fdad257f9bb33e6770a9f241d5ccda60a77496577db7fd8620b17b95ec8b8c75.mp3",
+      "audioSha256": "9db6d385958f0b27da2e2134c3f5a470e7d102f89fcc82f95918db14d242753f",
+      "bytes": 145910
+    },
+    {
+      "caseId": "jefferies-campaign",
+      "questionId": "unit",
+      "part": "feedback",
+      "text": "The correct answer is A. Dated recovered headline records from the selected outlet sample. Bars are computed from the dated records shown in this sample, not all media or proven harmful stories.",
+      "digest": "47e34f46b95f612257f7ff0c89094a30e5290473586df832a1d012d1a1e971f8",
+      "src": "/assets/host-audio/47e34f46b95f612257f7ff0c89094a30e5290473586df832a1d012d1a1e971f8.mp3",
+      "audioSha256": "60b8ca63cc580fe9ed536dcc2a46a580719037ad4669fab98a32e348cbfc9162",
+      "bytes": 113100
+    },
+    {
+      "caseId": "jefferies-campaign",
+      "questionId": "scope",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 2 of 5. Is this an exhaustive census? A. Yes, every relevant story B. No, a bounded recovered sample with selection limits C. Yes, all formats and outlets",
+      "digest": "4830a02a9c55c58f407b27693cdc0834de8ffba1de540429d2aaabcccae622b6",
+      "src": "/assets/host-audio/4830a02a9c55c58f407b27693cdc0834de8ffba1de540429d2aaabcccae622b6.mp3",
+      "audioSha256": "4984ef78c1c5057f34d219ac7b4aab5d8b4d05327da264baaca4fb9ff3fc7092",
+      "bytes": 142567
+    },
+    {
+      "caseId": "jefferies-campaign",
+      "questionId": "scope",
+      "part": "feedback",
+      "text": "The correct answer is B. No, a bounded recovered sample with selection limits. The research pack describes a selected sample; missing records and outlets remain unknown.",
+      "digest": "47e45fa5f0a5f7dc2da3fd5f3745b431eb2afb18f03727e992ba846c571a870c",
+      "src": "/assets/host-audio/47e45fa5f0a5f7dc2da3fd5f3745b431eb2afb18f03727e992ba846c571a870c.mp3",
+      "audioSha256": "d434b6765a0337a9e49dc6b162d465656a1e7ba489b80b5fa9c9b6805c6f368a",
+      "bytes": 107458
+    },
+    {
+      "caseId": "jefferies-campaign",
+      "questionId": "status",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 3 of 5. How should disputed claims be described? A. As proven facts in every case B. With the allegation, response and procedural status kept separate C. Ignore the response",
+      "digest": "3e0c964d3cb0852c677c451f7f87c462a7627ac10e104858015dac2220ae3204",
+      "src": "/assets/host-audio/3e0c964d3cb0852c677c451f7f87c462a7627ac10e104858015dac2220ae3204.mp3",
+      "audioSha256": "9bbe9c08b42ed1cdba05fff1e0f20190f70a79539ce3a6f8fa04e46b4d6f4fde",
+      "bytes": 163047
+    },
+    {
+      "caseId": "jefferies-campaign",
+      "questionId": "status",
+      "part": "feedback",
+      "text": "The correct answer is B. With the allegation, response and procedural status kept separate. Use the status supported by the dated record; an allegation, response, inquiry and judgment are distinct.",
+      "digest": "fab4f51ae814620246ba4a4579afa93bc9040addca8846b56a8a9a451906b0b5",
+      "src": "/assets/host-audio/fab4f51ae814620246ba4a4579afa93bc9040addca8846b56a8a9a451906b0b5.mp3",
+      "audioSha256": "973f36b8baae239ec7f98ab62f4e54e10c766739ecf2b40f0aec78e6c4a0a431",
+      "bytes": 120206
+    },
+    {
+      "caseId": "jefferies-campaign",
+      "questionId": "limits",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 4 of 5. What does a headline alone tell us? A. The full article and all editorial choices B. The recovered wording, not full context or effects C. Nothing at all",
+      "digest": "bd2a8b7ccae2e9d46d9da5dd0bf536cec22dcdc0e2a05e228d581fe680b0701e",
+      "src": "/assets/host-audio/bd2a8b7ccae2e9d46d9da5dd0bf536cec22dcdc0e2a05e228d581fe680b0701e.mp3",
+      "audioSha256": "e2f3ca37715247b1182d31554152fb5b13ff2d21491d615223cbb479ce88d99e",
+      "bytes": 148418
+    },
+    {
+      "caseId": "jefferies-campaign",
+      "questionId": "limits",
+      "part": "feedback",
+      "text": "The correct answer is B. The recovered wording, not full context or effects. The headline is evidence of wording; the full article and consequences need separate evidence.",
+      "digest": "8abc8f8b098e5364337c071c3f2ca4640a8f228377f2795fd2cc4da4a2f0f073",
+      "src": "/assets/host-audio/8abc8f8b098e5364337c071c3f2ca4640a8f228377f2795fd2cc4da4a2f0f073.mp3",
+      "audioSha256": "a88e6185347ccc9dc644f30a1f21237e99711762c355249d4f328a339c9d1db1",
+      "bytes": 106831
+    },
+    {
+      "caseId": "jefferies-campaign",
+      "questionId": "motive",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 5 of 5. Can counts or a severe headline prove motive or causation? A. Yes, by themselves B. No; they support questions, not automatic conclusions C. Yes, if coverage is repeated",
+      "digest": "47151814db75d335c26db9f9af7cb9dfe2441b9fa102979a3cbd0bac98ba2707",
+      "src": "/assets/host-audio/47151814db75d335c26db9f9af7cb9dfe2441b9fa102979a3cbd0bac98ba2707.mp3",
+      "audioSha256": "d4ce00d0f00776902c00bd40bac3d620a953495b0f8ea42cd8c1e174938d99b0",
+      "bytes": 170152
+    },
+    {
+      "caseId": "jefferies-campaign",
+      "questionId": "motive",
+      "part": "feedback",
+      "text": "The correct answer is B. No; they support questions, not automatic conclusions. Frequency and wording do not independently establish motive, harm or causal effect.",
+      "digest": "944432d2ce751fefb184d8fc1660cfbe201663b3105f7c84f9d24a4eccd68efb",
+      "src": "/assets/host-audio/944432d2ce751fefb184d8fc1660cfbe201663b3105f7c84f9d24a4eccd68efb.mp3",
+      "audioSha256": "e89f723d3ca689ed34312c02899fe9cc938d8e75d0568d6ec24f30ecb2559470",
+      "bytes": 106831
+    },
+    {
+      "caseId": "greenwood-campaign",
+      "questionId": "status-arrest",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 1 of 5. What did the January 2022 arrest establish? A. Arrest on suspicion; no finding of guilt B. A criminal conviction C. A not-guilty verdict",
+      "digest": "5faa5fdac22e3bfff6879c21651c989b5fe67afb8f75c475b108bb8517d02152",
+      "src": "/assets/host-audio/5faa5fdac22e3bfff6879c21651c989b5fe67afb8f75c475b108bb8517d02152.mp3",
+      "audioSha256": "9dba5b4774c6611a70cdacfbf443cb047bccfd6baf336aaf30d227ec51b88e21",
+      "bytes": 143194
+    },
+    {
+      "caseId": "greenwood-campaign",
+      "questionId": "status-arrest",
+      "part": "feedback",
+      "text": "The correct answer is A. Arrest on suspicion; no finding of guilt. GMP/press reported arrest on suspicion and the club suspension; arrest is not proof or adjudication.",
+      "digest": "8d4e56c920b0fdab951239883f421957f93384ef18f57d2057a968fd6f8d19c5",
+      "src": "/assets/host-audio/8d4e56c920b0fdab951239883f421957f93384ef18f57d2057a968fd6f8d19c5.mp3",
+      "audioSha256": "dae53a53465fe0003d3b785519f9cf864eaf418e5d2900941ad6bafd8fce5e12",
+      "bytes": 115817
+    },
+    {
+      "caseId": "greenwood-campaign",
+      "questionId": "status-charged",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 2 of 5. What did the October 2022 charges establish? A. Formal charges; proceedings active and allegations unresolved B. A finding of guilt C. An acquittal",
+      "digest": "55633fb3e8b2b73ff4899f3c6b287c9574baf124c4e1e8a3eded20425dabefec",
+      "src": "/assets/host-audio/55633fb3e8b2b73ff4899f3c6b287c9574baf124c4e1e8a3eded20425dabefec.mp3",
+      "audioSha256": "898ad11a7d4901ba0046a2d52486db4831e6384cc164bfec406a92a2a849e402",
+      "bytes": 152807
+    },
+    {
+      "caseId": "greenwood-campaign",
+      "questionId": "status-charged",
+      "part": "feedback",
+      "text": "The correct answer is A. Formal charges; proceedings active and allegations unresolved. The CPS authorised charges and reminded media that proceedings were active and fair-trial rights applied.",
+      "digest": "47b9ece1733696f429ad28b94cc74055336d59aef73811089a367c91fc2481b6",
+      "src": "/assets/host-audio/47b9ece1733696f429ad28b94cc74055336d59aef73811089a367c91fc2481b6.mp3",
+      "audioSha256": "cc1385996a483819f90cd527236684d990dffe38267f7fe3e8425553d0eb4513",
+      "bytes": 118952
+    },
+    {
+      "caseId": "greenwood-campaign",
+      "questionId": "status-discontinued",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 3 of 5. What happened on 2 February 2023? A. CPS discontinued prosecution; no realistic prospect of conviction B. A jury returned not guilty C. A court convicted him",
+      "digest": "2d60814566c909e98229021619d6b26f893453b6ddde6d09071803065f15499f",
+      "src": "/assets/host-audio/2d60814566c909e98229021619d6b26f893453b6ddde6d09071803065f15499f.mp3",
+      "audioSha256": "c7a68899ffa9bb5e7e8be2fbb11993a108bf6ab39b379211d094e729a6336e97",
+      "bytes": 161793
+    },
+    {
+      "caseId": "greenwood-campaign",
+      "questionId": "status-discontinued",
+      "part": "feedback",
+      "text": "The correct answer is A. CPS discontinued prosecution; no realistic prospect of conviction. CPS explained the discontinuance as a consequence of withdrawn key witnesses and new material. There was no trial verdict.",
+      "digest": "0cfa1257e22ad6a6611244fb5a8ae6ad1cca1ebf1203b2bbe5b7fea26d3f449b",
+      "src": "/assets/host-audio/0cfa1257e22ad6a6611244fb5a8ae6ad1cca1ebf1203b2bbe5b7fea26d3f449b.mp3",
+      "audioSha256": "d05165a8d9835d2548a6bc7ca995239636a7f15c782d4dceb35a90e6b6f99718",
+      "bytes": 143820
+    },
+    {
+      "caseId": "greenwood-campaign",
+      "questionId": "status-united",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 4 of 5. What was Manchester United’s 21 August 2023 conclusion? A. Its own employer investigation and decision B. A criminal court finding C. A CPS reversal",
+      "digest": "6a9e858c5d262355a39bf03be0b8c7c2247e9963a0a5d86c600af4f71466053b",
+      "src": "/assets/host-audio/6a9e858c5d262355a39bf03be0b8c7c2247e9963a0a5d86c600af4f71466053b.mp3",
+      "audioSha256": "ffdca72b8e7b4d0039b137d7b652065c746c68e2e12ec8e7359a4c42978558b5",
+      "bytes": 162420
+    },
+    {
+      "caseId": "greenwood-campaign",
+      "questionId": "status-united",
+      "part": "feedback",
+      "text": "The correct answer is A. Its own employer investigation and decision. United said its internal investigation was complete and agreed a departure. This is not a court determination.",
+      "digest": "496bcb6ab7250e65df9ad4ea3afe2f59f08dcc53ac7038aeeb3670388657bdd2",
+      "src": "/assets/host-audio/496bcb6ab7250e65df9ad4ea3afe2f59f08dcc53ac7038aeeb3670388657bdd2.mp3",
+      "audioSha256": "85237885ca68696538464725166340c34f0dfbd1678df54bcb082aad45b19e77",
+      "bytes": 110593
+    },
+    {
+      "caseId": "greenwood-campaign",
+      "questionId": "status-cause",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 5 of 5. What can the evidence support about why he went abroad? A. United and Greenwood agreed an away-from-Old-Trafford outcome; public backlash was reported as one influence B. The press alone legally forced him into exile C. A court ordered him abroad",
+      "digest": "f881d55b0c8e5a2f52738488e387b6e4a59a85fa9d4f2fd235aed5664e4090eb",
+      "src": "/assets/host-audio/f881d55b0c8e5a2f52738488e387b6e4a59a85fa9d4f2fd235aed5664e4090eb.mp3",
+      "audioSha256": "08028648e420120343e51b45069131bf699527abe41dfdb2b2d28e44831a7c7a",
+      "bytes": 206096
+    },
+    {
+      "caseId": "greenwood-campaign",
+      "questionId": "status-cause",
+      "part": "feedback",
+      "text": "The correct answer is A. United and Greenwood agreed an away-from-Old-Trafford outcome; public backlash was reported as one influence. The CEO said he made the final decision, acknowledged strong opinions and distraction, and Greenwood/United called the move collaborative/mutual. A Sky reporter cited multiple sources on backlash. No source establishes press-only causation or a court order.",
+      "digest": "ae01a4e5336324a80a93800d396dcf23142c0def65974bb1923121e7ceff9480",
+      "src": "/assets/host-audio/ae01a4e5336324a80a93800d396dcf23142c0def65974bb1923121e7ceff9480.mp3",
+      "audioSha256": "7b267de624dbe4ea65829dccf3d5b05e3d03b13b5c4cf17edb7d22cb2c68c6cf",
+      "bytes": 239951
+    },
+    {
+      "caseId": "greenwood-pre2022-campaign",
+      "questionId": "shared-event",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 1 of 5. What did the FA’s 7 September statement establish? A. Both players breached the private-team-area protocol while remaining in the hotel B. A criminal conviction",
+      "digest": "75a7c0282620d134cab4e61d83fe2166bbb16ebe4728ce68bf65b5397dbb39f9",
+      "src": "/assets/host-audio/75a7c0282620d134cab4e61d83fe2166bbb16ebe4728ce68bf65b5397dbb39f9.mp3",
+      "audioSha256": "5536ccf489578f0d169c03981c46cdaf6ce1c3d5636180b783e90d48c027609d",
+      "bytes": 142567
+    },
+    {
+      "caseId": "greenwood-pre2022-campaign",
+      "questionId": "shared-event",
+      "part": "feedback",
+      "text": "The correct answer is A. Both players breached the private-team-area protocol while remaining in the hotel. Keep the official statement narrower than unverified circumstances.",
+      "digest": "7f933c9d161e5df6a1725ed7d3c4e16017a139ab32dda988526d700c64e88cec",
+      "src": "/assets/host-audio/7f933c9d161e5df6a1725ed7d3c4e16017a139ab32dda988526d700c64e88cec.mp3",
+      "audioSha256": "90e6d493f625567b7cff04a002d50272f9de22c5787bb3f75ea5386a9df714e5",
+      "bytes": 101607
+    },
+    {
+      "caseId": "greenwood-pre2022-campaign",
+      "questionId": "joint-count",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 2 of 5. How is one report naming both players counted? A. One publication, with two subject tags B. Two independent articles",
+      "digest": "04a97d51b5522c9127cc7f33ad7368a7978b9212305db84fec1bc3b7dabd084d",
+      "src": "/assets/host-audio/04a97d51b5522c9127cc7f33ad7368a7978b9212305db84fec1bc3b7dabd084d.mp3",
+      "audioSha256": "05528fcd7ff0f659add583393ee2605d9ffe04cf4f7d97183d96d873e129bfca",
+      "bytes": 116444
+    },
+    {
+      "caseId": "greenwood-pre2022-campaign",
+      "questionId": "joint-count",
+      "part": "feedback",
+      "text": "The correct answer is A. One publication, with two subject tags. Article identity and subject mentions are different units.",
+      "digest": "6e1f416040f12e9b97fa6fce8ef81110ad9248e9abe327de11fe4d13b3448fca",
+      "src": "/assets/host-audio/6e1f416040f12e9b97fa6fce8ef81110ad9248e9abe327de11fe4d13b3448fca.mp3",
+      "audioSha256": "aa36fad2b1fd531cc732c8670e2cf9c8608f1b7a813763936e3d29619f203b73",
+      "bytes": 78619
+    },
+    {
+      "caseId": "greenwood-pre2022-campaign",
+      "questionId": "manager-response",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 3 of 5. Does the October report and denial resolve the timekeeping dispute? A. No; keep the report and the public denial together B. Yes, repetition proves it",
+      "digest": "1132e5bd9b634495a6cb1faf7bcbfcd9f326dec809f8fd650c77a3c2a065d843",
+      "src": "/assets/host-audio/1132e5bd9b634495a6cb1faf7bcbfcd9f326dec809f8fd650c77a3c2a065d843.mp3",
+      "audioSha256": "4b4baefc3b7f683a69a1adb8dd90f9ccb4fdf751c1afc33fa6c936f01ec88ac6",
+      "bytes": 132327
+    },
+    {
+      "caseId": "greenwood-pre2022-campaign",
+      "questionId": "manager-response",
+      "part": "feedback",
+      "text": "The correct answer is A. No; keep the report and the public denial together. This selected record supplies competing public accounts, not an adjudication.",
+      "digest": "9521d159e9cffd16970481e6aeb7853db1bb0bb0b62f308cb3e2d7b7ac8caca9",
+      "src": "/assets/host-audio/9521d159e9cffd16970481e6aeb7853db1bb0bb0b62f308cb3e2d7b7ac8caca9.mp3",
+      "audioSha256": "c43d7ff2c30ea800964eb7049a45ed5b0ed0a801bf7185bfa157123263d225b5",
+      "bytes": 89486
+    },
+    {
+      "caseId": "greenwood-pre2022-campaign",
+      "questionId": "foden-return",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 4 of 5. What was a new hook for Foden’s 18 November coverage? A. His first senior England goals and return B. Proof the press had forgiven every earlier act",
+      "digest": "d7f5d3764d862fba8d7dc2d3e757207733822ffa20c3b41bfadfa9cae2fb33c5",
+      "src": "/assets/host-audio/d7f5d3764d862fba8d7dc2d3e757207733822ffa20c3b41bfadfa9cae2fb33c5.mp3",
+      "audioSha256": "5593b5475d70c0bf2c20f450445a54cb353d6dc61b991c5e5a1798b4d0581c0e",
+      "bytes": 126057
+    },
+    {
+      "caseId": "greenwood-pre2022-campaign",
+      "questionId": "foden-return",
+      "part": "feedback",
+      "text": "The correct answer is A. His first senior England goals and return. A performance-led follow-up adds a sporting development.",
+      "digest": "86d93528a380d695f0e636abe7468c578052ec6538b3a1622c09eb615979e29a",
+      "src": "/assets/host-audio/86d93528a380d695f0e636abe7468c578052ec6538b3a1622c09eb615979e29a.mp3",
+      "audioSha256": "53405570fe24a882394334d64736524af3d83b31cae02d1e66f65c0f9eb18229",
+      "bytes": 73603
+    },
+    {
+      "caseId": "greenwood-pre2022-campaign",
+      "questionId": "case-scope",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 5 of 5. Can later criminal proceedings explain what editors knew in 2020? A. No; later knowledge belongs to a different period B. Yes, apply later knowledge backwards",
+      "digest": "a66a91a011341c6070af4982ca1d11e19cb71dc8d97106ab2f67eeffd0c33083",
+      "src": "/assets/host-audio/a66a91a011341c6070af4982ca1d11e19cb71dc8d97106ab2f67eeffd0c33083.mp3",
+      "audioSha256": "10e4da5a9c7b83f63d5c055872c2441d707e8d5da5192d21611b269debea6312",
+      "bytes": 140059
+    },
+    {
+      "caseId": "greenwood-pre2022-campaign",
+      "questionId": "case-scope",
+      "part": "feedback",
+      "text": "The correct answer is A. No; later knowledge belongs to a different period. The round’s dated boundary prevents hindsight from becoming contemporary knowledge.",
+      "digest": "3657f83c2fff7054c93ceb2244134aeee51cd0e9efae6e60a128fb9d5c898f16",
+      "src": "/assets/host-audio/3657f83c2fff7054c93ceb2244134aeee51cd0e9efae6e60a128fb9d5c898f16.mp3",
+      "audioSha256": "7f3f529b72fbfd231930990f1c5c1c44a42fd707fcbd45d11a193846c51109dc",
+      "bytes": 94710
+    },
+    {
+      "caseId": "diallo-documents-campaign",
+      "questionId": "sports-notice",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 1 of 5. What kind of outcome did the FIGC notice record? A. An agreed sports-disciplinary sanction B. A criminal-court conviction",
+      "digest": "042a81515584e08016b117c6d566a548976ff1621ace86667759a489b7f0b6a7",
+      "src": "/assets/host-audio/042a81515584e08016b117c6d566a548976ff1621ace86667759a489b7f0b6a7.mp3",
+      "audioSha256": "a35013a423a6c66fc14507c478bed1a4cdbbd2d944bd07ca2f7e56a8ab8543f5",
+      "bytes": 119579
+    },
+    {
+      "caseId": "diallo-documents-campaign",
+      "questionId": "sports-notice",
+      "part": "feedback",
+      "text": "The correct answer is A. An agreed sports-disciplinary sanction. The body, procedure and scope matter.",
+      "digest": "82d0c7b3e733cdd7b792dcb1d53c05100e39ecbd8bd9b13ed31b625d009238d2",
+      "src": "/assets/host-audio/82d0c7b3e733cdd7b792dcb1d53c05100e39ecbd8bd9b13ed31b625d009238d2.mp3",
+      "audioSha256": "c72c07bef46742fcec42aba86f2cbc9f3ca086ccfb228b0a94ec009d53a9b25b",
+      "bytes": 63363
+    },
+    {
+      "caseId": "diallo-documents-campaign",
+      "questionId": "age-registration",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 2 of 5. How old was Diallo on 14 January 2015? A. 12, using the notice’s11 July 2002 birth date B. 18",
+      "digest": "0ccaff10a0a8f048f945a6038c9ad4ad85e5e3367cfe2770ff19f4c79c1d964d",
+      "src": "/assets/host-audio/0ccaff10a0a8f048f945a6038c9ad4ad85e5e3367cfe2770ff19f4c79c1d964d.mp3",
+      "audioSha256": "a9d3cc931fcfb3cdac13fff0a54aa8a9c81050d9c8904777ff1e4f779600a65e",
+      "bytes": 135670
+    },
+    {
+      "caseId": "diallo-documents-campaign",
+      "questionId": "age-registration",
+      "part": "feedback",
+      "text": "The correct answer is A. 12, using the notice’s11 July 2002 birth date. Registration is a dated act; do not use his 2021age for it.",
+      "digest": "455cc46a16098a6b9bb0c784c87a939c1ba51197c03a29eabbf2ee03a9aa6505",
+      "src": "/assets/host-audio/455cc46a16098a6b9bb0c784c87a939c1ba51197c03a29eabbf2ee03a9aa6505.mp3",
+      "audioSha256": "5a05c5c97c1d127d3ba60a0b869638ac2af070ca8843d481d4bf7d79c27d54fa",
+      "bytes": 106831
+    },
+    {
+      "caseId": "diallo-documents-campaign",
+      "questionId": "age-contract",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 3 of 5. How old was he on 11 July 2018? A. 16, on the contract date in the notice B. 21",
+      "digest": "27af0f0184f2d54d83572799a7aa0737ea57a97ffb8ea420178492235a6837bf",
+      "src": "/assets/host-audio/27af0f0184f2d54d83572799a7aa0737ea57a97ffb8ea420178492235a6837bf.mp3",
+      "audioSha256": "b9d7144a489adb1dcffb7052d5936b9f285e35615d245c35728afe9d02069069",
+      "bytes": 120206
+    },
+    {
+      "caseId": "diallo-documents-campaign",
+      "questionId": "age-contract",
+      "part": "feedback",
+      "text": "The correct answer is A. 16, on the contract date in the notice. The notice separates the 2015registration and2018contract.",
+      "digest": "091d34986ceab01c9ba0531e2d3e4c2e18eae7c96710a88d0bec9ef9230312f9",
+      "src": "/assets/host-audio/091d34986ceab01c9ba0531e2d3e4c2e18eae7c96710a88d0bec9ef9230312f9.mp3",
+      "audioSha256": "b545c4cdfe3c8c94d198bcb122be262560480b0fc0a533dc0cb38a90a2751281",
+      "bytes": 93456
+    },
+    {
+      "caseId": "diallo-documents-campaign",
+      "questionId": "pa-copy",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 4 of 5. What do the Sky and Football365 placements establish? A. Two publisher placements of a shared PA report B. Two independent investigations",
+      "digest": "3aa150a7c4a633ca9ee2d7074ab9c9a00363f05f205cd7ad4a9d8c678e424576",
+      "src": "/assets/host-audio/3aa150a7c4a633ca9ee2d7074ab9c9a00363f05f205cd7ad4a9d8c678e424576.mp3",
+      "audioSha256": "5d3bce3285f38d18fe6e7829e91f41bc2bee335a1cef253c102cfbe5293ef7dc",
+      "bytes": 127938
+    },
+    {
+      "caseId": "diallo-documents-campaign",
+      "questionId": "pa-copy",
+      "part": "feedback",
+      "text": "The correct answer is A. Two publisher placements of a shared PA report. The headlines show distribution; independence needs separate evidence.",
+      "digest": "4c1a2cbf727237a343dea61f548112f2f9f4344391740837189ed41f19c71ef4",
+      "src": "/assets/host-audio/4c1a2cbf727237a343dea61f548112f2f9f4344391740837189ed41f19c71ef4.mp3",
+      "audioSha256": "46de99a68e9300ecc9e5359d85da763027ee11579478a1071c6c9fea7bddcdb2",
+      "bytes": 82380
+    },
+    {
+      "caseId": "diallo-documents-campaign",
+      "questionId": "scope",
+      "part": "question",
+      "text": "Here is what the evidence tells us. Question 5 of 5. What can this recovered sample establish? A. Who published the retained pieces; further recovery is needed for total scale B. A complete UK census and proven motive",
+      "digest": "ca77504f25106c3981b30d294477fc91e10f4d542b9bc7aaf0f8c45055508464",
+      "src": "/assets/host-audio/ca77504f25106c3981b30d294477fc91e10f4d542b9bc7aaf0f8c45055508464.mp3",
+      "audioSha256": "30eb792cf930ae58a17445d4ccf4c44b47c847dc8c54b271f2b2ee1d6260396d",
+      "bytes": 154060
+    },
+    {
+      "caseId": "diallo-documents-campaign",
+      "questionId": "scope",
+      "part": "feedback",
+      "text": "The correct answer is A. Who published the retained pieces; further recovery is needed for total scale. Search gaps cannot be converted into zero coverage or a racial finding.",
+      "digest": "b8bd2d458a4b2416ef75bf21446644b7ec96b02bd01ae015917349cef38d37cd",
+      "src": "/assets/host-audio/b8bd2d458a4b2416ef75bf21446644b7ec96b02bd01ae015917349cef38d37cd.mp3",
+      "audioSha256": "eca8f3df8edb940da7bf890bb92e84dd5fecbe28c86e844ca93971c8094d6bc2",
+      "bytes": 108085
+    }
+  ]
+}

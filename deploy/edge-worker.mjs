@@ -22,7 +22,7 @@ export default {async fetch(request,env){
  if(!['GET','HEAD'].includes(request.method))return json(405,'method_not_allowed');
  if(url.pathname==='/robots.txt')return new Response('User-agent: *\nDisallow: /\n',{headers:{...SECURITY,'content-type':'text/plain'}});
  const name=url.pathname==='/'?'index.html':url.pathname.slice(1),file=FILES[name];if(!file)return json(404,'not_found');
- const staticHeaders={...SECURITY,'content-type':file.type,'cache-control':name.startsWith('assets/')?'public, max-age=86400':'no-cache',...(file.etag?{etag:file.etag}:{})};
+ const staticHeaders={...SECURITY,'content-type':file.type,'cache-control':name.startsWith('assets/host-audio/')&&/^[a-f0-9]{64}\.mp3$/.test(name.slice('assets/host-audio/'.length))?'public, max-age=31536000, immutable':name.startsWith('assets/')?'public, max-age=86400':'no-cache',...(file.etag?{etag:file.etag}:{})};
  if(file.etag&&request.headers.get('if-none-match')===file.etag)return new Response(null,{status:304,headers:staticHeaders});
  const bytes=file.encoding==='base64'?Uint8Array.from(atob(file.content),c=>c.charCodeAt(0)):file.content;
  return new Response(request.method==='HEAD'?null:bytes,{headers:staticHeaders});

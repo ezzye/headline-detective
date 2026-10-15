@@ -69,13 +69,21 @@ Requires Node.js 22 or later. From this folder:
 npm start
 ```
 
-Then open <http://127.0.0.1:9027/>. No packages need installing. Without provider keys, reviewed outlet defences remain available as text; live questions and speech require provider access.
+Then open <http://127.0.0.1:9027/>. No packages need installing. Without provider keys, reviewed outlet defences remain available as text. The prepared challenge host recordings work locally without keys; new AI answers and newly generated outlet speech require your own provider access.
 
 ## Your own provider keys
 
 People using the public GitHub code must supply their own DeepSeek and optional ElevenLabs accounts and keys. Each operator is responsible for provider usage and charges. Copy `.env.example` to a private `.env`, or keep settings in a separate file and start with `HEADLINE_DETECTIVE_ENV_FILE=/absolute/path/private.env npm start`. Private configuration is ignored; do not share it. The example contains placeholders. No provider keys or private configuration belong in the source repository.
 
 The public hosted game uses a separate private server-side provider control layer. Visitors can support access by donating an accepted prepaid API key under the project's consent and usage settings; the donation guide describes provider setup. Do not paste credentials into client-side code or public issues.
+
+## Prepared challenge host
+
+Every question and reviewed explanation has a prepared ElevenLabs stock-actor recording. The 90 slots across nine cases reuse 60 distinct MP3s. Play, pause, resume and replay are player-controlled; nothing autoplays. The browser prepares the current question, its explanation and the next question from saved public files, with no provider calls. Lookahead is disabled for a reported data-saving or 2G connection. An animated speaker highlight respects reduced motion.
+
+Recordings use a SHA-256 filename bound to the exact approved text, voice, model, direction and settings. A changed script fails closed rather than playing stale speech. The build verifies each audio file against its byte hash. Hashed files have immutable cache headers; a repeat listen needs no paid generation. The standalone HTML keeps written gameplay offline; the full voice bundle is available through the hosted or locally served repository.
+
+For maintainers, `npm run prepare:host -- --plan` previews the bounded preparation using `ELEVENLABS_HOST_VOICE_ID` (or the configured voice A). A manual generation also requires `ELEVENLABS_API_KEY` and `CFJ_HOST_PREPARATION_LEDGER` pointing outside the repository. It verifies a finite prepaid-only allowance, reuses exact matching recordings, and stops on a failed or uncertain paid request. Never put real keys in Git, command arguments or browser code. Visitors cannot trigger host generation. Existing donated-key limits and live outlet-response controls are unchanged.
 
 ## Sharing and checks
 
