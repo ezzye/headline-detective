@@ -1,0 +1,239 @@
+/* Short challenge interaction layer. All selectors are scoped to the game widget. */
+.short-challenge {
+  --challenge-ink: #f3f0e8;
+  --challenge-muted: #aeb8c9;
+  --challenge-panel: #172236;
+  --challenge-panel-raised: #1d2b42;
+  --challenge-line: #34435b;
+  --challenge-lime: #d4f56b;
+  --challenge-blue: #83d8ff;
+  --challenge-good: #a9e8a2;
+  --challenge-bad: #ffb3a6;
+  color: var(--challenge-ink);
+  background: #101625;
+  border: 1px solid var(--challenge-line);
+  border-radius: 20px;
+  box-sizing: border-box;
+  max-width: 760px;
+  width: 100%;
+  margin-inline: auto;
+  padding: clamp(16px, 4vw, 28px);
+  overflow-wrap: anywhere;
+}
+
+.short-challenge *,
+.short-challenge *::before,
+.short-challenge *::after { box-sizing: border-box; }
+
+.short-challenge .challenge-head { margin-bottom: 22px; }
+.short-challenge .challenge-head h2,
+.short-challenge .challenge-head h3 { margin: 0 0 8px; color: var(--challenge-ink); }
+.short-challenge .challenge-head p { margin: 0; color: var(--challenge-muted); line-height: 1.55; }
+
+.short-challenge .challenge-track {
+  height: 8px;
+  margin: 14px 0 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #273349;
+}
+.short-challenge .challenge-progress-fill {
+  display: block;
+  height: 100%;
+  min-width: 0;
+  border-radius: inherit;
+  background: var(--challenge-lime);
+  transition: width 360ms cubic-bezier(.2,.75,.25,1);
+}
+.short-challenge .challenge-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 20px;
+  margin: 0 0 22px;
+}
+.short-challenge .challenge-step-dot {
+  width: 10px;
+  height: 10px;
+  flex: 0 0 10px;
+  border: 1px solid #718098;
+  border-radius: 50%;
+  background: transparent;
+  transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+.short-challenge .challenge-step-dot.is-current { border-color: var(--challenge-blue); transform: scale(1.25); }
+.short-challenge .challenge-step-dot.is-settled { background: #718098; border-color: #718098; }
+.short-challenge .challenge-step-dot.is-correct { background: var(--challenge-good); border-color: var(--challenge-good); }
+.short-challenge .challenge-step-dot.is-skipped { background: transparent; border-style: dashed; border-color: var(--challenge-muted); }
+
+.short-challenge .challenge-card {
+  padding: clamp(16px, 4vw, 24px);
+  border: 1px solid var(--challenge-line);
+  border-radius: 16px;
+  background: var(--challenge-panel);
+
+}
+.short-challenge .challenge-question {
+  margin: 0 0 18px;
+  color: var(--challenge-ink);
+  font-size: clamp(1.15rem, 4vw, 1.5rem);
+  line-height: 1.35;
+  letter-spacing: -.015em;
+}
+.short-challenge .challenge-options { display: grid; gap: 10px; }
+.short-challenge .challenge-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 52px;
+  padding: 11px 14px;
+  color: var(--challenge-ink);
+  text-align: left;
+  font: inherit;
+  line-height: 1.4;
+  border: 1px solid #465570;
+  border-radius: 12px;
+  background: var(--challenge-panel-raised);
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease, transform 150ms ease;
+}
+.short-challenge .challenge-option:hover:not(:disabled) { border-color: var(--challenge-blue); background: #23344e; }
+.short-challenge .challenge-option:active:not(:disabled) { transform: scale(.99); }
+.short-challenge .challenge-option:disabled { cursor: default; }
+.short-challenge .challenge-option-letter {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  color: var(--challenge-blue);
+  font-size: .9rem;
+  font-weight: 750;
+  border: 1px solid #52637e;
+  border-radius: 9px;
+}
+.short-challenge .challenge-option.is-chosen { border-color: var(--challenge-blue); background: #20354b; }
+.short-challenge .challenge-option.is-correct { border-color: var(--challenge-good); background: #203a37; }
+.short-challenge .challenge-option.is-correct .challenge-option-letter { color: #101625; border-color: var(--challenge-good); background: var(--challenge-good); }
+.short-challenge .challenge-option.is-incorrect { border-color: var(--challenge-bad); background: #402c35; }
+.short-challenge .challenge-option.is-incorrect .challenge-option-letter { color: #101625; border-color: var(--challenge-bad); background: var(--challenge-bad); }
+.short-challenge :is(button, a, [tabindex]):focus-visible {
+  outline: 3px solid var(--challenge-lime);
+  outline-offset: 3px;
+}
+
+.short-challenge .challenge-feedback {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin-top: 16px;
+  padding: 13px 14px;
+  color: var(--challenge-ink);
+  line-height: 1.5;
+  border-left: 3px solid var(--challenge-blue);
+  border-radius: 0 10px 10px 0;
+  background: #202e43;
+  animation: faithfulChallengeFeedbackIn 240ms ease-out both;
+}
+.short-challenge .challenge-feedback[data-outcome="correct"] { border-left-color: var(--challenge-good); background: #203a37; }
+.short-challenge .challenge-feedback[data-outcome="incorrect"] { border-left-color: var(--challenge-bad); background: #402c35; }
+.short-challenge .challenge-feedback-icon { flex: 0 0 auto; font-weight: 800; color: var(--challenge-blue); }
+.short-challenge .challenge-feedback[data-outcome="correct"] .challenge-feedback-icon { color: var(--challenge-good); }
+.short-challenge .challenge-feedback[data-outcome="incorrect"] .challenge-feedback-icon { color: var(--challenge-bad); }
+.short-challenge .challenge-points {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  margin: 12px 0 0;
+  padding: 3px 9px;
+  color: var(--challenge-lime);
+  font-size: .875rem;
+  font-weight: 750;
+  border: 1px solid #647b43;
+  border-radius: 999px;
+  background: #273422;
+  animation: faithfulChallengePointsPop 320ms cubic-bezier(.2,.8,.25,1.2) both;
+}
+.short-challenge .challenge-actions { display: flex; justify-content: flex-end; margin-top: 18px; }
+.short-challenge .challenge-next {
+  min-height: 48px;
+  padding: 11px 18px;
+  color: #101625;
+  font: inherit;
+  font-weight: 750;
+  border: 0;
+  border-radius: 11px;
+  background: var(--challenge-lime);
+  cursor: pointer;
+  transition: filter 150ms ease, transform 150ms ease;
+}
+.short-challenge .challenge-next:hover { filter: brightness(1.07); }
+.short-challenge .challenge-next:active { transform: translateY(1px); }
+.short-challenge .challenge-complete {
+  padding: clamp(20px, 5vw, 32px);
+  text-align: center;
+  border: 1px solid #526442;
+  border-radius: 16px;
+  background: #1d2b2c;
+  animation: faithfulChallengeQuestionIn 300ms ease-out both;
+}
+.short-challenge .challenge-complete h2,
+.short-challenge .challenge-complete h3 { margin: 0 0 10px; color: var(--challenge-lime); }
+.short-challenge .challenge-complete p { margin: 0; color: var(--challenge-ink); line-height: 1.55; }
+
+@keyframes faithfulChallengeQuestionIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes faithfulChallengeFeedbackIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes faithfulChallengePointsPop {
+  0% { opacity: 0; transform: scale(.88); }
+  70% { opacity: 1; transform: scale(1.04); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 420px) {
+  .short-challenge { border-radius: 15px; }
+  .short-challenge .challenge-option { align-items: flex-start; }
+  .short-challenge .challenge-option-letter { margin-top: 1px; }
+  .short-challenge .challenge-actions { justify-content: stretch; }
+  .short-challenge .challenge-next { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .short-challenge *,
+  .short-challenge *::before,
+  .short-challenge *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+html.reduced-motion .short-challenge *,
+html.reduced-motion .short-challenge *::before,
+html.reduced-motion .short-challenge *::after,
+:root.reduced-motion .short-challenge *,
+:root.reduced-motion .short-challenge *::before,
+:root.reduced-motion .short-challenge *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+
+.short-challenge .challenge-card.is-entering{animation:faithfulChallengeQuestionIn 300ms ease-out both}
+.short-challenge .challenge-status{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.short-challenge .challenge-status strong{color:var(--challenge-lime);font-size:.9rem}
+.short-challenge .challenge-actions{gap:10px;flex-wrap:wrap}
+.short-challenge .challenge-option:disabled{opacity:1}
+.short-challenge .challenge-feedback p{margin:.5rem 0}
+.short-challenge .challenge-points{animation:none}
+.short-challenge .challenge-points.is-reward{animation:faithfulChallengePointsPop 320ms ease-out both}
+.short-challenge .challenge-emblem{display:block;width:76px;height:76px;color:var(--challenge-lime);margin:0 auto 18px}
+.short-challenge .challenge-complete .secondary{margin-top:14px;min-height:44px}
+@media(prefers-reduced-motion:reduce){.short-challenge .challenge-card.is-entering,.short-challenge .challenge-points.is-reward{animation:none!important}}
+html.reduced-motion .short-challenge .challenge-card.is-entering,html.reduced-motion .short-challenge .challenge-points.is-reward{animation:none!important}

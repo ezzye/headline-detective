@@ -89,3 +89,5 @@ Greenwood is a seventh playable campaign:15 verified written pieces across three
 
 
 The football extension adds two playable rounds (pre-2022 Greenwood and Diallo), giving nine cases with 209 retained written records across 33 desks. `football.html` provides nine bounded timelines and three framing comparisons. Its 58 observations include 15 existing Sterling rows and ten unverified leads; official notices, opinion, overseas context and shared PA copy remain separately labelled. Visitors may reveal outlets early or check individual evidence answers. Partial practice scores use answered questions only. The source and offline game include the answers; this is a teaching aid, not a controlled examination.
+
+The short evidence challenge now presents one question at a time with immediate, source-bound feedback, accessible progress, explicit Next/Skip/Show controls and a completion screen. First answers lock for the round; showing or skipping remains unmarked. Motion is limited to question entry, answer feedback, progress and points, and respects the operating system and in-app reduced-motion preferences. It runs locally without paid provider calls.
