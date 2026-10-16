@@ -7763,5 +7763,107 @@
         }
       ]
     }
-  ]
+  ],
+  "archiveRecovery": {
+    "asOf": "2026-10-16",
+    "window": {
+      "from": "2026-06-01",
+      "through": "2026-09-30"
+    },
+    "target": "Thursday 12:00 Europe/London; strict ±2 hours and pairwise span at most two hours. Original matching rules unchanged.",
+    "newVerifiedCaptures": 0,
+    "newStrictMatchedWeeks": 0,
+    "strictMatchedWeeks": 32,
+    "sameDayMatchedWeeks": 40,
+    "checks": [
+      {
+        "archive": "Arquivo.pt",
+        "status": "Queried · no June–September versions returned",
+        "finding": "The date-filtered homepage queries returned no captures. Broader histories returned latest versions of 24 March 2026 for ITV and 11 December 2025 for Channel 4. These are results for the queried URLs, not proof that all aliases or unindexed holdings are absent.",
+        "sources": [
+          "https://arquivo.pt/wayback/cdx?url=www.itv.com%2Fnews&from=20260601&to=20260930&output=json&filter=statuscode%3A200&limit=2000",
+          "https://arquivo.pt/textsearch?versionHistory=https%3A%2F%2Fwww.channel4.com%2Fnews%2F&from=20260601000000&to=20260930235959&maxItems=50",
+          "https://arquivo.pt/textsearch?versionHistory=https%3A%2F%2Fwww.itv.com%2Fnews&from=19960101000000&to=20261016235959&maxItems=50",
+          "https://arquivo.pt/textsearch?versionHistory=https%3A%2F%2Fwww.channel4.com%2Fnews%2F&from=19960101000000&to=20261016235959&maxItems=50"
+        ],
+        "kind": "no-results"
+      },
+      {
+        "archive": "Common Crawl",
+        "status": "Mixed · no captures / query failures",
+        "finding": "The four verified June–September collections returned “No Captures” for Channel 4’s slash URL. July–September also returned none for its no-slash variant; June’s alternate query timed out. ITV September returned none for both paths. ITV June–August queries failed at the gateway, so their holdings remain unknown.",
+        "sources": [
+          "https://index.commoncrawl.org/CC-MAIN-2026-25-index?url=www.itv.com%2Fnews&output=json&filter=status%3A200",
+          "https://index.commoncrawl.org/CC-MAIN-2026-25-index?url=www.channel4.com%2Fnews%2F&output=json&filter=status%3A200",
+          "https://index.commoncrawl.org/CC-MAIN-2026-30-index?url=www.itv.com%2Fnews&output=json&filter=status%3A200",
+          "https://index.commoncrawl.org/CC-MAIN-2026-30-index?url=www.channel4.com%2Fnews%2F&output=json&filter=status%3A200",
+          "https://index.commoncrawl.org/CC-MAIN-2026-34-index?url=www.itv.com%2Fnews&output=json&filter=status%3A200",
+          "https://index.commoncrawl.org/CC-MAIN-2026-34-index?url=www.channel4.com%2Fnews%2F&output=json&filter=status%3A200",
+          "https://index.commoncrawl.org/CC-MAIN-2026-39-index?url=www.itv.com%2Fnews&output=json&filter=status%3A200",
+          "https://index.commoncrawl.org/CC-MAIN-2026-39-index?url=www.channel4.com%2Fnews%2F&output=json&filter=status%3A200",
+          "https://index.commoncrawl.org/CC-MAIN-2026-25-index?url=www.channel4.com%2Fnews&output=json",
+          "https://index.commoncrawl.org/CC-MAIN-2026-30-index?url=www.channel4.com%2Fnews&output=json",
+          "https://index.commoncrawl.org/CC-MAIN-2026-34-index?url=www.channel4.com%2Fnews&output=json",
+          "https://index.commoncrawl.org/CC-MAIN-2026-39-index?url=www.channel4.com%2Fnews&output=json",
+          "https://index.commoncrawl.org/CC-MAIN-2026-39-index?url=www.itv.com%2Fnews%2F&output=json"
+        ],
+        "kind": "partial"
+      },
+      {
+        "archive": "UK Web Archive",
+        "status": "Access unavailable",
+        "finding": "The British Library currently says public access is unavailable while collection continues. This does not establish whether the requested captures exist.",
+        "sources": [
+          "https://www.bl.uk/services/legal-deposit/web-archiving"
+        ],
+        "kind": "unavailable"
+      },
+      {
+        "archive": "archive.today",
+        "status": "Rate-limited · stopped",
+        "finding": "Chrome showed Too Many Requests for the ITV homepage history. No holdings were inspected and no absence is inferred.",
+        "sources": [
+          "https://archive.today/https://www.itv.com/news"
+        ],
+        "kind": "unavailable"
+      },
+      {
+        "archive": "Wayback variants",
+        "status": "Checked · no extra strict match",
+        "finding": "Fuller exact-URL indexes returned 276 ITV and 270 Channel 4 records in June–September. No new two-hour candidate emerged. One closer Channel 4 index entry was still over nine hours from target; it was not substituted into the declared hourly-index selection. Broader homepage-query-string searches timed out.",
+        "sources": [
+          "https://web.archive.org/cdx/search/cdx?url=www.itv.com%2Fnews%2F&matchType=exact&from=20260601&to=20260930&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cmimetype%2Cdigest&limit=10000",
+          "https://web.archive.org/cdx/search/cdx?url=www.channel4.com%2Fnews&matchType=exact&from=20260601&to=20260930&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cmimetype%2Cdigest&limit=10000",
+          "https://web.archive.org/cdx/search/cdx?url=www.itv.com%2Fnews&matchType=prefix&from=20260601&to=20260930&output=json&filter=statuscode%3A200&filter=original%3A%5Ehttps%3F%3A%2F%2F%28www%5C.%29%3Fitv%5C.com%2Fnews%2F%3F%28%5C%3F.%2A%29%3F%24&fl=timestamp%2Coriginal%2Cmimetype%2Cdigest&collapse=timestamp%3A10&limit=2000",
+          "https://web.archive.org/cdx/search/cdx?url=www.channel4.com%2Fnews&matchType=prefix&from=20260601&to=20260930&output=json&filter=statuscode%3A200&filter=original%3A%5Ehttps%3F%3A%2F%2F%28www%5C.%29%3Fchannel4%5C.com%2Fnews%2F%3F%28%5C%3F.%2A%29%3F%24&fl=timestamp%2Coriginal%2Cmimetype%2Cdigest&collapse=timestamp%3A10&limit=2000"
+        ],
+        "kind": "no-improvement"
+      },
+      {
+        "archive": "GDELT Frontpage Graph",
+        "status": "Supplemental lead · not imported",
+        "finding": "GFG records hourly homepage links and their order. This is useful evidence of link presence, but does not by itself preserve the main-grid and Featured boundaries required by this study. Its large global files were not downloaded; no article or link totals were substituted for a homepage capture.",
+        "sources": [
+          "https://blog.gdeltproject.org/announcing-gdelt-global-frontpage-graph-gfg/"
+        ],
+        "kind": "different-evidence"
+      },
+      {
+        "archive": "Frontpage Archive",
+        "status": "BBC archive verified; no ITV/C4 archive verified",
+        "finding": "The BBC archive is independently useful and already supplies three screenshot fallbacks. No ITV or Channel 4 instance was verified in the targeted search. That search result does not prove none exists.",
+        "sources": [
+          "https://bbc.frontpagearchive.com/browse"
+        ],
+        "kind": "unverified"
+      }
+    ],
+    "timingLimit": {
+      "investigation": "ITV first published this investigation on 14 October 2026.",
+      "source": "https://www.itv.com/news/2026-10-14/inside-reform-councillors-extreme-and-racist-views-on-camera",
+      "studyEnds": "2026-10-15",
+      "consequence": "The study has only the following day’s scheduled observation, not later post-investigation weeks. Summer recovery cannot supply those future observations. Separate investigations need separately dated comparison windows."
+    },
+    "interpretation": "No extra qualifying captures verified. Existing gaps stay unknown. This search does not support a claim that reporting was absent or that editorial priorities changed."
+  }
 }
