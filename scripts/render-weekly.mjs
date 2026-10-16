@@ -1,0 +1,13 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=new URL('../',import.meta.url);
+const input=process.argv[2]?resolve(process.argv[2]):new URL('weekly-evidence.json',root);
+const output=process.argv[3]?resolve(process.argv[3]):new URL('weekly.html',root);
+const data=JSON.parse(await readFile(input,'utf8'));
+if(!process.argv[2]&&(data.version!=='cfj-weekly-v1-reviewed'||data.weeks.length!==53))throw Error('Expected reviewed 53-week evidence');
+const template=await readFile(new URL('weekly.template.html',root),'utf8');
+const encoded=JSON.stringify(data).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');
+if(!template.includes('/* WEEKLY_EVIDENCE_DATA */'))throw Error('Evidence marker missing');
+await writeFile(output,template.replace('/* WEEKLY_EVIDENCE_DATA */',`const EVIDENCE = ${encoded};`));
+console.log(`Rendered ${typeof output==='string'?output:fileURLToPath(output)}`);

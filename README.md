@@ -116,3 +116,11 @@ ElevenLabs observations are persisted with the encrypted ledger. Only an increas
 
 
 The `/agenda.html` activity examines topic-level news agendas: BBC, ITV and Channel 4 homepage observations around ITV’s October 2026 Reform reporting. `agenda-evidence.json` records the sources, sample boundaries and unknown historical comparison. The standalone page embeds the same evidence for offline sharing. Article publication counts are never treated as homepage prominence; the activity makes no finding of political bias.
+
+### Matched weekly homepage comparison
+
+[Explore the weekly comparison](weekly.html): 53 Thursdays, 16 October 2025–15 October 2026, targeting noon in London. The 159-row register contains 152 recovered/reviewed observations and seven archive gaps. Strict two-hour matching yields 32 three-outlet weeks; the separately labelled same-day sensitivity check yields 40. June–September have no strict matched weeks, so the strict totals cannot establish a full-year trend or the impact of recent investigations.
+
+The main editorial pools differ: BBC shared lead plus visible UK grid, ITV Top Stories, Channel 4 main grid plus editorial Featured cards. Counts are dates with qualifying headline/deck framing, not article publication totals or proof of bias. Crime association, enforcement, harm/protection, Reform conduct, performance, routine politics and the literal word illegal are separate. Lower-page examples do not enter primary counts.
+
+`weekly-evidence.json` includes timestamps, archive URLs, source hashes, reviewed booleans and gap reasons; `weekly-captures.csv` gives one row per planned observation. Public examples are selected paraphrases. Full retained HTML and review notes stay in the owner's working archive rather than republishing newspaper pages. `npm run prepare:weekly` regenerates the standalone page from its template and reviewed data. It makes no provider calls; Save HTML and Share file support offline file sharing.

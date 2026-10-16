@@ -1,0 +1,26 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+const data=JSON.parse(await readFile(new URL('./weekly-evidence.json',import.meta.url),'utf8'));
+const fields=['immigrationTopic','migrationCrime','migrationEnforcement','migrantHarm','reformConduct','reformAdverse','reformRoutine'];
+const codes=['uk-migration','migration-crime','migration-enforcement','migrant-harm','reform-conduct','reform-adverse','reform-routine'];
+const londonDate=t=>new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(t));
+function eligible(w,broad=false){const target=Date.parse(w.targetAt),times=w.observations.map(o=>Date.parse(o.actualAt)),limit=(broad?720:120)*60000;return w.observations.length===3&&w.observations.every(o=>o.reviewed&&o.metrics&&fields.every(k=>typeof o.metrics[k]==='boolean')&&(broad?['captured','context-only'].includes(o.status):o.status==='captured'))&&times.every(t=>Number.isFinite(t)&&Math.abs(t-target)<=limit&&(!broad||londonDate(t)===w.date))&&Math.max(...times)-Math.min(...times)<=limit}
+test('53 scheduled Thursdays cover the inclusive year, retaining all 159 observations and DST',()=>{
+ assert.equal(data.weeks.length,53);assert.equal(data.weeks[0].date,'2025-10-16');assert.equal(data.weeks.at(-1).date,'2026-10-15');
+ const ids=new Set();for(let i=0;i<data.weeks.length;i++){const w=data.weeks[i];assert.equal(new Date(w.date+'T00:00:00Z').getUTCDay(),4);if(i)assert.equal(Date.parse(w.date)-Date.parse(data.weeks[i-1].date),7*86400000);assert.equal(w.observations.length,3);assert.deepEqual(w.observations.map(o=>o.outletId).sort(),['bbc','channel4','itv']);for(const o of w.observations){assert(!ids.has(o.id));ids.add(o.id)}}assert.equal(ids.size,159);
+ for(const [date,hour] of [['2025-10-16',11],['2025-10-30',12],['2026-03-26',12],['2026-04-02',11]])assert.equal(new Date(data.weeks.find(w=>w.date===date).targetAt).getUTCHours(),hour);
+});
+test('gaps stay unknown; every reviewed capture has timestamp, provenance and complete booleans',()=>{
+ let gaps=0,captured=0;for(const w of data.weeks)for(const o of w.observations){if(o.status==='gap'){gaps++;assert.equal(o.actualAt,null);assert.equal(o.metrics,null);assert.equal(o.reviewed,false);assert(o.gapReason);assert.equal(o.poolSize,null)}else{captured++;assert.equal(o.reviewed,true);assert(Number.isFinite(Date.parse(o.actualAt)));assert.match(o.sourceSha256,/^[a-f0-9]{64}$/);assert.match(o.archiveUrl,/^https:\/\/(web.archive.org|bbc.frontpagearchive.com)\//);for(const k of fields)assert.equal(typeof o.metrics[k],'boolean');assert.equal(o.poolSize,o.mainPoolSize+o.featuredPoolSize);assert(o.poolSize>=3&&o.poolSize<=40);assert.equal(o.status==='captured',Math.abs(Date.parse(o.actualAt)-Date.parse(w.targetAt))<=7200000)}}assert.equal(gaps,7);assert.equal(captured,152);assert.equal(data.summary.gapCaptures,gaps);assert.equal(data.summary.captured,captured);
+});
+test('both comparison denominators and topic totals derive only from eligible dates',()=>{
+ for(const broad of [false,true]){const use=data.weeks.filter(w=>eligible(w,broad));assert.equal(use.length,data.summary[broad?'sameDayMatchedWeeks':'strictMatchedWeeks']);for(const w of data.weeks)assert.equal(w[broad?'sameDayMatched':'matched'],eligible(w,broad));for(const id of ['bbc','itv','channel4']){const counts=data.summary[broad?'sameDayCountsByOutlet':'countsByOutlet'][id];assert.equal(counts.denominator,use.length);for(const k of fields)assert.equal(counts[k],use.filter(w=>w.observations.find(o=>o.outletId===id).metrics[k]).length)}}
+});
+test('public examples retain source and placement and do not contradict reviewed metrics',()=>{
+ for(const w of data.weeks)for(const o of w.observations)for(const s of o.stories){assert.match(s.url,/^https?:\/\//);assert(['main','featured','lower'].includes(s.section));assert(s.headline.split(/\s+/).length<=10);assert(s.summary.split(/\s+/).length<=20);if(s.section!=='lower')for(const code of s.codes){const at=codes.indexOf(code);if(at>=0)assert.equal(o.metrics[fields[at]],true)}}
+ const c4=data.weeks.find(w=>w.date==='2025-10-23').observations.find(o=>o.outletId==='channel4');assert.equal(c4.metrics.migrationCrime,false);assert.equal(c4.metrics.migrationEnforcement,true);
+ const bbc=data.weeks.find(w=>w.date==='2026-06-04').observations.find(o=>o.outletId==='bbc');assert.equal(bbc.method,'independent-archived-screenshot');assert.equal(bbc.actualAt,'2026-06-04T11:00:00Z');
+ for(const date of ['2026-02-05','2026-04-09'])for(const id of ['bbc','itv'])assert.equal(data.weeks.find(w=>w.date===date).observations.find(o=>o.outletId===id).metrics.migrantHarm,true);
+});
+test('published HTML embeds the reviewed bundle and has no paid service calls',async()=>{const html=await readFile(new URL('./weekly.html',import.meta.url),'utf8');const embedded=JSON.parse(html.match(/const EVIDENCE = (.*);\nconst outlets/)[1]);assert.deepEqual(embedded,data);assert(!/fetch\(|api.deepseek|api.elevenlabs/.test(html));const build=await readFile(new URL('./deploy/build-edge.mjs',import.meta.url),'utf8');for(const name of ['weekly.html','weekly-evidence.json','weekly-captures.csv'])assert(build.includes("'"+name+"'"));});
