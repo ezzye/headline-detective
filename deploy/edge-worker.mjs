@@ -22,8 +22,18 @@ export default {async fetch(request,env){
  if(!['GET','HEAD'].includes(request.method))return json(405,'method_not_allowed');
  if(url.pathname==='/robots.txt')return new Response('User-agent: *\nDisallow: /\n',{headers:{...SECURITY,'content-type':'text/plain'}});
  const name=url.pathname==='/'?'index.html':url.pathname.slice(1),file=FILES[name];if(!file)return json(404,'not_found');
- const staticHeaders={...SECURITY,'content-type':file.type,'cache-control':name.startsWith('assets/host-audio/')&&/^[a-f0-9]{64}\.mp3$/.test(name.slice('assets/host-audio/'.length))?'public, max-age=31536000, immutable':name.startsWith('assets/')?'public, max-age=86400':'no-cache',...(file.etag?{etag:file.etag}:{})};
+ const staticHeaders={...SECURITY,'content-type':file.type,'cache-control':/^assets\/(host|weekly)-audio\/[a-f0-9]{64}\.mp3$/.test(name)?'public, max-age=31536000, immutable':name.startsWith('assets/')?'public, max-age=86400':'no-cache',...(file.etag?{etag:file.etag}:{})};
  if(file.etag&&request.headers.get('if-none-match')===file.etag)return new Response(null,{status:304,headers:staticHeaders});
  const bytes=file.encoding==='base64'?Uint8Array.from(atob(file.content),c=>c.charCodeAt(0)):file.content;
+ if(file.encoding==='base64'){
+  staticHeaders['accept-ranges']='bytes';staticHeaders['content-length']=String(bytes.length);
+  const range=request.headers.get('range'),ifRange=request.headers.get('if-range');
+  if(request.method==='GET'&&range&&(!ifRange||ifRange===file.etag)){
+   const match=/^bytes=(\d*)-(\d*)$/.exec(range);let start,end;
+   if(match&&(match[1]||match[2])){start=match[1]?Number(match[1]):Math.max(0,bytes.length-Number(match[2]));end=match[1]?(match[2]?Number(match[2]):bytes.length-1):bytes.length-1;}
+   if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start<0||start>=bytes.length||end<start){staticHeaders['content-range']=`bytes */${bytes.length}`;staticHeaders['content-length']='0';return new Response(null,{status:416,headers:staticHeaders})}
+   end=Math.min(end,bytes.length-1);staticHeaders['content-range']=`bytes ${start}-${end}/${bytes.length}`;staticHeaders['content-length']=String(end-start+1);return new Response(bytes.slice(start,end+1),{status:206,headers:staticHeaders});
+  }
+ }
  return new Response(request.method==='HEAD'?null:bytes,{headers:staticHeaders});
 }};

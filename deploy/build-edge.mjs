@@ -13,13 +13,13 @@ const hostManifest=JSON.parse(await readFile(path.join(hostRoot,'manifest.json')
 if(hostManifest.version!=='cfj-host-v1'||!Array.isArray(hostManifest.clips))throw Error('Invalid host audio manifest');
 const comparisonManifest=JSON.parse(await readFile(path.join(hostRoot,'comparison-manifest.json'),'utf8'));
 if(comparisonManifest.version!=='cfj-comparison-host-v1'||!Array.isArray(comparisonManifest.clips)||comparisonManifest.clips.length!==16)throw Error('Invalid comparison host audio manifest');
-async function embedAudioManifest(name, audioManifest){
- files[`assets/host-audio/${name}`]={content:JSON.stringify(audioManifest),type:'application/json'};
+async function embedAudioManifest(name, audioManifest, directory='assets/host-audio'){
+ files[`${directory}/${name}`]={content:JSON.stringify(audioManifest),type:'application/json'};
  for(const clip of audioManifest.clips){
-  if(!/^[a-f0-9]{64}$/.test(clip.digest)||clip.src!==`/assets/host-audio/${clip.digest}.mp3`||!Number.isInteger(clip.bytes)||clip.bytes<1||!/^[a-f0-9]{64}$/.test(clip.audioSha256))throw Error('Invalid host audio clip metadata');
-  const bytes=await readFile(path.join(hostRoot,`${clip.digest}.mp3`));
+  if(!/^[a-f0-9]{64}$/.test(clip.digest)||clip.src!==`/${directory}/${clip.digest}.mp3`||!Number.isInteger(clip.bytes)||clip.bytes<1||!/^[a-f0-9]{64}$/.test(clip.audioSha256))throw Error('Invalid host audio clip metadata');
+  const bytes=await readFile(path.join(ROOT,directory,`${clip.digest}.mp3`));
   if(bytes.length!==clip.bytes||createHash('sha256').update(bytes).digest('hex')!==clip.audioSha256)throw Error('Host audio clip integrity mismatch: '+clip.digest);
-  const file=`assets/host-audio/${clip.digest}.mp3`;
+  const file=`${directory}/${clip.digest}.mp3`;
   files[file]={type:'audio/mpeg',encoding:'base64',content:bytes.toString('base64'),etag:'"'+clip.audioSha256+'"'};
  }
 }
@@ -28,6 +28,13 @@ await embedAudioManifest('comparison-manifest.json',comparisonManifest);
 const welcomeManifest=JSON.parse(await readFile(path.join(hostRoot,'welcome-manifest.json'),'utf8'));
 if(welcomeManifest.version!=='cfj-host-welcome-v1'||welcomeManifest.clips?.length!==1)throw Error('Invalid welcome manifest');
 await embedAudioManifest('welcome-manifest.json',welcomeManifest);
+const weeklyManifest=JSON.parse(await readFile(path.join(ROOT,'assets/weekly-audio/manifest.json'),'utf8'));
+if(weeklyManifest.version!=='cfj-weekly-host-v1'||weeklyManifest.clips?.length!==16)throw Error('Invalid weekly host manifest');
+await embedAudioManifest('manifest.json',weeklyManifest,'assets/weekly-audio');
+for(const [name,type] of [['weekly-comparison-v1.mp4','video/mp4'],['weekly-comparison-v1.jpg','image/jpeg'],['weekly-comparison-v1.vtt','text/vtt; charset=utf-8']]){
+ const bytes=await readFile(path.join(ROOT,'assets/film',name));
+ files[`assets/film/${name}`]={type,encoding:'base64',content:bytes.toString('base64'),etag:'"'+createHash('sha256').update(bytes).digest('hex')+'"'};
+}
 const online=onlinePage(files['index.html'].content,manifest);
 for(const file of Object.values(files))if(!file.etag)file.etag='"'+createHash('sha256').update(file.content).digest('hex')+'"';
 const setup=`const embedded=JSON.parse(FILES['index.html'].content.match(/<script id="campaign-data" type="application\\/json">([\\s\\S]*?)<\\/script>/)[1]).flatMap(c=>c.images||[]);for(const [name,page] of Object.entries(${JSON.stringify(mapping)})){const im=embedded.find(x=>x.filePage===page);FILES[name]={type:im.url.split(';')[0].slice(5),encoding:'base64',content:im.url.slice(im.url.indexOf(',')+1),etag:JSON.parse(FILES['assets/media-credits.json'].content).images.find(x=>x.file===name).sha256}};FILES['offline.html']=FILES['index.html'];FILES['index.html']={type:'text/html; charset=utf-8',content:${JSON.stringify(online)},etag:${JSON.stringify('"'+createHash('sha256').update(online).digest('hex')+'"')}};\n`;

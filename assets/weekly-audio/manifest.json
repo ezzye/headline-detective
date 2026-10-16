@@ -1,0 +1,150 @@
+{
+  "version": "cfj-weekly-host-v1",
+  "profile": {
+    "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
+    "model": "eleven_v3",
+    "format": "mp3_44100_64",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "use_speaker_boost": true
+    },
+    "direction": {
+      "question": "[curious]",
+      "feedback": "[thoughtful]",
+      "intro": "[warmly]",
+      "outro": "[thoughtful]",
+      "film": "[warmly]"
+    }
+  },
+  "clips": [
+    {
+      "id": "intro",
+      "text": "Let’s look carefully at what a year of headline snapshots can tell us. You can answer, reveal an answer, or skip any question. The aim is to notice what the evidence supports and where it runs out.",
+      "digest": "ef5dc7fb15957b120a13d650e62488592e2c0db428d97c45de7c016b42a454e0",
+      "src": "/assets/weekly-audio/ef5dc7fb15957b120a13d650e62488592e2c0db428d97c45de7c016b42a454e0.mp3",
+      "audioSha256": "1c00c58e0eead6a5fbd5d9134715b4afa08d1ccbdc6e1f66dd607404841a8f81",
+      "bytes": 104323
+    },
+    {
+      "id": "question-matched-pattern",
+      "text": "In the 32 strictly matched weeks, migration-topic cards appeared on 15 BBC dates, 11 ITV dates and 5 Channel 4 dates. Reform conduct scrutiny appeared on 1, 2 and 5 dates respectively. What is the fairest reading? Option 1: These figures describe the whole year and show each outlet’s overall political position.. Option 2: They describe different patterns in this matched sample; they do not establish a full-year trend or political position.. Option 3: They are totals of all the individual stories published by each outlet.",
+      "digest": "f6651289cdc71fe233792dd72b6bacfc634f26566ff1efe5b0ebc6532ff1d22b",
+      "src": "/assets/weekly-audio/f6651289cdc71fe233792dd72b6bacfc634f26566ff1efe5b0ebc6532ff1d22b.mp3",
+      "audioSha256": "43b5ad0163789c620479ed9b9d25537052670615b265539c4c579fa454212096",
+      "bytes": 349456
+    },
+    {
+      "id": "feedback-matched-pattern",
+      "text": "The answer is: They describe different patterns in this matched sample; they do not establish a full-year trend or political position. Each figure counts dates with at least one qualifying card, not stories. The strict pool has 32 matched weeks, not all 53 scheduled weeks. Channel 4’s primary pool includes its Featured sidebar; lower-page items are excluded. These counts describe this sample, not a full-year trend or an outlet’s political position.",
+      "digest": "4dcfcd3bf80dbb388021224adf0afea9baccd361efc8e785977f7b69499eed75",
+      "src": "/assets/weekly-audio/4dcfcd3bf80dbb388021224adf0afea9baccd361efc8e785977f7b69499eed75.mp3",
+      "audioSha256": "7ddc3561d94387964ae1eb35df7294ce4db7129bd470b05edef780517a007c84",
+      "bytes": 278403
+    },
+    {
+      "id": "question-gaps-and-window",
+      "text": "Seven planned captures are missing. The strict comparison has 32 of 53 weeks; a broader same-day check has 40. What should you conclude about the missing weeks? Option 1: Treat them as weeks with zero relevant stories.. Option 2: Use the 40-week check as an equivalent replacement for the strict comparison.. Option 3: Their contents are unknown; the broader check includes more captures but allows headlines to differ by capture time.",
+      "digest": "92c5eb91b1215ef4ee6341f74ea9fa4e057dff671710469d72e2c8370c3151e3",
+      "src": "/assets/weekly-audio/92c5eb91b1215ef4ee6341f74ea9fa4e057dff671710469d72e2c8370c3151e3.mp3",
+      "audioSha256": "1371a5b6524e9e04671ed09301804e740e6b0d1592f06dc140fa586fa37eb284",
+      "bytes": 276940
+    },
+    {
+      "id": "feedback-gaps-and-window",
+      "text": "The answer is: Their contents are unknown; the broader check includes more captures but allows headlines to differ by capture time. A missing capture cannot show that no relevant item appeared. The strict rule yields 32 matched weeks, not 53. The 40-week same-day check is broader and less comparable: all sources are from the same London date, but headlines may change between capture times.",
+      "digest": "d1fc421b418f84004455d7bcf27a7484cc88141455d53fea7f64f3991f7a740d",
+      "src": "/assets/weekly-audio/d1fc421b418f84004455d7bcf27a7484cc88141455d53fea7f64f3991f7a740d.mp3",
+      "audioSha256": "2c9159cee6249c8b4b694c0065c96bd1708de182d150f7ed1d446cb8d2a8a5e4",
+      "bytes": 235980
+    },
+    {
+      "id": "question-topic-and-framing",
+      "text": "A sampled headline concerns a migration-related crime allegation. What does the topic code establish by itself? Option 1: That the headline uses a hostile frame toward migrants.. Option 2: That migrants as a group are responsible for crime.. Option 3: That this sampled card covered a migration and crime topic; its framing needs separate review.",
+      "digest": "ef270c13bf172d41308b824add7f2168f6f18f84d088078c100105e09f062caa",
+      "src": "/assets/weekly-audio/ef270c13bf172d41308b824add7f2168f6f18f84d088078c100105e09f062caa.mp3",
+      "audioSha256": "307ce03f7dfec66530e8ec81c2536c3b12c007e2fdcdf8c6ff2f5e17bf014078",
+      "bytes": 211112
+    },
+    {
+      "id": "feedback-topic-and-framing",
+      "text": "The answer is: That this sampled card covered a migration and crime topic; its framing needs separate review. A topic code describes what a sampled card is about. It does not establish whether the headline is hostile, what evidence supports its claims, or whether an allegation is true. Those questions need a separate look at the wording and source material.",
+      "digest": "cbca3e4b1cf279ba4334c80ad35891bcd78a3360cfa183e6901c9ac7658af5de",
+      "src": "/assets/weekly-audio/cbca3e4b1cf279ba4334c80ad35891bcd78a3360cfa183e6901c9ac7658af5de.mp3",
+      "audioSha256": "e666b54718274e912d56f40eead07cc481008a9b525cc97ecec5833a7c4b145b",
+      "bytes": 204634
+    },
+    {
+      "id": "question-follow-up-window",
+      "text": "ITV first published its investigation on 14 October 2026. The study ends on 15 October, the next scheduled observation. Is there enough evidence here to say the investigation changed later coverage? Option 1: Yes. A next-day observation is enough to show a lasting change.. Option 2: No. There are not yet later post-investigation weeks to compare.. Option 3: Yes. Coverage captured earlier in summer supplies the missing later weeks.",
+      "digest": "db1b84f07a868798df6361f18e188fb738dd8c57b765e4a77006bf62158f7b90",
+      "src": "/assets/weekly-audio/db1b84f07a868798df6361f18e188fb738dd8c57b765e4a77006bf62158f7b90.mp3",
+      "audioSha256": "060d7a534044cc7467e8f63e89d4faca54a3ac880eb3b5aff043c1c1dcd67ae8",
+      "bytes": 307660
+    },
+    {
+      "id": "feedback-follow-up-window",
+      "text": "The answer is: No. There are not yet later post-investigation weeks to compare. The study contains only the following day’s scheduled observation after publication, not later post-investigation weeks. Earlier summer observations cannot stand in for future weeks. We would need separately dated follow-up captures and a suitable comparison window before judging change.",
+      "digest": "9f9ce747e95e83e51a88d5aa86dc0470ff602f4633c3adc4252d37637c7434d9",
+      "src": "/assets/weekly-audio/9f9ce747e95e83e51a88d5aa86dc0470ff602f4633c3adc4252d37637c7434d9.mp3",
+      "audioSha256": "6db461e5f99d9879904803bf7133a85a2dae3ab36e423d858e60517c099f3f51",
+      "bytes": 215500
+    },
+    {
+      "id": "outro",
+      "text": "You have reached the end. A careful conclusion can still matter even when it is limited. Keep the sample, the gaps and the wording in view, and stay open to new evidence. Am I comparing the same period and the same kind of sample? Am I separating a story’s topic from the way it frames people? What evidence would change my mind? What public-interest facts are present, and whose experience might these captures miss?",
+      "digest": "a47a12a1998f10f6fa51227276a075b653c187ad2fb3111a8366b6d27005697a",
+      "src": "/assets/weekly-audio/a47a12a1998f10f6fa51227276a075b653c187ad2fb3111a8366b6d27005697a.mp3",
+      "audioSha256": "705294f43aac0aa2c232f7c7d412bc9dfe3a35e1dc89682cba0f9296aa32d551",
+      "bytes": 232846
+    },
+    {
+      "id": "film-1",
+      "text": "What do news homepages keep putting in front of us? Let's test that impression against the archived record.",
+      "digest": "b32bfadd8f9f0c472854322b718db519f00d667a9f026228b0472da987bef9f2",
+      "src": "/assets/weekly-audio/b32bfadd8f9f0c472854322b718db519f00d667a9f026228b0472da987bef9f2.mp3",
+      "audioSha256": "57f42ff3499c742237ccda7b72b4009ddf5751109f717a71dc8fb58d583f6ebb",
+      "bytes": 59393
+    },
+    {
+      "id": "film-2",
+      "text": "We sought one Thursday snapshot per outlet, each week for a year. Only thirty-two weeks gave us three reviewed pages close enough in time for the strict comparison.",
+      "digest": "d30aed7e002d5e311cc4e6554e4aadc1154039342d43917f2a233f62896e6844",
+      "src": "/assets/weekly-audio/d30aed7e002d5e311cc4e6554e4aadc1154039342d43917f2a233f62896e6844.mp3",
+      "audioSha256": "615ce2fa591e6a27947d7bb8823f628da8fe5225d424969159830296692c26f9",
+      "bytes": 99726
+    },
+    {
+      "id": "film-3",
+      "text": "Within those thirty-two weeks, migration appeared on fifteen BBC dates, eleven ITV dates, and five Channel Four dates.",
+      "digest": "6c4785af8a3f382afe46a4bd14172ff961e0c9f8b8fb2b64a971836a731f98a1",
+      "src": "/assets/weekly-audio/6c4785af8a3f382afe46a4bd14172ff961e0c9f8b8fb2b64a971836a731f98a1.mp3",
+      "audioSha256": "cc53cd536e3945a4167389d198387c62736e18dc0af20e2657bc126c6cc1c0f8",
+      "bytes": 77992
+    },
+    {
+      "id": "film-4",
+      "text": "Reform conduct scrutiny appeared on one BBC date, two ITV dates, and five Channel Four dates. These count dates with an item, not the number of articles.",
+      "digest": "560ce70608ad3e866a57a4592b4a6a36e883ff088697c49a7a29fab36dd0fc38",
+      "src": "/assets/weekly-audio/560ce70608ad3e866a57a4592b4a6a36e883ff088697c49a7a29fab36dd0fc38.mp3",
+      "audioSha256": "7c5c5b077ec063c52211cbc4143d950dc48fb785a99eb7ce2258223bf3245651",
+      "bytes": 97845
+    },
+    {
+      "id": "film-5",
+      "text": "The pattern is worth examining. But a migration story is not automatically hostile. The homepage areas differ, and missing captures are unknown. These snapshots cannot prove annual coverage or bias.",
+      "digest": "4041e9a1bed0b1ea92e9d92a54680133c17684a59dd4061a7709d81a66e3addd",
+      "src": "/assets/weekly-audio/4041e9a1bed0b1ea92e9d92a54680133c17684a59dd4061a7709d81a66e3addd.mp3",
+      "audioSha256": "49fdff45086510e8dc4f5081aa017ee214d8974c03d4d932d56a9af969137e2c",
+      "bytes": 126057
+    },
+    {
+      "id": "film-6",
+      "text": "Ask yourself: am I judging the evidence, or confirming an impression? What would change my mind? Play the short comparison challenge and examine the gaps.",
+      "digest": "af461e4bb4084563efaaf769fe6247cda38d3be7da5d15b11636e510e6000fff",
+      "src": "/assets/weekly-audio/af461e4bb4084563efaaf769fe6247cda38d3be7da5d15b11636e510e6000fff.mp3",
+      "audioSha256": "e682552bee6d6e3bbeb40bbf08ec43b43bdc09bd353507da4329650b51b15cc0",
+      "bytes": 85097
+    }
+  ]
+}
