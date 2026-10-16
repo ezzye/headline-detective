@@ -1,0 +1,130 @@
+{
+  "version": "cfj-agenda-v1",
+  "asOf": "16 October 2026, 14:38 BST",
+  "summary": "ITV published the footage; BBC and Channel 4 reported on its investigation. Today’s pages give it different positions. We cannot yet establish a recurring preference for negative immigration stories or a change after ITV’s investigation: matched historical homepage captures are missing.",
+  "publications": [
+    {
+      "date": "6 October 2026",
+      "outlet": "BBC News",
+      "headline": "Three arrested after raid on gang accused of helping migrants pretend to be gay to get asylum",
+      "url": "https://www.bbc.co.uk/news/articles/cmp3gnd1e4gyo",
+      "type": "Before window · immigration / suspected fraud",
+      "detail": "BBC reporters accompanied an enforcement operation and linked it to earlier BBC undercover reporting. This is a concrete crime-and-asylum example, not a sample of all migration coverage. Its historical homepage position is unknown.",
+      "response": "The report describes suspected offences and arrests, not convictions. It includes earlier denials by an adviser and an LGBT group. Do not generalise these allegations to migrants as a group."
+    },
+    {
+      "date": "14 October 2026, 18:17 BST",
+      "outlet": "ITV News / Exposure",
+      "headline": "Inside Reform: Councillors and candidates' extreme and racist views on camera",
+      "url": "https://www.itv.com/news/2026-10-14/inside-reform-councillors-extreme-and-racist-views-on-camera",
+      "type": "New public evidence · original investigation",
+      "detail": "Covert recordings gathered over a year were released to the public. The age of the reporting work does not make newly disclosed material old news. This page reports candidate and councillor remarks; later reactions are separate developments.",
+      "response": "Reform said it had begun investigations, used suspensions and respected due process. Individuals were approached for comment. Recorded remarks and disputed claims must be distinguished from legal findings."
+    },
+    {
+      "date": "14 October 2026 · updated 15 October",
+      "outlet": "BBC News",
+      "headline": "Reform faces criticism after councillors filmed making racist comments",
+      "url": "https://www.bbc.co.uk/news/articles/cw3dj458re1vo",
+      "type": "Same-day reporting · ITV evidence attributed",
+      "detail": "BBC reported the ITV footage on the date ITV first published it. The BBC article says the filmed sample involved eight party figures but that it did not know how many ITV spoke to overall. That denominator matters when judging representativeness.",
+      "response": "BBC carries Reform’s rejection of racism, account of disciplinary action and improved vetting, alongside reported criticism. Publication proves reporting occurred; it does not establish homepage rank."
+    },
+    {
+      "date": "14 October 2026",
+      "outlet": "Channel 4 News",
+      "headline": "Deeply racist views discussed by Reform UK councillors in undercover footage",
+      "url": "https://www.channel4.com/news/deeply-racist-views-discussed-by-reform-uk-councillors-in-undercover-footage",
+      "type": "Follow-up report · ITV evidence attributed",
+      "detail": "Channel 4’s page identifies the footage as ITV Exposure’s work. It is another publisher’s report of the same evidence, rather than a second independent undercover discovery.",
+      "response": "The short page text does not provide a full response transcript. This audit did not transcribe its video, so it cannot assess everything said on air."
+    },
+    {
+      "date": "15 October 2026, 18:29 BST",
+      "outlet": "ITV News / Exposure",
+      "headline": "Reform officials admit they 'defend the indefensible' after allegations against party figures",
+      "url": "https://www.itv.com/news/2026-10-15/reform-officials-admit-they-defend-the-indefensible-amid-racism-claims",
+      "type": "Further new recordings · same investigation",
+      "detail": "ITV published material from undercover access to the party’s press office, adding evidence about internal responses and vetting. Assess that addition separately from repetition of the first day’s clips. Headline is the version inspected on 16 October; the URL retains earlier wording.",
+      "response": "These are recordings and allegations, not a court determination. The wider series includes the party’s objection to deceptive methods and its stated disciplinary response."
+    },
+    {
+      "date": "16 October 2026, 00:52 BST · subsequently updated",
+      "outlet": "BBC News",
+      "headline": "Reform faces questions over candidate vetting after undercover filming",
+      "url": "https://www.bbc.co.uk/news/articles/cqm26yr42ezko",
+      "type": "Follow-up and direct response · ITV footage",
+      "detail": "BBC attributes the filming to ITV and adds responses, including Robert Jenrick on Today. The displayed BBC publication date was checked directly; an indexed copy had placed it on the preceding date.",
+      "response": "Reform disputes a former candidate’s account of failing vetting, says procedures improved, and objects to ITV’s methods. Jenrick says problems are not more prevalent in Reform than other parties."
+    },
+    {
+      "date": "Context outside the October window · 30 April 2026",
+      "outlet": "BBC News",
+      "headline": "Elections watchdog considers looking into £5m gift to Farage",
+      "url": "https://www.bbc.co.uk/news/articles/c62xg40w4ero",
+      "type": "Earlier scrutiny · documentary reporting",
+      "detail": "The BBC report says it saw correspondence to the Electoral Commission about the gift. This counters a broad claim that the BBC never scrutinises Reform, but says nothing about the October homepage balance. Direct access was limited in the research pass; its article record was recovered from indexing.",
+      "response": "Reform described the gift as personal and unconditional. A regulator considering a matter is not a finding of wrongdoing."
+    }
+  ],
+  "observations": [
+    {
+      "outlet": "BBC News",
+      "capturedAt": "16 Oct 2026 · 13:37:34 UTC",
+      "edition": "UK top stories explicitly selected; existing signed-in Chrome session",
+      "viewport": "1728 × 906 desktop",
+      "leadCount": 12,
+      "reformLead": 0,
+      "immigrationLead": 0,
+      "pool": "Initial UK news card group",
+      "note": "Reform appeared in the lower video playlist, outside these 12 cards. Neither topic appeared in this lead group. A nationality mentioned in a crime headline was not coded as an immigration story. This is not evidence about the rest of the day.",
+      "url": "https://www.bbc.co.uk/news",
+      "sourceKind": "live source; page can change",
+      "captureSha256": "b060c1330daa9a0582ae93bda1e7a2e434f2a57879464cab39c03c3c00df5962"
+    },
+    {
+      "outlet": "ITV News",
+      "capturedAt": "16 Oct 2026 · 13:38:01 UTC",
+      "edition": "National News; no local area chosen",
+      "viewport": "1728 × 906 desktop",
+      "leadCount": 7,
+      "reformLead": 2,
+      "immigrationLead": 0,
+      "pool": "Top Stories section",
+      "note": "Two Reform cards occupied positions 2 and 3: the investigation and a response. The same material also appeared in lower sections; it is not counted again here. These are placements, not a two-story independent evidence count.",
+      "url": "https://www.itv.com/news",
+      "sourceKind": "live source; page can change",
+      "captureSha256": "ba31cdb1533ab3af5687eebeda2fd8321a7cd56af3596fc7067a01150cd351d5"
+    },
+    {
+      "outlet": "Channel 4 News",
+      "capturedAt": "16 Oct 2026 · 13:38:01 UTC",
+      "edition": "News homepage, Latest and Featured columns",
+      "viewport": "1728 × 906 desktop",
+      "leadCount": 11,
+      "reformLead": 0,
+      "immigrationLead": 0,
+      "pool": "Top stories in Latest column only",
+      "note": "Important: a Reform donations investigation was visible in the Featured side column on the first screen. It is outside the 11-card main column count. The new ITV footage report was listed further down under Latest news. Zero in this narrow pool does not mean low overall prominence or no reporting.",
+      "url": "https://www.channel4.com/news/",
+      "sourceKind": "live source; page can change",
+      "captureSha256": "786eb340071b4bf25ab2d2025313f637937a8a45a764ff9fa7e22e2794717fed"
+    }
+  ],
+  "archive": {
+    "before": null,
+    "after": null,
+    "status": "Historical change unknown",
+    "detail": "Target comparison: 7–13 October versus 14–16 October 2026; the latter period is ongoing and shorter. No matched historical capture series was recovered for all three outlets. A Ghostarchive listing identifies a BBC.com/news capture on 7 October at 15:42:33 UTC, but its content and UK edition could not be verified. Wayback’s index returned an access error. These failures do not establish that no captures or coverage exist. Today’s observations above are separate from a historical series."
+  },
+  "method": {
+    "unit": "A story card at a specified homepage position, not an article publication, tweet, broadcast or page view.",
+    "futureProtocol": "Use the same UK edition and device, with fixed times across equal completed windows. Define first-screen visibility and a fixed top-card set in advance; code sidebars separately. Record every topic and all news slots, including stories that contradict the hypothesis. Repeat observations to estimate time in position. Retain screenshots and original/updated wording.",
+    "framing": "Code immigration policy, asylum, crime allegations, economic contributions and migrant experience separately. Record who makes each claim, whether it is challenged and who gets to speak. A negative event is not automatically hostile framing. Race or nationality does not establish migration status.",
+    "proportionality": "Ask what new evidence or public-interest development each follow-up adds, how often claims repeat, who holds power and who bears harm. Equal numbers of stories are not a fairness rule. Genuine public-interest reporting can still warrant scrutiny of cumulative framing and selection.",
+    "independence": "ITN produces ITV News and Channel 4 News; these are distinct news services, not three independent comparators. ITV’s own investigation may receive extra promotion on ITV. Its duration alone does not prove a pile-on.",
+    "itnSource": "https://www.channel4.com/press/news/channel-4-renews-itn-contract-channel-4-news-until-end-2026",
+    "intent": "The public record does not explain BBC commissioning choices. Do not infer private motives, protection of a party or deliberate concealment from this sample.",
+    "codingBasis": "Current cards were coded from their displayed headlines and standfirsts, not a full-text sentiment census. No migration policy or asylum subject was identified in these lead pools. Do not infer immigration status or group framing from nationality in a crime headline."
+  }
+}
