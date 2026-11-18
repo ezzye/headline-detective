@@ -236,7 +236,7 @@ export function createGameServer({ port = Number(process.env.PORT || 9027), host
         const bytes=await readFile(path.join(HERE,asset.file));if(bytes.length>4*1024*1024)return json(res,503,{error:'asset_unavailable'});
         const type=pathname.endsWith('.png')?'image/png':pathname.endsWith('.webp')?'image/webp':'image/jpeg';res.writeHead(200,{'content-type':type,'cache-control':'public, max-age=3600','x-content-type-options':'nosniff'});return res.end(bytes);
       }
-      if (['GET','HEAD'].includes(req.method) && ['/weekly-evidence.json','/weekly-captures.csv'].includes(pathname)) {
+      if (['GET','HEAD'].includes(req.method) && ['/weekly-evidence.json','/since-october.json','/weekly-captures.csv'].includes(pathname)) {
         const bytes=await readFile(path.join(HERE,pathname.slice(1)));
         res.writeHead(200,{'content-type':pathname.endsWith('.json')?'application/json; charset=utf-8':'text/csv; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'});
         return res.end(req.method==='HEAD'?undefined:bytes);

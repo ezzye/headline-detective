@@ -1,0 +1,663 @@
+{
+  "version": "cfj-since-october-v1",
+  "coverage": {
+    "startDate": "2026-10-16",
+    "endDate": "2026-11-18",
+    "firstMatched": "2026-10-16T18:00:00+01:00",
+    "lastMatched": "2026-11-18T12:00:00+00:00",
+    "asOf": "2026-11-18T12:04:02+00:00",
+    "timezone": "Europe/London",
+    "scheduledTimes": [
+      "08:00",
+      "12:00",
+      "18:00",
+      "22:00"
+    ],
+    "scheduledSlots": 132,
+    "matchedSlots": 111,
+    "missingSlots": 4,
+    "excludedSlots": 17,
+    "partialSlots": 13,
+    "failedSlots": 4,
+    "unscheduledRuns": 5,
+    "duplicateRuns": 0,
+    "gaps": [
+      {
+        "slot": "2026-10-16T22:00:00+01:00",
+        "reason": "partialVisibility",
+        "outlets": [
+          "bbc",
+          "itv",
+          "channel4"
+        ]
+      },
+      {
+        "slot": "2026-10-17T08:00:00+01:00",
+        "reason": "missing",
+        "outlets": [
+          "bbc",
+          "itv",
+          "channel4"
+        ]
+      },
+      {
+        "slot": "2026-10-17T12:00:00+01:00",
+        "reason": "partialVisibility",
+        "outlets": [
+          "bbc",
+          "itv",
+          "channel4"
+        ]
+      },
+      {
+        "slot": "2026-10-17T18:00:00+01:00",
+        "reason": "partialVisibility",
+        "outlets": [
+          "bbc",
+          "itv",
+          "channel4"
+        ]
+      },
+      {
+        "slot": "2026-10-17T22:00:00+01:00",
+        "reason": "partialVisibility",
+        "outlets": [
+          "bbc",
+          "itv",
+          "channel4"
+        ]
+      },
+      {
+        "slot": "2026-10-18T08:00:00+01:00",
+        "reason": "failed",
+        "outlets": [
+          "bbc",
+          "itv",
+          "channel4"
+        ]
+      },
+      {
+        "slot": "2026-10-18T18:00:00+01:00",
+        "reason": "failed",
+        "outlets": [
+          "bbc",
+          "itv",
+          "channel4"
+        ]
+      },
+      {
+        "slot": "2026-10-28T12:00:00+00:00",
+        "reason": "partialLayout",
+        "outlets": [
+          "bbc"
+        ]
+      },
+      {
+        "slot": "2026-10-28T18:00:00+00:00",
+        "reason": "partialLayout",
+        "outlets": [
+          "bbc"
+        ]
+      },
+      {
+        "slot": "2026-10-28T22:00:00+00:00",
+        "reason": "partialLayout",
+        "outlets": [
+          "bbc"
+        ]
+      },
+      {
+        "slot": "2026-10-29T08:00:00+00:00",
+        "reason": "missing",
+        "outlets": [
+          "bbc",
+          "itv",
+          "channel4"
+        ]
+      },
+      {
+        "slot": "2026-10-30T22:00:00+00:00",
+        "reason": "partialViewport",
+        "outlets": [
+          "itv"
+        ]
+      },
+      {
+        "slot": "2026-10-31T08:00:00+00:00",
+        "reason": "failed",
+        "outlets": [
+          "bbc",
+          "itv",
+          "channel4"
+        ]
+      },
+      {
+        "slot": "2026-11-03T18:00:00+00:00",
+        "reason": "failed",
+        "outlets": [
+          "bbc",
+          "itv",
+          "channel4"
+        ]
+      },
+      {
+        "slot": "2026-11-04T08:00:00+00:00",
+        "reason": "partialLayout",
+        "outlets": [
+          "bbc"
+        ]
+      },
+      {
+        "slot": "2026-11-04T12:00:00+00:00",
+        "reason": "partialLayout",
+        "outlets": [
+          "bbc"
+        ]
+      },
+      {
+        "slot": "2026-11-04T18:00:00+00:00",
+        "reason": "partialLayout",
+        "outlets": [
+          "bbc"
+        ]
+      },
+      {
+        "slot": "2026-11-04T22:00:00+00:00",
+        "reason": "partialLayout",
+        "outlets": [
+          "bbc"
+        ]
+      },
+      {
+        "slot": "2026-11-07T18:00:00+00:00",
+        "reason": "partialViewport",
+        "outlets": [
+          "itv"
+        ]
+      },
+      {
+        "slot": "2026-11-09T08:00:00+00:00",
+        "reason": "missing",
+        "outlets": [
+          "bbc",
+          "itv",
+          "channel4"
+        ]
+      },
+      {
+        "slot": "2026-11-15T08:00:00+00:00",
+        "reason": "missing",
+        "outlets": [
+          "bbc",
+          "itv",
+          "channel4"
+        ]
+      }
+    ]
+  },
+  "outlets": {
+    "bbc": {
+      "name": "BBC News",
+      "observations": 111,
+      "sectionObservations": {
+        "lead": 111,
+        "featured": 0,
+        "video": 111
+      },
+      "sectionUnknownVisibility": {
+        "lead": 0,
+        "featured": 0,
+        "video": 0
+      },
+      "immigrationUnknownJurisdiction": 8,
+      "topics": {
+        "immigration": {
+          "all": {
+            "min": 37,
+            "max": 43
+          },
+          "firstScreen": {
+            "min": 28,
+            "max": 29
+          },
+          "sections": {
+            "lead": {
+              "all": {
+                "min": 28,
+                "max": 29
+              },
+              "firstScreen": {
+                "min": 28,
+                "max": 29
+              }
+            },
+            "featured": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            },
+            "video": {
+              "all": {
+                "min": 11,
+                "max": 16
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          },
+          "uncertainTopicChecks": 7,
+          "unknownVisibilityChecks": 0
+        },
+        "immigrationUK": {
+          "all": {
+            "min": 22,
+            "max": 28
+          },
+          "firstScreen": {
+            "min": 22,
+            "max": 23
+          },
+          "sections": {
+            "lead": {
+              "all": {
+                "min": 22,
+                "max": 23
+              },
+              "firstScreen": {
+                "min": 22,
+                "max": 23
+              }
+            },
+            "featured": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            },
+            "video": {
+              "all": {
+                "min": 0,
+                "max": 5
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          },
+          "uncertainTopicChecks": 6,
+          "unknownVisibilityChecks": 0
+        },
+        "reform": {
+          "all": {
+            "min": 16,
+            "max": 16
+          },
+          "firstScreen": {
+            "min": 4,
+            "max": 4
+          },
+          "sections": {
+            "lead": {
+              "all": {
+                "min": 4,
+                "max": 4
+              },
+              "firstScreen": {
+                "min": 4,
+                "max": 4
+              }
+            },
+            "featured": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            },
+            "video": {
+              "all": {
+                "min": 12,
+                "max": 12
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          },
+          "uncertainTopicChecks": 0,
+          "unknownVisibilityChecks": 0
+        }
+      }
+    },
+    "itv": {
+      "name": "ITV News",
+      "observations": 111,
+      "sectionObservations": {
+        "lead": 111,
+        "featured": 0,
+        "video": 0
+      },
+      "sectionUnknownVisibility": {
+        "lead": 0,
+        "featured": 0,
+        "video": 0
+      },
+      "immigrationUnknownJurisdiction": 0,
+      "topics": {
+        "immigration": {
+          "all": {
+            "min": 27,
+            "max": 30
+          },
+          "firstScreen": {
+            "min": 20,
+            "max": 22
+          },
+          "sections": {
+            "lead": {
+              "all": {
+                "min": 27,
+                "max": 30
+              },
+              "firstScreen": {
+                "min": 20,
+                "max": 22
+              }
+            },
+            "featured": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            },
+            "video": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          },
+          "uncertainTopicChecks": 3,
+          "unknownVisibilityChecks": 0
+        },
+        "immigrationUK": {
+          "all": {
+            "min": 25,
+            "max": 28
+          },
+          "firstScreen": {
+            "min": 20,
+            "max": 22
+          },
+          "sections": {
+            "lead": {
+              "all": {
+                "min": 25,
+                "max": 28
+              },
+              "firstScreen": {
+                "min": 20,
+                "max": 22
+              }
+            },
+            "featured": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            },
+            "video": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          },
+          "uncertainTopicChecks": 3,
+          "unknownVisibilityChecks": 0
+        },
+        "reform": {
+          "all": {
+            "min": 8,
+            "max": 8
+          },
+          "firstScreen": {
+            "min": 5,
+            "max": 5
+          },
+          "sections": {
+            "lead": {
+              "all": {
+                "min": 8,
+                "max": 8
+              },
+              "firstScreen": {
+                "min": 5,
+                "max": 5
+              }
+            },
+            "featured": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            },
+            "video": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          },
+          "uncertainTopicChecks": 0,
+          "unknownVisibilityChecks": 0
+        }
+      }
+    },
+    "channel4": {
+      "name": "Channel 4 News",
+      "observations": 111,
+      "sectionObservations": {
+        "lead": 111,
+        "featured": 111,
+        "video": 0
+      },
+      "sectionUnknownVisibility": {
+        "lead": 15,
+        "featured": 0,
+        "video": 0
+      },
+      "immigrationUnknownJurisdiction": 0,
+      "topics": {
+        "immigration": {
+          "all": {
+            "min": 22,
+            "max": 30
+          },
+          "firstScreen": {
+            "min": 7,
+            "max": 15
+          },
+          "sections": {
+            "lead": {
+              "all": {
+                "min": 22,
+                "max": 30
+              },
+              "firstScreen": {
+                "min": 7,
+                "max": 15
+              }
+            },
+            "featured": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            },
+            "video": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          },
+          "uncertainTopicChecks": 12,
+          "unknownVisibilityChecks": 3
+        },
+        "immigrationUK": {
+          "all": {
+            "min": 15,
+            "max": 19
+          },
+          "firstScreen": {
+            "min": 7,
+            "max": 11
+          },
+          "sections": {
+            "lead": {
+              "all": {
+                "min": 15,
+                "max": 19
+              },
+              "firstScreen": {
+                "min": 7,
+                "max": 11
+              }
+            },
+            "featured": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            },
+            "video": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          },
+          "uncertainTopicChecks": 4,
+          "unknownVisibilityChecks": 0
+        },
+        "reform": {
+          "all": {
+            "min": 111,
+            "max": 111
+          },
+          "firstScreen": {
+            "min": 111,
+            "max": 111
+          },
+          "sections": {
+            "lead": {
+              "all": {
+                "min": 4,
+                "max": 4
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            },
+            "featured": {
+              "all": {
+                "min": 111,
+                "max": 111
+              },
+              "firstScreen": {
+                "min": 111,
+                "max": 111
+              }
+            },
+            "video": {
+              "all": {
+                "min": 0,
+                "max": 0
+              },
+              "firstScreen": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          },
+          "uncertainTopicChecks": 0,
+          "unknownVisibilityChecks": 0
+        }
+      }
+    }
+  },
+  "recurringFeatured": {
+    "outlet": "Channel 4 News",
+    "topic": "Reform UK",
+    "title": "Farage undercover investigation",
+    "appearances": 111,
+    "firstScreenAppearances": 111
+  },
+  "methodology": [
+    "Only scheduled slots with comparable captures of all three UK homepages are counted. Completed captures are included through the cut-off, even if the 45-minute grace period is still open.",
+    "The unit is a check with at least one qualifying card in the recorded lead group, featured column or video playlists. Several qualifying cards still count once overall. Section counts can overlap. The same story can count again at another check.",
+    "First screen means a qualifying card was fully or partly visible at the initial 1,728 × 906 desktop viewport. These checks are a subset of the checks with a card anywhere in the monitored sections.",
+    "Immigration includes explicit human migration, asylum, visa policy and lived experience across geographies. The UK-linked subset requires evidence of a UK policy or migration connection. Reform covers Reform UK and people identified through their role with the party.",
+    "The lower number counts confirmed checks. The upper number also allows plausible unresolved topics and, for the first screen, cards whose visibility is unknown. Cases without evidence of a UK connection stay outside the UK-linked range.",
+    "The recorded lead, featured and video sections differ by outlet. Coverage is limited to these sections and the desktop sessions archived, where personalisation was possible.",
+    "Readership, continuous exposure, editorial intent and bias require separate evidence. Framing was outside the scope of this count."
+  ]
+}
