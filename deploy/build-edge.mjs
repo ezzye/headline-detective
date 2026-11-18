@@ -33,7 +33,7 @@ await embedAudioManifest('welcome-manifest.json',welcomeManifest);
 const weeklyManifest=JSON.parse(await readFile(path.join(ROOT,'assets/weekly-audio/manifest.json'),'utf8'));
 if(weeklyManifest.version!=='cfj-weekly-host-v1'||weeklyManifest.clips?.length!==16)throw Error('Invalid weekly host manifest');
 await embedAudioManifest('manifest.json',weeklyManifest,'assets/weekly-audio');
-for(const [name,type] of [['weekly-comparison-v1.mp4','video/mp4'],['weekly-comparison-v1.jpg','image/jpeg'],['weekly-comparison-v1.vtt','text/vtt; charset=utf-8']]){
+for(const [name,type] of [...['v1','v2'].flatMap(version=>[['mp4','video/mp4'],['jpg','image/jpeg'],['vtt','text/vtt; charset=utf-8']].map(([ext,type])=>[`weekly-comparison-${version}.${ext}`,type]))]){
  const bytes=await readFile(path.join(ROOT,'assets/film',name));
  files[`assets/film/${name}`]={type,encoding:'base64',content:bytes.toString('base64'),etag:'"'+createHash('sha256').update(bytes).digest('hex')+'"'};
 }
