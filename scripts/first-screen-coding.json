@@ -1,0 +1,115 @@
+{
+  "cutoff": "2026-11-18T12:04:02.190Z",
+  "matchedChecks": 111,
+  "method": [
+    "An explicit negative portrayal disparages migrants or asylum seekers, or says they committed or enabled wrongdoing, posed a danger or imposed a burden. This includes attributed claims. The broader reading also includes wording that links them to illegality or deception while leaving their part unclear.",
+    "An explicit Reform case identifies alleged improper conduct by the party or someone identified with it, including a denial, a disclosure inquiry or reported discriminatory remarks. The broader reading also includes investigative wording that raises a concrete suspicion without spelling out a breach, or a dispute where the alleged actor is unclear.",
+    "Policy changes, the cost of a government decision, harm suffered by migrants, and mere party disagreement fall outside these definitions. A hostile statement about how migrants should be treated is identified separately when the card scrutinises the speaker. We did not infer migration status from a name or nationality.",
+    "All distinct captured headline and summary combinations on cards marked visible or possibly visible were screened, including cards originally tagged as other topics. Each wording change was reviewed separately. A missing summary was left empty. The linked examples paraphrase what appeared on the homepage at the time; linked articles may subsequently have changed.",
+    "One check can count for both measures. Repetitions within the same outlet and check count once. An uncertain first-screen position could enter only the broader reading. The counts describe desktop card placement and wording. They cannot establish audience reactions, outlet intent or whether a legal allegation is true."
+  ],
+  "rules": {
+    "bbc": {
+      "d8ac4c1e51d74778": {
+        "negative": "possible"
+      },
+      "ce045ca133c1bfda": {
+        "negative": "possible"
+      },
+      "8584f60175d0dd46": {
+        "negative": "possible"
+      },
+      "d21df5c020f23323": {
+        "negative": "yes"
+      },
+      "fec5611902d047b7": {
+        "negative": "possible"
+      },
+      "59f0f2f505cb059f": {
+        "reform": "possible"
+      }
+    },
+    "itv": {
+      "b4c058f8c3f8634d": {
+        "reform": "possible"
+      },
+      "fc5ea8780c70bc9b": {
+        "reform": "yes"
+      },
+      "e061d691d87d8867": {
+        "reform": "yes"
+      },
+      "cef26a90e7391a9e": {
+        "reform": "yes"
+      }
+    },
+    "channel4": {
+      "949e5b37a1ae89e9": {
+        "reform": "possible"
+      }
+    }
+  },
+  "examples": [
+    {
+      "outlet": "bbc",
+      "id": "d21df5c020f23323",
+      "label": "Applicants and talent visas",
+      "explanation": "The morning headline says firms helped applicants pose as artists or tech experts. It attributes the pretence to applicants as well as their advisers. This meets the explicit portrayal rule."
+    },
+    {
+      "outlet": "bbc",
+      "id": "fec5611902d047b7",
+      "label": "The same visa investigation, four hours later",
+      "explanation": "The midday wording puts the offer to fake art in the hands of a firm. Wealthy migrant applicants are associated with the offer, but the card leaves open whether they took it up. Only the broader count includes this wording."
+    },
+    {
+      "outlet": "bbc",
+      "id": "d8ac4c1e51d74778",
+      "label": "Advice about an illegal-worker fine",
+      "explanation": "The phrase “illegal-worker” links workers with illegality, while the report investigates a lawyer’s advice. This adds three checks under the broader reading. Multiple cards at the same check count once."
+    },
+    {
+      "outlet": "bbc",
+      "id": "75c4462ca1e1f0bd",
+      "label": "An undercover reporter is offered fake art",
+      "explanation": "Here the stated recipient is a reporter. We excluded these two appearances from both counts because the card describes no migrant as participating."
+    },
+    {
+      "outlet": "bbc",
+      "id": "385d7ca093eb7ee2",
+      "label": "An activist damages a dinghy",
+      "explanation": "The activist is the person described as admitting criminal damage. The presence of migrants in the story does not make this an adverse portrayal of them."
+    },
+    {
+      "outlet": "bbc",
+      "id": "59f0f2f505cb059f",
+      "label": "A dispute over an alleged shove",
+      "explanation": "The headline names the Liberal Democrats and Reform but leaves the alleged actor unclear. Only the broader Reform count includes this check."
+    },
+    {
+      "outlet": "itv",
+      "id": "fc5ea8780c70bc9b",
+      "label": "An allegation of chauvinism and a denial",
+      "explanation": "ITV reports the denial and says in its summary that its investigation found racist and misogynistic language among party figures. Both the allegation and the response are part of the wording reviewed."
+    },
+    {
+      "outlet": "itv",
+      "id": "e061d691d87d8867",
+      "label": "A Reform aspirant’s remarks about migrants",
+      "explanation": "The quoted proposal calls for migrants to be confined. The card reports hostility towards migrants and questions conduct within Reform. Across three checks it counts as scrutiny of Reform. The wording makes no claim that migrants themselves caused harm."
+    },
+    {
+      "outlet": "itv",
+      "id": "cef26a90e7391a9e",
+      "label": "A disclosure inquiry involving a gift",
+      "explanation": "The summary identifies the question under investigation: whether the Reform leader should have declared a gift. We counted scrutiny of a specific alleged omission. The card reports an open inquiry."
+    },
+    {
+      "outlet": "channel4",
+      "id": "949e5b37a1ae89e9",
+      "label": "Undercover investigation into foreign donations",
+      "explanation": "One Featured link appeared at every matched check. Its headline raises questions about Farage and the secrecy of donations. That meets the broader scrutiny rule. It makes no explicit allegation of a particular breach."
+    }
+  ],
+  "evidenceDigest": "4996f3cb0b80c04a754b1642bd24b392421d73d81726ed675e0592aa0e45d759"
+}

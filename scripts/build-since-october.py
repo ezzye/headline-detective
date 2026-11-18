@@ -2,6 +2,7 @@
 """Build the public aggregate from the private homepage archive (Python 3.11+)."""
 
 import argparse
+import hashlib
 from collections import defaultdict
 from datetime import datetime, time, timedelta
 import json
@@ -302,6 +303,83 @@ def recurring_featured(matched):
     }
 
 
+def wording_id(card):
+    text = "\n".join(" ".join(card[field].split()) for field in ("headline", "standfirst"))
+    return hashlib.sha256(text.encode()).hexdigest()[:16]
+
+
+def framing_review(matched, as_of, coding):
+    """Score only the reviewed capture window, once per outlet, check and measure."""
+    cutoff = datetime.fromisoformat(coding["cutoff"])
+    if as_of < cutoff:
+        return None
+    sample = [record for record in matched if datetime.fromisoformat(record["runEndedAt"]) <= cutoff]
+    if len(sample) != coding["matchedChecks"]:
+        raise ValueError("The framing review needs its original matched sample")
+
+    fingerprints = []
+    references = defaultdict(list)
+    metrics = ("negative", "reform")
+    results = {}
+    wording_counts = {}
+    for outlet_id in OUTLETS:
+        hits = {metric: {"explicit": [], "broaderOnly": []} for metric in metrics}
+        rules = coding["rules"][outlet_id]
+        seen = set()
+        for record in sample:
+            slot = record["scheduledFor"]
+            outlet = outlets_by_id(record)[outlet_id]
+            evidence = {metric: NO for metric in metrics}
+            for section in outlet["sections"]:
+                for card in section["items"]:
+                    visible = card["firstViewport"]
+                    if visible is False:
+                        continue
+                    key = wording_id(card)
+                    seen.add(key)
+                    references[outlet_id, key].append((slot, card["url"]))
+                    fingerprints.append([slot, outlet_id, section["kind"], card["position"], key, visible, card["url"]])
+                    for metric, decision in rules.get(key, {}).items():
+                        if decision not in ("yes", "possible"):
+                            raise ValueError("Unrecognised framing decision")
+                        level = YES if decision == "yes" and visible is True else POSSIBLE
+                        evidence[metric] = max(evidence[metric], level)
+            for metric, level in evidence.items():
+                if level != NO:
+                    field = "explicit" if level == YES else "broaderOnly"
+                    hits[metric][field].append(slot)
+        if not set(rules).issubset(seen):
+            raise ValueError("Reviewed wording missing from archive")
+        results[outlet_id] = {
+            metric: {"explicit": len(checks["explicit"]),
+                     "inclusive": len(checks["explicit"]) + len(checks["broaderOnly"]),
+                     "checksUTC": checks} for metric, checks in hits.items()
+        }
+        wording_counts[outlet_id] = len(seen)
+
+    encoded = json.dumps(sorted(fingerprints), separators=(",", ":"), ensure_ascii=False).encode()
+    if hashlib.sha256(encoded).hexdigest() != coding["evidenceDigest"]:
+        raise ValueError("The captured cards have changed. Review the wording before publishing counts.")
+
+    examples = []
+    zone = ZoneInfo("Europe/London")
+    for entry in coding["examples"]:
+        refs = references[entry["outlet"], entry["id"]]
+        if not refs:
+            raise ValueError("Reviewed example missing")
+        times = sorted({datetime.fromisoformat(slot).astimezone(zone) for slot, _ in refs})
+        first, last = times[0], times[-1]
+        first_label = f"{first.day} {first:%B}"
+        date_label = first_label if first.date() == last.date() else f"{first_label} – {last.day} {last:%B}"
+        examples.append({**{k: entry[k] for k in ("outlet", "label", "explanation")},
+                         "dateLabel": date_label, "url": refs[0][1]})
+
+    dates = sorted(datetime.fromisoformat(r["scheduledFor"]).astimezone(zone).date() for r in sample)
+    return {"from": dates[0].isoformat(), "through": dates[-1].isoformat(),
+            "matchedChecks": len(sample), "wordingPairsScreened": wording_counts,
+            "outlets": results, "examples": examples, "method": coding["method"]}
+
+
 def build(archive, as_of=None):
     config = json_read(archive / "config.json")
     ledger = json_read(archive / "ledger.json")
@@ -355,6 +433,7 @@ def build(archive, as_of=None):
             reason, affected = reasons[0] if reasons else ("missing", list(OUTLETS))
             gaps.append({"slot": slot.isoformat(), "reason": reason, "outlets": affected})
 
+    review = framing_review(matches, as_of, json_read(Path(__file__).with_name("first-screen-coding.json")))
     missing_count = sum(gap["reason"] == "missing" for gap in gaps)
     return {
         "version": "cfj-since-october-v1",
@@ -377,6 +456,7 @@ def build(archive, as_of=None):
             "gaps": gaps,
         },
         "outlets": count_checks(matches),
+        **({"framingReview": review} if review else {}),
         "recurringFeatured": recurring_featured(matches),
         "methodology": [
             "Only scheduled slots with comparable captures of all three UK homepages are counted. Completed captures are included through the cut-off, even if the 45-minute grace period is still open.",
@@ -385,7 +465,7 @@ def build(archive, as_of=None):
             "Immigration includes explicit human migration, asylum, visa policy and lived experience across geographies. The UK-linked subset requires evidence of a UK policy or migration connection. Reform covers Reform UK and people identified through their role with the party.",
             "The lower number counts confirmed checks. The upper number also allows plausible unresolved topics and, for the first screen, cards whose visibility is unknown. Cases without evidence of a UK connection stay outside the UK-linked range.",
             "The recorded lead, featured and video sections differ by outlet. Coverage is limited to these sections and the desktop sessions archived, where personalisation was possible.",
-            "Readership, continuous exposure, editorial intent and bias require separate evidence. Framing was outside the scope of this count.",
+            "Readership, continuous exposure, editorial intent and bias require separate evidence. The topic totals use separate criteria from the dated wording review.",
         ],
     }
 

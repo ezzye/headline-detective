@@ -644,6 +644,278 @@
       }
     }
   },
+  "framingReview": {
+    "from": "2026-10-16",
+    "through": "2026-11-18",
+    "matchedChecks": 111,
+    "wordingPairsScreened": {
+      "bbc": 968,
+      "itv": 291,
+      "channel4": 69
+    },
+    "outlets": {
+      "bbc": {
+        "negative": {
+          "explicit": 1,
+          "inclusive": 5,
+          "checksUTC": {
+            "explicit": [
+              "2026-11-13T08:00:00.000Z"
+            ],
+            "broaderOnly": [
+              "2026-10-21T07:00:00.000Z",
+              "2026-10-21T11:00:00.000Z",
+              "2026-10-21T17:00:00.000Z",
+              "2026-11-13T12:00:00.000Z"
+            ]
+          }
+        },
+        "reform": {
+          "explicit": 0,
+          "inclusive": 1,
+          "checksUTC": {
+            "explicit": [],
+            "broaderOnly": [
+              "2026-10-29T18:00:00.000Z"
+            ]
+          }
+        }
+      },
+      "itv": {
+        "negative": {
+          "explicit": 0,
+          "inclusive": 0,
+          "checksUTC": {
+            "explicit": [],
+            "broaderOnly": []
+          }
+        },
+        "reform": {
+          "explicit": 5,
+          "inclusive": 5,
+          "checksUTC": {
+            "explicit": [
+              "2026-10-16T17:00:00.000Z",
+              "2026-10-18T11:00:00.000Z",
+              "2026-10-18T21:00:00.000Z",
+              "2026-10-19T07:00:00.000Z",
+              "2026-11-08T12:00:00.000Z"
+            ],
+            "broaderOnly": []
+          }
+        }
+      },
+      "channel4": {
+        "negative": {
+          "explicit": 0,
+          "inclusive": 0,
+          "checksUTC": {
+            "explicit": [],
+            "broaderOnly": []
+          }
+        },
+        "reform": {
+          "explicit": 0,
+          "inclusive": 111,
+          "checksUTC": {
+            "explicit": [],
+            "broaderOnly": [
+              "2026-10-16T17:00:00.000Z",
+              "2026-10-18T11:00:00.000Z",
+              "2026-10-18T21:00:00.000Z",
+              "2026-10-19T07:00:00.000Z",
+              "2026-10-19T11:00:00.000Z",
+              "2026-10-19T17:00:00.000Z",
+              "2026-10-19T21:00:00.000Z",
+              "2026-10-20T07:00:00.000Z",
+              "2026-10-20T11:00:00.000Z",
+              "2026-10-20T17:00:00.000Z",
+              "2026-10-20T21:00:00.000Z",
+              "2026-10-21T07:00:00.000Z",
+              "2026-10-21T11:00:00.000Z",
+              "2026-10-21T17:00:00.000Z",
+              "2026-10-21T21:00:00.000Z",
+              "2026-10-22T07:00:00.000Z",
+              "2026-10-22T11:00:00.000Z",
+              "2026-10-22T17:00:00.000Z",
+              "2026-10-22T21:00:00.000Z",
+              "2026-10-23T07:00:00.000Z",
+              "2026-10-23T11:00:00.000Z",
+              "2026-10-23T17:00:00.000Z",
+              "2026-10-23T21:00:00.000Z",
+              "2026-10-24T07:00:00.000Z",
+              "2026-10-24T11:00:00.000Z",
+              "2026-10-24T17:00:00.000Z",
+              "2026-10-24T21:00:00.000Z",
+              "2026-10-25T08:00:00.000Z",
+              "2026-10-25T12:00:00.000Z",
+              "2026-10-25T18:00:00.000Z",
+              "2026-10-25T22:00:00.000Z",
+              "2026-10-26T08:00:00.000Z",
+              "2026-10-26T12:00:00.000Z",
+              "2026-10-26T18:00:00.000Z",
+              "2026-10-26T22:00:00.000Z",
+              "2026-10-27T08:00:00.000Z",
+              "2026-10-27T12:00:00.000Z",
+              "2026-10-27T18:00:00.000Z",
+              "2026-10-27T22:00:00.000Z",
+              "2026-10-28T08:00:00.000Z",
+              "2026-10-29T12:00:00.000Z",
+              "2026-10-29T18:00:00.000Z",
+              "2026-10-29T22:00:00.000Z",
+              "2026-10-30T08:00:00.000Z",
+              "2026-10-30T12:00:00.000Z",
+              "2026-10-30T18:00:00.000Z",
+              "2026-10-31T12:00:00.000Z",
+              "2026-10-31T18:00:00.000Z",
+              "2026-10-31T22:00:00.000Z",
+              "2026-11-01T08:00:00.000Z",
+              "2026-11-01T12:00:00.000Z",
+              "2026-11-01T18:00:00.000Z",
+              "2026-11-01T22:00:00.000Z",
+              "2026-11-02T08:00:00.000Z",
+              "2026-11-02T12:00:00.000Z",
+              "2026-11-02T18:00:00.000Z",
+              "2026-11-02T22:00:00.000Z",
+              "2026-11-03T08:00:00.000Z",
+              "2026-11-03T12:00:00.000Z",
+              "2026-11-03T22:00:00.000Z",
+              "2026-11-05T08:00:00.000Z",
+              "2026-11-05T12:00:00.000Z",
+              "2026-11-05T18:00:00.000Z",
+              "2026-11-05T22:00:00.000Z",
+              "2026-11-06T08:00:00.000Z",
+              "2026-11-06T12:00:00.000Z",
+              "2026-11-06T18:00:00.000Z",
+              "2026-11-06T22:00:00.000Z",
+              "2026-11-07T08:00:00.000Z",
+              "2026-11-07T12:00:00.000Z",
+              "2026-11-07T22:00:00.000Z",
+              "2026-11-08T08:00:00.000Z",
+              "2026-11-08T12:00:00.000Z",
+              "2026-11-08T18:00:00.000Z",
+              "2026-11-08T22:00:00.000Z",
+              "2026-11-09T12:00:00.000Z",
+              "2026-11-09T18:00:00.000Z",
+              "2026-11-09T22:00:00.000Z",
+              "2026-11-10T08:00:00.000Z",
+              "2026-11-10T12:00:00.000Z",
+              "2026-11-10T18:00:00.000Z",
+              "2026-11-10T22:00:00.000Z",
+              "2026-11-11T08:00:00.000Z",
+              "2026-11-11T12:00:00.000Z",
+              "2026-11-11T18:00:00.000Z",
+              "2026-11-11T22:00:00.000Z",
+              "2026-11-12T08:00:00.000Z",
+              "2026-11-12T12:00:00.000Z",
+              "2026-11-12T18:00:00.000Z",
+              "2026-11-12T22:00:00.000Z",
+              "2026-11-13T08:00:00.000Z",
+              "2026-11-13T12:00:00.000Z",
+              "2026-11-13T18:00:00.000Z",
+              "2026-11-13T22:00:00.000Z",
+              "2026-11-14T08:00:00.000Z",
+              "2026-11-14T12:00:00.000Z",
+              "2026-11-14T18:00:00.000Z",
+              "2026-11-14T22:00:00.000Z",
+              "2026-11-15T12:00:00.000Z",
+              "2026-11-15T18:00:00.000Z",
+              "2026-11-15T22:00:00.000Z",
+              "2026-11-16T08:00:00.000Z",
+              "2026-11-16T12:00:00.000Z",
+              "2026-11-16T18:00:00.000Z",
+              "2026-11-16T22:00:00.000Z",
+              "2026-11-17T08:00:00.000Z",
+              "2026-11-17T12:00:00.000Z",
+              "2026-11-17T18:00:00.000Z",
+              "2026-11-17T22:00:00.000Z",
+              "2026-11-18T08:00:00.000Z",
+              "2026-11-18T12:00:00.000Z"
+            ]
+          }
+        }
+      }
+    },
+    "examples": [
+      {
+        "outlet": "bbc",
+        "label": "Applicants and talent visas",
+        "explanation": "The morning headline says firms helped applicants pose as artists or tech experts. It attributes the pretence to applicants as well as their advisers. This meets the explicit portrayal rule.",
+        "dateLabel": "13 November",
+        "url": "https://www.bbc.co.uk/news/articles/cmkgdw24l1kdo"
+      },
+      {
+        "outlet": "bbc",
+        "label": "The same visa investigation, four hours later",
+        "explanation": "The midday wording puts the offer to fake art in the hands of a firm. Wealthy migrant applicants are associated with the offer, but the card leaves open whether they took it up. Only the broader count includes this wording.",
+        "dateLabel": "13 November",
+        "url": "https://www.bbc.co.uk/news/articles/cmkgdw24l1kdo"
+      },
+      {
+        "outlet": "bbc",
+        "label": "Advice about an illegal-worker fine",
+        "explanation": "The phrase “illegal-worker” links workers with illegality, while the report investigates a lawyer’s advice. This adds three checks under the broader reading. Multiple cards at the same check count once.",
+        "dateLabel": "21 October",
+        "url": "https://www.bbc.co.uk/news/articles/c30rln4pz58xo"
+      },
+      {
+        "outlet": "bbc",
+        "label": "An undercover reporter is offered fake art",
+        "explanation": "Here the stated recipient is a reporter. We excluded these two appearances from both counts because the card describes no migrant as participating.",
+        "dateLabel": "13 November",
+        "url": "https://www.bbc.co.uk/news/videos/cqr7g5j41mezo"
+      },
+      {
+        "outlet": "bbc",
+        "label": "An activist damages a dinghy",
+        "explanation": "The activist is the person described as admitting criminal damage. The presence of migrants in the story does not make this an adverse portrayal of them.",
+        "dateLabel": "12 November",
+        "url": "https://www.bbc.co.uk/news/articles/c6x20x380z12o"
+      },
+      {
+        "outlet": "bbc",
+        "label": "A dispute over an alleged shove",
+        "explanation": "The headline names the Liberal Democrats and Reform but leaves the alleged actor unclear. Only the broader Reform count includes this check.",
+        "dateLabel": "29 October",
+        "url": "https://www.bbc.co.uk/news/articles/cwg7x3kegymvo"
+      },
+      {
+        "outlet": "itv",
+        "label": "An allegation of chauvinism and a denial",
+        "explanation": "ITV reports the denial and says in its summary that its investigation found racist and misogynistic language among party figures. Both the allegation and the response are part of the wording reviewed.",
+        "dateLabel": "16 October",
+        "url": "https://www.itv.com/news/2026-10-16/reform-uk-reaction-after-undercover-investigation-by-itv-exposure"
+      },
+      {
+        "outlet": "itv",
+        "label": "A Reform aspirant’s remarks about migrants",
+        "explanation": "The quoted proposal calls for migrants to be confined. The card reports hostility towards migrants and questions conduct within Reform. Across three checks it counts as scrutiny of Reform. The wording makes no claim that migrants themselves caused harm.",
+        "dateLabel": "18 October – 19 October",
+        "url": "https://www.itv.com/news/2026-10-17/inside-reform-aspiring-reform-mp-calls-for-concentration-camps-for-migrants"
+      },
+      {
+        "outlet": "itv",
+        "label": "A disclosure inquiry involving a gift",
+        "explanation": "The summary identifies the question under investigation: whether the Reform leader should have declared a gift. We counted scrutiny of a specific alleged omission. The card reports an open inquiry.",
+        "dateLabel": "8 November",
+        "url": "https://www.itv.com/news/2026-11-08/farage-suggests-he-believes-investigation-into-5m-gift-will-find-against-him"
+      },
+      {
+        "outlet": "channel4",
+        "label": "Undercover investigation into foreign donations",
+        "explanation": "One Featured link appeared at every matched check. Its headline raises questions about Farage and the secrecy of donations. That meets the broader scrutiny rule. It makes no explicit allegation of a particular breach.",
+        "dateLabel": "16 October – 18 November",
+        "url": "https://www.channel4.com/news/exclusive-nigel-farage-filmed-undercover-celebrating-secret-new-foreign-donations"
+      }
+    ],
+    "method": [
+      "An explicit negative portrayal disparages migrants or asylum seekers, or says they committed or enabled wrongdoing, posed a danger or imposed a burden. This includes attributed claims. The broader reading also includes wording that links them to illegality or deception while leaving their part unclear.",
+      "An explicit Reform case identifies alleged improper conduct by the party or someone identified with it, including a denial, a disclosure inquiry or reported discriminatory remarks. The broader reading also includes investigative wording that raises a concrete suspicion without spelling out a breach, or a dispute where the alleged actor is unclear.",
+      "Policy changes, the cost of a government decision, harm suffered by migrants, and mere party disagreement fall outside these definitions. A hostile statement about how migrants should be treated is identified separately when the card scrutinises the speaker. We did not infer migration status from a name or nationality.",
+      "All distinct captured headline and summary combinations on cards marked visible or possibly visible were screened, including cards originally tagged as other topics. Each wording change was reviewed separately. A missing summary was left empty. The linked examples paraphrase what appeared on the homepage at the time; linked articles may subsequently have changed.",
+      "One check can count for both measures. Repetitions within the same outlet and check count once. An uncertain first-screen position could enter only the broader reading. The counts describe desktop card placement and wording. They cannot establish audience reactions, outlet intent or whether a legal allegation is true."
+    ]
+  },
   "recurringFeatured": {
     "outlet": "Channel 4 News",
     "topic": "Reform UK",
@@ -658,6 +930,6 @@
     "Immigration includes explicit human migration, asylum, visa policy and lived experience across geographies. The UK-linked subset requires evidence of a UK policy or migration connection. Reform covers Reform UK and people identified through their role with the party.",
     "The lower number counts confirmed checks. The upper number also allows plausible unresolved topics and, for the first screen, cards whose visibility is unknown. Cases without evidence of a UK connection stay outside the UK-linked range.",
     "The recorded lead, featured and video sections differ by outlet. Coverage is limited to these sections and the desktop sessions archived, where personalisation was possible.",
-    "Readership, continuous exposure, editorial intent and bias require separate evidence. Framing was outside the scope of this count."
+    "Readership, continuous exposure, editorial intent and bias require separate evidence. The topic totals use separate criteria from the dated wording review."
   ]
 }

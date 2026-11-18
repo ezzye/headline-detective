@@ -24,3 +24,25 @@ test('public examples retain source and placement and do not contradict reviewed
  for(const date of ['2026-02-05','2026-04-09'])for(const id of ['bbc','itv'])assert.equal(data.weeks.find(w=>w.date===date).observations.find(o=>o.outletId===id).metrics.migrantHarm,true);
 });
 test('published HTML embeds the reviewed bundle and has no paid service calls',async()=>{const html=await readFile(new URL('./weekly.html',import.meta.url),'utf8');const embedded=JSON.parse(html.match(/const EVIDENCE = (.*);\n/)[1]);assert.deepEqual(embedded,data);assert(!/fetch\(|api.deepseek|api.elevenlabs/.test(html));const build=await readFile(new URL('./deploy/build-edge.mjs',import.meta.url),'utf8');for(const name of ['weekly.html','weekly-evidence.json','weekly-captures.csv'])assert(build.includes("'"+name+"'"));});
+
+test('first-screen wording review counts distinct checks and preserves its reviewed window', async () => {
+  const report = JSON.parse(await readFile(new URL('./since-october.json', import.meta.url), 'utf8'));
+  const review = report.framingReview;
+  assert.equal(review.matchedChecks, 111);
+  assert.equal(review.through, '2026-11-18');
+  const expected = {bbc: [[1, 5], [0, 1]], itv: [[0, 0], [5, 5]], channel4: [[0, 0], [0, 111]]};
+  for (const [outlet, pairs] of Object.entries(expected)) {
+    for (const [index, metric] of ['negative', 'reform'].entries()) {
+      const row = review.outlets[outlet][metric];
+      const {explicit, broaderOnly} = row.checksUTC;
+      assert.deepEqual([row.explicit, row.inclusive], pairs[index]);
+      assert.equal(row.explicit, explicit.length);
+      assert.equal(row.inclusive, explicit.length + broaderOnly.length);
+      assert.equal(row.inclusive, new Set([...explicit, ...broaderOnly]).size);
+      assert.ok(row.inclusive <= review.matchedChecks);
+    }
+  }
+  const html = await readFile(new URL('./weekly.html', import.meta.url), 'utf8');
+  assert.ok(html.includes('id="first-screen-framing"'));
+  assert.ok(review.examples.every(example => html.includes(example.url)));
+});

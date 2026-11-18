@@ -127,6 +127,8 @@ The main editorial pools differ: BBC shared lead plus visible UK grid, ITV Top S
 
 [Since 16 October](weekly.html#since-16-october) follows the three homepages at four scheduled times each day from 16 October 2026. The two tables count matched checks where a topic appeared anywhere in the sampled sections and where a card reached the first desktop screen. The page includes a UK-linked immigration breakdown and a dated list of missed or incomplete checks.
 
+The [first-screen wording review](weekly.html#first-screen-framing) uses the 111 matched checks ending at noon on 18 November 2026. The downloadable JSON includes each outlet’s explicit and broader counts, the contributing UTC check times and dated examples. The review is pinned to the screened headline and summary variants. Subsequent captures extend the topic series independently.
+
 The published snapshot is in `since-october.json`. To refresh it from the private capture archive, run `python3 scripts/build-since-october.py --archive /path/to/cfj-agenda-monitor`, then `npm run prepare:weekly`. Pass an ISO timestamp with a UTC offset via `--as-of` to reproduce an earlier cut-off. Only the aggregate goes into the public build.
 
 [Alternative archive recovery check](archive-recovery.html): Arquivo.pt, Common Crawl, UK Web Archive, archive.today, fuller Wayback indexes and GDELT were checked on 16 October 2026. No extra qualifying June–September homepage captures were verified. `weekly-evidence.json` records distinct no-result, access-failure and unverified outcomes. Counts remain 32 strict / 40 same-day matched weeks. The study ends the day after ITV’s 14 October investigation, so post-investigation weekly follow-up is still required.

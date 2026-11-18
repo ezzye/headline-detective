@@ -76,6 +76,29 @@ function topicPanel(outlets, [id, label]) {
   </article>`;
 }
 
+function framingReview(review, outlets) {
+  if (!review) return '';
+  const table = (key, caption) => `<table class="since-table"><caption>${caption}</caption><thead><tr><th scope="col">Outlet</th><th scope="col">Explicit</th><th scope="col">Broader</th></tr></thead><tbody>${outletIds.map(id => `<tr><th scope="row">${escapeHtml(outlets[id]?.name ?? id)}</th><td>${countLabel(review.outlets?.[id]?.[key]?.explicit)}</td><td>${countLabel(review.outlets?.[id]?.[key]?.inclusive)}</td></tr>`).join('')}</tbody></table>`;
+  const examples = (review.examples ?? []).map(example => {
+    let url = '';
+    try { const parsed = new URL(example.url); if (parsed.protocol === 'https:' || parsed.protocol === 'http:') url = parsed.href; } catch {}
+    const label = escapeHtml(example.label);
+    return `<li><strong>${escapeHtml(outlets[example.outlet]?.name ?? example.outlet)} · ${escapeHtml(example.dateLabel)}</strong> · ${url ? `<a href="${escapeHtml(url)}">${label}</a>` : label} — ${escapeHtml(example.explanation)}</li>`;
+  }).join('');
+  return `<section id="first-screen-framing" class="panel since-framing" aria-labelledby="framing-title" tabindex="-1">
+    <h3 id="framing-title">Who faced scrutiny on the first screen?</h3>
+    <p>We reviewed the headlines and summaries on first-screen cards at <strong>${countLabel(review.matchedChecks)} matched checks</strong> from ${dateLabel(review.from)} to ${dateLabel(review.through)}. Each outlet counts once per measure at each check.</p>
+    <p><strong>Explicit</strong> means the wording itself portrays migrants in disparaging terms or as doing wrong, posing a danger or imposing a burden, or identifies alleged misconduct by Reform or one of its figures. <strong>Broader</strong> includes those checks plus ones where the wording suggests an association or leaves the alleged actor unclear.</p>
+    <div class="since-topics">${table('negative', 'Negative portrayal of migrants')}${table('reform', 'Scrutiny of alleged Reform wrongdoing')}</div>
+    <p>The BBC explicitly linked applicants to deception in one talent-visa headline. A later version of the same story put the offer of fake artwork in the hands of a firm. ITV put a Reform aspirant’s call to confine migrants on a first-screen card at three checks. Readers could encounter that hostile language on all three. The headline and summary scrutinised the speaker and made no adverse claim about migrants themselves.</p>
+    <p>Channel 4’s Featured column carried the same undercover donations investigation at all ${countLabel(review.matchedChecks)} checks. Its headline raised questions about secrecy. It never specified which rule Farage was alleged to have broken. That distinction accounts for the difference between its two columns.</p>
+    <p class="quiet">This AI-assisted review covers cards that appeared wholly or partly on the initial desktop screen. Some text on a partly visible card may have required scrolling. Editorial intent, guilt and the effect on readers cannot be inferred from these figures.</p>
+    <p><a href="#since-gaps">See dated gaps in the scheduled checks</a>.</p>
+    ${examples ? `<details><summary>See sourced examples and reasoning</summary><ul>${examples}</ul></details>` : ''}
+    ${(review.method ?? []).length ? `<details><summary>How the framing was reviewed</summary>${review.method.map(line => `<p>${escapeHtml(line)}</p>`).join('')}</details>` : ''}
+  </section>`;
+}
+
 function gapsDetail(gaps, outlets) {
   if (!gaps.length) return '';
   const items = gaps.map(({ slot, reason, outlets: affected }) => {
@@ -84,7 +107,7 @@ function gapsDetail(gaps, outlets) {
     const names = (affected ?? []).map(id => outlets[id]?.name).filter(Boolean).join(', ');
     return `<li><time datetime="${escapeHtml(slot)}">${escapeHtml(label)}</time> · ${escapeHtml(gapReasons[reason] ?? reason)}${names ? ` (${escapeHtml(names)})` : ''}</li>`;
   }).join('');
-  return `<details class="panel since-detail"><summary>Which scheduled checks are missing or unusable?</summary>
+  return `<details id="since-gaps" class="panel since-detail"><summary>Which scheduled checks are missing or unusable?</summary>
     <p class="quiet">Times are UK local time. Outlets in parentheses are the ones affected by the recorded problem. Each gap excludes the whole check from the three-outlet comparison.</p><ul class="since-gaps">${items}</ul>
   </details>`;
 }
@@ -100,13 +123,14 @@ export function renderSinceOctober(report) {
   const asOf = Date.parse(coverage.asOf);
   return `<section id="since-16-october" class="since-archive" aria-labelledby="since-title" tabindex="-1">
     <div class="section-head"><div><h2 id="since-title">Since 16 October</h2><p>${dateLabel(startDate)} to ${dateLabel(endDate)}</p></div></div>
-    <p class="lede">After the weekly study ended, we began checking the three homepages four times a day. These figures show how often each topic appeared. Judging whether coverage was negative requires a separate review of the wording.</p>
+    <p class="lede">After the weekly study ended, we began checking the three homepages four times a day. These figures show how often each topic appeared.${report.framingReview ? ' A separate first-screen review considers the wording.' : ' Topic counts alone do not describe the wording.'}</p>
     <div class="since-numbers">
       <div class="metric"><strong>${countLabel(matchedSlots)} of ${countLabel(scheduledSlots)}</strong><span>scheduled checks matched across all three homepages</span></div>
       <div class="metric"><strong>${countLabel(missingSlots)}</strong><span>scheduled checks with no archived run</span></div>
       <div class="metric"><strong>${countLabel(excludedSlots)}</strong><span>excluded scheduled checks · ${countLabel(partialSlots)} partial, ${countLabel(failedSlots)} failed</span></div>
     </div>
     <p class="quiet">Coverage remains unknown for missed and excluded checks.</p>
+    ${framingReview(report.framingReview, outlets)}
     <p><strong>Checks out of ${countLabel(matchedSlots)} per outlet.</strong> A check counts once per topic when at least one card qualifies. Ranges go from confirmed checks to the total if all plausible cases qualify.</p>
     <p class="quiet">“Any sampled section” includes recorded cards farther down the page. “On first screen” uses the initial desktop view. Immigration covers stories from any country.</p>
     <div class="since-topics">${topics.map(topic => topicPanel(outlets, topic)).join('')}</div>
